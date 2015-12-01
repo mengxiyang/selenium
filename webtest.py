@@ -37,6 +37,7 @@ manualSyncBtn.click()
 confirmBtn = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@class='ebDialogBox-actionBlock']/button[1]")))
 confirmBtn.click()
 driver.quit()
+
 #ul.click()
 #driver.find_element_by_link_text(u"告警管理").click()
 
