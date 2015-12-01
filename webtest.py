@@ -13,9 +13,10 @@ import os
 #from sele
 
 # Create a new instance of the Firefox driver
-driver = webdriver.Firefox()
-#chromeDriver = os.path.normpath("C:\Users\EJLNOQC\Desktop\chromedriver")
-#driver = webdriver.Chrome(chromeDriver)
+#driver = webdriver.Firefox()
+chromeDriver = os.path.normpath("/Users/lowitty/Downloads/chromedriver")
+os.environ["webdriver.chrome.driver"] = chromeDriver
+driver = webdriver.Chrome(chromeDriver)
 driver.maximize_window()
 # go to the google home page
 driver.get("http://10.184.73.75:8686/XOAM/login/index.html")
@@ -24,7 +25,7 @@ driver.find_element_by_id('loginUsername').send_keys('admin')
 driver.find_element_by_id('loginPassword').clear()
 driver.find_element_by_id('loginPassword').send_keys('Admin!@#123')
 driver.find_element_by_id('submit').click()
-WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "ebBtnSearch")))
+WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "ebBtnSearch")))
 
 
 #ul = driver.find_element_by_xpath("//div[@class='ebBreadcrumbs-list']/ul/li[4]/a")
