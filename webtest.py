@@ -4,19 +4,25 @@ Created on Nov 30, 2015
 
 @author: lowitty
 '''
+import logging
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait # available since 2.4.0
 from selenium.webdriver.support import expected_conditions as EC # available since 2.26.0
 from selenium.webdriver.common.by import By
-import os
-#from sele
+from selenium.webdriver import ChromeOptions
+from selenium.webdriver.chrome.options import Options
+import os, time, subprocess
 
 # Create a new instance of the Firefox driver
 #driver = webdriver.Firefox()
-chromeDriver = os.path.normpath("/Users/lowitty/Downloads/chromedriver")
+#C:\Users\EJLNOQC\Desktop\chromedriver
+chromeDriver = os.path.normpath("C:\Users\EJLNOQC\Desktop\chromedriver.exe")
+opts = Options()
+opts.binary_location = "C:\\installed\\chrome\\chrome.exe"
 os.environ["webdriver.chrome.driver"] = chromeDriver
-driver = webdriver.Chrome(chromeDriver)
+driver = webdriver.Chrome(chromeDriver, chrome_options=opts)
+
 driver.maximize_window()
 # go to the google home page
 driver.get("http://10.184.73.75:8686/XOAM/login/index.html")
@@ -40,7 +46,18 @@ manualSyncBtn = WebDriverWait(driver, 10).until(EC.presence_of_element_located((
 manualSyncBtn.click()
 confirmBtn = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@class='ebDialogBox-actionBlock']/button[1]")))
 confirmBtn.click()
-driver.quit()
+driver.close()
+try:
+    driver.quit()
+except Exception as e:
+    killCmd = "TASKKILL /IM chromedriver.exe /F"
+    p = subprocess.Popen(killCmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    p.wait()
+    try:
+        p.kill()
+    finally:
+        pass
+    
 
 #ul.click()
 #driver.find_element_by_link_text(u"告警管理").click()
