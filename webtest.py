@@ -9,10 +9,13 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait # available since 2.4.0
 from selenium.webdriver.support import expected_conditions as EC # available since 2.26.0
 from selenium.webdriver.common.by import By
+import os
 #from sele
 
 # Create a new instance of the Firefox driver
 driver = webdriver.Firefox()
+#chromeDriver = os.path.normpath("C:\Users\EJLNOQC\Desktop\chromedriver")
+#driver = webdriver.Chrome(chromeDriver)
 driver.maximize_window()
 # go to the google home page
 driver.get("http://10.184.73.75:8686/XOAM/login/index.html")
