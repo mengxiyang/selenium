@@ -38,7 +38,22 @@ WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "ebBtnSea
 driver.find_element_by_xpath("//span[@class='ebBreadcrumbs-arrow']").click()
 fm = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@class='ebBreadcrumbs-list']/ul/li[4]/a")))
 fm.click()
-fmManArrow = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@class='ebBreadcrumbs']/div[2]/span")))
+WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@class='table']/div/div/table/tbody")))
+tbody = driver.find_element_by_xpath("//div[@class='table']/div/div/table/tbody")
+trs = tbody.find_elements_by_xpath(".//tr")
+trs = tbody.find_elements_by_xpath(".//tr")
+for tr in trs:
+    tds = tr.find_elements_by_xpath(".//td")
+    if("未清除" == tds[5].get_attribute("innerHTML").encode('utf-8')):
+        print "告警代码：" + tds[1].get_attribute("innerHTML").encode('utf-8') + " 未清除" 
+#print len(trs)
+#td = trs[0].find_elements_by_xpath(".//td")
+#td0 = trs[0].find_element_by_xpath(".//td[1]")
+#trs = tbody.find_elements_by_xpath(".//*")
+#trs = tbody.find_elements_by_css_selector("*")
+#print len(trs)
+i = 1
+'''fmManArrow = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@class='ebBreadcrumbs']/div[2]/span")))
 fmManArrow.click()
 fmMan = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@class='ebBreadcrumbs']/div[2]/div/ul/li[2]")))
 fmMan.click()
@@ -46,8 +61,8 @@ manualSyncBtn = WebDriverWait(driver, 10).until(EC.presence_of_element_located((
 manualSyncBtn.click()
 confirmBtn = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@class='ebDialogBox-actionBlock']/button[1]")))
 confirmBtn.click()
-driver.close()
-try:
+driver.quit()'''
+'''try:
     driver.quit()
 except Exception as e:
     try:
@@ -56,35 +71,4 @@ except Exception as e:
         p.wait()
         p.kill()
     finally:
-        pass
-    
-
-#ul.click()
-#driver.find_element_by_link_text(u"告警管理").click()
-
-#driver.get("http://10.184.73.75:8686/XOAM/login/index.html#network-overview/fault-mgt/fault-sync")
-#WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "idBtn-manual")))
-#driver.find_element_by_id('idBtn-manual').click()
-
-
-'''# the page is ajaxy so the title is originally this:
-print driver.title
-
-# find the element that's name attribute is q (the google search box)
-inputElement = driver.find_element_by_name("q")
-
-# type in the search
-inputElement.send_keys("cheese!")
-
-# submit the form (although google automatically searches now without submitting)
-inputElement.submit()
-
-try:
-    # we have to wait for the page to refresh, the last thing that seems to be updated is the title
-    WebDriverWait(driver, 10).until(EC.title_contains("cheese!"))
-
-    # You should see "cheese! - Google Search"
-    print driver.title
-
-finally:
-    driver.quit()'''
+        pass'''
