@@ -50,10 +50,10 @@ driver.close()
 try:
     driver.quit()
 except Exception as e:
-    killCmd = "TASKKILL /IM chromedriver.exe /F"
-    p = subprocess.Popen(killCmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-    p.wait()
     try:
+        killCmd = "TASKKILL /IM chromedriver.exe /F"
+        p = subprocess.Popen(killCmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        p.wait()
         p.kill()
     finally:
         pass
