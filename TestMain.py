@@ -28,18 +28,3 @@ if __name__ == '__main__':
     clear.join()
     query.join()
     sync.join()
-    '''driver = CommonFunc.loginToInterface(chrome = pathChrome, driver = pathDriver, host= host)
-    CommonFunc.toAlarmManagement(driver)
-    #2-1 ACK, 0-2 CLEAR
-    tr = CommonFunc.findLineOfCertainStatus(driver, 0)
-    if(tr):
-        #time.sleep(1)
-        #CommonFunc.clickTheCheckboxOftheTR(tr)
-        #time.sleep(1)
-        #btn = CommonFunc.findBtnReturnComfirmBtn(driver, 2)
-        btn = CommonFunc.findBtnReturnComfirmBtn(driver, 0)
-        time.sleep(1)
-        CommonFunc.clickButton(btn)
-    #CommonFunc.toAlarmSyncPage(driver)
-    #CommonFunc.quitDriver(driver)
-    pass'''

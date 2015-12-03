@@ -10,35 +10,58 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
+import logging, time
+from __builtin__ import str
+logCommon = logging.getLogger('selenium.common')
 
 
 def loginToInterface(isMac, chrome, driver, host, port = 8686, username = 'admin', password = 'Admin!@#123'):
+    logCommon.info('Will start web browser and perform test case.')
     chromeDriver = os.path.normpath(driver)
+    logCommon.info('Browser driver path: ' + str(chromeDriver))
     os.environ["webdriver.chrome.driver"] = chromeDriver
+    opts = Options()
     if(not isMac):
         opts = Options()
         opts.binary_location = os.path.normpath(chrome)
-        driver = webdriver.Chrome(chromeDriver, chrome_options=opts)
-    else:
-        driver = webdriver.Chrome(chromeDriver)
-    
-    driver.maximize_window()
+    opts.add_argument("--start-maximized")
+    driver = webdriver.Chrome(chromeDriver, chrome_options=opts)
+    #options.add_argument("--start-maximized")
+    #driver.set_window_size(1024, 600)
+    #driver.maximize_window()
     # go to the google home page
     index = 'http://' + str(host) + ':' + str(port) + '/XOAM/login/index.html'
-    print index
+    logCommon.info('Web page: ' + str(index))
     driver.get(index)
     driver.find_element_by_id('loginUsername').clear()
     driver.find_element_by_id('loginUsername').send_keys(username)
     driver.find_element_by_id('loginPassword').clear()
     driver.find_element_by_id('loginPassword').send_keys(password)
     driver.find_element_by_id('submit').click()
-    WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "ebBtnSearch")))
+    try:
+        WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "ebBtnSearch")))
+        logCommon.info('Login to the InterfaceManagement page successfully.')
+    except Exception as e:
+        logCommon.error('Login to the InterfaceManagement page failed.')
+        return False
     return driver
     
 def toAlarmManagement(driver):
+    logCommon.info('To the AlarmManagement page...')
     driver.find_element_by_xpath("//span[@class='ebBreadcrumbs-arrow']").click()
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@class='ebBreadcrumbs-list']/ul/li[4]/a"))).click()
+
+def queryUnAcked(driver):
+    #i_ack_status  
+    btnList = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@id='i_ack_status']/div/button")))
+    btnList.click()
+    checkUnAck = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@id='i_ack_status']/div/div/div[2]/label/input")))
+    if(checkUnAck.is_selected()):
+        checkUnAck.click()
+        btnList.click()
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "idBtn-search"))).click()
     
+
 def toAlarmSyncPage(driver):
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@class='ebBreadcrumbs']/div[2]/span"))).click()
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@class='ebBreadcrumbs']/div[2]/div/ul/li[2]"))).click()    
@@ -59,7 +82,8 @@ def findLineOfCertainStatus(driver, status):
                 return tr
         elif(2 == status):
             if("未确认" == tds[6].get_attribute("innerHTML").encode('utf-8').strip()):
-                print "告警代码：" + tds[1].get_attribute("innerHTML").encode('utf-8') + " 未确认" 
+                #print "告警代码：" + tds[1].get_attribute("innerHTML").encode('utf-8') + " 未确认" 
+                logCommon.info("ID: " + str(tds[1].get_attribute("innerHTML").encode('utf-8')) + " not acked")
                 return tr
         elif(4 == status):
             if("未确认" == tds[6].get_attribute("innerHTML").encode('utf-8').strip() and "未清除" == tds[5].get_attribute("innerHTML").encode('utf-8').strip()):
@@ -68,6 +92,7 @@ def findLineOfCertainStatus(driver, status):
     return False
 
 def clickTheCheckboxOftheTR(tr):
+    logCommon.info('Check the CheckBox...')
     if(not tr.find_element_by_xpath(".//td[1]/div/input").is_selected()):
         tr.find_element_by_xpath(".//td[1]/div/input").click()
 
@@ -82,10 +107,12 @@ def findBtnReturnComfirmBtn(driver, btnClick):
         return btnClickEle
     elif(1 == btnClick):
         #btnClickEle = driver.find_element_by_id("idBtn-ack")
+        logCommon.info('Click ACK button')
         btnClickEle = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "idBtn-ack")))
         btnClickEle.click()
         #ebDialogBox-actionBlock
         btn = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@class='ebDialogBox-actionBlock']/button[1]")))
+        logCommon.info('Found the confirm button and will click next.')
         return btn
     elif(2 == btnClick):
         #btnClickEle = driver.find_element_by_id("idBtn-clear")
@@ -105,6 +132,17 @@ def findBtnReturnComfirmBtn(driver, btnClick):
 
 def clickButton(btn):
     btn.click()
+
+def checkAcked(tr, dt, driver, filePath):
+    time.sleep(5)
+    tds = tr.find_elements_by_xpath(".//td")
+    #tds[5].get_attribute("innerHTML").encode('utf-8').strip()
+    if("已确认" == tds[6].get_attribute("innerHTML").encode('utf-8').strip()):
+        logCommon.info('Success: ACK the alarm successfully, ID: ' + tds[1].get_attribute("innerHTML").encode('utf-8') + ', ACK time: ' + tds[12].get_attribute("innerHTML").encode('utf-8'))
+    else:
+        logCommon.critical('Failed: ACK the alarm failed.')
+    driver.execute_script("arguments[0].scrollIntoView(true);", tds[12])
+    driver.save_screenshot(filePath)
 
 def alarmSync(isMac, chrome, driver, host, port = 8686, username = 'admin', password = 'Admin!@#123'):
     driver = loginToInterface(isMac, chrome, driver, host, port, username, password)
