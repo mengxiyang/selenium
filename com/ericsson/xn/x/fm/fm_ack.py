@@ -21,5 +21,5 @@ def alarm_ack(rootPath):
             CommonFunc.clickTheCheckboxOftheTR(tr)
             btn = CommonFunc.findBtnReturnComfirmBtn(driver, 1)
             CommonFunc.clickButton(btn)
-            CommonFunc.checkAcked(tr, None, driver, os.path.normpath(rootPath + os.path.sep + 'snaps' + os.path.sep + 'ack.png'))
+            CommonFunc.checkAcked(tr, None, driver, os.path.normpath(rootPath + os.path.sep + 'snaps' + os.path.sep))
     pass

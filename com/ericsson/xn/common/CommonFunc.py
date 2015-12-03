@@ -12,6 +12,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 import logging, time
 from __builtin__ import str
+from selenium.common.exceptions import TimeoutException
 logCommon = logging.getLogger('selenium.common')
 
 
@@ -24,11 +25,12 @@ def loginToInterface(isMac, chrome, driver, host, port = 8686, username = 'admin
     if(not isMac):
         opts = Options()
         opts.binary_location = os.path.normpath(chrome)
-    opts.add_argument("--start-maximized")
+    else:
+        opts.add_argument("--start-maximized")
     driver = webdriver.Chrome(chromeDriver, chrome_options=opts)
     #options.add_argument("--start-maximized")
     #driver.set_window_size(1024, 600)
-    #driver.maximize_window()
+    driver.maximize_window()
     # go to the google home page
     index = 'http://' + str(host) + ':' + str(port) + '/XOAM/login/index.html'
     logCommon.info('Web page: ' + str(index))
@@ -48,7 +50,8 @@ def loginToInterface(isMac, chrome, driver, host, port = 8686, username = 'admin
     
 def toAlarmManagement(driver):
     logCommon.info('To the AlarmManagement page...')
-    driver.find_element_by_xpath("//span[@class='ebBreadcrumbs-arrow']").click()
+    #driver.find_element_by_xpath("//span[@class='ebBreadcrumbs-arrow']").click()
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//span[@class='ebBreadcrumbs-arrow']"))).click()
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@class='ebBreadcrumbs-list']/ul/li[4]/a"))).click()
 
 def queryUnAcked(driver):
@@ -56,7 +59,7 @@ def queryUnAcked(driver):
     btnList = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@id='i_ack_status']/div/button")))
     btnList.click()
     checkUnAck = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@id='i_ack_status']/div/div/div[2]/label/input")))
-    if(checkUnAck.is_selected()):
+    if(not checkUnAck.is_selected()):
         checkUnAck.click()
         btnList.click()
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "idBtn-search"))).click()
@@ -71,11 +74,16 @@ def toAlarmSyncPage(driver):
 #2 == 未确认
 #3 == 已确认
 def findLineOfCertainStatus(driver, status):
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@class='table']/div/div/table/tbody")))
+    try:
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@class='table']/div/div/table/tbody")))
+    except TimeoutException as e:
+        logCommon.error('None unacked records in the table.')
     tbody = driver.find_element_by_xpath("//div[@class='table']/div/div/table/tbody")
-    trs = tbody.find_elements_by_xpath(".//tr")
+    trs = WebDriverWait(tbody, 10).until(EC.presence_of_all_elements_located((By.XPATH, ".//tr")))
+    #trs = tbody.find_elements_by_xpath(".//tr")
     for tr in trs:
-        tds = tr.find_elements_by_xpath(".//td")
+        #tds = tr.find_elements_by_xpath(".//td")
+        tds = WebDriverWait(tr, 10).until(EC.presence_of_all_elements_located((By.XPATH, ".//td")))
         if(0 == status):
             if("未清除" == tds[5].get_attribute("innerHTML").encode('utf-8').strip()):
                 print "告警代码：" + tds[1].get_attribute("innerHTML").encode('utf-8') + " 未清除" 
@@ -135,14 +143,24 @@ def clickButton(btn):
 
 def checkAcked(tr, dt, driver, filePath):
     time.sleep(5)
-    tds = tr.find_elements_by_xpath(".//td")
+    #tds = tr.find_elements_by_xpath(".//td")
+    tds = WebDriverWait(tr, 10).until(EC.presence_of_all_elements_located((By.XPATH, ".//td")))
     #tds[5].get_attribute("innerHTML").encode('utf-8').strip()
     if("已确认" == tds[6].get_attribute("innerHTML").encode('utf-8').strip()):
         logCommon.info('Success: ACK the alarm successfully, ID: ' + tds[1].get_attribute("innerHTML").encode('utf-8') + ', ACK time: ' + tds[12].get_attribute("innerHTML").encode('utf-8'))
     else:
         logCommon.critical('Failed: ACK the alarm failed.')
+    
+    '''logCommon.info(filePath + 'acked_0.png')
+    if(os.path.isfile(filePath + 'acked_0.png')):
+        os.remove(filePath + 'acked_0.png')
+    driver.save_screenshot(filePath + 'acked_0.png')'''
+    
+    snap_1 = os.path.normpath(filePath + os.path.sep + 'acked_1.png')
     driver.execute_script("arguments[0].scrollIntoView(true);", tds[12])
-    driver.save_screenshot(filePath)
+    if(os.path.isfile(snap_1)):
+        os.remove(snap_1)
+    driver.save_screenshot(snap_1)
 
 def alarmSync(isMac, chrome, driver, host, port = 8686, username = 'admin', password = 'Admin!@#123'):
     driver = loginToInterface(isMac, chrome, driver, host, port, username, password)
