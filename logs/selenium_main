@@ -2348,3 +2348,117 @@
 2015-12-03 17:19:05,245 [DEBUG] remote_connection _request(502) Finished Request
 2015-12-03 17:19:05,245 [DEBUG] remote_connection _request(409) GET http://127.0.0.1:58314/session/bc574d203321c7a927ef6b8bd9f94965/screenshot {"sessionId": "bc574d203321c7a927ef6b8bd9f94965"}
 2015-12-03 17:19:05,433 [DEBUG] remote_connection _request(502) Finished Request
+2015-12-03 17:27:27,447 [INFO] main <module>(30) ##########################################################################
+2015-12-03 17:27:27,447 [INFO] main <module>(31) ####                                                                  ####
+2015-12-03 17:27:27,447 [INFO] main <module>(32) ####                 Started, logger initialized.                     ####
+2015-12-03 17:27:27,447 [INFO] main <module>(33) ####                                                                  ####
+2015-12-03 17:27:27,447 [INFO] main <module>(34) ##########################################################################
+2015-12-03 17:27:27,776 [INFO] fm_ack alarm_ack(11) Start to perform alarm ack...
+2015-12-03 17:27:27,776 [INFO] CommonFunc loginToInterface(20) Will start web browser and perform test case.
+2015-12-03 17:27:27,776 [INFO] CommonFunc loginToInterface(22) Browser driver path: C:\Users\EJLNOQC\Desktop\chromedriver.exe
+2015-12-03 17:27:28,400 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session {"desiredCapabilities": {"platform": "ANY", "browserName": "chrome", "version": "", "javascriptEnabled": true, "chromeOptions": {"binary": "C:\\installed\\chrome\\chrome.exe", "args": [], "extensions": []}}}
+2015-12-03 17:27:30,351 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:30,351 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/window/current/maximize {"windowHandle": "current", "sessionId": "deb94125380a9d7f08c78c11435798c4"}
+2015-12-03 17:27:31,967 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:31,967 [INFO] CommonFunc loginToInterface(36) Web page: http://10.184.73.75:8686/XOAM/login/index.html
+2015-12-03 17:27:31,967 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/url {"url": "http://10.184.73.75:8686/XOAM/login/index.html", "sessionId": "deb94125380a9d7f08c78c11435798c4"}
+2015-12-03 17:27:33,279 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:33,279 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "id", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "loginUsername"}
+2015-12-03 17:27:33,647 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:33,647 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.06287148152478039-1/clear {"sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.06287148152478039-1"}
+2015-12-03 17:27:34,003 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:34,003 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "id", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "loginUsername"}
+2015-12-03 17:27:34,302 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:34,302 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.06287148152478039-1/value {"sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.06287148152478039-1", "value": ["a", "d", "m", "i", "n"]}
+2015-12-03 17:27:35,637 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:35,638 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "id", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "loginPassword"}
+2015-12-03 17:27:35,944 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:35,944 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.06287148152478039-2/clear {"sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.06287148152478039-2"}
+2015-12-03 17:27:36,305 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:36,305 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "id", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "loginPassword"}
+2015-12-03 17:27:36,671 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:36,671 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.06287148152478039-2/value {"sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.06287148152478039-2", "value": ["A", "d", "m", "i", "n", "!", "@", "#", "1", "2", "3"]}
+2015-12-03 17:27:37,709 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:37,710 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "id", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "submit"}
+2015-12-03 17:27:38,068 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:38,068 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.06287148152478039-3/click {"sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.06287148152478039-3"}
+2015-12-03 17:27:39,206 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:39,206 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "id", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "ebBtnSearch"}
+2015-12-03 17:27:39,607 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:40,082 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "id", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "ebBtnSearch"}
+2015-12-03 17:27:40,565 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:40,565 [INFO] CommonFunc loginToInterface(45) Login to the InterfaceManagement page successfully.
+2015-12-03 17:27:40,565 [INFO] CommonFunc toAlarmManagement(52) To the AlarmManagement page...
+2015-12-03 17:27:40,565 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "xpath", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "//span[@class='ebBreadcrumbs-arrow']"}
+2015-12-03 17:27:41,045 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:41,045 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-2/click {"sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.11771023832261562-2"}
+2015-12-03 17:27:41,743 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:41,743 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "xpath", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "//div[@class='ebBreadcrumbs-list']/ul/li[4]/a"}
+2015-12-03 17:27:42,171 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:42,171 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-3/click {"sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.11771023832261562-3"}
+2015-12-03 17:27:43,046 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:43,046 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "xpath", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "//div[@id='i_ack_status']/div/button"}
+2015-12-03 17:27:43,315 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:43,815 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "xpath", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "//div[@id='i_ack_status']/div/button"}
+2015-12-03 17:27:44,292 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:44,293 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-4/click {"sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.11771023832261562-4"}
+2015-12-03 17:27:45,088 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:45,088 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "xpath", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "//div[@id='i_ack_status']/div/div/div[2]/label/input"}
+2015-12-03 17:27:45,642 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:45,642 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-5/selected {"sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.11771023832261562-5"}
+2015-12-03 17:27:45,907 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:45,907 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-5/click {"sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.11771023832261562-5"}
+2015-12-03 17:27:46,444 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:46,444 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-4/click {"sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.11771023832261562-4"}
+2015-12-03 17:27:47,071 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:47,071 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "id", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "idBtn-search"}
+2015-12-03 17:27:47,506 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:47,506 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-6/click {"sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.11771023832261562-6"}
+2015-12-03 17:27:48,289 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:48,290 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "xpath", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "//div[@class='table']/div/div/table/tbody"}
+2015-12-03 17:27:48,743 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:49,243 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "xpath", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "//div[@class='table']/div/div/table/tbody"}
+2015-12-03 17:27:49,611 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:49,611 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "xpath", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "//div[@class='table']/div/div/table/tbody"}
+2015-12-03 17:27:50,174 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:50,174 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-7/elements {"using": "xpath", "sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.11771023832261562-7", "value": ".//tr"}
+2015-12-03 17:27:50,502 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:50,502 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-8/elements {"using": "xpath", "sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.11771023832261562-8", "value": ".//td"}
+2015-12-03 17:27:50,923 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:50,923 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-24/attribute/innerHTML {"sessionId": "deb94125380a9d7f08c78c11435798c4", "name": "innerHTML", "id": "0.11771023832261562-24"}
+2015-12-03 17:27:51,109 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:51,109 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-19/attribute/innerHTML {"sessionId": "deb94125380a9d7f08c78c11435798c4", "name": "innerHTML", "id": "0.11771023832261562-19"}
+2015-12-03 17:27:51,266 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:51,266 [INFO] CommonFunc findLineOfCertainStatus(94) ID: 111 not acked
+2015-12-03 17:27:51,266 [INFO] CommonFunc clickTheCheckboxOftheTR(103) Check the CheckBox...
+2015-12-03 17:27:51,266 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-8/element {"using": "xpath", "sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.11771023832261562-8", "value": ".//td[1]/div/input"}
+2015-12-03 17:27:51,798 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:51,798 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-38/selected {"sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.11771023832261562-38"}
+2015-12-03 17:27:51,969 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:51,969 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-8/element {"using": "xpath", "sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.11771023832261562-8", "value": ".//td[1]/div/input"}
+2015-12-03 17:27:52,437 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:52,437 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-38/click {"sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.11771023832261562-38"}
+2015-12-03 17:27:53,224 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:53,224 [INFO] CommonFunc findBtnReturnComfirmBtn(118) Click ACK button
+2015-12-03 17:27:53,226 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "id", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "idBtn-ack"}
+2015-12-03 17:27:53,789 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:53,805 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-39/click {"sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.11771023832261562-39"}
+2015-12-03 17:27:54,536 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:54,536 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element {"using": "xpath", "sessionId": "deb94125380a9d7f08c78c11435798c4", "value": "//div[@class='ebDialogBox-actionBlock']/button[1]"}
+2015-12-03 17:27:54,983 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:27:54,983 [INFO] CommonFunc findBtnReturnComfirmBtn(123) Found the confirm button and will click next.
+2015-12-03 17:27:54,983 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-40/click {"sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.11771023832261562-40"}
+2015-12-03 17:27:55,640 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:28:00,667 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-8/elements {"using": "xpath", "sessionId": "deb94125380a9d7f08c78c11435798c4", "id": "0.11771023832261562-8", "value": ".//td"}
+2015-12-03 17:28:01,119 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:28:01,119 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-24/attribute/innerHTML {"sessionId": "deb94125380a9d7f08c78c11435798c4", "name": "innerHTML", "id": "0.11771023832261562-24"}
+2015-12-03 17:28:01,354 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:28:01,354 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-19/attribute/innerHTML {"sessionId": "deb94125380a9d7f08c78c11435798c4", "name": "innerHTML", "id": "0.11771023832261562-19"}
+2015-12-03 17:28:01,542 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:28:01,542 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/element/0.11771023832261562-30/attribute/innerHTML {"sessionId": "deb94125380a9d7f08c78c11435798c4", "name": "innerHTML", "id": "0.11771023832261562-30"}
+2015-12-03 17:28:01,681 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:28:01,681 [INFO] CommonFunc checkAcked(150) Success: ACK the alarm successfully, ID: 111, ACK time: 2015-12-03 17:27:53.5
+2015-12-03 17:28:01,681 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/execute {"sessionId": "deb94125380a9d7f08c78c11435798c4", "args": [{"ELEMENT": "0.11771023832261562-30"}], "script": "arguments[0].scrollIntoView(true);"}
+2015-12-03 17:28:01,776 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:28:01,776 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/screenshot {"sessionId": "deb94125380a9d7f08c78c11435798c4"}
+2015-12-03 17:28:02,130 [DEBUG] remote_connection _request(458) Finished Request
