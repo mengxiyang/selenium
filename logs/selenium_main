@@ -2462,3 +2462,490 @@
 2015-12-03 17:28:01,776 [DEBUG] remote_connection _request(458) Finished Request
 2015-12-03 17:28:01,776 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24768/session/deb94125380a9d7f08c78c11435798c4/screenshot {"sessionId": "deb94125380a9d7f08c78c11435798c4"}
 2015-12-03 17:28:02,130 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:06,355 [INFO] main <module>(30) ##########################################################################
+2015-12-03 17:30:06,355 [INFO] main <module>(31) ####                                                                  ####
+2015-12-03 17:30:06,355 [INFO] main <module>(32) ####                 Started, logger initialized.                     ####
+2015-12-03 17:30:06,355 [INFO] main <module>(33) ####                                                                  ####
+2015-12-03 17:30:06,355 [INFO] main <module>(34) ##########################################################################
+2015-12-03 17:30:06,634 [INFO] fm_ack alarm_ack(11) Start to perform alarm ack...
+2015-12-03 17:30:06,634 [INFO] CommonFunc loginToInterface(20) Will start web browser and perform test case.
+2015-12-03 17:30:06,634 [INFO] CommonFunc loginToInterface(22) Browser driver path: C:\Users\EJLNOQC\Desktop\chromedriver.exe
+2015-12-03 17:30:07,259 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session {"desiredCapabilities": {"platform": "ANY", "browserName": "chrome", "version": "", "javascriptEnabled": true, "chromeOptions": {"binary": "C:\\installed\\chrome\\chrome.exe", "args": [], "extensions": []}}}
+2015-12-03 17:30:08,038 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:08,039 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/window/current/maximize {"windowHandle": "current", "sessionId": "cce4c5485b8cea9771eb431754a27ad5"}
+2015-12-03 17:30:09,424 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:09,426 [INFO] CommonFunc loginToInterface(36) Web page: http://10.184.73.75:8686/XOAM/login/index.html
+2015-12-03 17:30:09,426 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/url {"url": "http://10.184.73.75:8686/XOAM/login/index.html", "sessionId": "cce4c5485b8cea9771eb431754a27ad5"}
+2015-12-03 17:30:10,581 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:10,581 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "id", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "loginUsername"}
+2015-12-03 17:30:11,036 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:11,036 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.9280920505989343-1/clear {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.9280920505989343-1"}
+2015-12-03 17:30:11,525 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:11,526 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "id", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "loginUsername"}
+2015-12-03 17:30:11,918 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:11,918 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.9280920505989343-1/value {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.9280920505989343-1", "value": ["a", "d", "m", "i", "n"]}
+2015-12-03 17:30:12,950 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:12,950 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "id", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "loginPassword"}
+2015-12-03 17:30:13,476 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:13,476 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.9280920505989343-2/clear {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.9280920505989343-2"}
+2015-12-03 17:30:13,743 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:13,743 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "id", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "loginPassword"}
+2015-12-03 17:30:14,068 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:14,069 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.9280920505989343-2/value {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.9280920505989343-2", "value": ["A", "d", "m", "i", "n", "!", "@", "#", "1", "2", "3"]}
+2015-12-03 17:30:15,309 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:15,309 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "id", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "submit"}
+2015-12-03 17:30:15,747 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:15,747 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.9280920505989343-3/click {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.9280920505989343-3"}
+2015-12-03 17:30:17,069 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:17,069 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "id", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "ebBtnSearch"}
+2015-12-03 17:30:17,454 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:17,956 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "id", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "ebBtnSearch"}
+2015-12-03 17:30:18,509 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:18,980 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "id", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "ebBtnSearch"}
+2015-12-03 17:30:19,404 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:19,404 [INFO] CommonFunc loginToInterface(45) Login to the InterfaceManagement page successfully.
+2015-12-03 17:30:19,404 [INFO] CommonFunc toAlarmManagement(52) To the AlarmManagement page...
+2015-12-03 17:30:19,405 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "xpath", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "//span[@class='ebBreadcrumbs-arrow']"}
+2015-12-03 17:30:19,831 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:19,831 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-2/click {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.4914473162498325-2"}
+2015-12-03 17:30:20,569 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:20,569 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "xpath", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "//div[@class='ebBreadcrumbs-list']/ul/li[4]/a"}
+2015-12-03 17:30:20,977 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:20,977 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-3/click {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.4914473162498325-3"}
+2015-12-03 17:30:21,625 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:21,625 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "xpath", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "//div[@id='i_ack_status']/div/button"}
+2015-12-03 17:30:21,924 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:22,424 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "xpath", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "//div[@id='i_ack_status']/div/button"}
+2015-12-03 17:30:22,888 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:22,890 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-4/click {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.4914473162498325-4"}
+2015-12-03 17:30:23,776 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:23,776 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "xpath", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "//div[@id='i_ack_status']/div/div/div[2]/label/input"}
+2015-12-03 17:30:24,237 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:24,237 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-5/selected {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.4914473162498325-5"}
+2015-12-03 17:30:24,471 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:24,471 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-5/click {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.4914473162498325-5"}
+2015-12-03 17:30:25,230 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:25,230 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-4/click {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.4914473162498325-4"}
+2015-12-03 17:30:25,460 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:25,460 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "id", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "idBtn-search"}
+2015-12-03 17:30:25,484 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:25,484 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-6/click {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.4914473162498325-6"}
+2015-12-03 17:30:25,568 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:25,568 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "xpath", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "//div[@class='table']/div/div/table/tbody"}
+2015-12-03 17:30:25,596 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:26,111 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "xpath", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "//div[@class='table']/div/div/table/tbody"}
+2015-12-03 17:30:26,201 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:26,201 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "xpath", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "//div[@class='table']/div/div/table/tbody"}
+2015-12-03 17:30:26,233 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:26,233 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-7/elements {"using": "xpath", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.4914473162498325-7", "value": ".//tr"}
+2015-12-03 17:30:26,279 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:26,279 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-8/elements {"using": "xpath", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.4914473162498325-8", "value": ".//td"}
+2015-12-03 17:30:26,299 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:26,301 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-24/attribute/innerHTML {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "name": "innerHTML", "id": "0.4914473162498325-24"}
+2015-12-03 17:30:26,318 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:26,318 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-19/attribute/innerHTML {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "name": "innerHTML", "id": "0.4914473162498325-19"}
+2015-12-03 17:30:26,332 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:26,332 [INFO] CommonFunc findLineOfCertainStatus(94) ID: 112 not acked
+2015-12-03 17:30:26,332 [INFO] CommonFunc clickTheCheckboxOftheTR(103) Check the CheckBox...
+2015-12-03 17:30:26,334 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-8/element {"using": "xpath", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.4914473162498325-8", "value": ".//td[1]/div/input"}
+2015-12-03 17:30:26,352 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:26,352 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-38/selected {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.4914473162498325-38"}
+2015-12-03 17:30:26,368 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:26,368 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-8/element {"using": "xpath", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.4914473162498325-8", "value": ".//td[1]/div/input"}
+2015-12-03 17:30:26,380 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:26,381 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-38/click {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.4914473162498325-38"}
+2015-12-03 17:30:26,447 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:26,447 [INFO] CommonFunc findBtnReturnComfirmBtn(118) Click ACK button
+2015-12-03 17:30:26,447 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "id", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "idBtn-ack"}
+2015-12-03 17:30:26,467 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:26,469 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-39/click {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.4914473162498325-39"}
+2015-12-03 17:30:26,525 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:26,526 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element {"using": "xpath", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "value": "//div[@class='ebDialogBox-actionBlock']/button[1]"}
+2015-12-03 17:30:26,561 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:26,561 [INFO] CommonFunc findBtnReturnComfirmBtn(123) Found the confirm button and will click next.
+2015-12-03 17:30:26,562 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-40/click {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.4914473162498325-40"}
+2015-12-03 17:30:26,612 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:31,650 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-8/elements {"using": "xpath", "sessionId": "cce4c5485b8cea9771eb431754a27ad5", "id": "0.4914473162498325-8", "value": ".//td"}
+2015-12-03 17:30:31,650 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:31,650 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-24/attribute/innerHTML {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "name": "innerHTML", "id": "0.4914473162498325-24"}
+2015-12-03 17:30:31,665 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:31,665 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-19/attribute/innerHTML {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "name": "innerHTML", "id": "0.4914473162498325-19"}
+2015-12-03 17:30:31,665 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:31,665 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/element/0.4914473162498325-30/attribute/innerHTML {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "name": "innerHTML", "id": "0.4914473162498325-30"}
+2015-12-03 17:30:31,681 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:31,681 [INFO] CommonFunc checkAcked(150) Success: ACK the alarm successfully, ID: 112, ACK time: 2015-12-03 17:30:24.2
+2015-12-03 17:30:31,681 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/execute {"sessionId": "cce4c5485b8cea9771eb431754a27ad5", "args": [{"ELEMENT": "0.4914473162498325-30"}], "script": "arguments[0].scrollIntoView(true);"}
+2015-12-03 17:30:31,683 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:31,683 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/screenshot {"sessionId": "cce4c5485b8cea9771eb431754a27ad5"}
+2015-12-03 17:30:32,094 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:30:32,094 [DEBUG] remote_connection _request(363) DELETE http://127.0.0.1:24887/session/cce4c5485b8cea9771eb431754a27ad5/window {"sessionId": "cce4c5485b8cea9771eb431754a27ad5"}
+2015-12-03 17:30:33,638 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:35:56,059 [INFO] main <module>(30) ##########################################################################
+2015-12-03 17:35:56,059 [INFO] main <module>(31) ####                                                                  ####
+2015-12-03 17:35:56,059 [INFO] main <module>(32) ####                 Started, logger initialized.                     ####
+2015-12-03 17:35:56,059 [INFO] main <module>(33) ####                                                                  ####
+2015-12-03 17:35:56,059 [INFO] main <module>(34) ##########################################################################
+2015-12-03 17:35:56,371 [INFO] fm_ack alarm_ack(11) Start to perform alarm ack...
+2015-12-03 17:35:56,371 [INFO] CommonFunc loginToInterface(20) Will start web browser and perform test case.
+2015-12-03 17:35:56,371 [INFO] CommonFunc loginToInterface(22) Browser driver path: C:\Users\EJLNOQC\Desktop\chromedriver.exe
+2015-12-03 17:35:56,996 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session {"desiredCapabilities": {"platform": "ANY", "browserName": "chrome", "version": "", "javascriptEnabled": true, "chromeOptions": {"binary": "C:\\installed\\chrome\\chrome.exe", "args": [], "extensions": []}}}
+2015-12-03 17:35:57,755 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:35:57,755 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/window/current/maximize {"windowHandle": "current", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a"}
+2015-12-03 17:35:59,181 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:35:59,181 [INFO] CommonFunc loginToInterface(36) Web page: http://10.184.73.75:8686/XOAM/login/index.html
+2015-12-03 17:35:59,183 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/url {"url": "http://10.184.73.75:8686/XOAM/login/index.html", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a"}
+2015-12-03 17:36:00,357 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:00,358 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "id", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "loginUsername"}
+2015-12-03 17:36:00,535 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:00,536 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.504185967380181-1/clear {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.504185967380181-1"}
+2015-12-03 17:36:00,960 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:00,960 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "id", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "loginUsername"}
+2015-12-03 17:36:01,381 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:01,381 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.504185967380181-1/value {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.504185967380181-1", "value": ["a", "d", "m", "i", "n"]}
+2015-12-03 17:36:02,334 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:02,334 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "id", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "loginPassword"}
+2015-12-03 17:36:02,763 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:02,763 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.504185967380181-2/clear {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.504185967380181-2"}
+2015-12-03 17:36:03,078 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:03,078 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "id", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "loginPassword"}
+2015-12-03 17:36:03,424 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:03,424 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.504185967380181-2/value {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.504185967380181-2", "value": ["A", "d", "m", "i", "n", "!", "@", "#", "1", "2", "3"]}
+2015-12-03 17:36:04,746 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:04,746 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "id", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "submit"}
+2015-12-03 17:36:05,086 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:05,086 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.504185967380181-3/click {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.504185967380181-3"}
+2015-12-03 17:36:06,273 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:06,275 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "id", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "ebBtnSearch"}
+2015-12-03 17:36:06,323 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:06,868 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "id", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "ebBtnSearch"}
+2015-12-03 17:36:06,885 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:07,372 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "id", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "ebBtnSearch"}
+2015-12-03 17:36:07,387 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:07,387 [INFO] CommonFunc loginToInterface(45) Login to the InterfaceManagement page successfully.
+2015-12-03 17:36:07,388 [INFO] CommonFunc toAlarmManagement(52) To the AlarmManagement page...
+2015-12-03 17:36:07,388 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "xpath", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "//span[@class='ebBreadcrumbs-arrow']"}
+2015-12-03 17:36:07,414 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:07,414 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-2/click {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.9936361652798951-2"}
+2015-12-03 17:36:07,471 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:07,471 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "xpath", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "//div[@class='ebBreadcrumbs-list']/ul/li[4]/a"}
+2015-12-03 17:36:07,509 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:07,510 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-3/click {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.9936361652798951-3"}
+2015-12-03 17:36:07,598 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:07,599 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "xpath", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "//div[@id='i_ack_status']/div/button"}
+2015-12-03 17:36:07,630 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:08,130 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "xpath", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "//div[@id='i_ack_status']/div/button"}
+2015-12-03 17:36:08,174 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:08,174 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-4/click {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.9936361652798951-4"}
+2015-12-03 17:36:08,224 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:08,224 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "xpath", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "//div[@id='i_ack_status']/div/div/div[2]/label/input"}
+2015-12-03 17:36:08,250 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:08,250 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-5/selected {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.9936361652798951-5"}
+2015-12-03 17:36:08,266 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:08,267 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-5/click {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.9936361652798951-5"}
+2015-12-03 17:36:08,319 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:08,319 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-4/click {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.9936361652798951-4"}
+2015-12-03 17:36:08,355 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:08,355 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "id", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "idBtn-search"}
+2015-12-03 17:36:08,382 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:08,382 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-6/click {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.9936361652798951-6"}
+2015-12-03 17:36:08,457 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:08,457 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "xpath", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "//div[@class='table']/div/div/table/tbody"}
+2015-12-03 17:36:08,483 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:08,983 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "xpath", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "//div[@class='table']/div/div/table/tbody"}
+2015-12-03 17:36:09,098 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:09,099 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "xpath", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "//div[@class='table']/div/div/table/tbody"}
+2015-12-03 17:36:09,111 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:09,111 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-7/elements {"using": "xpath", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.9936361652798951-7", "value": ".//tr"}
+2015-12-03 17:36:09,148 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:09,148 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-8/elements {"using": "xpath", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.9936361652798951-8", "value": ".//td"}
+2015-12-03 17:36:09,168 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:09,170 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-24/attribute/innerHTML {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "name": "innerHTML", "id": "0.9936361652798951-24"}
+2015-12-03 17:36:09,210 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:09,210 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-19/attribute/innerHTML {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "name": "innerHTML", "id": "0.9936361652798951-19"}
+2015-12-03 17:36:09,226 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:09,227 [INFO] CommonFunc findLineOfCertainStatus(94) ID: 113 not acked
+2015-12-03 17:36:09,227 [INFO] CommonFunc clickTheCheckboxOftheTR(103) Check the CheckBox...
+2015-12-03 17:36:09,227 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-8/element {"using": "xpath", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.9936361652798951-8", "value": ".//td[1]/div/input"}
+2015-12-03 17:36:09,247 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:09,247 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-38/selected {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.9936361652798951-38"}
+2015-12-03 17:36:09,263 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:09,263 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-8/element {"using": "xpath", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.9936361652798951-8", "value": ".//td[1]/div/input"}
+2015-12-03 17:36:09,275 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:09,276 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-38/click {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.9936361652798951-38"}
+2015-12-03 17:36:09,322 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:09,322 [INFO] CommonFunc findBtnReturnComfirmBtn(118) Click ACK button
+2015-12-03 17:36:09,323 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "id", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "idBtn-ack"}
+2015-12-03 17:36:09,348 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:09,349 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-39/click {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.9936361652798951-39"}
+2015-12-03 17:36:09,414 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:09,414 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element {"using": "xpath", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "value": "//div[@class='ebDialogBox-actionBlock']/button[1]"}
+2015-12-03 17:36:09,447 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:09,447 [INFO] CommonFunc findBtnReturnComfirmBtn(123) Found the confirm button and will click next.
+2015-12-03 17:36:09,447 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-40/click {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.9936361652798951-40"}
+2015-12-03 17:36:09,496 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:14,532 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-8/elements {"using": "xpath", "sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "id": "0.9936361652798951-8", "value": ".//td"}
+2015-12-03 17:36:14,532 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:14,532 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-24/attribute/innerHTML {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "name": "innerHTML", "id": "0.9936361652798951-24"}
+2015-12-03 17:36:14,548 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:14,548 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-19/attribute/innerHTML {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "name": "innerHTML", "id": "0.9936361652798951-19"}
+2015-12-03 17:36:14,548 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:14,548 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/element/0.9936361652798951-30/attribute/innerHTML {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "name": "innerHTML", "id": "0.9936361652798951-30"}
+2015-12-03 17:36:14,563 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:14,563 [INFO] CommonFunc checkAcked(150) Success: ACK the alarm successfully, ID: 113, ACK time: 2015-12-03 17:36:06.8
+2015-12-03 17:36:14,563 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/execute {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a", "args": [{"ELEMENT": "0.9936361652798951-30"}], "script": "arguments[0].scrollIntoView(true);"}
+2015-12-03 17:36:14,565 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:14,565 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/screenshot {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a"}
+2015-12-03 17:36:15,049 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:36:15,049 [DEBUG] remote_connection _request(363) DELETE http://127.0.0.1:25060/session/027de450eec72fd3dae7eb55aeec3e7a/window {"sessionId": "027de450eec72fd3dae7eb55aeec3e7a"}
+2015-12-03 17:36:16,562 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:39,880 [INFO] main <module>(31) ##########################################################################
+2015-12-03 17:48:39,880 [INFO] main <module>(32) ####                                                                  ####
+2015-12-03 17:48:39,880 [INFO] main <module>(33) ####                 Started, logger initialized.                     ####
+2015-12-03 17:48:39,880 [INFO] main <module>(34) ####                                                                  ####
+2015-12-03 17:48:39,880 [INFO] main <module>(35) ##########################################################################
+2015-12-03 17:48:40,161 [INFO] fm_ack alarm_ack(11) Start to perform alarm ack...
+2015-12-03 17:48:40,161 [INFO] CommonFunc loginToInterface(20) Will start web browser and perform test case.
+2015-12-03 17:48:40,161 [INFO] CommonFunc loginToInterface(22) Browser driver path: C:\Users\EJLNOQC\Desktop\chromedriver.exe
+2015-12-03 17:48:40,769 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session {"desiredCapabilities": {"platform": "ANY", "browserName": "chrome", "version": "", "javascriptEnabled": true, "chromeOptions": {"binary": "C:\\installed\\chrome\\chrome.exe", "args": [], "extensions": []}}}
+2015-12-03 17:48:41,486 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:41,486 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/window/current/maximize {"windowHandle": "current", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e"}
+2015-12-03 17:48:42,997 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:42,997 [INFO] CommonFunc loginToInterface(36) Web page: http://10.184.73.75:8686/XOAM/login/index.html
+2015-12-03 17:48:42,997 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/url {"url": "http://10.184.73.75:8686/XOAM/login/index.html", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e"}
+2015-12-03 17:48:44,022 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:44,023 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "id", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "loginUsername"}
+2015-12-03 17:48:44,351 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:44,352 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.949464343721047-1/clear {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.949464343721047-1"}
+2015-12-03 17:48:44,693 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:44,693 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "id", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "loginUsername"}
+2015-12-03 17:48:45,005 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:45,005 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.949464343721047-1/value {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.949464343721047-1", "value": ["a", "d", "m", "i", "n"]}
+2015-12-03 17:48:45,997 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:45,999 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "id", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "loginPassword"}
+2015-12-03 17:48:46,193 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:46,193 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.949464343721047-2/clear {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.949464343721047-2"}
+2015-12-03 17:48:46,680 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:46,680 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "id", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "loginPassword"}
+2015-12-03 17:48:46,980 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:46,980 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.949464343721047-2/value {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.949464343721047-2", "value": ["A", "d", "m", "i", "n", "!", "@", "#", "1", "2", "3"]}
+2015-12-03 17:48:48,194 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:48,194 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "id", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "submit"}
+2015-12-03 17:48:48,665 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:48,665 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.949464343721047-3/click {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.949464343721047-3"}
+2015-12-03 17:48:49,657 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:49,657 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "id", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "ebBtnSearch"}
+2015-12-03 17:48:50,253 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:50,724 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "id", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "ebBtnSearch"}
+2015-12-03 17:48:51,217 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:51,217 [INFO] CommonFunc loginToInterface(45) Login to the InterfaceManagement page successfully.
+2015-12-03 17:48:51,217 [INFO] CommonFunc toAlarmManagement(52) To the AlarmManagement page...
+2015-12-03 17:48:51,217 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "xpath", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "//span[@class='ebBreadcrumbs-arrow']"}
+2015-12-03 17:48:51,631 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:51,632 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-2/click {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.5006743273697793-2"}
+2015-12-03 17:48:52,266 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:52,266 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "xpath", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "//div[@class='ebBreadcrumbs-list']/ul/li[4]/a"}
+2015-12-03 17:48:52,792 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:52,792 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-3/click {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.5006743273697793-3"}
+2015-12-03 17:48:53,605 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:53,605 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "xpath", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "//div[@id='i_ack_status']/div/button"}
+2015-12-03 17:48:54,049 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:54,549 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "xpath", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "//div[@id='i_ack_status']/div/button"}
+2015-12-03 17:48:54,944 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:54,944 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-4/click {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.5006743273697793-4"}
+2015-12-03 17:48:55,799 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:55,799 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "xpath", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "//div[@id='i_ack_status']/div/div/div[2]/label/input"}
+2015-12-03 17:48:56,180 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:56,196 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-5/selected {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.5006743273697793-5"}
+2015-12-03 17:48:56,414 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:56,414 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-5/click {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.5006743273697793-5"}
+2015-12-03 17:48:57,042 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:57,042 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-4/click {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.5006743273697793-4"}
+2015-12-03 17:48:57,744 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:57,746 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "id", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "idBtn-search"}
+2015-12-03 17:48:58,153 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:58,154 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-6/click {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.5006743273697793-6"}
+2015-12-03 17:48:58,947 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:58,947 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "xpath", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "//div[@class='table']/div/div/table/tbody"}
+2015-12-03 17:48:59,375 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:48:59,884 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "xpath", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "//div[@class='table']/div/div/table/tbody"}
+2015-12-03 17:49:00,289 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:00,289 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "xpath", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "//div[@class='table']/div/div/table/tbody"}
+2015-12-03 17:49:00,555 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:00,555 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-7/elements {"using": "xpath", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.5006743273697793-7", "value": ".//tr"}
+2015-12-03 17:49:00,976 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:00,976 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-8/elements {"using": "xpath", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.5006743273697793-8", "value": ".//td"}
+2015-12-03 17:49:01,335 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:01,335 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-24/attribute/innerHTML {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "name": "innerHTML", "id": "0.5006743273697793-24"}
+2015-12-03 17:49:01,474 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:01,474 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-19/attribute/innerHTML {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "name": "innerHTML", "id": "0.5006743273697793-19"}
+2015-12-03 17:49:01,709 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:01,709 [INFO] CommonFunc findLineOfCertainStatus(94) ID: 114 not acked
+2015-12-03 17:49:01,709 [INFO] CommonFunc clickTheCheckboxOftheTR(103) Check the CheckBox...
+2015-12-03 17:49:01,709 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-8/element {"using": "xpath", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.5006743273697793-8", "value": ".//td[1]/div/input"}
+2015-12-03 17:49:01,944 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:01,944 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-38/selected {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.5006743273697793-38"}
+2015-12-03 17:49:02,115 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:02,115 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-8/element {"using": "xpath", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.5006743273697793-8", "value": ".//td[1]/div/input"}
+2015-12-03 17:49:02,490 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:02,490 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-38/click {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.5006743273697793-38"}
+2015-12-03 17:49:03,135 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:03,135 [INFO] CommonFunc findBtnReturnComfirmBtn(118) Click ACK button
+2015-12-03 17:49:03,135 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "id", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "idBtn-ack"}
+2015-12-03 17:49:03,566 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:03,568 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-39/click {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.5006743273697793-39"}
+2015-12-03 17:49:04,349 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:04,349 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element {"using": "xpath", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "value": "//div[@class='ebDialogBox-actionBlock']/button[1]"}
+2015-12-03 17:49:04,793 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:04,793 [INFO] CommonFunc findBtnReturnComfirmBtn(123) Found the confirm button and will click next.
+2015-12-03 17:49:04,793 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-40/click {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.5006743273697793-40"}
+2015-12-03 17:49:05,138 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:10,164 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-8/elements {"using": "xpath", "sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "id": "0.5006743273697793-8", "value": ".//td"}
+2015-12-03 17:49:10,164 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:10,164 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-24/attribute/innerHTML {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "name": "innerHTML", "id": "0.5006743273697793-24"}
+2015-12-03 17:49:10,178 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:10,178 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-19/attribute/innerHTML {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "name": "innerHTML", "id": "0.5006743273697793-19"}
+2015-12-03 17:49:10,178 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:10,178 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/element/0.5006743273697793-30/attribute/innerHTML {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "name": "innerHTML", "id": "0.5006743273697793-30"}
+2015-12-03 17:49:10,194 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:10,194 [INFO] CommonFunc checkAcked(150) Success: ACK the alarm successfully, ID: 114, ACK time: 2015-12-03 17:49:02.5
+2015-12-03 17:49:10,194 [DEBUG] remote_connection _request(363) POST http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/execute {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e", "args": [{"ELEMENT": "0.5006743273697793-30"}], "script": "arguments[0].scrollIntoView(true);"}
+2015-12-03 17:49:10,196 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:10,196 [DEBUG] remote_connection _request(363) GET http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/screenshot {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e"}
+2015-12-03 17:49:10,625 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:49:10,625 [DEBUG] remote_connection _request(363) DELETE http://127.0.0.1:25343/session/ba490a9cdb90ee83cc0c46c7dae87d9e/window {"sessionId": "ba490a9cdb90ee83cc0c46c7dae87d9e"}
+2015-12-03 17:49:12,154 [DEBUG] remote_connection _request(458) Finished Request
+2015-12-03 17:53:57,226 [INFO] main <module>(31) ##########################################################################
+2015-12-03 17:53:57,226 [INFO] main <module>(32) ####                                                                  ####
+2015-12-03 17:53:57,226 [INFO] main <module>(33) ####                 Started, logger initialized.                     ####
+2015-12-03 17:53:57,226 [INFO] main <module>(34) ####                                                                  ####
+2015-12-03 17:53:57,226 [INFO] main <module>(35) ##########################################################################
+2015-12-03 17:53:57,506 [INFO] fm_ack alarm_ack(11) Start to perform alarm ack...
+2015-12-03 17:53:57,506 [INFO] CommonFunc loginToInterface(20) Will start web browser and perform test case.
+2015-12-03 17:53:57,506 [INFO] CommonFunc loginToInterface(22) Browser driver path: C:\Users\EJLNOQC\Desktop\chromedriver.exe
+2015-12-03 17:54:00,197 [INFO] CommonFunc loginToInterface(36) Web page: http://10.184.73.75:8686/XOAM/login/index.html
+2015-12-03 17:54:09,706 [INFO] CommonFunc loginToInterface(45) Login to the InterfaceManagement page successfully.
+2015-12-03 17:54:09,707 [INFO] CommonFunc toAlarmManagement(52) To the AlarmManagement page...
+2015-12-03 17:54:20,483 [INFO] CommonFunc findLineOfCertainStatus(94) ID: 115 not acked
+2015-12-03 17:54:20,483 [INFO] CommonFunc clickTheCheckboxOftheTR(103) Check the CheckBox...
+2015-12-03 17:54:22,082 [INFO] CommonFunc findBtnReturnComfirmBtn(118) Click ACK button
+2015-12-03 17:54:23,756 [INFO] CommonFunc findBtnReturnComfirmBtn(123) Found the confirm button and will click next.
+2015-12-03 17:54:30,698 [INFO] CommonFunc checkAcked(150) Success: ACK the alarm successfully, ID: 115, ACK time: 2015-12-03 17:54:21.9
+2015-12-04 09:11:32,575 [INFO] main <module>(31) ##########################################################################
+2015-12-04 09:11:32,575 [INFO] main <module>(32) ####                                                                  ####
+2015-12-04 09:11:32,575 [INFO] main <module>(33) ####                 Started, logger initialized.                     ####
+2015-12-04 09:11:32,575 [INFO] main <module>(34) ####                                                                  ####
+2015-12-04 09:11:32,575 [INFO] main <module>(35) ##########################################################################
+2015-12-04 09:11:32,887 [INFO] fm_ack alarm_ack(11) Start to perform alarm ack...
+2015-12-04 09:11:32,887 [INFO] CommonFunc loginToInterface(20) Will start web browser and perform test case.
+2015-12-04 09:11:32,887 [INFO] CommonFunc loginToInterface(22) Browser driver path: C:\Users\EJLNOQC\Desktop\chromedriver.exe
+2015-12-04 09:11:35,944 [INFO] CommonFunc loginToInterface(36) Web page: http://10.184.73.75:8686/XOAM/login/index.html
+2015-12-04 09:11:44,999 [INFO] CommonFunc loginToInterface(45) Login to the InterfaceManagement page successfully.
+2015-12-04 09:11:44,999 [INFO] CommonFunc toAlarmManagement(52) To the AlarmManagement page...
+2015-12-04 09:11:55,420 [INFO] CommonFunc findLineOfCertainStatus(94) ID: 116 not acked
+2015-12-04 09:11:55,420 [INFO] CommonFunc clickTheCheckboxOftheTR(103) Check the CheckBox...
+2015-12-04 09:11:57,140 [INFO] CommonFunc findBtnReturnComfirmBtn(118) Click ACK button
+2015-12-04 09:11:58,730 [INFO] CommonFunc findBtnReturnComfirmBtn(123) Found the confirm button and will click next.
+2015-12-04 09:12:05,490 [INFO] CommonFunc checkAcked(150) Success: ACK the alarm successfully, ID: 116, ACK time: 2015-12-04 09:11:55.2
+2015-12-04 09:42:27,881 [INFO] main <module>(31) ##########################################################################
+2015-12-04 09:42:27,881 [INFO] main <module>(32) ####                                                                  ####
+2015-12-04 09:42:27,881 [INFO] main <module>(33) ####                 Started, logger initialized.                     ####
+2015-12-04 09:42:27,881 [INFO] main <module>(34) ####                                                                  ####
+2015-12-04 09:42:27,881 [INFO] main <module>(35) ##########################################################################
+2015-12-04 09:42:28,178 [INFO] fm_ack alarm_ack(11) Start to perform alarm ack...
+2015-12-04 09:42:28,178 [INFO] CommonFunc loginToInterface(20) Will start web browser and perform test case.
+2015-12-04 09:42:28,178 [INFO] CommonFunc loginToInterface(22) Browser driver path: C:\Users\EJLNOQC\Desktop\chromedriver.exe
+2015-12-04 09:42:31,178 [INFO] CommonFunc loginToInterface(36) Web page: http://10.184.73.75:8686/XOAM/login/index.html
+2015-12-04 09:42:38,634 [INFO] CommonFunc loginToInterface(45) Login to the InterfaceManagement page successfully.
+2015-12-04 09:42:38,634 [INFO] CommonFunc toAlarmManagement(52) To the AlarmManagement page...
+2015-12-04 09:42:48,713 [INFO] CommonFunc findLineOfCertainStatus(94) ID: 78 not acked
+2015-12-04 09:42:48,713 [INFO] CommonFunc clickTheCheckboxOftheTR(103) Check the CheckBox...
+2015-12-04 09:42:50,447 [INFO] CommonFunc findBtnReturnComfirmBtn(118) Click ACK button
+2015-12-04 09:42:52,193 [INFO] CommonFunc findBtnReturnComfirmBtn(123) Found the confirm button and will click next.
+2015-12-04 09:42:58,881 [INFO] CommonFunc checkAcked(150) Success: ACK the alarm successfully, ID: 78, ACK time: 2015-12-04 09:42:48.4
+2015-12-04 10:18:40,456 [INFO] main <module>(31) ##########################################################################
+2015-12-04 10:18:40,456 [INFO] main <module>(32) ####                                                                  ####
+2015-12-04 10:18:40,456 [INFO] main <module>(33) ####                 Started, logger initialized.                     ####
+2015-12-04 10:18:40,456 [INFO] main <module>(34) ####                                                                  ####
+2015-12-04 10:18:40,456 [INFO] main <module>(35) ##########################################################################
+2015-12-04 10:18:40,674 [INFO] fm_ack alarm_ack(11) Start to perform alarm ack...
+2015-12-04 10:18:40,674 [INFO] CommonFunc loginToInterface(20) Will start web browser and perform test case.
+2015-12-04 10:18:40,674 [INFO] CommonFunc loginToInterface(22) Browser driver path: C:\Users\EJLNOQC\Desktop\chromedriver.exe
+2015-12-04 10:18:43,683 [INFO] CommonFunc loginToInterface(36) Web page: http://10.184.73.75:8686/XOAM/login/index.html
+2015-12-04 10:18:52,464 [INFO] CommonFunc loginToInterface(45) Login to the InterfaceManagement page successfully.
+2015-12-04 10:18:52,466 [INFO] CommonFunc toAlarmManagement(52) To the AlarmManagement page...
+2015-12-04 10:19:45,654 [INFO] main <module>(31) ##########################################################################
+2015-12-04 10:19:45,654 [INFO] main <module>(32) ####                                                                  ####
+2015-12-04 10:19:45,654 [INFO] main <module>(33) ####                 Started, logger initialized.                     ####
+2015-12-04 10:19:45,654 [INFO] main <module>(34) ####                                                                  ####
+2015-12-04 10:19:45,654 [INFO] main <module>(35) ##########################################################################
+2015-12-04 10:19:45,872 [INFO] fm_ack alarm_ack(11) Start to perform alarm ack...
+2015-12-04 10:19:45,872 [INFO] CommonFunc loginToInterface(20) Will start web browser and perform test case.
+2015-12-04 10:19:45,872 [INFO] CommonFunc loginToInterface(22) Browser driver path: C:\Users\EJLNOQC\Desktop\chromedriver.exe
+2015-12-04 10:19:48,394 [INFO] CommonFunc loginToInterface(36) Web page: http://10.184.73.75:8686/XOAM/login/index.html
+2015-12-04 10:19:57,144 [INFO] CommonFunc loginToInterface(45) Login to the InterfaceManagement page successfully.
+2015-12-04 10:19:57,144 [INFO] CommonFunc toAlarmManagement(52) To the AlarmManagement page...
+2015-12-04 10:21:09,345 [INFO] main <module>(31) ##########################################################################
+2015-12-04 10:21:09,345 [INFO] main <module>(32) ####                                                                  ####
+2015-12-04 10:21:09,345 [INFO] main <module>(33) ####                 Started, logger initialized.                     ####
+2015-12-04 10:21:09,345 [INFO] main <module>(34) ####                                                                  ####
+2015-12-04 10:21:09,345 [INFO] main <module>(35) ##########################################################################
+2015-12-04 10:21:09,563 [INFO] fm_ack alarm_ack(11) Start to perform alarm ack...
+2015-12-04 10:21:09,563 [INFO] CommonFunc loginToInterface(20) Will start web browser and perform test case.
+2015-12-04 10:21:09,563 [INFO] CommonFunc loginToInterface(22) Browser driver path: C:\Users\EJLNOQC\Desktop\chromedriver.exe
+2015-12-04 10:21:12,207 [INFO] CommonFunc loginToInterface(36) Web page: http://10.184.73.75:8686/XOAM/login/index.html
+2015-12-04 10:21:20,655 [INFO] CommonFunc loginToInterface(45) Login to the InterfaceManagement page successfully.
+2015-12-04 10:21:20,657 [INFO] CommonFunc toAlarmManagement(52) To the AlarmManagement page...
+2015-12-04 10:22:03,582 [INFO] main <module>(31) ##########################################################################
+2015-12-04 10:22:03,582 [INFO] main <module>(32) ####                                                                  ####
+2015-12-04 10:22:03,582 [INFO] main <module>(33) ####                 Started, logger initialized.                     ####
+2015-12-04 10:22:03,582 [INFO] main <module>(34) ####                                                                  ####
+2015-12-04 10:22:03,582 [INFO] main <module>(35) ##########################################################################
+2015-12-04 10:22:03,816 [INFO] fm_ack alarm_ack(11) Start to perform alarm ack...
+2015-12-04 10:22:03,816 [INFO] CommonFunc loginToInterface(20) Will start web browser and perform test case.
+2015-12-04 10:22:03,816 [INFO] CommonFunc loginToInterface(22) Browser driver path: C:\Users\EJLNOQC\Desktop\chromedriver.exe
+2015-12-04 10:22:06,368 [INFO] CommonFunc loginToInterface(36) Web page: http://10.184.73.75:8686/XOAM/login/index.html
+2015-12-04 10:22:13,529 [INFO] CommonFunc loginToInterface(45) Login to the InterfaceManagement page successfully.
+2015-12-04 10:22:13,529 [INFO] CommonFunc toAlarmManagement(52) To the AlarmManagement page...
+2015-12-04 10:22:26,476 [INFO] CommonFunc findLineOfCertainStatus(95) ID: 79 not acked
+2015-12-04 10:22:26,476 [INFO] CommonFunc clickTheCheckboxOftheTR(104) Check the CheckBox...
+2015-12-04 10:22:27,740 [INFO] CommonFunc findBtnReturnComfirmBtn(119) Click ACK button
+2015-12-04 10:22:27,835 [INFO] CommonFunc findBtnReturnComfirmBtn(124) Found the confirm button and will click next.
+2015-12-04 10:22:32,960 [INFO] CommonFunc checkAcked(151) Success: ACK the alarm successfully, ID: 79, ACK time: 2015-12-04 10:22:23.4
+2015-12-04 10:23:26,240 [INFO] main <module>(31) ##########################################################################
+2015-12-04 10:23:26,240 [INFO] main <module>(32) ####                                                                  ####
+2015-12-04 10:23:26,240 [INFO] main <module>(33) ####                 Started, logger initialized.                     ####
+2015-12-04 10:23:26,240 [INFO] main <module>(34) ####                                                                  ####
+2015-12-04 10:23:26,240 [INFO] main <module>(35) ##########################################################################
+2015-12-04 10:23:26,460 [INFO] fm_ack alarm_ack(11) Start to perform alarm ack...
+2015-12-04 10:23:26,460 [INFO] CommonFunc loginToInterface(20) Will start web browser and perform test case.
+2015-12-04 10:23:26,460 [INFO] CommonFunc loginToInterface(22) Browser driver path: C:\Users\EJLNOQC\Desktop\chromedriver.exe
+2015-12-04 10:23:29,040 [INFO] CommonFunc loginToInterface(36) Web page: http://10.184.73.75:8686/XOAM/login/index.html
+2015-12-04 10:23:37,484 [INFO] CommonFunc loginToInterface(45) Login to the InterfaceManagement page successfully.
+2015-12-04 10:23:37,484 [INFO] CommonFunc toAlarmManagement(52) To the AlarmManagement page...
+2015-12-04 10:24:39,469 [INFO] main <module>(31) ##########################################################################
+2015-12-04 10:24:39,469 [INFO] main <module>(32) ####                                                                  ####
+2015-12-04 10:24:39,469 [INFO] main <module>(33) ####                 Started, logger initialized.                     ####
+2015-12-04 10:24:39,469 [INFO] main <module>(34) ####                                                                  ####
+2015-12-04 10:24:39,469 [INFO] main <module>(35) ##########################################################################
+2015-12-04 10:24:39,687 [INFO] fm_ack alarm_ack(11) Start to perform alarm ack...
+2015-12-04 10:24:39,687 [INFO] CommonFunc loginToInterface(20) Will start web browser and perform test case.
+2015-12-04 10:24:39,687 [INFO] CommonFunc loginToInterface(22) Browser driver path: C:\Users\EJLNOQC\Desktop\chromedriver.exe
+2015-12-04 10:24:42,243 [INFO] CommonFunc loginToInterface(36) Web page: http://10.184.73.75:8686/XOAM/login/index.html
+2015-12-04 10:24:49,634 [INFO] CommonFunc loginToInterface(45) Login to the InterfaceManagement page successfully.
+2015-12-04 10:24:49,634 [INFO] CommonFunc toAlarmManagement(52) To the AlarmManagement page...
+2015-12-04 10:25:51,371 [INFO] main <module>(31) ##########################################################################
+2015-12-04 10:25:51,371 [INFO] main <module>(32) ####                                                                  ####
+2015-12-04 10:25:51,371 [INFO] main <module>(33) ####                 Started, logger initialized.                     ####
+2015-12-04 10:25:51,371 [INFO] main <module>(34) ####                                                                  ####
+2015-12-04 10:25:51,371 [INFO] main <module>(35) ##########################################################################
+2015-12-04 10:25:51,589 [INFO] fm_ack alarm_ack(11) Start to perform alarm ack...
+2015-12-04 10:25:51,589 [INFO] CommonFunc loginToInterface(20) Will start web browser and perform test case.
+2015-12-04 10:25:51,589 [INFO] CommonFunc loginToInterface(22) Browser driver path: C:\Users\EJLNOQC\Desktop\chromedriver.exe
+2015-12-04 10:25:54,098 [INFO] CommonFunc loginToInterface(36) Web page: http://10.184.73.75:8686/XOAM/login/index.html
+2015-12-04 10:26:02,667 [INFO] CommonFunc loginToInterface(45) Login to the InterfaceManagement page successfully.
+2015-12-04 10:26:02,667 [INFO] CommonFunc toAlarmManagement(52) To the AlarmManagement page...
+2015-12-04 10:26:21,056 [INFO] CommonFunc findLineOfCertainStatus(96) ID: 80 not acked
+2015-12-04 10:26:21,056 [INFO] CommonFunc clickTheCheckboxOftheTR(105) Check the CheckBox...
+2015-12-04 10:26:22,428 [INFO] CommonFunc findBtnReturnComfirmBtn(120) Click ACK button
+2015-12-04 10:26:23,806 [INFO] CommonFunc findBtnReturnComfirmBtn(125) Found the confirm button and will click next.
+2015-12-04 10:26:29,016 [INFO] CommonFunc checkAcked(152) Success: ACK the alarm successfully, ID: 80, ACK time: 2015-12-04 10:26:19.4

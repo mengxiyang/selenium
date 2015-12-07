@@ -52,8 +52,10 @@ def toAlarmManagement(driver):
     logCommon.info('To the AlarmManagement page...')
     #driver.find_element_by_xpath("//span[@class='ebBreadcrumbs-arrow']").click()
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//span[@class='ebBreadcrumbs-arrow']"))).click()
+    
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@class='ebBreadcrumbs-list']/ul/li[4]/a"))).click()
-
+    time.sleep(10)
+    
 def queryUnAcked(driver):
     #i_ack_status  
     btnList = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@id='i_ack_status']/div/button")))
