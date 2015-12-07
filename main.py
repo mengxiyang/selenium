@@ -8,6 +8,7 @@ from logging.handlers import RotatingFileHandler
 import logging, os
 from com.ericsson.xn.common.PyProperties import Properties
 
+logmain = logging.getLogger('selenium')
 rootPath = os.path.dirname(os.path.abspath(__file__))
 logConf = Properties(rootPath + os.path.sep + 'conf' + os.path.sep + 'logs.conf')
 logPath = os.path.normpath(rootPath + os.path.sep + 'logs')
@@ -19,13 +20,13 @@ logFormatter = logging.Formatter('%(asctime)s [%(levelname)s] %(module)s %(funcN
 logFileHandler = RotatingFileHandler(logFile, mode='a', maxBytes=1024*1024 * int(logConf.getProperty('logMaxSize')), backupCount=10, encoding='utf-8', delay=0)
 logFileHandler.setFormatter(logFormatter)
 logFileHandler.setLevel(logLevel)
-logmain = logging.getLogger('selenium')
-logmain.setLevel(logLevel)
+
+logmain.setLevel(20)
 logmain.addHandler(logFileHandler)
 if('YES' == str(logConf.getProperty('consoleLog')).upper()):
     logConsoleHandler = logging.StreamHandler()
     logConsoleHandler.setFormatter(logFormatter)
-    logConsoleHandler.setLevel(20)
+    logConsoleHandler.setLevel(10)
     logmain.addHandler(logConsoleHandler)
 logmain.info('##########################################################################')
 logmain.info('####                                                                  ####')
