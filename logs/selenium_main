@@ -2949,3 +2949,19 @@
 2015-12-04 10:26:22,428 [INFO] CommonFunc findBtnReturnComfirmBtn(120) Click ACK button
 2015-12-04 10:26:23,806 [INFO] CommonFunc findBtnReturnComfirmBtn(125) Found the confirm button and will click next.
 2015-12-04 10:26:29,016 [INFO] CommonFunc checkAcked(152) Success: ACK the alarm successfully, ID: 80, ACK time: 2015-12-04 10:26:19.4
+2015-12-11 14:23:14,075 [INFO] main <module>(31) ##########################################################################
+2015-12-11 14:23:14,075 [INFO] main <module>(32) ####                                                                  ####
+2015-12-11 14:23:14,076 [INFO] main <module>(33) ####                 Started, logger initialized.                     ####
+2015-12-11 14:23:14,076 [INFO] main <module>(34) ####                                                                  ####
+2015-12-11 14:23:14,076 [INFO] main <module>(35) ##########################################################################
+2015-12-11 14:23:14,392 [INFO] fm_ack alarm_ack(11) Start to perform alarm ack...
+2015-12-11 14:23:14,392 [INFO] CommonFunc loginToInterface(20) Will start web browser and perform test case.
+2015-12-11 14:23:14,394 [INFO] CommonFunc loginToInterface(22) Browser driver path: C:\Users\EJLNOQC\Desktop\chromedriver.exe
+2015-12-11 14:23:17,698 [INFO] CommonFunc loginToInterface(36) Web page: http://10.184.73.75:8686/XOAM/login/index.html
+2015-12-11 14:23:26,690 [INFO] CommonFunc loginToInterface(45) Login to the InterfaceManagement page successfully.
+2015-12-11 14:23:26,690 [INFO] CommonFunc toAlarmManagement(52) To the AlarmManagement page...
+2015-12-11 14:23:48,928 [INFO] CommonFunc findLineOfCertainStatus(96) ID: 4200000005 not acked
+2015-12-11 14:23:48,930 [INFO] CommonFunc clickTheCheckboxOftheTR(105) Check the CheckBox...
+2015-12-11 14:23:50,612 [INFO] CommonFunc findBtnReturnComfirmBtn(120) Click ACK button
+2015-12-11 14:23:51,963 [INFO] CommonFunc findBtnReturnComfirmBtn(125) Found the confirm button and will click next.
+2015-12-11 14:23:58,611 [INFO] CommonFunc checkAcked(152) Success: ACK the alarm successfully, ID: 4200000005, ACK time: 2015-12-11 14:23:28.9

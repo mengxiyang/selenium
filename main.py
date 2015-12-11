@@ -12,7 +12,7 @@ logmain = logging.getLogger('selenium')
 rootPath = os.path.dirname(os.path.abspath(__file__))
 logConf = Properties(rootPath + os.path.sep + 'conf' + os.path.sep + 'logs.conf')
 logPath = os.path.normpath(rootPath + os.path.sep + 'logs')
-if(not os.path.isdir(logPath)):
+if not os.path.isdir(logPath):
     os.makedirs(logPath)
 logFile = os.path.normpath(logPath + os.path.sep + logConf.getProperty('logFileName').strip())
 logLevel = int(logConf.getProperty('logLevel'))
@@ -23,7 +23,7 @@ logFileHandler.setLevel(logLevel)
 
 logmain.setLevel(20)
 logmain.addHandler(logFileHandler)
-if('YES' == str(logConf.getProperty('consoleLog')).upper()):
+if 'YES' == str(logConf.getProperty('consoleLog')).upper():
     logConsoleHandler = logging.StreamHandler()
     logConsoleHandler.setFormatter(logFormatter)
     logConsoleHandler.setLevel(10)
@@ -38,4 +38,3 @@ from com.ericsson.xn.x.fm import fm_ack
 
 if __name__ == '__main__':
     fm_ack.alarm_ack(rootPath)
-    pass
