@@ -1,4 +1,4 @@
-#encoding=utf-8
+# encoding=utf-8
 '''
 Created on Dec 3, 2015
 
@@ -17,7 +17,8 @@ if not os.path.isdir(logPath):
 logFile = os.path.normpath(logPath + os.path.sep + logConf.getProperty('logFileName').strip())
 logLevel = int(logConf.getProperty('logLevel'))
 logFormatter = logging.Formatter('%(asctime)s [%(levelname)s] %(module)s %(funcName)s(%(lineno)d) %(message)s')
-logFileHandler = RotatingFileHandler(logFile, mode='a', maxBytes=1024*1024 * int(logConf.getProperty('logMaxSize')), backupCount=10, encoding='utf-8', delay=0)
+logFileHandler = RotatingFileHandler(logFile, mode='a', maxBytes=1024 * 1024 * int(logConf.getProperty('logMaxSize')),
+                                     backupCount=10, encoding='utf-8', delay=0)
 logFileHandler.setFormatter(logFormatter)
 logFileHandler.setLevel(logLevel)
 
