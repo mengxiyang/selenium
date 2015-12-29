@@ -81,6 +81,14 @@ def login_first_page(driver, host, username, password, port):
     return driver
 
 
+def logout_rsnms(driver):
+    id_logout_btn = (By.CLASS_NAME, "eaContainer-LogoutButton")
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located(id_logout_btn)).click()
+
+    id_conform_btn = (By.XPATH, "//div[@class='ebDialogBox']/div[2]/button")
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located(id_conform_btn)).click()
+
+
 def quite_driver(driver):
     try:
         driver.close()
