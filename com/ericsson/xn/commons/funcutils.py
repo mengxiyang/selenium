@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import time
 from datetime import datetime, timedelta
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
@@ -15,5 +16,10 @@ def find_all_widgets(driver, wait_time, list_identifier):
 
 
 def wait_until_text_is_not_none(widget, timeout, interval=.25):
-
-    pass
+    end_time = datetime.now() + timedelta(seconds = timeout)
+    while datetime.now() < end_time:
+        text = widget.get_attribute('innerHTML').encode('utf-8').strip()
+        if not '' == text:
+            return text
+        time.sleep(interval)
+    return None
