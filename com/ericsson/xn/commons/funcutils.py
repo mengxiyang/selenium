@@ -15,6 +15,10 @@ def find_all_widgets(driver, wait_time, list_identifier):
     return WebDriverWait(driver, wait_time).until(EC.presence_of_all_elements_located(list_identifier))
 
 
+def wait_until_text_shown_up(driver, wait_time, list_identifier, text):
+    return WebDriverWait(driver, wait_time).until(EC.text_to_be_present_in_element_value(list_identifier, text))
+
+
 def wait_until_text_is_not_none(widget, timeout, interval=.25):
     end_time = datetime.now() + timedelta(seconds = timeout)
     while datetime.now() < end_time:
