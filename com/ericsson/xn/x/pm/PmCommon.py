@@ -76,6 +76,8 @@ def init_and_search(driver, logger, ne_name, end_time, start_time=None):
 
     if start_time is not None:
         id_start_time = (By.XPATH, "//div[@class='starttime']/div/span/input")
+        find_single_widget(driver, 10, id_start_time).click()
+        set_time_for_query(driver, logger, start_time)
 
     # click the query button
     id_query_btn = (By.ID, "idBtn-search")
