@@ -2,6 +2,8 @@
 
 import sys
 from time import sleep
+import os
+import binascii
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -23,11 +25,14 @@ def _to_ne_management_page(driver, logger):
 
 
 def check_and_add_ne(driver, logger, dict_ne_info):
-    ne_exist = _check_ne_exist(driver, logger, dict_ne_info["ne_type"], dict_ne_info["ne_ip"])
+    ne_exist, ne_name = _check_ne_exist(driver, logger, dict_ne_info["ne_type"], dict_ne_info["ne_ip"])
     if 2 == ne_exist:
         sys.exit(0)
+    elif 1 == ne_exist:
+        dict_ne_info["ne_name"] = ne_name
     elif 1 > ne_exist:
-        _add_new_ne(driver, logger, dict_ne_info)
+        dict_ne_info["ne_name"] = _add_new_ne(driver, logger, dict_ne_info)
+    return dict_ne_info
 
 
 def _add_new_ne(driver, logger, dict_ne_info):
@@ -58,7 +63,8 @@ def _add_new_ne(driver, logger, dict_ne_info):
     id_li_pwd = (By.ID, "i_nelipwd")
     id_fro_id = (By.ID, "i_nefroid")
 
-    find_single_widget(driver, 10, id_ne_name).send_keys(dict_ne_info["ne_name"])
+    ne_name = dict_ne_info["ne_type"] + "-" + str(binascii.hexlify(os.urandom(8)))
+    find_single_widget(driver, 10, id_ne_name).send_keys(ne_name)
     find_single_widget(driver, 10, id_ne_ip).send_keys(dict_ne_info["ne_ip"])
     find_single_widget(driver, 10, id_ne_user).send_keys(dict_ne_info["ne_user"])
     find_single_widget(driver, 10, id_password).send_keys(dict_ne_info["ne_password"])
@@ -76,6 +82,7 @@ def _add_new_ne(driver, logger, dict_ne_info):
 
     id_submit_btn = (By.ID, "idBtn-save")
     find_single_widget(driver, 10, id_submit_btn).click()
+    return ne_name
 
 
 def _check_ne_exist(driver, logger, ne_type, ne_ip):
@@ -98,13 +105,13 @@ def _check_ne_exist(driver, logger, ne_type, ne_ip):
             if ne_ip == gui_ip.get_attribute('innerHTML').encode('utf-8').strip():
                 if ne_type == gui_ne_type:
                     # NE with same ip and same type exit
-                    return 1
+                    return 1, gui_ne_name
                 else:
                     if is_pair_nes(gui_ne_type.upper(), ne_type.upper()):
                         # this means that there is a pair NE with same IP exist, but we can still add a NE
-                        return 0
+                        return 0, None
                     else:
                         # this means a NE with different type but the same IP already exist.
-                        return 2
+                        return 2, None
     # the ip that we want to add does not exist
-    return -1
+    return -1, None

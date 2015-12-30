@@ -45,6 +45,31 @@ def to_tab_by_ne_type(driver, ne_type, logger):
 
 def init_and_search(driver, logger, ne_name, end_time, start_time=None):
     # select the given nename
+    _select_given_ne_name(driver, logger, ne_name)
+
+    # select the correct time
+    id_end_time = (By.XPATH, "//div[@class='endtime']/div/span/input")
+    find_single_widget(driver, 10, id_end_time).click()
+    set_time_for_query(driver, logger, end_time)
+
+    if start_time is not None:
+        id_start_time = (By.XPATH, "//div[@class='starttime']/div/span/input")
+        find_single_widget(driver, 10, id_start_time).click()
+        set_time_for_query(driver, logger, start_time)
+
+    # click the query button
+    id_query_btn = (By.ID, "idBtn-search")
+    find_single_widget(driver, 10, id_query_btn).click()
+
+    # wait for the notification, maximum 20 seconds
+    identifier = (By.XPATH, "//div[@class='noti']/div")
+    WebDriverWait(driver, 20).until(EC.presence_of_element_located(identifier))
+
+def wait_until_pm_date_show_up(driver, logger, wait_time):
+    pass
+
+
+def _select_given_ne_name(driver, logger, ne_name):
     identifier = (By.XPATH, "//div[@class='eaContainer-applicationHolder']/div[1]/div[2]/div[1]/div[2]/input")
     find_single_widget(driver, 10, identifier).click()
 
@@ -68,24 +93,6 @@ def init_and_search(driver, logger, ne_name, end_time, start_time=None):
     # close select ne dialog
     id_btn_choose_ne = (By.CLASS_NAME, "choose")
     find_single_widget(driver, 10, id_btn_choose_ne).click()
-
-    # select the correct time
-    id_end_time = (By.XPATH, "//div[@class='endtime']/div/span/input")
-    find_single_widget(driver, 10, id_end_time).click()
-    set_time_for_query(driver, logger, end_time)
-
-    if start_time is not None:
-        id_start_time = (By.XPATH, "//div[@class='starttime']/div/span/input")
-        find_single_widget(driver, 10, id_start_time).click()
-        set_time_for_query(driver, logger, start_time)
-
-    # click the query button
-    id_query_btn = (By.ID, "idBtn-search")
-    find_single_widget(driver, 10, id_query_btn).click()
-
-    # wait for the notification, maximum 20 seconds
-    identifier = (By.XPATH, "//div[@class='noti']/div")
-    WebDriverWait(driver, 20).until(EC.presence_of_element_located(identifier))
 
 
 def check_pm_rows(driver, logger, num_rows, ne_type, dict_counters, rows_of_page=10):
