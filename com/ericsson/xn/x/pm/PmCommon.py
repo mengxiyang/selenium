@@ -40,8 +40,11 @@ def to_tab_by_ne_type(driver, ne_type, logger):
     find_single_widget(driver, 10, identifier).click()
 
     # wait for the notification, maximum 10 seconds
-    identifier = (By.XPATH, "//div[@class='noti']/div")
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located(identifier))
+    try:
+        identifier = (By.XPATH, "//div[@class='noti']/div")
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located(identifier))
+    except TimeoutException:
+        pass
 
 
 def init_and_search(driver, logger, ne_name, end_time, start_time=None):
@@ -63,8 +66,8 @@ def init_and_search(driver, logger, ne_name, end_time, start_time=None):
     find_single_widget(driver, 10, id_query_btn).click()
 
     # wait for the notification, maximum 20 seconds
-    identifier = (By.XPATH, "//div[@class='noti']/div")
-    WebDriverWait(driver, 20).until(EC.presence_of_element_located(identifier))
+    id_body_date = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table/tbody")
+    find_single_widget(driver, 20, id_body_date)
 
 
 def wait_until_pm_date_show_up(driver, logger, wait_time, ne_name, interval=1):
@@ -73,10 +76,9 @@ def wait_until_pm_date_show_up(driver, logger, wait_time, ne_name, interval=1):
     while datetime.now() < end_time:
         id_query_btn = (By.ID, "idBtn-search")
         find_single_widget(driver, 10, id_query_btn).click()
-        id_tbody_candidate = (By.XPATH, "//div[@class='ebLayout-candidateEnbs'/div[2]/div"
-                                        "/div[3]/div/div/div/table/tbody")
+        id_body_date = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table/tbody")
         try:
-            find_single_widget(driver, 10, id_tbody_candidate)
+            find_single_widget(driver, 10, id_body_date)
             return True
         except TimeoutException:
             pass
@@ -84,14 +86,21 @@ def wait_until_pm_date_show_up(driver, logger, wait_time, ne_name, interval=1):
 
 
 def select_given_ne_name(driver, logger, ne_name):
-    identifier = (By.XPATH, "//div[@class='eaContainer-applicationHolder']/div[1]/div[2]/div[1]/div[2]/input")
-    find_single_widget(driver, 10, identifier).click()
+    identifier = (By.XPATH, "//div[@class='eaContainer-applicationHolder']/div[1]/div[3]/div[2]/div[1]/div[2]/input")
+    input_ne_name = find_single_widget(driver, 10, identifier)
+    if not '' == input_ne_name.get_attribute('value').strip():
+        input_ne_name.click()
+        find_single_widget(driver, 10, (By.ID, "btnAllLeft")).click()
+    else:
+        input_ne_name.click()
 
-    id_table_candidate = (By.XPATH, "//div[@class='ebLayout-candidateEnbs'/div[2]/div/div[3]/div/div/div/table")
-    table_candidate = find_single_widget(driver, 10, id_table_candidate)
+    id_table_candidate = (By.XPATH, "//div[@class='ebLayout-candidateEnbs']/div[2]/div/div[3]/div/div/div/table")
+    table_candidate = find_single_widget(driver, 20, id_table_candidate)
 
     id_input_search = (By.XPATH, ".//thead/tr[2]/th[2]/input")
-    find_single_widget(table_candidate, 10, id_input_search).send_keys(ne_name.strip())
+    candi_input = find_single_widget(table_candidate, 10, id_input_search)
+    candi_input.clear()
+    candi_input.send_keys(ne_name.strip())
     time.sleep(1.0)
 
     id_checkbox = (By.XPATH, ".//tbody/tr[1]/td[1]/div/div/input")
@@ -132,7 +141,11 @@ def check_pm_by_row(driver, table, logger, index_row, ne_type, dict_counters, ro
 
     bool_row = True
     try:
-        id_tr = (By.XPATH, ".//tbody/tr[" + str(index_row - rows_of_page) + "]")
+        if index_row > rows_of_page:
+            gui_index_row = index_row - rows_of_page
+        else:
+            gui_index_row = index_row
+        id_tr = (By.XPATH, ".//tbody/tr[" + str(gui_index_row) + "]")
         tr = find_single_widget(table, 10, id_tr)
         gui_str_time = find_single_widget(tr, 10, (By.XPATH, ".//td[2]")).get_attribute('innerHTML').encode('utf-8')
         gui_time = datetime.strptime(gui_str_time.strip(), "%Y-%m-%d %H:%M")
@@ -168,17 +181,24 @@ def to_second_page(driver, logger):
 
 def set_time_for_query(driver, logger, date_time):
     # first edition will only set the time part
-    id_time_holder = (By.CLASS_NAME, "ebTimePicker")
+    id_time_holder = (By.XPATH, "//div[@data-namespace='ebTimePicker']")
     time_holder = find_single_widget(driver, 10, id_time_holder)
 
     id_hour = (By.XPATH, ".//table[1]/tbody/tr/td[2]/div[2]/input")
-    find_single_widget(time_holder, 10, id_hour).send_keys(date_time.hour)
+    hour_input = find_single_widget(time_holder, 10, id_hour)
+    hour_input.clear()
+    hour_input.send_keys(date_time.hour)
 
     id_minute = (By.XPATH, ".//table[2]/tbody/tr/td[2]/div[2]/input")
-    find_single_widget(time_holder, 10, id_minute).send_keys(date_time.minute)
+    minute_input = find_single_widget(time_holder, 10, id_minute)
+    minute_input.clear()
+    minute_input.send_keys(date_time.minute)
 
     id_second = (By.XPATH, ".//table[3]/tbody/tr/td[2]/div[2]/input")
-    find_single_widget(time_holder, 10, id_second).send_keys(date_time.second)
+    second_input = find_single_widget(time_holder, 10, id_second)
+    second_input.clear()
+    # second_input.send_keys(date_time.second)
+    second_input.send_keys(0)
 
     id_ok_btn = (By.XPATH, "//div[@class='ebDialogBox-actionBlock']/button[1]")
     find_single_widget(driver, 10, id_ok_btn).click()

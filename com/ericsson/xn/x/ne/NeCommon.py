@@ -86,7 +86,7 @@ def add_new_ne(driver, logger, dict_ne_info):
 def check_ne_exist(driver, logger, ne_type, ne_ip):
     # note there is another way to check if NE with certain IP exist, that is connect to the server's database and
     # check the NES data table
-    id_table = (By.XPATH, "//div[@class='dv1']/div[2]/div/div/div[3]/div/div/div/table")
+    id_table = (By.XPATH, "//div[@id='dv1']/div[2]/div/div/div[3]/div/div/div/table")
     table = find_single_widget(driver, 10, id_table)
 
     id_trs = (By.XPATH, ".//tbody/tr")
@@ -100,7 +100,7 @@ def check_ne_exist(driver, logger, ne_type, ne_ip):
         tr.click()
         if wait_until_text_shown_up(driver, 10, (By.ID, "i_nename"), gui_ne_name):
             gui_ip = find_single_widget(driver, 10, (By.ID, "i_neip"))
-            if ne_ip == gui_ip.get_attribute('innerHTML').encode('utf-8').strip():
+            if ne_ip == gui_ip.get_attribute('value').encode('utf-8').strip():
                 if ne_type == gui_ne_type:
                     # NE with same ip and same type exit
                     return 1, gui_ne_name

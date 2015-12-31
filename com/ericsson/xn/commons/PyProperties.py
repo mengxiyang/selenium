@@ -18,7 +18,7 @@ class Properties():
             for line in lines:
                 keyValue = line.split('=')
                 if(len(keyValue) > 1):
-                    self.mappings[keyValue[0]] = keyValue[1].rstrip('\r').rstrip('\n')
+                    self.mappings[keyValue[0]] = keyValue[1].strip()
             self.file.close()
                     
     def getProperty(self, key):

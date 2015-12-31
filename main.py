@@ -39,4 +39,4 @@ from com.ericsson.xn.x.fm import fm_ack
 
 if __name__ == '__main__':
     fm_ack.alarm_ack(rootPath)
-    pass
+    i = 1
