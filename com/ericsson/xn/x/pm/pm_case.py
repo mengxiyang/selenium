@@ -36,6 +36,7 @@ if 'YES' == log_cfg.getProperty('log_console').strip().upper():
 
 logger_pm.info('Logger of PM part init successfully.')
 
+
 def check_pm_accurate():
     global sep
     ne_info_pgw = get_ne_info_from_cfg(os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep +
