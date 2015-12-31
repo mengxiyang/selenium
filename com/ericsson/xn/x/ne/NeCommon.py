@@ -4,9 +4,7 @@ import sys
 from time import sleep
 import os
 import binascii
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
 from com.ericsson.xn.commons.funcutils import find_single_widget, find_all_widgets, wait_until_text_shown_up, \
     is_pair_nes, ne_type_index_add_ne_page
 

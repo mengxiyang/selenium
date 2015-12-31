@@ -2,10 +2,11 @@
 
 
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
 from com.ericsson.xn.commons.funcutils import find_single_widget
 
 
@@ -65,8 +66,21 @@ def init_and_search(driver, logger, ne_name, end_time, start_time=None):
     identifier = (By.XPATH, "//div[@class='noti']/div")
     WebDriverWait(driver, 20).until(EC.presence_of_element_located(identifier))
 
-def wait_until_pm_date_show_up(driver, logger, wait_time):
-    pass
+
+def wait_until_pm_date_show_up(driver, logger, wait_time, ne_name, interval=1):
+    _select_given_ne_name(driver, logger, ne_name)
+    end_time = datetime.now() + timedelta(seconds=wait_time)
+    while datetime.now() < end_time:
+        id_query_btn = (By.ID, "idBtn-search")
+        find_single_widget(driver, 10, id_query_btn).click()
+        id_tbody_candidate = (By.XPATH, "//div[@class='ebLayout-candidateEnbs'/div[2]/div"
+                                        "/div[3]/div/div/div/table/tbody")
+        try:
+            find_single_widget(driver, 10, id_tbody_candidate)
+            return True
+        except TimeoutException:
+            pass
+    return False
 
 
 def _select_given_ne_name(driver, logger, ne_name):
