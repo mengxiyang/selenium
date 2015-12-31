@@ -46,7 +46,7 @@ def to_tab_by_ne_type(driver, ne_type, logger):
 
 def init_and_search(driver, logger, ne_name, end_time, start_time=None):
     # select the given nename
-    _select_given_ne_name(driver, logger, ne_name)
+    select_given_ne_name(driver, logger, ne_name)
 
     # select the correct time
     id_end_time = (By.XPATH, "//div[@class='endtime']/div/span/input")
@@ -68,7 +68,7 @@ def init_and_search(driver, logger, ne_name, end_time, start_time=None):
 
 
 def wait_until_pm_date_show_up(driver, logger, wait_time, ne_name, interval=1):
-    _select_given_ne_name(driver, logger, ne_name)
+    select_given_ne_name(driver, logger, ne_name)
     end_time = datetime.now() + timedelta(seconds=wait_time)
     while datetime.now() < end_time:
         id_query_btn = (By.ID, "idBtn-search")
@@ -83,7 +83,7 @@ def wait_until_pm_date_show_up(driver, logger, wait_time, ne_name, interval=1):
     return False
 
 
-def _select_given_ne_name(driver, logger, ne_name):
+def select_given_ne_name(driver, logger, ne_name):
     identifier = (By.XPATH, "//div[@class='eaContainer-applicationHolder']/div[1]/div[2]/div[1]/div[2]/input")
     find_single_widget(driver, 10, identifier).click()
 
@@ -128,7 +128,7 @@ def check_pm_rows(driver, logger, num_rows, ne_type, dict_counters, rows_of_page
 def check_pm_by_row(driver, table, logger, index_row, ne_type, dict_counters, rows_of_page):
     logger.info('Start to check row: ' + str(index_row))
     if index_row > rows_of_page:
-        _to_second_page(driver, logger)
+        to_second_page(driver, logger)
 
     bool_row = True
     try:
@@ -136,7 +136,7 @@ def check_pm_by_row(driver, table, logger, index_row, ne_type, dict_counters, ro
         tr = find_single_widget(table, 10, id_tr)
         gui_str_time = find_single_widget(tr, 10, (By.XPATH, ".//td[2]")).get_attribute('innerHTML').encode('utf-8')
         gui_time = datetime.strptime(gui_str_time.strip(), "%Y-%m-%d %H:%M")
-        list_row = dict_counters[gui_time.minute]
+        list_row = dict_counters[str(gui_time.minute)]
         for i in range(len(list_row)):
             try:
                 id_counter = (By.XPATH, ".//td[" + str(i + 4) + "]")
@@ -158,7 +158,7 @@ def check_pm_by_row(driver, table, logger, index_row, ne_type, dict_counters, ro
     return bool_row
 
 
-def _to_second_page(driver, logger):
+def to_second_page(driver, logger):
     id_next_page = (By.CLASS_NAME, "ebPagination-next")
     find_single_widget(driver, 10, id_next_page).click()
     # wait for the notification, maximum 10 seconds

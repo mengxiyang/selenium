@@ -30,6 +30,9 @@ class Properties():
     def setProperty(self, key, value):
         if(self.mappings.has_key(key)):
             self.mappings[key] = value
+
+    def dict_info(self):
+        return self.mappings
             
     def store(self):
         if(not os.path.isfile(self.path)):

@@ -9,7 +9,7 @@ from com.ericsson.xn.commons.funcutils import find_single_widget, find_all_widge
     is_pair_nes, ne_type_index_add_ne_page
 
 
-def _to_ne_management_page(driver, logger):
+def to_ne_management_page(driver, logger):
     logger.info('To the PmManagement page...')
 
     identifier = (By.XPATH, "//div[@class='ebLayout-Navigation']/div/div[1]/span")
@@ -23,17 +23,17 @@ def _to_ne_management_page(driver, logger):
 
 
 def check_and_add_ne(driver, logger, dict_ne_info):
-    ne_exist, ne_name = _check_ne_exist(driver, logger, dict_ne_info["ne_type"], dict_ne_info["ne_ip"])
+    ne_exist, ne_name = check_ne_exist(driver, logger, dict_ne_info["ne_type"], dict_ne_info["ne_ip"])
     if 2 == ne_exist:
         sys.exit(0)
     elif 1 == ne_exist:
         dict_ne_info["ne_name"] = ne_name
     elif 1 > ne_exist:
-        dict_ne_info["ne_name"] = _add_new_ne(driver, logger, dict_ne_info)
+        dict_ne_info["ne_name"] = add_new_ne(driver, logger, dict_ne_info)
     return dict_ne_info
 
 
-def _add_new_ne(driver, logger, dict_ne_info):
+def add_new_ne(driver, logger, dict_ne_info):
     find_single_widget(driver, 10, (By.ID, "idBtn-create")).click()
     sleep(.5)
     # choose the correct ne_type
@@ -83,7 +83,7 @@ def _add_new_ne(driver, logger, dict_ne_info):
     return ne_name
 
 
-def _check_ne_exist(driver, logger, ne_type, ne_ip):
+def check_ne_exist(driver, logger, ne_type, ne_ip):
     # note there is another way to check if NE with certain IP exist, that is connect to the server's database and
     # check the NES data table
     id_table = (By.XPATH, "//div[@class='dv1']/div[2]/div/div/div[3]/div/div/div/table")

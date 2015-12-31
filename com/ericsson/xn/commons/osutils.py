@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import platform
+from .PyProperties import Properties
 
 
 def get_os_type():
@@ -9,3 +10,11 @@ def get_os_type():
     :return: the type of the system paltform.
     """
     return platform.system()
+
+
+def get_ne_info_from_cfg(cfg_path):
+    return Properties(cfg_path).dict_info()
+
+
+def get_pm_counters_map(counter_directory):
+    return Properties(counter_directory).dict_info()

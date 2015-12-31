@@ -22,12 +22,12 @@ from selenium.common.exceptions import TimeoutException
 log_common = logging.getLogger('selenium.CommonStatic')
 
 
-def login_rsnms(list_browser, host, username='admin', password='Admin!@#123', port=8686):
+def login_rsnms(dict_browser, host, username='admin', password='Admin!@#123', port=8686):
     """
     The function mainly init the browser driver, return the instance of the selenium driver.
     :param password: the password of the RSNMS system.
     :param username: the username of the RSNMS system.
-    :param list_browser: A Dict that contains the browser information, type, path, driver_path.
+    :param dict_browser: A Dict that contains the browser information, type, path, driver_path.
     :param host: The host of the URL that try to open.
     :param port: The port number of the URL that try to open.
     :return: return the selenium driver instance so that can used in followed test steps.
@@ -35,8 +35,8 @@ def login_rsnms(list_browser, host, username='admin', password='Admin!@#123', po
     log_common.info('Will start the web browser and perform test case.')
     # first edition only support the chrome on windows platform
     if 'Windows' == osutils.get_os_type():
-        if 'chrome' == list_browser['browser_type']:
-            windows_chrome_login_rsnms(list_browser['browser_path'], list_browser['driver_path'],
+        if 'chrome' == dict_browser['browser_type']:
+            windows_chrome_login_rsnms(dict_browser['browser_path'], dict_browser['driver_path'],
                                        host, username, password, port)
 
 
