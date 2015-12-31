@@ -37,7 +37,21 @@ def login_rsnms(dict_browser, host, logger, username='admin', password='Admin!@#
     if 'Windows' == osutils.get_os_type():
         if 'chrome' == dict_browser['browser_type']:
             return windows_chrome_login_rsnms(dict_browser['browser_path'], dict_browser['driver_path'], logger,
-                                       host, username, password, port)
+                                              host, username, password, port)
+        elif 'firefox' == dict_browser['browser_type']:
+            return windows_firefox_login_rsnms(dict_browser['browser_path'], dict_browser['driver_path'], logger,
+                                               host, username, password, port)
+
+
+def windows_firefox_login_rsnms(browser_path, driver_path, logger, host, username, password, port):
+    browser_path = os.path.normpath(browser_path)
+    logger.info('Browser path: ' + str(browser_path))
+    firfox_bin = webdriver.firefox.firefox_binary.FirefoxBinary(browser_path)
+    driver = webdriver.Firefox(firefox_binary=firfox_bin)
+    driver.maximize_window()
+    login_first_page(driver, logger, host, username, password, port)
+    return driver
+
 
 
 def windows_chrome_login_rsnms(browser_path, driver_path, logger, host, username, password, port):

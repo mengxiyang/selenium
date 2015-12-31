@@ -111,22 +111,25 @@ def select_given_ne_name(driver, logger, ne_name):
     # select to right
     id_arrow_to_right = (By.ID, "btnRight")
     find_single_widget(driver, 10, id_arrow_to_right).click()
-    time.sleep(1.0)
+    # time.sleep(5.0)
 
     # close select ne dialog
     id_btn_choose_ne = (By.CLASS_NAME, "choose")
     find_single_widget(driver, 10, id_btn_choose_ne).click()
+    # WebDriverWait(driver, 10).until(EC.element_to_be_clickable(id_btn_choose_ne))
 
 
 def check_pm_rows(driver, logger, num_rows, ne_type, dict_counters, rows_of_page=10):
     bool_overall = True
     id_table = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table")
-    table = find_single_widget(driver, 10, id_table)
+    # table = find_single_widget(driver, 10, id_table)
     for i in range(1, num_rows + 1):
-        bool_row = check_pm_by_row(driver, table, logger, i, ne_type, dict_counters, rows_of_page)
+        bool_row = check_pm_by_row(driver, id_table, logger, i, ne_type, dict_counters, rows_of_page)
         if not bool_row:
             bool_overall = False
             logger.error('Row ' + str(i) + " check FAILED. Check the log for detailed information.")
+        else:
+            logger.info('Row ' + str(i) + " check PASSED.")
 
     if bool_overall:
         logger.info("Overall PASSED.")
@@ -134,7 +137,7 @@ def check_pm_rows(driver, logger, num_rows, ne_type, dict_counters, rows_of_page
         logger.error("Overall FAILED.")
 
 
-def check_pm_by_row(driver, table, logger, index_row, ne_type, dict_counters, rows_of_page):
+def check_pm_by_row(driver, id_table, logger, index_row, ne_type, dict_counters, rows_of_page):
     logger.info('Start to check row: ' + str(index_row))
     if index_row > rows_of_page:
         to_second_page(driver, logger)
@@ -146,10 +149,11 @@ def check_pm_by_row(driver, table, logger, index_row, ne_type, dict_counters, ro
         else:
             gui_index_row = index_row
         id_tr = (By.XPATH, ".//tbody/tr[" + str(gui_index_row) + "]")
+        table = find_single_widget(driver, 10, id_table)
         tr = find_single_widget(table, 10, id_tr)
         gui_str_time = find_single_widget(tr, 10, (By.XPATH, ".//td[2]")).get_attribute('innerHTML').encode('utf-8')
         gui_time = datetime.strptime(gui_str_time.strip(), "%Y-%m-%d %H:%M")
-        list_row = dict_counters[str(gui_time.minute)]
+        list_row = dict_counters[str(gui_time.minute)].split(',')
         for i in range(len(list_row)):
             try:
                 id_counter = (By.XPATH, ".//td[" + str(i + 4) + "]")
@@ -157,13 +161,13 @@ def check_pm_by_row(driver, table, logger, index_row, ne_type, dict_counters, ro
                 i_gui_counter = int(gui_counter)
             except Exception as e:
                 i_gui_counter = None
-            if list_row[i] == i_gui_counter:
-                logger.info("Row " + str(index_row) + ", Counter " + str(i + 1) + " is: " + str(i_gui_counter) +
-                            ", PASSED.")
+            if int(list_row[i]) == i_gui_counter:
+                logger.info("Row " + str(index_row) + ", GUI Time: " + gui_str_time.strip() + ", Counter " + str(i + 1)
+                            + " is: " + str(i_gui_counter) + ", PASSED.")
             else:
                 bool_row = False
-                logger.error("Row " + str(index_row) + ", Counter " + str(i + 1) + ", FAILED. Expected: " +
-                             str(list_row[i]) + ", GUI is: " + str(gui_counter))
+                logger.error("Row " + str(index_row) + ", GUI Time: " + gui_str_time.strip() + ", Counter " + str(i + 1)
+                             + ", FAILED. Expected: " + str(list_row[i]) + ", GUI is: " + str(gui_counter))
 
     except Exception as e:
         logger.error("Test failed, ERROR: " + str(e))
@@ -172,11 +176,14 @@ def check_pm_by_row(driver, table, logger, index_row, ne_type, dict_counters, ro
 
 
 def to_second_page(driver, logger):
-    id_next_page = (By.CLASS_NAME, "ebPagination-next")
-    find_single_widget(driver, 10, id_next_page).click()
+    id_next_page = (By.XPATH, "//div[@class='page']/ul/li[3]")
+    pager = find_single_widget(driver, 10, id_next_page)
+    # driver.execute_script("arguments[0].scrollIntoView(true);", tds[12])
+    driver.execute_script("arguments[0].scrollIntoView(true);", pager)
+    pager.click()
     # wait for the notification, maximum 10 seconds
-    identifier = (By.XPATH, "//div[@class='noti']/div")
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located(identifier))
+    id_body_date = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table/tbody")
+    find_single_widget(driver, 10, id_body_date)
 
 
 def set_time_for_query(driver, logger, date_time):

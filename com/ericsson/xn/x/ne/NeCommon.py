@@ -25,6 +25,7 @@ def to_ne_management_page(driver, logger):
 def check_and_add_ne(driver, logger, dict_ne_info):
     ne_exist, ne_name = check_ne_exist(driver, logger, dict_ne_info["ne_type"], dict_ne_info["ne_ip"])
     if 2 == ne_exist:
+        logger.critical('A ne with the given IP named: ' + ne_name + ' already exist.')
         sys.exit(0)
     elif 1 == ne_exist:
         dict_ne_info["ne_name"] = ne_name
@@ -40,8 +41,8 @@ def add_new_ne(driver, logger, dict_ne_info):
     id_select_ne_type = (By.XPATH, "//div[@id='i_netype']/div/button")
     find_single_widget(driver, 10, id_select_ne_type).click()
 
-    id_ne_type_list = (By.XPATH, "//div[@id='i_netype']/div/div[" +
-                       str(ne_type_index_add_ne_page(dict_ne_info["ne_type"]) + "]"))
+    id_ne_type_list = (By.XPATH, "//div[@id='i_netype']/div/div/div[" +
+                       str(ne_type_index_add_ne_page(dict_ne_info["ne_type"])) + "]")
     find_single_widget(driver, 10, id_ne_type_list).click()
     sleep(.5)
 
@@ -62,21 +63,51 @@ def add_new_ne(driver, logger, dict_ne_info):
     id_fro_id = (By.ID, "i_nefroid")
 
     ne_name = dict_ne_info["ne_type"] + "-" + str(binascii.hexlify(os.urandom(8)))
-    find_single_widget(driver, 10, id_ne_name).send_keys(ne_name)
-    find_single_widget(driver, 10, id_ne_ip).send_keys(dict_ne_info["ne_ip"])
-    find_single_widget(driver, 10, id_ne_user).send_keys(dict_ne_info["ne_user"])
-    find_single_widget(driver, 10, id_password).send_keys(dict_ne_info["ne_password"])
-    find_single_widget(driver, 10, id_ne_port).send_keys(dict_ne_info["ne_port"])
+    w_ne_name = find_single_widget(driver, 10, id_ne_name)
+    w_ne_name.clear()
+    w_ne_name.send_keys(ne_name)
+
+    w_ne_ip = find_single_widget(driver, 10, id_ne_ip)
+    w_ne_ip.clear()
+    w_ne_ip.send_keys(dict_ne_info["ne_ip"])
+
+    w_ne_user = find_single_widget(driver, 10, id_ne_user)
+    w_ne_user.clear()
+    w_ne_user.send_keys(dict_ne_info["ne_user"])
+
+    w_ne_password = find_single_widget(driver, 10, id_password)
+    w_ne_password.clear()
+    w_ne_password.send_keys(dict_ne_info["ne_password"])
+
+    w_ne_port = find_single_widget(driver, 10, id_ne_port)
+    w_ne_port.clear()
+    w_ne_port.send_keys(dict_ne_info["ne_port"])
 
     if 'SBC' == dict_ne_info["ne_type"]:
-        find_single_widget(driver, 10, id_li_pwd).send_keys(dict_ne_info["li_pwd"])
-        find_single_widget(driver, 10, id_fro_id).send_keys(dict_ne_info["fro_id"])
+        w_li_pwd = find_single_widget(driver, 10, id_li_pwd)
+        w_li_pwd.clear()
+        w_li_pwd.send_keys(dict_ne_info["li_pwd"])
+
+        w_fro_id = find_single_widget(driver, 10, id_fro_id)
+        w_fro_id.clear()
+        w_fro_id.send_keys(dict_ne_info["fro_id"])
     else:
-        find_single_widget(driver, 10, id_sftp_port).send_keys(dict_ne_info["sftp_port"])
-        find_single_widget(driver, 10, id_pm_path).send_keys(dict_ne_info["pm_path"])
-        find_single_widget(driver, 10, id_log_path).send_keys(dict_ne_info["log_path"])
+        w_sftp_port = find_single_widget(driver, 10, id_sftp_port)
+        w_sftp_port.clear()
+        w_sftp_port.send_keys(dict_ne_info["sftp_port"])
+
+        w_pm_path = find_single_widget(driver, 10, id_pm_path)
+        w_pm_path.clear()
+        w_pm_path.send_keys(dict_ne_info["pm_path"])
+
+        w_log_path = find_single_widget(driver, 10, id_log_path)
+        w_log_path.clear()
+        w_log_path.send_keys(dict_ne_info["log_path"])
+
         if 'OCGAS' == dict_ne_info["ne_type"]:
-            find_single_widget(driver, 10, id_alarm_path).send_keys(dict_ne_info["alarm_path"])
+            w_alarm_path = find_single_widget(driver, 10, id_alarm_path)
+            w_alarm_path.clear()
+            w_alarm_path.send_keys(dict_ne_info["alarm_path"])
 
     id_submit_btn = (By.ID, "idBtn-save")
     find_single_widget(driver, 10, id_submit_btn).click()
@@ -110,6 +141,6 @@ def check_ne_exist(driver, logger, ne_type, ne_ip):
                         return 0, None
                     else:
                         # this means a NE with different type but the same IP already exist.
-                        return 2, None
+                        return 2, gui_ne_name
     # the ip that we want to add does not exist
     return -1, None
