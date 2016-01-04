@@ -56,7 +56,7 @@ def check_pm_accurate():
         "driver_path": ''
     }
 
-    driver = CommonStatic.login_rsnms(dict_browser_firefox, '10.184.73.77', logger_pm)
+    driver = CommonStatic.login_rsnms(dict_browser_chrome, '10.184.73.77', logger_pm)
     if driver:
         NeCommon.to_ne_management_page(driver, logger_pm)
         dict_ne_info = NeCommon.check_and_add_ne(driver, logger_pm, ne_info_pgw)
@@ -67,7 +67,7 @@ def check_pm_accurate():
         if PmCommon.wait_until_pm_date_show_up(driver, logger_pm, 300, dict_ne_info['ne_name']):
             t_now = datetime.now()
             minute_delta = t_now.minute % 5
-            end_time = t_now + timedelta(minutes=-(4 + minute_delta))
+            end_time = t_now + timedelta(minutes=-(9 + minute_delta))
             start_time = end_time + timedelta(hours=-1)
             PmCommon.init_and_search(driver, logger_pm, dict_ne_info['ne_name'], end_time, start_time)
             PmCommon.check_pm_rows(driver, logger_pm, 12, dict_ne_info['ne_type'], counters_pm)

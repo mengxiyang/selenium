@@ -150,6 +150,7 @@ def check_pm_by_row(driver, id_table, logger, index_row, ne_type, dict_counters,
             gui_index_row = index_row
         id_tr = (By.XPATH, ".//tbody/tr[" + str(gui_index_row) + "]")
         table = find_single_widget(driver, 10, id_table)
+        time.sleep(.5)
         tr = find_single_widget(table, 10, id_tr)
         gui_str_time = find_single_widget(tr, 10, (By.XPATH, ".//td[2]")).get_attribute('innerHTML').encode('utf-8')
         gui_time = datetime.strptime(gui_str_time.strip(), "%Y-%m-%d %H:%M")
@@ -163,7 +164,7 @@ def check_pm_by_row(driver, id_table, logger, index_row, ne_type, dict_counters,
                 i_gui_counter = None
             if int(list_row[i]) == i_gui_counter:
                 logger.info("Row " + str(index_row) + ", GUI Time: " + gui_str_time.strip() + ", Counter " + str(i + 1)
-                            + " is: " + str(i_gui_counter) + ", PASSED.")
+                            + " is: " + str(i_gui_counter) + ", Expected: " + str(list_row[i]) + ", PASSED.")
             else:
                 bool_row = False
                 logger.error("Row " + str(index_row) + ", GUI Time: " + gui_str_time.strip() + ", Counter " + str(i + 1)
@@ -184,6 +185,7 @@ def to_second_page(driver, logger):
     # wait for the notification, maximum 10 seconds
     id_body_date = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table/tbody")
     find_single_widget(driver, 10, id_body_date)
+    # time.sleep(2.0)
 
 
 def set_time_for_query(driver, logger, date_time):
