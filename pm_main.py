@@ -1,7 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from com.ericsson.xn.x.pm import pm_case
-
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
+from com.ericsson.xn.x.pm import case_pm_ocgas
 
 if __name__ == '__main__':
-    pm_case.check_pm_accurate()
+    # case_pm_sgw.pm_sgw_func()
+    # case_pm_sgsn.pm_sgsn_func()
+    # case_pm_mme.pm_mme_func()
+    case_pm_ocgas.pm_ocgas_func()

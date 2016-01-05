@@ -10,7 +10,7 @@ from com.ericsson.xn.commons.funcutils import find_single_widget, find_all_widge
 
 
 def to_ne_management_page(driver, logger):
-    logger.info('To the PmManagement page...')
+    logger.info('To the NeManagement page...')
 
     identifier = (By.XPATH, "//div[@class='ebLayout-Navigation']/div/div[1]/span")
     find_single_widget(driver, 10, identifier).click()
@@ -62,7 +62,7 @@ def add_new_ne(driver, logger, dict_ne_info):
     id_li_pwd = (By.ID, "i_nelipwd")
     id_fro_id = (By.ID, "i_nefroid")
 
-    ne_name = dict_ne_info["ne_type"] + "-" + str(binascii.hexlify(os.urandom(8)))
+    ne_name = dict_ne_info["ne_type"] + "-" + str(binascii.hexlify(os.urandom(8))).upper()
     w_ne_name = find_single_widget(driver, 10, id_ne_name)
     w_ne_name.clear()
     w_ne_name.send_keys(ne_name)
@@ -111,6 +111,11 @@ def add_new_ne(driver, logger, dict_ne_info):
 
     id_submit_btn = (By.ID, "idBtn-save")
     find_single_widget(driver, 10, id_submit_btn).click()
+    try:
+        id_dialog_confirm = (By.XPATH, "//div[@class='ebDialogBox-actionBlock']/button[1]")
+        find_single_widget(driver, 5, id_dialog_confirm).click()
+    except Exception as e:
+        logger.info('There is no duplicated NEs.')
     return ne_name
 
 
@@ -121,26 +126,31 @@ def check_ne_exist(driver, logger, ne_type, ne_ip):
     table = find_single_widget(driver, 10, id_table)
 
     id_trs = (By.XPATH, ".//tbody/tr")
-    trs = find_all_widgets(table, 20, id_trs)
+    try:
+        trs = find_all_widgets(table, 20, id_trs)
 
-    for tr in trs:
-        # gui_type = tr.get_attribute('innerHTML').encode('utf-8')
-        gui_ne_name = find_single_widget(tr, 10, (By.XPATH, ".//td[1]")).get_attribute('innerHTML').encode('utf-8')
-        gui_ne_type = find_single_widget(tr, 10, (By.XPATH, ".//td[2]")).get_attribute('innerHTML').encode('utf-8')
+        for tr in trs:
+            # gui_type = tr.get_attribute('innerHTML').encode('utf-8')
+            gui_ne_name = find_single_widget(tr, 10, (By.XPATH, ".//td[1]")).get_attribute('innerHTML').encode('utf-8')
+            gui_ne_type = find_single_widget(tr, 10, (By.XPATH, ".//td[2]")).get_attribute('innerHTML').encode('utf-8')
 
-        tr.click()
-        if wait_until_text_shown_up(driver, 10, (By.ID, "i_nename"), gui_ne_name):
-            gui_ip = find_single_widget(driver, 10, (By.ID, "i_neip"))
-            if ne_ip == gui_ip.get_attribute('value').encode('utf-8').strip():
-                if ne_type == gui_ne_type:
-                    # NE with same ip and same type exit
-                    return 1, gui_ne_name
-                else:
-                    if is_pair_nes(gui_ne_type.upper(), ne_type.upper()):
-                        # this means that there is a pair NE with same IP exist, but we can still add a NE
-                        return 0, None
+            tr.click()
+            if wait_until_text_shown_up(driver, 10, (By.ID, "i_nename"), gui_ne_name):
+                gui_ip = find_single_widget(driver, 10, (By.ID, "i_neip"))
+                if ne_ip == gui_ip.get_attribute('value').encode('utf-8').strip():
+                    if ne_type == gui_ne_type:
+                        # NE with same ip and same type exit
+                        return 1, gui_ne_name
                     else:
-                        # this means a NE with different type but the same IP already exist.
-                        return 2, gui_ne_name
-    # the ip that we want to add does not exist
-    return -1, None
+                        if is_pair_nes(gui_ne_type.upper(), ne_type.upper()):
+                            # this means that there is a pair NE with same IP exist, but we can still add a NE
+                            return 0, None
+                        else:
+                            # this means a NE with different type but the same IP already exist.
+                            return 2, gui_ne_name
+        # the ip that we want to add does not exist
+        return -1, None
+    except Exception as e:
+        # the ip that we want to add does not exist
+        return -2, None
+
