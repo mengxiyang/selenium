@@ -120,7 +120,7 @@ def select_given_ne_name(driver, logger, ne_name):
     # WebDriverWait(driver, 10).until(EC.element_to_be_clickable(id_btn_choose_ne))
 
 
-def wait_until_rounds_ok(driver, logger, rounds):
+def wait_until_rounds_ok(driver, logger, rounds, rows_of_page, wait_time=None):
     """
     Note that this function only support max 10 rounds
     :return:
@@ -129,14 +129,24 @@ def wait_until_rounds_ok(driver, logger, rounds):
     id_tbdoy_trs = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table/tbody/tr")
     t_start = datetime.now()
     t_end = t_start + timedelta(minutes=5 * rounds + 2)
+    if wait_time is not None:
+        t_end = t_start + timedelta(minutes=wait_time)
     while datetime.now() < t_end:
         # click the query button
         id_query_btn = (By.ID, "idBtn-search")
         find_single_widget(driver, 10, id_query_btn).click()
+        time.sleep(.2)
         try:
-            trs = find_all_widgets(driver, 20, id_tbdoy_trs)
-            if rounds <= len(trs):
-                return True
+            i_page = rounds / rows_of_page
+            tgt_page_number = i_page if 0 == rounds % rows_of_page else i_page + 1
+            id_tgt_pager = (By.XPATH, ("//div[@class='page']/ul/li[2]/ul/li[" + str(tgt_page_number) + "]"))
+            tgt_pager = find_single_widget(driver, 10, id_tgt_pager)
+            if not tgt_pager.get_attribute('class').find('ebPagination-entryAnchor_current') > -1:
+                tgt_pager.click()
+                trs = find_all_widgets(driver, 20, id_tbdoy_trs)
+                if rounds % rows_of_page <= len(trs):
+                    return True
+
         except TimeoutException:
             pass
         time.sleep(.5)
@@ -170,57 +180,58 @@ def check_pm_rows(driver, logger, ne_type, dict_counters, rows_of_page, dict_add
             logger.info('Row ' + str(i) + " check PASSED.")
 
     if bool_overall:
-    if len(list_time) < 1:
-        bool_overall = False
-        logger.error('Failed: 0 rounds of PM checked, this does not make any sense.')
-    elif len(list_time) < 2:
-        if 'OCGAS' == ne_type:
+        if len(list_time) < 1:
             bool_overall = False
-            logger.error('Failed: Node OCGAS is supposed to have two LICs, there is only one record of PM Data.')
-        elif list_time[0] is None:
-            bool_overall = False
-            logger.error('Failed: Fail to get the PM data time.')
-        else:
-            if 0 != list_time[0].minute % 5:
+            logger.error('Failed: 0 rounds of PM checked, this does not make any sense.')
+        elif len(list_time) < 2:
+            if 'OCGAS' == ne_type:
                 bool_overall = False
-                logger.error('Failed: PM Data time is not multiples of 5.')
-    else:
-        if ne_type in ['SGW', 'PGW', 'SGSN', 'MME', 'SBC']:
-            for i in range(0, len(list_time) - 1):
-                if list_time[i] is None or list_time[i + 1] is None:
+                logger.error('Failed: Node OCGAS is supposed to have two LICs, there is only one record of PM Data.')
+            elif list_time[0] is None:
+                bool_overall = False
+                logger.error('Failed: Fail to get the PM data time.')
+            else:
+                if 0 != list_time[0].minute % 5:
                     bool_overall = False
-                    logger.error('Failed: Fail to get the PM data time.')
-                    break
-                else:
-                    if 0 != list_time[i].minute % 5 or 0 != list_time[i + 1].minute % 5:
+                    logger.error('Failed: PM Data time is not multiples of 5.')
+        else:
+            if ne_type in ['SGW', 'PGW', 'SGSN', 'MME', 'SBC']:
+                for i in range(0, len(list_time) - 1):
+                    if list_time[i] is None or list_time[i + 1] is None:
                         bool_overall = False
-                        logger.error('Failed: PM Data time is not multiples of 5.')
+                        logger.error('Failed: Fail to get the PM data time.')
                         break
-                    if 300 != (list_time[i + 1] - list_time[1]).seconds:
-                        bool_overall = False
-                        logger.error('Failed: PM period is not 5 minutes.')
-                        break
-        elif 'OCGAS' == ne_type:
-            for i in range(0, len(list_time), 2):
-                if list_time[i] is None or list_time[i + 1] is None or list_time[i + 2] is None:
-                    bool_overall = False
-                    logger.error('Failed: Fail to get the PM data time.')
-                    break
-                else:
-                    if i != len(list_time - 2):
-                        if list_time[i] != list_time[i + 1]:
+                    else:
+                        if 0 != list_time[i].minute % 5 or 0 != list_time[i + 1].minute % 5:
                             bool_overall = False
-                            logger.error('Failed: Two LICs of Node OCGAS should be the same.')
+                            logger.error('Failed: PM Data time is not multiples of 5.')
                             break
-                        else:
-                            if 0 == list_time[i].minute % 5 or 0 != list_time[i + 2] % 5:
+                        if 300 != (list_time[i + 1] - list_time[1]).seconds:
+                            bool_overall = False
+                            logger.error('Failed: PM period is not 5 minutes.')
+                            break
+            elif 'OCGAS' == ne_type:
+                for i in range(0, len(list_time), 2):
+                    if list_time[i] is None or list_time[i + 1] is None or list_time[i + 2] is None:
+                        bool_overall = False
+                        logger.error('Failed: Fail to get the PM data time.')
+                        break
+                    else:
+                        if i != len(list_time - 2):
+                            if list_time[i] != list_time[i + 1]:
                                 bool_overall = False
-                                logger.error('Failed: PM Data time is not multiples of 5.')
+                                logger.error('Failed: Two LICs of Node OCGAS should be the same.')
                                 break
-                            elif 300 != (list_time[i + 2] - list_time[1]).seconds:
-                                bool_overall = False
-                                logger.error('Failed: PM period is not 5 minutes.')
-                                break
+                            else:
+                                if 0 == list_time[i].minute % 5 or 0 != list_time[i + 2] % 5:
+                                    bool_overall = False
+                                    logger.error('Failed: PM Data time is not multiples of 5.')
+                                    break
+                                elif 300 != (list_time[i + 2] - list_time[1]).seconds:
+                                    bool_overall = False
+                                    logger.error('Failed: PM period is not 5 minutes.')
+                                    break
+    logger.info('GUI times: ' + ', '.join([str(t) for t in list_time]))
     if bool_overall:
         logger.info("Overall PASSED.")
     else:

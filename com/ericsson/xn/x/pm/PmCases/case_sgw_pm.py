@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import os
-from . import pm_case
+from datetime import datetime, timedelta
+from com.ericsson.xn.x.pm.PmCommons import PmCaseBase
 
 
 def pm_sgw_func():
@@ -11,4 +12,7 @@ def pm_sgw_func():
     ne_info_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'nes' + sep + 'sgw.cfg')
     counter_info_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'counters' + sep + 'sgw.cfg')
     tgt_server = '10.184.73.77'
-    pm_case.check_pm_accurate(ne_info_cfg, counter_info_cfg, tgt_server)
+    t_now = datetime.now()
+    end_time = t_now + timedelta(minutes=-(t_now.minute % 5 + 14))
+    str_end_time = end_time.strftime('%Y-%m-%d %H:%M') + ":00"
+    PmCaseBase.check_pm_accurate(ne_info_cfg, counter_info_cfg, tgt_server, str_end_time)
