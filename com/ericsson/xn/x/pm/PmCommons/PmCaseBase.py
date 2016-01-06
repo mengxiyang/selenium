@@ -187,8 +187,8 @@ def check_pm_accurate_all_ne(dict_all_nes, tgt_server):
                             pm_rounds = len(counters_pm) / 2
 
                         check_rounds = len(counters_pm)
-                        if 'SGW' == ne_info['ne_type'] or 'PGW' == ne_info['ne_type']:
-                            check_rounds = 4
+                        # if 'SGW' == ne_info['ne_type'] or 'PGW' == ne_info['ne_type']:
+                        #    check_rounds = 4
 
                         start_time = end_time + timedelta(minutes=-5 * pm_rounds)
                         PmCommon.init_and_search(driver, logger_pm, dict_ne_info['ne_name'], end_time, start_time)

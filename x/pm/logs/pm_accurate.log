@@ -9850,3 +9850,263 @@
 2016-01-05 17:53:23,867 [INFO] NeCommon to_ne_management_page(13) To the NeManagement page...
 2016-01-05 17:53:52,926 [INFO] NeCommon add_new_ne(118) There is no duplicated NEs.
 2016-01-05 17:53:52,930 [INFO] PmCommon to_pm_management_page(14) To the PmManagement page...
+2016-01-06 09:29:31,200 [INFO] PmCaseBase <module>(38) Logger of PM part init successfully.
+2016-01-06 09:29:31,203 [INFO] CommonStatic login_rsnms(35) Will start the web browser and perform test case.
+2016-01-06 09:29:31,220 [INFO] CommonStatic windows_chrome_login_rsnms(69) Browser driver path: C:\Users\EJLNOQC\installed\chromedriver.exe
+2016-01-06 09:29:31,223 [INFO] CommonStatic windows_chrome_login_rsnms(73) Browser path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+2016-01-06 09:29:33,563 [INFO] CommonStatic login_first_page(83) Web page: http://10.184.73.77:8686/XOAM/login/index.html
+2016-01-06 09:29:46,266 [INFO] CommonStatic login_first_page(92) Login to the InterfaceManagement page successfully.
+2016-01-06 09:29:46,269 [INFO] PmCaseBase check_pm_accurate_all_ne(146) ******************** Start to check PM for SBC ************************
+2016-01-06 09:29:46,289 [INFO] NeCommon to_ne_management_page(13) To the NeManagement page...
+2016-01-06 09:29:57,638 [INFO] PmCommon to_pm_management_page(14) To the PmManagement page...
+2016-01-06 09:34:11,651 [INFO] PmCaseBase <module>(38) Logger of PM part init successfully.
+2016-01-06 09:34:11,674 [INFO] CommonStatic login_rsnms(35) Will start the web browser and perform test case.
+2016-01-06 09:34:11,691 [INFO] CommonStatic windows_chrome_login_rsnms(69) Browser driver path: C:\Users\EJLNOQC\installed\chromedriver.exe
+2016-01-06 09:34:11,694 [INFO] CommonStatic windows_chrome_login_rsnms(73) Browser path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+2016-01-06 09:34:13,984 [INFO] CommonStatic login_first_page(83) Web page: http://10.184.73.77:8686/XOAM/login/index.html
+2016-01-06 09:34:28,585 [INFO] CommonStatic login_first_page(92) Login to the InterfaceManagement page successfully.
+2016-01-06 09:34:28,589 [INFO] NeCommon to_ne_management_page(13) To the NeManagement page...
+2016-01-06 09:34:48,016 [INFO] NeCommon add_new_ne(118) There is no duplicated NEs.
+2016-01-06 09:34:48,017 [INFO] PmCommon to_pm_management_page(14) To the PmManagement page...
+2016-01-06 09:35:09,028 [INFO] PmCommon check_pm_by_row(242) Start to check row: 1
+2016-01-06 09:35:09,996 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:15,	LIC标识: LIC01; X1接收消息数, GUI is 411,	Expected is 0	; FAILED.
+2016-01-06 09:35:10,042 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:15,	LIC标识: LIC01; X1发送消息数, GUI is 412,	Expected is 0	; FAILED.
+2016-01-06 09:35:10,091 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:15,	LIC标识: LIC01; X1接收流量数(KB), GUI is 413,	Expected is 0	; FAILED.
+2016-01-06 09:35:10,154 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:15,	LIC标识: LIC01; X1发送流量数(KB), GUI is 414,	Expected is 0	; FAILED.
+2016-01-06 09:35:10,213 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:15,	LIC标识: LIC01; X2接收消息数, GUI is 415,	Expected is 0	; FAILED.
+2016-01-06 09:35:10,279 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:15,	LIC标识: LIC01; X2发送消息数, GUI is 416,	Expected is 0	; FAILED.
+2016-01-06 09:35:10,351 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:15,	LIC标识: LIC01; X2接收流量数(KB), GUI is 417,	Expected is 0	; FAILED.
+2016-01-06 09:35:10,427 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:15,	LIC标识: LIC01; X2发送流量数(KB), GUI is 418,	Expected is 0	; FAILED.
+2016-01-06 09:35:10,430 [ERROR] PmCommon check_pm_rows(178) Row 1 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:10,431 [INFO] PmCommon check_pm_by_row(242) Start to check row: 2
+2016-01-06 09:35:11,474 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:15,	LIC标识: LIC02; X1接收消息数, GUI is 421,	Expected is 0	; FAILED.
+2016-01-06 09:35:11,555 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:15,	LIC标识: LIC02; X1发送消息数, GUI is 422,	Expected is 0	; FAILED.
+2016-01-06 09:35:11,631 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:15,	LIC标识: LIC02; X1接收流量数(KB), GUI is 423,	Expected is 0	; FAILED.
+2016-01-06 09:35:11,732 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:15,	LIC标识: LIC02; X1发送流量数(KB), GUI is 424,	Expected is 0	; FAILED.
+2016-01-06 09:35:11,808 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:15,	LIC标识: LIC02; X2接收消息数, GUI is 425,	Expected is 0	; FAILED.
+2016-01-06 09:35:11,882 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:15,	LIC标识: LIC02; X2发送消息数, GUI is 426,	Expected is 0	; FAILED.
+2016-01-06 09:35:11,959 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:15,	LIC标识: LIC02; X2接收流量数(KB), GUI is 427,	Expected is 0	; FAILED.
+2016-01-06 09:35:12,035 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:15,	LIC标识: LIC02; X2发送流量数(KB), GUI is 428,	Expected is 0	; FAILED.
+2016-01-06 09:35:12,039 [ERROR] PmCommon check_pm_rows(178) Row 2 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:12,040 [INFO] PmCommon check_pm_by_row(242) Start to check row: 3
+2016-01-06 09:35:12,974 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:10,	LIC标识: LIC01; X1接收消息数, GUI is 311,	Expected is 0	; FAILED.
+2016-01-06 09:35:13,035 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:10,	LIC标识: LIC01; X1发送消息数, GUI is 312,	Expected is 0	; FAILED.
+2016-01-06 09:35:13,102 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:10,	LIC标识: LIC01; X1接收流量数(KB), GUI is 313,	Expected is 0	; FAILED.
+2016-01-06 09:35:13,168 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:10,	LIC标识: LIC01; X1发送流量数(KB), GUI is 314,	Expected is 0	; FAILED.
+2016-01-06 09:35:13,236 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:10,	LIC标识: LIC01; X2接收消息数, GUI is 315,	Expected is 0	; FAILED.
+2016-01-06 09:35:13,305 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:10,	LIC标识: LIC01; X2发送消息数, GUI is 316,	Expected is 0	; FAILED.
+2016-01-06 09:35:13,377 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:10,	LIC标识: LIC01; X2接收流量数(KB), GUI is 317,	Expected is 0	; FAILED.
+2016-01-06 09:35:13,456 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:10,	LIC标识: LIC01; X2发送流量数(KB), GUI is 318,	Expected is 0	; FAILED.
+2016-01-06 09:35:13,457 [ERROR] PmCommon check_pm_rows(178) Row 3 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:13,460 [INFO] PmCommon check_pm_by_row(242) Start to check row: 4
+2016-01-06 09:35:14,390 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:10,	LIC标识: LIC02; X1接收消息数, GUI is 321,	Expected is 0	; FAILED.
+2016-01-06 09:35:14,463 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:10,	LIC标识: LIC02; X1发送消息数, GUI is 322,	Expected is 0	; FAILED.
+2016-01-06 09:35:14,536 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:10,	LIC标识: LIC02; X1接收流量数(KB), GUI is 323,	Expected is 0	; FAILED.
+2016-01-06 09:35:14,609 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:10,	LIC标识: LIC02; X1发送流量数(KB), GUI is 324,	Expected is 0	; FAILED.
+2016-01-06 09:35:14,684 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:10,	LIC标识: LIC02; X2接收消息数, GUI is 325,	Expected is 0	; FAILED.
+2016-01-06 09:35:14,783 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:10,	LIC标识: LIC02; X2发送消息数, GUI is 326,	Expected is 0	; FAILED.
+2016-01-06 09:35:14,858 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:10,	LIC标识: LIC02; X2接收流量数(KB), GUI is 327,	Expected is 0	; FAILED.
+2016-01-06 09:35:14,931 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:10,	LIC标识: LIC02; X2发送流量数(KB), GUI is 328,	Expected is 0	; FAILED.
+2016-01-06 09:35:14,934 [ERROR] PmCommon check_pm_rows(178) Row 4 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:14,937 [INFO] PmCommon check_pm_by_row(242) Start to check row: 5
+2016-01-06 09:35:15,834 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:05,	LIC标识: LIC01; X1接收消息数, GUI is 211,	Expected is 0	; FAILED.
+2016-01-06 09:35:15,908 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:05,	LIC标识: LIC01; X1发送消息数, GUI is 212,	Expected is 0	; FAILED.
+2016-01-06 09:35:15,983 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:05,	LIC标识: LIC01; X1接收流量数(KB), GUI is 213,	Expected is 0	; FAILED.
+2016-01-06 09:35:16,062 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:05,	LIC标识: LIC01; X1发送流量数(KB), GUI is 214,	Expected is 0	; FAILED.
+2016-01-06 09:35:16,184 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:05,	LIC标识: LIC01; X2接收消息数, GUI is 215,	Expected is 0	; FAILED.
+2016-01-06 09:35:16,279 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:05,	LIC标识: LIC01; X2发送消息数, GUI is 216,	Expected is 0	; FAILED.
+2016-01-06 09:35:16,372 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:05,	LIC标识: LIC01; X2接收流量数(KB), GUI is 217,	Expected is 0	; FAILED.
+2016-01-06 09:35:16,446 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:05,	LIC标识: LIC01; X2发送流量数(KB), GUI is 218,	Expected is 0	; FAILED.
+2016-01-06 09:35:16,447 [ERROR] PmCommon check_pm_rows(178) Row 5 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:16,450 [INFO] PmCommon check_pm_by_row(242) Start to check row: 6
+2016-01-06 09:35:17,358 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:05,	LIC标识: LIC02; X1接收消息数, GUI is 221,	Expected is 0	; FAILED.
+2016-01-06 09:35:17,434 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:05,	LIC标识: LIC02; X1发送消息数, GUI is 222,	Expected is 0	; FAILED.
+2016-01-06 09:35:17,510 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:05,	LIC标识: LIC02; X1接收流量数(KB), GUI is 223,	Expected is 0	; FAILED.
+2016-01-06 09:35:17,588 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:05,	LIC标识: LIC02; X1发送流量数(KB), GUI is 224,	Expected is 0	; FAILED.
+2016-01-06 09:35:17,664 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:05,	LIC标识: LIC02; X2接收消息数, GUI is 225,	Expected is 0	; FAILED.
+2016-01-06 09:35:17,766 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:05,	LIC标识: LIC02; X2发送消息数, GUI is 226,	Expected is 0	; FAILED.
+2016-01-06 09:35:17,839 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:05,	LIC标识: LIC02; X2接收流量数(KB), GUI is 227,	Expected is 0	; FAILED.
+2016-01-06 09:35:17,914 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:05,	LIC标识: LIC02; X2发送流量数(KB), GUI is 228,	Expected is 0	; FAILED.
+2016-01-06 09:35:17,917 [ERROR] PmCommon check_pm_rows(178) Row 6 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:17,920 [INFO] PmCommon check_pm_by_row(242) Start to check row: 7
+2016-01-06 09:35:18,851 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:00,	LIC标识: LIC01; X1接收消息数, GUI is 111,	Expected is 0	; FAILED.
+2016-01-06 09:35:18,931 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:00,	LIC标识: LIC01; X1发送消息数, GUI is 112,	Expected is 0	; FAILED.
+2016-01-06 09:35:19,009 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:00,	LIC标识: LIC01; X1接收流量数(KB), GUI is 113,	Expected is 0	; FAILED.
+2016-01-06 09:35:19,082 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:00,	LIC标识: LIC01; X1发送流量数(KB), GUI is 114,	Expected is 0	; FAILED.
+2016-01-06 09:35:19,167 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:00,	LIC标识: LIC01; X2接收消息数, GUI is 115,	Expected is 0	; FAILED.
+2016-01-06 09:35:19,240 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:00,	LIC标识: LIC01; X2发送消息数, GUI is 116,	Expected is 0	; FAILED.
+2016-01-06 09:35:19,319 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:00,	LIC标识: LIC01; X2接收流量数(KB), GUI is 117,	Expected is 0	; FAILED.
+2016-01-06 09:35:19,395 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:00,	LIC标识: LIC01; X2发送流量数(KB), GUI is 118,	Expected is 0	; FAILED.
+2016-01-06 09:35:19,398 [ERROR] PmCommon check_pm_rows(178) Row 7 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:19,401 [INFO] PmCommon check_pm_by_row(242) Start to check row: 8
+2016-01-06 09:35:20,296 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:00,	LIC标识: LIC02; X1接收消息数, GUI is 121,	Expected is 0	; FAILED.
+2016-01-06 09:35:20,374 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:00,	LIC标识: LIC02; X1发送消息数, GUI is 122,	Expected is 0	; FAILED.
+2016-01-06 09:35:20,430 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:00,	LIC标识: LIC02; X1接收流量数(KB), GUI is 123,	Expected is 0	; FAILED.
+2016-01-06 09:35:20,503 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:00,	LIC标识: LIC02; X1发送流量数(KB), GUI is 124,	Expected is 0	; FAILED.
+2016-01-06 09:35:20,566 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:00,	LIC标识: LIC02; X2接收消息数, GUI is 125,	Expected is 0	; FAILED.
+2016-01-06 09:35:20,632 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:00,	LIC标识: LIC02; X2发送消息数, GUI is 126,	Expected is 0	; FAILED.
+2016-01-06 09:35:20,707 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:00,	LIC标识: LIC02; X2接收流量数(KB), GUI is 127,	Expected is 0	; FAILED.
+2016-01-06 09:35:20,779 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 09:00,	LIC标识: LIC02; X2发送流量数(KB), GUI is 128,	Expected is 0	; FAILED.
+2016-01-06 09:35:20,780 [ERROR] PmCommon check_pm_rows(178) Row 8 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:20,782 [INFO] PmCommon check_pm_by_row(242) Start to check row: 9
+2016-01-06 09:35:21,687 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:55,	LIC标识: LIC01; X1接收消息数, GUI is 1211,	Expected is 0	; FAILED.
+2016-01-06 09:35:21,766 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:55,	LIC标识: LIC01; X1发送消息数, GUI is 1212,	Expected is 0	; FAILED.
+2016-01-06 09:35:21,844 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:55,	LIC标识: LIC01; X1接收流量数(KB), GUI is 1213,	Expected is 0	; FAILED.
+2016-01-06 09:35:21,921 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:55,	LIC标识: LIC01; X1发送流量数(KB), GUI is 1214,	Expected is 0	; FAILED.
+2016-01-06 09:35:21,996 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:55,	LIC标识: LIC01; X2接收消息数, GUI is 1215,	Expected is 0	; FAILED.
+2016-01-06 09:35:22,072 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:55,	LIC标识: LIC01; X2发送消息数, GUI is 1216,	Expected is 0	; FAILED.
+2016-01-06 09:35:22,150 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:55,	LIC标识: LIC01; X2接收流量数(KB), GUI is 1217,	Expected is 0	; FAILED.
+2016-01-06 09:35:22,226 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:55,	LIC标识: LIC01; X2发送流量数(KB), GUI is 1218,	Expected is 0	; FAILED.
+2016-01-06 09:35:22,229 [ERROR] PmCommon check_pm_rows(178) Row 9 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:22,230 [INFO] PmCommon check_pm_by_row(242) Start to check row: 10
+2016-01-06 09:35:23,144 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:55,	LIC标识: LIC02; X1接收消息数, GUI is 1221,	Expected is 0	; FAILED.
+2016-01-06 09:35:23,240 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:55,	LIC标识: LIC02; X1发送消息数, GUI is 1222,	Expected is 0	; FAILED.
+2016-01-06 09:35:23,329 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:55,	LIC标识: LIC02; X1接收流量数(KB), GUI is 1223,	Expected is 0	; FAILED.
+2016-01-06 09:35:23,403 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:55,	LIC标识: LIC02; X1发送流量数(KB), GUI is 1224,	Expected is 0	; FAILED.
+2016-01-06 09:35:23,483 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:55,	LIC标识: LIC02; X2接收消息数, GUI is 1225,	Expected is 0	; FAILED.
+2016-01-06 09:35:23,556 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:55,	LIC标识: LIC02; X2发送消息数, GUI is 1226,	Expected is 0	; FAILED.
+2016-01-06 09:35:23,637 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:55,	LIC标识: LIC02; X2接收流量数(KB), GUI is 1227,	Expected is 0	; FAILED.
+2016-01-06 09:35:23,714 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:55,	LIC标识: LIC02; X2发送流量数(KB), GUI is 1228,	Expected is 0	; FAILED.
+2016-01-06 09:35:23,717 [ERROR] PmCommon check_pm_rows(178) Row 10 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:23,720 [INFO] PmCommon check_pm_by_row(242) Start to check row: 11
+2016-01-06 09:35:24,691 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:50,	LIC标识: LIC01; X1接收消息数, GUI is 1111,	Expected is 0	; FAILED.
+2016-01-06 09:35:24,776 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:50,	LIC标识: LIC01; X1发送消息数, GUI is 1112,	Expected is 0	; FAILED.
+2016-01-06 09:35:24,868 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:50,	LIC标识: LIC01; X1接收流量数(KB), GUI is 1113,	Expected is 0	; FAILED.
+2016-01-06 09:35:24,944 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:50,	LIC标识: LIC01; X1发送流量数(KB), GUI is 1114,	Expected is 0	; FAILED.
+2016-01-06 09:35:25,028 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:50,	LIC标识: LIC01; X2接收消息数, GUI is 1115,	Expected is 0	; FAILED.
+2016-01-06 09:35:25,108 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:50,	LIC标识: LIC01; X2发送消息数, GUI is 1116,	Expected is 0	; FAILED.
+2016-01-06 09:35:25,186 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:50,	LIC标识: LIC01; X2接收流量数(KB), GUI is 1117,	Expected is 0	; FAILED.
+2016-01-06 09:35:25,266 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:50,	LIC标识: LIC01; X2发送流量数(KB), GUI is 1118,	Expected is 0	; FAILED.
+2016-01-06 09:35:25,269 [ERROR] PmCommon check_pm_rows(178) Row 11 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:25,272 [INFO] PmCommon check_pm_by_row(242) Start to check row: 12
+2016-01-06 09:35:26,256 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:50,	LIC标识: LIC02; X1接收消息数, GUI is 1121,	Expected is 0	; FAILED.
+2016-01-06 09:35:26,325 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:50,	LIC标识: LIC02; X1发送消息数, GUI is 1122,	Expected is 0	; FAILED.
+2016-01-06 09:35:26,404 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:50,	LIC标识: LIC02; X1接收流量数(KB), GUI is 1123,	Expected is 0	; FAILED.
+2016-01-06 09:35:26,484 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:50,	LIC标识: LIC02; X1发送流量数(KB), GUI is 1124,	Expected is 0	; FAILED.
+2016-01-06 09:35:26,563 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:50,	LIC标识: LIC02; X2接收消息数, GUI is 1125,	Expected is 0	; FAILED.
+2016-01-06 09:35:26,611 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:50,	LIC标识: LIC02; X2发送消息数, GUI is 1126,	Expected is 0	; FAILED.
+2016-01-06 09:35:26,674 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:50,	LIC标识: LIC02; X2接收流量数(KB), GUI is 1127,	Expected is 0	; FAILED.
+2016-01-06 09:35:26,750 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:50,	LIC标识: LIC02; X2发送流量数(KB), GUI is 1128,	Expected is 0	; FAILED.
+2016-01-06 09:35:26,752 [ERROR] PmCommon check_pm_rows(178) Row 12 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:26,753 [INFO] PmCommon check_pm_by_row(242) Start to check row: 13
+2016-01-06 09:35:27,661 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:45,	LIC标识: LIC01; X1接收消息数, GUI is 1011,	Expected is 0	; FAILED.
+2016-01-06 09:35:27,737 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:45,	LIC标识: LIC01; X1发送消息数, GUI is 1012,	Expected is 0	; FAILED.
+2016-01-06 09:35:27,812 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:45,	LIC标识: LIC01; X1接收流量数(KB), GUI is 1013,	Expected is 0	; FAILED.
+2016-01-06 09:35:27,888 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:45,	LIC标识: LIC01; X1发送流量数(KB), GUI is 1014,	Expected is 0	; FAILED.
+2016-01-06 09:35:27,967 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:45,	LIC标识: LIC01; X2接收消息数, GUI is 1015,	Expected is 0	; FAILED.
+2016-01-06 09:35:28,071 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:45,	LIC标识: LIC01; X2发送消息数, GUI is 1016,	Expected is 0	; FAILED.
+2016-01-06 09:35:28,168 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:45,	LIC标识: LIC01; X2接收流量数(KB), GUI is 1017,	Expected is 0	; FAILED.
+2016-01-06 09:35:28,260 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:45,	LIC标识: LIC01; X2发送流量数(KB), GUI is 1018,	Expected is 0	; FAILED.
+2016-01-06 09:35:28,263 [ERROR] PmCommon check_pm_rows(178) Row 13 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:28,266 [INFO] PmCommon check_pm_by_row(242) Start to check row: 14
+2016-01-06 09:35:29,137 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:45,	LIC标识: LIC02; X1接收消息数, GUI is 1021,	Expected is 0	; FAILED.
+2016-01-06 09:35:29,206 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:45,	LIC标识: LIC02; X1发送消息数, GUI is 1022,	Expected is 0	; FAILED.
+2016-01-06 09:35:29,286 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:45,	LIC标识: LIC02; X1接收流量数(KB), GUI is 1023,	Expected is 0	; FAILED.
+2016-01-06 09:35:29,361 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:45,	LIC标识: LIC02; X1发送流量数(KB), GUI is 1024,	Expected is 0	; FAILED.
+2016-01-06 09:35:29,437 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:45,	LIC标识: LIC02; X2接收消息数, GUI is 1025,	Expected is 0	; FAILED.
+2016-01-06 09:35:29,519 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:45,	LIC标识: LIC02; X2发送消息数, GUI is 1026,	Expected is 0	; FAILED.
+2016-01-06 09:35:29,569 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:45,	LIC标识: LIC02; X2接收流量数(KB), GUI is 1027,	Expected is 0	; FAILED.
+2016-01-06 09:35:29,650 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:45,	LIC标识: LIC02; X2发送流量数(KB), GUI is 1028,	Expected is 0	; FAILED.
+2016-01-06 09:35:29,651 [ERROR] PmCommon check_pm_rows(178) Row 14 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:29,654 [INFO] PmCommon check_pm_by_row(242) Start to check row: 15
+2016-01-06 09:35:30,552 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:40,	LIC标识: LIC01; X1接收消息数, GUI is 911,	Expected is 0	; FAILED.
+2016-01-06 09:35:30,628 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:40,	LIC标识: LIC01; X1发送消息数, GUI is 912,	Expected is 0	; FAILED.
+2016-01-06 09:35:30,707 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:40,	LIC标识: LIC01; X1接收流量数(KB), GUI is 913,	Expected is 0	; FAILED.
+2016-01-06 09:35:30,753 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:40,	LIC标识: LIC01; X1发送流量数(KB), GUI is 914,	Expected is 0	; FAILED.
+2016-01-06 09:35:30,801 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:40,	LIC标识: LIC01; X2接收消息数, GUI is 915,	Expected is 0	; FAILED.
+2016-01-06 09:35:30,867 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:40,	LIC标识: LIC01; X2发送消息数, GUI is 916,	Expected is 0	; FAILED.
+2016-01-06 09:35:30,933 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:40,	LIC标识: LIC01; X2接收流量数(KB), GUI is 917,	Expected is 0	; FAILED.
+2016-01-06 09:35:31,006 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:40,	LIC标识: LIC01; X2发送流量数(KB), GUI is 918,	Expected is 0	; FAILED.
+2016-01-06 09:35:31,012 [ERROR] PmCommon check_pm_rows(178) Row 15 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:31,016 [INFO] PmCommon check_pm_by_row(242) Start to check row: 16
+2016-01-06 09:35:31,891 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:40,	LIC标识: LIC02; X1接收消息数, GUI is 921,	Expected is 0	; FAILED.
+2016-01-06 09:35:31,967 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:40,	LIC标识: LIC02; X1发送消息数, GUI is 922,	Expected is 0	; FAILED.
+2016-01-06 09:35:32,055 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:40,	LIC标识: LIC02; X1接收流量数(KB), GUI is 923,	Expected is 0	; FAILED.
+2016-01-06 09:35:32,132 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:40,	LIC标识: LIC02; X1发送流量数(KB), GUI is 924,	Expected is 0	; FAILED.
+2016-01-06 09:35:32,209 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:40,	LIC标识: LIC02; X2接收消息数, GUI is 925,	Expected is 0	; FAILED.
+2016-01-06 09:35:32,296 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:40,	LIC标识: LIC02; X2发送消息数, GUI is 926,	Expected is 0	; FAILED.
+2016-01-06 09:35:32,371 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:40,	LIC标识: LIC02; X2接收流量数(KB), GUI is 927,	Expected is 0	; FAILED.
+2016-01-06 09:35:32,448 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:40,	LIC标识: LIC02; X2发送流量数(KB), GUI is 928,	Expected is 0	; FAILED.
+2016-01-06 09:35:32,450 [ERROR] PmCommon check_pm_rows(178) Row 16 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:32,453 [INFO] PmCommon check_pm_by_row(242) Start to check row: 17
+2016-01-06 09:35:33,405 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:35,	LIC标识: LIC01; X1接收消息数, GUI is 811,	Expected is 0	; FAILED.
+2016-01-06 09:35:33,492 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:35,	LIC标识: LIC01; X1发送消息数, GUI is 812,	Expected is 0	; FAILED.
+2016-01-06 09:35:33,572 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:35,	LIC标识: LIC01; X1接收流量数(KB), GUI is 813,	Expected is 0	; FAILED.
+2016-01-06 09:35:33,651 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:35,	LIC标识: LIC01; X1发送流量数(KB), GUI is 814,	Expected is 0	; FAILED.
+2016-01-06 09:35:33,727 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:35,	LIC标识: LIC01; X2接收消息数, GUI is 815,	Expected is 0	; FAILED.
+2016-01-06 09:35:33,803 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:35,	LIC标识: LIC01; X2发送消息数, GUI is 816,	Expected is 0	; FAILED.
+2016-01-06 09:35:33,881 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:35,	LIC标识: LIC01; X2接收流量数(KB), GUI is 817,	Expected is 0	; FAILED.
+2016-01-06 09:35:33,954 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:35,	LIC标识: LIC01; X2发送流量数(KB), GUI is 818,	Expected is 0	; FAILED.
+2016-01-06 09:35:33,957 [ERROR] PmCommon check_pm_rows(178) Row 17 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:33,959 [INFO] PmCommon check_pm_by_row(242) Start to check row: 18
+2016-01-06 09:35:34,848 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:35,	LIC标识: LIC02; X1接收消息数, GUI is 821,	Expected is 0	; FAILED.
+2016-01-06 09:35:34,928 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:35,	LIC标识: LIC02; X1发送消息数, GUI is 822,	Expected is 0	; FAILED.
+2016-01-06 09:35:35,038 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:35,	LIC标识: LIC02; X1接收流量数(KB), GUI is 823,	Expected is 0	; FAILED.
+2016-01-06 09:35:35,122 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:35,	LIC标识: LIC02; X1发送流量数(KB), GUI is 824,	Expected is 0	; FAILED.
+2016-01-06 09:35:35,219 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:35,	LIC标识: LIC02; X2接收消息数, GUI is 825,	Expected is 0	; FAILED.
+2016-01-06 09:35:35,318 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:35,	LIC标识: LIC02; X2发送消息数, GUI is 826,	Expected is 0	; FAILED.
+2016-01-06 09:35:35,398 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:35,	LIC标识: LIC02; X2接收流量数(KB), GUI is 827,	Expected is 0	; FAILED.
+2016-01-06 09:35:35,479 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:35,	LIC标识: LIC02; X2发送流量数(KB), GUI is 828,	Expected is 0	; FAILED.
+2016-01-06 09:35:35,480 [ERROR] PmCommon check_pm_rows(178) Row 18 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:35,483 [INFO] PmCommon check_pm_by_row(242) Start to check row: 19
+2016-01-06 09:35:36,417 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:30,	LIC标识: LIC01; X1接收消息数, GUI is 711,	Expected is 0	; FAILED.
+2016-01-06 09:35:36,497 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:30,	LIC标识: LIC01; X1发送消息数, GUI is 712,	Expected is 0	; FAILED.
+2016-01-06 09:35:36,576 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:30,	LIC标识: LIC01; X1接收流量数(KB), GUI is 713,	Expected is 0	; FAILED.
+2016-01-06 09:35:36,657 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:30,	LIC标识: LIC01; X1发送流量数(KB), GUI is 714,	Expected is 0	; FAILED.
+2016-01-06 09:35:36,736 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:30,	LIC标识: LIC01; X2接收消息数, GUI is 715,	Expected is 0	; FAILED.
+2016-01-06 09:35:36,815 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:30,	LIC标识: LIC01; X2发送消息数, GUI is 716,	Expected is 0	; FAILED.
+2016-01-06 09:35:36,890 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:30,	LIC标识: LIC01; X2接收流量数(KB), GUI is 717,	Expected is 0	; FAILED.
+2016-01-06 09:35:36,963 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:30,	LIC标识: LIC01; X2发送流量数(KB), GUI is 718,	Expected is 0	; FAILED.
+2016-01-06 09:35:36,967 [ERROR] PmCommon check_pm_rows(178) Row 19 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:36,969 [INFO] PmCommon check_pm_by_row(242) Start to check row: 20
+2016-01-06 09:35:37,874 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:30,	LIC标识: LIC02; X1接收消息数, GUI is 721,	Expected is 0	; FAILED.
+2016-01-06 09:35:37,950 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:30,	LIC标识: LIC02; X1发送消息数, GUI is 722,	Expected is 0	; FAILED.
+2016-01-06 09:35:38,043 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:30,	LIC标识: LIC02; X1接收流量数(KB), GUI is 723,	Expected is 0	; FAILED.
+2016-01-06 09:35:38,115 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:30,	LIC标识: LIC02; X1发送流量数(KB), GUI is 724,	Expected is 0	; FAILED.
+2016-01-06 09:35:38,191 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:30,	LIC标识: LIC02; X2接收消息数, GUI is 725,	Expected is 0	; FAILED.
+2016-01-06 09:35:38,265 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:30,	LIC标识: LIC02; X2发送消息数, GUI is 726,	Expected is 0	; FAILED.
+2016-01-06 09:35:38,339 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:30,	LIC标识: LIC02; X2接收流量数(KB), GUI is 727,	Expected is 0	; FAILED.
+2016-01-06 09:35:38,420 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:30,	LIC标识: LIC02; X2发送流量数(KB), GUI is 728,	Expected is 0	; FAILED.
+2016-01-06 09:35:38,421 [ERROR] PmCommon check_pm_rows(178) Row 20 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:38,424 [INFO] PmCommon check_pm_by_row(242) Start to check row: 21
+2016-01-06 09:35:39,424 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:25,	LIC标识: LIC01; X1接收消息数, GUI is 611,	Expected is 0	; FAILED.
+2016-01-06 09:35:39,494 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:25,	LIC标识: LIC01; X1发送消息数, GUI is 612,	Expected is 0	; FAILED.
+2016-01-06 09:35:39,572 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:25,	LIC标识: LIC01; X1接收流量数(KB), GUI is 613,	Expected is 0	; FAILED.
+2016-01-06 09:35:39,648 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:25,	LIC标识: LIC01; X1发送流量数(KB), GUI is 614,	Expected is 0	; FAILED.
+2016-01-06 09:35:39,729 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:25,	LIC标识: LIC01; X2接收消息数, GUI is 615,	Expected is 0	; FAILED.
+2016-01-06 09:35:39,815 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:25,	LIC标识: LIC01; X2发送消息数, GUI is 616,	Expected is 0	; FAILED.
+2016-01-06 09:35:39,897 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:25,	LIC标识: LIC01; X2接收流量数(KB), GUI is 617,	Expected is 0	; FAILED.
+2016-01-06 09:35:39,976 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:25,	LIC标识: LIC01; X2发送流量数(KB), GUI is 618,	Expected is 0	; FAILED.
+2016-01-06 09:35:39,979 [ERROR] PmCommon check_pm_rows(178) Row 21 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:39,980 [INFO] PmCommon check_pm_by_row(242) Start to check row: 22
+2016-01-06 09:35:41,003 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:25,	LIC标识: LIC02; X1接收消息数, GUI is 621,	Expected is 0	; FAILED.
+2016-01-06 09:35:41,082 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:25,	LIC标识: LIC02; X1发送消息数, GUI is 622,	Expected is 0	; FAILED.
+2016-01-06 09:35:41,158 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:25,	LIC标识: LIC02; X1接收流量数(KB), GUI is 623,	Expected is 0	; FAILED.
+2016-01-06 09:35:41,246 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:25,	LIC标识: LIC02; X1发送流量数(KB), GUI is 624,	Expected is 0	; FAILED.
+2016-01-06 09:35:41,321 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:25,	LIC标识: LIC02; X2接收消息数, GUI is 625,	Expected is 0	; FAILED.
+2016-01-06 09:35:41,404 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:25,	LIC标识: LIC02; X2发送消息数, GUI is 626,	Expected is 0	; FAILED.
+2016-01-06 09:35:41,490 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:25,	LIC标识: LIC02; X2接收流量数(KB), GUI is 627,	Expected is 0	; FAILED.
+2016-01-06 09:35:41,565 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:25,	LIC标识: LIC02; X2发送流量数(KB), GUI is 628,	Expected is 0	; FAILED.
+2016-01-06 09:35:41,568 [ERROR] PmCommon check_pm_rows(178) Row 22 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:41,569 [INFO] PmCommon check_pm_by_row(242) Start to check row: 23
+2016-01-06 09:35:42,482 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:20,	LIC标识: LIC01; X1接收消息数, GUI is 511,	Expected is 0	; FAILED.
+2016-01-06 09:35:42,556 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:20,	LIC标识: LIC01; X1发送消息数, GUI is 512,	Expected is 0	; FAILED.
+2016-01-06 09:35:42,632 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:20,	LIC标识: LIC01; X1接收流量数(KB), GUI is 513,	Expected is 0	; FAILED.
+2016-01-06 09:35:42,707 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:20,	LIC标识: LIC01; X1发送流量数(KB), GUI is 514,	Expected is 0	; FAILED.
+2016-01-06 09:35:42,786 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:20,	LIC标识: LIC01; X2接收消息数, GUI is 515,	Expected is 0	; FAILED.
+2016-01-06 09:35:42,864 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:20,	LIC标识: LIC01; X2发送消息数, GUI is 516,	Expected is 0	; FAILED.
+2016-01-06 09:35:42,943 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:20,	LIC标识: LIC01; X2接收流量数(KB), GUI is 517,	Expected is 0	; FAILED.
+2016-01-06 09:35:43,017 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:20,	LIC标识: LIC01; X2发送流量数(KB), GUI is 518,	Expected is 0	; FAILED.
+2016-01-06 09:35:43,020 [ERROR] PmCommon check_pm_rows(178) Row 23 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:43,023 [INFO] PmCommon check_pm_by_row(242) Start to check row: 24
+2016-01-06 09:35:43,911 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:20,	LIC标识: LIC02; X1接收消息数, GUI is 521,	Expected is 0	; FAILED.
+2016-01-06 09:35:43,986 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:20,	LIC标识: LIC02; X1发送消息数, GUI is 522,	Expected is 0	; FAILED.
+2016-01-06 09:35:44,062 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:20,	LIC标识: LIC02; X1接收流量数(KB), GUI is 523,	Expected is 0	; FAILED.
+2016-01-06 09:35:44,138 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:20,	LIC标识: LIC02; X1发送流量数(KB), GUI is 524,	Expected is 0	; FAILED.
+2016-01-06 09:35:44,216 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:20,	LIC标识: LIC02; X2接收消息数, GUI is 525,	Expected is 0	; FAILED.
+2016-01-06 09:35:44,296 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:20,	LIC标识: LIC02; X2发送消息数, GUI is 526,	Expected is 0	; FAILED.
+2016-01-06 09:35:44,371 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:20,	LIC标识: LIC02; X2接收流量数(KB), GUI is 527,	Expected is 0	; FAILED.
+2016-01-06 09:35:44,447 [ERROR] PmCommon check_pm_by_row(288) 上报周期: 2016-01-06 08:20,	LIC标识: LIC02; X2发送流量数(KB), GUI is 528,	Expected is 0	; FAILED.
+2016-01-06 09:35:44,450 [ERROR] PmCommon check_pm_rows(178) Row 24 check FAILED. Check the log for detailed information.
+2016-01-06 09:35:44,453 [INFO] PmCommon check_pm_rows(234) GUI times: 2016-01-06 09:15:00, 2016-01-06 09:15:00, 2016-01-06 09:10:00, 2016-01-06 09:10:00, 2016-01-06 09:05:00, 2016-01-06 09:05:00, 2016-01-06 09:00:00, 2016-01-06 09:00:00, 2016-01-06 08:55:00, 2016-01-06 08:55:00, 2016-01-06 08:50:00, 2016-01-06 08:50:00, 2016-01-06 08:45:00, 2016-01-06 08:45:00, 2016-01-06 08:40:00, 2016-01-06 08:40:00, 2016-01-06 08:35:00, 2016-01-06 08:35:00, 2016-01-06 08:30:00, 2016-01-06 08:30:00, 2016-01-06 08:25:00, 2016-01-06 08:25:00, 2016-01-06 08:20:00, 2016-01-06 08:20:00
+2016-01-06 09:35:44,457 [ERROR] PmCommon check_pm_rows(238) Overall FAILED.
