@@ -166,7 +166,7 @@ def check_pm_accurate_all_ne(dict_all_nes, tgt_server):
                     logger_pm.error('FAILED: Wait for SBC PM timeout.')
 
             # check other 5 NEs
-            for k, v in dict_all_nes.iteritems:
+            for k, v in dict_all_nes.iteritems():
                 if 'SBC' != k:
                     logger_pm.info('******************** Start to check PM for ' + str(k) + ' ************************')
                     ne_info = get_ne_info_from_cfg(v['ne_cfg'])
