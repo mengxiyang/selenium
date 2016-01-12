@@ -15,7 +15,7 @@ def check_pm_all_nes():
     # ne_info_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'nes' + sep + 'mme.cfg')
     # counter_info_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'counters' + sep + 'mme.cfg')
 
-    tgt_server = '10.184.73.77'
+    server_info_path = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'execute_conf.cfg')
     t_now = datetime.now()
     end_time = t_now + timedelta(minutes=-(t_now.minute % 5 + 14))
     str_end_time = end_time.strftime('%Y-%m-%d %H:%M') + ":00"
@@ -53,4 +53,4 @@ def check_pm_all_nes():
         }
     }
 
-    PmCaseBase.check_pm_accurate_all_ne(dict_all_nes_infos, tgt_server)
+    PmCaseBase.check_pm_accurate_all_ne(dict_all_nes_infos, server_info_path)

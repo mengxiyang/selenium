@@ -206,30 +206,31 @@ def check_pm_rows(driver, logger, ne_type, dict_counters, rows_of_page, dict_add
                             bool_overall = False
                             logger.error('Failed: PM Data time is not multiples of 5.')
                             break
-                        if 300 != (list_time[i + 1] - list_time[1]).seconds:
+                        if 300 != abs((list_time[i] - list_time[i + 1]).seconds):
                             bool_overall = False
                             logger.error('Failed: PM period is not 5 minutes.')
                             break
             elif 'OCGAS' == ne_type:
                 for i in range(0, len(list_time), 2):
-                    if list_time[i] is None or list_time[i + 1] is None or list_time[i + 2] is None:
-                        bool_overall = False
-                        logger.error('Failed: Fail to get the PM data time.')
-                        break
-                    else:
-                        if i != len(list_time - 2):
+                    if i != len(list_time) - 2:
+                        if list_time[i] is None or list_time[i + 1] is None or list_time[i + 2] is None:
+                            bool_overall = False
+                            logger.error('Failed: Fail to get the PM data time.')
+                            break
+                        else:
                             if list_time[i] != list_time[i + 1]:
                                 bool_overall = False
                                 logger.error('Failed: Two LICs of Node OCGAS should be the same.')
                                 break
                             else:
-                                if 0 == list_time[i].minute % 5 or 0 != list_time[i + 2] % 5:
+                                if 0 != list_time[i].minute % 5 or 0 != list_time[i + 2].minute % 5:
                                     bool_overall = False
                                     logger.error('Failed: PM Data time is not multiples of 5.')
                                     break
-                                elif 300 != (list_time[i + 2] - list_time[1]).seconds:
+                                elif 300 != abs((list_time[i] - list_time[i + 2]).seconds):
                                     bool_overall = False
-                                    logger.error('Failed: PM period is not 5 minutes.')
+                                    logger.error('Failed: PM period is not 5 minutes. ' + str(list_time[i]) + ' '
+                                                 + str(list_time[i + 2]))
                                     break
     logger.info('GUI times: ' + ', '.join([str(t) for t in list_time]))
     if bool_overall:

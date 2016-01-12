@@ -22,7 +22,8 @@ from selenium.common.exceptions import TimeoutException
 log_common = logging.getLogger('selenium.CommonStatic')
 
 
-def login_rsnms(dict_browser, host, logger, username='admin', password='Admin!@#123', port=8686):
+def login_rsnms(dict_browser, host, logger, username='admin', password='Admin!@#123', port=8686,
+                url='/XOAM/login/index.html'):
     """
     The function mainly init the browser driver, return the instance of the selenium driver.
     :param password: the password of the RSNMS system.
@@ -37,13 +38,13 @@ def login_rsnms(dict_browser, host, logger, username='admin', password='Admin!@#
     if 'Windows' == osutils.get_os_type():
         if 'chrome' == dict_browser['browser_type']:
             return windows_chrome_login_rsnms(dict_browser['browser_path'], dict_browser['driver_path'], logger,
-                                              host, username, password, port)
+                                              host, username, password, port, url)
         elif 'firefox' == dict_browser['browser_type']:
             return windows_firefox_login_rsnms(dict_browser['browser_path'], dict_browser['driver_path'], logger,
-                                               host, username, password, port)
+                                               host, username, password, port, url)
 
 
-def windows_firefox_login_rsnms(browser_path, driver_path, logger, host, username, password, port):
+def windows_firefox_login_rsnms(browser_path, driver_path, logger, host, username, password, port, url):
     browser_path = os.path.normpath(browser_path)
     logger.info('Browser path: ' + str(browser_path))
     firfox_bin = webdriver.firefox.firefox_binary.FirefoxBinary(browser_path)
@@ -54,7 +55,7 @@ def windows_firefox_login_rsnms(browser_path, driver_path, logger, host, usernam
 
 
 
-def windows_chrome_login_rsnms(browser_path, driver_path, logger, host, username, password, port):
+def windows_chrome_login_rsnms(browser_path, driver_path, logger, host, username, password, port, url):
     """
     init selenium driver for chrome on windows platform.
     :param browser_path: chrome installation path
@@ -74,12 +75,12 @@ def windows_chrome_login_rsnms(browser_path, driver_path, logger, host, username
     driver = webdriver.Chrome(chrome_driver, chrome_options=opts)
     # driver.set_window_size(1024, 600)
     driver.maximize_window()
-    login_first_page(driver, logger, host, username, password, port)
+    login_first_page(driver, logger, host, username, password, port, url)
     return driver
 
 
-def login_first_page(driver, logger, host, username, password, port):
-    index = 'http://' + str(host) + ':' + str(port) + '/XOAM/login/index.html'
+def login_first_page(driver, logger, host, username, password, port, url):
+    index = 'http://' + str(host) + ':' + str(port) + url
     logger.info('Web page: ' + str(index))
     driver.get(index)
     driver.find_element_by_id('loginUsername').clear()

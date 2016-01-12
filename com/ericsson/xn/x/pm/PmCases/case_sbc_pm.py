@@ -10,5 +10,5 @@ def pm_sbc_func_2rounds():
                                                                 + 'x' + sep + 'pm' + sep + 'PmCases')[0]
     ne_info_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'nes' + sep + 'sbc.cfg')
     counter_info_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'counters' + sep + 'sbc.cfg')
-    tgt_server = '10.184.73.77'
-    PmCaseBase.check_pm_accurate_sbc(ne_info_cfg, counter_info_cfg, tgt_server, 12)
+    server_info_path = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'execute_conf.cfg')
+    PmCaseBase.check_pm_accurate_sbc(ne_info_cfg, counter_info_cfg, server_info_path, 3)

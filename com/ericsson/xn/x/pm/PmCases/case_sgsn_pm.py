@@ -11,8 +11,8 @@ def pm_sgsn_func():
                                                                 sep + 'xn' + sep + 'x' + sep + 'pm')[0]
     ne_info_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'nes' + sep + 'sgsn.cfg')
     counter_info_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'counters' + sep + 'sgsn.cfg')
-    tgt_server = '10.184.73.77'
+    server_info_path = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'execute_conf.cfg')
     t_now = datetime.now()
     end_time = t_now + timedelta(minutes=-(t_now.minute % 5 + 14))
     str_end_time = end_time.strftime('%Y-%m-%d %H:%M') + ":00"
-    PmCaseBase.check_pm_accurate(ne_info_cfg, counter_info_cfg, tgt_server, str_end_time)
+    PmCaseBase.check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_time)

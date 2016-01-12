@@ -38,14 +38,15 @@ if 'YES' == log_cfg.getProperty('log_console').strip().upper():
 logger_pm.info('Logger of PM part init successfully.')
 
 
-def check_pm_accurate(ne_info_cfg, counter_info_cfg, tgt_server, str_end_time):
+def check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_time):
     global sep, logger_pm
     ne_info = get_ne_info_from_cfg(ne_info_cfg)
     counters_pm = get_pm_counters_map(counter_info_cfg)
+    server_info = Properties(server_info_path)
     dict_browser_chrome = {
-        "browser_type": 'chrome',
-        "browser_path": 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe',
-        "driver_path": 'C:\Users\EJLNOQC\installed\chromedriver.exe'
+        "browser_type": server_info.getProperty('browser_type'),
+        "browser_path": server_info.getProperty('browser_path'),
+        "driver_path": server_info.getProperty('driver_path')
     }
 
     dict_browser_firefox = {
@@ -54,7 +55,9 @@ def check_pm_accurate(ne_info_cfg, counter_info_cfg, tgt_server, str_end_time):
         "driver_path": ''
     }
 
-    driver = CommonStatic.login_rsnms(dict_browser_chrome, tgt_server, logger_pm)
+    driver = CommonStatic.login_rsnms(dict_browser_chrome, server_info.getProperty('host'), logger_pm,
+                                      server_info.getProperty('username'), server_info.getProperty('password'),
+                                      server_info.getProperty('port'), server_info.getProperty('url'))
     if driver:
         try:
             NeCommon.to_ne_management_page(driver, logger_pm)
@@ -84,14 +87,15 @@ def check_pm_accurate(ne_info_cfg, counter_info_cfg, tgt_server, str_end_time):
             CommonStatic.quite_driver(driver)
 
 
-def check_pm_accurate_sbc(ne_info_cfg, counter_info_cfg, tgt_server, rounds):
+def check_pm_accurate_sbc(ne_info_cfg, counter_info_cfg, server_info_path, rounds):
     global sep, logger_pm
     ne_info = get_ne_info_from_cfg(ne_info_cfg)
     counters_pm = get_pm_counters_map(counter_info_cfg)
+    server_info = Properties(server_info_path)
     dict_browser_chrome = {
-        "browser_type": 'chrome',
-        "browser_path": 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe',
-        "driver_path": 'C:\Users\EJLNOQC\installed\chromedriver.exe'
+        "browser_type": server_info.getProperty('browser_type'),
+        "browser_path": server_info.getProperty('browser_path'),
+        "driver_path": server_info.getProperty('driver_path')
     }
 
     dict_browser_firefox = {
@@ -100,7 +104,9 @@ def check_pm_accurate_sbc(ne_info_cfg, counter_info_cfg, tgt_server, rounds):
         "driver_path": ''
     }
 
-    driver = CommonStatic.login_rsnms(dict_browser_chrome, tgt_server, logger_pm)
+    driver = CommonStatic.login_rsnms(dict_browser_chrome, server_info.getProperty('host'), logger_pm,
+                                      server_info.getProperty('username'), server_info.getProperty('password'),
+                                      server_info.getProperty('port'), server_info.getProperty('url'))
     if driver:
         try:
             NeCommon.to_ne_management_page(driver, logger_pm)
@@ -125,12 +131,13 @@ def check_pm_accurate_sbc(ne_info_cfg, counter_info_cfg, tgt_server, rounds):
             CommonStatic.quite_driver(driver)
 
 
-def check_pm_accurate_all_ne(dict_all_nes, tgt_server):
+def check_pm_accurate_all_ne(dict_all_nes, server_info_path):
     global sep, logger_pm
+    server_info = Properties(server_info_path)
     dict_browser_chrome = {
-        "browser_type": 'chrome',
-        "browser_path": 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe',
-        "driver_path": 'C:\Users\EJLNOQC\installed\chromedriver.exe'
+        "browser_type": server_info.getProperty('browser_type'),
+        "browser_path": server_info.getProperty('browser_path'),
+        "driver_path": server_info.getProperty('driver_path')
     }
 
     dict_browser_firefox = {
@@ -139,7 +146,9 @@ def check_pm_accurate_all_ne(dict_all_nes, tgt_server):
         "driver_path": ''
     }
 
-    driver = CommonStatic.login_rsnms(dict_browser_chrome, tgt_server, logger_pm)
+    driver = CommonStatic.login_rsnms(dict_browser_chrome, server_info.getProperty('host'), logger_pm,
+                                      server_info.getProperty('username'), server_info.getProperty('password'),
+                                      server_info.getProperty('port'), server_info.getProperty('url'))
     if driver:
         try:
             # check the sbc
@@ -166,7 +175,7 @@ def check_pm_accurate_all_ne(dict_all_nes, tgt_server):
                     logger_pm.error('FAILED: Wait for SBC PM timeout.')
 
             # check other 5 NEs
-            for k, v in dict_all_nes.iteritems():
+            for k, v in dict_all_nes.iteritems:
                 if 'SBC' != k:
                     logger_pm.info('******************** Start to check PM for ' + str(k) + ' ************************')
                     ne_info = get_ne_info_from_cfg(v['ne_cfg'])
@@ -187,8 +196,8 @@ def check_pm_accurate_all_ne(dict_all_nes, tgt_server):
                             pm_rounds = len(counters_pm) / 2
 
                         check_rounds = len(counters_pm)
-                        # if 'SGW' == ne_info['ne_type'] or 'PGW' == ne_info['ne_type']:
-                        #    check_rounds = 4
+                        if 'SGW' == ne_info['ne_type'] or 'PGW' == ne_info['ne_type']:
+                            check_rounds
 
                         start_time = end_time + timedelta(minutes=-5 * pm_rounds)
                         PmCommon.init_and_search(driver, logger_pm, dict_ne_info['ne_name'], end_time, start_time)

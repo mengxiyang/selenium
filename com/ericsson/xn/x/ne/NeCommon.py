@@ -128,7 +128,7 @@ def check_ne_exist(driver, logger, ne_type, ne_ip):
     id_trs = (By.XPATH, ".//tbody/tr")
     try:
         trs = find_all_widgets(table, 20, id_trs)
-
+        is_has_pair_nes = False
         for tr in trs:
             # gui_type = tr.get_attribute('innerHTML').encode('utf-8')
             gui_ne_name = find_single_widget(tr, 10, (By.XPATH, ".//td[1]")).get_attribute('innerHTML').encode('utf-8')
@@ -144,10 +144,13 @@ def check_ne_exist(driver, logger, ne_type, ne_ip):
                     else:
                         if is_pair_nes(gui_ne_type.upper(), ne_type.upper()):
                             # this means that there is a pair NE with same IP exist, but we can still add a NE
-                            return 0, None
+                            # but will check if NE with the same type & same IP exist
+                            is_has_pair_nes = True
                         else:
                             # this means a NE with different type but the same IP already exist.
                             return 2, gui_ne_name
+        if is_has_pair_nes:
+            return 0, None
         # the ip that we want to add does not exist
         return -1, None
     except Exception as e:
