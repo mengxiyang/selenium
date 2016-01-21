@@ -42,16 +42,35 @@ def is_pair_nes(ne, cne):
 
 def ne_type_index_add_ne_page(ne_type):
     dic = {
-        "MME": 1,
-        "OCGAS": 2,
-        "PGW": 3,
-        "SBC": 4,
-        "SGSN": 5,
-        "SGW": 6
+        "3GSGSN": 1,
+        "GGSN": 2,
+        "HLR": 3,
+        "IMSHSS": 4,
+        "LTEHSS": 5,
+        "MME": 6,
+        "MSC": 7,
+        "MTAS": 8,
+        "OCGAS": 9,
+        "PCSCF": 10,
+        "SGW": 11,
+        "PGW": 12,
+        "SBC": 13,
+        "SGSN": 14
     }
     if dic.has_key(ne_type):
         return dic[ne_type]
     return None
+
+
+def ne_category_by_ne_type(ne_type):
+    category = {
+        'SGW': '4G',
+        'PGW': '4G',
+        'SGSN': '3G',
+        'MME': '4G',
+        'SBC': 'IMS',
+        'OCGAS': 'IMS'
+    }
 
 
 """

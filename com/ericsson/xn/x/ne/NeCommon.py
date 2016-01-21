@@ -119,6 +119,12 @@ def add_new_ne(driver, logger, dict_ne_info):
     return ne_name
 
 
+def check_ne_exist_check_type():
+    pass
+
+
+
+@deprecated
 def check_ne_exist(driver, logger, ne_type, ne_ip):
     # note there is another way to check if NE with certain IP exist, that is connect to the server's database and
     # check the NES data table
