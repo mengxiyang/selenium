@@ -2,6 +2,7 @@
 
 import logging
 import os
+import time
 from datetime import datetime, timedelta
 from logging.handlers import RotatingFileHandler
 
@@ -107,6 +108,10 @@ def check_pm_accurate_sbc(ne_info_cfg, counter_info_cfg, server_info_path, round
     driver = CommonStatic.login_rsnms(dict_browser_chrome, server_info.getProperty('host'), logger_pm,
                                       server_info.getProperty('username'), server_info.getProperty('password'),
                                       server_info.getProperty('port'), server_info.getProperty('url'))
+    time.sleep(3)
+    driver.get('http://10.184.73.77:8686/XOAM/src/index.html#network-overview/ne-management')
+    time.sleep(3)
+    driver.get('http://10.184.73.77:8686/XOAM/src/index.html#network-overview/pm-management/pm-4g/pm-sgw')
     if driver:
         try:
             NeCommon.to_ne_management_page(driver, logger_pm)

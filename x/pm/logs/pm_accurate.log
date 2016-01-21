@@ -15319,3 +15319,16 @@
 2016-01-11 17:44:59,256 [INFO] CommonStatic login_first_page(93) Login to the InterfaceManagement page successfully.
 2016-01-11 17:44:59,257 [INFO] NeCommon to_ne_management_page(13) To the NeManagement page...
 2016-01-11 17:45:11,687 [INFO] PmCommon to_pm_management_page(14) To the PmManagement page...
+2016-01-21 10:27:27,559 [INFO] PmCaseBase <module>(38) Logger of PM part init successfully.
+2016-01-21 10:27:47,726 [INFO] CommonStatic login_rsnms(36) Will start the web browser and perform test case.
+2016-01-21 10:27:47,756 [INFO] CommonStatic windows_chrome_login_rsnms(70) Browser driver path: C:\Users\EJLNOQC\installed\chromedriver.exe
+2016-01-21 10:27:47,760 [INFO] CommonStatic windows_chrome_login_rsnms(74) Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+2016-01-21 10:27:50,878 [INFO] CommonStatic login_first_page(84) Web page: http://10.184.73.77:8686/XOAM/login/index.html
+2016-01-21 10:28:04,690 [INFO] CommonStatic login_first_page(93) Login to the InterfaceManagement page successfully.
+2016-01-21 10:30:31,680 [INFO] PmCaseBase <module>(39) Logger of PM part init successfully.
+2016-01-21 10:30:31,710 [INFO] CommonStatic login_rsnms(36) Will start the web browser and perform test case.
+2016-01-21 10:30:31,727 [INFO] CommonStatic windows_chrome_login_rsnms(70) Browser driver path: C:\Users\EJLNOQC\installed\chromedriver.exe
+2016-01-21 10:30:31,730 [INFO] CommonStatic windows_chrome_login_rsnms(74) Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+2016-01-21 10:30:36,019 [INFO] CommonStatic login_first_page(84) Web page: http://10.184.73.77:8686/XOAM/login/index.html
+2016-01-21 10:30:49,003 [INFO] CommonStatic login_first_page(93) Login to the InterfaceManagement page successfully.
+2016-01-21 10:30:55,128 [INFO] NeCommon to_ne_management_page(13) To the NeManagement page...

@@ -22,6 +22,14 @@ def to_ne_management_page(driver, logger):
     find_single_widget(driver, 10, id_new_btn)
 
 
+def to_ne_management_page_by_url(driver, logger, server_info, url_add='#network-overview/ne-management'):
+    logger.info('Will Navigate to the NeManagement page...')
+    base_url = 'http://' + server_info.getProperty('host') + ':' + str(server_info.getProperty('port')) + \
+               server_info.getProperty('url')
+    logger.info('Base URL is: ' + base_url)
+    driver.get(base_url + url_add)
+
+
 def check_and_add_ne(driver, logger, dict_ne_info):
     ne_exist, ne_name = check_ne_exist(driver, logger, dict_ne_info["ne_type"], dict_ne_info["ne_ip"])
     if 2 == ne_exist:
@@ -31,7 +39,14 @@ def check_and_add_ne(driver, logger, dict_ne_info):
         dict_ne_info["ne_name"] = ne_name
     elif 1 > ne_exist:
         dict_ne_info["ne_name"] = add_new_ne(driver, logger, dict_ne_info)
+    refresh_ne_management_page(driver, logger)
     return dict_ne_info
+
+
+def refresh_ne_management_page(driver, logger):
+    driver.refresh()
+    # check page loaded
+    find_single_widget(driver, 10, (By.ID, "idBtn-create")).click()
 
 
 def add_new_ne(driver, logger, dict_ne_info):
@@ -41,8 +56,10 @@ def add_new_ne(driver, logger, dict_ne_info):
     id_select_ne_type = (By.XPATH, "//div[@id='i_netype']/div/button")
     find_single_widget(driver, 10, id_select_ne_type).click()
 
-    id_ne_type_list = (By.XPATH, "//div[@id='i_netype']/div/div/div[" +
-                       str(ne_type_index_add_ne_page(dict_ne_info["ne_type"])) + "]")
+    # id_ne_type_list = (By.XPATH, "//div[@id='i_netype']/div/div/div[" +
+    #                  str(ne_type_index_add_ne_page(dict_ne_info["ne_type"])) + "]")
+    ne_type = dict_ne_info["ne_type"]
+    id_ne_type_list = (By.XPATH, "//div[@id='i_netype']/div/div/div[@title='" + ne_type + "']")
     find_single_widget(driver, 10, id_ne_type_list).click()
     sleep(.5)
 
@@ -119,12 +136,56 @@ def add_new_ne(driver, logger, dict_ne_info):
     return ne_name
 
 
-def check_ne_exist_check_type():
-    pass
+def check_ne_exist_by_type(driver, logger, ne_type, ne_ip, page_no=10):
+    # note there is another way to check if NE with certain IP exist, that is connect to the server's database and
+    # check the NES data table
+    id_table = (By.XPATH, "//div[@id='dv1']/div[2]/div/div/div[3]/div/div/div/table")
+    table = find_single_widget(driver, 10, id_table)
+
+    id_page = (By.XPATH, "//div[@id='dv1']/div[2]/div/div/div[2]/div/input")
+    pages = find_single_widget(driver, 10, id_page)
+    pages.clear()
+    pages.send_keys(page_no)
+
+    # set ne type
+    id_type = (By.XPATH, "//div[@id='dv1']/div[2]/div/div/div[3]/div/div/div/table/thead/tr[2]/th[2]/input")
+    w_ne_type = find_single_widget(driver, 10, id_type)
+    w_ne_type.clear()
+    w_ne_type.send_keys(ne_type)
+
+    id_trs = (By.XPATH, ".//tbody/tr")
+    try:
+        trs = find_all_widgets(table, 20, id_trs)
+        is_has_pair_nes = False
+        for tr in trs:
+            # gui_type = tr.get_attribute('innerHTML').encode('utf-8')
+            gui_ne_name = find_single_widget(tr, 10, (By.XPATH, ".//td[1]")).get_attribute('innerHTML').encode('utf-8')
+            gui_ne_type = find_single_widget(tr, 10, (By.XPATH, ".//td[2]")).get_attribute('innerHTML').encode('utf-8')
+
+            tr.click()
+            if wait_until_text_shown_up(driver, 10, (By.ID, "i_nename"), gui_ne_name):
+                gui_ip = find_single_widget(driver, 10, (By.ID, "i_neip"))
+                if ne_ip == gui_ip.get_attribute('value').encode('utf-8').strip():
+                    if ne_type == gui_ne_type:
+                        # NE with same ip and same type exit
+                        return 1, gui_ne_name
+                    else:
+                        if is_pair_nes(gui_ne_type.upper(), ne_type.upper()):
+                            # this means that there is a pair NE with same IP exist, but we can still add a NE
+                            # but will check if NE with the same type & same IP exist
+                            is_has_pair_nes = True
+                        else:
+                            # this means a NE with different type but the same IP already exist.
+                            return 2, gui_ne_name
+        if is_has_pair_nes:
+            return 0, None
+        # the ip that we want to add does not exist
+        return -1, None
+    except Exception as e:
+        # the ip that we want to add does not exist
+        return -2, None
 
 
-
-@deprecated
 def check_ne_exist(driver, logger, ne_type, ne_ip):
     # note there is another way to check if NE with certain IP exist, that is connect to the server's database and
     # check the NES data table

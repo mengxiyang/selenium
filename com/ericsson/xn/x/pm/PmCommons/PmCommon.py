@@ -2,12 +2,13 @@
 
 
 import time
+import sys
 from datetime import datetime, timedelta
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
-from com.ericsson.xn.commons.funcutils import find_single_widget, find_all_widgets
+from com.ericsson.xn.commons.funcutils import find_single_widget, find_all_widgets, ne_category_by_ne_type
 
 
 def to_pm_management_page(driver, logger):
@@ -18,6 +19,64 @@ def to_pm_management_page(driver, logger):
 
     identifier = (By.XPATH, "//div[@class='ebBreadcrumbs-list']/ul/li[3]/a")
     find_single_widget(driver, 10, identifier).click()
+
+
+def to_pm_management_page_by_url(driver, logger, ne_type, server_info, to_url_pre='#network-overview/pm-management/'):
+    logger.info('Will Navigate to the NeManagement page...')
+    base_url = 'http://' + server_info.getProperty('host') + ':' + str(server_info.getProperty('port')) + \
+               server_info.getProperty('url')
+    logger.info('Base URL is: ' + base_url)
+    to_url = base_url + to_url_pre + 'pm-' + ne_category_by_ne_type(ne_type) + '/' + 'pm-' + ne_type.lower()
+    logger.info('To URL: ' + to_url)
+    driver.get(to_url)
+    if not check_in_correct_pm_page(driver, logger):
+        # not in correct page
+        sys.exit(0)
+
+
+def check_in_correct_pm_page(driver, logger):
+    id_search_btn = (By.ID, "idBtn-search")
+    b_validate = False
+    try:
+        find_single_widget(driver, 10, id_search_btn)
+        b_validate = True
+    except TimeoutException as e:
+        # page not loaded
+        return False
+    if b_validate:
+        # check if in the correct page
+        id_navi = identifier = (By.XPATH, "//div[@class='ebLayout-Navigation']/div")
+        navi = find_single_widget(driver, 10, id_navi)
+        children_divs = find_all_widgets(navi, 20, (By.XPATH, ".//div"))
+        str_last_navi = find_single_widget(children_divs[-1], 10, (By.XPATH, ".//a")).get_attribute('innerHTML').\
+            encode('utf-8').strip()
+        lis = find_all_widgets(children_divs[-2], 10, (By.XPATH, ".//div/ul/li"))
+        for li in lis:
+            str_a_li = find_single_widget(li, 10, (By.XPATH, ".//a")).get_attribute('innerHTML').encode('utf-8').strip()
+            if str_last_navi == str_a_li:
+                return True
+        # current page not in parent navigation
+        return False
+
+
+def make_in_correct_tab(driver, logger, ne_type, pm_type):
+    id_tabs = (By.XPATH, "//div[@class='ebTabs']/div[1]/div[2]/div")
+    tabs = find_all_widgets(driver, 10, id_tabs)
+    for tab in tabs:
+        if ne_type + ' ' + pm_type == tab.get_attribute('innerHTML').encode('utf-8').strip():
+            if not tab.get_attribute('class').encode('utf-8').find('ebTabs-tabItem_selected_true') > -1:
+                tab.click()
+                if not wait_noti_widget_show(driver, logger):
+                    logger.warn('Cannot see the notification to show query complete, error may happen later.')
+
+
+def wait_noti_widget_show(driver, logger, wait_time=10):
+    id_div = (By.XPATH, "//div[@class='noti']/div")
+    try:
+        find_single_widget(driver, wait_time, id_div)
+        return True
+    except TimeoutException:
+        return False
 
 
 def to_tab_by_ne_type(driver, ne_type, logger):
