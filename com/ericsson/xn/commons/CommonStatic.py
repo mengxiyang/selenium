@@ -7,6 +7,7 @@ Created on Dec 11, 2015
 """
 
 import os
+import time
 import logging
 import platform
 
@@ -89,11 +90,12 @@ def login_first_page(driver, logger, host, username, password, port, url):
     driver.find_element_by_id('loginPassword').send_keys(password)
     driver.find_element_by_id('submit').click()
     try:
-        WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "ebBtnSearch")))
+        WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.ID, "ebBtnSearch")))
         logger.info('Login to the InterfaceManagement page successfully.')
     except Exception as e:
         logger.error('Login to the InterfaceManagement page failed. ERROR: ' + str(e))
         return None
+    # time.sleep(1.0)
     # return driver
 
 

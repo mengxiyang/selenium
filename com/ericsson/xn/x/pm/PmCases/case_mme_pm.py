@@ -15,4 +15,4 @@ def pm_mme_func():
     t_now = datetime.now()
     end_time = t_now + timedelta(minutes=-(t_now.minute % 5 + 14))
     str_end_time = end_time.strftime('%Y-%m-%d %H:%M') + ":00"
-    PmCaseBase.check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_time)
+    PmCaseBase.check_pm_accurate_lic(ne_info_cfg, counter_info_cfg, server_info_path, str_end_time)

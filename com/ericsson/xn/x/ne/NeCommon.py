@@ -25,7 +25,7 @@ def to_ne_management_page(driver, logger):
 def to_ne_management_page_by_url(driver, logger, server_info, url_add='#network-overview/ne-management'):
     logger.info('Will Navigate to the NeManagement page...')
     base_url = 'http://' + server_info.getProperty('host') + ':' + str(server_info.getProperty('port')) + \
-               server_info.getProperty('url')
+               server_info.getProperty('preurl')
     logger.info('Base URL is: ' + base_url)
     driver.get(base_url + url_add)
 
@@ -46,7 +46,7 @@ def check_and_add_ne(driver, logger, dict_ne_info):
 def refresh_ne_management_page(driver, logger):
     driver.refresh()
     # check page loaded
-    find_single_widget(driver, 10, (By.ID, "idBtn-create")).click()
+    find_single_widget(driver, 10, (By.ID, "idBtn-create"))
 
 
 def add_new_ne(driver, logger, dict_ne_info):

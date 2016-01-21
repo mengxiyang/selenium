@@ -71,6 +71,7 @@ def ne_category_by_ne_type(ne_type):
         'SBC': 'IMS',
         'OCGAS': 'IMS'
     }
+    return category[ne_type]
 
 
 """

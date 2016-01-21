@@ -22,11 +22,11 @@ def to_pm_management_page(driver, logger):
 
 
 def to_pm_management_page_by_url(driver, logger, ne_type, server_info, to_url_pre='#network-overview/pm-management/'):
-    logger.info('Will Navigate to the NeManagement page...')
+    logger.info('Will Navigate to the PMManagement page...')
     base_url = 'http://' + server_info.getProperty('host') + ':' + str(server_info.getProperty('port')) + \
-               server_info.getProperty('url')
+               server_info.getProperty('preurl')
     logger.info('Base URL is: ' + base_url)
-    to_url = base_url + to_url_pre + 'pm-' + ne_category_by_ne_type(ne_type) + '/' + 'pm-' + ne_type.lower()
+    to_url = base_url + (to_url_pre + 'pm-' + ne_category_by_ne_type(ne_type) + '/' + 'pm-' + ne_type).lower()
     logger.info('To URL: ' + to_url)
     driver.get(to_url)
     if not check_in_correct_pm_page(driver, logger):
@@ -45,11 +45,13 @@ def check_in_correct_pm_page(driver, logger):
         return False
     if b_validate:
         # check if in the correct page
-        id_navi = identifier = (By.XPATH, "//div[@class='ebLayout-Navigation']/div")
-        navi = find_single_widget(driver, 10, id_navi)
-        children_divs = find_all_widgets(navi, 20, (By.XPATH, ".//div"))
+        # id_navi = identifier = (By.XPATH, "//div[@class='ebLayout-Navigation']/div")
+        # navi = find_single_widget(driver, 10, id_navi)
+        id_divs = identifier = (By.XPATH, "//div[@class='ebLayout-Navigation']/div/div")
+        children_divs = find_all_widgets(driver, 20, id_divs)
         str_last_navi = find_single_widget(children_divs[-1], 10, (By.XPATH, ".//a")).get_attribute('innerHTML').\
             encode('utf-8').strip()
+        # logger.info(children_divs[-2].get_attribute('innerHTML').encode('utf-8'))
         lis = find_all_widgets(children_divs[-2], 10, (By.XPATH, ".//div/ul/li"))
         for li in lis:
             str_a_li = find_single_widget(li, 10, (By.XPATH, ".//a")).get_attribute('innerHTML').encode('utf-8').strip()
@@ -59,11 +61,11 @@ def check_in_correct_pm_page(driver, logger):
         return False
 
 
-def make_in_correct_tab(driver, logger, ne_type, pm_type):
+def make_in_correct_tab(driver, logger, prefix, postfix):
     id_tabs = (By.XPATH, "//div[@class='ebTabs']/div[1]/div[2]/div")
     tabs = find_all_widgets(driver, 10, id_tabs)
     for tab in tabs:
-        if ne_type + ' ' + pm_type == tab.get_attribute('innerHTML').encode('utf-8').strip():
+        if prefix + postfix == tab.get_attribute('innerHTML').encode('utf-8').strip():
             if not tab.get_attribute('class').encode('utf-8').find('ebTabs-tabItem_selected_true') > -1:
                 tab.click()
                 if not wait_noti_widget_show(driver, logger):
@@ -146,7 +148,7 @@ def wait_until_pm_date_show_up(driver, logger, wait_time, ne_name, interval=1):
 
 
 def select_given_ne_name(driver, logger, ne_name):
-    identifier = (By.XPATH, "//div[@class='eaContainer-applicationHolder']/div[1]/div[3]/div[2]/div[1]/div[2]/input")
+    identifier = (By.XPATH, "//div[@class='pmcommonarea']/div/div[2]/div[1]/div[2]/input")
     input_ne_name = find_single_widget(driver, 10, identifier)
     if not '' == input_ne_name.get_attribute('value').strip():
         input_ne_name.click()
