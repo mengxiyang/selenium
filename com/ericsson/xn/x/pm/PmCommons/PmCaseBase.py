@@ -67,7 +67,7 @@ def check_pm_accurate_lic(ne_info_cfg, counter_info_cfg, server_info_path, str_e
             PmCommon.to_pm_management_page_by_url(driver, logger_pm, ne_info['ne_type'], server_info)
             PmCommon.make_in_correct_tab(driver, logger_pm, ne_info['tab_pre'], '')
 
-            if PmCommon.wait_until_pm_date_show_up(driver, logger_pm, 300, dict_ne_info['ne_name']):
+            if PmCommon.wait_until_pm_date_show_up(driver, logger_pm, 600, dict_ne_info['ne_name']):
                 t_now = datetime.now()
                 # minute_delta = t_now.minute % 5
                 # end_time = t_now + timedelta(minutes=-(delay_time + minute_delta))
@@ -165,7 +165,7 @@ def check_pm_accurate_sbc(ne_info_cfg, counter_info_cfg, server_info_path, round
 
             PmCommon.to_pm_management_page_by_url(driver, logger_pm, ne_info['ne_type'], server_info)
             PmCommon.make_in_correct_tab(driver, logger_pm, ne_info['tab_pre'], '')
-            if PmCommon.wait_until_pm_date_show_up(driver, logger_pm, 300, dict_ne_info['ne_name']):
+            if PmCommon.wait_until_pm_date_show_up(driver, logger_pm, 600, dict_ne_info['ne_name']):
                 PmCommon.init_and_search(driver, logger_pm, dict_ne_info['ne_name'])
 
                 dict_additional = {"rounds": rounds}
@@ -215,7 +215,7 @@ def check_pm_accurate_all_ne(dict_all_nes, server_info_path):
             PmCommon.to_pm_management_page(driver, logger_pm)
             # PmCommon.to_second_page(driver, logger_pm)
             PmCommon.to_tab_by_ne_type(driver, dict_ne_info['ne_type'], logger_pm)
-            if PmCommon.wait_until_pm_date_show_up(driver, logger_pm, 300, dict_ne_info['ne_name']):
+            if PmCommon.wait_until_pm_date_show_up(driver, logger_pm, 600, dict_ne_info['ne_name']):
                 PmCommon.init_and_search(driver, logger_pm, dict_ne_info['ne_name'])
 
                 dict_additional = {"rounds": sbc_ne_dict['rounds']}
@@ -238,7 +238,7 @@ def check_pm_accurate_all_ne(dict_all_nes, server_info_path):
                     PmCommon.to_pm_management_page(driver, logger_pm)
                     # PmCommon.to_second_page(driver, logger_pm)
                     PmCommon.to_tab_by_ne_type(driver, dict_ne_info['ne_type'], logger_pm)
-                    if PmCommon.wait_until_pm_date_show_up(driver, logger_pm, 300, dict_ne_info['ne_name']):
+                    if PmCommon.wait_until_pm_date_show_up(driver, logger_pm, 600, dict_ne_info['ne_name']):
                         # t_now = datetime.now()
                         # minute_delta = t_now.minute % 5
                         # end_time = t_now + timedelta(minutes=-(delay_time + minute_delta))
