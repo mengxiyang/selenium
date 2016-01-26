@@ -9,10 +9,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from com.ericsson.xn.commons.funcutils import find_single_widget, find_all_widgets, ne_category_by_ne_type
+from com.ericsson.xn.commons import test_logger as test
 
 
-def to_pm_management_page(driver, logger):
-    logger.info('To the PmManagement page...')
+def to_pm_management_page(driver):
+    test.info('To the PmManagement page...')
 
     identifier = (By.XPATH, "//div[@class='ebLayout-Navigation']/div/div[1]/span")
     find_single_widget(driver, 10, identifier).click()
@@ -21,20 +22,20 @@ def to_pm_management_page(driver, logger):
     find_single_widget(driver, 10, identifier).click()
 
 
-def to_pm_management_page_by_url(driver, logger, ne_type, server_info, to_url_pre='#network-overview/pm-management/'):
-    logger.info('Will Navigate to the PMManagement page...')
+def to_pm_management_page_by_url(driver, ne_type, server_info, to_url_pre='#network-overview/pm-management/'):
+    test.info('Will Navigate to the PMManagement page...')
     base_url = 'http://' + server_info.getProperty('host') + ':' + str(server_info.getProperty('port')) + \
                server_info.getProperty('preurl')
-    logger.info('Base URL is: ' + base_url)
+    test.info('Base URL is: ' + base_url)
     to_url = base_url + (to_url_pre + 'pm-' + ne_category_by_ne_type(ne_type) + '/' + 'pm-' + ne_type).lower()
-    logger.info('To URL: ' + to_url)
+    test.info('To URL: ' + to_url)
     driver.get(to_url)
-    if not check_in_correct_pm_page(driver, logger):
+    if not check_in_correct_pm_page(driver):
         # not in correct page
-        sys.exit(0)
+        test.error('Cannot browse to the PM Management page.')
 
 
-def check_in_correct_pm_page(driver, logger):
+def check_in_correct_pm_page(driver):
     id_search_btn = (By.ID, "idBtn-search")
     b_validate = False
     try:
@@ -189,7 +190,7 @@ def wait_until_rounds_ok(driver, logger, rounds, rows_of_page, wait_time=None):
 
     id_tbdoy_trs = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table/tbody/tr")
     t_start = datetime.now()
-    t_end = t_start + timedelta(minutes=5 * rounds + 2)
+    t_end = t_start + timedelta(minutes=5 * (rounds + 1) + 2)
     if wait_time is not None:
         t_end = t_start + timedelta(minutes=wait_time)
     while datetime.now() < t_end:
@@ -212,6 +213,33 @@ def wait_until_rounds_ok(driver, logger, rounds, rows_of_page, wait_time=None):
             pass
         time.sleep(.5)
     return False
+
+
+def check_pm_rows_updated(driver, logger, ne_type, dict_counters, rows_of_page, dict_additional):
+    '''
+    The main function that check the PM Data accurate, it will first check the data of each row,
+    then check the GUI time's minutes is multiple of 5,
+    then check the Lics if the node has many LICs.
+    :param ne_type: the ne's type
+    :param dict_counters: the base counter values in dictionary
+    :param rows_of_page: how many rows each page has on the GUI, default is 10
+    :param dict_additional: additional information that used for special nodes, (number_of_lic: how many lics of a no
+    de), (check_rounds: how many rows that will be checked, if this value exist, will only check this number of rows,
+    otherwise the number of rows will checked is equal the size of dict_counters)
+    :return: None
+    '''
+    bool_overall = True
+    list_time = []
+    id_table = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table")
+
+    id_header_trs = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table/thead/tr/th")
+    ths = find_all_widgets(driver, 20, id_header_trs)
+    list_headers = []
+    for th in ths:
+        list_headers.append(th.get_attribute('innerHTML').encode('utf-8').strip())
+    number_of_rows_be_checked = len(dict_counters)
+    if dict_additional.has_key('check_rounds'):
+        number_of_rows_be_checked = dict_additional['check_rounds']
 
 
 def check_pm_rows(driver, logger, ne_type, dict_counters, rows_of_page, dict_additional):

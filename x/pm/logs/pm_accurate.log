@@ -16815,3 +16815,815 @@
 2016-01-21 17:18:36,696 [INFO] PmCommon to_pm_management_page_by_url(25) Will Navigate to the PMManagement page...
 2016-01-21 17:18:36,697 [INFO] PmCommon to_pm_management_page_by_url(28) Base URL is: http://10.184.73.77:8686/XOAM/src/index.html
 2016-01-21 17:18:36,700 [INFO] PmCommon to_pm_management_page_by_url(30) To URL: http://10.184.73.77:8686/XOAM/src/index.html#network-overview/pm-management/pm-ims/pm-sbc
+2016-01-22 09:38:54,502 [INFO] PmCaseBase <module>(39) Logger of PM part init successfully.
+2016-01-22 09:38:54,533 [INFO] CommonStatic login_rsnms(37) Will start the web browser and perform test case.
+2016-01-22 09:38:54,551 [INFO] CommonStatic windows_chrome_login_rsnms(71) Browser driver path: C:\Users\EJLNOQC\installed\chromedriver.exe
+2016-01-22 09:38:54,552 [INFO] CommonStatic windows_chrome_login_rsnms(75) Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+2016-01-22 09:38:56,809 [INFO] CommonStatic login_first_page(85) Web page: http://10.184.73.77:8686/XOAM/login/index.html
+2016-01-22 09:39:10,802 [INFO] CommonStatic login_first_page(94) Login to the InterfaceManagement page successfully.
+2016-01-22 09:39:10,805 [INFO] NeCommon to_ne_management_page_by_url(26) Will Navigate to the NeManagement page...
+2016-01-22 09:39:10,808 [INFO] NeCommon to_ne_management_page_by_url(29) Base URL is: http://10.184.73.77:8686/XOAM/src/index.html
+2016-01-22 09:39:18,486 [INFO] PmCommon to_pm_management_page_by_url(25) Will Navigate to the PMManagement page...
+2016-01-22 09:39:18,487 [INFO] PmCommon to_pm_management_page_by_url(28) Base URL is: http://10.184.73.77:8686/XOAM/src/index.html
+2016-01-22 09:39:18,490 [INFO] PmCommon to_pm_management_page_by_url(30) To URL: http://10.184.73.77:8686/XOAM/src/index.html#network-overview/pm-management/pm-ims/pm-sbc
+2016-01-22 09:40:08,443 [INFO] PmCommon check_pm_by_row(304) Start to check row: 1
+2016-01-22 09:40:15,895 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 09:30,	LIC标识: 2; X3隧道建立次数, GUI is 175,	Expected is 175;	PASSED.
+2016-01-22 09:40:16,687 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 09:30,	LIC标识: 2; X3隧道成功次数, GUI is 210,	Expected is 210;	PASSED.
+2016-01-22 09:40:17,818 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 09:30,	LIC标识: 2; X3数据流量统计, GUI is 70,	Expected is 70;	PASSED.
+2016-01-22 09:40:17,821 [INFO] PmCommon check_pm_rows(241) Row 1 check PASSED.
+2016-01-22 09:40:17,822 [INFO] PmCommon check_pm_by_row(304) Start to check row: 2
+2016-01-22 09:40:18,930 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 09:25,	LIC标识: 2; X3隧道建立次数, GUI is 150,	Expected is 150;	PASSED.
+2016-01-22 09:40:19,005 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 09:25,	LIC标识: 2; X3隧道成功次数, GUI is 180,	Expected is 180;	PASSED.
+2016-01-22 09:40:19,081 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 09:25,	LIC标识: 2; X3数据流量统计, GUI is 60,	Expected is 60;	PASSED.
+2016-01-22 09:40:19,082 [INFO] PmCommon check_pm_rows(241) Row 2 check PASSED.
+2016-01-22 09:40:19,085 [INFO] PmCommon check_pm_by_row(304) Start to check row: 3
+2016-01-22 09:40:19,982 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 09:20,	LIC标识: 2; X3隧道建立次数, GUI is 125,	Expected is 125;	PASSED.
+2016-01-22 09:40:20,055 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 09:20,	LIC标识: 2; X3隧道成功次数, GUI is 150,	Expected is 150;	PASSED.
+2016-01-22 09:40:20,128 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 09:20,	LIC标识: 2; X3数据流量统计, GUI is 50,	Expected is 50;	PASSED.
+2016-01-22 09:40:20,131 [INFO] PmCommon check_pm_rows(241) Row 3 check PASSED.
+2016-01-22 09:40:20,132 [INFO] PmCommon check_pm_rows(296) GUI times: 2016-01-22 09:30:00, 2016-01-22 09:25:00, 2016-01-22 09:20:00
+2016-01-22 09:40:20,134 [INFO] PmCommon check_pm_rows(298) Overall PASSED.
+2016-01-22 15:17:46,780 [INFO] PmCaseBase <module>(39) Logger of PM part init successfully.
+2016-01-22 15:17:46,815 [INFO] CommonStatic login_rsnms(37) Will start the web browser and perform test case.
+2016-01-22 15:17:46,834 [INFO] CommonStatic windows_chrome_login_rsnms(71) Browser driver path: C:\Users\EJLNOQC\installed\chromedriver.exe
+2016-01-22 15:17:46,835 [INFO] CommonStatic windows_chrome_login_rsnms(75) Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+2016-01-22 15:17:49,970 [INFO] CommonStatic login_first_page(85) Web page: http://10.184.73.77:8686/XOAM/login/index.html
+2016-01-22 15:18:05,213 [INFO] CommonStatic login_first_page(94) Login to the InterfaceManagement page successfully.
+2016-01-22 15:18:05,216 [INFO] NeCommon to_ne_management_page_by_url(26) Will Navigate to the NeManagement page...
+2016-01-22 15:18:05,217 [INFO] NeCommon to_ne_management_page_by_url(29) Base URL is: http://10.184.73.77:8686/XOAM/src/index.html
+2016-01-22 15:18:33,990 [INFO] PmCommon to_pm_management_page_by_url(25) Will Navigate to the PMManagement page...
+2016-01-22 15:18:33,993 [INFO] PmCommon to_pm_management_page_by_url(28) Base URL is: http://10.184.73.77:8686/XOAM/src/index.html
+2016-01-22 15:18:33,996 [INFO] PmCommon to_pm_management_page_by_url(30) To URL: http://10.184.73.77:8686/XOAM/src/index.html#network-overview/pm-management/pm-4g/pm-pgw
+2016-01-22 15:18:43,822 [INFO] PmCommon check_pm_by_row(304) Start to check row: 1
+2016-01-22 15:18:44,816 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: LLLLtest; X1接收消息数, GUI is 4294967230,	Expected is 4294967230;	PASSED.
+2016-01-22 15:18:44,891 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: LLLLtest; X1发送消息数, GUI is 4294967164,	Expected is 4294967164;	PASSED.
+2016-01-22 15:18:44,966 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: LLLLtest; X1接收流量数, GUI is 4294967098,	Expected is 4294967098;	PASSED.
+2016-01-22 15:18:45,042 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: LLLLtest; X1发送流量数, GUI is 4294967032,	Expected is 4294967032;	PASSED.
+2016-01-22 15:18:45,117 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: LLLLtest; X2接收消息数, GUI is 4294966966,	Expected is 4294966966;	PASSED.
+2016-01-22 15:18:45,194 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: LLLLtest; X2发送消息数, GUI is 4294966900,	Expected is 4294966900;	PASSED.
+2016-01-22 15:18:45,269 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: LLLLtest; X2接收流量数, GUI is 4294966834,	Expected is 4294966834;	PASSED.
+2016-01-22 15:18:45,345 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: LLLLtest; X2发送流量数, GUI is 4294966768,	Expected is 4294966768;	PASSED.
+2016-01-22 15:18:45,421 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: LLLLtest; X3隧道建立次数, GUI is 4294966702,	Expected is 4294966702;	PASSED.
+2016-01-22 15:18:45,496 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: LLLLtest; X3隧道成功次数, GUI is 4294966636,	Expected is 4294966636;	PASSED.
+2016-01-22 15:18:45,572 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: LLLLtest; X3数据流量统计, GUI is 4294966570,	Expected is 4294966570;	PASSED.
+2016-01-22 15:18:45,575 [INFO] PmCommon check_pm_rows(241) Row 1 check PASSED.
+2016-01-22 15:18:45,578 [INFO] PmCommon check_pm_by_row(304) Start to check row: 2
+2016-01-22 15:18:46,592 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: LLLLtest; X1接收消息数, GUI is 11,	Expected is 11;	PASSED.
+2016-01-22 15:18:46,668 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: LLLLtest; X1发送消息数, GUI is 22,	Expected is 22;	PASSED.
+2016-01-22 15:18:46,742 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: LLLLtest; X1接收流量数, GUI is 33,	Expected is 33;	PASSED.
+2016-01-22 15:18:46,819 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: LLLLtest; X1发送流量数, GUI is 44,	Expected is 44;	PASSED.
+2016-01-22 15:18:46,894 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: LLLLtest; X2接收消息数, GUI is 55,	Expected is 55;	PASSED.
+2016-01-22 15:18:46,967 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: LLLLtest; X2发送消息数, GUI is 66,	Expected is 66;	PASSED.
+2016-01-22 15:18:47,042 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: LLLLtest; X2接收流量数, GUI is 77,	Expected is 77;	PASSED.
+2016-01-22 15:18:47,121 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: LLLLtest; X2发送流量数, GUI is 88,	Expected is 88;	PASSED.
+2016-01-22 15:18:47,203 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: LLLLtest; X3隧道建立次数, GUI is 99,	Expected is 99;	PASSED.
+2016-01-22 15:18:47,280 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: LLLLtest; X3隧道成功次数, GUI is 110,	Expected is 110;	PASSED.
+2016-01-22 15:18:47,358 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: LLLLtest; X3数据流量统计, GUI is 121,	Expected is 121;	PASSED.
+2016-01-22 15:18:47,361 [INFO] PmCommon check_pm_rows(241) Row 2 check PASSED.
+2016-01-22 15:18:47,364 [INFO] PmCommon check_pm_by_row(304) Start to check row: 3
+2016-01-22 15:18:48,301 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: LLLLtest; X1接收消息数, GUI is 10,	Expected is 10;	PASSED.
+2016-01-22 15:18:48,375 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: LLLLtest; X1发送消息数, GUI is 20,	Expected is 20;	PASSED.
+2016-01-22 15:18:48,450 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: LLLLtest; X1接收流量数, GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 15:18:48,526 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: LLLLtest; X1发送流量数, GUI is 40,	Expected is 40;	PASSED.
+2016-01-22 15:18:48,601 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: LLLLtest; X2接收消息数, GUI is 50,	Expected is 50;	PASSED.
+2016-01-22 15:18:48,677 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: LLLLtest; X2发送消息数, GUI is 60,	Expected is 60;	PASSED.
+2016-01-22 15:18:48,753 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: LLLLtest; X2接收流量数, GUI is 70,	Expected is 70;	PASSED.
+2016-01-22 15:18:48,829 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: LLLLtest; X2发送流量数, GUI is 80,	Expected is 80;	PASSED.
+2016-01-22 15:18:48,904 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: LLLLtest; X3隧道建立次数, GUI is 90,	Expected is 90;	PASSED.
+2016-01-22 15:18:48,984 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: LLLLtest; X3隧道成功次数, GUI is 100,	Expected is 100;	PASSED.
+2016-01-22 15:18:49,059 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: LLLLtest; X3数据流量统计, GUI is 110,	Expected is 110;	PASSED.
+2016-01-22 15:18:49,062 [INFO] PmCommon check_pm_rows(241) Row 3 check PASSED.
+2016-01-22 15:18:49,065 [INFO] PmCommon check_pm_by_row(304) Start to check row: 4
+2016-01-22 15:18:49,953 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: LLLLtest; X1接收消息数, GUI is 9,	Expected is 9;	PASSED.
+2016-01-22 15:18:50,039 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: LLLLtest; X1发送消息数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 15:18:50,121 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: LLLLtest; X1接收流量数, GUI is 27,	Expected is 27;	PASSED.
+2016-01-22 15:18:50,203 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: LLLLtest; X1发送流量数, GUI is 36,	Expected is 36;	PASSED.
+2016-01-22 15:18:50,276 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: LLLLtest; X2接收消息数, GUI is 45,	Expected is 45;	PASSED.
+2016-01-22 15:18:50,352 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: LLLLtest; X2发送消息数, GUI is 54,	Expected is 54;	PASSED.
+2016-01-22 15:18:50,433 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: LLLLtest; X2接收流量数, GUI is 63,	Expected is 63;	PASSED.
+2016-01-22 15:18:50,509 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: LLLLtest; X2发送流量数, GUI is 72,	Expected is 72;	PASSED.
+2016-01-22 15:18:50,584 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: LLLLtest; X3隧道建立次数, GUI is 81,	Expected is 81;	PASSED.
+2016-01-22 15:18:50,658 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: LLLLtest; X3隧道成功次数, GUI is 90,	Expected is 90;	PASSED.
+2016-01-22 15:18:50,733 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: LLLLtest; X3数据流量统计, GUI is 99,	Expected is 99;	PASSED.
+2016-01-22 15:18:50,734 [INFO] PmCommon check_pm_rows(241) Row 4 check PASSED.
+2016-01-22 15:18:50,736 [INFO] PmCommon check_pm_by_row(304) Start to check row: 5
+2016-01-22 15:18:51,677 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: LLLLtest; X1接收消息数, GUI is 8,	Expected is 8;	PASSED.
+2016-01-22 15:18:51,747 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: LLLLtest; X1发送消息数, GUI is 16,	Expected is 16;	PASSED.
+2016-01-22 15:18:51,822 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: LLLLtest; X1接收流量数, GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 15:18:51,898 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: LLLLtest; X1发送流量数, GUI is 32,	Expected is 32;	PASSED.
+2016-01-22 15:18:51,973 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: LLLLtest; X2接收消息数, GUI is 40,	Expected is 40;	PASSED.
+2016-01-22 15:18:52,049 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: LLLLtest; X2发送消息数, GUI is 48,	Expected is 48;	PASSED.
+2016-01-22 15:18:52,125 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: LLLLtest; X2接收流量数, GUI is 56,	Expected is 56;	PASSED.
+2016-01-22 15:18:52,203 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: LLLLtest; X2发送流量数, GUI is 64,	Expected is 64;	PASSED.
+2016-01-22 15:18:52,279 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: LLLLtest; X3隧道建立次数, GUI is 72,	Expected is 72;	PASSED.
+2016-01-22 15:18:52,355 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: LLLLtest; X3隧道成功次数, GUI is 80,	Expected is 80;	PASSED.
+2016-01-22 15:18:52,430 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: LLLLtest; X3数据流量统计, GUI is 88,	Expected is 88;	PASSED.
+2016-01-22 15:18:52,433 [INFO] PmCommon check_pm_rows(241) Row 5 check PASSED.
+2016-01-22 15:18:52,434 [INFO] PmCommon check_pm_by_row(304) Start to check row: 6
+2016-01-22 15:18:53,328 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: LLLLtest; X1接收消息数, GUI is 7,	Expected is 7;	PASSED.
+2016-01-22 15:18:53,404 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: LLLLtest; X1发送消息数, GUI is 14,	Expected is 14;	PASSED.
+2016-01-22 15:18:53,480 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: LLLLtest; X1接收流量数, GUI is 21,	Expected is 21;	PASSED.
+2016-01-22 15:18:53,555 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: LLLLtest; X1发送流量数, GUI is 28,	Expected is 28;	PASSED.
+2016-01-22 15:18:53,634 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: LLLLtest; X2接收消息数, GUI is 35,	Expected is 35;	PASSED.
+2016-01-22 15:18:53,710 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: LLLLtest; X2发送消息数, GUI is 42,	Expected is 42;	PASSED.
+2016-01-22 15:18:53,786 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: LLLLtest; X2接收流量数, GUI is 49,	Expected is 49;	PASSED.
+2016-01-22 15:18:53,864 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: LLLLtest; X2发送流量数, GUI is 56,	Expected is 56;	PASSED.
+2016-01-22 15:18:53,938 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: LLLLtest; X3隧道建立次数, GUI is 63,	Expected is 63;	PASSED.
+2016-01-22 15:18:54,015 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: LLLLtest; X3隧道成功次数, GUI is 70,	Expected is 70;	PASSED.
+2016-01-22 15:18:54,091 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: LLLLtest; X3数据流量统计, GUI is 77,	Expected is 77;	PASSED.
+2016-01-22 15:18:54,092 [INFO] PmCommon check_pm_rows(241) Row 6 check PASSED.
+2016-01-22 15:18:54,095 [INFO] PmCommon check_pm_by_row(304) Start to check row: 7
+2016-01-22 15:18:54,984 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: LLLLtest; X1接收消息数, GUI is 6,	Expected is 6;	PASSED.
+2016-01-22 15:18:55,061 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: LLLLtest; X1发送消息数, GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 15:18:55,137 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: LLLLtest; X1接收流量数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 15:18:55,213 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: LLLLtest; X1发送流量数, GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 15:18:55,288 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: LLLLtest; X2接收消息数, GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 15:18:55,365 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: LLLLtest; X2发送消息数, GUI is 36,	Expected is 36;	PASSED.
+2016-01-22 15:18:55,440 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: LLLLtest; X2接收流量数, GUI is 42,	Expected is 42;	PASSED.
+2016-01-22 15:18:55,513 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: LLLLtest; X2发送流量数, GUI is 48,	Expected is 48;	PASSED.
+2016-01-22 15:18:55,588 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: LLLLtest; X3隧道建立次数, GUI is 54,	Expected is 54;	PASSED.
+2016-01-22 15:18:55,664 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: LLLLtest; X3隧道成功次数, GUI is 60,	Expected is 60;	PASSED.
+2016-01-22 15:18:55,740 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: LLLLtest; X3数据流量统计, GUI is 66,	Expected is 66;	PASSED.
+2016-01-22 15:18:55,743 [INFO] PmCommon check_pm_rows(241) Row 7 check PASSED.
+2016-01-22 15:18:55,744 [INFO] PmCommon check_pm_by_row(304) Start to check row: 8
+2016-01-22 15:18:56,645 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: LLLLtest; X1接收消息数, GUI is 5,	Expected is 5;	PASSED.
+2016-01-22 15:18:56,763 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: LLLLtest; X1发送消息数, GUI is 10,	Expected is 10;	PASSED.
+2016-01-22 15:18:56,874 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: LLLLtest; X1接收流量数, GUI is 15,	Expected is 15;	PASSED.
+2016-01-22 15:18:56,971 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: LLLLtest; X1发送流量数, GUI is 20,	Expected is 20;	PASSED.
+2016-01-22 15:18:57,049 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: LLLLtest; X2接收消息数, GUI is 25,	Expected is 25;	PASSED.
+2016-01-22 15:18:57,127 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: LLLLtest; X2发送消息数, GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 15:18:57,201 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: LLLLtest; X2接收流量数, GUI is 35,	Expected is 35;	PASSED.
+2016-01-22 15:18:57,275 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: LLLLtest; X2发送流量数, GUI is 40,	Expected is 40;	PASSED.
+2016-01-22 15:18:57,354 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: LLLLtest; X3隧道建立次数, GUI is 45,	Expected is 45;	PASSED.
+2016-01-22 15:18:57,428 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: LLLLtest; X3隧道成功次数, GUI is 50,	Expected is 50;	PASSED.
+2016-01-22 15:18:57,496 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: LLLLtest; X3数据流量统计, GUI is 55,	Expected is 55;	PASSED.
+2016-01-22 15:18:57,500 [INFO] PmCommon check_pm_rows(241) Row 8 check PASSED.
+2016-01-22 15:18:57,502 [INFO] PmCommon check_pm_by_row(304) Start to check row: 9
+2016-01-22 15:18:58,369 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: LLLLtest; X1接收消息数, GUI is 4,	Expected is 4;	PASSED.
+2016-01-22 15:18:58,447 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: LLLLtest; X1发送消息数, GUI is 8,	Expected is 8;	PASSED.
+2016-01-22 15:18:58,526 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: LLLLtest; X1接收流量数, GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 15:18:58,605 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: LLLLtest; X1发送流量数, GUI is 16,	Expected is 16;	PASSED.
+2016-01-22 15:18:58,684 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: LLLLtest; X2接收消息数, GUI is 20,	Expected is 20;	PASSED.
+2016-01-22 15:18:58,760 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: LLLLtest; X2发送消息数, GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 15:18:58,836 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: LLLLtest; X2接收流量数, GUI is 28,	Expected is 28;	PASSED.
+2016-01-22 15:18:58,911 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: LLLLtest; X2发送流量数, GUI is 32,	Expected is 32;	PASSED.
+2016-01-22 15:18:58,989 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: LLLLtest; X3隧道建立次数, GUI is 36,	Expected is 36;	PASSED.
+2016-01-22 15:18:59,066 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: LLLLtest; X3隧道成功次数, GUI is 40,	Expected is 40;	PASSED.
+2016-01-22 15:18:59,144 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: LLLLtest; X3数据流量统计, GUI is 44,	Expected is 44;	PASSED.
+2016-01-22 15:18:59,145 [INFO] PmCommon check_pm_rows(241) Row 9 check PASSED.
+2016-01-22 15:18:59,148 [INFO] PmCommon check_pm_by_row(304) Start to check row: 10
+2016-01-22 15:19:00,049 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: LLLLtest; X1接收消息数, GUI is 3,	Expected is 3;	PASSED.
+2016-01-22 15:19:00,127 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: LLLLtest; X1发送消息数, GUI is 6,	Expected is 6;	PASSED.
+2016-01-22 15:19:00,203 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: LLLLtest; X1接收流量数, GUI is 9,	Expected is 9;	PASSED.
+2016-01-22 15:19:00,282 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: LLLLtest; X1发送流量数, GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 15:19:00,362 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: LLLLtest; X2接收消息数, GUI is 15,	Expected is 15;	PASSED.
+2016-01-22 15:19:00,443 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: LLLLtest; X2发送消息数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 15:19:00,520 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: LLLLtest; X2接收流量数, GUI is 21,	Expected is 21;	PASSED.
+2016-01-22 15:19:00,599 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: LLLLtest; X2发送流量数, GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 15:19:00,676 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: LLLLtest; X3隧道建立次数, GUI is 27,	Expected is 27;	PASSED.
+2016-01-22 15:19:00,750 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: LLLLtest; X3隧道成功次数, GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 15:19:00,826 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: LLLLtest; X3数据流量统计, GUI is 33,	Expected is 33;	PASSED.
+2016-01-22 15:19:00,828 [INFO] PmCommon check_pm_rows(241) Row 10 check PASSED.
+2016-01-22 15:19:00,831 [INFO] PmCommon check_pm_by_row(304) Start to check row: 11
+2016-01-22 15:19:01,786 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: LLLLtest; X1接收消息数, GUI is 2,	Expected is 2;	PASSED.
+2016-01-22 15:19:01,864 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: LLLLtest; X1发送消息数, GUI is 4,	Expected is 4;	PASSED.
+2016-01-22 15:19:01,940 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: LLLLtest; X1接收流量数, GUI is 6,	Expected is 6;	PASSED.
+2016-01-22 15:19:02,017 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: LLLLtest; X1发送流量数, GUI is 8,	Expected is 8;	PASSED.
+2016-01-22 15:19:02,095 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: LLLLtest; X2接收消息数, GUI is 10,	Expected is 10;	PASSED.
+2016-01-22 15:19:02,173 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: LLLLtest; X2发送消息数, GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 15:19:02,249 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: LLLLtest; X2接收流量数, GUI is 14,	Expected is 14;	PASSED.
+2016-01-22 15:19:02,325 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: LLLLtest; X2发送流量数, GUI is 16,	Expected is 16;	PASSED.
+2016-01-22 15:19:02,400 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: LLLLtest; X3隧道建立次数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 15:19:02,477 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: LLLLtest; X3隧道成功次数, GUI is 20,	Expected is 20;	PASSED.
+2016-01-22 15:19:02,552 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: LLLLtest; X3数据流量统计, GUI is 22,	Expected is 22;	PASSED.
+2016-01-22 15:19:02,555 [INFO] PmCommon check_pm_rows(241) Row 11 check PASSED.
+2016-01-22 15:19:02,556 [INFO] PmCommon check_pm_by_row(304) Start to check row: 12
+2016-01-22 15:19:03,532 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: LLLLtest; X1接收消息数, GUI is 1,	Expected is 1;	PASSED.
+2016-01-22 15:19:03,608 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: LLLLtest; X1发送消息数, GUI is 2,	Expected is 2;	PASSED.
+2016-01-22 15:19:03,683 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: LLLLtest; X1接收流量数, GUI is 3,	Expected is 3;	PASSED.
+2016-01-22 15:19:03,757 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: LLLLtest; X1发送流量数, GUI is 4,	Expected is 4;	PASSED.
+2016-01-22 15:19:03,832 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: LLLLtest; X2接收消息数, GUI is 5,	Expected is 5;	PASSED.
+2016-01-22 15:19:03,910 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: LLLLtest; X2发送消息数, GUI is 6,	Expected is 6;	PASSED.
+2016-01-22 15:19:03,992 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: LLLLtest; X2接收流量数, GUI is 7,	Expected is 7;	PASSED.
+2016-01-22 15:19:04,068 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: LLLLtest; X2发送流量数, GUI is 8,	Expected is 8;	PASSED.
+2016-01-22 15:19:04,144 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: LLLLtest; X3隧道建立次数, GUI is 9,	Expected is 9;	PASSED.
+2016-01-22 15:19:04,217 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: LLLLtest; X3隧道成功次数, GUI is 10,	Expected is 10;	PASSED.
+2016-01-22 15:19:04,298 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: LLLLtest; X3数据流量统计, GUI is 11,	Expected is 11;	PASSED.
+2016-01-22 15:19:04,299 [INFO] PmCommon check_pm_rows(241) Row 12 check PASSED.
+2016-01-22 15:19:04,302 [INFO] PmCommon check_pm_rows(296) GUI times: 2016-01-22 15:00:00, 2016-01-22 14:55:00, 2016-01-22 14:50:00, 2016-01-22 14:45:00, 2016-01-22 14:40:00, 2016-01-22 14:35:00, 2016-01-22 14:30:00, 2016-01-22 14:25:00, 2016-01-22 14:20:00, 2016-01-22 14:15:00, 2016-01-22 14:10:00, 2016-01-22 14:05:00
+2016-01-22 15:19:04,305 [INFO] PmCommon check_pm_rows(298) Overall PASSED.
+2016-01-22 15:19:16,917 [INFO] PmCaseBase <module>(39) Logger of PM part init successfully.
+2016-01-22 15:19:16,950 [INFO] CommonStatic login_rsnms(37) Will start the web browser and perform test case.
+2016-01-22 15:19:16,967 [INFO] CommonStatic windows_chrome_login_rsnms(71) Browser driver path: C:\Users\EJLNOQC\installed\chromedriver.exe
+2016-01-22 15:19:16,970 [INFO] CommonStatic windows_chrome_login_rsnms(75) Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+2016-01-22 15:19:19,111 [INFO] CommonStatic login_first_page(85) Web page: http://10.184.73.77:8686/XOAM/login/index.html
+2016-01-22 15:19:33,371 [INFO] CommonStatic login_first_page(94) Login to the InterfaceManagement page successfully.
+2016-01-22 15:19:33,374 [INFO] NeCommon to_ne_management_page_by_url(26) Will Navigate to the NeManagement page...
+2016-01-22 15:19:33,375 [INFO] NeCommon to_ne_management_page_by_url(29) Base URL is: http://10.184.73.77:8686/XOAM/src/index.html
+2016-01-22 15:20:02,032 [INFO] PmCommon to_pm_management_page_by_url(25) Will Navigate to the PMManagement page...
+2016-01-22 15:20:02,033 [INFO] PmCommon to_pm_management_page_by_url(28) Base URL is: http://10.184.73.77:8686/XOAM/src/index.html
+2016-01-22 15:20:02,036 [INFO] PmCommon to_pm_management_page_by_url(30) To URL: http://10.184.73.77:8686/XOAM/src/index.html#network-overview/pm-management/pm-4g/pm-sgw
+2016-01-22 15:20:24,424 [INFO] PmCommon check_pm_by_row(304) Start to check row: 1
+2016-01-22 15:20:25,414 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: ttttt; X1接收消息数, GUI is 4294967230,	Expected is 4294967230;	PASSED.
+2016-01-22 15:20:25,490 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: ttttt; X1发送消息数, GUI is 4294967164,	Expected is 4294967164;	PASSED.
+2016-01-22 15:20:25,568 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: ttttt; X1接收流量数, GUI is 4294967098,	Expected is 4294967098;	PASSED.
+2016-01-22 15:20:25,645 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: ttttt; X1发送流量数, GUI is 4294967032,	Expected is 4294967032;	PASSED.
+2016-01-22 15:20:25,720 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: ttttt; X2接收消息数, GUI is 4294966966,	Expected is 4294966966;	PASSED.
+2016-01-22 15:20:25,799 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: ttttt; X2发送消息数, GUI is 4294966900,	Expected is 4294966900;	PASSED.
+2016-01-22 15:20:25,877 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: ttttt; X2接收流量数, GUI is 4294966834,	Expected is 4294966834;	PASSED.
+2016-01-22 15:20:25,954 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: ttttt; X2发送流量数, GUI is 4294966768,	Expected is 4294966768;	PASSED.
+2016-01-22 15:20:26,030 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: ttttt; X3隧道建立次数, GUI is 4294966702,	Expected is 4294966702;	PASSED.
+2016-01-22 15:20:26,105 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: ttttt; X3隧道成功次数, GUI is 4294966636,	Expected is 4294966636;	PASSED.
+2016-01-22 15:20:26,184 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 15:00,	LIC标识: ttttt; X3数据流量统计, GUI is 4294966570,	Expected is 4294966570;	PASSED.
+2016-01-22 15:20:26,187 [INFO] PmCommon check_pm_rows(241) Row 1 check PASSED.
+2016-01-22 15:20:26,190 [INFO] PmCommon check_pm_by_row(304) Start to check row: 2
+2016-01-22 15:20:27,144 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: ttttt; X1接收消息数, GUI is 11,	Expected is 11;	PASSED.
+2016-01-22 15:20:27,223 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: ttttt; X1发送消息数, GUI is 22,	Expected is 22;	PASSED.
+2016-01-22 15:20:27,296 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: ttttt; X1接收流量数, GUI is 33,	Expected is 33;	PASSED.
+2016-01-22 15:20:27,371 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: ttttt; X1发送流量数, GUI is 44,	Expected is 44;	PASSED.
+2016-01-22 15:20:27,446 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: ttttt; X2接收消息数, GUI is 55,	Expected is 55;	PASSED.
+2016-01-22 15:20:27,520 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: ttttt; X2发送消息数, GUI is 66,	Expected is 66;	PASSED.
+2016-01-22 15:20:27,595 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: ttttt; X2接收流量数, GUI is 77,	Expected is 77;	PASSED.
+2016-01-22 15:20:27,690 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: ttttt; X2发送流量数, GUI is 88,	Expected is 88;	PASSED.
+2016-01-22 15:20:27,785 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: ttttt; X3隧道建立次数, GUI is 99,	Expected is 99;	PASSED.
+2016-01-22 15:20:27,861 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: ttttt; X3隧道成功次数, GUI is 110,	Expected is 110;	PASSED.
+2016-01-22 15:20:27,936 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:55,	LIC标识: ttttt; X3数据流量统计, GUI is 121,	Expected is 121;	PASSED.
+2016-01-22 15:20:27,938 [INFO] PmCommon check_pm_rows(241) Row 2 check PASSED.
+2016-01-22 15:20:27,940 [INFO] PmCommon check_pm_by_row(304) Start to check row: 3
+2016-01-22 15:20:28,878 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: ttttt; X1接收消息数, GUI is 10,	Expected is 10;	PASSED.
+2016-01-22 15:20:28,951 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: ttttt; X1发送消息数, GUI is 20,	Expected is 20;	PASSED.
+2016-01-22 15:20:29,026 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: ttttt; X1接收流量数, GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 15:20:29,099 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: ttttt; X1发送流量数, GUI is 40,	Expected is 40;	PASSED.
+2016-01-22 15:20:29,173 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: ttttt; X2接收消息数, GUI is 50,	Expected is 50;	PASSED.
+2016-01-22 15:20:29,249 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: ttttt; X2发送消息数, GUI is 60,	Expected is 60;	PASSED.
+2016-01-22 15:20:29,323 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: ttttt; X2接收流量数, GUI is 70,	Expected is 70;	PASSED.
+2016-01-22 15:20:29,397 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: ttttt; X2发送流量数, GUI is 80,	Expected is 80;	PASSED.
+2016-01-22 15:20:29,470 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: ttttt; X3隧道建立次数, GUI is 90,	Expected is 90;	PASSED.
+2016-01-22 15:20:29,548 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: ttttt; X3隧道成功次数, GUI is 100,	Expected is 100;	PASSED.
+2016-01-22 15:20:29,627 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:50,	LIC标识: ttttt; X3数据流量统计, GUI is 110,	Expected is 110;	PASSED.
+2016-01-22 15:20:29,628 [INFO] PmCommon check_pm_rows(241) Row 3 check PASSED.
+2016-01-22 15:20:29,631 [INFO] PmCommon check_pm_by_row(304) Start to check row: 4
+2016-01-22 15:20:30,516 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: ttttt; X1接收消息数, GUI is 9,	Expected is 9;	PASSED.
+2016-01-22 15:20:30,642 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: ttttt; X1发送消息数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 15:20:30,746 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: ttttt; X1接收流量数, GUI is 27,	Expected is 27;	PASSED.
+2016-01-22 15:20:30,822 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: ttttt; X1发送流量数, GUI is 36,	Expected is 36;	PASSED.
+2016-01-22 15:20:30,898 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: ttttt; X2接收消息数, GUI is 45,	Expected is 45;	PASSED.
+2016-01-22 15:20:30,973 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: ttttt; X2发送消息数, GUI is 54,	Expected is 54;	PASSED.
+2016-01-22 15:20:31,052 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: ttttt; X2接收流量数, GUI is 63,	Expected is 63;	PASSED.
+2016-01-22 15:20:31,128 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: ttttt; X2发送流量数, GUI is 72,	Expected is 72;	PASSED.
+2016-01-22 15:20:31,207 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: ttttt; X3隧道建立次数, GUI is 81,	Expected is 81;	PASSED.
+2016-01-22 15:20:31,283 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: ttttt; X3隧道成功次数, GUI is 90,	Expected is 90;	PASSED.
+2016-01-22 15:20:31,368 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:45,	LIC标识: ttttt; X3数据流量统计, GUI is 99,	Expected is 99;	PASSED.
+2016-01-22 15:20:31,369 [INFO] PmCommon check_pm_rows(241) Row 4 check PASSED.
+2016-01-22 15:20:31,371 [INFO] PmCommon check_pm_by_row(304) Start to check row: 5
+2016-01-22 15:20:32,273 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: ttttt; X1接收消息数, GUI is 8,	Expected is 8;	PASSED.
+2016-01-22 15:20:32,355 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: ttttt; X1发送消息数, GUI is 16,	Expected is 16;	PASSED.
+2016-01-22 15:20:32,437 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: ttttt; X1接收流量数, GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 15:20:32,517 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: ttttt; X1发送流量数, GUI is 32,	Expected is 32;	PASSED.
+2016-01-22 15:20:32,575 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: ttttt; X2接收消息数, GUI is 40,	Expected is 40;	PASSED.
+2016-01-22 15:20:32,628 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: ttttt; X2发送消息数, GUI is 48,	Expected is 48;	PASSED.
+2016-01-22 15:20:32,677 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: ttttt; X2接收流量数, GUI is 56,	Expected is 56;	PASSED.
+2016-01-22 15:20:32,727 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: ttttt; X2发送流量数, GUI is 64,	Expected is 64;	PASSED.
+2016-01-22 15:20:32,778 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: ttttt; X3隧道建立次数, GUI is 72,	Expected is 72;	PASSED.
+2016-01-22 15:20:32,825 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: ttttt; X3隧道成功次数, GUI is 80,	Expected is 80;	PASSED.
+2016-01-22 15:20:32,881 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:40,	LIC标识: ttttt; X3数据流量统计, GUI is 88,	Expected is 88;	PASSED.
+2016-01-22 15:20:32,882 [INFO] PmCommon check_pm_rows(241) Row 5 check PASSED.
+2016-01-22 15:20:32,884 [INFO] PmCommon check_pm_by_row(304) Start to check row: 6
+2016-01-22 15:20:33,740 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: ttttt; X1接收消息数, GUI is 7,	Expected is 7;	PASSED.
+2016-01-22 15:20:33,819 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: ttttt; X1发送消息数, GUI is 14,	Expected is 14;	PASSED.
+2016-01-22 15:20:33,895 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: ttttt; X1接收流量数, GUI is 21,	Expected is 21;	PASSED.
+2016-01-22 15:20:33,970 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: ttttt; X1发送流量数, GUI is 28,	Expected is 28;	PASSED.
+2016-01-22 15:20:34,046 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: ttttt; X2接收消息数, GUI is 35,	Expected is 35;	PASSED.
+2016-01-22 15:20:34,121 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: ttttt; X2发送消息数, GUI is 42,	Expected is 42;	PASSED.
+2016-01-22 15:20:34,197 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: ttttt; X2接收流量数, GUI is 49,	Expected is 49;	PASSED.
+2016-01-22 15:20:34,272 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: ttttt; X2发送流量数, GUI is 56,	Expected is 56;	PASSED.
+2016-01-22 15:20:34,348 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: ttttt; X3隧道建立次数, GUI is 63,	Expected is 63;	PASSED.
+2016-01-22 15:20:34,427 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: ttttt; X3隧道成功次数, GUI is 70,	Expected is 70;	PASSED.
+2016-01-22 15:20:34,500 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:35,	LIC标识: ttttt; X3数据流量统计, GUI is 77,	Expected is 77;	PASSED.
+2016-01-22 15:20:34,503 [INFO] PmCommon check_pm_rows(241) Row 6 check PASSED.
+2016-01-22 15:20:34,505 [INFO] PmCommon check_pm_by_row(304) Start to check row: 7
+2016-01-22 15:20:35,405 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: ttttt; X1接收消息数, GUI is 6,	Expected is 6;	PASSED.
+2016-01-22 15:20:35,483 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: ttttt; X1发送消息数, GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 15:20:35,559 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: ttttt; X1接收流量数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 15:20:35,637 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: ttttt; X1发送流量数, GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 15:20:35,714 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: ttttt; X2接收消息数, GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 15:20:35,790 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: ttttt; X2发送消息数, GUI is 36,	Expected is 36;	PASSED.
+2016-01-22 15:20:35,865 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: ttttt; X2接收流量数, GUI is 42,	Expected is 42;	PASSED.
+2016-01-22 15:20:35,941 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: ttttt; X2发送流量数, GUI is 48,	Expected is 48;	PASSED.
+2016-01-22 15:20:36,061 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: ttttt; X3隧道建立次数, GUI is 54,	Expected is 54;	PASSED.
+2016-01-22 15:20:36,151 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: ttttt; X3隧道成功次数, GUI is 60,	Expected is 60;	PASSED.
+2016-01-22 15:20:36,223 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:30,	LIC标识: ttttt; X3数据流量统计, GUI is 66,	Expected is 66;	PASSED.
+2016-01-22 15:20:36,226 [INFO] PmCommon check_pm_rows(241) Row 7 check PASSED.
+2016-01-22 15:20:36,227 [INFO] PmCommon check_pm_by_row(304) Start to check row: 8
+2016-01-22 15:20:37,109 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: ttttt; X1接收消息数, GUI is 5,	Expected is 5;	PASSED.
+2016-01-22 15:20:37,187 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: ttttt; X1发送消息数, GUI is 10,	Expected is 10;	PASSED.
+2016-01-22 15:20:37,260 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: ttttt; X1接收流量数, GUI is 15,	Expected is 15;	PASSED.
+2016-01-22 15:20:37,336 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: ttttt; X1发送流量数, GUI is 20,	Expected is 20;	PASSED.
+2016-01-22 15:20:37,414 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: ttttt; X2接收消息数, GUI is 25,	Expected is 25;	PASSED.
+2016-01-22 15:20:37,489 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: ttttt; X2发送消息数, GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 15:20:37,565 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: ttttt; X2接收流量数, GUI is 35,	Expected is 35;	PASSED.
+2016-01-22 15:20:37,641 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: ttttt; X2发送流量数, GUI is 40,	Expected is 40;	PASSED.
+2016-01-22 15:20:37,717 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: ttttt; X3隧道建立次数, GUI is 45,	Expected is 45;	PASSED.
+2016-01-22 15:20:37,798 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: ttttt; X3隧道成功次数, GUI is 50,	Expected is 50;	PASSED.
+2016-01-22 15:20:37,874 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:25,	LIC标识: ttttt; X3数据流量统计, GUI is 55,	Expected is 55;	PASSED.
+2016-01-22 15:20:37,875 [INFO] PmCommon check_pm_rows(241) Row 8 check PASSED.
+2016-01-22 15:20:37,878 [INFO] PmCommon check_pm_by_row(304) Start to check row: 9
+2016-01-22 15:20:38,776 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: ttttt; X1接收消息数, GUI is 4,	Expected is 4;	PASSED.
+2016-01-22 15:20:38,852 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: ttttt; X1发送消息数, GUI is 8,	Expected is 8;	PASSED.
+2016-01-22 15:20:38,928 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: ttttt; X1接收流量数, GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 15:20:39,006 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: ttttt; X1发送流量数, GUI is 16,	Expected is 16;	PASSED.
+2016-01-22 15:20:39,084 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: ttttt; X2接收消息数, GUI is 20,	Expected is 20;	PASSED.
+2016-01-22 15:20:39,163 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: ttttt; X2发送消息数, GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 15:20:39,240 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: ttttt; X2接收流量数, GUI is 28,	Expected is 28;	PASSED.
+2016-01-22 15:20:39,316 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: ttttt; X2发送流量数, GUI is 32,	Expected is 32;	PASSED.
+2016-01-22 15:20:39,391 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: ttttt; X3隧道建立次数, GUI is 36,	Expected is 36;	PASSED.
+2016-01-22 15:20:39,470 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: ttttt; X3隧道成功次数, GUI is 40,	Expected is 40;	PASSED.
+2016-01-22 15:20:39,546 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:20,	LIC标识: ttttt; X3数据流量统计, GUI is 44,	Expected is 44;	PASSED.
+2016-01-22 15:20:39,548 [INFO] PmCommon check_pm_rows(241) Row 9 check PASSED.
+2016-01-22 15:20:39,551 [INFO] PmCommon check_pm_by_row(304) Start to check row: 10
+2016-01-22 15:20:40,451 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: ttttt; X1接收消息数, GUI is 3,	Expected is 3;	PASSED.
+2016-01-22 15:20:40,532 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: ttttt; X1发送消息数, GUI is 6,	Expected is 6;	PASSED.
+2016-01-22 15:20:40,611 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: ttttt; X1接收流量数, GUI is 9,	Expected is 9;	PASSED.
+2016-01-22 15:20:40,690 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: ttttt; X1发送流量数, GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 15:20:40,767 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: ttttt; X2接收消息数, GUI is 15,	Expected is 15;	PASSED.
+2016-01-22 15:20:40,849 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: ttttt; X2发送消息数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 15:20:40,926 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: ttttt; X2接收流量数, GUI is 21,	Expected is 21;	PASSED.
+2016-01-22 15:20:41,000 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: ttttt; X2发送流量数, GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 15:20:41,078 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: ttttt; X3隧道建立次数, GUI is 27,	Expected is 27;	PASSED.
+2016-01-22 15:20:41,164 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: ttttt; X3隧道成功次数, GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 15:20:41,243 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:15,	LIC标识: ttttt; X3数据流量统计, GUI is 33,	Expected is 33;	PASSED.
+2016-01-22 15:20:41,246 [INFO] PmCommon check_pm_rows(241) Row 10 check PASSED.
+2016-01-22 15:20:41,247 [INFO] PmCommon check_pm_by_row(304) Start to check row: 11
+2016-01-22 15:20:42,233 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: ttttt; X1接收消息数, GUI is 2,	Expected is 2;	PASSED.
+2016-01-22 15:20:42,313 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: ttttt; X1发送消息数, GUI is 4,	Expected is 4;	PASSED.
+2016-01-22 15:20:42,394 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: ttttt; X1接收流量数, GUI is 6,	Expected is 6;	PASSED.
+2016-01-22 15:20:42,476 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: ttttt; X1发送流量数, GUI is 8,	Expected is 8;	PASSED.
+2016-01-22 15:20:42,559 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: ttttt; X2接收消息数, GUI is 10,	Expected is 10;	PASSED.
+2016-01-22 15:20:42,638 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: ttttt; X2发送消息数, GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 15:20:42,757 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: ttttt; X2接收流量数, GUI is 14,	Expected is 14;	PASSED.
+2016-01-22 15:20:42,848 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: ttttt; X2发送流量数, GUI is 16,	Expected is 16;	PASSED.
+2016-01-22 15:20:42,930 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: ttttt; X3隧道建立次数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 15:20:43,006 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: ttttt; X3隧道成功次数, GUI is 20,	Expected is 20;	PASSED.
+2016-01-22 15:20:43,081 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:10,	LIC标识: ttttt; X3数据流量统计, GUI is 22,	Expected is 22;	PASSED.
+2016-01-22 15:20:43,082 [INFO] PmCommon check_pm_rows(241) Row 11 check PASSED.
+2016-01-22 15:20:43,085 [INFO] PmCommon check_pm_by_row(304) Start to check row: 12
+2016-01-22 15:20:44,061 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: ttttt; X1接收消息数, GUI is 1,	Expected is 1;	PASSED.
+2016-01-22 15:20:44,137 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: ttttt; X1发送消息数, GUI is 2,	Expected is 2;	PASSED.
+2016-01-22 15:20:44,210 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: ttttt; X1接收流量数, GUI is 3,	Expected is 3;	PASSED.
+2016-01-22 15:20:44,285 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: ttttt; X1发送流量数, GUI is 4,	Expected is 4;	PASSED.
+2016-01-22 15:20:44,361 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: ttttt; X2接收消息数, GUI is 5,	Expected is 5;	PASSED.
+2016-01-22 15:20:44,436 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: ttttt; X2发送消息数, GUI is 6,	Expected is 6;	PASSED.
+2016-01-22 15:20:44,512 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: ttttt; X2接收流量数, GUI is 7,	Expected is 7;	PASSED.
+2016-01-22 15:20:44,588 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: ttttt; X2发送流量数, GUI is 8,	Expected is 8;	PASSED.
+2016-01-22 15:20:44,664 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: ttttt; X3隧道建立次数, GUI is 9,	Expected is 9;	PASSED.
+2016-01-22 15:20:44,737 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: ttttt; X3隧道成功次数, GUI is 10,	Expected is 10;	PASSED.
+2016-01-22 15:20:44,815 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 14:05,	LIC标识: ttttt; X3数据流量统计, GUI is 11,	Expected is 11;	PASSED.
+2016-01-22 15:20:44,819 [INFO] PmCommon check_pm_rows(241) Row 12 check PASSED.
+2016-01-22 15:20:44,821 [INFO] PmCommon check_pm_rows(296) GUI times: 2016-01-22 15:00:00, 2016-01-22 14:55:00, 2016-01-22 14:50:00, 2016-01-22 14:45:00, 2016-01-22 14:40:00, 2016-01-22 14:35:00, 2016-01-22 14:30:00, 2016-01-22 14:25:00, 2016-01-22 14:20:00, 2016-01-22 14:15:00, 2016-01-22 14:10:00, 2016-01-22 14:05:00
+2016-01-22 15:20:44,822 [INFO] PmCommon check_pm_rows(298) Overall PASSED.
+2016-01-22 17:25:53,381 [INFO] PmCaseBase <module>(39) Logger of PM part init successfully.
+2016-01-22 17:25:53,411 [INFO] CommonStatic login_rsnms(37) Will start the web browser and perform test case.
+2016-01-22 17:25:53,428 [INFO] CommonStatic windows_chrome_login_rsnms(71) Browser driver path: C:\Users\EJLNOQC\installed\chromedriver.exe
+2016-01-22 17:25:53,430 [INFO] CommonStatic windows_chrome_login_rsnms(75) Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+2016-01-22 17:25:55,571 [INFO] CommonStatic login_first_page(85) Web page: http://10.184.73.77:8686/XOAM/login/index.html
+2016-01-22 17:26:10,026 [INFO] CommonStatic login_first_page(94) Login to the InterfaceManagement page successfully.
+2016-01-22 17:26:10,028 [INFO] NeCommon to_ne_management_page_by_url(26) Will Navigate to the NeManagement page...
+2016-01-22 17:26:10,029 [INFO] NeCommon to_ne_management_page_by_url(29) Base URL is: http://10.184.73.77:8686/XOAM/src/index.html
+2016-01-22 17:26:40,931 [INFO] PmCommon to_pm_management_page_by_url(25) Will Navigate to the PMManagement page...
+2016-01-22 17:26:40,934 [INFO] PmCommon to_pm_management_page_by_url(28) Base URL is: http://10.184.73.77:8686/XOAM/src/index.html
+2016-01-22 17:26:40,937 [INFO] PmCommon to_pm_management_page_by_url(30) To URL: http://10.184.73.77:8686/XOAM/src/index.html#network-overview/pm-management/pm-4g/pm-sgw
+2016-01-22 17:26:56,818 [INFO] PmCommon check_pm_by_row(304) Start to check row: 1
+2016-01-22 17:26:57,825 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: ttttt; X1接收消息数, GUI is 2,	Expected is 2;	PASSED.
+2016-01-22 17:26:57,898 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: ttttt; X1发送消息数, GUI is 4,	Expected is 4;	PASSED.
+2016-01-22 17:26:57,973 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: ttttt; X1接收流量数, GUI is 6,	Expected is 6;	PASSED.
+2016-01-22 17:26:58,046 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: ttttt; X1发送流量数, GUI is 8,	Expected is 8;	PASSED.
+2016-01-22 17:26:58,119 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: ttttt; X2接收消息数, GUI is 10,	Expected is 10;	PASSED.
+2016-01-22 17:26:58,194 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: ttttt; X2发送消息数, GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 17:26:58,252 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: ttttt; X2接收流量数, GUI is 14,	Expected is 14;	PASSED.
+2016-01-22 17:26:58,325 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: ttttt; X2发送流量数, GUI is 16,	Expected is 16;	PASSED.
+2016-01-22 17:26:58,398 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: ttttt; X3隧道建立次数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 17:26:58,471 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: ttttt; X3隧道成功次数, GUI is 20,	Expected is 20;	PASSED.
+2016-01-22 17:26:58,546 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: ttttt; X3数据流量统计, GUI is 22,	Expected is 22;	PASSED.
+2016-01-22 17:26:58,548 [INFO] PmCommon check_pm_rows(241) Row 1 check PASSED.
+2016-01-22 17:26:58,549 [INFO] PmCommon check_pm_by_row(304) Start to check row: 2
+2016-01-22 17:26:59,581 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: ttttt; X1接收消息数, GUI is 1,	Expected is 1;	PASSED.
+2016-01-22 17:26:59,655 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: ttttt; X1发送消息数, GUI is 2,	Expected is 2;	PASSED.
+2016-01-22 17:26:59,730 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: ttttt; X1接收流量数, GUI is 3,	Expected is 3;	PASSED.
+2016-01-22 17:26:59,809 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: ttttt; X1发送流量数, GUI is 4,	Expected is 4;	PASSED.
+2016-01-22 17:26:59,894 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: ttttt; X2接收消息数, GUI is 5,	Expected is 5;	PASSED.
+2016-01-22 17:26:59,973 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: ttttt; X2发送消息数, GUI is 6,	Expected is 6;	PASSED.
+2016-01-22 17:27:00,048 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: ttttt; X2接收流量数, GUI is 7,	Expected is 7;	PASSED.
+2016-01-22 17:27:00,125 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: ttttt; X2发送流量数, GUI is 8,	Expected is 8;	PASSED.
+2016-01-22 17:27:00,203 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: ttttt; X3隧道建立次数, GUI is 9,	Expected is 9;	PASSED.
+2016-01-22 17:27:00,279 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: ttttt; X3隧道成功次数, GUI is 10,	Expected is 10;	PASSED.
+2016-01-22 17:27:00,354 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: ttttt; X3数据流量统计, GUI is 11,	Expected is 11;	PASSED.
+2016-01-22 17:27:00,355 [INFO] PmCommon check_pm_rows(241) Row 2 check PASSED.
+2016-01-22 17:27:00,358 [INFO] PmCommon check_pm_by_row(304) Start to check row: 3
+2016-01-22 17:27:01,280 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: ttttt; X1接收消息数, GUI is 4294967230,	Expected is 4294967230;	PASSED.
+2016-01-22 17:27:01,355 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: ttttt; X1发送消息数, GUI is 4294967164,	Expected is 4294967164;	PASSED.
+2016-01-22 17:27:01,433 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: ttttt; X1接收流量数, GUI is 4294967098,	Expected is 4294967098;	PASSED.
+2016-01-22 17:27:01,510 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: ttttt; X1发送流量数, GUI is 4294967032,	Expected is 4294967032;	PASSED.
+2016-01-22 17:27:01,586 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: ttttt; X2接收消息数, GUI is 4294966966,	Expected is 4294966966;	PASSED.
+2016-01-22 17:27:01,661 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: ttttt; X2发送消息数, GUI is 4294966900,	Expected is 4294966900;	PASSED.
+2016-01-22 17:27:01,736 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: ttttt; X2接收流量数, GUI is 4294966834,	Expected is 4294966834;	PASSED.
+2016-01-22 17:27:01,812 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: ttttt; X2发送流量数, GUI is 4294966768,	Expected is 4294966768;	PASSED.
+2016-01-22 17:27:01,888 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: ttttt; X3隧道建立次数, GUI is 4294966702,	Expected is 4294966702;	PASSED.
+2016-01-22 17:27:01,960 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: ttttt; X3隧道成功次数, GUI is 4294966636,	Expected is 4294966636;	PASSED.
+2016-01-22 17:27:02,035 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: ttttt; X3数据流量统计, GUI is 4294966570,	Expected is 4294966570;	PASSED.
+2016-01-22 17:27:02,036 [INFO] PmCommon check_pm_rows(241) Row 3 check PASSED.
+2016-01-22 17:27:02,039 [INFO] PmCommon check_pm_by_row(304) Start to check row: 4
+2016-01-22 17:27:02,933 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: ttttt; X1接收消息数, GUI is 11,	Expected is 11;	PASSED.
+2016-01-22 17:27:03,002 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: ttttt; X1发送消息数, GUI is 22,	Expected is 22;	PASSED.
+2016-01-22 17:27:03,079 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: ttttt; X1接收流量数, GUI is 33,	Expected is 33;	PASSED.
+2016-01-22 17:27:03,154 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: ttttt; X1发送流量数, GUI is 44,	Expected is 44;	PASSED.
+2016-01-22 17:27:03,230 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: ttttt; X2接收消息数, GUI is 55,	Expected is 55;	PASSED.
+2016-01-22 17:27:03,302 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: ttttt; X2发送消息数, GUI is 66,	Expected is 66;	PASSED.
+2016-01-22 17:27:03,378 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: ttttt; X2接收流量数, GUI is 77,	Expected is 77;	PASSED.
+2016-01-22 17:27:03,450 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: ttttt; X2发送流量数, GUI is 88,	Expected is 88;	PASSED.
+2016-01-22 17:27:03,522 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: ttttt; X3隧道建立次数, GUI is 99,	Expected is 99;	PASSED.
+2016-01-22 17:27:03,598 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: ttttt; X3隧道成功次数, GUI is 110,	Expected is 110;	PASSED.
+2016-01-22 17:27:03,674 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: ttttt; X3数据流量统计, GUI is 121,	Expected is 121;	PASSED.
+2016-01-22 17:27:03,676 [INFO] PmCommon check_pm_rows(241) Row 4 check PASSED.
+2016-01-22 17:27:03,677 [INFO] PmCommon check_pm_by_row(304) Start to check row: 5
+2016-01-22 17:27:04,572 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: ttttt; X1接收消息数, GUI is 10,	Expected is 10;	PASSED.
+2016-01-22 17:27:04,647 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: ttttt; X1发送消息数, GUI is 20,	Expected is 20;	PASSED.
+2016-01-22 17:27:04,720 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: ttttt; X1接收流量数, GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 17:27:04,795 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: ttttt; X1发送流量数, GUI is 40,	Expected is 40;	PASSED.
+2016-01-22 17:27:04,869 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: ttttt; X2接收消息数, GUI is 50,	Expected is 50;	PASSED.
+2016-01-22 17:27:04,944 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: ttttt; X2发送消息数, GUI is 60,	Expected is 60;	PASSED.
+2016-01-22 17:27:05,019 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: ttttt; X2接收流量数, GUI is 70,	Expected is 70;	PASSED.
+2016-01-22 17:27:05,095 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: ttttt; X2发送流量数, GUI is 80,	Expected is 80;	PASSED.
+2016-01-22 17:27:05,171 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: ttttt; X3隧道建立次数, GUI is 90,	Expected is 90;	PASSED.
+2016-01-22 17:27:05,250 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: ttttt; X3隧道成功次数, GUI is 100,	Expected is 100;	PASSED.
+2016-01-22 17:27:05,334 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: ttttt; X3数据流量统计, GUI is 110,	Expected is 110;	PASSED.
+2016-01-22 17:27:05,336 [INFO] PmCommon check_pm_rows(241) Row 5 check PASSED.
+2016-01-22 17:27:05,342 [INFO] PmCommon check_pm_by_row(304) Start to check row: 6
+2016-01-22 17:27:06,227 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: ttttt; X1接收消息数, GUI is 9,	Expected is 9;	PASSED.
+2016-01-22 17:27:06,302 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: ttttt; X1发送消息数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 17:27:06,355 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: ttttt; X1接收流量数, GUI is 27,	Expected is 27;	PASSED.
+2016-01-22 17:27:06,403 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: ttttt; X1发送流量数, GUI is 36,	Expected is 36;	PASSED.
+2016-01-22 17:27:06,450 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: ttttt; X2接收消息数, GUI is 45,	Expected is 45;	PASSED.
+2016-01-22 17:27:06,513 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: ttttt; X2发送消息数, GUI is 54,	Expected is 54;	PASSED.
+2016-01-22 17:27:06,588 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: ttttt; X2接收流量数, GUI is 63,	Expected is 63;	PASSED.
+2016-01-22 17:27:06,663 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: ttttt; X2发送流量数, GUI is 72,	Expected is 72;	PASSED.
+2016-01-22 17:27:06,743 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: ttttt; X3隧道建立次数, GUI is 81,	Expected is 81;	PASSED.
+2016-01-22 17:27:06,816 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: ttttt; X3隧道成功次数, GUI is 90,	Expected is 90;	PASSED.
+2016-01-22 17:27:06,894 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: ttttt; X3数据流量统计, GUI is 99,	Expected is 99;	PASSED.
+2016-01-22 17:27:06,898 [INFO] PmCommon check_pm_rows(241) Row 6 check PASSED.
+2016-01-22 17:27:06,898 [INFO] PmCommon check_pm_by_row(304) Start to check row: 7
+2016-01-22 17:27:07,759 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: ttttt; X1接收消息数, GUI is 8,	Expected is 8;	PASSED.
+2016-01-22 17:27:07,835 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: ttttt; X1发送消息数, GUI is 16,	Expected is 16;	PASSED.
+2016-01-22 17:27:07,911 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: ttttt; X1接收流量数, GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 17:27:07,990 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: ttttt; X1发送流量数, GUI is 32,	Expected is 32;	PASSED.
+2016-01-22 17:27:08,069 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: ttttt; X2接收消息数, GUI is 40,	Expected is 40;	PASSED.
+2016-01-22 17:27:08,144 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: ttttt; X2发送消息数, GUI is 48,	Expected is 48;	PASSED.
+2016-01-22 17:27:08,219 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: ttttt; X2接收流量数, GUI is 56,	Expected is 56;	PASSED.
+2016-01-22 17:27:08,296 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: ttttt; X2发送流量数, GUI is 64,	Expected is 64;	PASSED.
+2016-01-22 17:27:08,371 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: ttttt; X3隧道建立次数, GUI is 72,	Expected is 72;	PASSED.
+2016-01-22 17:27:08,446 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: ttttt; X3隧道成功次数, GUI is 80,	Expected is 80;	PASSED.
+2016-01-22 17:27:08,520 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: ttttt; X3数据流量统计, GUI is 88,	Expected is 88;	PASSED.
+2016-01-22 17:27:08,523 [INFO] PmCommon check_pm_rows(241) Row 7 check PASSED.
+2016-01-22 17:27:08,525 [INFO] PmCommon check_pm_by_row(304) Start to check row: 8
+2016-01-22 17:27:09,414 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: ttttt; X1接收消息数, GUI is 7,	Expected is 7;	PASSED.
+2016-01-22 17:27:09,490 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: ttttt; X1发送消息数, GUI is 14,	Expected is 14;	PASSED.
+2016-01-22 17:27:09,569 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: ttttt; X1接收流量数, GUI is 21,	Expected is 21;	PASSED.
+2016-01-22 17:27:09,644 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: ttttt; X1发送流量数, GUI is 28,	Expected is 28;	PASSED.
+2016-01-22 17:27:09,720 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: ttttt; X2接收消息数, GUI is 35,	Expected is 35;	PASSED.
+2016-01-22 17:27:09,793 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: ttttt; X2发送消息数, GUI is 42,	Expected is 42;	PASSED.
+2016-01-22 17:27:09,867 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: ttttt; X2接收流量数, GUI is 49,	Expected is 49;	PASSED.
+2016-01-22 17:27:09,940 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: ttttt; X2发送流量数, GUI is 56,	Expected is 56;	PASSED.
+2016-01-22 17:27:10,013 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: ttttt; X3隧道建立次数, GUI is 63,	Expected is 63;	PASSED.
+2016-01-22 17:27:10,088 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: ttttt; X3隧道成功次数, GUI is 70,	Expected is 70;	PASSED.
+2016-01-22 17:27:10,163 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: ttttt; X3数据流量统计, GUI is 77,	Expected is 77;	PASSED.
+2016-01-22 17:27:10,165 [INFO] PmCommon check_pm_rows(241) Row 8 check PASSED.
+2016-01-22 17:27:10,167 [INFO] PmCommon check_pm_by_row(304) Start to check row: 9
+2016-01-22 17:27:11,046 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: ttttt; X1接收消息数, GUI is 6,	Expected is 6;	PASSED.
+2016-01-22 17:27:11,124 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: ttttt; X1发送消息数, GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 17:27:11,201 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: ttttt; X1接收流量数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 17:27:11,282 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: ttttt; X1发送流量数, GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 17:27:11,359 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: ttttt; X2接收消息数, GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 17:27:11,436 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: ttttt; X2发送消息数, GUI is 36,	Expected is 36;	PASSED.
+2016-01-22 17:27:11,513 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: ttttt; X2接收流量数, GUI is 42,	Expected is 42;	PASSED.
+2016-01-22 17:27:11,588 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: ttttt; X2发送流量数, GUI is 48,	Expected is 48;	PASSED.
+2016-01-22 17:27:11,663 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: ttttt; X3隧道建立次数, GUI is 54,	Expected is 54;	PASSED.
+2016-01-22 17:27:11,779 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: ttttt; X3隧道成功次数, GUI is 60,	Expected is 60;	PASSED.
+2016-01-22 17:27:11,888 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: ttttt; X3数据流量统计, GUI is 66,	Expected is 66;	PASSED.
+2016-01-22 17:27:11,891 [INFO] PmCommon check_pm_rows(241) Row 9 check PASSED.
+2016-01-22 17:27:11,892 [INFO] PmCommon check_pm_by_row(304) Start to check row: 10
+2016-01-22 17:27:12,792 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: ttttt; X1接收消息数, GUI is 5,	Expected is 5;	PASSED.
+2016-01-22 17:27:12,867 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: ttttt; X1发送消息数, GUI is 10,	Expected is 10;	PASSED.
+2016-01-22 17:27:12,944 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: ttttt; X1接收流量数, GUI is 15,	Expected is 15;	PASSED.
+2016-01-22 17:27:13,023 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: ttttt; X1发送流量数, GUI is 20,	Expected is 20;	PASSED.
+2016-01-22 17:27:13,101 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: ttttt; X2接收消息数, GUI is 25,	Expected is 25;	PASSED.
+2016-01-22 17:27:13,177 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: ttttt; X2发送消息数, GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 17:27:13,256 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: ttttt; X2接收流量数, GUI is 35,	Expected is 35;	PASSED.
+2016-01-22 17:27:13,332 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: ttttt; X2发送流量数, GUI is 40,	Expected is 40;	PASSED.
+2016-01-22 17:27:13,414 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: ttttt; X3隧道建立次数, GUI is 45,	Expected is 45;	PASSED.
+2016-01-22 17:27:13,493 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: ttttt; X3隧道成功次数, GUI is 50,	Expected is 50;	PASSED.
+2016-01-22 17:27:13,585 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: ttttt; X3数据流量统计, GUI is 55,	Expected is 55;	PASSED.
+2016-01-22 17:27:13,588 [INFO] PmCommon check_pm_rows(241) Row 10 check PASSED.
+2016-01-22 17:27:13,589 [INFO] PmCommon check_pm_by_row(304) Start to check row: 11
+2016-01-22 17:27:14,614 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:20,	LIC标识: ttttt; X1接收消息数, GUI is 4,	Expected is 4;	PASSED.
+2016-01-22 17:27:14,690 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:20,	LIC标识: ttttt; X1发送消息数, GUI is 8,	Expected is 8;	PASSED.
+2016-01-22 17:27:14,779 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:20,	LIC标识: ttttt; X1接收流量数, GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 17:27:14,855 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:20,	LIC标识: ttttt; X1发送流量数, GUI is 16,	Expected is 16;	PASSED.
+2016-01-22 17:27:14,930 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:20,	LIC标识: ttttt; X2接收消息数, GUI is 20,	Expected is 20;	PASSED.
+2016-01-22 17:27:15,006 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:20,	LIC标识: ttttt; X2发送消息数, GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 17:27:15,079 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:20,	LIC标识: ttttt; X2接收流量数, GUI is 28,	Expected is 28;	PASSED.
+2016-01-22 17:27:15,155 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:20,	LIC标识: ttttt; X2发送流量数, GUI is 32,	Expected is 32;	PASSED.
+2016-01-22 17:27:15,236 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:20,	LIC标识: ttttt; X3隧道建立次数, GUI is 36,	Expected is 36;	PASSED.
+2016-01-22 17:27:15,315 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:20,	LIC标识: ttttt; X3隧道成功次数, GUI is 40,	Expected is 40;	PASSED.
+2016-01-22 17:27:15,391 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:20,	LIC标识: ttttt; X3数据流量统计, GUI is 44,	Expected is 44;	PASSED.
+2016-01-22 17:27:15,394 [INFO] PmCommon check_pm_rows(241) Row 11 check PASSED.
+2016-01-22 17:27:15,397 [INFO] PmCommon check_pm_by_row(304) Start to check row: 12
+2016-01-22 17:27:16,328 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:15,	LIC标识: ttttt; X1接收消息数, GUI is 3,	Expected is 3;	PASSED.
+2016-01-22 17:27:16,408 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:15,	LIC标识: ttttt; X1发送消息数, GUI is 6,	Expected is 6;	PASSED.
+2016-01-22 17:27:16,486 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:15,	LIC标识: ttttt; X1接收流量数, GUI is 9,	Expected is 9;	PASSED.
+2016-01-22 17:27:16,563 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:15,	LIC标识: ttttt; X1发送流量数, GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 17:27:16,628 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:15,	LIC标识: ttttt; X2接收消息数, GUI is 15,	Expected is 15;	PASSED.
+2016-01-22 17:27:16,691 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:15,	LIC标识: ttttt; X2发送消息数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 17:27:16,769 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:15,	LIC标识: ttttt; X2接收流量数, GUI is 21,	Expected is 21;	PASSED.
+2016-01-22 17:27:16,851 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:15,	LIC标识: ttttt; X2发送流量数, GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 17:27:16,933 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:15,	LIC标识: ttttt; X3隧道建立次数, GUI is 27,	Expected is 27;	PASSED.
+2016-01-22 17:27:17,013 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:15,	LIC标识: ttttt; X3隧道成功次数, GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 17:27:17,091 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:15,	LIC标识: ttttt; X3数据流量统计, GUI is 33,	Expected is 33;	PASSED.
+2016-01-22 17:27:17,092 [INFO] PmCommon check_pm_rows(241) Row 12 check PASSED.
+2016-01-22 17:27:17,095 [INFO] PmCommon check_pm_rows(296) GUI times: 2016-01-22 17:10:00, 2016-01-22 17:05:00, 2016-01-22 17:00:00, 2016-01-22 16:55:00, 2016-01-22 16:50:00, 2016-01-22 16:45:00, 2016-01-22 16:40:00, 2016-01-22 16:35:00, 2016-01-22 16:30:00, 2016-01-22 16:25:00, 2016-01-22 16:20:00, 2016-01-22 16:15:00
+2016-01-22 17:27:17,096 [INFO] PmCommon check_pm_rows(298) Overall PASSED.
+2016-01-22 17:36:31,371 [INFO] PmCaseBase <module>(39) Logger of PM part init successfully.
+2016-01-22 17:36:31,404 [INFO] CommonStatic login_rsnms(37) Will start the web browser and perform test case.
+2016-01-22 17:36:31,421 [INFO] CommonStatic windows_chrome_login_rsnms(71) Browser driver path: C:\Users\EJLNOQC\installed\chromedriver.exe
+2016-01-22 17:36:31,424 [INFO] CommonStatic windows_chrome_login_rsnms(75) Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+2016-01-22 17:36:33,691 [INFO] CommonStatic login_first_page(85) Web page: http://10.184.73.77:8686/XOAM/login/index.html
+2016-01-22 17:36:49,532 [INFO] CommonStatic login_first_page(94) Login to the InterfaceManagement page successfully.
+2016-01-22 17:36:49,535 [INFO] NeCommon to_ne_management_page_by_url(26) Will Navigate to the NeManagement page...
+2016-01-22 17:36:49,536 [INFO] NeCommon to_ne_management_page_by_url(29) Base URL is: http://10.184.73.77:8686/XOAM/src/index.html
+2016-01-22 17:37:12,190 [INFO] PmCommon to_pm_management_page_by_url(25) Will Navigate to the PMManagement page...
+2016-01-22 17:37:12,193 [INFO] PmCommon to_pm_management_page_by_url(28) Base URL is: http://10.184.73.77:8686/XOAM/src/index.html
+2016-01-22 17:37:12,194 [INFO] PmCommon to_pm_management_page_by_url(30) To URL: http://10.184.73.77:8686/XOAM/src/index.html#network-overview/pm-management/pm-3g/pm-sgsn
+2016-01-22 17:37:35,710 [INFO] PmCommon check_pm_by_row(304) Start to check row: 1
+2016-01-22 17:37:36,736 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X1接收消息数, GUI is 225,	Expected is 225;	PASSED.
+2016-01-22 17:37:36,809 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X1发送消息数, GUI is 50,	Expected is 50;	PASSED.
+2016-01-22 17:37:36,882 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X1接收流量数(KB), GUI is 55,	Expected is 55;	PASSED.
+2016-01-22 17:37:36,957 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X1发送流量数(KB), GUI is 60,	Expected is 60;	PASSED.
+2016-01-22 17:37:37,032 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X2接收消息数, GUI is 65,	Expected is 65;	PASSED.
+2016-01-22 17:37:37,107 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X2发送消息数, GUI is 70,	Expected is 70;	PASSED.
+2016-01-22 17:37:37,184 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X2接收流量数(KB), GUI is 75,	Expected is 75;	PASSED.
+2016-01-22 17:37:37,257 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X2发送流量数(KB), GUI is 80,	Expected is 80;	PASSED.
+2016-01-22 17:37:37,332 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X3隧道建立次数, GUI is 85,	Expected is 85;	PASSED.
+2016-01-22 17:37:37,408 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X3隧道成功次数, GUI is 90,	Expected is 90;	PASSED.
+2016-01-22 17:37:37,483 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X3数据流量统计(KB), GUI is 95,	Expected is 95;	PASSED.
+2016-01-22 17:37:37,543 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X1连接请求数, GUI is 5,	Expected is 5;	PASSED.
+2016-01-22 17:37:37,617 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X1释放命令数, GUI is 10,	Expected is 10;	PASSED.
+2016-01-22 17:37:37,690 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X1目标设定命令数, GUI is 15,	Expected is 15;	PASSED.
+2016-01-22 17:37:37,765 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X1目标修改命令数, GUI is 20,	Expected is 20;	PASSED.
+2016-01-22 17:37:37,841 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X1目标列示命令数, GUI is 25,	Expected is 25;	PASSED.
+2016-01-22 17:37:37,915 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X1目标撤销命令数, GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 17:37:37,990 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X1目标查询命令数, GUI is 35,	Expected is 35;	PASSED.
+2016-01-22 17:37:38,065 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X1目标参数查询数, GUI is 40,	Expected is 40;	PASSED.
+2016-01-22 17:37:38,140 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:20,	LIC标识: LTE123456789-modify; X1网元时间查询数, GUI is 45,	Expected is 45;	PASSED.
+2016-01-22 17:37:38,141 [INFO] PmCommon check_pm_rows(241) Row 1 check PASSED.
+2016-01-22 17:37:38,144 [INFO] PmCommon check_pm_by_row(304) Start to check row: 2
+2016-01-22 17:37:39,174 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X1接收消息数, GUI is 180,	Expected is 180;	PASSED.
+2016-01-22 17:37:39,247 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X1发送消息数, GUI is 40,	Expected is 40;	PASSED.
+2016-01-22 17:37:39,325 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X1接收流量数(KB), GUI is 44,	Expected is 44;	PASSED.
+2016-01-22 17:37:39,401 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X1发送流量数(KB), GUI is 48,	Expected is 48;	PASSED.
+2016-01-22 17:37:39,476 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X2接收消息数, GUI is 52,	Expected is 52;	PASSED.
+2016-01-22 17:37:39,549 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X2发送消息数, GUI is 56,	Expected is 56;	PASSED.
+2016-01-22 17:37:39,667 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X2接收流量数(KB), GUI is 60,	Expected is 60;	PASSED.
+2016-01-22 17:37:39,760 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X2发送流量数(KB), GUI is 64,	Expected is 64;	PASSED.
+2016-01-22 17:37:39,836 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X3隧道建立次数, GUI is 68,	Expected is 68;	PASSED.
+2016-01-22 17:37:39,911 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X3隧道成功次数, GUI is 72,	Expected is 72;	PASSED.
+2016-01-22 17:37:39,987 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X3数据流量统计(KB), GUI is 76,	Expected is 76;	PASSED.
+2016-01-22 17:37:40,062 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X1连接请求数, GUI is 4,	Expected is 4;	PASSED.
+2016-01-22 17:37:40,137 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X1释放命令数, GUI is 8,	Expected is 8;	PASSED.
+2016-01-22 17:37:40,210 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X1目标设定命令数, GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 17:37:40,282 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X1目标修改命令数, GUI is 16,	Expected is 16;	PASSED.
+2016-01-22 17:37:40,358 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X1目标列示命令数, GUI is 20,	Expected is 20;	PASSED.
+2016-01-22 17:37:40,433 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X1目标撤销命令数, GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 17:37:40,510 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X1目标查询命令数, GUI is 28,	Expected is 28;	PASSED.
+2016-01-22 17:37:40,601 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X1目标参数查询数, GUI is 32,	Expected is 32;	PASSED.
+2016-01-22 17:37:40,686 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:15,	LIC标识: LTE123456789-modify; X1网元时间查询数, GUI is 36,	Expected is 36;	PASSED.
+2016-01-22 17:37:40,687 [INFO] PmCommon check_pm_rows(241) Row 2 check PASSED.
+2016-01-22 17:37:40,690 [INFO] PmCommon check_pm_by_row(304) Start to check row: 3
+2016-01-22 17:37:41,631 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X1接收消息数, GUI is 135,	Expected is 135;	PASSED.
+2016-01-22 17:37:41,686 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X1发送消息数, GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 17:37:41,740 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X1接收流量数(KB), GUI is 33,	Expected is 33;	PASSED.
+2016-01-22 17:37:41,803 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X1发送流量数(KB), GUI is 36,	Expected is 36;	PASSED.
+2016-01-22 17:37:41,880 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X2接收消息数, GUI is 39,	Expected is 39;	PASSED.
+2016-01-22 17:37:41,959 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X2发送消息数, GUI is 42,	Expected is 42;	PASSED.
+2016-01-22 17:37:42,036 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X2接收流量数(KB), GUI is 45,	Expected is 45;	PASSED.
+2016-01-22 17:37:42,112 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X2发送流量数(KB), GUI is 48,	Expected is 48;	PASSED.
+2016-01-22 17:37:42,193 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X3隧道建立次数, GUI is 51,	Expected is 51;	PASSED.
+2016-01-22 17:37:42,269 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X3隧道成功次数, GUI is 54,	Expected is 54;	PASSED.
+2016-01-22 17:37:42,345 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X3数据流量统计(KB), GUI is 57,	Expected is 57;	PASSED.
+2016-01-22 17:37:42,426 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X1连接请求数, GUI is 3,	Expected is 3;	PASSED.
+2016-01-22 17:37:42,502 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X1释放命令数, GUI is 6,	Expected is 6;	PASSED.
+2016-01-22 17:37:42,582 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X1目标设定命令数, GUI is 9,	Expected is 9;	PASSED.
+2016-01-22 17:37:42,657 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X1目标修改命令数, GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 17:37:42,733 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X1目标列示命令数, GUI is 15,	Expected is 15;	PASSED.
+2016-01-22 17:37:42,809 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X1目标撤销命令数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 17:37:42,885 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X1目标查询命令数, GUI is 21,	Expected is 21;	PASSED.
+2016-01-22 17:37:42,959 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X1目标参数查询数, GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 17:37:43,036 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:10,	LIC标识: LTE123456789-modify; X1网元时间查询数, GUI is 27,	Expected is 27;	PASSED.
+2016-01-22 17:37:43,039 [INFO] PmCommon check_pm_rows(241) Row 3 check PASSED.
+2016-01-22 17:37:43,040 [INFO] PmCommon check_pm_by_row(304) Start to check row: 4
+2016-01-22 17:37:43,934 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X1接收消息数, GUI is 90,	Expected is 90;	PASSED.
+2016-01-22 17:37:44,010 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X1发送消息数, GUI is 20,	Expected is 20;	PASSED.
+2016-01-22 17:37:44,086 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X1接收流量数(KB), GUI is 22,	Expected is 22;	PASSED.
+2016-01-22 17:37:44,161 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X1发送流量数(KB), GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 17:37:44,236 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X2接收消息数, GUI is 26,	Expected is 26;	PASSED.
+2016-01-22 17:37:44,312 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X2发送消息数, GUI is 28,	Expected is 28;	PASSED.
+2016-01-22 17:37:44,391 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X2接收流量数(KB), GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 17:37:44,470 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X2发送流量数(KB), GUI is 32,	Expected is 32;	PASSED.
+2016-01-22 17:37:44,545 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X3隧道建立次数, GUI is 34,	Expected is 34;	PASSED.
+2016-01-22 17:37:44,625 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X3隧道成功次数, GUI is 36,	Expected is 36;	PASSED.
+2016-01-22 17:37:44,703 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X3数据流量统计(KB), GUI is 38,	Expected is 38;	PASSED.
+2016-01-22 17:37:44,778 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X1连接请求数, GUI is 2,	Expected is 2;	PASSED.
+2016-01-22 17:37:44,854 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X1释放命令数, GUI is 4,	Expected is 4;	PASSED.
+2016-01-22 17:37:44,930 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X1目标设定命令数, GUI is 6,	Expected is 6;	PASSED.
+2016-01-22 17:37:45,006 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X1目标修改命令数, GUI is 8,	Expected is 8;	PASSED.
+2016-01-22 17:37:45,082 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X1目标列示命令数, GUI is 10,	Expected is 10;	PASSED.
+2016-01-22 17:37:45,158 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X1目标撤销命令数, GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 17:37:45,233 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X1目标查询命令数, GUI is 14,	Expected is 14;	PASSED.
+2016-01-22 17:37:45,309 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X1目标参数查询数, GUI is 16,	Expected is 16;	PASSED.
+2016-01-22 17:37:45,385 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:05,	LIC标识: LTE123456789-modify; X1网元时间查询数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 17:37:45,388 [INFO] PmCommon check_pm_rows(241) Row 4 check PASSED.
+2016-01-22 17:37:45,390 [INFO] PmCommon check_pm_by_row(304) Start to check row: 5
+2016-01-22 17:37:46,282 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X1接收消息数, GUI is 45,	Expected is 45;	PASSED.
+2016-01-22 17:37:46,361 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X1发送消息数, GUI is 10,	Expected is 10;	PASSED.
+2016-01-22 17:37:46,433 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X1接收流量数(KB), GUI is 11,	Expected is 11;	PASSED.
+2016-01-22 17:37:46,506 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X1发送流量数(KB), GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 17:37:46,582 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X2接收消息数, GUI is 13,	Expected is 13;	PASSED.
+2016-01-22 17:37:46,661 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X2发送消息数, GUI is 14,	Expected is 14;	PASSED.
+2016-01-22 17:37:46,740 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X2接收流量数(KB), GUI is 15,	Expected is 15;	PASSED.
+2016-01-22 17:37:46,819 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X2发送流量数(KB), GUI is 16,	Expected is 16;	PASSED.
+2016-01-22 17:37:46,894 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X3隧道建立次数, GUI is 17,	Expected is 17;	PASSED.
+2016-01-22 17:37:47,023 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X3隧道成功次数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 17:37:47,115 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X3数据流量统计(KB), GUI is 19,	Expected is 19;	PASSED.
+2016-01-22 17:37:47,173 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X1连接请求数, GUI is 1,	Expected is 1;	PASSED.
+2016-01-22 17:37:47,219 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X1释放命令数, GUI is 2,	Expected is 2;	PASSED.
+2016-01-22 17:37:47,285 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X1目标设定命令数, GUI is 3,	Expected is 3;	PASSED.
+2016-01-22 17:37:47,361 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X1目标修改命令数, GUI is 4,	Expected is 4;	PASSED.
+2016-01-22 17:37:47,437 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X1目标列示命令数, GUI is 5,	Expected is 5;	PASSED.
+2016-01-22 17:37:47,515 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X1目标撤销命令数, GUI is 6,	Expected is 6;	PASSED.
+2016-01-22 17:37:47,594 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X1目标查询命令数, GUI is 7,	Expected is 7;	PASSED.
+2016-01-22 17:37:47,665 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X1目标参数查询数, GUI is 8,	Expected is 8;	PASSED.
+2016-01-22 17:37:47,740 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 17:00,	LIC标识: LTE123456789-modify; X1网元时间查询数, GUI is 9,	Expected is 9;	PASSED.
+2016-01-22 17:37:47,743 [INFO] PmCommon check_pm_rows(241) Row 5 check PASSED.
+2016-01-22 17:37:47,744 [INFO] PmCommon check_pm_by_row(304) Start to check row: 6
+2016-01-22 17:37:48,640 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X1接收消息数, GUI is 38654702694,	Expected is 38654702694;	PASSED.
+2016-01-22 17:37:48,717 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X1发送消息数, GUI is 4294966636,	Expected is 4294966636;	PASSED.
+2016-01-22 17:37:48,796 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X1接收流量数(KB), GUI is 4294966570,	Expected is 4294966570;	PASSED.
+2016-01-22 17:37:48,875 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X1发送流量数(KB), GUI is 4294966504,	Expected is 4294966504;	PASSED.
+2016-01-22 17:37:48,953 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X2接收消息数, GUI is 4294966438,	Expected is 4294966438;	PASSED.
+2016-01-22 17:37:49,032 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X2发送消息数, GUI is 4294966372,	Expected is 4294966372;	PASSED.
+2016-01-22 17:37:49,111 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X2接收流量数(KB), GUI is 4294966306,	Expected is 4294966306;	PASSED.
+2016-01-22 17:37:49,187 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X2发送流量数(KB), GUI is 4294966240,	Expected is 4294966240;	PASSED.
+2016-01-22 17:37:49,263 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X3隧道建立次数, GUI is 4294966174,	Expected is 4294966174;	PASSED.
+2016-01-22 17:37:49,341 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X3隧道成功次数, GUI is 4294966108,	Expected is 4294966108;	PASSED.
+2016-01-22 17:37:49,417 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X3数据流量统计(KB), GUI is 4294966042,	Expected is 4294966042;	PASSED.
+2016-01-22 17:37:49,493 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X1连接请求数, GUI is 4294967230,	Expected is 4294967230;	PASSED.
+2016-01-22 17:37:49,571 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X1释放命令数, GUI is 4294967164,	Expected is 4294967164;	PASSED.
+2016-01-22 17:37:49,650 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X1目标设定命令数, GUI is 4294967098,	Expected is 4294967098;	PASSED.
+2016-01-22 17:37:49,726 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X1目标修改命令数, GUI is 4294967032,	Expected is 4294967032;	PASSED.
+2016-01-22 17:37:49,803 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X1目标列示命令数, GUI is 4294966966,	Expected is 4294966966;	PASSED.
+2016-01-22 17:37:49,882 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X1目标撤销命令数, GUI is 4294966900,	Expected is 4294966900;	PASSED.
+2016-01-22 17:37:49,961 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X1目标查询命令数, GUI is 4294966834,	Expected is 4294966834;	PASSED.
+2016-01-22 17:37:50,039 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X1目标参数查询数, GUI is 4294966768,	Expected is 4294966768;	PASSED.
+2016-01-22 17:37:50,117 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:55,	LIC标识: LTE123456789-modify; X1网元时间查询数, GUI is 4294966702,	Expected is 4294966702;	PASSED.
+2016-01-22 17:37:50,118 [INFO] PmCommon check_pm_rows(241) Row 6 check PASSED.
+2016-01-22 17:37:50,121 [INFO] PmCommon check_pm_by_row(304) Start to check row: 7
+2016-01-22 17:37:50,976 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X1接收消息数, GUI is 495,	Expected is 495;	PASSED.
+2016-01-22 17:37:51,048 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X1发送消息数, GUI is 110,	Expected is 110;	PASSED.
+2016-01-22 17:37:51,119 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X1接收流量数(KB), GUI is 121,	Expected is 121;	PASSED.
+2016-01-22 17:37:51,184 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X1发送流量数(KB), GUI is 132,	Expected is 132;	PASSED.
+2016-01-22 17:37:51,260 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X2接收消息数, GUI is 143,	Expected is 143;	PASSED.
+2016-01-22 17:37:51,338 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X2发送消息数, GUI is 154,	Expected is 154;	PASSED.
+2016-01-22 17:37:51,417 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X2接收流量数(KB), GUI is 165,	Expected is 165;	PASSED.
+2016-01-22 17:37:51,494 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X2发送流量数(KB), GUI is 176,	Expected is 176;	PASSED.
+2016-01-22 17:37:51,572 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X3隧道建立次数, GUI is 187,	Expected is 187;	PASSED.
+2016-01-22 17:37:51,651 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X3隧道成功次数, GUI is 198,	Expected is 198;	PASSED.
+2016-01-22 17:37:51,727 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X3数据流量统计(KB), GUI is 209,	Expected is 209;	PASSED.
+2016-01-22 17:37:51,806 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X1连接请求数, GUI is 11,	Expected is 11;	PASSED.
+2016-01-22 17:37:51,885 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X1释放命令数, GUI is 22,	Expected is 22;	PASSED.
+2016-01-22 17:37:51,964 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X1目标设定命令数, GUI is 33,	Expected is 33;	PASSED.
+2016-01-22 17:37:52,042 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X1目标修改命令数, GUI is 44,	Expected is 44;	PASSED.
+2016-01-22 17:37:52,121 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X1目标列示命令数, GUI is 55,	Expected is 55;	PASSED.
+2016-01-22 17:37:52,200 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X1目标撤销命令数, GUI is 66,	Expected is 66;	PASSED.
+2016-01-22 17:37:52,276 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X1目标查询命令数, GUI is 77,	Expected is 77;	PASSED.
+2016-01-22 17:37:52,355 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X1目标参数查询数, GUI is 88,	Expected is 88;	PASSED.
+2016-01-22 17:37:52,434 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:50,	LIC标识: LTE123456789-modify; X1网元时间查询数, GUI is 99,	Expected is 99;	PASSED.
+2016-01-22 17:37:52,437 [INFO] PmCommon check_pm_rows(241) Row 7 check PASSED.
+2016-01-22 17:37:52,438 [INFO] PmCommon check_pm_by_row(304) Start to check row: 8
+2016-01-22 17:37:53,354 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X1接收消息数, GUI is 450,	Expected is 450;	PASSED.
+2016-01-22 17:37:53,430 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X1发送消息数, GUI is 100,	Expected is 100;	PASSED.
+2016-01-22 17:37:53,509 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X1接收流量数(KB), GUI is 110,	Expected is 110;	PASSED.
+2016-01-22 17:37:53,589 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X1发送流量数(KB), GUI is 120,	Expected is 120;	PASSED.
+2016-01-22 17:37:53,671 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X2接收消息数, GUI is 130,	Expected is 130;	PASSED.
+2016-01-22 17:37:53,749 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X2发送消息数, GUI is 140,	Expected is 140;	PASSED.
+2016-01-22 17:37:53,828 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X2接收流量数(KB), GUI is 150,	Expected is 150;	PASSED.
+2016-01-22 17:37:53,908 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X2发送流量数(KB), GUI is 160,	Expected is 160;	PASSED.
+2016-01-22 17:37:53,986 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X3隧道建立次数, GUI is 170,	Expected is 170;	PASSED.
+2016-01-22 17:37:54,065 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X3隧道成功次数, GUI is 180,	Expected is 180;	PASSED.
+2016-01-22 17:37:54,144 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X3数据流量统计(KB), GUI is 190,	Expected is 190;	PASSED.
+2016-01-22 17:37:54,223 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X1连接请求数, GUI is 10,	Expected is 10;	PASSED.
+2016-01-22 17:37:54,351 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X1释放命令数, GUI is 20,	Expected is 20;	PASSED.
+2016-01-22 17:37:54,453 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X1目标设定命令数, GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 17:37:54,542 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X1目标修改命令数, GUI is 40,	Expected is 40;	PASSED.
+2016-01-22 17:37:54,622 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X1目标列示命令数, GUI is 50,	Expected is 50;	PASSED.
+2016-01-22 17:37:54,701 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X1目标撤销命令数, GUI is 60,	Expected is 60;	PASSED.
+2016-01-22 17:37:54,782 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X1目标查询命令数, GUI is 70,	Expected is 70;	PASSED.
+2016-01-22 17:37:54,861 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X1目标参数查询数, GUI is 80,	Expected is 80;	PASSED.
+2016-01-22 17:37:54,941 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:45,	LIC标识: LTE123456789-modify; X1网元时间查询数, GUI is 90,	Expected is 90;	PASSED.
+2016-01-22 17:37:54,944 [INFO] PmCommon check_pm_rows(241) Row 8 check PASSED.
+2016-01-22 17:37:54,946 [INFO] PmCommon check_pm_by_row(304) Start to check row: 9
+2016-01-22 17:37:55,859 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X1接收消息数, GUI is 405,	Expected is 405;	PASSED.
+2016-01-22 17:37:55,940 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X1发送消息数, GUI is 90,	Expected is 90;	PASSED.
+2016-01-22 17:37:56,019 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X1接收流量数(KB), GUI is 99,	Expected is 99;	PASSED.
+2016-01-22 17:37:56,098 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X1发送流量数(KB), GUI is 108,	Expected is 108;	PASSED.
+2016-01-22 17:37:56,180 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X2接收消息数, GUI is 117,	Expected is 117;	PASSED.
+2016-01-22 17:37:56,263 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X2发送消息数, GUI is 126,	Expected is 126;	PASSED.
+2016-01-22 17:37:56,346 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X2接收流量数(KB), GUI is 135,	Expected is 135;	PASSED.
+2016-01-22 17:37:56,428 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X2发送流量数(KB), GUI is 144,	Expected is 144;	PASSED.
+2016-01-22 17:37:56,510 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X3隧道建立次数, GUI is 153,	Expected is 153;	PASSED.
+2016-01-22 17:37:56,594 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X3隧道成功次数, GUI is 162,	Expected is 162;	PASSED.
+2016-01-22 17:37:56,673 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X3数据流量统计(KB), GUI is 171,	Expected is 171;	PASSED.
+2016-01-22 17:37:56,750 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X1连接请求数, GUI is 9,	Expected is 9;	PASSED.
+2016-01-22 17:37:56,829 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X1释放命令数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 17:37:56,910 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X1目标设定命令数, GUI is 27,	Expected is 27;	PASSED.
+2016-01-22 17:37:56,989 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X1目标修改命令数, GUI is 36,	Expected is 36;	PASSED.
+2016-01-22 17:37:57,069 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X1目标列示命令数, GUI is 45,	Expected is 45;	PASSED.
+2016-01-22 17:37:57,151 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X1目标撤销命令数, GUI is 54,	Expected is 54;	PASSED.
+2016-01-22 17:37:57,229 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X1目标查询命令数, GUI is 63,	Expected is 63;	PASSED.
+2016-01-22 17:37:57,308 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X1目标参数查询数, GUI is 72,	Expected is 72;	PASSED.
+2016-01-22 17:37:57,388 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:40,	LIC标识: LTE123456789-modify; X1网元时间查询数, GUI is 81,	Expected is 81;	PASSED.
+2016-01-22 17:37:57,391 [INFO] PmCommon check_pm_rows(241) Row 9 check PASSED.
+2016-01-22 17:37:57,392 [INFO] PmCommon check_pm_by_row(304) Start to check row: 10
+2016-01-22 17:37:58,298 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X1接收消息数, GUI is 370,	Expected is 370;	PASSED.
+2016-01-22 17:37:58,378 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X1发送消息数, GUI is 80,	Expected is 80;	PASSED.
+2016-01-22 17:37:58,437 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X1接收流量数(KB), GUI is 88,	Expected is 88;	PASSED.
+2016-01-22 17:37:58,516 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X1发送流量数(KB), GUI is 96,	Expected is 96;	PASSED.
+2016-01-22 17:37:58,595 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X2接收消息数, GUI is 104,	Expected is 104;	PASSED.
+2016-01-22 17:37:58,676 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X2发送消息数, GUI is 112,	Expected is 112;	PASSED.
+2016-01-22 17:37:58,755 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X2接收流量数(KB), GUI is 120,	Expected is 120;	PASSED.
+2016-01-22 17:37:58,835 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X2发送流量数(KB), GUI is 128,	Expected is 128;	PASSED.
+2016-01-22 17:37:58,917 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X3隧道建立次数, GUI is 136,	Expected is 136;	PASSED.
+2016-01-22 17:37:58,996 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X3隧道成功次数, GUI is 144,	Expected is 144;	PASSED.
+2016-01-22 17:37:59,075 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X3数据流量统计(KB), GUI is 152,	Expected is 152;	PASSED.
+2016-01-22 17:37:59,154 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X1连接请求数, GUI is 8,	Expected is 8;	PASSED.
+2016-01-22 17:37:59,234 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X1释放命令数, GUI is 16,	Expected is 16;	PASSED.
+2016-01-22 17:37:59,316 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X1目标设定命令数, GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 17:37:59,395 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X1目标修改命令数, GUI is 32,	Expected is 32;	PASSED.
+2016-01-22 17:37:59,474 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X1目标列示命令数, GUI is 40,	Expected is 40;	PASSED.
+2016-01-22 17:37:59,553 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X1目标撤销命令数, GUI is 58,	Expected is 58;	PASSED.
+2016-01-22 17:37:59,634 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X1目标查询命令数, GUI is 56,	Expected is 56;	PASSED.
+2016-01-22 17:37:59,716 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X1目标参数查询数, GUI is 64,	Expected is 64;	PASSED.
+2016-01-22 17:37:59,796 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:35,	LIC标识: LTE123456789-modify; X1网元时间查询数, GUI is 72,	Expected is 72;	PASSED.
+2016-01-22 17:37:59,799 [INFO] PmCommon check_pm_rows(241) Row 10 check PASSED.
+2016-01-22 17:37:59,802 [INFO] PmCommon check_pm_by_row(304) Start to check row: 11
+2016-01-22 17:38:00,783 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X1接收消息数, GUI is 305,	Expected is 305;	PASSED.
+2016-01-22 17:38:00,851 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X1发送消息数, GUI is 70,	Expected is 70;	PASSED.
+2016-01-22 17:38:00,930 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X1接收流量数(KB), GUI is 77,	Expected is 77;	PASSED.
+2016-01-22 17:38:01,009 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X1发送流量数(KB), GUI is 84,	Expected is 84;	PASSED.
+2016-01-22 17:38:01,085 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X2接收消息数, GUI is 91,	Expected is 91;	PASSED.
+2016-01-22 17:38:01,165 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X2发送消息数, GUI is 98,	Expected is 98;	PASSED.
+2016-01-22 17:38:01,246 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X2接收流量数(KB), GUI is 105,	Expected is 105;	PASSED.
+2016-01-22 17:38:01,325 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X2发送流量数(KB), GUI is 112,	Expected is 112;	PASSED.
+2016-01-22 17:38:01,407 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X3隧道建立次数, GUI is 119,	Expected is 119;	PASSED.
+2016-01-22 17:38:01,486 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X3隧道成功次数, GUI is 126,	Expected is 126;	PASSED.
+2016-01-22 17:38:01,565 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X3数据流量统计(KB), GUI is 133,	Expected is 133;	PASSED.
+2016-01-22 17:38:01,644 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X1连接请求数, GUI is 7,	Expected is 7;	PASSED.
+2016-01-22 17:38:01,730 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X1释放命令数, GUI is 14,	Expected is 14;	PASSED.
+2016-01-22 17:38:01,815 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X1目标设定命令数, GUI is 21,	Expected is 21;	PASSED.
+2016-01-22 17:38:01,898 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X1目标修改命令数, GUI is 28,	Expected is 28;	PASSED.
+2016-01-22 17:38:01,980 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X1目标列示命令数, GUI is 35,	Expected is 35;	PASSED.
+2016-01-22 17:38:02,062 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X1目标撤销命令数, GUI is 32,	Expected is 32;	PASSED.
+2016-01-22 17:38:02,144 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X1目标查询命令数, GUI is 49,	Expected is 49;	PASSED.
+2016-01-22 17:38:02,275 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X1目标参数查询数, GUI is 56,	Expected is 56;	PASSED.
+2016-01-22 17:38:02,378 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:30,	LIC标识: LTE123456789-modify; X1网元时间查询数, GUI is 63,	Expected is 63;	PASSED.
+2016-01-22 17:38:02,381 [INFO] PmCommon check_pm_rows(241) Row 11 check PASSED.
+2016-01-22 17:38:02,382 [INFO] PmCommon check_pm_by_row(304) Start to check row: 12
+2016-01-22 17:38:03,380 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X1接收消息数, GUI is 270,	Expected is 270;	PASSED.
+2016-01-22 17:38:03,453 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X1发送消息数, GUI is 60,	Expected is 60;	PASSED.
+2016-01-22 17:38:03,526 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X1接收流量数(KB), GUI is 66,	Expected is 66;	PASSED.
+2016-01-22 17:38:03,599 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X1发送流量数(KB), GUI is 72,	Expected is 72;	PASSED.
+2016-01-22 17:38:03,674 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X2接收消息数, GUI is 78,	Expected is 78;	PASSED.
+2016-01-22 17:38:03,749 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X2发送消息数, GUI is 84,	Expected is 84;	PASSED.
+2016-01-22 17:38:03,825 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X2接收流量数(KB), GUI is 90,	Expected is 90;	PASSED.
+2016-01-22 17:38:03,901 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X2发送流量数(KB), GUI is 96,	Expected is 96;	PASSED.
+2016-01-22 17:38:03,976 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X3隧道建立次数, GUI is 102,	Expected is 102;	PASSED.
+2016-01-22 17:38:04,052 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X3隧道成功次数, GUI is 108,	Expected is 108;	PASSED.
+2016-01-22 17:38:04,128 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X3数据流量统计(KB), GUI is 114,	Expected is 114;	PASSED.
+2016-01-22 17:38:04,203 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X1连接请求数, GUI is 6,	Expected is 6;	PASSED.
+2016-01-22 17:38:04,279 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X1释放命令数, GUI is 12,	Expected is 12;	PASSED.
+2016-01-22 17:38:04,355 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X1目标设定命令数, GUI is 18,	Expected is 18;	PASSED.
+2016-01-22 17:38:04,430 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X1目标修改命令数, GUI is 24,	Expected is 24;	PASSED.
+2016-01-22 17:38:04,506 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X1目标列示命令数, GUI is 30,	Expected is 30;	PASSED.
+2016-01-22 17:38:04,581 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X1目标撤销命令数, GUI is 36,	Expected is 36;	PASSED.
+2016-01-22 17:38:04,655 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X1目标查询命令数, GUI is 42,	Expected is 42;	PASSED.
+2016-01-22 17:38:04,733 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X1目标参数查询数, GUI is 48,	Expected is 48;	PASSED.
+2016-01-22 17:38:04,809 [INFO] PmCommon check_pm_by_row(343) 上报周期: 2016-01-22 16:25,	LIC标识: LTE123456789-modify; X1网元时间查询数, GUI is 54,	Expected is 54;	PASSED.
+2016-01-22 17:38:04,812 [INFO] PmCommon check_pm_rows(241) Row 12 check PASSED.
+2016-01-22 17:38:04,813 [INFO] PmCommon check_pm_rows(296) GUI times: 2016-01-22 17:20:00, 2016-01-22 17:15:00, 2016-01-22 17:10:00, 2016-01-22 17:05:00, 2016-01-22 17:00:00, 2016-01-22 16:55:00, 2016-01-22 16:50:00, 2016-01-22 16:45:00, 2016-01-22 16:40:00, 2016-01-22 16:35:00, 2016-01-22 16:30:00, 2016-01-22 16:25:00
+2016-01-22 17:38:04,815 [INFO] PmCommon check_pm_rows(298) Overall PASSED.
