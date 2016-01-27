@@ -2,7 +2,6 @@
 
 
 import time
-import sys
 from datetime import datetime, timedelta
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
@@ -10,9 +9,15 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from com.ericsson.xn.commons.funcutils import find_single_widget, find_all_widgets, ne_category_by_ne_type
 from com.ericsson.xn.commons import test_logger as test
+from com.ericsson.xn.commons.selfutils import compare_lists
 
 
 def to_pm_management_page(driver):
+    '''
+    This function has been abandoned.
+    :param driver:
+    :return:
+    '''
     test.info('To the PmManagement page...')
 
     identifier = (By.XPATH, "//div[@class='ebLayout-Navigation']/div/div[1]/span")
@@ -22,20 +27,12 @@ def to_pm_management_page(driver):
     find_single_widget(driver, 10, identifier).click()
 
 
-def to_pm_management_page_by_url(driver, ne_type, server_info, to_url_pre='#network-overview/pm-management/'):
-    test.info('Will Navigate to the PMManagement page...')
-    base_url = 'http://' + server_info.getProperty('host') + ':' + str(server_info.getProperty('port')) + \
-               server_info.getProperty('preurl')
-    test.info('Base URL is: ' + base_url)
-    to_url = base_url + (to_url_pre + 'pm-' + ne_category_by_ne_type(ne_type) + '/' + 'pm-' + ne_type).lower()
-    test.info('To URL: ' + to_url)
-    driver.get(to_url)
-    if not check_in_correct_pm_page(driver):
-        # not in correct page
-        test.error('Cannot browse to the PM Management page.')
-
-
 def check_in_correct_pm_page(driver):
+    '''
+    This function works on the beginning editions and has been abandoned.
+    :param driver:
+    :return:
+    '''
     id_search_btn = (By.ID, "idBtn-search")
     b_validate = False
     try:
@@ -62,24 +59,51 @@ def check_in_correct_pm_page(driver):
         return False
 
 
-def make_in_correct_tab(driver, logger, prefix, postfix):
+def to_pm_management_page_by_url(driver, ne_type, server_info, to_url_pre='#network-overview/pm-management/'):
+    test.info('Will Navigate to the PMManagement page...')
+    base_url = 'http://' + server_info.getProperty('host') + ':' + str(server_info.getProperty('port')) + \
+               server_info.getProperty('preurl')
+    test.info('Base URL is: ' + base_url)
+    to_url = base_url + (to_url_pre + 'pm-' + ne_category_by_ne_type(ne_type) + '/' + 'pm-' + ne_type).lower()
+    test.info('To URL: ' + to_url)
+    driver.get(to_url)
+    make_sure_in_pm_page(driver)
+
+
+def make_sure_in_pm_page(driver):
+    # btn id: ebBtnSearch
+    id_btn_interface = (By.ID, 'ebBtnSearch')
+    try:
+        find_single_widget(driver, 5, id_btn_interface)
+        test.error('Page redirect to the interface management page, critical error!')
+    except TimeoutException:
+        id_query_btn = (By.ID, "idBtn-search")
+        try:
+            pm_query_btn = find_single_widget(driver, 10, id_query_btn)
+            if pm_query_btn:
+                test.passed('Found the query button of PM Management page, check passed.')
+        except TimeoutException:
+            test.failed('Cannot find the query button of PM Management page.')
+
+
+def make_in_correct_tab(driver, prefix, postfix):
     id_tabs = (By.XPATH, "//div[@class='ebTabs']/div[1]/div[2]/div")
     tabs = find_all_widgets(driver, 10, id_tabs)
     for tab in tabs:
         if prefix + postfix == tab.get_attribute('innerHTML').encode('utf-8').strip():
             if not tab.get_attribute('class').encode('utf-8').find('ebTabs-tabItem_selected_true') > -1:
                 tab.click()
-                if not wait_noti_widget_show(driver, logger):
-                    logger.warn('Cannot see the notification to show query complete, error may happen later.')
+                wait_noti_widget_show(driver)
+                test.info('Switch to the TAB: ' + prefix + postfix)
 
 
-def wait_noti_widget_show(driver, logger, wait_time=10):
+def wait_noti_widget_show(driver, wait_time=10):
     id_div = (By.XPATH, "//div[@class='noti']/div")
     try:
         find_single_widget(driver, wait_time, id_div)
-        return True
+        test.info('Query result notification shown up.')
     except TimeoutException:
-        return False
+        test.warning('Query result notification did not shown up, case may or may not fail later.')
 
 
 def to_tab_by_ne_type(driver, ne_type, logger):
@@ -109,20 +133,22 @@ def to_tab_by_ne_type(driver, ne_type, logger):
         pass
 
 
-def init_and_search(driver, logger, ne_name, end_time=None, start_time=None):
+def init_and_search(driver, ne_name, end_time=None, start_time=None):
     # select the given nename
-    select_given_ne_name(driver, logger, ne_name)
+    select_given_ne_name(driver, ne_name)
 
     # select the correct time
     if end_time is not  None:
+        test.info('Query end time point set to: ' + end_time.strftime('%H%M%S'))
         id_end_time = (By.XPATH, "//div[@class='endtime']/div/span/input")
         find_single_widget(driver, 10, id_end_time).click()
-        set_time_for_query(driver, logger, end_time)
+        set_time_for_query(driver, end_time)
 
     if start_time is not None:
+        test.info('Query start time point set to: ' + start_time.strftime('%H%M%S'))
         id_start_time = (By.XPATH, "//div[@class='starttime']/div/span/input")
         find_single_widget(driver, 10, id_start_time).click()
-        set_time_for_query(driver, logger, start_time)
+        set_time_for_query(driver, start_time)
 
     # click the query button
     id_query_btn = (By.ID, "idBtn-search")
@@ -133,8 +159,8 @@ def init_and_search(driver, logger, ne_name, end_time=None, start_time=None):
     find_single_widget(driver, 20, id_body_date)
 
 
-def wait_until_pm_date_show_up(driver, logger, wait_time, ne_name, interval=1):
-    select_given_ne_name(driver, logger, ne_name)
+def wait_until_pm_date_show_up(driver, ne_name, wait_time=720):
+    select_given_ne_name(driver, ne_name)
     end_time = datetime.now() + timedelta(seconds=wait_time)
     while datetime.now() < end_time:
         id_query_btn = (By.ID, "idBtn-search")
@@ -142,13 +168,14 @@ def wait_until_pm_date_show_up(driver, logger, wait_time, ne_name, interval=1):
         id_body_date = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table/tbody")
         try:
             find_single_widget(driver, 10, id_body_date)
-            return True
+            test.passed('Successfully found the PM datas.')
+            return
         except TimeoutException:
             pass
-    return False
+    test.error('Wait for ' + str(wait_time) + ' seconds but cannot find any PM datas.')
 
 
-def select_given_ne_name(driver, logger, ne_name):
+def select_given_ne_name(driver, ne_name):
     identifier = (By.XPATH, "//div[@class='pmcommonarea']/div/div[2]/div[1]/div[2]/input")
     input_ne_name = find_single_widget(driver, 10, identifier)
     if not '' == input_ne_name.get_attribute('value').strip():
@@ -182,40 +209,48 @@ def select_given_ne_name(driver, logger, ne_name):
     # WebDriverWait(driver, 10).until(EC.element_to_be_clickable(id_btn_choose_ne))
 
 
-def wait_until_rounds_ok(driver, logger, rounds, rows_of_page, wait_time=None):
-    """
-    Note that this function only support max 10 rounds
-    :return:
-    """
-
+def wait_until_rounds_ok(driver, rows, rows_of_page, dict_additional):
+    '''
+    This function will check the number of rows that we need to check the PM.
+    :param driver:
+    :param rows:
+    :param rows_of_page:
+    :param dict_additional:
+    :param ne_type:
+    :return: None
+    '''
     id_tbdoy_trs = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table/tbody/tr")
+    if dict_additional.has_key('check_rows'):
+        rows = dict_additional['check_rows']
+
+    if not 0 == rows % dict_additional['number_of_lic']:
+        test.error('Number of checked rows should be integer multiples of number of LICs.')
     t_start = datetime.now()
-    t_end = t_start + timedelta(minutes=5 * (rounds + 1) + 2)
-    if wait_time is not None:
-        t_end = t_start + timedelta(minutes=wait_time)
+    # Note that most of the PM need T2-T1, for Node like SBC, we may wait 5 minutes more since SBC don't need T2-T1
+    t_end = t_start + timedelta(minutes=5 * (rows // dict_additional['number_of_lic'] + 1) + 2)
     while datetime.now() < t_end:
         # click the query button
         id_query_btn = (By.ID, "idBtn-search")
         find_single_widget(driver, 10, id_query_btn).click()
         time.sleep(.2)
         try:
-            i_page = rounds / rows_of_page
-            tgt_page_number = i_page if 0 == rounds % rows_of_page else i_page + 1
+            i_page = rows / rows_of_page
+            tgt_page_number = i_page if 0 == rows % rows_of_page else i_page + 1
             id_tgt_pager = (By.XPATH, ("//div[@class='page']/ul/li[2]/ul/li[" + str(tgt_page_number) + "]"))
             tgt_pager = find_single_widget(driver, 10, id_tgt_pager)
             if not tgt_pager.get_attribute('class').find('ebPagination-entryAnchor_current') > -1:
                 tgt_pager.click()
                 trs = find_all_widgets(driver, 20, id_tbdoy_trs)
-                if rounds % rows_of_page <= len(trs):
-                    return True
-
+                if rows % rows_of_page <= len(trs):
+                    test.passed('All the data that we need are ready now.')
+                    return
         except TimeoutException:
             pass
         time.sleep(.5)
-    return False
+    test.failed('It seems that the the data we need has not been collected as expectes, case may fail later steps.')
 
 
-def check_pm_rows_updated(driver, logger, ne_type, dict_counters, rows_of_page, dict_additional):
+def check_pm_rows_updated(driver, ne_type, dict_counters, rows_of_page, dict_additional):
     '''
     The main function that check the PM Data accurate, it will first check the data of each row,
     then check the GUI time's minutes is multiple of 5,
@@ -224,12 +259,12 @@ def check_pm_rows_updated(driver, logger, ne_type, dict_counters, rows_of_page, 
     :param dict_counters: the base counter values in dictionary
     :param rows_of_page: how many rows each page has on the GUI, default is 10
     :param dict_additional: additional information that used for special nodes, (number_of_lic: how many lics of a no
-    de), (check_rounds: how many rows that will be checked, if this value exist, will only check this number of rows,
+    de), (check_rows: how many rows that will be checked, if this value exist, will only check this number of rows,
     otherwise the number of rows will checked is equal the size of dict_counters)
     :return: None
     '''
-    bool_overall = True
-    list_time = []
+    is_m_lics = True if dict_additional['number_of_lic'] > 1 else False
+    list_returns = []
     id_table = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table")
 
     id_header_trs = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table/thead/tr/th")
@@ -240,6 +275,51 @@ def check_pm_rows_updated(driver, logger, ne_type, dict_counters, rows_of_page, 
     number_of_rows_be_checked = len(dict_counters)
     if dict_additional.has_key('check_rounds'):
         number_of_rows_be_checked = dict_additional['check_rounds']
+    if not 0 == number_of_rows_be_checked % dict_additional['number_of_lic']:
+        test.error('Number of checked rows should be integer multiples of number of LICs.')
+    for row_index in range(1, number_of_rows_be_checked + 1):
+        # check_pm_by_row returns [gui_datettime, lic_name] in List
+        list_returns.append(check_pm_by_row(driver, id_table, row_index, ne_type, dict_counters, rows_of_page,
+                                            list_headers, is_m_lics))
+    # check GUI time and lic_name
+    lic_from_gui = []
+    if number_of_rows_be_checked != len(list_returns):
+        test.failed('Number of rows need to be checked mis-match with the number we expected.')
+    else:
+        number_of_lic = dict_additional['number_of_lic']
+        for i in range(0, len(list_returns), number_of_lic):
+            for j in range(number_of_lic):
+                lic_from_gui.append(list_returns[i + j][1])
+                gui_time_and_lic_name = list_returns[i + j]
+                if gui_time_and_lic_name[0] is not None and 0 == gui_time_and_lic_name[0].minute % 5:
+                    test.passed('Row ' + str(i + j) + ' GUI time is correct, is: ' +
+                                gui_time_and_lic_name[0].strftime('%Y-%m-%d %H:%M'))
+                else:
+                    test.failed('Row ' + str(i + j) + ' GUI time is not multiple of 5, is: ' +
+                                gui_time_and_lic_name[0].strftime('%Y-%m-%d %H:%M'))
+                if is_m_lics:
+                    msg = 'Node has more than one LIC, '
+                    if list_returns[i][0] == list_returns[i + j][0]:
+                        msg += ' different LICs have the same report time.'
+                        test.passed(msg)
+                    else:
+                        msg += ' different LICs don\'t have the same report time.'
+                        test.failed(msg)
+            if i + number_of_lic < len(list_returns):
+                # the pre-condition of this check point is: GUI list data decent by datetime
+                if 300 == (list_returns[i][0] - list_returns[i + number_of_lic][0]).seconds:
+                    test.passed('Report delta time is 5 minutes.')
+                else:
+                    test.failed('Report delta time is not 5 minutes.')
+    # if checked 1 hour PM and node has many LICs, will check the LIC
+    if 12 == int(number_of_rows_be_checked / dict_additional['number_of_lic']):
+        if is_m_lics:
+            expected_lic = [t.split('-', 1)[1].strip() for t in sorted(dict_counters)]
+            if compare_lists(expected_lic, lic_from_gui):
+                test.passed('Lic check passed.')
+            else:
+                test.failed('Lic check failed, E: ' + str(expected_lic) + ', G: ' + str(lic_from_gui))
+        # else will check single LIC node, will not cover this edition
 
 
 def check_pm_rows(driver, logger, ne_type, dict_counters, rows_of_page, dict_additional):
@@ -328,20 +408,11 @@ def check_pm_rows(driver, logger, ne_type, dict_counters, rows_of_page, dict_add
         logger.error("Overall FAILED.")
 
 
-def check_pm_by_row(driver, id_table, logger, index_row, ne_type, dict_counters, rows_of_page, list_headers):
-    logger.info('Start to check row: ' + str(index_row))
+def check_pm_by_row(driver, id_table, index_row, ne_type, dict_counters, rows_of_page, list_headers, is_m_lics):
+    test.info('Start to check row: ' + str(index_row))
 
-    make_sure_is_correct_page(driver, logger, index_row, rows_of_page)
-
-    bool_row = True
-    gui_time = None
+    make_sure_is_correct_page(driver, index_row, rows_of_page)
     try:
-        """
-        if index_row > rows_of_page:
-            gui_index_row = index_row - rows_of_page
-        else:
-            gui_index_row = index_row
-        """
         gui_index_row = rows_of_page if 0 == index_row % rows_of_page else index_row % rows_of_page
         id_tr = (By.XPATH, ".//tbody/tr[" + str(gui_index_row) + "]")
         table = find_single_widget(driver, 10, id_table)
@@ -353,7 +424,7 @@ def check_pm_by_row(driver, id_table, logger, index_row, ne_type, dict_counters,
 
         id_lic_name = (By.XPATH, ".//td[3]")
         lic_name = find_single_widget(tr, 5, id_lic_name).get_attribute('innerHTML').encode('utf-8')
-        if 'OCGAS' == ne_type:
+        if is_m_lics:
             except_counter_id = str(gui_time.minute) + '-' + lic_name
         list_row = dict_counters[except_counter_id].split(',')
         for i in range(len(list_row)):
@@ -366,21 +437,18 @@ def check_pm_by_row(driver, id_table, logger, index_row, ne_type, dict_counters,
             if int(list_row[i].strip()) == i_gui_counter:
                 msg = list_headers[1] + ": " + gui_str_time.strip() + ",\t" + list_headers[2] + ": " + lic_name + "; " \
                       + list_headers[i + 3] + ", GUI is " + str(i_gui_counter) + ",\tExpected is " + str(list_row[i]) \
-                      + ";\tPASSED."
+                      + "."
 
-                logger.info(msg.encode('utf-8'))
+                test.passed(msg)
             else:
-                bool_row = False
                 msg = list_headers[1] + ": " + gui_str_time.strip() + ",\t" + list_headers[2] + ": " + lic_name + "; " \
                       + list_headers[i + 3] + ", GUI is " + str(i_gui_counter) + ",\tExpected is " + str(list_row[i]) \
-                      + "\t; FAILED."
+                      + "."
 
-                logger.error(msg.encode('utf-8'))
-
+                test.failed(msg)
+        return [gui_time, lic_name]
     except Exception as e:
-        logger.error("Test failed, ERROR: " + str(e))
-        bool_row = False
-    return bool_row, gui_time
+        test.error("Test failed, ERROR: " + str(e))
 
 
 def to_second_page(driver, logger):
@@ -395,13 +463,13 @@ def to_second_page(driver, logger):
     # time.sleep(2.0)
 
 
-def make_sure_is_correct_page(driver, logger, row_index, rows_of_page):
+def make_sure_is_correct_page(driver, row_index, rows_of_page):
     """
-    Note that this function only available when pages are few.
-    :param driver:
-    :param logger:
-    :param row_index:
-    :return:
+    This function handle the situation that we need to paginate to different to check the PM datas.
+    :param rows_of_page: how many rows each page has
+    :param driver: selenium instance
+    :param row_index: row index of the GUI
+    :return: None
     """
     i_page = row_index / rows_of_page
     tgt_page_number = i_page if 0 == row_index % rows_of_page else i_page + 1
@@ -412,9 +480,10 @@ def make_sure_is_correct_page(driver, logger, row_index, rows_of_page):
         # wait for the notification, maximum 10 seconds
         id_body_date = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table/tbody")
         find_single_widget(driver, 10, id_body_date)
+        test.info('Now in page ' + str(tgt_page_number) + '.')
 
 
-def set_time_for_query(driver, logger, date_time):
+def set_time_for_query(driver, date_time):
     # first edition will only set the time part
     id_time_holder = (By.XPATH, "//div[@data-namespace='ebTimePicker']")
     time_holder = find_single_widget(driver, 10, id_time_holder)

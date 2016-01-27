@@ -71,7 +71,7 @@ def windows_chrome_login_rsnms(browser_path, driver_path, host, username, passwo
     driver = webdriver.Chrome(chrome_driver, chrome_options=opts)
     # driver.set_window_size(1024, 600)
     driver.maximize_window()
-    login_first_page(driver, logger, host, username, password, port, url)
+    login_first_page(driver, host, username, password, port, url)
     return driver
 
 

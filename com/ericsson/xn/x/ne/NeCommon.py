@@ -6,7 +6,8 @@ import os
 import binascii
 from selenium.webdriver.common.by import By
 from com.ericsson.xn.commons.funcutils import find_single_widget, find_all_widgets, wait_until_text_shown_up, \
-    is_pair_nes, ne_type_index_add_ne_page
+    is_pair_nes
+from com.ericsson.xn.commons import test_logger as test
 
 
 def to_ne_management_page(driver, logger):
@@ -22,34 +23,34 @@ def to_ne_management_page(driver, logger):
     find_single_widget(driver, 10, id_new_btn)
 
 
-def to_ne_management_page_by_url(driver, logger, server_info, url_add='#network-overview/ne-management'):
-    logger.info('Will Navigate to the NeManagement page...')
+def to_ne_management_page_by_url(driver, server_info, url_add='#network-overview/ne-management'):
+    test.info('Will Navigate to the NeManagement page...')
     base_url = 'http://' + server_info.getProperty('host') + ':' + str(server_info.getProperty('port')) + \
                server_info.getProperty('preurl')
-    logger.info('Base URL is: ' + base_url)
+    test.info('Base URL is: ' + base_url)
     driver.get(base_url + url_add)
 
 
-def check_and_add_ne(driver, logger, dict_ne_info):
-    ne_exist, ne_name = check_ne_exist(driver, logger, dict_ne_info["ne_type"], dict_ne_info["ne_ip"])
+def check_and_add_ne(driver, dict_ne_info):
+    ne_exist, ne_name = check_ne_exist(driver, dict_ne_info["ne_type"], dict_ne_info["ne_ip"])
     if 2 == ne_exist:
-        logger.critical('A ne with the given IP named: ' + ne_name + ' already exist.')
+        test.error('A ne with the given IP named: ' + ne_name + ' already exist.')
         sys.exit(0)
     elif 1 == ne_exist:
         dict_ne_info["ne_name"] = ne_name
     elif 1 > ne_exist:
-        dict_ne_info["ne_name"] = add_new_ne(driver, logger, dict_ne_info)
-    refresh_ne_management_page(driver, logger)
+        dict_ne_info["ne_name"] = add_new_ne(driver, dict_ne_info)
+    refresh_ne_management_page(driver)
     return dict_ne_info
 
 
-def refresh_ne_management_page(driver, logger):
+def refresh_ne_management_page(driver):
     driver.refresh()
     # check page loaded
     find_single_widget(driver, 10, (By.ID, "idBtn-create"))
 
 
-def add_new_ne(driver, logger, dict_ne_info):
+def add_new_ne(driver, dict_ne_info):
     find_single_widget(driver, 10, (By.ID, "idBtn-create")).click()
     sleep(.5)
     # choose the correct ne_type
@@ -132,11 +133,12 @@ def add_new_ne(driver, logger, dict_ne_info):
         id_dialog_confirm = (By.XPATH, "//div[@class='ebDialogBox-actionBlock']/button[1]")
         find_single_widget(driver, 5, id_dialog_confirm).click()
     except Exception as e:
-        logger.info('There is no duplicated NEs.')
+        test.info('There is no duplicated NEs.')
+    test.info('Successfully added an NE: ' + str(ne_name))
     return ne_name
 
 
-def check_ne_exist_by_type(driver, logger, ne_type, ne_ip, page_no=10):
+def check_ne_exist_by_type(driver, ne_type, ne_ip, page_no=10):
     # note there is another way to check if NE with certain IP exist, that is connect to the server's database and
     # check the NES data table
     id_table = (By.XPATH, "//div[@id='dv1']/div[2]/div/div/div[3]/div/div/div/table")
@@ -186,7 +188,7 @@ def check_ne_exist_by_type(driver, logger, ne_type, ne_ip, page_no=10):
         return -2, None
 
 
-def check_ne_exist(driver, logger, ne_type, ne_ip):
+def check_ne_exist(driver, ne_type, ne_ip):
     # note there is another way to check if NE with certain IP exist, that is connect to the server's database and
     # check the NES data table
     id_table = (By.XPATH, "//div[@id='dv1']/div[2]/div/div/div[3]/div/div/div/table")

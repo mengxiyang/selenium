@@ -41,31 +41,38 @@ class LoggerInstance:
         self.step = 0
         self.failed_step = 0
         self.error_step = 0
+        self.warning_step = 0
         self.log_init_information()
 
     def log_sth(self, result, additional):
         self.step += 1
-        self.logger_instance.info('Step ' + str(self.step) + ',\t' + result + ': ' + additional)
+        msg = 'Step ' + str(self.step) + ',\t' + result + ': ' + additional
+        self.logger_instance.info(self._encode_msg(msg))
         if 'Error' == result:
             sys.exit(0)
 
     def log_info(self, additional):
-        self.logger_instance.info('Info: ' + additional)
+        self.logger_instance.info(self._encode_msg('Info: ' + additional))
 
     def log_passed(self, msg):
         self.step += 1
-        self.logger_instance.info('Step ' + str(self.step) + ', Passed: ' + msg)
+        self.logger_instance.info(self._encode_msg('Step ' + str(self.step) + ', Passed: ' + msg))
 
     def log_failed(self, msg):
         self.step += 1
         self.failed_step += 1
-        self.logger_instance.info('Step ' + str(self.step) + ', Failed: ' + msg)
+        self.logger_instance.info(self._encode_msg('Step ' + str(self.step) + ', Failed: ' + msg))
+
+    def log_warning(self, msg):
+        self.warning_step += 1
+        self.step += 1
+        self.logger_instance.info(self._encode_msg('Step ' + str(self.step) + ', Warning: ' + msg))
 
     def log_error(self, msg):
         self.step += 1
         self.error_step += 1
-        self.logger_instance.info('Step ' + str(self.step) + ', Failed: ' + msg)
-        self.logger_instance.info('Error occurred, test case will exit soon.')
+        self.logger_instance.info(self._encode_msg('Step ' + str(self.step) + ', Failed: ' + msg))
+        self.logger_instance.info(self._encode_msg('Error occurred, test case will exit soon.'))
         self.log_overall_result()
         sys.exit(0)
 
@@ -75,9 +82,13 @@ class LoggerInstance:
     def log_overall_result(self):
         pass_steps = self.step - self.failed_step - self.error_step
         overall_result = 'Failed' if self.failed_step > 0 or self.error_step > 0 else 'Passed'
-        self.logger_instance.info('Test case: ' + self.case_name + ' ' + overall_result + '. Total steps: '
-                                  + str(self.step) + ', Passed steps: ' + str(pass_steps) + ', Error steps: ' +
-                                  str(self.error_step) + ', Failed steps: ' + str(self.failed_step) + '.')
+        msg = 'Test case: ' + self.case_name + ' ' + overall_result + '. Total steps: ' + str(self.step) + \
+              ', Passed steps: ' + str(pass_steps) + ', Error steps: ' + str(self.error_step) + ', Failed steps: ' \
+              + str(self.failed_step) + ', Warning steps: ' + str(self.warning_step)
+        self.logger_instance.info(self._encode_msg(msg))
+
+    def _encode_msg(self, msg):
+        return msg.encode('utf-8')
 
 
 def init_logger_instance(file_name, sub_dir):
@@ -110,6 +121,7 @@ passed = lambda y: log_test_step('Passed', y)
 failed = lambda y: log_test_step('Failed', y)
 error = lambda y: log_test_step('Error', y)
 info = lambda y: log_test_step('Info', y)
+warning = lambda y: log_test_step('Warning', y)
 finish = lambda: finish_test_steps()
 
 

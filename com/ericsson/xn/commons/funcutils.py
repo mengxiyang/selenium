@@ -69,7 +69,9 @@ def ne_category_by_ne_type(ne_type):
         'SGSN': '3G',
         'MME': '4G',
         'SBC': 'IMS',
-        'OCGAS': 'IMS'
+        'OCGAS': 'IMS',
+        'IMSHSS': 'IMS',
+        'LTEHSS': 'IMS'
     }
     return category[ne_type]
 
