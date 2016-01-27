@@ -21,7 +21,8 @@ class LoggerInstance:
             log_dir = log_dir + sep + sub_dir
         if not os.path.exists(log_dir):
             os.makedirs(log_dir)
-        log_file = os.path.normpath(log_dir + sep + file_name + datetime.now().strftime('%Y%m%d%H%M%S') + '.result')
+        log_file = os.path.normpath(log_dir + sep + file_name + '-' + datetime.now().strftime('%Y%m%d%H%M%S') +
+                                    '.result')
         self.logger_instance = logging.getLogger(file_name)
         log_handler = RotatingFileHandler(log_file, mode='a', maxBytes=1024 * 1024 * 10, backupCount=10,
                                           encoding='utf-8', delay=0)
