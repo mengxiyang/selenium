@@ -8,7 +8,7 @@ from com.ericsson.xn.x.pm.PmCommons import PmCommon
 from com.ericsson.xn.commons import test_logger as test
 
 
-def check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_time):
+def check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_time, me_counter_cfg=None):
     ne_info = get_ne_info_from_cfg(ne_info_cfg)
     counters_pm = get_pm_counters_map(counter_info_cfg)
     server_info = Properties(server_info_path)
@@ -45,6 +45,20 @@ def check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_t
                 PmCommon.init_and_search(driver, dict_ne_info['ne_name'], end_time, start_time)
                 PmCommon.wait_until_rounds_ok(driver, len(counters_pm), 10, dict_additinal)
                 PmCommon.check_pm_rows_updated(driver, dict_ne_info['ne_type'], counters_pm, 10, dict_additinal)
+
+                if ne_info.has_key('tab_me') and me_counter_cfg is not None:
+                    test.info('Found ME Tab infomation, will check ME counters.')
+                    me_counters = get_pm_counters_map(me_counter_cfg)
+                    PmCommon.make_in_correct_tab(driver, ne_info['tab_me'], '')
+                    PmCommon.wait_until_pm_date_show_up(driver, dict_ne_info['ne_name'])
+
+                    dict_me_add = {
+                        'number_of_lic': 1
+                    }
+                    PmCommon.init_and_search(driver, dict_ne_info['ne_name'], end_time, start_time)
+                    PmCommon.wait_until_rounds_ok(driver, len(counters_pm), 10, dict_me_add)
+                    PmCommon.check_me_counters(driver, dict_ne_info['ne_name'], me_counters, 10, dict_me_add)
+
                 CommonStatic.logout_rsnms(driver)
         finally:
             CommonStatic.quite_driver(driver)

@@ -94,7 +94,7 @@ def make_in_correct_tab(driver, prefix, postfix):
             if not tab.get_attribute('class').encode('utf-8').find('ebTabs-tabItem_selected_true') > -1:
                 tab.click()
                 wait_noti_widget_show(driver)
-                test.info('Switch to the TAB: ' + prefix + postfix)
+                test.info('Now in TAB: ' + prefix + postfix)
 
 
 def wait_noti_widget_show(driver, wait_time=10):
@@ -322,6 +322,51 @@ def check_pm_rows_updated(driver, ne_type, dict_counters, rows_of_page, dict_add
         # else will check single LIC node, will not cover this edition
 
 
+def check_me_counters(driver, ne_type, counters_expected, rows_of_page, dict_me_add):
+    '''
+    This function will check the ME counters, the first edition suspect that only one record each 5 minutes.
+    :param ne_type the type of the node
+    :param counters_expected: node ME counters that will check with the counters on GUI
+    :param dict_me_add: additional information, (check_rounds: how many rounds that will be checked), (
+    number_of_lic: how many rows each period, default is 1, this parameter is for extending later.)
+    :return: None: the function is for automation testing, critical errors will case program to exit immediately
+    '''
+    list_returns = []
+    id_table = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table")
+
+    id_header_trs = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table/thead/tr/th")
+    ths = find_all_widgets(driver, 20, id_header_trs)
+    list_headers = []
+    for th in ths:
+        list_headers.append(th.get_attribute('innerHTML').encode('utf-8').strip())
+    number_of_rows_be_checked = len(counters_expected)
+    if dict_me_add.has_key('check_rounds'):
+        number_of_rows_be_checked = dict_me_add['check_rounds']
+    if not 0 == number_of_rows_be_checked % dict_me_add['number_of_lic']:
+        test.error('Number of checked rows should be integer multiples of number of LICs.')
+    for row_index in range(1, number_of_rows_be_checked + 1):
+        # check_pm_by_row returns [gui_datettime, lic_name] in List
+        time_of_gui = check_me_single_row(driver, id_table, row_index, ne_type, counters_expected,
+                                          rows_of_page, list_headers)
+        list_returns.append(time_of_gui)
+
+    if number_of_rows_be_checked != len(list_returns):
+        test.failed('Number of rows have been checked mis-match with the number we expected.')
+    else:
+        for i in range(len(list_returns)):
+            if list_returns[i] is not None and 0 == list_returns[i].minute % 5:
+                test.passed('Row ' + str(i) + ' GUI time is correct, is: ' +
+                            list_returns[i].strftime('%Y-%m-%d %H:%M'))
+            else:
+                test.failed('Row ' + str(i) + ' GUI time is correct, is: ' +
+                            list_returns[i].strftime('%Y-%m-%d %H:%M'))
+            if i + 1 < len(list_returns):
+                if 300 == (list_returns[i] - list_returns[i + 1]).seconds:
+                    test.passed('Report delta time is 5 minutes.')
+                else:
+                    test.failed('Report delta time is not 5 minutes.')
+
+
 def check_pm_rows(driver, logger, ne_type, dict_counters, rows_of_page, dict_additional):
     bool_overall = True
     list_time = []
@@ -447,6 +492,47 @@ def check_pm_by_row(driver, id_table, index_row, ne_type, dict_counters, rows_of
 
                 test.failed(msg)
         return [gui_time, lic_name]
+    except Exception as e:
+        test.error("Test failed, ERROR: " + str(e))
+
+
+def check_me_single_row(driver, id_table, index_row, ne_type, dict_counters,
+                        rows_of_page, list_headers, is_m_lics=None):
+    test.info('Start to check ME row: ' + str(index_row))
+
+    make_sure_is_correct_page(driver, index_row, rows_of_page)
+    try:
+        gui_index_row = rows_of_page if 0 == index_row % rows_of_page else index_row % rows_of_page
+        id_tr = (By.XPATH, ".//tbody/tr[" + str(gui_index_row) + "]")
+        table = find_single_widget(driver, 10, id_table)
+        time.sleep(.5)
+        tr = find_single_widget(table, 10, id_tr)
+        gui_str_time = find_single_widget(tr, 10, (By.XPATH, ".//td[2]")).get_attribute('innerHTML').encode('utf-8')
+        gui_time = datetime.strptime(gui_str_time.strip(), "%Y-%m-%d %H:%M")
+        except_counter_id = str(gui_time.minute)
+
+        # id_lic_name = (By.XPATH, ".//td[3]")
+        # lic_name = find_single_widget(tr, 5, id_lic_name).get_attribute('innerHTML').encode('utf-8')
+
+        list_row = dict_counters[except_counter_id].split(',')
+        for i in range(len(list_row)):
+            try:
+                id_counter = (By.XPATH, ".//td[" + str(i + 3) + "]")
+                gui_counter = find_single_widget(tr, 5, id_counter).get_attribute('innerHTML').encode('utf-8')
+                i_gui_counter = int(gui_counter)
+            except Exception as e:
+                i_gui_counter = None
+            if int(list_row[i].strip()) == i_gui_counter:
+                msg = list_headers[1] + ": " + gui_str_time.strip() + ",\t" + "; " + list_headers[i + 3] + ", GUI is " \
+                      + str(i_gui_counter) + ",\tExpected is " + str(list_row[i]) + "."
+
+                test.passed(msg)
+            else:
+                msg = list_headers[1] + ": " + gui_str_time.strip() + ",\t" + "; " + list_headers[i + 3] + ", GUI is " \
+                      + str(i_gui_counter) + ",\tExpected is " + str(list_row[i]) + "."
+
+                test.failed(msg)
+        return gui_time
     except Exception as e:
         test.error("Test failed, ERROR: " + str(e))
 
