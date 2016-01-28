@@ -37,6 +37,12 @@ def is_pair_nes(ne, cne):
     if "PGW" == ne and "SGW" == cne:
         return True
 
+    if "LTEHSS" == ne and "IMSHSS" == cne:
+        return True
+
+    if "IMSHSS" == ne and "LTEHSS" == cne:
+        return True
+
     return False
 
 
@@ -71,7 +77,7 @@ def ne_category_by_ne_type(ne_type):
         'SBC': 'IMS',
         'OCGAS': 'IMS',
         'IMSHSS': 'IMS',
-        'LTEHSS': 'IMS'
+        'LTEHSS': '4G'
     }
     return category[ne_type]
 

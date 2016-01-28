@@ -5,6 +5,8 @@ from time import sleep
 import os
 import binascii
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
 from com.ericsson.xn.commons.funcutils import find_single_widget, find_all_widgets, wait_until_text_shown_up, \
     is_pair_nes
 from com.ericsson.xn.commons import test_logger as test
@@ -32,7 +34,7 @@ def to_ne_management_page_by_url(driver, server_info, url_add='#network-overview
 
 
 def check_and_add_ne(driver, dict_ne_info):
-    ne_exist, ne_name = check_ne_exist(driver, dict_ne_info["ne_type"], dict_ne_info["ne_ip"])
+    ne_exist, ne_name = check_ne_exist_by_type(driver, dict_ne_info["ne_type"], dict_ne_info["ne_ip"])
     if 2 == ne_exist:
         test.error('A ne with the given IP named: ' + ne_name + ' already exist.')
         sys.exit(0)
@@ -138,7 +140,7 @@ def add_new_ne(driver, dict_ne_info):
     return ne_name
 
 
-def check_ne_exist_by_type(driver, ne_type, ne_ip, page_no=10):
+def check_ne_exist_by_type(driver, ne_type, ne_ip, page_no=20):
     # note there is another way to check if NE with certain IP exist, that is connect to the server's database and
     # check the NES data table
     id_table = (By.XPATH, "//div[@id='dv1']/div[2]/div/div/div[3]/div/div/div/table")
@@ -148,12 +150,13 @@ def check_ne_exist_by_type(driver, ne_type, ne_ip, page_no=10):
     pages = find_single_widget(driver, 10, id_page)
     pages.clear()
     pages.send_keys(page_no)
+    ActionChains(driver).key_down(Keys.ENTER).key_up(Keys.ENTER).perform()
 
     # set ne type
-    id_type = (By.XPATH, "//div[@id='dv1']/div[2]/div/div/div[3]/div/div/div/table/thead/tr[2]/th[2]/input")
-    w_ne_type = find_single_widget(driver, 10, id_type)
-    w_ne_type.clear()
-    w_ne_type.send_keys(ne_type)
+    # id_type = (By.XPATH, "//div[@id='dv1']/div[2]/div/div/div[3]/div/div/div/table/thead/tr[2]/th[2]/input")
+    # w_ne_type = find_single_widget(driver, 10, id_type)
+    # w_ne_type.clear()
+    # w_ne_type.send_keys(ne_type)
 
     id_trs = (By.XPATH, ".//tbody/tr")
     try:
