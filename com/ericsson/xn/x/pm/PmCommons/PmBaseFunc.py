@@ -56,7 +56,7 @@ def check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_t
                         'number_of_lic': 1
                     }
                     PmCommon.init_and_search(driver, dict_ne_info['ne_name'], end_time, start_time)
-                    PmCommon.wait_until_rounds_ok(driver, len(counters_pm), 10, dict_me_add)
+                    PmCommon.wait_until_rounds_ok(driver, len(me_counters), 10, dict_me_add)
                     PmCommon.check_me_counters(driver, dict_ne_info['ne_name'], me_counters, 10, dict_me_add)
 
                 CommonStatic.logout_rsnms(driver)

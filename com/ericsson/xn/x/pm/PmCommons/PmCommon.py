@@ -168,7 +168,7 @@ def wait_until_pm_date_show_up(driver, ne_name, wait_time=720):
         id_body_date = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table/tbody")
         try:
             find_single_widget(driver, 10, id_body_date)
-            test.passed('Successfully found the PM datas.')
+            test.passed('Successfully found the counters data.')
             return
         except TimeoutException:
             pass
@@ -232,11 +232,12 @@ def wait_until_rounds_ok(driver, rows, rows_of_page, dict_additional):
         # click the query button
         id_query_btn = (By.ID, "idBtn-search")
         find_single_widget(driver, 10, id_query_btn).click()
-        time.sleep(.2)
+        time.sleep(.1)
         try:
             i_page = rows / rows_of_page
             tgt_page_number = i_page if 0 == rows % rows_of_page else i_page + 1
             id_tgt_pager = (By.XPATH, ("//div[@class='page']/ul/li[2]/ul/li[" + str(tgt_page_number) + "]"))
+            time.sleep(.1)
             tgt_pager = find_single_widget(driver, 10, id_tgt_pager)
             if not tgt_pager.get_attribute('class').find('ebPagination-entryAnchor_current') > -1:
                 tgt_pager.click()
@@ -523,12 +524,12 @@ def check_me_single_row(driver, id_table, index_row, ne_type, dict_counters,
             except Exception as e:
                 i_gui_counter = None
             if int(list_row[i].strip()) == i_gui_counter:
-                msg = list_headers[1] + ": " + gui_str_time.strip() + ",\t" + "; " + list_headers[i + 3] + ", GUI is " \
+                msg = list_headers[1] + ": " + gui_str_time.strip() + ",\t" + "; " + list_headers[i + 2] + ", GUI is " \
                       + str(i_gui_counter) + ",\tExpected is " + str(list_row[i]) + "."
 
                 test.passed(msg)
             else:
-                msg = list_headers[1] + ": " + gui_str_time.strip() + ",\t" + "; " + list_headers[i + 3] + ", GUI is " \
+                msg = list_headers[1] + ": " + gui_str_time.strip() + ",\t" + "; " + list_headers[i + 2] + ", GUI is " \
                       + str(i_gui_counter) + ",\tExpected is " + str(list_row[i]) + "."
 
                 test.failed(msg)
