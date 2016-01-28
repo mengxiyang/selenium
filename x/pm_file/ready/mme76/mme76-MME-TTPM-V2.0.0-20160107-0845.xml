@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PmFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PmFileFormat.xsd">
+    <FileHeader>
+        <InfoModelReferenced>MME-PM-V2.0.0</InfoModelReferenced>
+        <DnPrefix>DC=Ericsson</DnPrefix>
+        <SenderName>DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1</SenderName>
+        <VendorName>Ericsson</VendorName>
+        <BeginTime>2016-01-07T08:45:00+08:00</BeginTime>
+        <EndTime>2016-01-07T09:00:00+08:00</EndTime>
+    </FileHeader>
+    <Measurements>
+        <ObjectType>LIC</ObjectType>
+        <PmName>
+            <N i="1">J1</N>
+            <N i="2">J2</N>
+            <N i="3">J3</N>
+            <N i="4">J4</N>
+            <N i="5">K1</N>
+            <N i="6">K2</N>
+            <N i="7">K3</N>
+            <N i="8">K4</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=mme76|mme76,LIC=">
+                <V i="1">21</V>
+                <V i="2">42</V>
+                <V i="3">63</V>
+                <V i="4">84</V>
+                <V i="5">105</V>
+                <V i="6">126</V>
+                <V i="7">147</V>
+                <V i="8">168</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+</PmFile>

@@ -1,0 +1,24 @@
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:201] INFO SAX handler init.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:233] INFO Found a header information.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:241] INFO Found a lic information.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:241] INFO Found a lic information.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:311] INFO End the parsing of XML.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:551] DEBUG ./ready/ocgas67/ocgas67-OCGAS-TTPM-V2.0.0-20160107-0800.xml accuracy test success.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:201] INFO SAX handler init.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:233] INFO Found a header information.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:241] INFO Found a lic information.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:241] INFO Found a lic information.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:311] INFO End the parsing of XML.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:551] DEBUG ./ready/ocgas67/ocgas67-OCGAS-TTPM-V2.0.0-20160107-0845.xml accuracy test success.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:201] INFO SAX handler init.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:233] INFO Found a header information.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:241] INFO Found a lic information.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:241] INFO Found a lic information.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:311] INFO End the parsing of XML.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:551] DEBUG ./ready/ocgas67/ocgas67-OCGAS-TTPM-V2.0.0-20160107-0830.xml accuracy test success.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:201] INFO SAX handler init.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:233] INFO Found a header information.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:241] INFO Found a lic information.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:241] INFO Found a lic information.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:311] INFO End the parsing of XML.
+Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:551] DEBUG ./ready/ocgas67/ocgas67-OCGAS-TTPM-V2.0.0-20160107-0815.xml accuracy test success.

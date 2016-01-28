@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PmFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PmFileFormat.xsd">
+    <FileHeader>
+        <InfoModelReferenced>PGW-PM-V2.0.0</InfoModelReferenced>
+        <DnPrefix>DC=Ericsson</DnPrefix>
+        <SenderName>DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1</SenderName>
+        <VendorName>Ericsson</VendorName>
+        <BeginTime>2016-01-06T14:35:00+08:00</BeginTime>
+        <EndTime>2016-01-06T14:40:00+08:00</EndTime>
+    </FileHeader>
+    <Measurements>
+        <ObjectType>LIC</ObjectType>
+        <PmName>
+            <N i="1">J1</N>
+            <N i="2">J2</N>
+            <N i="3">J3</N>
+            <N i="4">J4</N>
+            <N i="5">K1</N>
+            <N i="6">K2</N>
+            <N i="7">K3</N>
+            <N i="8">K4</N>
+            <N i="9">L1</N>
+            <N i="10">L2</N>
+            <N i="11">L3</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=pgw66|pgw66,LIC=">
+                <V i="1">7</V>
+                <V i="2">14</V>
+                <V i="3">21</V>
+                <V i="4">28</V>
+                <V i="5">35</V>
+                <V i="6">42</V>
+                <V i="7">49</V>
+                <V i="8">56</V>
+                <V i="9">63</V>
+                <V i="10">70</V>
+                <V i="11">77</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+</PmFile>
