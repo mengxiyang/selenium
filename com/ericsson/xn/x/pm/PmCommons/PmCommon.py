@@ -7,7 +7,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
-from com.ericsson.xn.commons.funcutils import find_single_widget, find_all_widgets, ne_category_by_ne_type
+from com.ericsson.xn.commons.funcutils import find_single_widget, find_all_widgets, \
+    ne_category_by_ne_type, get_widget_ignore_refrence_error
 from com.ericsson.xn.commons import test_logger as test
 from com.ericsson.xn.commons.selfutils import compare_lists
 
@@ -209,7 +210,7 @@ def select_given_ne_name(driver, ne_name):
     # WebDriverWait(driver, 10).until(EC.element_to_be_clickable(id_btn_choose_ne))
 
 
-def wait_until_rounds_ok(driver, rows, rows_of_page, dict_additional):
+def wait_until_rounds_ok(driver, rows, rows_of_page, rows_each_period):
     '''
     This function will check the number of rows that we need to check the PM.
     :param driver:
@@ -220,14 +221,15 @@ def wait_until_rounds_ok(driver, rows, rows_of_page, dict_additional):
     :return: None
     '''
     id_tbdoy_trs = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table/tbody/tr")
-    if dict_additional.has_key('check_rows'):
-        rows = dict_additional['check_rows']
+    # if dict_additional.has_key('check_rows'):
+    #    rows = dict_additional['check_rows']
 
-    if not 0 == rows % dict_additional['number_of_lic']:
-        test.error('Number of checked rows should be integer multiples of number of LICs.')
+    # if not 0 == rows % dict_additional['number_of_lic']:
+    #    test.error('Number of checked rows should be integer multiples of number of LICs.')
     t_start = datetime.now()
     # Note that most of the PM need T2-T1, for Node like SBC, we may wait 5 minutes more since SBC don't need T2-T1
-    t_end = t_start + timedelta(minutes=5 * (rows // dict_additional['number_of_lic'] + 1) + 2)
+    # t_end = t_start + timedelta(minutes=5 * (rows // dict_additional['number_of_lic'] + 1) + 2)
+    t_end = t_start + timedelta(minutes=5 * (rows // rows_each_period + 1) + 2)
     while datetime.now() < t_end:
         # click the query button
         id_query_btn = (By.ID, "idBtn-search")
@@ -238,7 +240,7 @@ def wait_until_rounds_ok(driver, rows, rows_of_page, dict_additional):
             tgt_page_number = i_page if 0 == rows % rows_of_page else i_page + 1
             id_tgt_pager = (By.XPATH, ("//div[@class='page']/ul/li[2]/ul/li[" + str(tgt_page_number) + "]"))
             time.sleep(.1)
-            tgt_pager = find_single_widget(driver, 10, id_tgt_pager)
+            tgt_pager = get_widget_ignore_refrence_error(driver, id_tgt_pager)
             if not tgt_pager.get_attribute('class').find('ebPagination-entryAnchor_current') > -1:
                 tgt_pager.click()
                 trs = find_all_widgets(driver, 20, id_tbdoy_trs)
@@ -264,6 +266,9 @@ def check_pm_rows_updated(driver, ne_type, dict_counters, rows_of_page, dict_add
     otherwise the number of rows will checked is equal the size of dict_counters)
     :return: None
     '''
+    check_rounds = dict_additional['check_rounds']
+    number_of_rows_be_checked = check_rounds * dict_additional['number_of_lic']
+    wait_until_rounds_ok(driver, number_of_rows_be_checked, 10, dict_additional['number_of_lic'])
     is_m_lics = True if dict_additional['number_of_lic'] > 1 else False
     list_returns = []
     id_table = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table")
@@ -273,11 +278,8 @@ def check_pm_rows_updated(driver, ne_type, dict_counters, rows_of_page, dict_add
     list_headers = []
     for th in ths:
         list_headers.append(th.get_attribute('innerHTML').encode('utf-8').strip())
-    number_of_rows_be_checked = len(dict_counters)
-    if dict_additional.has_key('check_rounds'):
-        number_of_rows_be_checked = dict_additional['check_rounds']
-    if not 0 == number_of_rows_be_checked % dict_additional['number_of_lic']:
-        test.error('Number of checked rows should be integer multiples of number of LICs.')
+    # if not 0 == number_of_rows_be_checked % dict_additional['number_of_lic']:
+    #    test.error('Number of checked rows should be integer multiples of number of LICs.')
     for row_index in range(1, number_of_rows_be_checked + 1):
         # check_pm_by_row returns [gui_datettime, lic_name] in List
         list_returns.append(check_pm_by_row(driver, id_table, row_index, ne_type, dict_counters, rows_of_page,
@@ -329,9 +331,12 @@ def check_me_counters(driver, ne_type, counters_expected, rows_of_page, dict_me_
     :param ne_type the type of the node
     :param counters_expected: node ME counters that will check with the counters on GUI
     :param dict_me_add: additional information, (check_rounds: how many rounds that will be checked), (
-    number_of_lic: how many rows each period, default is 1, this parameter is for extending later.)
+    rows_each_period: how many rows each period, default is 1, this parameter is for extending later.)
     :return: None: the function is for automation testing, critical errors will case program to exit immediately
     '''
+    checked_rounds = dict_me_add['check_rounds']
+    number_of_rows_be_checked = checked_rounds * dict_me_add['rows_each_period']
+    wait_until_rounds_ok(driver, number_of_rows_be_checked, 10, dict_me_add['rows_each_period'])
     list_returns = []
     id_table = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table")
 
@@ -340,11 +345,10 @@ def check_me_counters(driver, ne_type, counters_expected, rows_of_page, dict_me_
     list_headers = []
     for th in ths:
         list_headers.append(th.get_attribute('innerHTML').encode('utf-8').strip())
-    number_of_rows_be_checked = len(counters_expected)
-    if dict_me_add.has_key('check_rounds'):
-        number_of_rows_be_checked = dict_me_add['check_rounds']
-    if not 0 == number_of_rows_be_checked % dict_me_add['number_of_lic']:
-        test.error('Number of checked rows should be integer multiples of number of LICs.')
+    # number_of_rows_be_checked = len(counters_expected)
+    # if dict_me_add.has_key('check_rounds'):
+    # if not 0 == number_of_rows_be_checked % dict_me_add['number_of_lic']:
+    #    test.error('Number of checked rows should be integer multiples of number of LICs.')
     for row_index in range(1, number_of_rows_be_checked + 1):
         # check_pm_by_row returns [gui_datettime, lic_name] in List
         time_of_gui = check_me_single_row(driver, id_table, row_index, ne_type, counters_expected,

@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-
-import time
-from datetime import datetime, timedelta
+from time import sleep
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import StaleElementReferenceException
 
 
 def find_single_widget(driver, wait_time, list_identifier):
@@ -17,6 +15,15 @@ def find_all_widgets(driver, wait_time, list_identifier):
 
 def wait_until_text_shown_up(driver, wait_time, list_identifier, text):
     return WebDriverWait(driver, wait_time).until(EC.text_to_be_present_in_element_value(list_identifier, text))
+
+
+def get_widget_ignore_refrence_error(driver, list_identifier, sleep_time=.5, wait_time=10):
+    try:
+        return WebDriverWait(driver, wait_time).until(EC.presence_of_element_located(list_identifier))
+    except StaleElementReferenceException:
+        # this exception happens when widget distroyed and re-build again, sleep while will OK
+        sleep(sleep_time)
+        return WebDriverWait(driver, wait_time).until(EC.presence_of_element_located(list_identifier))
 
 
 def is_pair_nes(ne, cne):
