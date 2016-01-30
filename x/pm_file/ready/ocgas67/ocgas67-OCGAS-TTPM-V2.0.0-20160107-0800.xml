@@ -2,7 +2,7 @@
 
 <PmFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PmFileFormat.xsd">
     <FileHeader>
-        <InfoModelReferenced>OCGAS-PM-V2.0.0</InfoModelReferenced>
+        <InfoModelReferenced>OCGAS-PM-V1.0.0</InfoModelReferenced>
         <DnPrefix>DC=Ericsson</DnPrefix>
         <SenderName>DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1</SenderName>
         <VendorName>Ericsson</VendorName>
@@ -22,7 +22,7 @@
             <N i="8">G4</N>
         </PmName>
         <PmData>
-            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=ocgas67|ocgas67,LIC=LIC01">
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=ocgas67|ocgas67,L=LIC01">
                 <V i="1">633</V>
                 <V i="2">636</V>
                 <V i="3">639</V>
@@ -32,7 +32,7 @@
                 <V i="7">651</V>
                 <V i="8">654</V>
             </Pm>
-            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=ocgas67|ocgas67,LIC=LIC02">
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=ocgas67|ocgas67,L=LIC02">
                 <V i="1">663</V>
                 <V i="2">666</V>
                 <V i="3">669</V>
