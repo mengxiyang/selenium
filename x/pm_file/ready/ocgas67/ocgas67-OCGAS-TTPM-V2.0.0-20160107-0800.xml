@@ -2,7 +2,7 @@
 
 <PmFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PmFileFormat.xsd">
     <FileHeader>
-        <InfoModelReferenced>OCGAS-PM-V1.0.0</InfoModelReferenced>
+        <InfoModelReferenced>AS-PM-V1.0.0</InfoModelReferenced>
         <DnPrefix>DC=Ericsson</DnPrefix>
         <SenderName>DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1</SenderName>
         <VendorName>Ericsson</VendorName>

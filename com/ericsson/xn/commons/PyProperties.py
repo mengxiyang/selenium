@@ -16,7 +16,7 @@ class Properties():
             lines = self.file.readlines()
             self.mappings = {}
             for line in lines:
-                keyValue = line.split('=')
+                keyValue = line.split('=',1)
                 if(len(keyValue) > 1):
                     self.mappings[keyValue[0]] = keyValue[1].strip()
             self.file.close()

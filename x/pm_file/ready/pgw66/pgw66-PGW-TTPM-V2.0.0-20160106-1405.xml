@@ -2,7 +2,7 @@
 
 <PmFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PmFileFormat.xsd">
     <FileHeader>
-        <InfoModelReferenced>PGW-PM-V2.0.0</InfoModelReferenced>
+        <InfoModelReferenced>PGW-PM-V1.0.0</InfoModelReferenced>
         <DnPrefix>DC=Ericsson</DnPrefix>
         <SenderName>DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1</SenderName>
         <VendorName>Ericsson</VendorName>
@@ -25,7 +25,7 @@
             <N i="11">L3</N>
         </PmName>
         <PmData>
-            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=pgw66|pgw66,LIC=">
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=pgw66|pgw66,L=">
                 <V i="1">1</V>
                 <V i="2">2</V>
                 <V i="3">3</V>
