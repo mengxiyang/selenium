@@ -325,7 +325,7 @@ def check_pm_rows_updated(driver, ne_type, dict_counters, rows_of_page, dict_add
         # else will check single LIC node, will not cover this edition
 
 
-def check_me_counters(driver, ne_type, counters_expected, rows_of_page, dict_me_add):
+def check_me_counters(driver, ne_type, counters_expected, rows_of_page, dict_me_add, me_types):
     '''
     This function will check the ME counters, the first edition suspect that only one record each 5 minutes.
     :param ne_type the type of the node
@@ -352,7 +352,7 @@ def check_me_counters(driver, ne_type, counters_expected, rows_of_page, dict_me_
     for row_index in range(1, number_of_rows_be_checked + 1):
         # check_pm_by_row returns [gui_datettime, lic_name] in List
         time_of_gui = check_me_single_row(driver, id_table, row_index, ne_type, counters_expected,
-                                          rows_of_page, list_headers)
+                                          rows_of_page, list_headers, me_types)
         list_returns.append(time_of_gui)
 
     if number_of_rows_be_checked != len(list_returns):
@@ -501,8 +501,7 @@ def check_pm_by_row(driver, id_table, index_row, ne_type, dict_counters, rows_of
         test.error("Test failed, ERROR: " + str(e))
 
 
-def check_me_single_row(driver, id_table, index_row, ne_type, dict_counters,
-                        rows_of_page, list_headers, is_m_lics=None):
+def check_me_single_row(driver, id_table, index_row, ne_type, dict_counters, rows_of_page, list_headers, me_types):
     test.info('Start to check ME row: ' + str(index_row))
 
     make_sure_is_correct_page(driver, index_row, rows_of_page)
@@ -520,14 +519,23 @@ def check_me_single_row(driver, id_table, index_row, ne_type, dict_counters,
         # lic_name = find_single_widget(tr, 5, id_lic_name).get_attribute('innerHTML').encode('utf-8')
 
         list_row = dict_counters[except_counter_id].split(',')
+        list_types = me_types['counter_types'].split(',')
         for i in range(len(list_row)):
             try:
                 id_counter = (By.XPATH, ".//td[" + str(i + 3) + "]")
                 gui_counter = find_single_widget(tr, 5, id_counter).get_attribute('innerHTML').encode('utf-8')
-                i_gui_counter = int(gui_counter)
+                # i_gui_counter = int(gui_counter) if 'int' == list_types[i].lower().strip()
+                if 'int' == list_types[i].lower().strip():
+                    i_gui_counter = int(gui_counter)
+                    i_expected = int(list_row[i].strip())
+                elif 'float' == list_types[i].lower().strip():
+                    i_gui_counter = float(gui_counter)
+                    i_expected = float(list_row[i].strip())
+                else:
+                    test.error('Unknown counter type of me counters.')
             except Exception as e:
                 i_gui_counter = None
-            if int(list_row[i].strip()) == i_gui_counter:
+            if i_expected == i_gui_counter:
                 msg = list_headers[1] + ": " + gui_str_time.strip() + ",\t" + "; " + list_headers[i + 2] + ", GUI is " \
                       + str(i_gui_counter) + ",\tExpected is " + str(list_row[i]) + "."
 
