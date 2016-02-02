@@ -1,0 +1,40 @@
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:213] INFO SAX handler init.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:241] INFO Found a header information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:304] INFO End the parsing of XML.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:148] ERROR C:\Work Record\Team\GitHub\selenium\x\pm_file\ready\HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160201-0800.xml data accuracy test failed.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:151] ERROR PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS77/1 value is 3823, and the expected result is:11466
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:213] INFO SAX handler init.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:241] INFO Found a header information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:304] INFO End the parsing of XML.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:148] ERROR C:\Work Record\Team\GitHub\selenium\x\pm_file\ready\HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160201-0845.xml data accuracy test failed.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:151] ERROR PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS77/1 value is 3832, and the expected result is:11493
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:213] INFO SAX handler init.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:241] INFO Found a header information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:304] INFO End the parsing of XML.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:148] ERROR C:\Work Record\Team\GitHub\selenium\x\pm_file\ready\HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160201-0830.xml data accuracy test failed.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:151] ERROR PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS77/1 value is 3829, and the expected result is:11484
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:213] INFO SAX handler init.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:241] INFO Found a header information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:249] INFO Found a lic information.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:304] INFO End the parsing of XML.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:148] ERROR C:\Work Record\Team\GitHub\selenium\x\pm_file\ready\HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160201-0815.xml data accuracy test failed.
+Mon, 01 Feb 2016 17:48:27:pmcmp0128.py[line:151] ERROR PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS77/1 value is 3826, and the expected result is:11475
