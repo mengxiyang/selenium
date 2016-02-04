@@ -1,40 +1,44 @@
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:274] INFO SAX handler init.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:304] INFO Found a header information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:376] INFO End the parsing of XML.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:218] ERROR C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160201-0800.xml data accuracy test failed.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:220] ERROR PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS77,L=LIC_LTE_3/F1 is missing.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:274] INFO SAX handler init.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:304] INFO Found a header information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:376] INFO End the parsing of XML.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:218] ERROR C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160201-0845.xml data accuracy test failed.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:220] ERROR PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS77,L=LIC_LTE_3/F1 is missing.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:274] INFO SAX handler init.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:304] INFO Found a header information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:376] INFO End the parsing of XML.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:218] ERROR C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160201-0830.xml data accuracy test failed.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:220] ERROR PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS77,L=LIC_LTE_3/F1 is missing.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:274] INFO SAX handler init.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:304] INFO Found a header information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:312] INFO Found a lic information.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:376] INFO End the parsing of XML.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:218] ERROR C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160201-0815.xml data accuracy test failed.
-Thu, 04 Feb 2016 17:43:28:pmcmp0128.py[line:220] ERROR PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS77,L=LIC_LTE_3/F1 is missing.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:274] INFO SAX handler init.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:338] INFO Found a header information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:342] INFO Found a ObjectType information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:346] INFO Found a PmName information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:354] INFO Found a PMData information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:342] INFO Found a ObjectType information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:346] INFO Found a PmName information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:354] INFO Found a PMData information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:478] INFO End the parsing of XML.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:209] ERROR /Users/Fengchangyu/Documents/GitHub/selenium/x/pm_file/ready/HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160201-0800.xml data accuracy test failed.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:212] ERROR PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS77/MemUsageMean value is 0.21, and the expected result is:0.22
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:274] INFO SAX handler init.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:338] INFO Found a header information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:342] INFO Found a ObjectType information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:346] INFO Found a PmName information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:354] INFO Found a PMData information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:342] INFO Found a ObjectType information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:346] INFO Found a PmName information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:354] INFO Found a PMData information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:478] INFO End the parsing of XML.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:209] ERROR /Users/Fengchangyu/Documents/GitHub/selenium/x/pm_file/ready/HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160201-0845.xml data accuracy test failed.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:212] ERROR PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS77/MemUsageMean value is 0.51, and the expected result is:0.52
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:274] INFO SAX handler init.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:338] INFO Found a header information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:342] INFO Found a ObjectType information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:346] INFO Found a PmName information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:354] INFO Found a PMData information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:342] INFO Found a ObjectType information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:346] INFO Found a PmName information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:354] INFO Found a PMData information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:478] INFO End the parsing of XML.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:209] ERROR /Users/Fengchangyu/Documents/GitHub/selenium/x/pm_file/ready/HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160201-0830.xml data accuracy test failed.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:212] ERROR PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS77/MemUsageMean value is 0.21, and the expected result is:0.22
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:274] INFO SAX handler init.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:338] INFO Found a header information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:342] INFO Found a ObjectType information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:346] INFO Found a PmName information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:354] INFO Found a PMData information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:342] INFO Found a ObjectType information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:346] INFO Found a PmName information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:354] INFO Found a PMData information.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:478] INFO End the parsing of XML.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:209] ERROR /Users/Fengchangyu/Documents/GitHub/selenium/x/pm_file/ready/HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160201-0815.xml data accuracy test failed.
+Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:212] ERROR PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS77/MemUsageMean value is 0.51, and the expected result is:0.52
