@@ -1,44 +1,48 @@
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:274] INFO SAX handler init.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:338] INFO Found a header information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:342] INFO Found a ObjectType information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:346] INFO Found a PmName information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:354] INFO Found a PMData information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:342] INFO Found a ObjectType information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:346] INFO Found a PmName information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:354] INFO Found a PMData information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:478] INFO End the parsing of XML.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:209] ERROR /Users/Fengchangyu/Documents/GitHub/selenium/x/pm_file/ready/HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160201-0800.xml data accuracy test failed.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:212] ERROR PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS77/MemUsageMean value is 0.21, and the expected result is:0.22
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:274] INFO SAX handler init.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:338] INFO Found a header information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:342] INFO Found a ObjectType information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:346] INFO Found a PmName information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:354] INFO Found a PMData information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:342] INFO Found a ObjectType information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:346] INFO Found a PmName information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:354] INFO Found a PMData information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:478] INFO End the parsing of XML.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:209] ERROR /Users/Fengchangyu/Documents/GitHub/selenium/x/pm_file/ready/HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160201-0845.xml data accuracy test failed.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:212] ERROR PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS77/MemUsageMean value is 0.51, and the expected result is:0.52
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:274] INFO SAX handler init.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:338] INFO Found a header information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:342] INFO Found a ObjectType information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:346] INFO Found a PmName information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:354] INFO Found a PMData information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:342] INFO Found a ObjectType information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:346] INFO Found a PmName information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:354] INFO Found a PMData information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:478] INFO End the parsing of XML.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:209] ERROR /Users/Fengchangyu/Documents/GitHub/selenium/x/pm_file/ready/HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160201-0830.xml data accuracy test failed.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:212] ERROR PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS77/MemUsageMean value is 0.21, and the expected result is:0.22
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:274] INFO SAX handler init.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:338] INFO Found a header information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:342] INFO Found a ObjectType information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:346] INFO Found a PmName information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:354] INFO Found a PMData information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:342] INFO Found a ObjectType information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:346] INFO Found a PmName information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:354] INFO Found a PMData information.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:478] INFO End the parsing of XML.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:209] ERROR /Users/Fengchangyu/Documents/GitHub/selenium/x/pm_file/ready/HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160201-0815.xml data accuracy test failed.
-Fri, 05 Feb 2016 00:09:57:pmcmp0128.py[line:212] ERROR PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS77/MemUsageMean value is 0.51, and the expected result is:0.52
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:274] INFO SAX handler init.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:338] INFO Found a header information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:342] INFO Found a Measurement information
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:346] INFO Found a ObjectType information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:350] INFO Found a PmName information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:358] INFO Found a PMData information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:342] INFO Found a Measurement information
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:346] INFO Found a ObjectType information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:350] INFO Found a PmName information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:358] INFO Found a PMData information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:485] INFO End the parsing of XML.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:831] DEBUG /Users/Fengchangyu/Documents/GitHub/selenium/x/pm_file/ready/8613743640/8613743640-SGSN-TTPM-V1.0.0-20160203-0500.xml accuracy test success.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:274] INFO SAX handler init.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:338] INFO Found a header information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:342] INFO Found a Measurement information
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:346] INFO Found a ObjectType information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:350] INFO Found a PmName information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:358] INFO Found a PMData information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:342] INFO Found a Measurement information
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:346] INFO Found a ObjectType information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:350] INFO Found a PmName information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:358] INFO Found a PMData information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:485] INFO End the parsing of XML.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:831] DEBUG /Users/Fengchangyu/Documents/GitHub/selenium/x/pm_file/ready/8613743640/8613743640-SGSN-TTPM-V1.0.0-20160203-0545.xml accuracy test success.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:274] INFO SAX handler init.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:338] INFO Found a header information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:342] INFO Found a Measurement information
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:346] INFO Found a ObjectType information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:350] INFO Found a PmName information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:358] INFO Found a PMData information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:342] INFO Found a Measurement information
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:346] INFO Found a ObjectType information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:350] INFO Found a PmName information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:358] INFO Found a PMData information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:485] INFO End the parsing of XML.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:831] DEBUG /Users/Fengchangyu/Documents/GitHub/selenium/x/pm_file/ready/8613743640/8613743640-SGSN-TTPM-V1.0.0-20160203-0530.xml accuracy test success.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:274] INFO SAX handler init.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:338] INFO Found a header information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:342] INFO Found a Measurement information
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:346] INFO Found a ObjectType information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:350] INFO Found a PmName information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:358] INFO Found a PMData information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:342] INFO Found a Measurement information
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:346] INFO Found a ObjectType information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:350] INFO Found a PmName information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:358] INFO Found a PMData information.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:485] INFO End the parsing of XML.
+Tue, 16 Feb 2016 15:35:27:pmcmp0128.py[line:831] DEBUG /Users/Fengchangyu/Documents/GitHub/selenium/x/pm_file/ready/8613743640/8613743640-SGSN-TTPM-V1.0.0-20160203-0515.xml accuracy test success.
