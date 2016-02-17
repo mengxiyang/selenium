@@ -1,24 +1,48 @@
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:201] INFO SAX handler init.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:233] INFO Found a header information.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:241] INFO Found a lic information.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:241] INFO Found a lic information.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:311] INFO End the parsing of XML.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:551] DEBUG ./ready/ocgas67/ocgas67-OCGAS-TTPM-V2.0.0-20160107-0800.xml accuracy test success.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:201] INFO SAX handler init.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:233] INFO Found a header information.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:241] INFO Found a lic information.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:241] INFO Found a lic information.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:311] INFO End the parsing of XML.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:551] DEBUG ./ready/ocgas67/ocgas67-OCGAS-TTPM-V2.0.0-20160107-0845.xml accuracy test success.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:201] INFO SAX handler init.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:233] INFO Found a header information.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:241] INFO Found a lic information.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:241] INFO Found a lic information.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:311] INFO End the parsing of XML.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:551] DEBUG ./ready/ocgas67/ocgas67-OCGAS-TTPM-V2.0.0-20160107-0830.xml accuracy test success.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:201] INFO SAX handler init.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:233] INFO Found a header information.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:241] INFO Found a lic information.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:241] INFO Found a lic information.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:311] INFO End the parsing of XML.
-Thu, 28 Jan 2016 14:03:32:pmcmp0112.py[line:551] DEBUG ./ready/ocgas67/ocgas67-OCGAS-TTPM-V2.0.0-20160107-0815.xml accuracy test success.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:277] INFO SAX handler init.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:341] INFO Found a header information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:345] INFO Found a Measurement information
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:349] INFO Found a ObjectType information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:353] INFO Found a PmName information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:361] INFO Found a PMData information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:345] INFO Found a Measurement information
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:349] INFO Found a ObjectType information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:353] INFO Found a PmName information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:361] INFO Found a PMData information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:486] INFO End the parsing of XML.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:833] DEBUG C:\Users\eyyylll\git\selenium\x\pm_file\ready\8613743640/8613743640-SGSN-TTPM-V1.0.0-20160203-0500.xml accuracy test success.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:277] INFO SAX handler init.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:341] INFO Found a header information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:345] INFO Found a Measurement information
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:349] INFO Found a ObjectType information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:353] INFO Found a PmName information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:361] INFO Found a PMData information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:345] INFO Found a Measurement information
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:349] INFO Found a ObjectType information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:353] INFO Found a PmName information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:361] INFO Found a PMData information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:486] INFO End the parsing of XML.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:833] DEBUG C:\Users\eyyylll\git\selenium\x\pm_file\ready\8613743640/8613743640-SGSN-TTPM-V1.0.0-20160203-0545.xml accuracy test success.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:277] INFO SAX handler init.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:341] INFO Found a header information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:345] INFO Found a Measurement information
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:349] INFO Found a ObjectType information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:353] INFO Found a PmName information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:361] INFO Found a PMData information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:345] INFO Found a Measurement information
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:349] INFO Found a ObjectType information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:353] INFO Found a PmName information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:361] INFO Found a PMData information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:486] INFO End the parsing of XML.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:833] DEBUG C:\Users\eyyylll\git\selenium\x\pm_file\ready\8613743640/8613743640-SGSN-TTPM-V1.0.0-20160203-0530.xml accuracy test success.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:277] INFO SAX handler init.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:341] INFO Found a header information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:345] INFO Found a Measurement information
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:349] INFO Found a ObjectType information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:353] INFO Found a PmName information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:361] INFO Found a PMData information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:345] INFO Found a Measurement information
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:349] INFO Found a ObjectType information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:353] INFO Found a PmName information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:361] INFO Found a PMData information.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:486] INFO End the parsing of XML.
+Wed, 17 Feb 2016 17:20:48:nbi_data_test.py[line:833] DEBUG C:\Users\eyyylll\git\selenium\x\pm_file\ready\8613743640/8613743640-SGSN-TTPM-V1.0.0-20160203-0515.xml accuracy test success.
