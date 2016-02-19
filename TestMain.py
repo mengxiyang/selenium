@@ -11,7 +11,7 @@ if __name__ == '__main__':
     #pathDriver = 'C:\Users\EJLNOQC\Desktop\chromedriver.exe'
     pathDriver = '/Users/lowitty/Downloads/chromedriver'
     pathChrome = 'C:\\installed\\chrome\\chrome.exe'
-    host = '10.184.73.75'
+    host = '10.184.73.78'
     ack = SeleniumThread(True, 0, pathChrome, pathDriver, host, 8686, 'admin', 'Admin!@#123')
     clear = SeleniumThread(True, 1, chrome = pathChrome, driver = pathDriver, host = host, port = 8686, username = 'admin', password = 'Admin!@#123')
     query = SeleniumThread(True, 2, chrome = pathChrome, driver = pathDriver, host = host, port = 8686, username = 'admin', password = 'Admin!@#123')

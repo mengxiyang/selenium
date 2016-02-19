@@ -1,144 +1,158 @@
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:285] INFO SAX handler init.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:349] INFO Found a header information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:494] INFO End the parsing of XML.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:841] DEBUG C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1600.xml accuracy test success.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:285] INFO SAX handler init.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:349] INFO Found a header information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:494] INFO End the parsing of XML.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:841] DEBUG C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1635.xml accuracy test success.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:285] INFO SAX handler init.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:349] INFO Found a header information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:494] INFO End the parsing of XML.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:841] DEBUG C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1605.xml accuracy test success.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:285] INFO SAX handler init.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:349] INFO Found a header information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:494] INFO End the parsing of XML.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:841] DEBUG C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1640.xml accuracy test success.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:285] INFO SAX handler init.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:349] INFO Found a header information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:494] INFO End the parsing of XML.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:841] DEBUG C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1610.xml accuracy test success.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:285] INFO SAX handler init.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:349] INFO Found a header information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:494] INFO End the parsing of XML.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:841] DEBUG C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1645.xml accuracy test success.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:285] INFO SAX handler init.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:349] INFO Found a header information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:494] INFO End the parsing of XML.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:841] DEBUG C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1615.xml accuracy test success.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:285] INFO SAX handler init.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:349] INFO Found a header information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:494] INFO End the parsing of XML.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:841] DEBUG C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1650.xml accuracy test success.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:285] INFO SAX handler init.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:349] INFO Found a header information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:494] INFO End the parsing of XML.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:841] DEBUG C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1620.xml accuracy test success.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:285] INFO SAX handler init.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:349] INFO Found a header information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:494] INFO End the parsing of XML.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:841] DEBUG C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1655.xml accuracy test success.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:285] INFO SAX handler init.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:349] INFO Found a header information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:494] INFO End the parsing of XML.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:841] DEBUG C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1625.xml accuracy test success.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:285] INFO SAX handler init.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:349] INFO Found a header information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:353] INFO Found a Measurement information
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:357] INFO Found a ObjectType information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:361] INFO Found a PmName information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:369] INFO Found a PMData information.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:494] INFO End the parsing of XML.
-Thu, 18 Feb 2016 17:38:25:pmcmp.py[line:841] DEBUG C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1630.xml accuracy test success.
+Fri, 19 Feb 2016 15:35:40:test_logger.py[line:81] INFO Test case: check_nbi_pm_ltehss_rop=5_cases started.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:269] INFO SAX handler init.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:333] INFO Found a header information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:478] INFO End the parsing of XML.
+Fri, 19 Feb 2016 15:35:40:test_logger.py[line:60] INFO Step 1, Passed: C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1600.xml
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:269] INFO SAX handler init.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:333] INFO Found a header information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:478] INFO End the parsing of XML.
+Fri, 19 Feb 2016 15:35:40:test_logger.py[line:60] INFO Step 2, Passed: C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1635.xml
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:269] INFO SAX handler init.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:333] INFO Found a header information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:478] INFO End the parsing of XML.
+Fri, 19 Feb 2016 15:35:40:test_logger.py[line:65] INFO Step 3, Failed: C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1605.xml
+PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsageMean is missing.
+PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsagePeak value is 0.55, and the expected result is:0.51
+PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K1 value is 999999, and the expected result is:214
+PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K4 is missing.
+PM DN:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2 missing.
+PM counter:FileHeader/InfoModelReferenced value is HSS-PM-V2.0.0, and the expected result is:HSS-PM-V1.0.0
+PM counter:FileHeader/SenderName is missing.
+PM counter:FileHeader/DnPrefix value is DC=Ericsson1, and the expected result is:DC=Ericsson
+Extra PM DN:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_4
+Extra PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K5
+Extra PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsageMean1
+Extra PM counter:FileHeader/SenderName1
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:269] INFO SAX handler init.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:333] INFO Found a header information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:478] INFO End the parsing of XML.
+Fri, 19 Feb 2016 15:35:40:test_logger.py[line:60] INFO Step 4, Passed: C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1640.xml
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:269] INFO SAX handler init.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:333] INFO Found a header information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:478] INFO End the parsing of XML.
+Fri, 19 Feb 2016 15:35:40:test_logger.py[line:60] INFO Step 5, Passed: C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1610.xml
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:269] INFO SAX handler init.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:333] INFO Found a header information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:478] INFO End the parsing of XML.
+Fri, 19 Feb 2016 15:35:40:test_logger.py[line:60] INFO Step 6, Passed: C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1645.xml
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:269] INFO SAX handler init.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:333] INFO Found a header information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:478] INFO End the parsing of XML.
+Fri, 19 Feb 2016 15:35:40:test_logger.py[line:60] INFO Step 7, Passed: C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1615.xml
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:269] INFO SAX handler init.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:333] INFO Found a header information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:478] INFO End the parsing of XML.
+Fri, 19 Feb 2016 15:35:40:test_logger.py[line:60] INFO Step 8, Passed: C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1650.xml
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:269] INFO SAX handler init.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:333] INFO Found a header information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:478] INFO End the parsing of XML.
+Fri, 19 Feb 2016 15:35:40:test_logger.py[line:60] INFO Step 9, Passed: C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1620.xml
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:269] INFO SAX handler init.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:333] INFO Found a header information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:478] INFO End the parsing of XML.
+Fri, 19 Feb 2016 15:35:40:test_logger.py[line:60] INFO Step 10, Passed: C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1655.xml
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:269] INFO SAX handler init.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:333] INFO Found a header information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:478] INFO End the parsing of XML.
+Fri, 19 Feb 2016 15:35:40:test_logger.py[line:60] INFO Step 11, Passed: C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1625.xml
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:269] INFO SAX handler init.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:333] INFO Found a header information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:337] INFO Found a Measurement information
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:341] INFO Found a ObjectType information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:345] INFO Found a PmName information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:353] INFO Found a PMData information.
+Fri, 19 Feb 2016 15:35:40:pmcmp.py[line:478] INFO End the parsing of XML.
+Fri, 19 Feb 2016 15:35:40:test_logger.py[line:60] INFO Step 12, Passed: C:\Users\eyyylll\git\selenium\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1630.xml
+Fri, 19 Feb 2016 15:35:40:test_logger.py[line:89] INFO Test case: check_nbi_pm_ltehss_rop=5_cases Failed. Total steps: 12, Passed steps: 11, Error steps: 0, Failed steps: 1, Warning steps: 0
