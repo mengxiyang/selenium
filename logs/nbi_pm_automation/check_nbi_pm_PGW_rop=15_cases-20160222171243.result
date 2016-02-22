@@ -1,0 +1,6 @@
+Test case: check_nbi_pm_PGW_rop=15_cases started.
+Step 1, Passed: C:\Users\eyyylll\git\selenium\\x\pm_file\ready\default/default-PGW-TTPM-V1.0.0-20160218-1200.xml
+Step 2, Passed: C:\Users\eyyylll\git\selenium\\x\pm_file\ready\default/default-PGW-TTPM-V1.0.0-20160218-1245.xml
+Step 3, Passed: C:\Users\eyyylll\git\selenium\\x\pm_file\ready\default/default-PGW-TTPM-V1.0.0-20160218-1230.xml
+Step 4, Passed: C:\Users\eyyylll\git\selenium\\x\pm_file\ready\default/default-PGW-TTPM-V1.0.0-20160218-1215.xml
+Test case: check_nbi_pm_PGW_rop=15_cases Passed. Total steps: 4, Passed steps: 4, Error steps: 0, Failed steps: 0, Warning steps: 0

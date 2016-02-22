@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PmFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PmFileFormat.xsd">
+    <FileHeader>
+        <InfoModelReferenced>HSS-PM-V1.0.0</InfoModelReferenced>
+        <DnPrefix>DC=Ericsson</DnPrefix>
+        <SenderName>DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1</SenderName>
+        <VendorName>Ericsson</VendorName>
+        <BeginTime>2016-02-18T16:20:00+08:00</BeginTime>
+        <EndTime>2016-02-18T16:25:00+08:00</EndTime>
+    </FileHeader>
+    <Measurements>
+        <ObjectType>ME</ObjectType>
+        <PmName>
+            <N i="1">Memtotal</N>
+            <N i="2">CpuUsageMean</N>
+            <N i="3">CpuUsagePeak</N>
+            <N i="4">MemUsageMean</N>
+            <N i="5">MemUsagePeak</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|HSSIMS77">
+                <V i="1">3825</V>
+                <V i="2">0.50</V>
+                <V i="3">0.81</V>
+                <V i="4">0.52</V>
+                <V i="5">0.83</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+    <Measurements>
+        <ObjectType>L</ObjectType>
+        <PmName>
+            <N i="1">F1</N>
+            <N i="2">F2</N>
+            <N i="3">F3</N>
+            <N i="4">F4</N>
+            <N i="5">G1</N>
+            <N i="6">G2</N>
+            <N i="7">G3</N>
+            <N i="8">G4</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|HSSIMS77,L=LIC_LTE_1">
+                <V i="1">510</V>
+                <V i="2">511</V>
+                <V i="3">512</V>
+                <V i="4">513</V>
+                <V i="5">514</V>
+                <V i="6">515</V>
+                <V i="7">516</V>
+                <V i="8">517</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|HSSIMS77,L=LIC_LTE_2">
+                <V i="1">520</V>
+                <V i="2">521</V>
+                <V i="3">522</V>
+                <V i="4">523</V>
+                <V i="5">524</V>
+                <V i="6">525</V>
+                <V i="7">526</V>
+                <V i="8">527</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|HSSIMS77,L=LIC_LTE_3">
+                <V i="1">530</V>
+                <V i="2">531</V>
+                <V i="3">532</V>
+                <V i="4">533</V>
+                <V i="5">534</V>
+                <V i="6">535</V>
+                <V i="7">536</V>
+                <V i="8">537</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|HSSIMS77,L=LIC_LTE_4">
+                <V i="1">540</V>
+                <V i="2">541</V>
+                <V i="3">542</V>
+                <V i="4">543</V>
+                <V i="5">544</V>
+                <V i="6">545</V>
+                <V i="7">546</V>
+                <V i="8">547</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+</PmFile>
