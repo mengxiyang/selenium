@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PmFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PmFileFormat.xsd">
+    <FileHeader>
+        <InfoModelReferenced>HSS-PM-V1.0.0</InfoModelReferenced>
+        <DnPrefix>DC=Ericsson</DnPrefix>
+        <SenderName>DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1</SenderName>
+        <VendorName>Ericsson</VendorName>
+        <BeginTime>2016-02-18T16:25:00+08:00</BeginTime>
+        <EndTime>2016-02-18T16:30:00+08:00</EndTime>
+    </FileHeader>
+    <Measurements>
+        <ObjectType>ME</ObjectType>
+        <PmName>
+            <N i="1">Memtotal</N>
+            <N i="2">CpuUsageMean</N>
+            <N i="3">CpuUsagePeak</N>
+            <N i="4">MemUsageMean</N>
+            <N i="5">MemUsagePeak</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77">
+                <V i="1">3826</V>
+                <V i="2">0.60</V>
+                <V i="3">0.91</V>
+                <V i="4">0.62</V>
+                <V i="5">0.93</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+    <Measurements>
+        <ObjectType>L</ObjectType>
+        <PmName>
+            <N i="1">J1</N>
+            <N i="2">J2</N>
+            <N i="3">J3</N>
+            <N i="4">J4</N>
+            <N i="5">K1</N>
+            <N i="6">K2</N>
+            <N i="7">K3</N>
+            <N i="8">K4</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1">
+                <V i="1">610</V>
+                <V i="2">611</V>
+                <V i="3">612</V>
+                <V i="4">613</V>
+                <V i="5">614</V>
+                <V i="6">615</V>
+                <V i="7">616</V>
+                <V i="8">617</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2">
+                <V i="1">620</V>
+                <V i="2">621</V>
+                <V i="3">622</V>
+                <V i="4">623</V>
+                <V i="5">624</V>
+                <V i="6">625</V>
+                <V i="7">626</V>
+                <V i="8">627</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+</PmFile>
