@@ -22,5 +22,5 @@ str_end_time = end_time.strftime('%Y-%m-%d %H:%M') + ":00"
 PmBaseFunc.check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_time, 4, 12,
                              me_counter_cfg, me_types_cfg)
 
-# Post of the test case
+# Post of the test case.
 caseutils.post_test_case()
