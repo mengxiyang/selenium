@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
-from com.ericsson.xn.commons import test_logger
-import Mod
+
+import os
+import sys
+
+root_dir = os.path.split(os.path.dirname(os.path.abspath(__file__)))[0]
+sys.path.insert(0, os.path.join(root_dir, 'libs' + os.path.sep + 'windows'))
+import paramiko
 
 if __name__ == '__main__':
-    test_logger.init('pm_main', 'pm')
-    test_logger.info('This is info testing.')
-    Mod.foo()
-    test_logger.finish()
+    print paramiko.__version__
