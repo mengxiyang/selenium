@@ -6,7 +6,7 @@ from com.ericsson.xn.commons import caseutils
 from com.ericsson.xn.x.pm.PmCommons import PmBaseFunc
 
 sep = os.sep
-module_name = os.path.split(os.path.abspath(__file__))[1][:-3]
+module_name = os.path.split(os.path.abspath(__file__))[1][:-4]
 # Pre of the test case
 caseutils.pre_test_case(module_name, 'pm_automation')
 

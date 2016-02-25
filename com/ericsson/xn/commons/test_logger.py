@@ -35,10 +35,12 @@ class LoggerInstance:
         self.logger_instance.setLevel(10)
         self.logger_instance.addHandler(log_handler)
         # print the console log by default
+        '''
         stream_handler = logging.StreamHandler()
-        stream_handler.setLevel(10)
+        stream_handler.setLevel(50)
         stream_handler.setFormatter(log_formatter)
         self.logger_instance.addHandler(stream_handler)
+        '''
         self.step = 0
         self.failed_step = 0
         self.error_step = 0
@@ -86,7 +88,7 @@ class LoggerInstance:
         msg = 'Test case: ' + self.case_name + ' ' + overall_result + '. Total steps: ' + str(self.step) + \
               ', Passed steps: ' + str(pass_steps) + ', Error steps: ' + str(self.error_step) + ', Failed steps: ' \
               + str(self.failed_step) + ', Warning steps: ' + str(self.warning_step)
-        self.logger_instance.info(self._encode_msg(msg))
+        self.logger_instance.critical(self._encode_msg(msg))
 
     def _encode_msg(self, msg):
         return msg.encode('utf-8')
