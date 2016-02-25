@@ -27,6 +27,7 @@ def pre_test_case(file_name, sub_dir):
 
 def post_test_case():
     test_logger.finish()
+    test_logger.logger_instance = None
     cmd = ''
     if 'Windows' == platform.system():
         cmd = 'TASKKILL /IM chromedriver.exe /F'

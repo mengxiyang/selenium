@@ -35,12 +35,12 @@ class LoggerInstance:
         self.logger_instance.setLevel(10)
         self.logger_instance.addHandler(log_handler)
         # print the console log by default
-        '''
+
         stream_handler = logging.StreamHandler()
         stream_handler.setLevel(50)
         stream_handler.setFormatter(log_formatter)
         self.logger_instance.addHandler(stream_handler)
-        '''
+
         self.step = 0
         self.failed_step = 0
         self.error_step = 0
