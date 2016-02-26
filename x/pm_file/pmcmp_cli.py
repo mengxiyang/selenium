@@ -1,6 +1,7 @@
 from optparse import OptionParser
 from com.ericsson.xn.x.pm.PmCommons import NBIPmFunc
 from com.ericsson.xn.commons import test_logger
+from com.ericsson.xn.commons import caseutils
 import re
 
 def get_options():
@@ -70,6 +71,6 @@ def get_options():
 if __name__ == '__main__':  
     options=get_options()
     if options!=-1:
-        test_logger.init_logger_instance("check_nbi_pm_"+options.ne_type.lower()+"_rop="+str(options.interval)+"_cases", "nbi_pm_automation")
-        NBIPmFunc.PMCmpInstance(options.ne_type,options.nename,options.nodeid,options.licid,options.interval,options.time,test_logger).check_pm_accuracy()  
-        test_logger.finish_test_steps()
+        caseutils.pre_test_case("check_nbi_pm_"+options.ne_type.lower()+"_rop="+str(options.interval)+"_cases", "nbi_pm_automation")
+        NBIPmFunc.PMCmpInstance(options.ne_type,options.nename,options.nodeid,options.licid,options.interval,options.time).check_pm_accuracy()  
+        caseutils.post_test_case()
