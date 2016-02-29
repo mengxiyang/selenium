@@ -6,7 +6,7 @@ from com.ericsson.xn.commons import caseutils
 from com.ericsson.xn.x.pm.PmCommons import PmBaseFunc
 
 sep = os.sep
-module_name = os.path.split(os.path.abspath(__file__))[1][:-3]
+module_name = os.path.split(os.path.abspath(__file__))[1][:-4]
 # Pre of the test case
 caseutils.pre_test_case(module_name, 'pm_automation')
 
@@ -22,5 +22,5 @@ str_end_time = end_time.strftime('%Y-%m-%d %H:%M') + ":00"
 PmBaseFunc.check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_time, 4, 12,
                              me_counter_cfg, me_types_cfg)
 
-# Post of the test case
+# Post of the test case.
 caseutils.post_test_case()

@@ -1,4 +1,0 @@
-Test case: check_nbi_pm_ltehss_rop=5_cases started.
-Step 1, Failed: The configuration file:C:\Users\eyyylll\git\selenium\x\pm_file\conf\lic_counters\ltehss.cfg not existed.
-Error occurred, test case will exit soon.
-Test case: check_nbi_pm_ltehss_rop=5_cases Failed. Total steps: 1, Passed steps: 0, Error steps: 1, Failed steps: 0, Warning steps: 0
