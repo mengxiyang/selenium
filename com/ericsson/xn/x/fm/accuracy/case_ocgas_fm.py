@@ -10,7 +10,6 @@ import os
 from com.ericsson.xn.commons import caseutils
 from com.ericsson.xn.commons import CommonStatic
 from com.ericsson.xn.common import CommonFunc
-from com.ericsson.xn.commons.CommonStatic import login_rsnms
 from com.ericsson.xn.common.CommonFunc import toAlarmManagement
 
 
@@ -30,7 +29,7 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg):
     port = server_info.getProperty("port")
     url = server_info.getProperty("url")
     
-    driver = login_rsnms(dict_browser_chrome,username,password,port,url)
+    driver = CommonStatic.login_rsnms(dict_browser_chrome,username,password,port,url)
     if driver:
         try:
             toAlarmManagement(driver)
