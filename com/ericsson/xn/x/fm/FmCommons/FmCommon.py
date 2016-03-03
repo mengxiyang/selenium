@@ -11,9 +11,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 import logging, time
-from __builtin__ import str
 from selenium.common.exceptions import TimeoutException
 from com.ericsson.xn.commons import test_logger as logCommon
+from com.ericsson.xn.commons import funcutils
+from com.ericsson.xn.commons.funcutils import find_single_widget
+from com.ericsson.xn.commons import CommonStatic
+from pip.index import Search
 
 
 
@@ -26,6 +29,49 @@ def toAlarmManagement(driver):
     WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, "//div[@class='ebBreadcrumbs-list']/ul/li[4]/a"))).click()
     time.sleep(10)
+    
+def toAlarmManagement_by_url(driver,server_info,url_add = "#network-overview/fault-mgt/fault-management"):
+    logCommon.info("To the AlarmManagement page...")
+    url="http://" + server_info.getProperty("host") + ":" + str(server_info.getProperty("port")) + server_info.getProperty("preurl") + url_add    
+    driver.get(url)   
+    
+
+def init_and_search(driver,nename):
+    logCommon.info("Query alarm for NE:" + nename + "...")
+    selected_given_nename(driver,nename)
+    search_btn = find_single_widget(driver, 10, "//button[@id='idBtn-search']")
+    search_btn.click()
+    
+    
+def selected_given_nename(driver,nename):
+    ne_param = WebDriverWait(driver,10).until(EC.presence_of_element_located("//div[@class='paramLine']/div[1]/input"))
+    
+    if ne_param:
+        ne_param.click()
+        find_single_widget(driver, 10, "//div[@id='btnAllLeft']").click()
+    else:
+        ne_param.click()
+        
+    input_ne = find_single_widget(driver,10,"//div[@class='ebLayout-candidateEnbs']/table/thead/tr[2]/input")
+    input_ne.clear()
+    input_ne.sendKeys(nename)
+    time.sleep(1)
+    
+    found_ne=find_single_widget(driver, 10, "//div[@class='ebLayout-candidateEnbs']/table/tbody/tr")
+    
+    if found_ne:
+        ne_check_box = find_single_widget(found_ne, 10, "./td/div/div/input")
+        if not ne_check_box.is_selected():
+            ne_check_box.click()
+    else:
+        logCommon.error("the given ne not found")
+    
+    right_arrow = find_single_widget(driver, 10, "//div[@id='btnRight']")
+    right_arrow.click()
+    
+    confirm_btn = find_single_widget(driver,10, "//div[@class='choose']/button")
+    confirm_btn.click()
+
 
 
 def queryUnAcked(driver):
@@ -138,7 +184,7 @@ def checkAcked(tr, dt, driver, filePath):
         logCommon.info('Success: ACK the alarm successfully, ID: ' + tds[1].get_attribute("innerHTML").encode(
             'utf-8') + ', ACK time: ' + tds[12].get_attribute("innerHTML").encode('utf-8'))
     else:
-        logCommon.critical('Failed: ACK the alarm failed.')
+        logCommon.error('Failed: ACK the alarm failed.')
 
     '''logCommon.info(filePath + 'acked_0.png')
     if(os.path.isfile(filePath + 'acked_0.png')):
@@ -152,8 +198,7 @@ def checkAcked(tr, dt, driver, filePath):
     driver.save_screenshot(snap_1)
 
 
-def alarmSync(isMac, chrome, driver, host, port=8686, username='admin', password='Admin!@#123'):
-    driver = loginToInterface(isMac, chrome, driver, host, port, username, password)
+def alarmSync(driver):
     toAlarmManagement(driver)
     toAlarmSyncPage(driver)
     btn = findBtnReturnComfirmBtn(driver, 3)
@@ -162,15 +207,13 @@ def alarmSync(isMac, chrome, driver, host, port=8686, username='admin', password
     # quitDriver(driver)
 
 
-def alarmQuery(isMac, chrome, driver, host, port=8686, username='admin', password='Admin!@#123'):
-    driver = loginToInterface(isMac, chrome, driver, host, port, username, password)
+def alarmQuery(driver):
     toAlarmManagement(driver)
     btn = findBtnReturnComfirmBtn(driver, 0)
     return btn
 
 
-def alarmClear(isMac, chrome, driver, host, port=8686, username='admin', password='Admin!@#123'):
-    driver = loginToInterface(isMac, chrome, driver, host, port, username, password)
+def alarmClear(driver):
     toAlarmManagement(driver)
     tr = findLineOfCertainStatus(driver, 4)
     clickTheCheckboxOftheTR(tr)
@@ -178,8 +221,7 @@ def alarmClear(isMac, chrome, driver, host, port=8686, username='admin', passwor
     return btn
 
 
-def alarmAck(isMac, chrome, driver, host, port=8686, username='admin', password='Admin!@#123'):
-    driver = loginToInterface(isMac, chrome, driver, host, port, username, password)
+def alarmAck(driver):
     toAlarmManagement(driver)
     tr = findLineOfCertainStatus(driver, 4)
     # tr = findLineOfCertainStatus(driver, 0)
