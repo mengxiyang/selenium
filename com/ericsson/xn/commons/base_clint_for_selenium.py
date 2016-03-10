@@ -1,5 +1,6 @@
-#! -*- coding: utf-8 -*-
-
+#! /usr/bin/python
+# -*- coding: utf-8 -*-
+# from datetime import datetime
 from multiprocessing.managers import BaseManager
 
 BaseManager.register('platform_info')
@@ -21,9 +22,9 @@ def server_time(ip, port, passwd):
 BaseManager.register('send_trap')
 
 
-def send_trap(ip, port, passwd, ne_type, alarm, target_ip):
+def send_trap(ip, port, passwd, ne_type, alarm, target_ip, trap_port=162):
     mgr = start_session(ip, port, passwd)
-    return mgr.send_trap(ne_type, alarm, target_ip)
+    return mgr.send_trap(ne_type, alarm, target_ip, trap_port)
 
 
 def start_session(ip, port, passwd):
@@ -34,3 +35,7 @@ def start_session(ip, port, passwd):
 
 def close_session(mgr):
     pass
+
+# print datetime.now().strftime('%H:%M:%S:%f')
+# print send_trap('192.168.1.102', 7070, 'xoambaseserver', 'OCGAS', 'monitorTargetExceedThreshold', '127.0.0.1')
+# print datetime.now().strftime('%H:%M:%S:%f')
