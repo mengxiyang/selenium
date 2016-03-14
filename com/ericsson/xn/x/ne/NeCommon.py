@@ -26,11 +26,12 @@ def to_ne_management_page(driver, logger):
 
 
 def to_ne_management_page_by_url(driver, server_info, url_add='#network-overview/ne-management'):
-    test.info('Will Navigate to the NeManagement page...')
+    test.info("To the NE Management page...")
     base_url = 'http://' + server_info.getProperty('host') + ':' + str(server_info.getProperty('port')) + \
                server_info.getProperty('preurl')
-    test.info('Base URL is: ' + base_url)
+    test.info('NeMgt URL is: ' + base_url + url_add)
     driver.get(base_url + url_add)
+    test.info("Login to the NeManagement page successfully")
 
 
 def check_and_add_ne(driver, dict_ne_info):
@@ -43,6 +44,7 @@ def check_and_add_ne(driver, dict_ne_info):
     elif 1 > ne_exist:
         dict_ne_info["ne_name"] = add_new_ne(driver, dict_ne_info)
     refresh_ne_management_page(driver)
+    test.info("NE:" + ne_name + " added successfully")
     return dict_ne_info
 
 

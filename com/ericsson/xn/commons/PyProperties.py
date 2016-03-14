@@ -5,6 +5,8 @@ Created on Aug 24, 2015
 @author: lowitty
 '''
 import os
+import re
+from com.ericsson.xn.commons import test_logger
 class Properties():
     
     def __init__(self, propertyFile):
@@ -23,7 +25,18 @@ class Properties():
                     
     def getProperty(self, key):
         if(self.mappings.has_key(key)):
-            return self.mappings[key]
+            if(len(re.findall(r"(.+:(?!\\).+)",self.mappings[key]))>=1):
+                dict_values={}
+                for item in re.findall(r"(.+:(?!\\).+)",self.mappings[key])[0].split(","):
+                    dict_values[item.split(":")[0]]=item.split(":")[1]
+                return dict_values
+            elif(len(re.findall(r".+,",self.mappings[key]))>=1):
+                list_values=[]
+                for item in self.mappings[key].split(","):
+                    list_values.append(item)
+                return  list_values
+            else:
+                return self.mappings[key]
         else:
             return None
         
