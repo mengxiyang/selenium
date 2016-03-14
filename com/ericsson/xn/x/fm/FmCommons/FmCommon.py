@@ -5,18 +5,12 @@ Created on Dec 2, 2015
 @author: lowitty
 '''
 import os, platform, subprocess
-from selenium.webdriver.chrome.options import Options
-from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-import logging, time
 from selenium.common.exceptions import TimeoutException
 from com.ericsson.xn.commons import test_logger as logCommon
-from com.ericsson.xn.commons import funcutils
 from com.ericsson.xn.commons.funcutils import find_single_widget, find_all_widgets
-from com.ericsson.xn.commons import CommonStatic
-import binascii
 import datetime as pydate
 import time
 

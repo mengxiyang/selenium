@@ -10,11 +10,8 @@ Created on Mar 1, 2016
 from com.ericsson.xn.commons import test_logger
 from com.ericsson.xn.commons.PyProperties import Properties
 import os
-from com.ericsson.xn.commons import caseutils
 from com.ericsson.xn.commons import CommonStatic
 from com.ericsson.xn.x.fm.FmCommons import FmCommon
-from com.ericsson.xn.common.CommonFunc import toAlarmManagement
-from com.ericsson.xn.commons import PyProperties
 from com.ericsson.xn.x.ne import NeCommon
 from com.ericsson.xn.commons import base_clint_for_selenium
 import re
@@ -107,7 +104,7 @@ def alarm_compare(alarm_expected,alarm_on_gui):
 def alarm_converter(nename,alarmtype,alarm_raw,mappingInstance):
     alarm_fields = mappingInstance.get_property("alarm_gui_name")
     expected_alarm = {}.fromkeys(alarm_fields)
-    for key,value in expected_alarm.items():
+    for key in expected_alarm.keys():
         if(key == "网元名称"):
             expected_alarm["网元名称"]=nename
         elif(key == "告警级别"):
@@ -241,9 +238,9 @@ class alarmMapping():
 
 
     def convert_probable_cause(self,probable_cause):
-         if self.dict_mapping_info["probable_cause"].has_key(probable_cause):
+        if self.dict_mapping_info["probable_cause"].has_key(probable_cause):
             return self.dict_mapping_info["probable_cause"][probable_cause]
-         else:
+        else:
             test_logger.failed("probable_cause convert failed for " + probable_cause)
 
 
