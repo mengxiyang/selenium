@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from datetime import datetime, timedelta
 from com.ericsson.xn.commons import CommonStatic
-from com.ericsson.xn.commons.PyProperties import Properties
+from com.ericsson.xn.commons.PyProperties import TrimableProps
 from com.ericsson.xn.commons.osutils import get_ne_info_from_cfg, get_pm_counters_map, get_me_types_map
 from com.ericsson.xn.x.ne import NeCommon
 from com.ericsson.xn.x.pm.PmCommons import PmCommon
@@ -14,7 +14,7 @@ def check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_t
     counters_pm = get_pm_counters_map(counter_info_cfg)
     if 12 * number_of_lic != len(counters_pm):
         test.error('Lines of expected counters should equal 12 multiple number of LICs.')
-    server_info = Properties(server_info_path)
+    server_info = TrimableProps(server_info_path)
     dict_browser_chrome = {
         "browser_type": server_info.getProperty('browser_type'),
         "browser_path": server_info.getProperty('browser_path'),
@@ -73,7 +73,7 @@ def check_sbc_pm(ne_info_cfg, counter_info_cfg, server_info_path, number_of_lic,
     ne_info = get_ne_info_from_cfg(ne_info_cfg)
     counters_pm = get_pm_counters_map(counter_info_cfg)
 
-    server_info = Properties(server_info_path)
+    server_info = TrimableProps(server_info_path)
     dict_browser_chrome = {
         "browser_type": server_info.getProperty('browser_type'),
         "browser_path": server_info.getProperty('browser_path'),

@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 from logging.handlers import RotatingFileHandler
 
 from com.ericsson.xn.commons import CommonStatic
-from com.ericsson.xn.commons.PyProperties import Properties
+from com.ericsson.xn.commons.PyProperties import TrimableProps
 from com.ericsson.xn.commons.osutils import get_ne_info_from_cfg, get_pm_counters_map
 from com.ericsson.xn.x.ne import NeCommon
 from com.ericsson.xn.x.pm.PmCommons import PmCommon
@@ -19,7 +19,7 @@ logger_pm = logging.getLogger('pm_accurate')
 log_dir = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'logs')
 if not os.path.isdir(log_dir):
     os.mkdir(log_dir)
-log_cfg = Properties(os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'log_cfg.cfg'))
+log_cfg = TrimableProps(os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'log_cfg.cfg'))
 log_file = os.path.normpath(log_dir + sep + 'pm_accurate.log')
 log_level = int(log_cfg.getProperty('log_level'))
 log_formatter = logging.Formatter(('%(asctime)s [%(levelname)s] %(module)s %(funcName)s(%(lineno)d) %(message)s'))
@@ -43,7 +43,7 @@ def check_pm_accurate_lic(ne_info_cfg, counter_info_cfg, server_info_path, str_e
     global sep, logger_pm
     ne_info = get_ne_info_from_cfg(ne_info_cfg)
     counters_pm = get_pm_counters_map(counter_info_cfg)
-    server_info = Properties(server_info_path)
+    server_info = TrimableProps(server_info_path)
     dict_browser_chrome = {
         "browser_type": server_info.getProperty('browser_type'),
         "browser_path": server_info.getProperty('browser_path'),
@@ -94,7 +94,7 @@ def check_pm_accurate_sbc(ne_info_cfg, counter_info_cfg, server_info_path, round
     global sep, logger_pm
     ne_info = get_ne_info_from_cfg(ne_info_cfg)
     counters_pm = get_pm_counters_map(counter_info_cfg)
-    server_info = Properties(server_info_path)
+    server_info = TrimableProps(server_info_path)
     dict_browser_chrome = {
         "browser_type": server_info.getProperty('browser_type'),
         "browser_path": server_info.getProperty('browser_path'),
@@ -137,7 +137,7 @@ def check_pm_accurate_sbc(ne_info_cfg, counter_info_cfg, server_info_path, round
 
 def check_pm_accurate_all_ne(dict_all_nes, server_info_path):
     global sep, logger_pm
-    server_info = Properties(server_info_path)
+    server_info = TrimableProps(server_info_path)
     dict_browser_chrome = {
         "browser_type": server_info.getProperty('browser_type'),
         "browser_path": server_info.getProperty('browser_path'),
