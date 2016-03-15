@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 from datetime import datetime, timedelta
 from com.ericsson.xn.commons import CommonStatic
 from com.ericsson.xn.commons.PyProperties import TrimableProps
@@ -16,9 +17,9 @@ def check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_t
         test.error('Lines of expected counters should equal 12 multiple number of LICs.')
     server_info = TrimableProps(server_info_path)
     dict_browser_chrome = {
-        "browser_type": server_info.getProperty('browser_type'),
-        "browser_path": server_info.getProperty('browser_path'),
-        "driver_path": server_info.getProperty('driver_path')
+        "browser_type": os.path.normpath(server_info.getProperty('browser_type')),
+        "browser_path": os.path.normpath(server_info.getProperty('browser_path')),
+        "driver_path": os.path.normpath(server_info.getProperty('driver_path'))
     }
 
     host = server_info.getProperty('host')
