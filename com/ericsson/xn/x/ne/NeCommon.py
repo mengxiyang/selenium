@@ -3,6 +3,7 @@
 import sys
 from time import sleep
 import os
+import time
 import binascii
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -10,6 +11,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from com.ericsson.xn.commons.funcutils import find_single_widget, find_all_widgets, wait_until_text_shown_up, \
     is_pair_nes
 from com.ericsson.xn.commons import test_logger as test
+from com.ericsson.xn.x.fm.FmCommons import FmCommon
 
 
 def to_ne_management_page(driver, logger):
@@ -38,6 +40,7 @@ def check_and_add_ne(driver, dict_ne_info):
     ne_exist, ne_name = check_ne_exist_by_type(driver, dict_ne_info["ne_type"], dict_ne_info["ne_ip"])
     if 2 == ne_exist:
         test.error('A ne with the given IP named: ' + ne_name + ' already exist.')
+        FmCommon.quitDriver(driver)
         sys.exit(0)
     elif 1 == ne_exist:
         dict_ne_info["ne_name"] = ne_name
@@ -83,6 +86,14 @@ def add_new_ne(driver, dict_ne_info):
 
     id_li_pwd = (By.ID, "i_nelipwd")
     id_fro_id = (By.ID, "i_nefroid")
+    
+    #add for HSS
+    id_snmp_port = (By.ID,"i_snmpport")
+    id_usmusername = (By.ID,"i_usmusername")
+    id_i_authpwd = (By.ID,"i_authpwd")
+    id_i_privpwd = (By.ID,"i_privpwd")
+    id_i_appuser = (By.ID,"i_serviceusername")
+    id_i_apppwd = (By.ID,"i_servicepwd")
 
     ne_name = dict_ne_info["ne_type"] + "-" + str(binascii.hexlify(os.urandom(8))).upper()
     w_ne_name = find_single_widget(driver, 10, id_ne_name)
@@ -113,6 +124,7 @@ def add_new_ne(driver, dict_ne_info):
         w_fro_id = find_single_widget(driver, 10, id_fro_id)
         w_fro_id.clear()
         w_fro_id.send_keys(dict_ne_info["fro_id"])
+          
     else:
         w_sftp_port = find_single_widget(driver, 10, id_sftp_port)
         w_sftp_port.clear()
@@ -125,8 +137,34 @@ def add_new_ne(driver, dict_ne_info):
         w_log_path = find_single_widget(driver, 10, id_log_path)
         w_log_path.clear()
         w_log_path.send_keys(dict_ne_info["log_path"])
-
-        if 'OCGAS' == dict_ne_info["ne_type"]:
+        
+        if 'IMSHSS' == dict_ne_info["ne_type"] or 'LTEHSS' == dict_ne_info["ne_type"]:
+            w_snmp_port = find_single_widget(driver, 10, id_snmp_port)
+            w_snmp_port.clear()
+            w_snmp_port.send_keys(dict_ne_info["snmp_port"])
+        
+            w_usm_user = find_single_widget(driver, 10, id_usmusername)
+            w_usm_user.clear()
+            w_usm_user.send_keys(dict_ne_info["usm_user"])
+        
+            w_auth_pwd = find_single_widget(driver, 10, id_i_authpwd)
+            w_auth_pwd.clear()
+            w_auth_pwd.send_keys(dict_ne_info["auth_password"])
+        
+            w_priv_pwd = find_single_widget(driver, 10, id_i_privpwd)
+            w_priv_pwd.clear()
+            w_priv_pwd.send_keys(dict_ne_info["priv_password"])
+            
+        
+            w_app_user = find_single_widget(driver, 10, id_i_appuser)
+            w_app_user.clear()
+            w_app_user.send_keys(dict_ne_info["app_user"])
+            
+            w_app_pwd = find_single_widget(driver, 10, id_i_apppwd)
+            w_app_pwd.clear()
+            w_app_pwd.send_keys(dict_ne_info["app_password"])
+    
+        elif 'OCGAS' == dict_ne_info["ne_type"]:
             w_alarm_path = find_single_widget(driver, 10, id_alarm_path)
             w_alarm_path.clear()
             w_alarm_path.send_keys(dict_ne_info["alarm_path"])
@@ -230,4 +268,3 @@ def check_ne_exist(driver, ne_type, ne_ip):
     except Exception as e:
         # the ip that we want to add does not exist
         return -2, None
-
