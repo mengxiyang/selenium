@@ -38,7 +38,14 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
         "alarm_path": ne_info.getProperty("alarm_path"),
         "ne_port": ne_info.getProperty("ne_port"),
         "sftp_port": ne_info.getProperty("sftp_port"),
-        "tab_pre": ne_info.getProperty("tab_pre")
+        "snmp_port": ne_info.getProperty("snmp_port"),
+        "usm_user": ne_info.getProperty("usm_user"),
+        "auth_password": ne_info.getProperty("auth_password"),
+        "priv_password": ne_info.getProperty("priv_password"),
+        "app_user": ne_info.getProperty("app_user"),
+        "app_password": ne_info.getProperty("app_password"),
+        "li_pwd": ne_info.getProperty("li_pwd"),
+        "fro_id": ne_info.getProperty("fro_id")
     }
 
     mappingInstance = alarmMapping(alarm_mapping_cfg)
