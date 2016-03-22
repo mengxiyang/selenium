@@ -5,7 +5,7 @@ Created on Mar 1, 2016
 '''
 
 import os
-from com.ericsson.xn.x.fm.FmCommons.DataBase import check_alarm_data_accuracy
+from com.ericsson.xn.x.fm.FmCommons.GuiDataBase import check_alarm_data_accuracy
 from com.ericsson.xn.commons import caseutils
 from com.ericsson.xn.commons.caseutils import pre_test_case, post_test_case
 
