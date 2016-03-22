@@ -188,16 +188,9 @@ class alarmMapping():
             test_logger.error("The alarm mapping cfg files: " + alarm_mapping_cfg + " not existed")
 
         mapping_info = Properties(alarm_mapping_cfg)
-        self.dict_mapping_info = {
-        "alarm_types": mapping_info.getProperty("alarm_types"),
-        "alarm_gui_name":mapping_info.getProperty("alarm_gui_name"),
-        "alarm_severity": mapping_info.getProperty("alarm_severity"),
-        "event_type": mapping_info.getProperty("event_type"),
-        "alarmtype_cn": mapping_info.getProperty("alarmtype_cn"),
-        "alarmtype_id": mapping_info.getProperty("alarmtype_id"),
-        "specific_problem": mapping_info.getProperty("specific_problem"),
-        "probable_cause": mapping_info.getProperty("probable_cause")
-    }
+        self.dict_mapping_info = {}
+        for key in mapping_info.dict_info().keys():
+            self.dict_mapping_info[key] = mapping_info.getProperty(key)
 
     def get_property(self,key):
         if self.dict_mapping_info.has_key(key):

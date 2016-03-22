@@ -9,19 +9,20 @@ import xml.etree.ElementTree as ET
 from com.ericsson.xn.commons.PyProperties import Properties
 import os
 from com.ericsson.xn.commons import test_logger as test
+from com.ericsson.xn.x.fm.FmCommons.GuiDataBase import alarmMapping
 
 
 
 class notifMapping():
     def __init__(self,common_cfg,nbi_mapping_cfg):
-        if not os.path.exists(common_cfg):
-            test.error("mapping cfg file:" + common_cfg + " not exist")
-        elif not os.path.exists(nbi_mapping_cfg):
-            test.error("mapping cfg file:" + nbi_mapping_cfg + " not exist")
         
-        common_mapping_info = Properties(common_cfg)
-        notif_mapping_info = MappingParser(nbi_mapping_cfg)
+        self.com_mappingInstance = alarmMapping(common_cfg)
+        self.notif_mappingInstance = MappingParser(nbi_mapping_cfg)
+
         
+        print self.com_mappingInstance.dict_mapping_info
+        
+    
             
     
 
