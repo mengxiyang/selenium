@@ -1,0 +1,7 @@
+<NewAlarm>
+	<event_type>
+		<Attr name="domain_name">Alarm IRP V3.0.0</Attr>
+			<value>1</value>
+		<Attr name="type_name">x1</Attr>
+	</event_type>
+</NewAlarm>
