@@ -20,7 +20,7 @@ class notifMapping(alarmMapping):
     def __init__(self,common_cfg,nbi_mapping_cfg):  
         alarmMapping.__init__(self, common_cfg)
         m_parser = MappingParser.XMLTree(notify_mapping_cfg) 
-        notif_attributes = m_parser.get_all_tags()
+        notif_attributes = m_parser.get_children_tags()
         for a in notif_attributes:
             notify_mapping_info = m_parser.get_element_mapping(a)
         self.notify_mapping_info = dict(self.dict_mapping_info.items() + notify_mapping_info.items())

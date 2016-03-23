@@ -43,7 +43,7 @@ class XMLTree():
 		return dict
 	
 	
-	def get_all_tags(self):
+	def get_children_tags(self):
 		tags=[]
 		root=self.tree.getroot()
 		for element in root.getchildren():
