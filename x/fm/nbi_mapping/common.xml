@@ -1,7 +1,8 @@
-<NewAlarm>
-	<event_type>
-		<Attr name="domain_name">Alarm IRP V3.0.0</Attr>
-			<value>1</value>
-		<Attr name="type_name">x1</Attr>
-	</event_type>
-</NewAlarm>
+alarm_gui_name=缃戝厓鍚嶇О,鍛婅绾у埆,鍛婅鏃堕棿,娓呴櫎鐘舵��,纭鐘舵��,鍛婅缂栧彿,鍛婅鍚嶇О,瀹氫綅淇℃伅,娓呴櫎鏃堕棿,娓呴櫎绫诲瀷,纭鏃堕棿,纭鐢ㄦ埛,闂鎻忚堪,鍙兘鍘熷洜,鍛婅绫诲瀷,琛ュ厖淇℃伅
+alarm_types=monitorTargetsExceedThreshold,liFeatureEnableNotification,liFeatureDisableNotification,invalidLicTryToConnectScpAs,failedToEstablishX2Connection,liProcesssAbort,cpuOverload
+alarm_severity=0:Indeterminate,1:Critical,2:Major,3:Minor,4:Warning,5:Cleared
+event_type=1:閫氫俊鍛婅,2:璁惧鍛婅,3:澶勭悊閿欒鍛婅,4:鐜鍛婅,5:璁惧鍛婅
+alarmtype_cn=monitorTargetsExceedThreshold:琚帶鐩爣鏁拌繃澶�,liFeatureEnableNotification:鐗归�氬姛鑳藉惎鍔�,liFeatureDisableNotification:鐗归�氬姛鑳藉仠姝�,invalidLicTryToConnectScpAs:寮傚父瀹㈡埛绔�,failedToEstablishX2Connection:X2杩炴帴鏁呴殰,liProcesssAbort:杩涚▼閲嶅惎,cpuOverload:CPU杩囪浇
+alarmtype_id=monitorTargetsExceedThreshold:10,liFeatureEnableNotification:11,liFeatureDisableNotification:12,invalidLicTryToConnectScpAs:3,failedToEstablishX2Connection:5,liProcesssAbort:18,cpuOverload:7
+specific_problem=monitorTargetsExceedThreshold:monitorTargetsExceedThreshold,liFeatureEnableNotification:liFeatureEnableNotification,liFeatureDisableNotification:liFeatureDisableNotification,invalidLicTryToConnectScpAs:invalidLicTryToConnectScpAs,failedToEstablishX2Connection:failedToEstablishX2Connection,liProcesssAbort:liProcessAbort,cpuOverload:CPU Overload
+probable_cause=monitorTargetsExceedThreshold:瓒呭嚭闂ㄩ檺,liFeatureEnableNotification:鍔熻兘鍚姩,liFeatureDisableNotification:鍔熻兘鍏抽棴,invalidLicTryToConnectScpAs:璁よ瘉澶辫触,failedToEstablishX2Connection:杩炴帴寤虹珛閿欒,liProcesssAbort:杞欢閿欒,cpuOverload:瓒呭嚭闂ㄩ檺
