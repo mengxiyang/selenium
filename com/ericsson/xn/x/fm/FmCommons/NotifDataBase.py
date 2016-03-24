@@ -26,7 +26,13 @@ class notifMapping(alarmMapping):
         self.notify_mapping_info = dict(self.dict_mapping_info.items() + notify_mapping_info.items())
         
     
-        
+    def get_property(self, key):
+        if self.notify_mapping_info.has_key(key):
+            return self.notify_mapping_info[key]
+        else:
+            test.failed("get " + key + " from mapping Failed")
+                
+    
     
             
 if __name__ == '__main__':
