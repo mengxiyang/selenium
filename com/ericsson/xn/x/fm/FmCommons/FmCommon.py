@@ -15,7 +15,7 @@ import datetime as pydate
 import time
 from com.ericsson.xn.commons.PyProperties import Properties
 
-def init_data(ne_info_cfg,server_info_cfg,mapping_info_cfg,common_cfg):
+def data_init(ne_info_cfg,server_info_cfg):
     server_info = Properties(server_info_cfg)
     dict_browser_chrome = {
         "browser_type": server_info.getProperty('browser_type'),
@@ -106,6 +106,13 @@ def fetch_alarm_on_gui(driver,mappingInstance,alarm_type):
         else:
             time.sleep(10)
     return None
+
+
+def query_alarm(driver):
+    search_btn = find_single_widget(driver, 10, (By.XPATH,"//button[@id='idBtn-search']"))
+    search_btn.click()
+
+
 def get_1st_row_on_gui(driver):
     table_i = (By.XPATH,"//div[@class='table']/div/div/table[@class='ebTable elWidgets-Table-body']")
     table=find_single_widget(driver,10,table_i)
