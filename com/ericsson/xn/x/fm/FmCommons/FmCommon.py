@@ -28,7 +28,8 @@ def data_init(ne_info_cfg,server_info_cfg):
     "username": server_info.getProperty("username"),
     "password": server_info.getProperty("password"),
     "port" : server_info.getProperty("port"),
-    "url" : server_info.getProperty("url")
+    "url" : server_info.getProperty("url"),
+    "preurl" : server_info.getProperty("preurl")
     }
     
     ne_info = Properties(ne_info_cfg)
