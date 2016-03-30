@@ -270,4 +270,14 @@ class alarmMapping():
             return self.dict_mapping_info["probable_cause"][key]
         else:
             test_logger.failed("probable_cause convert failed for " + key)
+            
+    def convert_object_instance(self,nodeid,nename):
+        if self.dict_mapping_info["object_class"] == 'ManagedElement':
+            dn = 'DC=Ericsson,SubNetwork=1,ManagedElement=' + str(nodeid) + '|' + nename
+        elif self.dict_mapping_info["object_class"] == 'ManagedNode':
+            dn = 'DC=Ericsson,SubNetwork=1,ManagedNode=1'
+        return dn
+    
+    def convert_event_time(self,timeStamp):
+        
 
