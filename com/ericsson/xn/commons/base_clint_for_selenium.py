@@ -22,9 +22,18 @@ def server_time(ip, port, passwd):
 BaseManager.register('send_trap')
 
 
-def send_trap(ip, port, passwd, ne_type, alarm, target_ip, trap_port=162):
+def send_trap(ip, port, passwd, ne_type, alarm, target_ip, trap_port=None):
     mgr = start_session(ip, port, passwd)
     return mgr.send_trap(ne_type, alarm, target_ip, trap_port)._getvalue()
+
+
+BaseManager.register('send_trap_nbi')
+
+
+def send_trap_nbi(ip, port, passwd, ne_type, alarm, host,
+                  auth_info=None, nbi_raw='/Users/lowitty/temp/x.txt', t_port=None):
+    mgr = start_session(ip, port, passwd)
+    return mgr.send_trap_nbi(ne_type, alarm, host, auth_info, nbi_raw, t_port)._getvalue()
 
 
 def start_session(ip, port, passwd):
@@ -39,3 +48,7 @@ def close_session(mgr):
 # print datetime.now().strftime('%H:%M:%S:%f')
 # print send_trap('10.184.74.67', 7070, 'xoambaseserver', 'OCGAS', 'monitorTargetExceedThreshold', '127.0.0.1')
 # print datetime.now().strftime('%H:%M:%S:%f')
+from datetime import datetime
+print datetime.now().strftime('%H:%M:%S:%f')
+print send_trap_nbi('127.0.0.1', 7070, 'xoambaseserver', 'LTEHSS', 'SoftwareProgramError-1', '127.0.0.1', ['privUser1', 'authUser1', 'privUser1'], '/Users/lowitty/temp/x.txt', 11162)
+print datetime.now().strftime('%H:%M:%S:%f')
