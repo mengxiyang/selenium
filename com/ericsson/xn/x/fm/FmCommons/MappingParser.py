@@ -32,7 +32,7 @@ class XMLTree():
 			return map
 
 
-	def get_element_mapping(self,attr_name):
+	def get_element_hierachy(self,attr_name):
 		dict = {}
 		node = self.tree.find(attr_name)
 		if node != None:

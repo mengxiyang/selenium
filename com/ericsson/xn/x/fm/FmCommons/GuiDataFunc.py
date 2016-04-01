@@ -8,6 +8,7 @@ Created on Mar 1, 2016
 
 
 from com.ericsson.xn.commons import test_logger
+import datetime,time
 from com.ericsson.xn.commons.PyProperties import Properties
 import os
 from com.ericsson.xn.commons import CommonStatic
@@ -16,6 +17,7 @@ from com.ericsson.xn.x.ne import NeCommon
 from com.ericsson.xn.commons import base_clint_for_selenium
 import re
 import types
+from com.ericsson.xn.x.fm.FmCommons import AlarmMapping
 
 def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
     
@@ -48,7 +50,7 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
         "fro_id": ne_info.getProperty("fro_id")
     }
 
-    mappingInstance = alarmMapping(alarm_mapping_cfg)
+    mappingInstance = AlarmMapping.alarmMapping(alarm_mapping_cfg)
 
     host = server_info.getProperty("host")
     username = server_info.getProperty("username")
@@ -81,8 +83,6 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
                         test_logger.failed(dict_ne_info["ne_type"] + ":" + alarm_type + " accuracy test failed," + "reason:alarm not received on GUI")
                 elif error_code < 0:
                     test_logger.failed(dict_ne_info["ne_type"] + ":" + alarm_type + " accuracy test failed, reason:sending alarm trap failed, the error msg is:" + alarm_from_ne["msg"])
-
-
 
             FmCommon.quitDriver(driver)
    
@@ -209,75 +209,4 @@ def alarm_converter(netype,nename,alarmtype,alarm_raw,mappingInstance):
                 test_logger.failed("get alarmDescription from trap Failed")
     return expected_alarm
 
-
-class alarmMapping():
-    def __init__(self,alarm_mapping_cfg):
-        if(not os.path.exists(alarm_mapping_cfg)):
-            test_logger.error("The alarm mapping cfg files: " + alarm_mapping_cfg + " not existed")
-
-        mapping_info = Properties(alarm_mapping_cfg)
-        self.dict_mapping_info = {}
-        for key in mapping_info.dict_info().keys():
-            self.dict_mapping_info[key] = mapping_info.getProperty(key)
-
-    def get_property(self,key):
-        if self.dict_mapping_info.has_key(key):
-            if type(self.dict_mapping_info[key]) is types.DictionaryType or type(self.dict_mapping_info[key])is types.ListType:
-                return self.dict_mapping_info[key]
-            elif type(self.dict_mapping_info[key]) is types.StringType:
-                value = []
-                value.append(self.dict_mapping_info[key])
-                return value
-        else:
-            test_logger.failed("key name: " + key + " can't be found in mapping.cfg")
-
-    def convert_alarm_severity(self,key):
-        if self.dict_mapping_info["alarm_severity"].has_key(str(key)):
-            return self.dict_mapping_info["alarm_severity"][str(key)]
-        else:
-            test_logger.failed("alarm_severity convert failed for " + str(key))
-            return None
-
-    def convert_alarmtype_id(self,key):
-        if self.dict_mapping_info["alarmtype_id"].has_key(key):
-            return self.dict_mapping_info["alarmtype_id"][key]
-        else:
-            test_logger.failed("alarmtype_id convert failed for " + key)
-            return None
-
-    def convert_event_type(self,key):
-        if self.dict_mapping_info["event_type"].has_key(str(key)):
-            return self.dict_mapping_info["event_type"][str(key)]
-        else:
-            test_logger.failed("event_type convert failed for alarm_category:" + str(key))
-            return None
-
-    def convert_alarmtype_cn(self,key):
-        if self.dict_mapping_info["alarmtype_cn"].has_key(key):
-            return self.dict_mapping_info["alarmtype_cn"][key]
-        else:
-            test_logger.failed("alarmtype_cn convert failed for " + key)
-
-    def convert_specific_problem(self,key):
-        if self.dict_mapping_info["specific_problem"].has_key(key):
-            return self.dict_mapping_info["specific_problem"][key]
-        else:
-            test_logger.failed("specific_problem convert failed for " + key)
-
-
-    def convert_probable_cause(self,key):
-        if self.dict_mapping_info["probable_cause"].has_key(key):
-            return self.dict_mapping_info["probable_cause"][key]
-        else:
-            test_logger.failed("probable_cause convert failed for " + key)
-            
-    def convert_object_instance(self,nodeid,nename):
-        if self.dict_mapping_info["object_class"] == 'ManagedElement':
-            dn = 'DC=Ericsson,SubNetwork=1,ManagedElement=' + str(nodeid) + '|' + nename
-        elif self.dict_mapping_info["object_class"] == 'ManagedNode':
-            dn = 'DC=Ericsson,SubNetwork=1,ManagedNode=1'
-        return dn
-    
-    def convert_event_time(self,timeStamp):
-        
 

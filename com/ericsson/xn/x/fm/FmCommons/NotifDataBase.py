@@ -6,7 +6,7 @@ Created on Mar 22, 2016
 
 import os
 from com.ericsson.xn.commons import test_logger as test
-from com.ericsson.xn.x.fm.FmCommons.GuiDataBase import alarmMapping
+from com.ericsson.xn.x.fm.FmCommons.AlarmMapping import alarmMapping
 
 class notifMapping(alarmMapping):
     
