@@ -13,7 +13,49 @@ from com.ericsson.xn.commons import test_logger as logCommon
 from com.ericsson.xn.commons.funcutils import find_single_widget, find_all_widgets
 import datetime as pydate
 import time
+from com.ericsson.xn.commons.PyProperties import Properties
 
+def data_init(ne_info_cfg,server_info_cfg):
+    server_info = Properties(server_info_cfg)
+    dict_browser_chrome = {
+        "browser_type": server_info.getProperty('browser_type'),
+        "browser_path": server_info.getProperty('browser_path'),
+        "driver_path": server_info.getProperty('driver_path')
+    }
+    
+    dict_server_info = {                
+    "host":server_info.getProperty("host"),
+    "username": server_info.getProperty("username"),
+    "password": server_info.getProperty("password"),
+    "port" : server_info.getProperty("port"),
+    "url" : server_info.getProperty("url"),
+    "preurl" : server_info.getProperty("preurl")
+    }
+    
+    ne_info = Properties(ne_info_cfg)
+    dict_ne_info  = {
+        "ne_name": ne_info.getProperty("ne_name"),
+        "ne_user": ne_info.getProperty("ne_user"),
+        "ne_type": ne_info.getProperty("ne_type"),
+        "ne_ip" : ne_info.getProperty("ne_ip"),
+        "ne_password" : ne_info.getProperty("ne_password"),
+        "pm_path": ne_info.getProperty("pm_path"),
+        "log_path": ne_info.getProperty("log_path"),
+        "alarm_path": ne_info.getProperty("alarm_path"),
+        "ne_port": ne_info.getProperty("ne_port"),
+        "sftp_port": ne_info.getProperty("sftp_port"),
+        "snmp_port": ne_info.getProperty("snmp_port"),
+        "usm_user": ne_info.getProperty("usm_user"),
+        "auth_password": ne_info.getProperty("auth_password"),
+        "priv_password": ne_info.getProperty("priv_password"),
+        "app_user": ne_info.getProperty("app_user"),
+        "app_password": ne_info.getProperty("app_password"),
+        "li_pwd": ne_info.getProperty("li_pwd"),
+        "fro_id": ne_info.getProperty("fro_id")
+    }
+
+    return dict_ne_info,dict_server_info,dict_browser_chrome
+    
 
 
 def toAlarmManagement(driver):
@@ -65,6 +107,13 @@ def fetch_alarm_on_gui(driver,mappingInstance,alarm_type):
         else:
             time.sleep(10)
     return None
+
+
+def query_alarm(driver):
+    search_btn = find_single_widget(driver, 10, (By.XPATH,"//button[@id='idBtn-search']"))
+    search_btn.click()
+
+
 def get_1st_row_on_gui(driver):
     table_i = (By.XPATH,"//div[@class='table']/div/div/table[@class='ebTable elWidgets-Table-body']")
     table=find_single_widget(driver,10,table_i)

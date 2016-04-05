@@ -8,6 +8,7 @@ Created on Mar 1, 2016
 
 
 from com.ericsson.xn.commons import test_logger
+import datetime,time
 from com.ericsson.xn.commons.PyProperties import Properties
 import os
 from com.ericsson.xn.commons import CommonStatic
@@ -16,6 +17,7 @@ from com.ericsson.xn.x.ne import NeCommon
 from com.ericsson.xn.commons import base_clint_for_selenium
 import re
 import types
+from com.ericsson.xn.x.fm.FmCommons import AlarmMapping
 
 def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
     
@@ -48,7 +50,7 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
         "fro_id": ne_info.getProperty("fro_id")
     }
 
-    mappingInstance = alarmMapping(alarm_mapping_cfg)
+    mappingInstance = AlarmMapping.alarmMapping(alarm_mapping_cfg)
 
     host = server_info.getProperty("host")
     username = server_info.getProperty("username")
@@ -72,7 +74,7 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
                 if error_code==1:
                     alarm_trap=alarm_from_ne["trap"]
                     test_logger.info("alarm sent successfully" + str(alarm_trap))
-                    alarm_expected=alarm_converter(ne_name,alarm_type,alarm_trap,mappingInstance)
+                    alarm_expected=alarm_converter(dict_ne_info["ne_type"],ne_name,alarm_type,alarm_trap,mappingInstance)
                     alarm_on_gui=FmCommon.fetch_alarm_on_gui(driver,mappingInstance,alarm_type)
                     if alarm_on_gui != None:
                         test_logger.info("start to check alarm type: " + dict_ne_info["ne_type"] + ":" + alarm_type)
@@ -81,8 +83,6 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
                         test_logger.failed(dict_ne_info["ne_type"] + ":" + alarm_type + " accuracy test failed," + "reason:alarm not received on GUI")
                 elif error_code < 0:
                     test_logger.failed(dict_ne_info["ne_type"] + ":" + alarm_type + " accuracy test failed, reason:sending alarm trap failed, the error msg is:" + alarm_from_ne["msg"])
-
-
 
             FmCommon.quitDriver(driver)
    
@@ -108,7 +108,7 @@ def alarm_compare(alarm_expected,alarm_on_gui):
             test_logger.failed("extra alarm counter " + name + " on GUI")
 
             
-def alarm_converter(nename,alarmtype,alarm_raw,mappingInstance):
+def alarm_converter(netype,nename,alarmtype,alarm_raw,mappingInstance):
     alarm_fields = mappingInstance.get_property("alarm_gui_name")
     expected_alarm = {}.fromkeys(alarm_fields)
     for key in expected_alarm.keys():
@@ -121,7 +121,7 @@ def alarm_converter(nename,alarmtype,alarm_raw,mappingInstance):
                 if(gui_severity):
                     expected_alarm["告警级别"]= gui_severity
             else:
-                test_logger.failed("The alarm severity can't be found on Node")
+                test_logger.failed("get alarmLevel from trap Failed")
         elif(key == "告警时间"):
             ne_event_time = alarm_raw["timeStamp"]
             if ne_event_time:
@@ -130,17 +130,31 @@ def alarm_converter(nename,alarmtype,alarm_raw,mappingInstance):
                 else:
                     test_logger.failed("Incorrect eventTime format on Node")
             else:
-                test_logger.failed("The eventTime can't be found on Node")
+                test_logger.failed("get timeStamp from trap Failed ")
         elif(key == "清除状态"):
             expected_alarm["清除状态"] = "未清除"
         elif(key == "确认状态"):
             expected_alarm["确认状态"] = "未确认"
         elif(key == "告警编号"):
-            gui_alarmtype_id = mappingInstance.convert_alarmtype_id(alarmtype)
-            if gui_alarmtype_id:
-                expected_alarm["告警编号"]=gui_alarmtype_id
+            if(netype == 'OCGAS'):
+                gui_alarmtype_id = mappingInstance.convert_alarmtype_id(alarmtype)
+            else:
+                ne_specificProblem = alarm_raw["specificProblem"]
+                if ne_specificProblem:
+                    gui_alarmtype_id = mappingInstance.convert_alarmtype_id(ne_specificProblem)
+                else:
+                    test_logger.failed("get specificProblem from trap Failed.")
+                if gui_alarmtype_id:
+                    expected_alarm["告警编号"]=gui_alarmtype_id
         elif(key == "告警名称"):
-            gui_alarmtype_cn = mappingInstance.convert_alarmtype_cn(alarmtype)
+            if(netype == 'OCGAS'):
+                gui_alarmtype_cn = mappingInstance.convert_alarmtype_cn(alarmtype)
+            else:
+                ne_specificProblem = alarm_raw["specificProblem"]
+                if ne_specificProblem:
+                    gui_alarmtype_cn = mappingInstance.convert_alarmtype_cn(ne_specificProblem)
+                else:
+                    test_logger.failed("get specificProblem from Trap Failed.")
             if gui_alarmtype_cn:
                 expected_alarm["告警名称"] = gui_alarmtype_cn
         elif(key == "定位信息"):
@@ -158,11 +172,25 @@ def alarm_converter(nename,alarmtype,alarm_raw,mappingInstance):
         elif(key == "确认用户"):
             expected_alarm["确认用户"] = ""
         elif(key == "问题描述"):
-            specific_problem = mappingInstance.convert_specific_problem(alarmtype)
+            if (netype == 'OCGAS'):
+                specific_problem = mappingInstance.convert_specific_problem(alarmtype)
+            else:
+                ne_specificProblem = alarm_raw["specificProblem"]
+                if ne_specificProblem:
+                    specific_problem = mappingInstance.convert_specific_problem(ne_specificProblem)
+                else:
+                    test_logger.failed("get specificProblem from trap Failed")
             if specific_problem:
                 expected_alarm["问题描述"] = specific_problem
         elif(key == "可能原因"):
-            probable_cause = mappingInstance.convert_probable_cause(alarmtype)
+            if(netype == 'OCGAS'):
+                probable_cause = mappingInstance.convert_probable_cause(alarmtype)
+            else:
+                ne_probableCause = alarm_raw["probableCause"]
+                if ne_probableCause:
+                    probable_cause = mappingInstance.convert_probable_cause(ne_probableCause)
+                else:
+                    test_logger.failed("get probableCause from trap Failed")
             if probable_cause:
                 expected_alarm["可能原因"] = probable_cause
         elif(key == "告警类型"):
@@ -172,85 +200,13 @@ def alarm_converter(nename,alarmtype,alarm_raw,mappingInstance):
                 if gui_event_type:
                     expected_alarm["告警类型"] = gui_event_type
             else:
-                test_logger.failed("The eventType can't be found on Node")
+                test_logger.failed("get alarmCategory from trap Failed")
         elif(key == "补充信息"):
             additionInfo = alarm_raw["alarmDescription"]
             if additionInfo:
                 expected_alarm["补充信息"] = additionInfo
             else:
-                test_logger.failed("The additionalText can't be found on Node")
+                test_logger.failed("get alarmDescription from trap Failed")
     return expected_alarm
-
-
-class alarmMapping():
-    def __init__(self,alarm_mapping_cfg):
-        if(not os.path.exists(alarm_mapping_cfg)):
-            test_logger.error("The alarm mapping cfg files: " + alarm_mapping_cfg + " not existed")
-
-        mapping_info = Properties(alarm_mapping_cfg)
-        self.dict_mapping_info = {
-        "alarm_types": mapping_info.getProperty("alarm_types"),
-        "alarm_gui_name":mapping_info.getProperty("alarm_gui_name"),
-        "alarm_severity": mapping_info.getProperty("alarm_severity"),
-        "event_type": mapping_info.getProperty("event_type"),
-        "alarmtype_cn": mapping_info.getProperty("alarmtype_cn"),
-        "alarmtype_id": mapping_info.getProperty("alarmtype_id"),
-        "specific_problem": mapping_info.getProperty("specific_problem"),
-        "probable_cause": mapping_info.getProperty("probable_cause")
-    }
-
-    def get_property(self,key):
-        if self.dict_mapping_info.has_key(key):
-            if type(self.dict_mapping_info[key]) is types.DictionaryType or type(self.dict_mapping_info[key])is types.ListType:
-                return self.dict_mapping_info[key]
-            elif type(self.dict_mapping_info[key]) is types.StringType:
-                value = []
-                value.append(self.dict_mapping_info[key])
-                return value
-        else:
-            test_logger.failed("key name: " + key + " can't be found in mapping.cfg")
-
-    def convert_alarm_severity(self,severity):
-        if self.dict_mapping_info["alarm_severity"].has_key(str(severity)):
-            return self.dict_mapping_info["alarm_severity"][str(severity)]
-        else:
-            test_logger.failed("alarm_severity convert failed for " + str(severity))
-            return None
-
-    def convert_alarmtype_id(self,alarm_type):
-        if self.dict_mapping_info["alarmtype_id"].has_key(alarm_type):
-            return self.dict_mapping_info["alarmtype_id"][alarm_type]
-        else:
-            test_logger.failed("alarmtype_id convert failed for " + alarm_type)
-            return None
-
-    def convert_event_type(self,alarm_category):
-        if self.dict_mapping_info["event_type"].has_key(str(alarm_category)):
-            return self.dict_mapping_info["event_type"][str(alarm_category)]
-        else:
-            test_logger.failed("event_type convert failed for alarm_category:" + str(alarm_category))
-            return None
-
-    def convert_alarmtype_cn(self,alarm_type):
-        if self.dict_mapping_info["alarmtype_cn"].has_key(alarm_type):
-            return self.dict_mapping_info["alarmtype_cn"][alarm_type]
-        else:
-            test_logger.failed("alarmtype_cn convert failed for " + alarm_type)
-
-    def convert_specific_problem(self,alarm_type):
-        if self.dict_mapping_info["specific_problem"].has_key(alarm_type):
-            return self.dict_mapping_info["specific_problem"][alarm_type]
-        else:
-            test_logger.failed("specific_problem convert failed for " + alarm_type)
-
-
-    def convert_probable_cause(self,probable_cause):
-        if self.dict_mapping_info["probable_cause"].has_key(probable_cause):
-            return self.dict_mapping_info["probable_cause"][probable_cause]
-        else:
-            test_logger.failed("probable_cause convert failed for " + probable_cause)
-
-
-
 
 
