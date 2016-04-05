@@ -63,7 +63,7 @@ class Properties():
                     
 
 class TrimableProps:
-    def __init__(self, prop_file, is_strip=False, str_split='='):
+    def __init__(self, prop_file, is_strip=True, str_split='='):
         self.path = os.path.normpath(prop_file)
         if not os.path.isfile(self.path):
             raise IOError("The path that you specified is not a file.")
@@ -81,13 +81,13 @@ class TrimableProps:
                             self.mappings[key_value[0]] = key_value[1]
             self.file.close()
 
-    def get_property(self, key):
+    def getProperty(self, key):
         if self.mappings.has_key(key):
             return self.mappings[key]
         else:
             return None
 
-    def set_property(self, key, value):
+    def setProperty(self, key, value):
         if self.mappings.has_key(key):
             self.mappings[key] = value
 
@@ -104,4 +104,7 @@ class TrimableProps:
             f.close()
 
     def get_map(self):
-        return self.mappings        
+        return self.mappings
+
+    def dict_info(self):
+        return self.mappings
