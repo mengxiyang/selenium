@@ -31,7 +31,7 @@ BaseManager.register('send_trap_nbi')
 
 
 def send_trap_nbi(ip, port, passwd, ne_type, alarm, host,
-                  auth_info=None, nbi_raw='/Users/lowitty/temp/x.txt', t_port=None):
+                  auth_info=None, nbi_raw='/opt/LINBI/TestTool_CMCC_N13A/bin/raw_catch.log', t_port=None):
     mgr = start_session(ip, port, passwd)
     return mgr.send_trap_nbi(ne_type, alarm, host, auth_info, nbi_raw, t_port)._getvalue()
 
