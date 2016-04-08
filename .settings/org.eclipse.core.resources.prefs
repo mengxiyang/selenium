@@ -1,6 +1,7 @@
 eclipse.preferences.version=1
 encoding//com/ericsson/xn/commons/CommonStatic.py=utf-8
 encoding//com/ericsson/xn/commons/PyProperties.py=utf-8
+encoding//com/ericsson/xn/commons/base_clint_for_selenium.py=utf-8
 encoding//com/ericsson/xn/commons/test_logger.py=utf-8
 encoding//com/ericsson/xn/x/fm/FmCommons/FmCommon.py=utf-8
 encoding//com/ericsson/xn/x/fm/FmCommons/GuiDataFunc.py=UTF-8

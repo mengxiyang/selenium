@@ -22,9 +22,9 @@ def server_time(ip, port, passwd):
 BaseManager.register('send_trap')
 
 
-def send_trap(ip, port, passwd, ne_type, alarm, target_ip, trap_port=None):
+def send_trap(ip, port, passwd, ne_type, alarm, target_ip,auth_info=None, trap_port=None):
     mgr = start_session(ip, port, passwd)
-    return mgr.send_trap(ne_type, alarm, target_ip, trap_port)._getvalue()
+    return mgr.send_trap(ne_type, alarm, target_ip,auth_info, trap_port)._getvalue()
 
 
 BaseManager.register('send_trap_nbi')
@@ -46,7 +46,7 @@ def close_session(mgr):
     pass
 
 # print datetime.now().strftime('%H:%M:%S:%f')
-# print send_trap('10.184.74.67', 7070, 'xoambaseserver', 'OCGAS', 'monitorTargetExceedThreshold', '127.0.0.1')
+#print send_trap('10.184.74.67', 7070,'xoambaseserver', 'OCGAS', 'monitorTargetsExceedThreshold', '10.184.74.68', [])
 # print datetime.now().strftime('%H:%M:%S:%f')
 '''
 from datetime import datetime

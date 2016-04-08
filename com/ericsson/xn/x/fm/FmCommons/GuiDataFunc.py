@@ -18,6 +18,7 @@ from com.ericsson.xn.commons import base_clint_for_selenium
 import re
 import types
 from com.ericsson.xn.x.fm.FmCommons import AlarmMapping
+from selenium.common.exceptions import TimeoutException
 
 def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
     
@@ -66,16 +67,30 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
             ne_name = new_ne_info["ne_name"]
             FmCommon.toAlarmManagement_by_url(driver,server_info)
             FmCommon.init_and_search(driver,ne_name)
-            alarm_type_list= mappingInstance.get_property("alarm_types")
+
+            alarmtypes = mappingInstance.dict_mapping_info["alarm_types"]
+            alarm_type_list = []
+            if type(alarmtypes) is types.StringType:
+                alarm_type_list.append(alarmtypes)
+            else:
+                alarm_type_list = alarmtypes
+            if dict_ne_info["ne_type"] == "LTEHSS" or dict_ne_info["ne_type"] == "IMSHSS":
+                snmp_auth_info = []
+                snmp_auth_info.append(dict_ne_info["usm_user"])
+                snmp_auth_info.append(dict_ne_info["auth_password"])
+                snmp_auth_info.append(dict_ne_info["priv_password"])
+            else:
+                snmp_auth_info = None
+
             for alarm_type in alarm_type_list:
                 test_logger.info("send alarm trap: " + dict_ne_info["ne_type"] + ":" + alarm_type + "...")
-                alarm_from_ne = base_clint_for_selenium.send_trap(dict_ne_info["ne_ip"], 7070, 'xoambaseserver',dict_ne_info["ne_type"],alarm_type,host)
+                alarm_from_ne = base_clint_for_selenium.send_trap(dict_ne_info["ne_ip"], 7070, 'xoambaseserver',dict_ne_info["ne_type"],alarm_type,host,snmp_auth_info)
                 error_code = int(alarm_from_ne["code"])
                 if error_code==1:
                     alarm_trap=alarm_from_ne["trap"]
                     test_logger.info("alarm sent successfully" + str(alarm_trap))
                     alarm_expected=alarm_converter(dict_ne_info["ne_type"],ne_name,alarm_type,alarm_trap,mappingInstance)
-                    alarm_on_gui=FmCommon.fetch_alarm_on_gui(driver,mappingInstance,alarm_type)
+                    alarm_on_gui=FmCommon.fetch_alarm_on_gui(driver,dict_ne_info["ne_type"],alarm_trap,mappingInstance,alarm_type)
                     if alarm_on_gui != None:
                         test_logger.info("start to check alarm type: " + dict_ne_info["ne_type"] + ":" + alarm_type)
                         alarm_compare(alarm_expected,alarm_on_gui)
@@ -85,10 +100,10 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
                     test_logger.failed(dict_ne_info["ne_type"] + ":" + alarm_type + " accuracy test failed, reason:sending alarm trap failed, the error msg is:" + alarm_from_ne["msg"])
 
             FmCommon.quitDriver(driver)
-   
         except Exception as e:
             FmCommon.quitDriver(driver)
-            test_logger.error(e.message)
+            test_logger.error(str(e))
+
 
 
 
@@ -125,8 +140,8 @@ def alarm_converter(netype,nename,alarmtype,alarm_raw,mappingInstance):
         elif(key == "告警时间"):
             ne_event_time = alarm_raw["timeStamp"]
             if ne_event_time:
-                if (re.findall(r"\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}",ne_event_time)[0]!= None):
-                    expected_alarm["告警时间"] = ne_event_time + ".0"
+                if (re.findall(r"\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}.\d{1}",ne_event_time)[0]!= None):
+                    expected_alarm["告警时间"] = ne_event_time
                 else:
                     test_logger.failed("Incorrect eventTime format on Node")
             else:
@@ -144,8 +159,8 @@ def alarm_converter(netype,nename,alarmtype,alarm_raw,mappingInstance):
                     gui_alarmtype_id = mappingInstance.convert_alarmtype_id(ne_specificProblem)
                 else:
                     test_logger.failed("get specificProblem from trap Failed.")
-                if gui_alarmtype_id:
-                    expected_alarm["告警编号"]=gui_alarmtype_id
+            if gui_alarmtype_id:
+                expected_alarm["告警编号"]=gui_alarmtype_id
         elif(key == "告警名称"):
             if(netype == 'OCGAS'):
                 gui_alarmtype_cn = mappingInstance.convert_alarmtype_cn(alarmtype)
@@ -177,7 +192,7 @@ def alarm_converter(netype,nename,alarmtype,alarm_raw,mappingInstance):
             else:
                 ne_specificProblem = alarm_raw["specificProblem"]
                 if ne_specificProblem:
-                    specific_problem = mappingInstance.convert_specific_problem(ne_specificProblem)
+                    specific_problem = ne_specificProblem
                 else:
                     test_logger.failed("get specificProblem from trap Failed")
             if specific_problem:

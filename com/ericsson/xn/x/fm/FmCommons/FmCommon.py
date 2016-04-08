@@ -90,18 +90,23 @@ def send_an_alarm(host,ne_type,alarm_type):
     return {"alarmLevel":2,"timeStamp":"2016-03-04 16:18:58","alarmSource":"licId01","alarmCategory":3,"alarmDescription":"Cannot connect to X2 remote address. remote ip [192.168.20.10] port [7790]. errno [67] error description [Address already in use]"}
 
 
-def fetch_alarm_on_gui(driver,mappingInstance,alarm_type):
+def fetch_alarm_on_gui(driver,ne_type,alarm_trap,mappingInstance,alarm_type):
     nowtime=pydate.datetime.now()
     endtime=nowtime + pydate.timedelta(seconds=30)
     id_button=(By.XPATH,"//button[@id='idBtn-search']")
     search_button=find_single_widget(driver,10,id_button)
     while(pydate.datetime.now()< endtime):
         search_button.click()
-        alarm_data=get_1st_row_on_gui(driver)
-        specific_problem=mappingInstance.get_property("specific_problem")[alarm_type]
+        try:
+            alarm_data=get_1st_row_on_gui(driver)
+        except TimeoutException:
+            continue
+
+        if ne_type == 'OCGAS':
+            specific_problem = mappingInstance.get_property("specific_problem")[alarm_type]
+        else:
+            specific_problem = alarm_trap["specificProblem"]
         if(specific_problem == alarm_data["问题描述"]):
-            first_row_i = (By.XPATH,"//div[@class='table']/div/div/table[@class='ebTable elWidgets-Table-body']/tbody/tr[1]")
-            find_single_widget(driver,10,first_row_i).click()
             logCommon.info("alarm received on GUI:" + alarm_type)
             return alarm_data
         else:
@@ -122,6 +127,7 @@ def get_1st_row_on_gui(driver):
     column_name = find_all_widgets(table,10,name_i)
 
     value_i = (By.XPATH,"./tbody/tr[1]/td")
+    find_single_widget(table,10,value_i).click()
     column_value = find_all_widgets(table,10,value_i)
 
     name_list=[]
@@ -144,7 +150,6 @@ def get_1st_row_on_gui(driver):
     del alarm_gui["告警代码"]
     del alarm_gui["类型代码"]
     del alarm_gui["类型编号"]
-
     return alarm_gui
 
 
