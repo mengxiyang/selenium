@@ -73,7 +73,7 @@ def check_common_accuracy(attr_name,dict_nbi_notif,expected_value):
         test.failed("get '" + attr_name + "' from nbi notification Failed")
 
 
-def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,attrs,mysqlInst):
+def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,attrs,server_info):
     for a in attrs:
         expected_value = {}
         notif_value = {}
@@ -176,8 +176,9 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
                 notif_id = dict_nbi_notif["a"]["value"]["CORBA::LongLong"]
                 test.info("check 'notificationId',the nbi notification result is " + str(notif_value) )
                 sqltext = ('SELECT notificationId from alarms where notificationId = "%s"'%notif_id)
-                is_unique=check_unique_id(sqltext,mysqlInst)
-                if is_unique == 0:
+                #is_unique=check_unique_id(sqltext,mysqlInst)
+                is_unique = base_clint_for_selenium.is_notification_id_unic(server_info["host"],7070,'xoambaseserver',notif_id)
+                if is_unique == False:
                     test.failed("the notificationId of " + notif_id + " not existed in database")
                 elif is_unique == 1:
                     test.passed("the notificationId of " + notif_id + " is unique in database")
@@ -255,7 +256,8 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
                 notif_value["f"] = dict_nbi_notif["f"]
                 alarm_id = notif_value["f"]["value"]["CORBA::String"]
                 sqltext = ("SELECT id from alarms where id = %s"%alarm_id)
-                is_unique=check_unique_id(sqltext,mysqlInst)
+                #is_unique=check_unique_id(sqltext,mysqlInst)
+                is_unique = base_clint_for_selenium.is_alarm_id_unic(server_info["host"],7070,'xoambaseserver',alarm_id)
                 if is_unique == 0:
                     test.failed("alarmId of " + alarm_id + " not existed in database")
                 elif is_unique == 1:
@@ -282,7 +284,8 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
 
             mappingInstance = AlarmMapping.alarmMapping(mapping_info_cfg)
             mysqlInst.newConnection(dict_server_info["host"],'root','root','xoam')
-            nodeid = get_nodeid_by_nename(ne_name,mysqlInst)
+            #nodeid = get_nodeid_by_nename(ne_name,mysqlInst)
+            nodeid = base_clint_for_selenium.get_nodeid_by_nename(server_info["host"],7070,'xoambaseserver',ne_name)
             if dict_ne_info["ne_type"] == "LTEHSS" or dict_ne_info["ne_type"] == "IMSHSS":
                 snmp_auth_info = []
                 snmp_auth_info.append(dict_ne_info["usm_user"])
@@ -314,7 +317,7 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
                         attr_list.append(check_notif_items)
                     else:
                         attr_list = check_notif_items
-                    check_attr_accuracy(mappingInstance,alarm_trap,nbi_notif,ne_name,nodeid,attr_list,mysqlInst)
+                    check_attr_accuracy(mappingInstance,alarm_trap,nbi_notif,ne_name,nodeid,attr_list,server_info)
                 else:
                     test.failed(dict_ne_info["ne_type"] + ":" + alarm_type + " accuracy test failed, reason:sending alarm trap failed, the error msg is:" + alarm_raw["msg"])
             mysqlInst.closeConnection()
