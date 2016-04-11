@@ -36,7 +36,7 @@ def send_trap_nbi(ip, port, passwd, ne_type, alarm, host,
     return mgr.send_trap_nbi(ne_type, alarm, host, auth_info, nbi_raw, t_port)._getvalue()
 
 
-BaseManager.register('')
+BaseManager.register('get_nodeid_by_nename')
 
 
 def get_nodeid_by_nename(ip, port, password, ne_name):
