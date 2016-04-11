@@ -45,7 +45,9 @@ def check_and_add_ne(driver, dict_ne_info):
     elif 1 == ne_exist:
         dict_ne_info["ne_name"] = ne_name
     elif 1 > ne_exist:
-        dict_ne_info["ne_name"] = add_new_ne(driver, dict_ne_info)
+        ne_name = add_new_ne(driver, dict_ne_info)
+        dict_ne_info["ne_name"] = ne_name
+
     refresh_ne_management_page(driver)
     test.info("NE:" + ne_name + " added successfully")
     return dict_ne_info

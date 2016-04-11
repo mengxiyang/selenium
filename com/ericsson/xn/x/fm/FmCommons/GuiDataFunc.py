@@ -66,6 +66,7 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
             new_ne_info=NeCommon.check_and_add_ne(driver, dict_ne_info)
             ne_name = new_ne_info["ne_name"]
             FmCommon.toAlarmManagement_by_url(driver,server_info)
+            time.sleep(10)
             FmCommon.init_and_search(driver,ne_name)
 
             alarmtypes = mappingInstance.dict_mapping_info["alarm_types"]

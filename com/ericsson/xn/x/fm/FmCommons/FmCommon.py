@@ -100,6 +100,7 @@ def fetch_alarm_on_gui(driver,ne_type,alarm_trap,mappingInstance,alarm_type):
         try:
             alarm_data=get_1st_row_on_gui(driver)
         except TimeoutException:
+            time.sleep(5)
             continue
 
         if ne_type == 'OCGAS':

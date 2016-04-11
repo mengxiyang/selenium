@@ -28,9 +28,9 @@ def compare_data(notif_ne,expected_result):
         if notif_ne.has_key(key):
             if type(value) is not types.DictType:
                 if notif_ne[key] ==  value:
-                    test.passed(key + " accuracy test Passed. The NBI notification value is " + notif_ne[key] + ", and the expected result is " + value)
+                    test.passed(key + " accuracy test Passed. The NBI notification value is " + notif_ne[key] + ", and the expected result is " + str(value))
                 else:
-                    test.failed(key + " accuracy test Failed. The NBI notification value is " + notif_ne[key] + ", and the expected result is " + value)
+                    test.failed(key + " accuracy test Failed. The NBI notification value is " + notif_ne[key] + ", and the expected result is " + str(value))
             else:
                 expected_result = value
                 notif_ne = notif_ne[key]
@@ -124,7 +124,7 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
                 notif_value["b"] = dict_nbi_notif["b"]
                 mapped_event_time = mappingInstance.convert_event_time(alarm_trap["timeStamp"])
                 if mapped_event_time!= None:
-                    expected_value = {'b':{'value':{'TimeBase::UtcT':{'none':{'time':mapped_event_time,'inacclo':0,'inacchi':0,'tdf':480}}}}}
+                    expected_value = {'b':{'value':{'TimeBase::UtcT':{'none':{'time':mapped_event_time,'inacclo':'0','inacchi':'0','tdf':'480'}}}}}
                     test.info("check 'eventTime',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
                     compare_data(notif_value, expected_value)
             else:
@@ -320,6 +320,7 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
             mysqlInst.closeConnection()
 
         except Exception as e:
+
             mysqlInst.closeConnection()
             test.error(e.message)
 

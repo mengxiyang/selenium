@@ -14,7 +14,7 @@ ne_info_cfg = root_dir + "x" + os.sep + "pm" + os.sep + "nes" + os.sep + "ltehss
 alarm_mapping_cfg = root_dir + "x" + os.sep + "fm" + os.sep + "gui_mapping" + os.sep + "hss.cfg"
 
 def check_ltehss_alarm_accuracy():
-    pre_test_case("check_ltehss_accuracy_case","gui_fm_accuracy")
+    pre_test_case("check_ltehss_gui_accuracy_case","gui_fm_accuracy")
     check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg)
     post_test_case()
     

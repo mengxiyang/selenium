@@ -13,7 +13,8 @@ class PyMysql:
             test.info(e.msg)
 
     def closeConnection(self):
-        self.conn.close()
+        if self.conn != None:
+            self.conn.close()
 
     def query(self,sqltext,mode="one"):
         if self.conn == None:
