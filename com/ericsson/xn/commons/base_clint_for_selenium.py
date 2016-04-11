@@ -36,6 +36,30 @@ def send_trap_nbi(ip, port, passwd, ne_type, alarm, host,
     return mgr.send_trap_nbi(ne_type, alarm, host, auth_info, nbi_raw, t_port)._getvalue()
 
 
+BaseManager.register('')
+
+
+def get_nodeid_by_nename(ip, port, password, ne_name):
+    mgr = start_session(ip, port, password)
+    return mgr.get_nodeid_by_nename(ne_name)._getvalue()
+
+
+BaseManager.register('is_alarm_id_unic')
+
+
+def is_alarm_id_unic(ip, port, password, id):
+    mgr = start_session(ip, port, password)
+    return mgr.is_alarm_id_unic(id)._getvalue()
+
+
+BaseManager.register('is_notification_id_unic')
+
+
+def is_notification_id_unic(ip, port, password, id):
+    mgr = start_session(ip, port, password)
+    return mgr.is_notification_id_unic(id)._getvalue()
+
+
 def start_session(ip, port, passwd):
     mgr = BaseManager(address=(ip, port), authkey=passwd)
     mgr.connect()
