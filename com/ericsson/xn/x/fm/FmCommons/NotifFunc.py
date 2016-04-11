@@ -16,6 +16,7 @@ from com.ericsson.xn.commons.caseutils import pre_test_case, post_test_case
 import types,os
 from com.ericsson.xn.commons import PyMysql
 from com.ericsson.xn.commons import base_clint_for_selenium
+from selenium.common.exceptions import TimeoutException
 
 root_dir = os.path.normpath(os.path.dirname(os.path.abspath(__file__))).split('com' + os.sep + 'ericsson' + os.sep + 'xn' + os.sep + 'x' + os.sep + 'fm' + os.sep + 'FmCommons')[0]
 notify_mapping_cfg = root_dir + os.sep + 'x' + os.sep + 'fm' + os.sep + 'nbi_mapping' + os.sep + 'hss_new_alarm.cfg'
@@ -175,10 +176,10 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
                 '''X use CORBA:LongLong although CORBA::Long is required in spec'''
                 notif_id = dict_nbi_notif["a"]["value"]["CORBA::LongLong"]
                 test.info("check 'notificationId',the nbi notification result is " + str(notif_value) )
-                sqltext = ('SELECT notificationId from alarms where notificationId = "%s"'%notif_id)
+                #sqltext = ('SELECT notificationId from alarms where notificationId = "%s"'%notif_id)
                 #is_unique=check_unique_id(sqltext,mysqlInst)
                 is_unique = base_clint_for_selenium.is_notification_id_unic(server_info["host"],7070,'xoambaseserver',notif_id)
-                if is_unique == False:
+                if is_unique == 0:
                     test.failed("the notificationId of " + notif_id + " not existed in database")
                 elif is_unique == 1:
                     test.passed("the notificationId of " + notif_id + " is unique in database")
@@ -255,7 +256,7 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
             if dict_nbi_notif.has_key("f"):
                 notif_value["f"] = dict_nbi_notif["f"]
                 alarm_id = notif_value["f"]["value"]["CORBA::String"]
-                sqltext = ("SELECT id from alarms where id = %s"%alarm_id)
+                #sqltext = ("SELECT id from alarms where id = %s"%alarm_id)
                 #is_unique=check_unique_id(sqltext,mysqlInst)
                 is_unique = base_clint_for_selenium.is_alarm_id_unic(server_info["host"],7070,'xoambaseserver',alarm_id)
                 if is_unique == 0:
@@ -272,10 +273,9 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
 def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
     dict_ne_info,dict_server_info,dict_browser_chrome = data_init(ne_info_cfg,server_info_cfg)
     server_info = Properties(server_info_cfg)
-    mysqlInst = PyMysql.PyMysql()
     driver = CommonStatic.login_rsnms(dict_browser_chrome,dict_server_info["host"],dict_server_info["username"],dict_server_info["password"],dict_server_info["port"],dict_server_info["url"])
     if driver:
-        try:
+        
             NeCommon.to_ne_management_page_by_url(driver,server_info)
             new_ne_info=NeCommon.check_and_add_ne(driver,dict_ne_info)
             ne_name = new_ne_info["ne_name"]
@@ -283,9 +283,12 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
             quitDriver(driver)
 
             mappingInstance = AlarmMapping.alarmMapping(mapping_info_cfg)
-            mysqlInst.newConnection(dict_server_info["host"],'root','root','xoam')
             #nodeid = get_nodeid_by_nename(ne_name,mysqlInst)
+
             nodeid = base_clint_for_selenium.get_nodeid_by_nename(server_info["host"],7070,'xoambaseserver',ne_name)
+            if nodeid == False:
+                test.error("Database connection Failure")
+                
             if dict_ne_info["ne_type"] == "LTEHSS" or dict_ne_info["ne_type"] == "IMSHSS":
                 snmp_auth_info = []
                 snmp_auth_info.append(dict_ne_info["usm_user"])
@@ -320,18 +323,19 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
                     check_attr_accuracy(mappingInstance,alarm_trap,nbi_notif,ne_name,nodeid,attr_list,server_info)
                 else:
                     test.failed(dict_ne_info["ne_type"] + ":" + alarm_type + " accuracy test failed, reason:sending alarm trap failed, the error msg is:" + alarm_raw["msg"])
-            mysqlInst.closeConnection()
-
+'''          
+        except TimeoutException:
+            test.error("find widget timeout")
         except Exception as e:
-
-            mysqlInst.closeConnection()
             test.error(e.message)
+        '''
 
-
+'''
 if __name__ == '__main__':
     pre_test_case("check_hss_nbi_notif_accuracy_case","notify_accuracy")
     check_notify_accuracy(ne_info_cfg,server_info_cfg,notify_mapping_cfg)
     post_test_case()
+'''
 
 
 
