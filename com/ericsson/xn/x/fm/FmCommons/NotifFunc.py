@@ -15,11 +15,12 @@ from libs.mysql import connector
 from com.ericsson.xn.commons.caseutils import pre_test_case, post_test_case
 import types,os
 from com.ericsson.xn.commons import PyMysql
+from com.ericsson.xn.commons import base_clint_for_selenium
 
 root_dir = os.path.normpath(os.path.dirname(os.path.abspath(__file__))).split('com' + os.sep + 'ericsson' + os.sep + 'xn' + os.sep + 'x' + os.sep + 'fm' + os.sep + 'FmCommons')[0]
 notify_mapping_cfg = root_dir + os.sep + 'x' + os.sep + 'fm' + os.sep + 'nbi_mapping' + os.sep + 'hss_new_alarm.cfg'
 server_info_cfg = root_dir + os.sep + 'x' + os.sep + 'pm' + os.sep + 'execute_conf.cfg'
-ne_info_cfg = root_dir + os.sep + 'x' + os.sep + 'pm' + os.sep + 'nes' + os.sep + 'imshss.cfg'
+ne_info_cfg = root_dir + os.sep + 'x' + os.sep + 'pm' + os.sep + 'nes' + os.sep + 'ltehss.cfg'
 
 
 def compare_data(notif_ne,expected_result):
@@ -27,9 +28,9 @@ def compare_data(notif_ne,expected_result):
         if notif_ne.has_key(key):
             if type(value) is not types.DictType:
                 if notif_ne[key] ==  value:
-                    test.passed(key + " accuracy test Passed. The NBI notification value is " + notif_ne[key] + ", and the expected result is " + value)
+                    test.passed(key + " accuracy test Passed. The NBI notification value is " + notif_ne[key] + ", and the expected result is " + str(value))
                 else:
-                    test.failed(key + " accuracy test Failed. The NBI notification value is " + notif_ne[key] + ", and the expected result is " + value)
+                    test.failed(key + " accuracy test Failed. The NBI notification value is " + notif_ne[key] + ", and the expected result is " + str(value))
             else:
                 expected_result = value
                 notif_ne = notif_ne[key]
@@ -47,12 +48,12 @@ def compare_data(notif_ne,expected_result):
 def get_nodeid_by_nename(nename,mysqlInst):
         sql = ('SELECT nodeId from neconfig where neid in (SELECT neid from nes where nename = "%s")'%nename)
         rowcount,dataset = mysqlInst.query(sql)
-        if rowcount == 0:
+        if dataset[0] == None:
             sql = ('UPDATE neconfig set nodeId = "%s" where neid in (SELECT neid from nes where nename = "%s")'%(nename,nename))
             mysqlInst.execute(sql)
             nodeId=nename
         else:
-            nodeId=dataset[0].encode('utf-8')
+            nodeId = dataset[0]
         return nodeId
 
 def check_unique_id(sqltext,mysqlnst):
@@ -80,9 +81,10 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
             if dict_nbi_notif.has_key('event_name'):
                 notif_value['event_name'] = dict_nbi_notif['event_name']
                 mapped_event_name = mappingInstance.convert_event_type(alarm_trap['alarmCategory'])
-                expected_value['event_name'] = '"' + mapped_event_name + '"'
-                test.info("check 'event_name',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
-                compare_data(notif_value,expected_value)
+                if mapped_event_name != None:
+                    expected_value['event_name'] = '"' + mapped_event_name + '"'
+                    test.info("check 'event_name',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
+                    compare_data(notif_value,expected_value)
             else:
                 test.failed("get 'event_name' from nbi notification Failed")
 
@@ -110,9 +112,10 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
             if dict_nbi_notif.has_key("e"):
                 notif_value['e'] = dict_nbi_notif["e"]
                 dn = mappingInstance.convert_object_instance(nodeid,nename)
-                expected_value = {'e':{'value':{'CORBA::String':'"' + dn + '"'}}}
-                test.info("check 'objectInstance',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
-                compare_data(notif_value,expected_value)
+                if dn != None:
+                    expected_value = {'e':{'value':{'CORBA::String':'"' + dn + '"'}}}
+                    test.info("check 'objectInstance',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
+                    compare_data(notif_value,expected_value)
             else:
                 test.failed("get 'e' from nbi notification Failed")
             
@@ -120,9 +123,10 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
             if dict_nbi_notif.has_key("b"):
                 notif_value["b"] = dict_nbi_notif["b"]
                 mapped_event_time = mappingInstance.convert_event_time(alarm_trap["timeStamp"])
-                expected_value = {'b':{'value':{'TimeBase::UtcT':{'none':{'time':mapped_event_time,'inacclo':0,'inacchi':0,'tdf':480}}}}}
-                test.info("check 'eventTime',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
-                compare_data(notif_value, expected_value)   
+                if mapped_event_time!= None:
+                    expected_value = {'b':{'value':{'TimeBase::UtcT':{'none':{'time':mapped_event_time,'inacclo':'0','inacchi':'0','tdf':'480'}}}}}
+                    test.info("check 'eventTime',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
+                    compare_data(notif_value, expected_value)
             else:
                 test.failed("get 'b' from nbi notification Failed")
            
@@ -135,10 +139,11 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
                 notif_value["jj"] = dict_nbi_notif["jj"]
                 specific_problem = alarm_trap["specificProblem"]
                 alarmtypeid = mappingInstance.convert_alarmtype_id(specific_problem)
-                mapped_vender_specificAlarmType = '"' + alarmtypeid + "||" + specific_problem + '"'
-                expected_value = {'jj':{'value':{'CORBA::String':mapped_vender_specificAlarmType}}}
-                test.info("check 'vendorSpecificAlarmType',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
-                compare_data(notif_value,expected_value)
+                if alarmtypeid != None:
+                    mapped_vender_specificAlarmType = '"' + alarmtypeid + "||" + specific_problem + '"'
+                    expected_value = {'jj':{'value':{'CORBA::String':mapped_vender_specificAlarmType}}}
+                    test.info("check 'vendorSpecificAlarmType',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
+                    compare_data(notif_value,expected_value)
             else:
                 test.failed("get 'jj' from nbi notification Failed")
                 
@@ -146,9 +151,10 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
             if dict_nbi_notif.has_key("g"):
                 notif_value["g"] = dict_nbi_notif["g"]
                 mapped_probable_cause = mappingInstance.convert_probable_cause(alarm_trap["probableCause"])
-                expected_value = {'g':{'value':{'CORBA::Short':mapped_probable_cause}}}
-                test.info("check 'probableCause',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
-                compare_data(notif_value, expected_value)
+                if mapped_probable_cause != None:
+                    expected_value = {'g':{'value':{'CORBA::Short':mapped_probable_cause}}}
+                    test.info("check 'probableCause',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
+                    compare_data(notif_value, expected_value)
             else:
                 test.failed("get 'g' from nbi notification Failed")
         
@@ -156,19 +162,20 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
             if dict_nbi_notif.has_key("h"):
                 notif_value['h'] = dict_nbi_notif['h']
                 mapped_alarm_severity = mappingInstance.convert_alarm_severity(alarm_trap["alarmLevel"])
-                expected_value = {'h':{'value':{'CORBA::Short':mapped_alarm_severity}}}
-                test.info("check 'perceivedSeverity',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
-                compare_data(notif_value, expected_value)
+                if mapped_alarm_severity != None:
+                    expected_value = {'h':{'value':{'CORBA::Short':mapped_alarm_severity}}}
+                    test.info("check 'perceivedSeverity',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
+                    compare_data(notif_value, expected_value)
             else:
                 test.failed("get 'h' from nbi notification Failed")
                 
         elif "a" == a:
             if dict_nbi_notif.has_key("a"):
                 notif_value["a"] = dict_nbi_notif["a"]
-                '''CORBA::Long is required in spec, but X use CORBA:LongLong which is a known limitation''' 
+                '''X use CORBA:LongLong although CORBA::Long is required in spec'''
                 notif_id = dict_nbi_notif["a"]["value"]["CORBA::LongLong"]
                 test.info("check 'notificationId',the nbi notification result is " + str(notif_value) )
-                sqltext = ("SELECT notificationId from alarms where notificationId = '%s'"%notif_id)
+                sqltext = ('SELECT notificationId from alarms where notificationId = "%s"'%notif_id)
                 is_unique=check_unique_id(sqltext,mysqlInst)
                 if is_unique == 0:
                     test.failed("the notificationId of " + notif_id + " not existed in database")
@@ -183,10 +190,11 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
             if dict_nbi_notif.has_key("w"):
                 notif_value["w"] = dict_nbi_notif["w"]
                 dn = '"' + mappingInstance.convert_object_instance(nodeid,nename) + '"'
-                notification_id = dict_nbi_notif["a"]["value"]["CORBA::LongLong"]
-                expected_value = {'w':{'value':{'AlarmIRPConstDefs::CorrelatedNotification':{'none':{'source':dn,'notif_id_set':{'none':notification_id}}}}}}
-                test.info("check 'correlatedNotifications',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
-                compare_data(notif_value, expected_value)
+                if dn != None:
+                    notification_id = dict_nbi_notif["a"]["value"]["CORBA::LongLong"]
+                    expected_value = {'w':{'value':{'AlarmIRPConstDefs::CorrelatedNotification':{'none':{'source':dn,'notif_id_set':{'none':notification_id}}}}}}
+                    test.info("check 'correlatedNotifications',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
+                    compare_data(notif_value, expected_value)
             else:
                 test.failed("get 'w' from nbi notification Failed")
                 
@@ -224,9 +232,10 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
             if dict_nbi_notif.has_key("ai_ps"):
                 notif_value["ai_ps"] = dict_nbi_notif["ai_ps"]
                 mapped_alarm_severity = '"' + mappingInstance.convert_alarm_severity(alarm_trap["alarmLevel"]) + '"'
-                expected_value = {'ai_ps':{'value':{'CORBA::String':mapped_alarm_severity}}}
-                test.info("check 'AI_VS_PERCEIVED_SEVERITY',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
-                compare_data(notif_value, expected_value)
+                if mapped_alarm_severity != None:
+                    expected_value = {'ai_ps':{'value':{'CORBA::String':mapped_alarm_severity}}}
+                    test.info("check 'AI_VS_PERCEIVED_SEVERITY',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
+                    compare_data(notif_value, expected_value)
             else:
                 test.failed("get 'ai_ps' from nbi notification Failed")
                 
@@ -234,9 +243,10 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
             if dict_nbi_notif.has_key('ai_at'):
                 notif_value['ai_at'] = dict_nbi_notif['ai_at']
                 mapped_event_name = '"' + mappingInstance.convert_event_type(alarm_trap['alarmCategory']) + '"'
-                expected_value['ai_at'] = expected_value = {'ai_at':{'value':{'CORBA::String':mapped_event_name}}}
-                test.info("check 'AI_VS_ALARM_TYPE',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
-                compare_data(notif_value,expected_value)
+                if mapped_event_name != None:
+                    expected_value['ai_at'] = expected_value = {'ai_at':{'value':{'CORBA::String':mapped_event_name}}}
+                    test.info("check 'AI_VS_ALARM_TYPE',the nbi notification result is " + str(notif_value) + ",and the expected result is " + str(expected_value))
+                    compare_data(notif_value,expected_value)
             else:
                 test.failed("get 'ai_at' from nbi notification Failed")
                 
@@ -244,7 +254,7 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
             if dict_nbi_notif.has_key("f"):
                 notif_value["f"] = dict_nbi_notif["f"]
                 alarm_id = notif_value["f"]["value"]["CORBA::String"]
-                sqltext = ("SELECT id from alarms where id = '%s'"%alarm_id)
+                sqltext = ("SELECT id from alarms where id = %s"%alarm_id)
                 is_unique=check_unique_id(sqltext,mysqlInst)
                 if is_unique == 0:
                     test.failed("alarmId of " + alarm_id + " not existed in database")
@@ -261,17 +271,17 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
     dict_ne_info,dict_server_info,dict_browser_chrome = data_init(ne_info_cfg,server_info_cfg)
     server_info = Properties(server_info_cfg)
     mysqlInst = PyMysql.PyMysql()
-    mysql = mysqlInst.newConnection(dict_server_info["host"],'root','root','xoam')
-    #driver = CommonStatic.login_rsnms(dict_browser_chrome,dict_server_info["host"],dict_server_info["username"],dict_server_info["password"],dict_server_info["port"],dict_server_info["url"])
-    driver = True
+    driver = CommonStatic.login_rsnms(dict_browser_chrome,dict_server_info["host"],dict_server_info["username"],dict_server_info["password"],dict_server_info["port"],dict_server_info["url"])
     if driver:
         try:
-            '''
             NeCommon.to_ne_management_page_by_url(driver,server_info)
             new_ne_info=NeCommon.check_and_add_ne(driver,dict_ne_info)
             ne_name = new_ne_info["ne_name"]
-            '''
-            ne_name = 'IMSHSS-9A8ACC8039B1B283'
+            #ne_name = 'IMSHSS-9A8ACC8039B1B283'
+            quitDriver(driver)
+
+            mappingInstance = AlarmMapping.alarmMapping(mapping_info_cfg)
+            mysqlInst.newConnection(dict_server_info["host"],'root','root','xoam')
             nodeid = get_nodeid_by_nename(ne_name,mysqlInst)
             if dict_ne_info["ne_type"] == "LTEHSS" or dict_ne_info["ne_type"] == "IMSHSS":
                 snmp_auth_info = []
@@ -279,12 +289,7 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
                 snmp_auth_info.append(dict_ne_info["auth_password"])
                 snmp_auth_info.append(dict_ne_info["priv_password"])
             else:
-                snmp_auth_info = []
-            '''
-            FmCommon.toAlarmManagement_by_url(driver,server_info)
-            FmCommon.init_and_search(driver,ne_name)
-            '''
-            mappingInstance = AlarmMapping.alarmMapping(mapping_info_cfg)
+                snmp_auth_info = None
 
             alarmtypes = mappingInstance.dict_mapping_info["alarm_types"]
             alarm_type_list = []
@@ -292,12 +297,13 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
                 alarm_type_list.append(alarmtypes)
             else:
                 alarm_type_list = alarmtypes
+
             for alarm_type in alarm_type_list:
                 test.info("send and get NBI notification for " + dict_ne_info["ne_type"] + ":" + alarm_type + "...")
-                alarm_raw = getNBINotification(dict_ne_info["ne_ip"], 7070, 'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],snmp_auth_info)
+                #alarm_raw = getNBINotification(dict_ne_info["ne_ip"], 7070, 'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],snmp_auth_info)
+                alarm_raw = base_clint_for_selenium.send_trap_nbi(dict_ne_info["ne_ip"],7070,'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],auth_info=snmp_auth_info)
                 error_code = int(alarm_raw["code"])
                 if error_code==1:
-                    #query_alarm(driver)
                     alarm_trap = alarm_raw["trap"]
                     nbi_notif = alarm_raw["nbi"]
                     test.info("get TrapInfo is:" + str(alarm_trap) + " and NotifInfo is:" + str(nbi_notif))
@@ -311,8 +317,10 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
                     check_attr_accuracy(mappingInstance,alarm_trap,nbi_notif,ne_name,nodeid,attr_list,mysqlInst)
                 else:
                     test.failed(dict_ne_info["ne_type"] + ":" + alarm_type + " accuracy test failed, reason:sending alarm trap failed, the error msg is:" + alarm_raw["msg"])
+            mysqlInst.closeConnection()
+
         except Exception as e:
-            #quitDriver(driver)
+
             mysqlInst.closeConnection()
             test.error(e.message)
 

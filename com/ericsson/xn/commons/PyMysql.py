@@ -9,12 +9,12 @@ class PyMysql:
     def newConnection(self,host,user,passwd,defaultdb):
         try:
             self.conn = connector.connect(user=user, password = passwd, host = host, database=defaultdb)
-            return self.conn
         except Exception as e:
             test.info(e.msg)
 
     def closeConnection(self):
-        self.conn.close()
+        if self.conn != None:
+            self.conn.close()
 
     def query(self,sqltext,mode="one"):
         if self.conn == None:
@@ -28,7 +28,7 @@ class PyMysql:
                 result = cursor.fetchall()
             else:
                 test.error("query mode error")
-            cursor.close
+            cursor.close()
         return (cursor.rowcount,result)
 
     def execute(self,sqltext):
@@ -37,12 +37,9 @@ class PyMysql:
         else:
             cursor = self.conn.cursor()
             cursor.execute(sqltext)
-            cursor.close
+            cursor.close()
             self.conn.commit()
 
-
-    def closeConnection(self):
-        self.conn.close
 
 
 

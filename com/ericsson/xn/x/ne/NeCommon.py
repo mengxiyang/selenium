@@ -45,7 +45,9 @@ def check_and_add_ne(driver, dict_ne_info):
     elif 1 == ne_exist:
         dict_ne_info["ne_name"] = ne_name
     elif 1 > ne_exist:
-        dict_ne_info["ne_name"] = add_new_ne(driver, dict_ne_info)
+        ne_name = add_new_ne(driver, dict_ne_info)
+        dict_ne_info["ne_name"] = ne_name
+
     refresh_ne_management_page(driver)
     test.info("NE:" + ne_name + " added successfully")
     return dict_ne_info
@@ -173,7 +175,7 @@ def add_new_ne(driver, dict_ne_info):
     find_single_widget(driver, 10, id_submit_btn).click()
     try:
         id_dialog_confirm = (By.XPATH, "//div[@class='ebDialogBox-actionBlock']/button[1]")
-        find_single_widget(driver, 5, id_dialog_confirm).click()
+        find_single_widget(driver, 10,id_dialog_confirm).click()
     except Exception as e:
         test.info('There is no duplicated NEs.')
     test.info('Successfully added an NE: ' + str(ne_name))
