@@ -17,6 +17,7 @@ import types,os
 from com.ericsson.xn.commons import PyMysql
 from com.ericsson.xn.commons import base_clint_for_selenium
 from selenium.common.exceptions import TimeoutException
+import time
 
 root_dir = os.path.normpath(os.path.dirname(os.path.abspath(__file__))).split('com' + os.sep + 'ericsson' + os.sep + 'xn' + os.sep + 'x' + os.sep + 'fm' + os.sep + 'FmCommons')[0]
 notify_mapping_cfg = root_dir + os.sep + 'x' + os.sep + 'fm' + os.sep + 'nbi_mapping' + os.sep + 'hss_new_alarm.cfg'
@@ -255,7 +256,7 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_notif,nename,nodeid,
         elif "f"  == a:
             if dict_nbi_notif.has_key("f"):
                 notif_value["f"] = dict_nbi_notif["f"]
-                alarm_id = notif_value["f"]["value"]["CORBA::String"]
+                alarm_id = notif_value["f"]["value"]["CORBA::String"].replace('"','')
                 #sqltext = ("SELECT id from alarms where id = %s"%alarm_id)
                 #is_unique=check_unique_id(sqltext,mysqlInst)
                 is_unique = base_clint_for_selenium.is_alarm_id_unic(server_info["host"],7070,'xoambaseserver',alarm_id)
@@ -285,9 +286,10 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
             mappingInstance = AlarmMapping.alarmMapping(mapping_info_cfg)
             #nodeid = get_nodeid_by_nename(ne_name,mysqlInst)
 
-            nodeid = base_clint_for_selenium.get_nodeid_by_nename(server_info["host"],7070,'xoambaseserver',ne_name)
+            nodeid = base_clint_for_selenium.get_nodeid_by_nename(dict_server_info["host"],7070,'xoambaseserver',ne_name)
+            time.sleep(60)
             if nodeid == False:
-                test.error("Database connection Failure")
+                test.error("update nodeid Failure")
                 
             if dict_ne_info["ne_type"] == "LTEHSS" or dict_ne_info["ne_type"] == "IMSHSS":
                 snmp_auth_info = []
@@ -320,7 +322,7 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
                         attr_list.append(check_notif_items)
                     else:
                         attr_list = check_notif_items
-                    check_attr_accuracy(mappingInstance,alarm_trap,nbi_notif,ne_name,nodeid,attr_list,server_info)
+                    check_attr_accuracy(mappingInstance,alarm_trap,nbi_notif,ne_name,nodeid,attr_list,dict_server_info)
                 else:
                     test.failed(dict_ne_info["ne_type"] + ":" + alarm_type + " accuracy test failed, reason:sending alarm trap failed, the error msg is:" + alarm_raw["msg"])
 '''          

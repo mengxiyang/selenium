@@ -65,8 +65,9 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
             NeCommon.to_ne_management_page_by_url(driver,server_info)
             new_ne_info=NeCommon.check_and_add_ne(driver, dict_ne_info)
             ne_name = new_ne_info["ne_name"]
+            nodeid = base_clint_for_selenium.get_nodeid_by_nename(host,7070,'xoambaseserver',ne_name)
+            time.sleep(60)
             FmCommon.toAlarmManagement_by_url(driver,server_info)
-            time.sleep(10)
             FmCommon.init_and_search(driver,ne_name)
 
             alarmtypes = mappingInstance.dict_mapping_info["alarm_types"]
@@ -101,6 +102,8 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
                     test_logger.failed(dict_ne_info["ne_type"] + ":" + alarm_type + " accuracy test failed, reason:sending alarm trap failed, the error msg is:" + alarm_from_ne["msg"])
 
             FmCommon.quitDriver(driver)
+        except TimeoutException:
+            test_logger.error("find widget Timeout")
         except Exception as e:
             FmCommon.quitDriver(driver)
             test_logger.error(str(e))
