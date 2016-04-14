@@ -103,6 +103,7 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
 
             FmCommon.quitDriver(driver)
         except TimeoutException:
+            FmCommon.quitDriver(driver)
             test_logger.error("find widget Timeout")
         except Exception as e:
             FmCommon.quitDriver(driver)

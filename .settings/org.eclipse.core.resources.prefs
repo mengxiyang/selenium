@@ -5,4 +5,6 @@ encoding//com/ericsson/xn/commons/base_clint_for_selenium.py=utf-8
 encoding//com/ericsson/xn/commons/test_logger.py=utf-8
 encoding//com/ericsson/xn/x/fm/FmCommons/FmCommon.py=utf-8
 encoding//com/ericsson/xn/x/fm/FmCommons/GuiDataFunc.py=UTF-8
+encoding//com/ericsson/xn/x/pm/PmCases/case_all_ne_pm.py=utf-8
+encoding//com/ericsson/xn/x/pm/PmCases/case_mme_pm.py=utf-8
 encoding//x/fm/gui_mapping/ocgas.cfg=UTF-8

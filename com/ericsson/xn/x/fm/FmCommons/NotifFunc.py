@@ -3,7 +3,7 @@ Created on Mar 24, 2016
 
 @author: eyyylll
 '''
-from com.ericsson.xn.x.fm.FmCommons import NotifDataBase
+
 from com.ericsson.xn.commons import test_logger as test
 from com.ericsson.xn.commons.PyProperties import Properties
 from com.ericsson.xn.x.fm.FmCommons.FmCommon import data_init,query_alarm,quitDriver
@@ -12,7 +12,6 @@ from com.ericsson.xn.x.ne import  NeCommon
 from com.ericsson.xn.x.fm.FmCommons import FmCommon
 from com.ericsson.xn.x.fm.FmCommons import AlarmMapping
 from libs.mysql import connector
-from com.ericsson.xn.commons.caseutils import pre_test_case, post_test_case
 import types,os
 from com.ericsson.xn.commons import PyMysql
 from com.ericsson.xn.commons import base_clint_for_selenium
@@ -276,7 +275,7 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
     server_info = Properties(server_info_cfg)
     driver = CommonStatic.login_rsnms(dict_browser_chrome,dict_server_info["host"],dict_server_info["username"],dict_server_info["password"],dict_server_info["port"],dict_server_info["url"])
     if driver:
-        
+        try:
             NeCommon.to_ne_management_page_by_url(driver,server_info)
             new_ne_info=NeCommon.check_and_add_ne(driver,dict_ne_info)
             ne_name = new_ne_info["ne_name"]
@@ -325,19 +324,9 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
                     check_attr_accuracy(mappingInstance,alarm_trap,nbi_notif,ne_name,nodeid,attr_list,dict_server_info)
                 else:
                     test.failed(dict_ne_info["ne_type"] + ":" + alarm_type + " accuracy test failed, reason:sending alarm trap failed, the error msg is:" + alarm_raw["msg"])
-'''          
+
         except TimeoutException:
             test.error("find widget timeout")
         except Exception as e:
-            test.error(e.message)
-        '''
-
-'''
-if __name__ == '__main__':
-    pre_test_case("check_hss_nbi_notif_accuracy_case","notify_accuracy")
-    check_notify_accuracy(ne_info_cfg,server_info_cfg,notify_mapping_cfg)
-    post_test_case()
-'''
-
-
+            test.error(str(e))
 
