@@ -135,17 +135,17 @@ def alarm_converter(netype,nename,alarmtype,alarm_raw,mappingInstance):
         if(key == "网元名称"):
             expected_alarm["网元名称"]=nename
         elif(key == "告警级别"):
-            ne_severity = alarm_raw["alarmLevel"]
-            if ne_severity:
+            if alarm_raw.has_key("alarmLevel"):
+                ne_severity = alarm_raw["alarmLevel"]
                 gui_severity = mappingInstance.convert_alarm_severity(ne_severity)
-                if(gui_severity):
+                if gui_severity:
                     expected_alarm["告警级别"]= gui_severity
             else:
                 test_logger.failed("get alarmLevel from trap Failed")
         elif(key == "告警时间"):
-            ne_event_time = alarm_raw["timeStamp"]
-            if ne_event_time:
-                if (re.findall(r"\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}.\d{1}",ne_event_time)[0]!= None):
+            if alarm_raw.has_key("timeStamp"):
+                ne_event_time = alarm_raw["timeStamp"]
+                if (re.findall(r"\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}.\d{3}",ne_event_time)[0]!= None):
                     expected_alarm["告警时间"] = ne_event_time
                 else:
                     test_logger.failed("Incorrect eventTime format on Node")
@@ -159,8 +159,8 @@ def alarm_converter(netype,nename,alarmtype,alarm_raw,mappingInstance):
             if(netype == 'OCGAS'):
                 gui_alarmtype_id = mappingInstance.convert_alarmtype_id(alarmtype)
             else:
-                ne_specificProblem = alarm_raw["specificProblem"]
-                if ne_specificProblem:
+                if alarm_raw.has_key("specificProblem"):
+                    ne_specificProblem = alarm_raw["specificProblem"]
                     gui_alarmtype_id = mappingInstance.convert_alarmtype_id(ne_specificProblem)
                 else:
                     test_logger.failed("get specificProblem from trap Failed.")
@@ -170,16 +170,16 @@ def alarm_converter(netype,nename,alarmtype,alarm_raw,mappingInstance):
             if(netype == 'OCGAS'):
                 gui_alarmtype_cn = mappingInstance.convert_alarmtype_cn(alarmtype)
             else:
-                ne_specificProblem = alarm_raw["specificProblem"]
-                if ne_specificProblem:
+                if alarm_raw.has_key("specificProblem"):
+                    ne_specificProblem = alarm_raw["specificProblem"]
                     gui_alarmtype_cn = mappingInstance.convert_alarmtype_cn(ne_specificProblem)
                 else:
                     test_logger.failed("get specificProblem from Trap Failed.")
             if gui_alarmtype_cn:
                 expected_alarm["告警名称"] = gui_alarmtype_cn
         elif(key == "定位信息"):
-            ne_source_info =  alarm_raw["alarmSource"]
-            if ne_source_info:
+            if alarm_raw.has_key("alarmSource"):
+                ne_source_info =  alarm_raw["alarmSource"]
                 expected_alarm["定位信息"] = ne_source_info
             else:
                 test_logger.failed("The managedObject can't be found on Node")
@@ -195,9 +195,8 @@ def alarm_converter(netype,nename,alarmtype,alarm_raw,mappingInstance):
             if (netype == 'OCGAS'):
                 specific_problem = mappingInstance.convert_specific_problem(alarmtype)
             else:
-                ne_specificProblem = alarm_raw["specificProblem"]
-                if ne_specificProblem:
-                    specific_problem = ne_specificProblem
+                if alarm_raw.has_key("specificProblem"):
+                    specific_problem = alarm_raw["specificProblem"]
                 else:
                     test_logger.failed("get specificProblem from trap Failed")
             if specific_problem:
@@ -206,25 +205,24 @@ def alarm_converter(netype,nename,alarmtype,alarm_raw,mappingInstance):
             if(netype == 'OCGAS'):
                 probable_cause = mappingInstance.convert_probable_cause(alarmtype)
             else:
-                ne_probableCause = alarm_raw["probableCause"]
-                if ne_probableCause:
+                if alarm_raw.has_key("probableCause"):
+                    ne_probableCause = alarm_raw["probableCause"]
                     probable_cause = mappingInstance.convert_probable_cause(ne_probableCause)
                 else:
                     test_logger.failed("get probableCause from trap Failed")
             if probable_cause:
                 expected_alarm["可能原因"] = probable_cause
         elif(key == "告警类型"):
-            ne_event_type = alarm_raw["alarmCategory"]
-            if ne_event_type:
+            if alarm_raw.has_key("alarmCategory"):
+                ne_event_type = alarm_raw["alarmCategory"]
                 gui_event_type = mappingInstance.convert_event_type(ne_event_type)
                 if gui_event_type:
                     expected_alarm["告警类型"] = gui_event_type
             else:
                 test_logger.failed("get alarmCategory from trap Failed")
         elif(key == "补充信息"):
-            additionInfo = alarm_raw["alarmDescription"]
-            if additionInfo:
-                expected_alarm["补充信息"] = additionInfo
+            if alarm_raw.has_key("alarmDescription"):
+                expected_alarm["补充信息"] = alarm_raw["alarmDescription"]
             else:
                 test_logger.failed("get alarmDescription from trap Failed")
     return expected_alarm

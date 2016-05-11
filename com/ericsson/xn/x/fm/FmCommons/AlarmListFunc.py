@@ -14,7 +14,7 @@ import types
 from com.ericsson.xn.commons import base_clint_for_selenium
 from selenium.common.exceptions import TimeoutException
 import time
-
+from com.ericsson.xn.x.fm.FmCommons import NotifFunc
 
 def check_alarm_list_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
     dict_ne_info,dict_server_info,dict_browser_chrome = data_init(ne_info_cfg,server_info_cfg)
@@ -52,22 +52,22 @@ def check_alarm_list_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
                 alarm_type_list = alarmtypes
 
             for alarm_type in alarm_type_list:
-                test.info("send and get NBI notification for " + dict_ne_info["ne_type"] + ":" + alarm_type + "...")
-                #alarm_raw = getNBINotification(dict_ne_info["ne_ip"], 7070, 'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],snmp_auth_info)
-                alarm_raw = base_clint_for_selenium.send_trap_nbi(dict_ne_info["ne_ip"],7070,'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],auth_info=snmp_auth_info)
+                test.info("send and get alarmlist result for " + dict_ne_info["ne_type"] + ":" + alarm_type + "...")
+                alarm_raw = NotifFunc.getNBINotification(dict_ne_info["ne_ip"], 7070, 'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],snmp_auth_info)
+                #alarm_raw = base_clint_for_selenium.send_trap_nbi(dict_ne_info["ne_ip"],7070,'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],auth_info=snmp_auth_info)
                 error_code = int(alarm_raw["code"])
                 if error_code==1:
                     alarm_trap = alarm_raw["trap"]
-                    nbi_notif = alarm_raw["nbi"]
-                    test.info("get TrapInfo is:" + str(alarm_trap) + " and NotifInfo is:" + str(nbi_notif))
+                    nbi_alarm_list = alarm_raw["nbi"]
+                    test.info("get TrapInfo is:" + str(alarm_trap) + " and AlarmList is:" + str(nbi_alarm_list))
                     test.info("start to check " + alarm_type)
-                    check_notif_items = mappingInstance.get_property("notif_attr_names")
+                    check_alarmlist_attrs = mappingInstance.get_property("alarmlist_attrs")
                     attr_list = []
-                    if type(check_notif_items) is types.StringType:
-                        attr_list.append(check_notif_items)
+                    if type(check_alarmlist_attrs) is types.StringType:
+                        attr_list.append(check_alarmlist_attrs)
                     else:
-                        attr_list = check_notif_items
-                    check_attr_accuracy(mappingInstance,alarm_trap,nbi_notif,ne_name,nodeid,attr_list,dict_server_info)
+                        attr_list = check_alarmlist_attrs
+                    NotifFunc.check_attr_accuracy(mappingInstance,alarm_trap,nbi_alarm_list,ne_name,nodeid,attr_list,dict_server_info)
                 else:
                     test.failed(dict_ne_info["ne_type"] + ":" + alarm_type + " accuracy test failed, reason:sending alarm trap failed, the error msg is:" + alarm_raw["msg"])
 
