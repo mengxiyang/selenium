@@ -78,8 +78,9 @@ class alarmMapping():
         return dn
     
     def convert_event_time(self,event_time):
-        event_time = event_time + "000"
+        event_time = event_time
         d_event_time = datetime.datetime.strptime(event_time,"%Y-%m-%d %H:%M:%S.%f")
+        d_microsecond = d_event_time.microsecond
         t_event_time = d_event_time.timetuple()
         timestamp = time.mktime(t_event_time)
         utct_time = timestamp*10000000 + 122192928000000000

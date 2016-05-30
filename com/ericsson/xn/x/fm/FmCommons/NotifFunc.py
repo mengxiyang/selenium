@@ -280,14 +280,45 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_info,nename,nodeid,a
                 test.failed("get 'kk' from Base Server Failed")
                 
         elif "i" == a:
-            mapped_specific_problem_ = mappingInstance.convert_specific_problem(alarm_trap["specificProblem"])
-            expected_value = {'i':{'CORBA::String':'"' + mapped_specific_problem_+ '"'}}
+            mapped_specific_problem = mappingInstance.convert_specific_problem(alarm_trap["specificProblem"])
+            expected_value = {'i':{'CORBA::String':'"' + mapped_specific_problem + '"'}}
             check_common_accuracy('i', dict_nbi_info, expected_value)
         
         elif "n" == a:
             expected_value = {'n':{'value':{'CORBA::Short':2}}}
             check_common_accuracy('n', dict_nbi_info, expected_value)
+        
+        elif "y" == a:
+            expected_value = {'y':{'value':{'CORBA::String':'"AUTO"'}}}
+            check_common_accuracy('y', dict_nbi_info, expected_value)
+            
+        elif "z" == a:
+            expected_value = {'z':{'value':{'CORBA::String':'"' + nename + '"'}}}
+            check_common_accuracy('z', dict_nbi_info, expected_value)
+            
+        elif "ll" == a:
+            if dict_nbi_info.has_key("ll"):
+                nbi_value["ll"] = dict_nbi_info["ll"]
+                mapped_event_time = mappingInstance.convert_event_time(alarm_trap["clearTime"])
+                if mapped_event_time!= None:
+                    expected_value = {'ll':{'value':{'TimeBase::UtcT':{'none':{'time':mapped_event_time,'inacclo':'0','inacchi':'0','tdf':'480'}}}}}
+                    test.info("check 'clearTime',the nbi result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
+                    compare_data(nbi_value, expected_value)
+            else:
+                test.failed("get 'll' from Base Server Failed")
+        
+        elif "mm" == a:
+            if dict_nbi_info.has_key("mm"):
+                nbi_value["mm"] = dict_nbi_info["mm"]
+                mapped_event_time = mappingInstance.convert_event_time(alarm_trap["changeTime"])
+                if mapped_event_time!= None:
+                    expected_value = {'mm':{'value':{'TimeBase::UtcT':{'none':{'time':mapped_event_time,'inacclo':'0','inacchi':'0','tdf':'480'}}}}}
+                    test.info("check 'changeTime',the nbi result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
+                    compare_data(nbi_value, expected_value)
+            else:
+                test.failed("get 'mm' from Base Server Failed")
                 
+                 
 def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
     dict_ne_info,dict_server_info,dict_browser_chrome = data_init(ne_info_cfg,server_info_cfg)
     server_info = Properties(server_info_cfg)
