@@ -69,12 +69,24 @@ def start_session(ip, port, passwd):
 def close_session(mgr):
     pass
 
+
+BaseManager.register('get_alarm_list_trap')
+
+
+def get_alarm_list_trap(ip, port, passwd, ne_type, alarm, host, auth_info, ne_name, n_port = None):
+    mgr = start_session(ip, port, passwd)
+    return mgr.get_alarm_list_trap(ne_type, alarm, host, auth_info, ne_name, n_port)._getvalue()
+
+
 # print datetime.now().strftime('%H:%M:%S:%f')
 #print send_trap('10.184.74.67', 7070,'xoambaseserver', 'OCGAS', 'monitorTargetsExceedThreshold', '10.184.74.68', [])
 # print datetime.now().strftime('%H:%M:%S:%f')
 '''
 from datetime import datetime
 print datetime.now().strftime('%H:%M:%S:%f')
-print send_trap_nbi('127.0.0.1', 7070, 'xoambaseserver', 'LTEHSS', 'SoftwareProgramError-1', '127.0.0.1', ['privUser1', 'authUser1', 'privUser1'], '/Users/lowitty/temp/x.txt', 11162)
+print send_trap_nbi('10.184.74.68', 7070, 'xoambaseserver', 'LTEHSS', 'COMMUNICATIONFAULT_NEW', '10.184.74.68', ['privUser1', 'authUser1', 'privUser1'], LTEHSS)
 print datetime.now().strftime('%H:%M:%S:%f')
 '''
+#print get_nodeid_by_nename('10.184.73.76', 7070, 'xoambaseserver','OCGAS-6E8DD56B5C655707')
+#print get_alarm_list_trap('10.184.73.76', 7070, 'xoambaseserver', 'GMLC', 'cpuUnilizationRatioExceedThresholdAlarm_NEW', '10.184.73.76', ['privUser1', 'authUser1', 'privUser1'], "IMSHSS-7203C3FBC7C0CCA0")
+#print get_alarm_list_trap('10.184.73.76', 7070, 'xoambaseserver', 'GMLC', 'A21ExceedThresholdAlarm_NEW', '10.184.73.76', None, "GMLC-13EFDD7B6A24DB45")

@@ -37,14 +37,19 @@ def to_ne_management_page_by_url(driver, server_info, url_add='#network-overview
 
 
 def check_and_add_ne(driver, dict_ne_info):
-    ne_exist, ne_name = check_ne_exist_by_type(driver, dict_ne_info["ne_type"], dict_ne_info["ne_ip"])
+    ne_exist, ne_name = check_ne_exist_by_type(driver, dict_ne_info["ne_type"], dict_ne_info["ne_ip"],dict_ne_info["engine_id"])
     if 2 == ne_exist:
-        test.error('A ne with the given IP named: ' + ne_name + ' already exist.')
         FmCommon.quitDriver(driver)
-        sys.exit(0)
+        test.error('A ne already exist with the given IP or engineId named: ' + ne_name)
     elif 1 == ne_exist:
+        test.info("NE already exist, reuse the old NE")
         dict_ne_info["ne_name"] = ne_name
-    elif 1 > ne_exist:
+    elif 0 == ne_exist:
+        test.info("Paired NE, add a new one")
+        ne_name = add_new_ne(driver,dict_ne_info)
+        dict_ne_info["ne_name"] = ne_name
+    elif -1 == ne_exist or -2 == ne_exist:
+        test.info("NE not exist, add a new one")
         ne_name = add_new_ne(driver, dict_ne_info)
         dict_ne_info["ne_name"] = ne_name
 
@@ -96,6 +101,7 @@ def add_new_ne(driver, dict_ne_info):
     id_i_privpwd = (By.ID,"i_privpwd")
     id_i_appuser = (By.ID,"i_serviceusername")
     id_i_apppwd = (By.ID,"i_servicepwd")
+    id_i_engineid = (By.ID,"i_engineid")
 
     ne_name = dict_ne_info["ne_type"] + "-" + str(binascii.hexlify(os.urandom(8))).upper()
     w_ne_name = find_single_widget(driver, 10, id_ne_name)
@@ -165,8 +171,12 @@ def add_new_ne(driver, dict_ne_info):
             w_app_pwd = find_single_widget(driver, 10, id_i_apppwd)
             w_app_pwd.clear()
             w_app_pwd.send_keys(dict_ne_info["app_password"])
+
+            w_engine_id = find_single_widget(driver,10,id_i_engineid)
+            w_engine_id.clear()
+            w_engine_id.send_keys(dict_ne_info["engine_id"])
     
-        elif 'OCGAS' == dict_ne_info["ne_type"]:
+        elif 'OCGAS' == dict_ne_info["ne_type"] or "GMLC" == dict_ne_info["ne_type"]:
             w_alarm_path = find_single_widget(driver, 10, id_alarm_path)
             w_alarm_path.clear()
             w_alarm_path.send_keys(dict_ne_info["alarm_path"])
@@ -182,7 +192,7 @@ def add_new_ne(driver, dict_ne_info):
     return ne_name
 
 
-def check_ne_exist_by_type(driver, ne_type, ne_ip, page_no=20):
+def check_ne_exist_by_type(driver, ne_type, ne_ip, engine_id, page_no=20):
     # note there is another way to check if NE with certain IP exist, that is connect to the server's database and
     # check the NES data table
     id_table = (By.XPATH, "//div[@id='dv1']/div[2]/div/div/div[3]/div/div/div/table")
@@ -194,6 +204,13 @@ def check_ne_exist_by_type(driver, ne_type, ne_ip, page_no=20):
     pages.send_keys(page_no)
     ActionChains(driver).key_down(Keys.ENTER).key_up(Keys.ENTER).perform()
 
+    '''
+    id_netype_filter = (By.XPATH,".//thead/tr[2]/th[2]/input")
+    netype_filter = find_single_widget(table,10,id_netype_filter)
+    netype_filter.clear()
+    netype_filter.send_keys(ne_type)
+    '''
+
     # set ne type
     # id_type = (By.XPATH, "//div[@id='dv1']/div[2]/div/div/div[3]/div/div/div/table/thead/tr[2]/th[2]/input")
     # w_ne_type = find_single_widget(driver, 10, id_type)
@@ -203,16 +220,34 @@ def check_ne_exist_by_type(driver, ne_type, ne_ip, page_no=20):
     id_trs = (By.XPATH, ".//tbody/tr")
     try:
         trs = find_all_widgets(table, 20, id_trs)
+    except Exception as e:
+        return -2,None
+
+    try:
         is_has_pair_nes = False
         for tr in trs:
             # gui_type = tr.get_attribute('innerHTML').encode('utf-8')
             gui_ne_name = find_single_widget(tr, 10, (By.XPATH, ".//td[1]")).get_attribute('innerHTML').encode('utf-8')
             gui_ne_type = find_single_widget(tr, 10, (By.XPATH, ".//td[2]")).get_attribute('innerHTML').encode('utf-8')
-
             tr.click()
             if wait_until_text_shown_up(driver, 10, (By.ID, "i_nename"), gui_ne_name):
-                gui_ip = find_single_widget(driver, 10, (By.ID, "i_neip"))
-                if ne_ip == gui_ip.get_attribute('value').encode('utf-8').strip():
+                gui_ip = find_single_widget(driver, 10, (By.ID, "i_neip")).get_attribute('value').encode('utf-8').strip()
+                if ne_type in ("IMSHSS","LTEHSS","3GSGSN","GGSN","MSC","HLR"):
+                    if gui_ne_type in ("IMSHSS","LTEHSS","3GSGSN","GGSN","MSC","HLR"):
+                        gui_engineid = find_single_widget(driver,10,(By.ID,"i_engineid")).get_attribute('value').encode('utf-8').strip()
+                        if engine_id != None:
+                            if engine_id == gui_engineid or ne_ip == gui_ip:
+                                if is_pair_nes(ne_type.upper(),gui_ne_type.upper()):
+                                    is_has_pair_nes = True
+                                elif ne_type == gui_ne_type and ne_ip == gui_ip:
+                                    return 1,gui_ne_name
+                                else:
+                                    return 2,None
+                        else:
+                            FmCommon.quitDriver(driver)
+                            test.error("engine_id not configured for " + ne_type)
+
+                if ne_ip == gui_ip:
                     if ne_type == gui_ne_type:
                         # NE with same ip and same type exit
                         return 1, gui_ne_name
@@ -229,9 +264,9 @@ def check_ne_exist_by_type(driver, ne_type, ne_ip, page_no=20):
         # the ip that we want to add does not exist
         return -1, None
     except Exception as e:
-        # the ip that we want to add does not exist
-        return -2, None
-
+        # exceptions
+        FmCommon.quitDriver(driver)
+        test.error(str(e))
 
 def check_ne_exist(driver, ne_type, ne_ip):
     # note there is another way to check if NE with certain IP exist, that is connect to the server's database and

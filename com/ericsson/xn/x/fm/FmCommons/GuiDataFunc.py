@@ -19,53 +19,21 @@ import re
 import types
 from com.ericsson.xn.x.fm.FmCommons import AlarmMapping
 from selenium.common.exceptions import TimeoutException
+from com.ericsson.xn.x.fm.FmCommons.FmCommon import data_init
 
 def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
-    
+
+    dict_ne_info,dict_server_info,dict_browser_chrome = data_init(ne_info_cfg,server_info_cfg)
     server_info = Properties(server_info_cfg)
-    dict_browser_chrome = {
-        "browser_type": server_info.getProperty('browser_type'),
-        "browser_path": server_info.getProperty('browser_path'),
-        "driver_path": server_info.getProperty('driver_path')
-    }
-    
-    ne_info = Properties(ne_info_cfg)
-    dict_ne_info  = {
-        "ne_name": ne_info.getProperty("ne_name"),
-        "ne_user": ne_info.getProperty("ne_user"),
-        "ne_type": ne_info.getProperty("ne_type"),
-        "ne_ip" : ne_info.getProperty("ne_ip"),
-        "ne_password" : ne_info.getProperty("ne_password"),
-        "pm_path": ne_info.getProperty("pm_path"),
-        "log_path": ne_info.getProperty("log_path"),
-        "alarm_path": ne_info.getProperty("alarm_path"),
-        "ne_port": ne_info.getProperty("ne_port"),
-        "sftp_port": ne_info.getProperty("sftp_port"),
-        "snmp_port": ne_info.getProperty("snmp_port"),
-        "usm_user": ne_info.getProperty("usm_user"),
-        "auth_password": ne_info.getProperty("auth_password"),
-        "priv_password": ne_info.getProperty("priv_password"),
-        "app_user": ne_info.getProperty("app_user"),
-        "app_password": ne_info.getProperty("app_password"),
-        "li_pwd": ne_info.getProperty("li_pwd"),
-        "fro_id": ne_info.getProperty("fro_id")
-    }
-
     mappingInstance = AlarmMapping.alarmMapping(alarm_mapping_cfg)
+    driver = CommonStatic.login_rsnms(dict_browser_chrome,dict_server_info["host"],dict_server_info["username"],dict_server_info["password"],dict_server_info["port"],dict_server_info["url"])
 
-    host = server_info.getProperty("host")
-    username = server_info.getProperty("username")
-    password = server_info.getProperty("password")
-    port = server_info.getProperty("port")
-    url = server_info.getProperty("url")
-    
-    driver = CommonStatic.login_rsnms(dict_browser_chrome,host,username,password,port,url)
     if driver:
         try:
             NeCommon.to_ne_management_page_by_url(driver,server_info)
             new_ne_info=NeCommon.check_and_add_ne(driver, dict_ne_info)
             ne_name = new_ne_info["ne_name"]
-            nodeid = base_clint_for_selenium.get_nodeid_by_nename(host,7070,'xoambaseserver',ne_name)
+            nodeid = base_clint_for_selenium.get_nodeid_by_nename(dict_server_info["host"],7070,'xoambaseserver',ne_name)
             time.sleep(60)
             FmCommon.toAlarmManagement_by_url(driver,server_info)
             FmCommon.init_and_search(driver,ne_name)
@@ -86,7 +54,7 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
 
             for alarm_type in alarm_type_list:
                 test_logger.info("send alarm trap: " + dict_ne_info["ne_type"] + ":" + alarm_type + "...")
-                alarm_from_ne = base_clint_for_selenium.send_trap(dict_ne_info["ne_ip"], 7070, 'xoambaseserver',dict_ne_info["ne_type"],alarm_type,host,snmp_auth_info)
+                alarm_from_ne = base_clint_for_selenium.send_trap(dict_ne_info["ne_ip"], 7070, 'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],snmp_auth_info)
                 error_code = int(alarm_from_ne["code"])
                 if error_code==1:
                     alarm_trap=alarm_from_ne["trap"]
@@ -156,25 +124,11 @@ def alarm_converter(netype,nename,alarmtype,alarm_raw,mappingInstance):
         elif(key == "确认状态"):
             expected_alarm["确认状态"] = "未确认"
         elif(key == "告警编号"):
-            if(netype == 'OCGAS'):
-                gui_alarmtype_id = mappingInstance.convert_alarmtype_id(alarmtype)
-            else:
-                if alarm_raw.has_key("specificProblem"):
-                    ne_specificProblem = alarm_raw["specificProblem"]
-                    gui_alarmtype_id = mappingInstance.convert_alarmtype_id(ne_specificProblem)
-                else:
-                    test_logger.failed("get specificProblem from trap Failed.")
+            gui_alarmtype_id = mappingInstance.convert_alarmtype_id(alarmtype)
             if gui_alarmtype_id:
                 expected_alarm["告警编号"]=gui_alarmtype_id
         elif(key == "告警名称"):
-            if(netype == 'OCGAS'):
-                gui_alarmtype_cn = mappingInstance.convert_alarmtype_cn(alarmtype)
-            else:
-                if alarm_raw.has_key("specificProblem"):
-                    ne_specificProblem = alarm_raw["specificProblem"]
-                    gui_alarmtype_cn = mappingInstance.convert_alarmtype_cn(ne_specificProblem)
-                else:
-                    test_logger.failed("get specificProblem from Trap Failed.")
+            gui_alarmtype_cn = mappingInstance.convert_alarmtype_cn(alarmtype)
             if gui_alarmtype_cn:
                 expected_alarm["告警名称"] = gui_alarmtype_cn
         elif(key == "定位信息"):
@@ -192,7 +146,7 @@ def alarm_converter(netype,nename,alarmtype,alarm_raw,mappingInstance):
         elif(key == "确认用户"):
             expected_alarm["确认用户"] = ""
         elif(key == "问题描述"):
-            if (netype == 'OCGAS'):
+            if netype in ("OCGAS","GMLC"):
                 specific_problem = mappingInstance.convert_specific_problem(alarmtype)
             else:
                 if alarm_raw.has_key("specificProblem"):
@@ -202,16 +156,14 @@ def alarm_converter(netype,nename,alarmtype,alarm_raw,mappingInstance):
             if specific_problem:
                 expected_alarm["问题描述"] = specific_problem
         elif(key == "可能原因"):
-            if(netype == 'OCGAS'):
-                probable_cause = mappingInstance.convert_probable_cause(alarmtype)
+            if alarm_raw.has_key("probableCause"):
+                ne_probableCause = alarm_raw["probableCause"]
+                probable_cause = mappingInstance.convert_probable_cause(ne_probableCause)
+                if probable_cause:
+                    expected_alarm["可能原因"] = probable_cause
             else:
-                if alarm_raw.has_key("probableCause"):
-                    ne_probableCause = alarm_raw["probableCause"]
-                    probable_cause = mappingInstance.convert_probable_cause(ne_probableCause)
-                else:
-                    test_logger.failed("get probableCause from trap Failed")
-            if probable_cause:
-                expected_alarm["可能原因"] = probable_cause
+            		test_logger.failed("get probableCause from trap Failed")                
+
         elif(key == "告警类型"):
             if alarm_raw.has_key("alarmCategory"):
                 ne_event_type = alarm_raw["alarmCategory"]
@@ -225,6 +177,10 @@ def alarm_converter(netype,nename,alarmtype,alarm_raw,mappingInstance):
                 expected_alarm["补充信息"] = alarm_raw["alarmDescription"]
             else:
                 test_logger.failed("get alarmDescription from trap Failed")
+        elif(key == "变更时间"):
+                expected_alarm["变更时间"] = ""
+
+
     return expected_alarm
 
 

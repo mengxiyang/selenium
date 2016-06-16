@@ -32,11 +32,11 @@ def check_alarm_list_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
             #nodeid = get_nodeid_by_nename(ne_name,mysqlInst)
 
             nodeid = base_clint_for_selenium.get_nodeid_by_nename(dict_server_info["host"],7070,'xoambaseserver',ne_name)
-            time.sleep(60)
+            time.sleep(30)
             if nodeid == False:
                 test.error("update nodeid Failure")
                 
-            if dict_ne_info["ne_type"] == "LTEHSS" or dict_ne_info["ne_type"] == "IMSHSS":
+            if dict_ne_info["ne_type"]  in ("LTEHSS","IMSHSS","HLR","MSC","3GSGSN","GGSN"):
                 snmp_auth_info = []
                 snmp_auth_info.append(dict_ne_info["usm_user"])
                 snmp_auth_info.append(dict_ne_info["auth_password"])
@@ -53,8 +53,8 @@ def check_alarm_list_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
 
             for alarm_type in alarm_type_list:
                 test.info("send and get alarmlist result for " + dict_ne_info["ne_type"] + ":" + alarm_type + "...")
-                alarm_raw = NotifFunc.getNBINotification(dict_ne_info["ne_ip"], 7070, 'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],snmp_auth_info)
-                #alarm_raw = base_clint_for_selenium.send_trap_nbi(dict_ne_info["ne_ip"],7070,'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],auth_info=snmp_auth_info)
+                #alarm_raw = NotifFunc.getNBINotification(dict_ne_info["ne_ip"], 7070, 'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],snmp_auth_info)
+                alarm_raw = base_clint_for_selenium.get_alarm_list_trap(dict_ne_info["ne_ip"],7070,'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],snmp_auth_info,ne_name)
                 error_code = int(alarm_raw["code"])
                 if error_code==1:
                     alarm_trap = alarm_raw["trap"]
@@ -67,12 +67,14 @@ def check_alarm_list_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
                         attr_list.append(check_alarmlist_attrs)
                     else:
                         attr_list = check_alarmlist_attrs
-                    NotifFunc.check_attr_accuracy(mappingInstance,alarm_trap,nbi_alarm_list,ne_name,nodeid,attr_list,dict_server_info)
+                    NotifFunc.check_attr_accuracy(mappingInstance,alarm_trap,nbi_alarm_list,ne_name,dict_ne_info["ne_type"],alarm_type,nodeid,attr_list,dict_server_info)
                 else:
                     test.failed(dict_ne_info["ne_type"] + ":" + alarm_type + " accuracy test failed, reason:sending alarm trap failed, the error msg is:" + alarm_raw["msg"])
 
         except TimeoutException:
+            quitDriver(driver)
             test.error("find widget timeout")
         except Exception as e:
+            quitDriver(driver)
             test.error(str(e))
 

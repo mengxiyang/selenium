@@ -29,6 +29,7 @@ def get_widget_ignore_refrence_error(driver, list_identifier, sleep_time=.5, wai
 def is_pair_nes(ne, cne):
     # list_EPG = ["SGW", "PGW"]
     # list_MME = ["SGSN", "MME"]
+    # list_HSS = ["IMSHSS","LTEHSS"]
     if ne == cne:
         return False
 
