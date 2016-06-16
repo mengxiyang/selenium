@@ -28,20 +28,20 @@ def compare_data(notif_ne,expected_result):
     for key,value in expected_result.items():
         if notif_ne.has_key(key):
             if type(value) is not types.DictType:
-                if notif_ne[key] ==  value:
-                    test.passed(key + " accuracy test Passed. The NBI notification value is " + notif_ne[key] + ", and the expected result is " + str(value))
+                if str(notif_ne[key]) ==  str(value):
+                    test.passed(key + " accuracy test Passed. The NBI value is " + notif_ne[key] + ", and the expected result is " + str(value))
                 else:
-                    test.failed(key + " accuracy test Failed. The NBI notification value is " + notif_ne[key] + ", and the expected result is " + str(value))
+                    test.failed(key + " accuracy test Failed. The NBI value is " + notif_ne[key] + ", and the expected result is " + str(value))
             else:
                 expected_result = value
                 notif_ne = notif_ne[key]
                 compare_data(notif_ne,expected_result)
         else:
-            test.failed(key + " accuracy test Failed for " + key + " missing in NBI notification")
+            test.failed(key + " accuracy test Failed for " + key + " missing in NBI")
 
     for key_n,value_n in notif_ne.items():
         if expected_result.has_key(key_n) == None:
-            test.failed("NBI notification attribute " + key + " accuracy test Failed for extra attribute " + key)
+            test.failed("NBI attribute " + key + " accuracy test Failed for extra attribute " + key)
 
 
 
@@ -71,10 +71,10 @@ def check_common_accuracy(attr_name,dict_nbi_info,expected_value):
         test.info("check '" + attr_name + "',the nbi data result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
         compare_data(nbi_value, expected_value)
     else:
-        test.failed("get '" + attr_name + "' from Base Server Failed")
+        test.failed("get '" + attr_name + "' from NBI Failed")
 
 
-def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_info,nename,nodeid,attrs,server_info):
+def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_info,nename,netype,alarmtype,nodeid,attrs,server_info):
     for a in attrs:
         expected_value = {}
         nbi_value = {}
@@ -115,10 +115,10 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_info,nename,nodeid,a
                 dn = mappingInstance.convert_object_instance(nodeid,nename)
                 if dn != None:
                     expected_value = {'e':{'value':{'CORBA::String':'"' + dn + '"'}}}
-                    test.info("check 'objectInstance',the nbi notification result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
+                    test.info("check 'objectInstance',the nbi result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
                     compare_data(nbi_value,expected_value)
             else:
-                test.failed("get 'e' from nbi notification Failed")
+                test.failed("get 'e' from nbi Failed")
             
         elif "b" == a:
             if dict_nbi_info.has_key("b"):
@@ -126,7 +126,7 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_info,nename,nodeid,a
                 mapped_event_time = mappingInstance.convert_event_time(alarm_trap["timeStamp"])
                 if mapped_event_time!= None:
                     expected_value = {'b':{'value':{'TimeBase::UtcT':{'none':{'time':mapped_event_time,'inacclo':'0','inacchi':'0','tdf':'480'}}}}}
-                    test.info("check 'eventTime',the nbi notification result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
+                    test.info("check 'eventTime',the nbi result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
                     compare_data(nbi_value, expected_value)
             else:
                 test.failed("get 'b' from Base Server Failed")
@@ -138,9 +138,14 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_info,nename,nodeid,a
         elif "jj" == a:
             if dict_nbi_info.has_key("jj"):
                 nbi_value["jj"] = dict_nbi_info["jj"]
-                specific_problem = alarm_trap["specificProblem"]
-                alarmtypeid = mappingInstance.convert_alarmtype_id(specific_problem)
-                if alarmtypeid != None:
+                if netype in ("OCGAS","GMLC"):
+                    specific_problem = mappingInstance.convert_specific_problem(alarmtype)
+                else:
+                    specific_problem = alarm_trap["specificProblem"]                
+                
+                alarmtypeid = mappingInstance.convert_alarmtype_id(alarmtype)
+                
+                if alarmtypeid != None and specific_problem != None:
                     mapped_vender_specificAlarmType = '"' + alarmtypeid + "||" + specific_problem + '"'
                     expected_value = {'jj':{'value':{'CORBA::String':mapped_vender_specificAlarmType}}}
                     test.info("check 'vendorSpecificAlarmType',the nbi data result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
@@ -151,7 +156,10 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_info,nename,nodeid,a
         elif "g" == a:
             if dict_nbi_info.has_key("g"):
                 nbi_value["g"] = dict_nbi_info["g"]
-                mapped_probable_cause = mappingInstance.convert_probable_cause(alarm_trap["probableCause"])
+                if alarm_trap.has_key("probableCause"):
+                    mapped_probable_cause = mappingInstance.convert_probable_cause(alarm_trap["probableCause"])
+                else:
+                    test.failed("get 'g' from NBI Failed")
                 if mapped_probable_cause != None:
                     expected_value = {'g':{'value':{'CORBA::Short':mapped_probable_cause}}}
                     test.info("check 'probableCause',the nbi data result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
@@ -274,15 +282,22 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_info,nename,nodeid,a
                 mapped_event_time = mappingInstance.convert_event_time(alarm_trap["timeStamp"])
                 if mapped_event_time!= None:
                     expected_value = {'kk':{'value':{'TimeBase::UtcT':{'none':{'time':mapped_event_time,'inacclo':'0','inacchi':'0','tdf':'480'}}}}}
-                    test.info("check 'eventTime',the nbi data result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
+                    test.info("check 'alarm raised time',the nbi data result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
                     compare_data(nbi_value, expected_value)
             else:
                 test.failed("get 'kk' from Base Server Failed")
                 
         elif "i" == a:
-            mapped_specific_problem = mappingInstance.convert_specific_problem(alarm_trap["specificProblem"])
-            expected_value = {'i':{'CORBA::String':'"' + mapped_specific_problem + '"'}}
-            check_common_accuracy('i', dict_nbi_info, expected_value)
+            if netype in ('OCGAS','GMLC'):
+                mapped_specific_problem = mappingInstance.convert_specific_problem(alarmtype)
+            else:
+                if alarm_trap.has_key("specificProblem"):
+                    mapped_specific_problem = alarm_trap["specificProblem"]
+                else:
+                    test.failed("get specificProblem from trap Failed")
+            if mapped_specific_problem != None:
+                expected_value = {'i':{'value':{'CORBA::String':'"' + mapped_specific_problem + '"'}}}
+                check_common_accuracy('i', dict_nbi_info, expected_value)
         
         elif "n" == a:
             expected_value = {'n':{'value':{'CORBA::Short':2}}}
@@ -299,22 +314,28 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_info,nename,nodeid,a
         elif "ll" == a:
             if dict_nbi_info.has_key("ll"):
                 nbi_value["ll"] = dict_nbi_info["ll"]
-                mapped_event_time = mappingInstance.convert_event_time(alarm_trap["clearTime"])
-                if mapped_event_time!= None:
-                    expected_value = {'ll':{'value':{'TimeBase::UtcT':{'none':{'time':mapped_event_time,'inacclo':'0','inacchi':'0','tdf':'480'}}}}}
-                    test.info("check 'clearTime',the nbi result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
-                    compare_data(nbi_value, expected_value)
+                if alarm_trap.has_key("clearTime"):
+                    mapped_event_time = mappingInstance.convert_event_time(alarm_trap["clearTime"])
+                    if mapped_event_time!= None:
+                        expected_value = {'ll':{'value':{'TimeBase::UtcT':{'none':{'time':mapped_event_time,'inacclo':'0','inacchi':'0','tdf':'480'}}}}}
+                        test.info("check 'clearTime',the nbi result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
+                        compare_data(nbi_value, expected_value)
+                else:
+                    test.info("get 'clearTime' from sourceTrap Failed")
             else:
                 test.failed("get 'll' from Base Server Failed")
         
         elif "mm" == a:
             if dict_nbi_info.has_key("mm"):
                 nbi_value["mm"] = dict_nbi_info["mm"]
-                mapped_event_time = mappingInstance.convert_event_time(alarm_trap["changeTime"])
-                if mapped_event_time!= None:
-                    expected_value = {'mm':{'value':{'TimeBase::UtcT':{'none':{'time':mapped_event_time,'inacclo':'0','inacchi':'0','tdf':'480'}}}}}
-                    test.info("check 'changeTime',the nbi result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
-                    compare_data(nbi_value, expected_value)
+                if alarm_trap.has_key("changeTime"):
+                    mapped_event_time = mappingInstance.convert_event_time(alarm_trap["changeTime"])
+                    if mapped_event_time!= None:
+                        expected_value = {'mm':{'value':{'TimeBase::UtcT':{'none':{'time':mapped_event_time,'inacclo':'0','inacchi':'0','tdf':'480'}}}}}
+                        test.info("check 'changeTime',the nbi result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
+                        compare_data(nbi_value, expected_value)
+                else:
+                    test.info("get 'changeTime' from source trap Failed")
             else:
                 test.failed("get 'mm' from Base Server Failed")
                 
@@ -355,9 +376,9 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
                 alarm_type_list = alarmtypes
 
             for alarm_type in alarm_type_list:
-                test.info("send and get NBI notification for " + dict_ne_info["ne_type"] + ":" + alarm_type + "...")
+                test.info("send and get NBI data for " + dict_ne_info["ne_type"] + ":" + alarm_type + "...")
                 #alarm_raw = getNBINotification(dict_ne_info["ne_ip"], 7070, 'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],snmp_auth_info)
-                alarm_raw = base_clint_for_selenium.send_trap_nbi(dict_server_info["host"],7070,'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],auth_info=snmp_auth_info,ne_name)
+                alarm_raw = base_clint_for_selenium.send_trap_nbi(dict_ne_info["ne_ip"],7070,'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],auth_info=snmp_auth_info)
                 error_code = int(alarm_raw["code"])
                 if error_code==1:
                     alarm_trap = alarm_raw["trap"]
@@ -370,7 +391,7 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
                         attr_list.append(check_notif_items)
                     else:
                         attr_list = check_notif_items
-                    check_attr_accuracy(mappingInstance,alarm_trap,nbi_notif,ne_name,nodeid,attr_list,dict_server_info)
+                    check_attr_accuracy(mappingInstance,alarm_trap,nbi_notif,ne_name,dict_ne_info["ne_type"],alarm_type,nodeid,attr_list,dict_server_info)
                 else:
                     test.failed(dict_ne_info["ne_type"] + ":" + alarm_type + " accuracy test failed, reason:sending alarm trap failed, the error msg is:" + alarm_raw["msg"])
 

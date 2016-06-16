@@ -4,10 +4,13 @@ Created on Mar 31, 2016
 @author: eyyylll
 '''
 import os
-import datetime,time
+from datetime import datetime,timedelta
+import time
 from com.ericsson.xn.commons.PyProperties import Properties
 import com.ericsson.xn.commons.test_logger as test
 import types
+from test.test_datetime import HOUR
+from __builtin__ import str
 
 class alarmMapping():
     def __init__(self,alarm_mapping_cfg):
@@ -78,11 +81,13 @@ class alarmMapping():
         return dn
     
     def convert_event_time(self,event_time):
-        event_time = event_time
-        d_event_time = datetime.datetime.strptime(event_time,"%Y-%m-%d %H:%M:%S.%f")
-        d_microsecond = d_event_time.microsecond
-        t_event_time = d_event_time.timetuple()
-        timestamp = time.mktime(t_event_time)
-        utct_time = timestamp*10000000 + 122192928000000000
-        return "%d"%utct_time
-    
+        try:
+            d_event_time = datetime.strptime(event_time,"%Y-%m-%d %H:%M:%S.%f")
+            d_event_time_utc = d_event_time + timedelta(hours=-8)
+            d_event_time_timestamp = str(long((d_event_time_utc - datetime(1970,1,1)).total_seconds() * 10000000 + 122192928000000000L))
+            # d_event_time_timestamp = str(long((d_event_time_utc - datetime(1970,1,1)).total_seconds()*1000)/ 1000 * 10000000 + 122192928000000000L)
+            return d_event_time_timestamp
+        except ValueError as e:
+            test.failed('Eventtime Format Error: ' + str(e))
+            return None
+        
