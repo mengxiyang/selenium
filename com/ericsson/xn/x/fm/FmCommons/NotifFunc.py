@@ -338,7 +338,10 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_info,nename,netype,a
                     test.info("get 'changeTime' from source trap Failed")
             else:
                 test.failed("get 'mm' from Base Server Failed")
-                
+
+        elif "t" == a:
+            expected_value = {'t':{'value':{'AlarmIRPConstDefs::AttributeChangeSet':{'none':{'none':{'attribute_name':'""','old_value':{'CORBA::String':'""'},'new_value':{'CORBA::String':'""'}}}}}}}
+            check_common_accuracy('t',dict_nbi_info,expected_value)
                  
 def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
     dict_ne_info,dict_server_info,dict_browser_chrome = data_init(ne_info_cfg,server_info_cfg)
@@ -360,7 +363,7 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
             if nodeid == False:
                 test.error("update nodeid Failure")
                 
-            if dict_ne_info["ne_type"] == "LTEHSS" or dict_ne_info["ne_type"] == "IMSHSS":
+            if dict_ne_info["ne_type"] in ("IMSHSS","LTEHSS","MSC","HLR","GGSN","SGSN"):
                 snmp_auth_info = []
                 snmp_auth_info.append(dict_ne_info["usm_user"])
                 snmp_auth_info.append(dict_ne_info["auth_password"])
@@ -378,7 +381,7 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
             for alarm_type in alarm_type_list:
                 test.info("send and get NBI data for " + dict_ne_info["ne_type"] + ":" + alarm_type + "...")
                 #alarm_raw = getNBINotification(dict_ne_info["ne_ip"], 7070, 'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],snmp_auth_info)
-                alarm_raw = base_clint_for_selenium.send_trap_nbi(dict_ne_info["ne_ip"],7070,'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],auth_info=snmp_auth_info)
+                alarm_raw = base_clint_for_selenium.get_notification_trap(dict_ne_info["ne_ip"],7070,'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],snmp_auth_info,ne_name,nodeid)
                 error_code = int(alarm_raw["code"])
                 if error_code==1:
                     alarm_trap = alarm_raw["trap"]
@@ -386,7 +389,8 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
                     test.info("get TrapInfo is:" + str(alarm_trap) + " and NotifInfo is:" + str(nbi_notif))
                     test.info("start to check " + alarm_type)
                     check_notif_items = mappingInstance.get_property("notif_attr_names")
-                    attr_list = []
+                    attr_list = mappingInstance.dict_mapping_info["alarm_types"]
+                    alarm_type_list = []
                     if type(check_notif_items) is types.StringType:
                         attr_list.append(check_notif_items)
                     else:
