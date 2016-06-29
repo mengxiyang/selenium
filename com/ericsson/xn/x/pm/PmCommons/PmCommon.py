@@ -253,7 +253,7 @@ def wait_until_rounds_ok(driver, rows, rows_of_page, rows_each_period):
     test.failed('It seems that the the data we need has not been collected as expectes, case may fail later steps.')
 
 
-def check_pm_rows_updated(driver, ne_type, dict_counters, rows_of_page, dict_additional):
+def check_pm_rows_updated(driver, ne_type, dict_counters, rows_of_page, dict_additional, counter_types):
     '''
     The main function that check the PM Data accurate, it will first check the data of each row,
     then check the GUI time's minutes is multiple of 5,
@@ -283,7 +283,7 @@ def check_pm_rows_updated(driver, ne_type, dict_counters, rows_of_page, dict_add
     for row_index in range(1, number_of_rows_be_checked + 1):
         # check_pm_by_row returns [gui_datettime, lic_name] in List
         list_returns.append(check_pm_by_row(driver, id_table, row_index, ne_type, dict_counters, rows_of_page,
-                                            list_headers, is_m_lics))
+                                            list_headers, is_m_lics, counter_types))
     # check GUI time and lic_name
     lic_from_gui = []
     if number_of_rows_be_checked != len(list_returns):
@@ -458,7 +458,8 @@ def check_pm_rows(driver, logger, ne_type, dict_counters, rows_of_page, dict_add
         logger.error("Overall FAILED.")
 
 
-def check_pm_by_row(driver, id_table, index_row, ne_type, dict_counters, rows_of_page, list_headers, is_m_lics):
+def check_pm_by_row(driver, id_table, index_row, ne_type, dict_counters, rows_of_page, list_headers, is_m_lics,
+                    counter_types):
     test.info('Start to check row: ' + str(index_row))
 
     make_sure_is_correct_page(driver, index_row, rows_of_page)
@@ -477,22 +478,31 @@ def check_pm_by_row(driver, id_table, index_row, ne_type, dict_counters, rows_of
         if is_m_lics:
             except_counter_id = str(gui_time.minute) + '-' + lic_name
         list_row = dict_counters[except_counter_id].split(',')
+        list_types = counter_types['li_counter_types'].split(',')
         for i in range(len(list_row)):
             try:
                 id_counter = (By.XPATH, ".//td[" + str(i + 4) + "]")
                 gui_counter = find_single_widget(tr, 5, id_counter).get_attribute('innerHTML').encode('utf-8')
-                i_gui_counter = int(gui_counter)
+                if 'int' == list_types[i].lower().strip():
+                    i_exp = int(list_row[i].strip())
+                    i_gui = int(gui_counter)
+                elif 'float' == list_types[i].lower().strip():
+                    i_exp = float(list_row[i].strip())
+                    i_gui = float(gui_counter)
+                else:
+                    test.error('Unknown counter type of li counters.')
             except Exception as e:
-                i_gui_counter = None
-            if int(list_row[i].strip()) == i_gui_counter:
+                i_gui = None
+
+            if i_exp == i_gui:
                 msg = list_headers[1] + ": " + gui_str_time.strip() + ",\t" + list_headers[2] + ": " + lic_name + "; " \
-                      + list_headers[i + 3] + ", GUI is " + str(i_gui_counter) + ",\tExpected is " + str(list_row[i]) \
+                      + list_headers[i + 3] + ", GUI is " + str(i_gui) + ",\tExpected is " + str(i_exp) \
                       + "."
 
                 test.passed(msg)
             else:
                 msg = list_headers[1] + ": " + gui_str_time.strip() + ",\t" + list_headers[2] + ": " + lic_name + "; " \
-                      + list_headers[i + 3] + ", GUI is " + str(i_gui_counter) + ",\tExpected is " + str(list_row[i]) \
+                      + list_headers[i + 3] + ", GUI is " + str(i_gui) + ",\tExpected is " + str(i_exp) \
                       + "."
 
                 test.failed(msg)
