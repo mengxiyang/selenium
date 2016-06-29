@@ -32,6 +32,8 @@ def check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_t
         'check_rounds': check_rounds
     }
 
+    counter_types = get_me_types_map(me_types_cfg)
+
     driver = CommonStatic.login_rsnms(dict_browser_chrome, host, username, password, port, url)
     if driver:
         try:
@@ -47,7 +49,8 @@ def check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_t
             PmCommon.make_in_correct_tab(driver, ne_info['tab_pre'], '')
             PmCommon.wait_until_pm_date_show_up(driver, dict_ne_info['ne_name'])
             PmCommon.init_and_search(driver, dict_ne_info['ne_name'], end_time, start_time)
-            PmCommon.check_pm_rows_updated(driver, dict_ne_info['ne_type'], counters_pm, 10, dict_additinal)
+            PmCommon.check_pm_rows_updated(driver, dict_ne_info['ne_type'], counters_pm, 10, dict_additinal,
+                                           counter_types)
 
             if ne_info.has_key('tab_me') and me_counter_cfg is not None and me_types_cfg is not None:
                 test.info('Found ME Tab information, will check ME counters.')
@@ -56,14 +59,14 @@ def check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_t
                     'check_rounds': check_rounds
                 }
                 me_counters = get_pm_counters_map(me_counter_cfg)
-                me_types = get_me_types_map(me_types_cfg)
+                # me_types = get_me_types_map(me_types_cfg)
                 if 12 * dict_me_add['rows_each_period'] != len(me_counters):
                     test.error('Expected ME counters mis-match.')
                 PmCommon.make_in_correct_tab(driver, ne_info['tab_me'], '')
                 PmCommon.wait_until_pm_date_show_up(driver, dict_ne_info['ne_name'])
                 PmCommon.init_and_search(driver, dict_ne_info['ne_name'], end_time, start_time)
                 # PmCommon.wait_until_rounds_ok(driver, len(me_counters), 10, dict_me_add)
-                PmCommon.check_me_counters(driver, dict_ne_info['ne_name'], me_counters, 10, dict_me_add, me_types)
+                PmCommon.check_me_counters(driver, dict_ne_info['ne_name'], me_counters, 10, dict_me_add, counter_types)
 
             CommonStatic.logout_rsnms(driver)
         finally:
