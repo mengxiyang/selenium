@@ -519,7 +519,7 @@ def check_me_single_row(driver, id_table, index_row, ne_type, dict_counters, row
         # lic_name = find_single_widget(tr, 5, id_lic_name).get_attribute('innerHTML').encode('utf-8')
 
         list_row = dict_counters[except_counter_id].split(',')
-        list_types = me_types['counter_types'].split(',')
+        list_types = me_types['me_counter_types'].split(',')
         for i in range(len(list_row)):
             try:
                 id_counter = (By.XPATH, ".//td[" + str(i + 3) + "]")

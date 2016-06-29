@@ -14,7 +14,7 @@ root_dir = os.path.dirname(os.path.abspath(__file__)).split('x' + sep + 'pm' + s
 ne_info_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'nes' + sep + 'imshss.cfg')
 counter_info_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'counters' + sep + 'imshss.cfg')
 me_counter_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'me_counters' + sep + 'imshss.cfg')
-me_types_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'me_types' + sep + 'imshss.cfg')
+me_types_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'counter_types' + sep + 'imshss.cfg')
 server_info_path = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'execute_conf.cfg')
 t_now = datetime.now()
 end_time = t_now + timedelta(minutes=-(t_now.minute % 5 + 14))
