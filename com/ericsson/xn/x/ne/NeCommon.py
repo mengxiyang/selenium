@@ -42,7 +42,7 @@ def check_and_add_ne(driver, dict_ne_info):
         FmCommon.quitDriver(driver)
         test.error('A ne already exist with the given IP or engineId named: ' + ne_name)
     elif 1 == ne_exist:
-        test.info("NE already exist, reuse the old NE")
+        test.info("NE already exist, reuse the old NE named: " + ne_name)
         dict_ne_info["ne_name"] = ne_name
     elif 0 == ne_exist:
         test.info("Paired NE, add a new one")
@@ -94,7 +94,7 @@ def add_new_ne(driver, dict_ne_info):
     id_li_pwd = (By.ID, "i_nelipwd")
     id_fro_id = (By.ID, "i_nefroid")
     
-    #add for HSS
+    #add for HSS and IMS
     id_snmp_port = (By.ID,"i_snmpport")
     id_usmusername = (By.ID,"i_usmusername")
     id_i_authpwd = (By.ID,"i_authpwd")
@@ -102,6 +102,8 @@ def add_new_ne(driver, dict_ne_info):
     id_i_appuser = (By.ID,"i_serviceusername")
     id_i_apppwd = (By.ID,"i_servicepwd")
     id_i_engineid = (By.ID,"i_engineid")
+    id_sftp_user = (By.ID, "i_nesftpuser")
+    id_sftp_password = (By.ID,"i_nesftppassword")
 
     ne_name = dict_ne_info["ne_type"] + "-" + str(binascii.hexlify(os.urandom(8))).upper()
     w_ne_name = find_single_widget(driver, 10, id_ne_name)
@@ -146,7 +148,7 @@ def add_new_ne(driver, dict_ne_info):
         w_log_path.clear()
         w_log_path.send_keys(dict_ne_info["log_path"])
         
-        if 'IMSHSS' == dict_ne_info["ne_type"] or 'LTEHSS' == dict_ne_info["ne_type"]:
+        if dict_ne_info["ne_type"] in ("IMSHSS","LTEHSS","MSC","HLR","3GSGSN","GGSN"):
             w_snmp_port = find_single_widget(driver, 10, id_snmp_port)
             w_snmp_port.clear()
             w_snmp_port.send_keys(dict_ne_info["snmp_port"])
@@ -175,8 +177,17 @@ def add_new_ne(driver, dict_ne_info):
             w_engine_id = find_single_widget(driver,10,id_i_engineid)
             w_engine_id.clear()
             w_engine_id.send_keys(dict_ne_info["engine_id"])
+
+
+            w_sftp_user = find_single_widget(driver,10,id_sftp_user)
+            w_sftp_user.clear()
+            w_sftp_user.send_keys(dict_ne_info["sftp_user"])
+
+            w_sftp_password = find_single_widget(driver,10,id_sftp_password)
+            w_sftp_password.clear()
+            w_sftp_password.send_keys(dict_ne_info["sftp_password"])
     
-        elif 'OCGAS' == dict_ne_info["ne_type"] or "GMLC" == dict_ne_info["ne_type"]:
+        elif dict_ne_info["ne_type"] in ("GMLC","OCGAS"):
             w_alarm_path = find_single_widget(driver, 10, id_alarm_path)
             w_alarm_path.clear()
             w_alarm_path.send_keys(dict_ne_info["alarm_path"])
@@ -242,7 +253,7 @@ def check_ne_exist_by_type(driver, ne_type, ne_ip, engine_id, page_no=20):
                                 elif ne_type == gui_ne_type and ne_ip == gui_ip:
                                     return 1,gui_ne_name
                                 else:
-                                    return 2,None
+                                    return 2,gui_ne_name
                         else:
                             FmCommon.quitDriver(driver)
                             test.error("engine_id not configured for " + ne_type)

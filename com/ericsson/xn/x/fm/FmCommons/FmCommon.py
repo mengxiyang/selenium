@@ -44,6 +44,8 @@ def data_init(ne_info_cfg,server_info_cfg):
         "alarm_path": ne_info.getProperty("alarm_path"),
         "ne_port": ne_info.getProperty("ne_port"),
         "sftp_port": ne_info.getProperty("sftp_port"),
+        "sftp_user": ne_info.getProperty("sftp_user"),
+        "sftp_password": ne_info.getProperty("sftp_password"),
         "snmp_port": ne_info.getProperty("snmp_port"),
         "usm_user": ne_info.getProperty("usm_user"),
         "auth_password": ne_info.getProperty("auth_password"),
@@ -104,7 +106,7 @@ def fetch_alarm_on_gui(driver,ne_type,alarm_trap,mappingInstance,alarm_type):
             time.sleep(5)
             continue
 
-        if ne_type == 'OCGAS':
+        if ne_type in  ('OCGAS','GMLC'):
             specific_problem = mappingInstance.get_property("specific_problem")[alarm_type]
         else:
             specific_problem = alarm_trap["specificProblem"]

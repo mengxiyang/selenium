@@ -58,18 +58,19 @@ def ne_type_index_add_ne_page(ne_type):
     dic = {
         "3GSGSN": 1,
         "GGSN": 2,
-        "HLR": 3,
-        "IMSHSS": 4,
-        "LTEHSS": 5,
-        "MME": 6,
-        "MSC": 7,
-        "MTAS": 8,
-        "OCGAS": 9,
-        "PCSCF": 10,
-        "SGW": 11,
-        "PGW": 12,
-        "SBC": 13,
-        "SGSN": 14
+        "GMLC": 3,
+        "HLR": 4,
+        "IMSHSS": 5,
+        "LTEHSS": 6,
+        "MME": 7,
+        "MSC": 8,
+        "MTAS": 9,
+        "OCGAS": 10,
+        "PCSCF": 11,
+        "SGW": 12,
+        "PGW": 13,
+        "SBC": 14,
+        "SGSN": 15
     }
     if dic.has_key(ne_type):
         return dic[ne_type]
@@ -85,7 +86,8 @@ def ne_category_by_ne_type(ne_type):
         'SBC': 'IMS',
         'OCGAS': 'IMS',
         'IMSHSS': 'IMS',
-        'LTEHSS': '4G'
+        'LTEHSS': '4G',
+        'GMLC': '3G'
     }
     return category[ne_type]
 

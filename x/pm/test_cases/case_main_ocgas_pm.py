@@ -13,12 +13,13 @@ caseutils.pre_test_case(module_name, 'pm_automation')
 root_dir = os.path.dirname(os.path.abspath(__file__)).split('x' + sep + 'pm' + sep + 'test_cases', 1)[0]
 ne_info_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'nes' + sep + 'ocgas.cfg')
 counter_info_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'counters' + sep + 'ocgas.cfg')
-# me_counter_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'me_counters' + sep + 'ltehss.cfg')
+me_counter_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'me_counters' + sep + 'ocgas.cfg')
+me_types_cfg = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'me_types' + sep + 'ocgas.cfg')
 server_info_path = os.path.normpath(root_dir + sep + 'x' + sep + 'pm' + sep + 'execute_conf.cfg')
 t_now = datetime.now()
 end_time = t_now + timedelta(minutes=-(t_now.minute % 5 + 14))
 str_end_time = end_time.strftime('%Y-%m-%d %H:%M') + ":00"
-PmBaseFunc.check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_time, 2)
-
+#PmBaseFunc.check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_time, 2)
+PmBaseFunc.check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_time, 2, 12, me_counter_cfg, me_types_cfg)
 # Post of the test case
 caseutils.post_test_case()

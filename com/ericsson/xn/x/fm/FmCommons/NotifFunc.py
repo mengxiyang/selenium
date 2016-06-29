@@ -25,24 +25,27 @@ ne_info_cfg = root_dir + os.sep + 'x' + os.sep + 'pm' + os.sep + 'nes' + os.sep 
 
 
 def compare_data(notif_ne,expected_result):
-    for key,value in expected_result.items():
-        if notif_ne.has_key(key):
+    expected_new = expected_result
+    notif_new = notif_ne
+    notif_old = expected_old = {}
+
+    for key,value in expected_new.items():
+        if notif_new.has_key(key):
             if type(value) is not types.DictType:
-                if str(notif_ne[key]) ==  str(value):
-                    test.passed(key + " accuracy test Passed. The NBI value is " + notif_ne[key] + ", and the expected result is " + str(value))
+                if str(notif_new[key]) ==  str(value):
+                    test.passed(key + " accuracy test Passed. The NBI value is " + notif_new[key] + ", and the expected result is " + str(value))
                 else:
-                    test.failed(key + " accuracy test Failed. The NBI value is " + notif_ne[key] + ", and the expected result is " + str(value))
-            else:
-                expected_result = value
-                notif_ne = notif_ne[key]
-                compare_data(notif_ne,expected_result)
+                    test.failed(key + " accuracy test Failed. The NBI value is " + notif_new[key] + ", and the expected result is " + str(value))  
+            elif len(value) > 1:
+                expected_new = value
+                notif_new = notif_new[key]
+                compare_data(notif_new,expected_new)
+            elif len(value) == 1:
+                notif_old = notif_new[key]
+                expected_old = value
+                compare_data(notif_old, expected_old)
         else:
             test.failed(key + " accuracy test Failed for " + key + " missing in NBI")
-
-    for key_n,value_n in notif_ne.items():
-        if expected_result.has_key(key_n) == None:
-            test.failed("NBI attribute " + key + " accuracy test Failed for extra attribute " + key)
-
 
 
 
@@ -82,10 +85,9 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_info,nename,netype,a
             if dict_nbi_info.has_key('event_name'):
                 nbi_value['event_name'] = dict_nbi_info['event_name']
                 mapped_event_name = mappingInstance.convert_event_type(alarm_trap['alarmCategory'])
-                if mapped_event_name != None:
-                    expected_value['event_name'] = '"' + mapped_event_name + '"'
-                    test.info("check 'event_name',the nbi data result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
-                    compare_data(nbi_value,expected_value)
+                expected_value['event_name'] = '"' + mapped_event_name + '"'
+                test.info("check 'event_name',the nbi data result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))
+                compare_data(nbi_value,expected_value)
             else:
                 test.failed("get 'event_name' from Base Server Failed")
 
@@ -314,8 +316,12 @@ def check_attr_accuracy(mappingInstance,alarm_trap,dict_nbi_info,nename,netype,a
         elif "ll" == a:
             if dict_nbi_info.has_key("ll"):
                 nbi_value["ll"] = dict_nbi_info["ll"]
-                if alarm_trap.has_key("clearTime"):
-                    mapped_event_time = mappingInstance.convert_event_time(alarm_trap["clearTime"])
+                if netype in ('OCGAS','GMLC'):
+                    clearTime_name_intrap = "timeStamp"
+                else:
+                    clearTime_name_intrap = "clearTime"
+                if alarm_trap.has_key(clearTime_name_intrap):
+                    mapped_event_time = mappingInstance.convert_event_time(alarm_trap[clearTime_name_intrap])
                     if mapped_event_time!= None:
                         expected_value = {'ll':{'value':{'TimeBase::UtcT':{'none':{'time':mapped_event_time,'inacclo':'0','inacchi':'0','tdf':'480'}}}}}
                         test.info("check 'clearTime',the nbi result is " + str(nbi_value) + ",and the expected result is " + str(expected_value))

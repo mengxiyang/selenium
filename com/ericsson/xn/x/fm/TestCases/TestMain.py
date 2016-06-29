@@ -7,6 +7,7 @@ from com.ericsson.xn.x.fm.TestCases import case_imshss_alarmlist
 from com.ericsson.xn.x.fm.TestCases import case_ltehss_alarmlist
 from com.ericsson.xn.x.fm.TestCases import  case_gmlc_alarmlist
 from com.ericsson.xn.x.fm.TestCases import case_gmlc_nbi
+from com.ericsson.xn.x.fm.TestCases import case_gmlc_gui
 if __name__ == '__main__':
     
     #case_ocgas_gui.check_ocgas_alarm_accuracy()
@@ -17,5 +18,6 @@ if __name__ == '__main__':
     #case_imshss_alarmlist.check_imshss_get_alarmlist_accuracy()
     #case_ltehss_alarmlist.check_ltehss_get_alarmlist_accuracy()
     #case_gmlc_alarmlist.check_gmlc_get_alarmlist_accuracy()
-    case_gmlc_nbi.check_gmlc_nbi_accuracy()
+    #case_gmlc_nbi.check_gmlc_nbi_accuracy()
+    case_gmlc_gui.check_gmlc_alarm_accuracy()
 
