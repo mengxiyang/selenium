@@ -2,7 +2,7 @@ from com.ericsson.xn.x.pm.PmCommons import NBIPmFunc
 from com.ericsson.xn.commons import caseutils
 from com.ericsson.xn.commons import test_logger
 
-nes_info = {"GMLC":{"ne_type":"GMLC","nename":"GMLC77","nodeid":"12345","licid":"","interval":15,"time":"201606291200"}}
+nes_info = {"GMLC":{"ne_type":"GMLC","nename":"GMLC77","nodeid":"12345","licid":"","interval":15,"time":"201606291230"}}
 
 def check_pm_gmlc():
     global  nes_info
