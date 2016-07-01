@@ -88,7 +88,10 @@ def ne_category_by_ne_type(ne_type):
         'IMSHSS': 'IMS',
         'LTEHSS': '4G',
         'GMLC': '3G',
-        '3GSGSN': '3G'
+        '3GSGSN': '3G',
+        'MSC': '3G',
+        'HLR': '3G',
+        'GGSN': '3G'
     }
     return category[ne_type]
 

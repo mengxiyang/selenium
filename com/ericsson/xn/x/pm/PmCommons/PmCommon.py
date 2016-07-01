@@ -484,11 +484,19 @@ def check_pm_by_row(driver, id_table, index_row, ne_type, dict_counters, rows_of
                 id_counter = (By.XPATH, ".//td[" + str(i + 4) + "]")
                 gui_counter = find_single_widget(tr, 5, id_counter).get_attribute('innerHTML').encode('utf-8')
                 if 'int' == list_types[i].lower().strip():
-                    i_exp = int(list_row[i].strip())
-                    i_gui = int(gui_counter)
+                    if '-1' == list_row[i].strip():
+                        i_exp = u"\u200B".encode('utf-8')
+                        i_gui = str(gui_counter)
+                    else:
+                        i_exp = int(list_row[i].strip())
+                        i_gui = int(gui_counter)
                 elif 'float' == list_types[i].lower().strip():
-                    i_exp = float(list_row[i].strip())
-                    i_gui = float(gui_counter)
+                    if '-1' == list_row[i].strip():
+                        i_exp = u"\u200B".encode('utf-8')
+                        i_gui = str(gui_counter)
+                    else:
+                        i_exp = float(list_row[i].strip())
+                        i_gui = float(gui_counter)
                 else:
                     test.error('Unknown counter type of li counters.')
             except Exception as e:
@@ -496,13 +504,13 @@ def check_pm_by_row(driver, id_table, index_row, ne_type, dict_counters, rows_of
 
             if i_exp == i_gui:
                 msg = list_headers[1] + ": " + gui_str_time.strip() + ",\t" + list_headers[2] + ": " + lic_name + "; " \
-                      + list_headers[i + 3] + ", GUI is " + str(i_gui) + ",\tExpected is " + str(i_exp) \
+                      + list_headers[i + 3] + ", GUI is " + repr(i_gui) + ",\tExpected is " + repr(i_exp) \
                       + "."
 
                 test.passed(msg)
             else:
                 msg = list_headers[1] + ": " + gui_str_time.strip() + ",\t" + list_headers[2] + ": " + lic_name + "; " \
-                      + list_headers[i + 3] + ", GUI is " + str(i_gui) + ",\tExpected is " + str(i_exp) \
+                      + list_headers[i + 3] + ", GUI is " + repr(i_gui) + ",\tExpected is " + repr(i_exp) \
                       + "."
 
                 test.failed(msg)
@@ -536,23 +544,31 @@ def check_me_single_row(driver, id_table, index_row, ne_type, dict_counters, row
                 gui_counter = find_single_widget(tr, 5, id_counter).get_attribute('innerHTML').encode('utf-8')
                 # i_gui_counter = int(gui_counter) if 'int' == list_types[i].lower().strip()
                 if 'int' == list_types[i].lower().strip():
-                    i_gui_counter = int(gui_counter)
-                    i_expected = int(list_row[i].strip())
+                    if '-1' == list_row[i].strip():
+                        i_expected = u"\u200B".encode('utf-8')
+                        i_gui_counter = gui_counter
+                    else:
+                        i_gui_counter = int(gui_counter)
+                        i_expected = int(list_row[i].strip())
                 elif 'float' == list_types[i].lower().strip():
-                    i_gui_counter = float(gui_counter)
-                    i_expected = float(list_row[i].strip())
+                    if '-1' == list_row[i].strip():
+                        i_expected = u"\u200B".encode('utf-8')
+                        i_gui_counter = gui_counter
+                    else:
+                        i_gui_counter = float(gui_counter)
+                        i_expected = float(list_row[i].strip())
                 else:
                     test.error('Unknown counter type of me counters.')
             except Exception as e:
                 i_gui_counter = None
             if i_expected == i_gui_counter:
                 msg = list_headers[1] + ": " + gui_str_time.strip() + ",\t" + "; " + list_headers[i + 2] + ", GUI is " \
-                      + str(i_gui_counter) + ",\tExpected is " + str(list_row[i]) + "."
+                      + repr(i_gui_counter) + ",\tExpected is " + repr(i_expected) + "."
 
                 test.passed(msg)
             else:
                 msg = list_headers[1] + ": " + gui_str_time.strip() + ",\t" + "; " + list_headers[i + 2] + ", GUI is " \
-                      + str(i_gui_counter) + ",\tExpected is " + str(list_row[i]) + "."
+                      + repr(i_gui_counter) + ",\tExpected is " + repr(i_expected) + "."
 
                 test.failed(msg)
         return gui_time

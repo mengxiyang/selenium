@@ -70,7 +70,10 @@ def check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_t
 
             CommonStatic.logout_rsnms(driver)
         finally:
-            CommonStatic.quite_driver(driver)
+            try:
+                CommonStatic.quite_driver(driver)
+            except Exception:
+                pass
 
 
 def check_sbc_pm(ne_info_cfg, counter_info_cfg, server_info_path, number_of_lic, check_rounds=4, me_counter_cfg=None):
