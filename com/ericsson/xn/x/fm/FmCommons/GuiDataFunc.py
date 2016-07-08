@@ -60,7 +60,7 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
                     alarm_trap=alarm_from_ne["trap"]
                     test_logger.info("alarm sent successfully" + str(alarm_trap))
                     alarm_expected=alarm_converter(dict_ne_info["ne_type"],ne_name,alarm_type,alarm_trap,mappingInstance)
-                    alarm_on_gui=FmCommon.fetch_alarm_on_guifetch_alarm_on_gui(driver,dict_ne_info["ne_type"],alarm_trap,mappingInstance,alarm_type)
+                    alarm_on_gui=FmCommon.fetch_alarm_on_gui(driver,dict_ne_info["ne_type"],alarm_trap,mappingInstance,alarm_type)
                     if alarm_on_gui != None:
                         test_logger.info("start to check alarm type: " + dict_ne_info["ne_type"] + ":" + alarm_type)
                         alarm_compare(alarm_expected,alarm_on_gui)

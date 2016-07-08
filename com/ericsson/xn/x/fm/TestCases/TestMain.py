@@ -17,7 +17,7 @@ if __name__ == '__main__':
     #case_ltehss_nbi.check_ltehss_nbi_accuracy()
     #case_imshss_alarmlist.check_imshss_get_alarmlist_accuracy()
     #case_ltehss_alarmlist.check_ltehss_get_alarmlist_accuracy()
-    #case_gmlc_alarmlist.check_gmlc_get_alarmlist_accuracy()
-    #case_gmlc_nbi.check_gmlc_nbi_accuracy()
+    case_gmlc_alarmlist.check_gmlc_get_alarmlist_accuracy()
+    case_gmlc_nbi.check_gmlc_nbi_accuracy()
     case_gmlc_gui.check_gmlc_alarm_accuracy()
 
