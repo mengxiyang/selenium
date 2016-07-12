@@ -9,6 +9,8 @@ from com.ericsson.xn.x.pm.NBIPmCases import case_ocgas_pm
 from com.ericsson.xn.x.pm.NBIPmCases import case_gmlc_pm
 from com.ericsson.xn.x.pm.NBIPmCases import  case_hlr_pm
 from com.ericsson.xn.x.pm.NBIPmCases import  case_msc_pm
+from com.ericsson.xn.x.pm.NBIPmCases import  case_3gsgsn_pm
+from  com.ericsson.xn.x.pm.NBIPmCases import  case_ggsn_pm
 
 if __name__ == '__main__':  
     #case_imshss_pm.check_pm_imshss()
@@ -21,3 +23,5 @@ if __name__ == '__main__':
     case_gmlc_pm.check_pm_gmlc()
     case_hlr_pm.check_pm_hlr()
     case_msc_pm.check_pm_msc()
+    case_3gsgsn_pm.check_pm_3gsgsn()
+    case_ggsn_pm.check_pm_ggsn()

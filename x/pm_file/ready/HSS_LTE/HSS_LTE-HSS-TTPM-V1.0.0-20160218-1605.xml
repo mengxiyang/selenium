@@ -2,7 +2,7 @@
 
 <PmFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PmFileFormat.xsd">
     <FileHeader>
-        <InfoModelReferenced>HSS-PM-V2.0.0</InfoModelReferenced>
+        <InfoModelReferenced>HSS-PM-V1.0.0</InfoModelReferenced>
         <DnPrefix>DC=Ericsson1</DnPrefix>
         <SenderName1>DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1</SenderName1>
         <VendorName>Ericsson</VendorName>
@@ -13,7 +13,7 @@
         <ObjectType>ME</ObjectType>
         <PmName>
             <N i="1">Memtotal</N>
-            <N i="2">CpuUsageMean1</N>
+            <N i="2">CpuUsageMean</N>
             <N i="3">CpuUsagePeak</N>
             <N i="4">MemUsageMean</N>
             <N i="5">MemUsagePeak</N>
