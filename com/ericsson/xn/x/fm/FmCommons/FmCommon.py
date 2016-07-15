@@ -54,7 +54,7 @@ def data_init(ne_info_cfg,server_info_cfg):
         "app_password": ne_info.getProperty("app_password"),
         "li_pwd": ne_info.getProperty("li_pwd"),
         "fro_id": ne_info.getProperty("fro_id"),
-        "engine_id":ne_info.getProperty("engineId")
+        "engine_id":ne_info.getProperty("engine_id")
     }
 
     return dict_ne_info,dict_server_info,dict_browser_chrome

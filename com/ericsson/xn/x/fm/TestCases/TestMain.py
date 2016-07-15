@@ -8,6 +8,10 @@ from com.ericsson.xn.x.fm.TestCases import case_ltehss_alarmlist
 from com.ericsson.xn.x.fm.TestCases import  case_gmlc_alarmlist
 from com.ericsson.xn.x.fm.TestCases import case_gmlc_nbi
 from com.ericsson.xn.x.fm.TestCases import case_gmlc_gui
+from com.ericsson.xn.x.fm.TestCases import case_msc_gui
+from com.ericsson.xn.x.fm.TestCases import case_msc_nbi
+from com.ericsson.xn.x.fm.TestCases import case_msc_alarmlist
+
 if __name__ == '__main__':
     
     #case_ocgas_gui.check_ocgas_alarm_accuracy()
@@ -17,7 +21,11 @@ if __name__ == '__main__':
     #case_ltehss_nbi.check_ltehss_nbi_accuracy()
     #case_imshss_alarmlist.check_imshss_get_alarmlist_accuracy()
     #case_ltehss_alarmlist.check_ltehss_get_alarmlist_accuracy()
-    case_gmlc_alarmlist.check_gmlc_get_alarmlist_accuracy()
-    case_gmlc_nbi.check_gmlc_nbi_accuracy()
-    case_gmlc_gui.check_gmlc_alarm_accuracy()
+    #case_gmlc_alarmlist.check_gmlc_get_alarmlist_accuracy()
+    #case_gmlc_nbi.check_gmlc_nbi_accuracy()
+    #case_gmlc_gui.check_gmlc_alarm_accuracy()
+    #case_msc_gui.check_msc_alarm_accuracy()
+    #case_msc_nbi.check_msc_nbi_accuracy()
+    case_msc_alarmlist.check_msc_get_alarmlist_accuracy()
+
 

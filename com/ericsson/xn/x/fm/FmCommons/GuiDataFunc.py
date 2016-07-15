@@ -44,7 +44,7 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
                 alarm_type_list.append(alarmtypes)
             else:
                 alarm_type_list = alarmtypes
-            if dict_ne_info["ne_type"] == "LTEHSS" or dict_ne_info["ne_type"] == "IMSHSS":
+            if dict_ne_info["ne_type"] in ("LTEHSS","IMSHSS","MSC","HLR","3GSGSN","GGSN"):
                 snmp_auth_info = []
                 snmp_auth_info.append(dict_ne_info["usm_user"])
                 snmp_auth_info.append(dict_ne_info["auth_password"])
