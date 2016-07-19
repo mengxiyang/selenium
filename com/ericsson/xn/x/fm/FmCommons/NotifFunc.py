@@ -369,7 +369,7 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
             if nodeid == False:
                 test.error("update nodeid Failure")
                 
-            if dict_ne_info["ne_type"] in ("IMSHSS","LTEHSS","MSC","HLR","GGSN","SGSN"):
+            if dict_ne_info["ne_type"] in ("IMSHSS","LTEHSS","MSC","HLR","GGSN","3GSGSN"):
                 snmp_auth_info = []
                 snmp_auth_info.append(dict_ne_info["usm_user"])
                 snmp_auth_info.append(dict_ne_info["auth_password"])
