@@ -76,7 +76,7 @@ def windows_chrome_login_rsnms(browser_path, driver_path, host, username, passwo
 
 
 def login_first_page(driver, host, username, password, port, url):
-    index = 'http://' + str(host) + ':' + str(port) + url
+    index = 'https://' + str(host) + ':' + str(port) + url
     test.info('Web page: ' + str(index))
     driver.get(index)
     driver.find_element_by_id('loginUsername').clear()

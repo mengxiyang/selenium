@@ -1,11 +1,7 @@
 import sys
 
-if __name__ == '__main__':
-    counter_name_list=sys.argv[1].split(",")
-    ne_type = sys.argv[2]
-    data_type = sys.argv[3]
-    start_time = sys.argv[4]
-    end_time = sys.argv[5]
+def gen_sql(counter_name,ne_type,data_type,start_time,end_time):
+    counter_name_list=counter_name.split(",")
     counter_list=[]
     type_list=[]
     for counters in counter_name_list:
@@ -21,5 +17,6 @@ if __name__ == '__main__':
             counter_list.append(counters)
             type_list.append("int")
     sql= "select " + ",".join(counter_list) + " into outfile '/opt/xoam/" + ne_type + "_" + data_type + ".cfg' fields terminated by ',' from pm_" + ne_type + "_" + data_type + " where start_time>='" + start_time + "' and start_time<='" + end_time +"';"
-    print sql
-    print ",".join(type_list)
+    return sql + "\n" + ",".join(type_list)
+
+print gen_sql(counter_name='Memtotal,Nettotal3,CpuUsageMean,CpuUsagePeak,MemUsageMean,MemUsagePeak,NetUsageMean3,NetUsagePeak3',ne_type='msc',data_type='me',start_time='2016-07-21 12:00:00',end_time='2016-07-21 12:55:00')

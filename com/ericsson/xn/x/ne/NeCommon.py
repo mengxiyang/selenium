@@ -29,7 +29,7 @@ def to_ne_management_page(driver, logger):
 
 def to_ne_management_page_by_url(driver, server_info, url_add='#network-overview/ne-management'):
     test.info("To the NE Management page...")
-    base_url = 'http://' + server_info.getProperty('host') + ':' + str(server_info.getProperty('port')) + \
+    base_url = 'https://' + server_info.getProperty('host') + ':' + str(server_info.getProperty('port')) + \
                server_info.getProperty('preurl')
     test.info('NeMgt URL is: ' + base_url + url_add)
     driver.get(base_url + url_add)

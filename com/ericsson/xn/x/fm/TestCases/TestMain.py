@@ -42,9 +42,9 @@ if __name__ == '__main__':
     #case_ggsn_nbi.check_nbi_accuracy()
     #case_ggsn_gui.check_alarm_accuracy()
     #case_ggsn_alarmlist.check_get_alarmlist_accuracy()
-    case_3gsgsn_nbi.check_nbi_accuracy()
-    case_3gsgsn_gui.check_alarm_accuracy()
-    case_3gsgsn_alarmlist.check_get_alarmlist_accuracy()
+    #case_3gsgsn_nbi.check_nbi_accuracy()
+    #case_3gsgsn_gui.check_alarm_accuracy()
+    #case_3gsgsn_alarmlist.check_get_alarmlist_accuracy()
 
 
 
