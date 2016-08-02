@@ -37,7 +37,8 @@ def to_ne_management_page_by_url(driver, server_info, url_add='#network-overview
 
 
 def check_and_add_ne(driver, dict_ne_info):
-    ne_exist, ne_name = check_ne_exist_by_type(driver, dict_ne_info["ne_type"], dict_ne_info["ne_ip"],dict_ne_info["engine_id"])
+    ne_exist, ne_name = check_ne_exist_by_type(driver, dict_ne_info["ne_type"],
+                                               dict_ne_info["ne_ip"],dict_ne_info.get('engine_id'))
     if 2 == ne_exist:
         FmCommon.quitDriver(driver)
         test.error('A ne already exist with the given IP or engineId named: ' + ne_name)
