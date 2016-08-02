@@ -62,7 +62,7 @@ def check_in_correct_pm_page(driver):
 
 def to_pm_management_page_by_url(driver, ne_type, server_info, to_url_pre='#network-overview/pm-management/'):
     test.info('Will Navigate to the PMManagement page...')
-    base_url = 'http://' + server_info.getProperty('host') + ':' + str(server_info.getProperty('port')) + \
+    base_url = 'https://' + server_info.getProperty('host') + ':' + str(server_info.getProperty('port')) + \
                server_info.getProperty('preurl')
     test.info('Base URL is: ' + base_url)
     to_url = base_url + (to_url_pre + 'pm-' + ne_category_by_ne_type(ne_type) + '/' + 'pm-' + ne_type).lower()
