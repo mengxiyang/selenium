@@ -8,7 +8,7 @@ from com.ericsson.xn.x.pm.PmCommons import NBIPmFunc
 from com.ericsson.xn.commons import test_logger
 from com.ericsson.xn.commons import caseutils
 
-nes_info =  {"OCGAS":{"ne_type":"OCGAS","nename":"ocgas67","nodeid":"1","licid":"","interval":15,"time":"201602010900"}}
+nes_info =  {"OCGAS":{"ne_type":"OCGAS","nename":"OCGAS-EADFE61FCEE92DA8","nodeid":"01","licid":"","interval":15,"time":"201608032000"}}
 
 def check_pm_as():
     global nes_info

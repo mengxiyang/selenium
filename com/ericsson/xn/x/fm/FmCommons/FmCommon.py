@@ -73,7 +73,7 @@ def toAlarmManagement(driver):
 
 def toAlarmManagement_by_url(driver,server_info,url_add = "#network-overview/fault-mgt/fault-management"):
     logCommon.info("To the AlarmManagement page...")
-    url="http://" + server_info.getProperty("host") + ":" + str(server_info.getProperty("port")) + server_info.getProperty("preurl") + url_add
+    url="https://" + server_info.getProperty("host") + ":" + str(server_info.getProperty("port")) + server_info.getProperty("preurl") + url_add
     logCommon.info("The AlarmMgt URL is: " + url)
     driver.get(url)
     logCommon.info("Login AlarmManagement page successfully")

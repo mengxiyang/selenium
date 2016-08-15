@@ -1,0 +1,98 @@
+Test case: check_nbi_pm_PGW_rop=15_cases started.
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\NodeIdpgw58/NodeIdpgw58-PGW-TTPM-V1.0.0-20160803-1900.xml
+Step 1, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/Memtotal Passed. The NBI value is , and the expected result is 
+Step 2, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/NetUsagePeak3 Passed. The NBI value is , and the expected result is 
+Step 3, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/CpuUsageMean Passed. The NBI value is , and the expected result is 
+Step 4, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/Nettotal3 Passed. The NBI value is , and the expected result is 
+Step 5, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/MemUsageMean Passed. The NBI value is , and the expected result is 
+Step 6, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/MemUsagePeak Passed. The NBI value is , and the expected result is 
+Step 7, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/CpuUsagePeak Passed. The NBI value is , and the expected result is 
+Step 8, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/NetUsageMean3 Passed. The NBI value is , and the expected result is 
+Step 9, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/J4 Passed. The NBI value is 4294967044, and the expected result is 4294967044
+Step 10, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/K4 Passed. The NBI value is 4294966792, and the expected result is 4294966792
+Step 11, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/L2 Passed. The NBI value is 4294966666, and the expected result is 4294966666
+Step 12, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/J1 Passed. The NBI value is 4294967233, and the expected result is 4294967233
+Step 13, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/J2 Passed. The NBI value is 4294967170, and the expected result is 4294967170
+Step 14, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/J3 Passed. The NBI value is 4294967107, and the expected result is 4294967107
+Step 15, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/K3 Passed. The NBI value is 4294966855, and the expected result is 4294966855
+Step 16, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/K2 Passed. The NBI value is 4294966918, and the expected result is 4294966918
+Step 17, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/K1 Passed. The NBI value is 4294966981, and the expected result is 4294966981
+Step 18, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/L1 Passed. The NBI value is 4294966729, and the expected result is 4294966729
+Step 19, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/L3 Passed. The NBI value is 4294966603, and the expected result is 4294966603
+Step 20, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is PGW-PM-V1.0.0, and the expected result is PGW-PM-V1.0.0
+Step 21, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 22, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 23, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\NodeIdpgw58/NodeIdpgw58-PGW-TTPM-V1.0.0-20160803-1845.xml
+Step 24, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/Memtotal Passed. The NBI value is , and the expected result is 
+Step 25, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/NetUsagePeak3 Passed. The NBI value is , and the expected result is 
+Step 26, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/CpuUsageMean Passed. The NBI value is , and the expected result is 
+Step 27, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/Nettotal3 Passed. The NBI value is , and the expected result is 
+Step 28, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/MemUsageMean Passed. The NBI value is , and the expected result is 
+Step 29, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/MemUsagePeak Passed. The NBI value is , and the expected result is 
+Step 30, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/CpuUsagePeak Passed. The NBI value is , and the expected result is 
+Step 31, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/NetUsageMean3 Passed. The NBI value is , and the expected result is 
+Step 32, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/J4 Passed. The NBI value is 120, and the expected result is 120
+Step 33, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/K4 Passed. The NBI value is 240, and the expected result is 240
+Step 34, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/L2 Passed. The NBI value is 300, and the expected result is 300
+Step 35, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/J1 Passed. The NBI value is 30, and the expected result is 30
+Step 36, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/J2 Passed. The NBI value is 60, and the expected result is 60
+Step 37, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/J3 Passed. The NBI value is 90, and the expected result is 90
+Step 38, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/K3 Passed. The NBI value is 210, and the expected result is 210
+Step 39, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/K2 Passed. The NBI value is 180, and the expected result is 180
+Step 40, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/K1 Passed. The NBI value is 150, and the expected result is 150
+Step 41, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/L1 Passed. The NBI value is 270, and the expected result is 270
+Step 42, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/L3 Passed. The NBI value is 330, and the expected result is 330
+Step 43, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is PGW-PM-V1.0.0, and the expected result is PGW-PM-V1.0.0
+Step 44, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 45, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 46, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\NodeIdpgw58/NodeIdpgw58-PGW-TTPM-V1.0.0-20160803-1830.xml
+Step 47, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/Memtotal Passed. The NBI value is , and the expected result is 
+Step 48, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/NetUsagePeak3 Passed. The NBI value is , and the expected result is 
+Step 49, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/CpuUsageMean Passed. The NBI value is , and the expected result is 
+Step 50, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/Nettotal3 Passed. The NBI value is , and the expected result is 
+Step 51, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/MemUsageMean Passed. The NBI value is , and the expected result is 
+Step 52, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/MemUsagePeak Passed. The NBI value is , and the expected result is 
+Step 53, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/CpuUsagePeak Passed. The NBI value is , and the expected result is 
+Step 54, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/NetUsageMean3 Passed. The NBI value is , and the expected result is 
+Step 55, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/J4 Passed. The NBI value is 84, and the expected result is 84
+Step 56, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/K4 Passed. The NBI value is 168, and the expected result is 168
+Step 57, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/L2 Passed. The NBI value is 210, and the expected result is 210
+Step 58, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/J1 Passed. The NBI value is 21, and the expected result is 21
+Step 59, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/J2 Passed. The NBI value is 42, and the expected result is 42
+Step 60, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/J3 Passed. The NBI value is 63, and the expected result is 63
+Step 61, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/K3 Passed. The NBI value is 147, and the expected result is 147
+Step 62, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/K2 Passed. The NBI value is 126, and the expected result is 126
+Step 63, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/K1 Passed. The NBI value is 105, and the expected result is 105
+Step 64, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/L1 Passed. The NBI value is 189, and the expected result is 189
+Step 65, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/L3 Passed. The NBI value is 231, and the expected result is 231
+Step 66, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is PGW-PM-V1.0.0, and the expected result is PGW-PM-V1.0.0
+Step 67, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 68, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 69, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\NodeIdpgw58/NodeIdpgw58-PGW-TTPM-V1.0.0-20160803-1815.xml
+Step 70, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/Memtotal Passed. The NBI value is , and the expected result is 
+Step 71, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/NetUsagePeak3 Passed. The NBI value is , and the expected result is 
+Step 72, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/CpuUsageMean Passed. The NBI value is , and the expected result is 
+Step 73, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/Nettotal3 Passed. The NBI value is , and the expected result is 
+Step 74, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/MemUsageMean Passed. The NBI value is , and the expected result is 
+Step 75, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/MemUsagePeak Passed. The NBI value is , and the expected result is 
+Step 76, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/CpuUsagePeak Passed. The NBI value is , and the expected result is 
+Step 77, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58/NetUsageMean3 Passed. The NBI value is , and the expected result is 
+Step 78, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/J4 Passed. The NBI value is 48, and the expected result is 48
+Step 79, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/K4 Passed. The NBI value is 96, and the expected result is 96
+Step 80, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/L2 Passed. The NBI value is 120, and the expected result is 120
+Step 81, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/J1 Passed. The NBI value is 12, and the expected result is 12
+Step 82, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/J2 Passed. The NBI value is 24, and the expected result is 24
+Step 83, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/J3 Passed. The NBI value is 36, and the expected result is 36
+Step 84, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/K3 Passed. The NBI value is 84, and the expected result is 84
+Step 85, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/K2 Passed. The NBI value is 72, and the expected result is 72
+Step 86, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/K1 Passed. The NBI value is 60, and the expected result is 60
+Step 87, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/L1 Passed. The NBI value is 108, and the expected result is 108
+Step 88, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdpgw58|PGW58,L=LicIdpgw58/L3 Passed. The NBI value is 132, and the expected result is 132
+Step 89, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is PGW-PM-V1.0.0, and the expected result is PGW-PM-V1.0.0
+Step 90, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 91, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 92, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Test case: check_nbi_pm_PGW_rop=15_cases Passed. Total steps: 92, Passed steps: 92, Error steps: 0, Failed steps: 0, Warning steps: 0

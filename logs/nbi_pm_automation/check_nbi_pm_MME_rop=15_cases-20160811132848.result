@@ -1,0 +1,74 @@
+Test case: check_nbi_pm_MME_rop=15_cases started.
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\8613743641/8613743641-MME-TTPM-V1.0.0-20160804-1000.xml
+Step 1, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/CpuUsageMean Passed. The NBI value is , and the expected result is 
+Step 2, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/MemUsageMean Passed. The NBI value is , and the expected result is 
+Step 3, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/MemUsagePeak Passed. The NBI value is , and the expected result is 
+Step 4, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/CpuUsagePeak Passed. The NBI value is , and the expected result is 
+Step 5, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/Memtotal Passed. The NBI value is , and the expected result is 
+Step 6, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/J4 Passed. The NBI value is 24, and the expected result is 24
+Step 7, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/J1 Passed. The NBI value is 6, and the expected result is 6
+Step 8, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/J2 Passed. The NBI value is 12, and the expected result is 12
+Step 9, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/J3 Passed. The NBI value is 18, and the expected result is 18
+Step 10, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/K3 Passed. The NBI value is 42, and the expected result is 42
+Step 11, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/K2 Passed. The NBI value is 36, and the expected result is 36
+Step 12, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/K1 Passed. The NBI value is 30, and the expected result is 30
+Step 13, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/K4 Passed. The NBI value is 48, and the expected result is 48
+Step 14, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is MME-PM-V1.0.0, and the expected result is MME-PM-V1.0.0
+Step 15, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 16, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 17, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\8613743641/8613743641-MME-TTPM-V1.0.0-20160804-0945.xml
+Step 18, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/CpuUsageMean Passed. The NBI value is , and the expected result is 
+Step 19, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/MemUsageMean Passed. The NBI value is , and the expected result is 
+Step 20, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/MemUsagePeak Passed. The NBI value is , and the expected result is 
+Step 21, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/CpuUsagePeak Passed. The NBI value is , and the expected result is 
+Step 22, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/Memtotal Passed. The NBI value is , and the expected result is 
+Step 23, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/J4 Passed. The NBI value is 4294967116, and the expected result is 4294967116
+Step 24, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/J1 Passed. The NBI value is 4294967251, and the expected result is 4294967251
+Step 25, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/J2 Passed. The NBI value is 4294967206, and the expected result is 4294967206
+Step 26, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/J3 Passed. The NBI value is 4294967161, and the expected result is 4294967161
+Step 27, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/K3 Passed. The NBI value is 4294966981, and the expected result is 4294966981
+Step 28, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/K2 Passed. The NBI value is 4294967026, and the expected result is 4294967026
+Step 29, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/K1 Passed. The NBI value is 4294967071, and the expected result is 4294967071
+Step 30, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/K4 Passed. The NBI value is 4294966936, and the expected result is 4294966936
+Step 31, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is MME-PM-V1.0.0, and the expected result is MME-PM-V1.0.0
+Step 32, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 33, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 34, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\8613743641/8613743641-MME-TTPM-V1.0.0-20160804-0930.xml
+Step 35, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/CpuUsageMean Passed. The NBI value is , and the expected result is 
+Step 36, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/MemUsageMean Passed. The NBI value is , and the expected result is 
+Step 37, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/MemUsagePeak Passed. The NBI value is , and the expected result is 
+Step 38, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/CpuUsagePeak Passed. The NBI value is , and the expected result is 
+Step 39, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/Memtotal Passed. The NBI value is , and the expected result is 
+Step 40, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/J4 Passed. The NBI value is 96, and the expected result is 96
+Step 41, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/J1 Passed. The NBI value is 24, and the expected result is 24
+Step 42, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/J2 Passed. The NBI value is 48, and the expected result is 48
+Step 43, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/J3 Passed. The NBI value is 72, and the expected result is 72
+Step 44, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/K3 Passed. The NBI value is 168, and the expected result is 168
+Step 45, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/K2 Passed. The NBI value is 144, and the expected result is 144
+Step 46, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/K1 Passed. The NBI value is 120, and the expected result is 120
+Step 47, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/K4 Passed. The NBI value is 192, and the expected result is 192
+Step 48, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is MME-PM-V1.0.0, and the expected result is MME-PM-V1.0.0
+Step 49, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 50, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 51, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\8613743641/8613743641-MME-TTPM-V1.0.0-20160804-1015.xml
+Step 52, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/CpuUsageMean Passed. The NBI value is , and the expected result is 
+Step 53, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/MemUsageMean Passed. The NBI value is , and the expected result is 
+Step 54, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/MemUsagePeak Passed. The NBI value is , and the expected result is 
+Step 55, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/CpuUsagePeak Passed. The NBI value is , and the expected result is 
+Step 56, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90/Memtotal Passed. The NBI value is , and the expected result is 
+Step 57, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/J4 Passed. The NBI value is 60, and the expected result is 60
+Step 58, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/J1 Passed. The NBI value is 15, and the expected result is 15
+Step 59, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/J2 Passed. The NBI value is 30, and the expected result is 30
+Step 60, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/J3 Passed. The NBI value is 45, and the expected result is 45
+Step 61, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/K3 Passed. The NBI value is 105, and the expected result is 105
+Step 62, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/K2 Passed. The NBI value is 90, and the expected result is 90
+Step 63, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/K1 Passed. The NBI value is 75, and the expected result is 75
+Step 64, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME90,L=LTE987654321/K4 Passed. The NBI value is 120, and the expected result is 120
+Step 65, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is MME-PM-V1.0.0, and the expected result is MME-PM-V1.0.0
+Step 66, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 67, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 68, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Test case: check_nbi_pm_MME_rop=15_cases Passed. Total steps: 68, Passed steps: 68, Error steps: 0, Failed steps: 0, Warning steps: 0

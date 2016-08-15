@@ -2,7 +2,7 @@ from com.ericsson.xn.x.pm.PmCommons import NBIPmFunc
 from com.ericsson.xn.commons import test_logger
 from com.ericsson.xn.commons import caseutils
 
-nes_info =  {"LTEHSS":{"ne_type":"LTEHSS","nename":"HSSLTE77","nodeid":"HSS_LTE","licid":"","interval":5,"time":"201602181700"}}
+nes_info =  {"LTEHSS":{"ne_type":"LTEHSS","nename":"LTEHSS-1698E8C533EB3A5C","nodeid":"HSS_LTE","licid":"","interval":15,"time":"201608041745"}}
 
 def check_pm_ltehss():
     global nes_info

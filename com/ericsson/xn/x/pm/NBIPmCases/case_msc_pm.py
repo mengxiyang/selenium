@@ -2,7 +2,7 @@ from com.ericsson.xn.x.pm.PmCommons import NBIPmFunc
 from com.ericsson.xn.commons import caseutils
 from com.ericsson.xn.commons import test_logger
 
-nes_info = {"MSC":{"ne_type":"MSC","nename":"MSC-941733D94DA78236","nodeid":"11","licid":"","interval":15,"time":"201607061400"}}
+nes_info = {"MSC":{"ne_type":"MSC","nename":"MSC-CD61D5C8A2FA08FE","nodeid":"11","licid":"","interval":15,"time":"201608020300"}}
 
 def check_pm_msc():
     global  nes_info

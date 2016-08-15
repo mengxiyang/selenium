@@ -1,0 +1,12 @@
+Test case: check_ltehss_gui_accuracy_case started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+Info: Web page: http://10.184.74.66:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: http://10.184.74.66:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Step 1, Failed: A ne already exist with the given IP or engineId named: 3GSGSN-9AACFF1AEB30B6FD
+Error occurred, test case will exit soon.
+Test case: check_ltehss_gui_accuracy_case Failed. Total steps: 1, Passed steps: 0, Error steps: 1, Failed steps: 0, Warning steps: 0

@@ -2,7 +2,7 @@ from com.ericsson.xn.x.pm.PmCommons import NBIPmFunc
 from com.ericsson.xn.commons import test_logger
 from com.ericsson.xn.commons import caseutils
 
-nes_info = {"SGSN":{"ne_type":"SGSN","nename":"SGSN76","nodeid":"8613743640","licid":"LTE123456789-modify","interval":15,"time":"201602030600"}}
+nes_info = {"SGSN":{"ne_type":"SGSN","nename":"SGSN90","nodeid":"11111111110","licid":"LTE12345678910","interval":15,"time":"201608051100"}}
 
 def check_pm_sgsn():
     global nes_info

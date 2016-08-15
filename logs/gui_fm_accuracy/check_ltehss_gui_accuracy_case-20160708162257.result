@@ -1,0 +1,9 @@
+Test case: check_ltehss_gui_accuracy_case started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+Info: Web page: http://10.184.73.76:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: http://10.184.73.76:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully

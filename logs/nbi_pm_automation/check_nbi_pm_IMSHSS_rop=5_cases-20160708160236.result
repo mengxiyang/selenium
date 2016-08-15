@@ -1,0 +1,10 @@
+Test case: check_nbi_pm_IMSHSS_rop=5_cases started.
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\HSS_IMS/HSS_IMS-HSS-TTPM-V1.0.0-20160218-1600.xml
+Step 1, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|HSSIMS77,L=LIC_LTE_4/F1 Passed. The NBI value is 140, and the expected result is 140
+Step 2, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|HSSIMS77,L=LIC_LTE_4/F2 Passed. The NBI value is 141, and the expected result is 141
+Step 3, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|HSSIMS77,L=LIC_LTE_4/F3 Passed. The NBI value is 142, and the expected result is 142
+Step 4, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|HSSIMS77,L=LIC_LTE_4/F4 Passed. The NBI value is 143, and the expected result is 143
+Step 5, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|HSSIMS77,L=LIC_LTE_4/G2 Passed. The NBI value is 145, and the expected result is 145
+Step 6, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|HSSIMS77,L=LIC_LTE_4/G1 Passed. The NBI value is 144, and the expected result is 144
+Step 7, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|HSSIMS77,L=LIC_LTE_4/G4 Passed. The NBI value is 147, and the expected result is 147
+Step 8, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|HSSIMS77,L=LIC_LTE_4/G3 Passed. The NBI value is 146, and the expected result is 146

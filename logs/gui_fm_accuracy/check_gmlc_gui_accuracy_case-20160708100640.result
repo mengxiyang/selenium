@@ -1,0 +1,29 @@
+Test case: check_gmlc_gui_accuracy_case started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+Info: Web page: http://10.184.73.76:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: http://10.184.73.76:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: NE already exist, reuse the old NE named: GMLC-24CAF570C347EFCD
+Info: NE:GMLC-24CAF570C347EFCD added successfully
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: http://10.184.73.76:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: GMLC-24CAF570C347EFCD...
+Info: Alarm queried successfully
+Info: send alarm trap: GMLC:cpuUnilizationRatioExceedThresholdAlarm_NEW...
+Step 1, Failed: GMLC:cpuUnilizationRatioExceedThresholdAlarm_NEW accuracy test failed, reason:sending alarm trap failed, the error msg is:Alarm template file not found: /srv/zacademy_20160627111034/zacademy/config/snmp_trap/templates/V2_GMLC_cpuUnilizationRatioExceedThresholdAlarm_NEW.txt
+Info: send alarm trap: GMLC:memoryUnilizationRatioExceedThresholdAlarm_NEW...
+Step 2, Failed: GMLC:memoryUnilizationRatioExceedThresholdAlarm_NEW accuracy test failed, reason:sending alarm trap failed, the error msg is:Alarm template file not found: /srv/zacademy_20160627111034/zacademy/config/snmp_trap/templates/V2_GMLC_memoryUnilizationRatioExceedThresholdAlarm_NEW.txt
+Info: send alarm trap: GMLC:diskUnilizationRatioExceedThresholdAlarm_NEW...
+Step 3, Failed: GMLC:diskUnilizationRatioExceedThresholdAlarm_NEW accuracy test failed, reason:sending alarm trap failed, the error msg is:Alarm template file not found: /srv/zacademy_20160627111034/zacademy/config/snmp_trap/templates/V2_GMLC_diskUnilizationRatioExceedThresholdAlarm_NEW.txt
+Info: send alarm trap: GMLC:TpsPeekExceedThresholdAlarm_NEW...
+Step 4, Failed: GMLC:TpsPeekExceedThresholdAlarm_NEW accuracy test failed, reason:sending alarm trap failed, the error msg is:Alarm template file not found: /srv/zacademy_20160627111034/zacademy/config/snmp_trap/templates/V2_GMLC_TpsPeekExceedThresholdAlarm_NEW.txt
+Info: send alarm trap: GMLC:A21ExceedThresholdAlarm_NEW...
+Info: alarm sent successfully{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.5', 'probableCause': 'X1 Exceed Threshold Alarm', 'seqNo': '20160708000000654', 'alarmDescription': 'X1 exceed threshold', 'timeStamp': '2016-07-08 10:08:01.700', 'alarmSource': 'null', 'alarmLevel': '3', 'alarmCategory': '2'}
+Step 5, Failed: 'module' object has no attribute 'fetch_alarm_on_guifetch_alarm_on_gui'
+Error occurred, test case will exit soon.
+Test case: check_gmlc_gui_accuracy_case Failed. Total steps: 5, Passed steps: 0, Error steps: 1, Failed steps: 4, Warning steps: 0

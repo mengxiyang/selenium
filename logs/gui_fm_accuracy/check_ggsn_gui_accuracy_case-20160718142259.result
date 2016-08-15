@@ -1,0 +1,4 @@
+Test case: check_ggsn_gui_accuracy_case started.
+Step 1, Failed: The alarm mapping cfg files: H:\Data\selenium\x\fm\gui_mapping\ggsn.cfg not existed
+Error occurred, test case will exit soon.
+Test case: check_ggsn_gui_accuracy_case Failed. Total steps: 1, Passed steps: 0, Error steps: 1, Failed steps: 0, Warning steps: 0

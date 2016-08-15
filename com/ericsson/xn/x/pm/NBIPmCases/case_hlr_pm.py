@@ -2,7 +2,7 @@ from com.ericsson.xn.x.pm.PmCommons import NBIPmFunc
 from com.ericsson.xn.commons import caseutils
 from com.ericsson.xn.commons import test_logger
 
-nes_info = {"HLR":{"ne_type":"HLR","nename":"HLR-FF8D60787842F6F3","nodeid":"111","licid":"","interval":15,"time":"201607070600"}}
+nes_info = {"HLR":{"ne_type":"HLR","nename":"HLR-B1AA43E1C5BFA8DD","nodeid":"111","licid":"","interval":15,"time":"201608051200"}}
 
 def check_pm_hlr():
     global  nes_info

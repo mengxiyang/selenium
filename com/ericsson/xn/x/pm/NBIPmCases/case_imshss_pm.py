@@ -2,7 +2,7 @@ from com.ericsson.xn.x.pm.PmCommons import NBIPmFunc
 from com.ericsson.xn.commons import caseutils
 from com.ericsson.xn.commons import test_logger
 
-nes_info = {"IMSHSS":{"ne_type":"IMSHSS","nename":"HSSIMS77","nodeid":"HSS_IMS","licid":"","interval":5,"time":"201602181700"}}
+nes_info = {"IMSHSS":{"ne_type":"IMSHSS","nename":"IMSHSS-12950A62FA236758","nodeid":"HSS_IMS","licid":"","interval":15,"time":"201608042045"}}
 
 def check_pm_imshss():
     global  nes_info

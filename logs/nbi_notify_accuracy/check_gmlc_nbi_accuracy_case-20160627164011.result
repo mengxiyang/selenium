@@ -1,0 +1,38 @@
+Test case: check_gmlc_nbi_accuracy_case started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\eyyylll\installed\chromedriver.exe
+Info: Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+Info: Web page: http://10.184.73.76:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: http://10.184.73.76:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: NE already exist, reuse the old NE
+Info: NE:GMLC-764B18193CBEB70F added successfully
+Info: send and get NBI data for GMLC:A21ExceedThresholdAlarm_NEW...
+Info: get TrapInfo is:{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.5', 'probableCause': 'X1 Exceed Threshold Alarm', 'seqNo': '20160329000000587', 'alarmDescription': 'X1 exceed threshold', 'timeStamp': '2016-03-29 16:29:50.700', 'alarmSource': 'null', 'alarmLevel': '3', 'alarmCategory': '2'} and NotifInfo is:{'a': {'value': {u'CORBA::LongLong': u'1459240191002100000'}}, 'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}, 'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136785329907000000'}}}}, 'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=3039|GMLC-764B18193CBEB70F"'}}, 'event_type': {'none': {u'type_name': u'"x1"', u'domain_name': u'"Alarm IRP V3.0.0"'}}, 'g': {'value': {u'CORBA::Short': u'351'}}, 'ai_at': {'value': {u'CORBA::String': u'"x5"'}}, 'event_name': u'"x5"', 'h': {'value': {u'CORBA::Short': u'4'}}, 'j': {'value': {u'CORBA::String': u'"X1 exceed threshold"'}}, 'ai_ps': {'value': {u'CORBA::String': u'"4"'}}, 'q': {'value': {u'CORBA::String': u'"NULL"'}}, 'p': {'value': {u'CORBA::Boolean': u'false'}}, 's': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}, 'ai_vs_threshold': {'value': {u'CORBA::String': u'""'}}, 'jj': {'value': {u'CORBA::String': u'"1||A21ExceedThresholdAlarm"'}}, 't': {'value': {'AlarmIRPConstDefs::AttributeChangeSet': {'none': {'none': {u'attribute_name': u'""', 'old_value': {u'CORBA::String': u'""'}, 'new_value': {u'CORBA::String': u'""'}}}}}}, 'w': {'value': {'AlarmIRPConstDefs::CorrelatedNotification': {'none': {u'source': u'"DC=Ericsson,SubNetwork=1,ManagedElement=3039|GMLC-764B18193CBEB70F"', 'notif_id_set': {'none': u'2147483647'}}}}}, 'v': {'value': {u'CORBA::String': u'""'}}, 'f': {'value': {u'CORBA::String': u'"92"'}}, 'd': {'value': {u'CORBA::String': u'"ManagedElement"'}}}
+Info: start to check A21ExceedThresholdAlarm_NEW
+Info: check 'event_type',the nbi data result is {'event_type': {'none': {u'type_name': u'"x1"', u'domain_name': u'"Alarm IRP V3.0.0"'}}},and the expected result is {'event_type': {'none': {'type_name': '"x1"', 'domain_name': '"Alarm IRP V3.0.0"'}}}
+Info: check 'event_name',the nbi data result is {'event_name': u'"x5"'},and the expected result is {'event_name': '"x5"'}
+Info: check 'objectClass',the nbi data result is {'d': {'value': {u'CORBA::String': u'"ManagedElement"'}}},and the expected result is {'d': {'value': {'CORBA::String': '"ManagedElement"'}}}
+Info: check 'objectInstance',the nbi result is {'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=3039|GMLC-764B18193CBEB70F"'}}},and the expected result is {'e': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagedElement=3039|GMLC-764B18193CBEB70F"'}}}
+Info: check 'c',the nbi data result is {'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}},and the expected result is {'c': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}}
+Info: check 'eventTime',the nbi result is {'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136785329907000000'}}}}},and the expected result is {'b': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136785329907000000'}}}}}
+Info: check 'vendorSpecificAlarmType',the nbi data result is {'jj': {'value': {u'CORBA::String': u'"1||A21ExceedThresholdAlarm"'}}},and the expected result is {'jj': {'value': {'CORBA::String': '"1||A21ExceedThresholdAlarm"'}}}
+Info: check 'probableCause',the nbi data result is {'g': {'value': {u'CORBA::Short': u'351'}}},and the expected result is {'g': {'value': {'CORBA::Short': '351'}}}
+Info: check 'perceivedSeverity',the nbi data result is {'h': {'value': {u'CORBA::Short': u'4'}}},and the expected result is {'h': {'value': {'CORBA::Short': '4'}}}
+Step 1, Passed: CORBA::Short accuracy test Passed. The NBI value is 4, and the expected result is 4
+Info: check 'notificationId',the nbi data result is {'a': {'value': {u'CORBA::LongLong': u'1459240191002100000'}}}
+Step 2, Passed: the notificationId of 1459240191002100000 is unique in database
+Info: check 'correlatedNotifications',the nbi data result is {'w': {'value': {'AlarmIRPConstDefs::CorrelatedNotification': {'none': {u'source': u'"DC=Ericsson,SubNetwork=1,ManagedElement=3039|GMLC-764B18193CBEB70F"', 'notif_id_set': {'none': u'2147483647'}}}}}},and the expected result is {'w': {'value': {'AlarmIRPConstDefs::CorrelatedNotification': {'none': {'source': '"DC=Ericsson,SubNetwork=1,ManagedElement=3039|GMLC-764B18193CBEB70F"', 'notif_id_set': {'none': u'1459240191002100000'}}}}}}
+Info: check 'p',the nbi data result is {'p': {'value': {u'CORBA::Boolean': u'false'}}},and the expected result is {'p': {'value': {'CORBA::Boolean': 'FALSE'}}}
+Info: check 'q',the nbi data result is {'q': {'value': {u'CORBA::String': u'"NULL"'}}},and the expected result is {'q': {'value': {'CORBA::String': '"NULL"'}}}
+Info: check 's',the nbi data result is {'s': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}},and the expected result is {'s': {'value': {'AlarmIRPConstDefs::TrendIndication': 'NO_CHANGE'}}}
+Info: check 'v',the nbi data result is {'v': {'value': {u'CORBA::String': u'""'}}},and the expected result is {'v': {'value': {'CORBA::String': '""'}}}
+Info: check 'additionalText',the nbi data result is {'j': {'value': {u'CORBA::String': u'"X1 exceed threshold"'}}},and the expected result is {'j': {'value': {'CORBA::String': '"X1 exceed threshold"'}}}
+Info: check 'ai_vs_threshold',the nbi data result is {'ai_vs_threshold': {'value': {u'CORBA::String': u'""'}}},and the expected result is {'ai_vs_threshold': {'value': {'CORBA::String': '""'}}}
+Step 3, Passed: the alarmId of 92 is unique in database
+Info: check 'AI_VS_ALARM_TYPE',the nbi data result is {'ai_at': {'value': {u'CORBA::String': u'"x5"'}}},and the expected result is {'ai_at': {'value': {'CORBA::String': '"x5"'}}}
+Info: check 'AI_VS_PERCEIVED_SEVERITY',the nbi data result is {'ai_ps': {'value': {u'CORBA::String': u'"4"'}}},and the expected result is {'ai_ps': {'value': {'CORBA::String': '"4"'}}}
+Info: check 't',the nbi data result is {'t': {'value': {'AlarmIRPConstDefs::AttributeChangeSet': {'none': {'none': {u'attribute_name': u'""', 'old_value': {u'CORBA::String': u'""'}, 'new_value': {u'CORBA::String': u'""'}}}}}}},and the expected result is {'t': {'value': {'AlarmIRPConstDefs::AttributeChangeSet': {'none': {'none': {'old_value': {'CORBA::String': '""'}, 'attribute_name': '""', 'new_value': {'CORBA::String': '""'}}}}}}}
+Info: send and get NBI data for GMLC:LIFeatureDisableNotification_NEW...

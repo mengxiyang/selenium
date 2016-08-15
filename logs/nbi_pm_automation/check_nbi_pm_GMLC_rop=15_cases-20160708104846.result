@@ -1,0 +1,130 @@
+Test case: check_nbi_pm_GMLC_rop=15_cases started.
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\12345/12345-GMLC-TTPM-V1.0.0-20160629-1200.xml
+Step 1, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A15 Passed. The NBI value is , and the expected result is 
+Step 2, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A14 Passed. The NBI value is , and the expected result is 
+Step 3, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A17 Passed. The NBI value is , and the expected result is 
+Step 4, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A16 Passed. The NBI value is , and the expected result is 
+Step 5, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A11 Passed. The NBI value is 0, and the expected result is 0
+Step 6, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A10 Passed. The NBI value is , and the expected result is 
+Step 7, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A13 Passed. The NBI value is 0, and the expected result is 0
+Step 8, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A12 Passed. The NBI value is 0, and the expected result is 0
+Step 9, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A19 Passed. The NBI value is , and the expected result is 
+Step 10, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A18 Passed. The NBI value is 0, and the expected result is 0
+Step 11, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A1 Passed. The NBI value is 1, and the expected result is 1
+Step 12, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A3 Passed. The NBI value is 3, and the expected result is 3
+Step 13, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A2 Passed. The NBI value is 2, and the expected result is 2
+Step 14, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A5 Passed. The NBI value is , and the expected result is 
+Step 15, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A4 Passed. The NBI value is 0, and the expected result is 0
+Step 16, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A7 Passed. The NBI value is , and the expected result is 
+Step 17, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A6 Passed. The NBI value is , and the expected result is 
+Step 18, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A9 Passed. The NBI value is 0, and the expected result is 0
+Step 19, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A8 Passed. The NBI value is , and the expected result is 
+Step 20, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A20 Passed. The NBI value is 0, and the expected result is 0
+Step 21, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A21 Passed. The NBI value is 0, and the expected result is 0
+Step 22, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A22 Passed. The NBI value is 0, and the expected result is 0
+Step 23, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/CpuUsageMean Passed. The NBI value is 0.02, and the expected result is 0.02
+Step 24, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/MemUsageMean Passed. The NBI value is 0.00, and the expected result is 0.00
+Step 25, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/MemUsagePeak Passed. The NBI value is 0.00, and the expected result is 0.00
+Step 26, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/CpuUsagePeak Passed. The NBI value is 0.07, and the expected result is 0.07
+Step 27, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/Memtotal Passed. The NBI value is 0, and the expected result is 0
+Step 28, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is GMLC-PM-V1.0.0, and the expected result is GMLC-PM-V1.0.0
+Step 29, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 30, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 31, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\12345/12345-GMLC-TTPM-V1.0.0-20160629-1145.xml
+Step 32, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A15 Passed. The NBI value is , and the expected result is 
+Step 33, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A14 Passed. The NBI value is , and the expected result is 
+Step 34, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A17 Passed. The NBI value is , and the expected result is 
+Step 35, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A16 Passed. The NBI value is , and the expected result is 
+Step 36, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A11 Passed. The NBI value is 0, and the expected result is 0
+Step 37, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A10 Passed. The NBI value is , and the expected result is 
+Step 38, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A13 Passed. The NBI value is 0, and the expected result is 0
+Step 39, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A12 Passed. The NBI value is 0, and the expected result is 0
+Step 40, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A19 Passed. The NBI value is , and the expected result is 
+Step 41, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A18 Passed. The NBI value is 0, and the expected result is 0
+Step 42, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A1 Passed. The NBI value is 0, and the expected result is 0
+Step 43, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A3 Passed. The NBI value is 0, and the expected result is 0
+Step 44, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A2 Passed. The NBI value is 0, and the expected result is 0
+Step 45, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A5 Passed. The NBI value is , and the expected result is 
+Step 46, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A4 Passed. The NBI value is 0, and the expected result is 0
+Step 47, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A7 Passed. The NBI value is , and the expected result is 
+Step 48, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A6 Passed. The NBI value is , and the expected result is 
+Step 49, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A9 Passed. The NBI value is 0, and the expected result is 0
+Step 50, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A8 Passed. The NBI value is , and the expected result is 
+Step 51, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A20 Passed. The NBI value is 10, and the expected result is 10
+Step 52, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A21 Passed. The NBI value is 11, and the expected result is 11
+Step 53, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A22 Passed. The NBI value is 12, and the expected result is 12
+Step 54, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/CpuUsageMean Passed. The NBI value is 0.06, and the expected result is 0.06
+Step 55, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/MemUsageMean Passed. The NBI value is 76.82, and the expected result is 76.82
+Step 56, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/MemUsagePeak Passed. The NBI value is 76.82, and the expected result is 76.82
+Step 57, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/CpuUsagePeak Passed. The NBI value is 0.07, and the expected result is 0.07
+Step 58, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/Memtotal Passed. The NBI value is 32095, and the expected result is 32095
+Step 59, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is GMLC-PM-V1.0.0, and the expected result is GMLC-PM-V1.0.0
+Step 60, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 61, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 62, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\12345/12345-GMLC-TTPM-V1.0.0-20160629-1130.xml
+Step 63, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A15 Passed. The NBI value is , and the expected result is 
+Step 64, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A14 Passed. The NBI value is , and the expected result is 
+Step 65, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A17 Passed. The NBI value is , and the expected result is 
+Step 66, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A16 Passed. The NBI value is , and the expected result is 
+Step 67, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A11 Passed. The NBI value is 0, and the expected result is 0
+Step 68, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A10 Passed. The NBI value is , and the expected result is 
+Step 69, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A13 Passed. The NBI value is 8, and the expected result is 8
+Step 70, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A12 Passed. The NBI value is 7, and the expected result is 7
+Step 71, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A19 Passed. The NBI value is , and the expected result is 
+Step 72, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A18 Passed. The NBI value is 9, and the expected result is 9
+Step 73, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A1 Passed. The NBI value is 0, and the expected result is 0
+Step 74, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A3 Passed. The NBI value is 0, and the expected result is 0
+Step 75, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A2 Passed. The NBI value is 0, and the expected result is 0
+Step 76, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A5 Passed. The NBI value is , and the expected result is 
+Step 77, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A4 Passed. The NBI value is 0, and the expected result is 0
+Step 78, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A7 Passed. The NBI value is , and the expected result is 
+Step 79, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A6 Passed. The NBI value is , and the expected result is 
+Step 80, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A9 Passed. The NBI value is 0, and the expected result is 0
+Step 81, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A8 Passed. The NBI value is , and the expected result is 
+Step 82, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A20 Passed. The NBI value is 0, and the expected result is 0
+Step 83, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A21 Passed. The NBI value is 0, and the expected result is 0
+Step 84, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A22 Passed. The NBI value is 0, and the expected result is 0
+Step 85, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/CpuUsageMean Passed. The NBI value is 0.02, and the expected result is 0.02
+Step 86, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/MemUsageMean Passed. The NBI value is 25.61, and the expected result is 25.61
+Step 87, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/MemUsagePeak Passed. The NBI value is 76.82, and the expected result is 76.82
+Step 88, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/CpuUsagePeak Passed. The NBI value is 0.07, and the expected result is 0.07
+Step 89, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/Memtotal Passed. The NBI value is 32095, and the expected result is 32095
+Step 90, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is GMLC-PM-V1.0.0, and the expected result is GMLC-PM-V1.0.0
+Step 91, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 92, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 93, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\12345/12345-GMLC-TTPM-V1.0.0-20160629-1215.xml
+Step 94, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A15 Passed. The NBI value is , and the expected result is 
+Step 95, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A14 Passed. The NBI value is , and the expected result is 
+Step 96, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A17 Passed. The NBI value is , and the expected result is 
+Step 97, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A16 Passed. The NBI value is , and the expected result is 
+Step 98, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A11 Passed. The NBI value is 6, and the expected result is 6
+Step 99, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A10 Passed. The NBI value is , and the expected result is 
+Step 100, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A13 Passed. The NBI value is 0, and the expected result is 0
+Step 101, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A12 Passed. The NBI value is 0, and the expected result is 0
+Step 102, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A19 Passed. The NBI value is , and the expected result is 
+Step 103, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A18 Passed. The NBI value is 0, and the expected result is 0
+Step 104, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A1 Passed. The NBI value is 0, and the expected result is 0
+Step 105, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A3 Passed. The NBI value is 0, and the expected result is 0
+Step 106, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A2 Passed. The NBI value is 0, and the expected result is 0
+Step 107, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A5 Passed. The NBI value is , and the expected result is 
+Step 108, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A4 Passed. The NBI value is 4, and the expected result is 4
+Step 109, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A7 Passed. The NBI value is , and the expected result is 
+Step 110, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A6 Passed. The NBI value is , and the expected result is 
+Step 111, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A9 Passed. The NBI value is 5, and the expected result is 5
+Step 112, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A8 Passed. The NBI value is , and the expected result is 
+Step 113, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A20 Passed. The NBI value is 0, and the expected result is 0
+Step 114, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A21 Passed. The NBI value is 0, and the expected result is 0
+Step 115, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77,L=id003/A22 Passed. The NBI value is 0, and the expected result is 0
+Step 116, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/CpuUsageMean Passed. The NBI value is 0.00, and the expected result is 0.00
+Step 117, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/MemUsageMean Passed. The NBI value is 25.61, and the expected result is 25.61
+Step 118, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/MemUsagePeak Passed. The NBI value is 76.82, and the expected result is 76.82
+Step 119, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/CpuUsagePeak Passed. The NBI value is 0.00, and the expected result is 0.00
+Step 120, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC77/Memtotal Passed. The NBI value is 0, and the expected result is 0
+Step 121, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is GMLC-PM-V1.0.0, and the expected result is GMLC-PM-V1.0.0
+Step 122, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 123, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 124, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Test case: check_nbi_pm_GMLC_rop=15_cases Passed. Total steps: 124, Passed steps: 124, Error steps: 0, Failed steps: 0, Warning steps: 0

@@ -1,0 +1,67 @@
+Test case: check_gmlc_gui_accuracy_case started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+Info: Web page: http://10.184.73.76:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: http://10.184.73.76:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: NE already exist, reuse the old NE named: GMLC-A12BBC0E985041A7
+Info: NE:GMLC-A12BBC0E985041A7 added successfully
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: http://10.184.73.76:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: GMLC-A12BBC0E985041A7...
+Info: Alarm queried successfully
+Info: send alarm trap: GMLC:cpuUnilizationRatioExceedThresholdAlarm_NEW...
+Step 1, Failed: GMLC:cpuUnilizationRatioExceedThresholdAlarm_NEW accuracy test failed, reason:sending alarm trap failed, the error msg is:Alarm template file not found: /srv/zacademy_20160627111034/zacademy/config/snmp_trap/templates/V2_GMLC_cpuUnilizationRatioExceedThresholdAlarm_NEW.txt
+Info: send alarm trap: GMLC:memoryUnilizationRatioExceedThresholdAlarm_NEW...
+Step 2, Failed: GMLC:memoryUnilizationRatioExceedThresholdAlarm_NEW accuracy test failed, reason:sending alarm trap failed, the error msg is:Alarm template file not found: /srv/zacademy_20160627111034/zacademy/config/snmp_trap/templates/V2_GMLC_memoryUnilizationRatioExceedThresholdAlarm_NEW.txt
+Info: send alarm trap: GMLC:diskUnilizationRatioExceedThresholdAlarm_NEW...
+Step 3, Failed: GMLC:diskUnilizationRatioExceedThresholdAlarm_NEW accuracy test failed, reason:sending alarm trap failed, the error msg is:Alarm template file not found: /srv/zacademy_20160627111034/zacademy/config/snmp_trap/templates/V2_GMLC_diskUnilizationRatioExceedThresholdAlarm_NEW.txt
+Info: send alarm trap: GMLC:TpsPeekExceedThresholdAlarm_NEW...
+Step 4, Failed: GMLC:TpsPeekExceedThresholdAlarm_NEW accuracy test failed, reason:sending alarm trap failed, the error msg is:Alarm template file not found: /srv/zacademy_20160627111034/zacademy/config/snmp_trap/templates/V2_GMLC_TpsPeekExceedThresholdAlarm_NEW.txt
+Info: send alarm trap: GMLC:A21ExceedThresholdAlarm_NEW...
+Info: alarm sent successfully{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.5', 'probableCause': 'X1 Exceed Threshold Alarm', 'seqNo': '20160711000000669', 'alarmDescription': 'X1 exceed threshold', 'timeStamp': '2016-07-11 10:50:17.200', 'alarmSource': 'null', 'alarmLevel': '3', 'alarmCategory': '2'}
+Info: alarm received on GUI:A21ExceedThresholdAlarm_NEW
+Info: start to check alarm type: GMLC:A21ExceedThresholdAlarm_NEW
+Step 5, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 超出门限, and the expected value is 超出门限
+Step 6, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 7, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 8, Passed: alarm counter 变更时间 accuracy test passed. GUI value is , and the expected value is 
+Step 9, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 10, Passed: alarm counter 告警名称 accuracy test passed. GUI value is 特通业务异常, and the expected value is 特通业务异常
+Step 11, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Minor, and the expected value is Minor
+Step 12, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 13, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 1, and the expected value is 1
+Step 14, Passed: alarm counter 问题描述 accuracy test passed. GUI value is A21ExceedThresholdAlarm, and the expected value is A21ExceedThresholdAlarm
+Step 15, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 设备告警, and the expected value is 设备告警
+Step 16, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 17, Passed: alarm counter 定位信息 accuracy test passed. GUI value is null, and the expected value is null
+Step 18, Passed: alarm counter 网元名称 accuracy test passed. GUI value is GMLC-A12BBC0E985041A7, and the expected value is GMLC-A12BBC0E985041A7
+Step 19, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2016-07-11 10:50:17.200, and the expected value is 2016-07-11 10:50:17.200
+Step 20, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 21, Passed: alarm counter 补充信息 accuracy test passed. GUI value is X1 exceed threshold, and the expected value is X1 exceed threshold
+Info: send alarm trap: GMLC:LIFeatureDisableNotification_NEW...
+Info: alarm sent successfully{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.6', 'probableCause': 'LI Feature Turn off Alarm', 'seqNo': '20160711000000670', 'alarmDescription': 'LI Interface turn off', 'timeStamp': '2016-07-11 10:50:21.900', 'alarmSource': 'null', 'alarmLevel': '3', 'alarmCategory': '3'}
+Info: alarm received on GUI:LIFeatureDisableNotification_NEW
+Info: start to check alarm type: GMLC:LIFeatureDisableNotification_NEW
+Step 22, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 功能关闭, and the expected value is 功能关闭
+Step 23, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 24, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 25, Passed: alarm counter 变更时间 accuracy test passed. GUI value is , and the expected value is 
+Step 26, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 27, Passed: alarm counter 告警名称 accuracy test passed. GUI value is 特通功能停止, and the expected value is 特通功能停止
+Step 28, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Minor, and the expected value is Minor
+Step 29, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 30, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 12, and the expected value is 12
+Step 31, Passed: alarm counter 问题描述 accuracy test passed. GUI value is LIFeatureDisableNotification, and the expected value is LIFeatureDisableNotification
+Step 32, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 处理错误告警, and the expected value is 处理错误告警
+Step 33, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 34, Passed: alarm counter 定位信息 accuracy test passed. GUI value is null, and the expected value is null
+Step 35, Passed: alarm counter 网元名称 accuracy test passed. GUI value is GMLC-A12BBC0E985041A7, and the expected value is GMLC-A12BBC0E985041A7
+Step 36, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2016-07-11 10:50:21.900, and the expected value is 2016-07-11 10:50:21.900
+Step 37, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 38, Passed: alarm counter 补充信息 accuracy test passed. GUI value is LI Interface turn off, and the expected value is LI Interface turn off
+Test case: check_gmlc_gui_accuracy_case Failed. Total steps: 38, Passed steps: 34, Error steps: 0, Failed steps: 4, Warning steps: 0

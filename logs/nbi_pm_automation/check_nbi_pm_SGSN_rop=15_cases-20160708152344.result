@@ -1,0 +1,250 @@
+Test case: check_nbi_pm_SGSN_rop=15_cases started.
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\8613743640/8613743640-SGSN-TTPM-V1.0.0-20160203-0500.xml
+Step 1, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/Memtotal Passed. The NBI value is , and the expected result is 
+Step 2, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/NetUsagePeak3 Passed. The NBI value is , and the expected result is 
+Step 3, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/CpuUsageMean Passed. The NBI value is , and the expected result is 
+Step 4, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/Nettotal3 Passed. The NBI value is , and the expected result is 
+Step 5, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/MemUsageMean Passed. The NBI value is , and the expected result is 
+Step 6, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/MemUsagePeak Passed. The NBI value is , and the expected result is 
+Step 7, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/CpuUsagePeak Passed. The NBI value is , and the expected result is 
+Step 8, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/NetUsageMean3 Passed. The NBI value is , and the expected result is 
+Step 9, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B5 Passed. The NBI value is , and the expected result is 
+Step 10, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B30 Passed. The NBI value is , and the expected result is 
+Step 11, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A18 Passed. The NBI value is , and the expected result is 
+Step 12, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B16 Passed. The NBI value is 84, and the expected result is 84
+Step 13, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B17 Passed. The NBI value is 78, and the expected result is 78
+Step 14, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B10 Passed. The NBI value is , and the expected result is 
+Step 15, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B11 Passed. The NBI value is , and the expected result is 
+Step 16, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B33 Passed. The NBI value is , and the expected result is 
+Step 17, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A15 Passed. The NBI value is , and the expected result is 
+Step 18, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A14 Passed. The NBI value is , and the expected result is 
+Step 19, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A17 Passed. The NBI value is , and the expected result is 
+Step 20, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A16 Passed. The NBI value is , and the expected result is 
+Step 21, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B38 Passed. The NBI value is , and the expected result is 
+Step 22, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B39 Passed. The NBI value is , and the expected result is 
+Step 23, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A13 Passed. The NBI value is , and the expected result is 
+Step 24, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A12 Passed. The NBI value is , and the expected result is 
+Step 25, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B34 Passed. The NBI value is , and the expected result is 
+Step 26, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B35 Passed. The NBI value is , and the expected result is 
+Step 27, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A19 Passed. The NBI value is , and the expected result is 
+Step 28, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B31 Passed. The NBI value is , and the expected result is 
+Step 29, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B32 Passed. The NBI value is , and the expected result is 
+Step 30, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A1 Passed. The NBI value is 270, and the expected result is 270
+Step 31, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A3 Passed. The NBI value is 6, and the expected result is 6
+Step 32, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A2 Passed. The NBI value is 60, and the expected result is 60
+Step 33, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A5 Passed. The NBI value is 18, and the expected result is 18
+Step 34, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A4 Passed. The NBI value is 12, and the expected result is 12
+Step 35, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A7 Passed. The NBI value is 36, and the expected result is 36
+Step 36, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A6 Passed. The NBI value is 24, and the expected result is 24
+Step 37, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A9 Passed. The NBI value is 30, and the expected result is 30
+Step 38, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A8 Passed. The NBI value is 42, and the expected result is 42
+Step 39, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B40 Passed. The NBI value is 96, and the expected result is 96
+Step 40, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/E1 Passed. The NBI value is 102, and the expected result is 102
+Step 41, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/E3 Passed. The NBI value is 114, and the expected result is 114
+Step 42, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/E2 Passed. The NBI value is 108, and the expected result is 108
+Step 43, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A20 Passed. The NBI value is , and the expected result is 
+Step 44, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A21 Passed. The NBI value is 66, and the expected result is 66
+Step 45, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B3 Passed. The NBI value is , and the expected result is 
+Step 46, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B41 Passed. The NBI value is 90, and the expected result is 90
+Step 47, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A10 Passed. The NBI value is 48, and the expected result is 48
+Step 48, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A22 Passed. The NBI value is 72, and the expected result is 72
+Step 49, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B29 Passed. The NBI value is , and the expected result is 
+Step 50, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B4 Passed. The NBI value is , and the expected result is 
+Step 51, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B6 Passed. The NBI value is , and the expected result is 
+Step 52, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B7 Passed. The NBI value is , and the expected result is 
+Step 53, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B1 Passed. The NBI value is , and the expected result is 
+Step 54, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B2 Passed. The NBI value is , and the expected result is 
+Step 55, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A11 Passed. The NBI value is 54, and the expected result is 54
+Step 56, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B8 Passed. The NBI value is , and the expected result is 
+Step 57, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B9 Passed. The NBI value is , and the expected result is 
+Step 58, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is SGSN-PM-V1.0.0, and the expected result is SGSN-PM-V1.0.0
+Step 59, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 60, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 61, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\8613743640/8613743640-SGSN-TTPM-V1.0.0-20160203-0545.xml
+Step 62, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/Memtotal Passed. The NBI value is , and the expected result is 
+Step 63, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/NetUsagePeak3 Passed. The NBI value is , and the expected result is 
+Step 64, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/CpuUsageMean Passed. The NBI value is , and the expected result is 
+Step 65, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/Nettotal3 Passed. The NBI value is , and the expected result is 
+Step 66, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/MemUsageMean Passed. The NBI value is , and the expected result is 
+Step 67, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/MemUsagePeak Passed. The NBI value is , and the expected result is 
+Step 68, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/CpuUsagePeak Passed. The NBI value is , and the expected result is 
+Step 69, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/NetUsageMean3 Passed. The NBI value is , and the expected result is 
+Step 70, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B5 Passed. The NBI value is , and the expected result is 
+Step 71, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B30 Passed. The NBI value is , and the expected result is 
+Step 72, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A18 Passed. The NBI value is , and the expected result is 
+Step 73, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B16 Passed. The NBI value is 4294966666, and the expected result is 4294966666
+Step 74, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B17 Passed. The NBI value is 4294966711, and the expected result is 4294966711
+Step 75, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B10 Passed. The NBI value is , and the expected result is 
+Step 76, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B11 Passed. The NBI value is , and the expected result is 
+Step 77, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B33 Passed. The NBI value is , and the expected result is 
+Step 78, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A15 Passed. The NBI value is , and the expected result is 
+Step 79, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A14 Passed. The NBI value is , and the expected result is 
+Step 80, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A17 Passed. The NBI value is , and the expected result is 
+Step 81, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A16 Passed. The NBI value is , and the expected result is 
+Step 82, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B38 Passed. The NBI value is , and the expected result is 
+Step 83, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B39 Passed. The NBI value is , and the expected result is 
+Step 84, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A13 Passed. The NBI value is , and the expected result is 
+Step 85, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A12 Passed. The NBI value is , and the expected result is 
+Step 86, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B34 Passed. The NBI value is , and the expected result is 
+Step 87, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B35 Passed. The NBI value is , and the expected result is 
+Step 88, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A19 Passed. The NBI value is , and the expected result is 
+Step 89, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B31 Passed. The NBI value is , and the expected result is 
+Step 90, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B32 Passed. The NBI value is , and the expected result is 
+Step 91, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A1 Passed. The NBI value is 38654703639, and the expected result is 38654703639
+Step 92, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A3 Passed. The NBI value is 4294967251, and the expected result is 4294967251
+Step 93, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A2 Passed. The NBI value is 4294966846, and the expected result is 4294966846
+Step 94, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A5 Passed. The NBI value is 4294967161, and the expected result is 4294967161
+Step 95, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A4 Passed. The NBI value is 4294967206, and the expected result is 4294967206
+Step 96, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A7 Passed. The NBI value is 4294967026, and the expected result is 4294967026
+Step 97, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A6 Passed. The NBI value is 4294967116, and the expected result is 4294967116
+Step 98, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A9 Passed. The NBI value is 4294967071, and the expected result is 4294967071
+Step 99, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A8 Passed. The NBI value is 4294966981, and the expected result is 4294966981
+Step 100, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B40 Passed. The NBI value is 4294966576, and the expected result is 4294966576
+Step 101, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/E1 Passed. The NBI value is 4294966531, and the expected result is 4294966531
+Step 102, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/E3 Passed. The NBI value is 4294966441, and the expected result is 4294966441
+Step 103, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/E2 Passed. The NBI value is 4294966486, and the expected result is 4294966486
+Step 104, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A20 Passed. The NBI value is , and the expected result is 
+Step 105, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A21 Passed. The NBI value is 4294966801, and the expected result is 4294966801
+Step 106, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B3 Passed. The NBI value is , and the expected result is 
+Step 107, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B41 Passed. The NBI value is 4294966621, and the expected result is 4294966621
+Step 108, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A10 Passed. The NBI value is 4294966936, and the expected result is 4294966936
+Step 109, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A22 Passed. The NBI value is 4294966756, and the expected result is 4294966756
+Step 110, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B29 Passed. The NBI value is , and the expected result is 
+Step 111, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B4 Passed. The NBI value is , and the expected result is 
+Step 112, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B6 Passed. The NBI value is , and the expected result is 
+Step 113, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B7 Passed. The NBI value is , and the expected result is 
+Step 114, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B1 Passed. The NBI value is , and the expected result is 
+Step 115, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B2 Passed. The NBI value is , and the expected result is 
+Step 116, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A11 Passed. The NBI value is 4294966891, and the expected result is 4294966891
+Step 117, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B8 Passed. The NBI value is , and the expected result is 
+Step 118, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B9 Passed. The NBI value is , and the expected result is 
+Step 119, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is SGSN-PM-V1.0.0, and the expected result is SGSN-PM-V1.0.0
+Step 120, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 121, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 122, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\8613743640/8613743640-SGSN-TTPM-V1.0.0-20160203-0530.xml
+Step 123, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/Memtotal Passed. The NBI value is , and the expected result is 
+Step 124, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/NetUsagePeak3 Passed. The NBI value is , and the expected result is 
+Step 125, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/CpuUsageMean Passed. The NBI value is , and the expected result is 
+Step 126, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/Nettotal3 Passed. The NBI value is , and the expected result is 
+Step 127, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/MemUsageMean Passed. The NBI value is , and the expected result is 
+Step 128, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/MemUsagePeak Passed. The NBI value is , and the expected result is 
+Step 129, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/CpuUsagePeak Passed. The NBI value is , and the expected result is 
+Step 130, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/NetUsageMean3 Passed. The NBI value is , and the expected result is 
+Step 131, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B5 Passed. The NBI value is , and the expected result is 
+Step 132, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B30 Passed. The NBI value is , and the expected result is 
+Step 133, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A18 Passed. The NBI value is , and the expected result is 
+Step 134, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B16 Passed. The NBI value is 336, and the expected result is 336
+Step 135, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B17 Passed. The NBI value is 312, and the expected result is 312
+Step 136, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B10 Passed. The NBI value is , and the expected result is 
+Step 137, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B11 Passed. The NBI value is , and the expected result is 
+Step 138, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B33 Passed. The NBI value is , and the expected result is 
+Step 139, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A15 Passed. The NBI value is , and the expected result is 
+Step 140, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A14 Passed. The NBI value is , and the expected result is 
+Step 141, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A17 Passed. The NBI value is , and the expected result is 
+Step 142, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A16 Passed. The NBI value is , and the expected result is 
+Step 143, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B38 Passed. The NBI value is , and the expected result is 
+Step 144, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B39 Passed. The NBI value is , and the expected result is 
+Step 145, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A13 Passed. The NBI value is , and the expected result is 
+Step 146, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A12 Passed. The NBI value is , and the expected result is 
+Step 147, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B34 Passed. The NBI value is , and the expected result is 
+Step 148, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B35 Passed. The NBI value is , and the expected result is 
+Step 149, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A19 Passed. The NBI value is , and the expected result is 
+Step 150, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B31 Passed. The NBI value is , and the expected result is 
+Step 151, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B32 Passed. The NBI value is , and the expected result is 
+Step 152, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A1 Passed. The NBI value is 1080, and the expected result is 1080
+Step 153, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A3 Passed. The NBI value is 24, and the expected result is 24
+Step 154, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A2 Passed. The NBI value is 240, and the expected result is 240
+Step 155, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A5 Passed. The NBI value is 72, and the expected result is 72
+Step 156, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A4 Passed. The NBI value is 48, and the expected result is 48
+Step 157, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A7 Passed. The NBI value is 144, and the expected result is 144
+Step 158, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A6 Passed. The NBI value is 96, and the expected result is 96
+Step 159, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A9 Passed. The NBI value is 120, and the expected result is 120
+Step 160, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A8 Passed. The NBI value is 168, and the expected result is 168
+Step 161, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B40 Passed. The NBI value is 384, and the expected result is 384
+Step 162, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/E1 Passed. The NBI value is 408, and the expected result is 408
+Step 163, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/E3 Passed. The NBI value is 456, and the expected result is 456
+Step 164, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/E2 Passed. The NBI value is 432, and the expected result is 432
+Step 165, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A20 Passed. The NBI value is , and the expected result is 
+Step 166, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A21 Passed. The NBI value is 264, and the expected result is 264
+Step 167, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B3 Passed. The NBI value is , and the expected result is 
+Step 168, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B41 Passed. The NBI value is 360, and the expected result is 360
+Step 169, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A10 Passed. The NBI value is 192, and the expected result is 192
+Step 170, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A22 Passed. The NBI value is 288, and the expected result is 288
+Step 171, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B29 Passed. The NBI value is , and the expected result is 
+Step 172, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B4 Passed. The NBI value is , and the expected result is 
+Step 173, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B6 Passed. The NBI value is , and the expected result is 
+Step 174, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B7 Passed. The NBI value is , and the expected result is 
+Step 175, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B1 Passed. The NBI value is , and the expected result is 
+Step 176, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B2 Passed. The NBI value is , and the expected result is 
+Step 177, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A11 Passed. The NBI value is 216, and the expected result is 216
+Step 178, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B8 Passed. The NBI value is , and the expected result is 
+Step 179, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B9 Passed. The NBI value is , and the expected result is 
+Step 180, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is SGSN-PM-V1.0.0, and the expected result is SGSN-PM-V1.0.0
+Step 181, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 182, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 183, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\8613743640/8613743640-SGSN-TTPM-V1.0.0-20160203-0515.xml
+Step 184, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/Memtotal Passed. The NBI value is , and the expected result is 
+Step 185, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/NetUsagePeak3 Passed. The NBI value is , and the expected result is 
+Step 186, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/CpuUsageMean Passed. The NBI value is , and the expected result is 
+Step 187, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/Nettotal3 Passed. The NBI value is , and the expected result is 
+Step 188, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/MemUsageMean Passed. The NBI value is , and the expected result is 
+Step 189, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/MemUsagePeak Passed. The NBI value is , and the expected result is 
+Step 190, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/CpuUsagePeak Passed. The NBI value is , and the expected result is 
+Step 191, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76/NetUsageMean3 Passed. The NBI value is , and the expected result is 
+Step 192, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B5 Passed. The NBI value is , and the expected result is 
+Step 193, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B30 Passed. The NBI value is , and the expected result is 
+Step 194, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A18 Passed. The NBI value is , and the expected result is 
+Step 195, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B16 Passed. The NBI value is 210, and the expected result is 210
+Step 196, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B17 Passed. The NBI value is 195, and the expected result is 195
+Step 197, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B10 Passed. The NBI value is , and the expected result is 
+Step 198, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B11 Passed. The NBI value is , and the expected result is 
+Step 199, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B33 Passed. The NBI value is , and the expected result is 
+Step 200, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A15 Passed. The NBI value is , and the expected result is 
+Step 201, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A14 Passed. The NBI value is , and the expected result is 
+Step 202, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A17 Passed. The NBI value is , and the expected result is 
+Step 203, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A16 Passed. The NBI value is , and the expected result is 
+Step 204, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B38 Passed. The NBI value is , and the expected result is 
+Step 205, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B39 Passed. The NBI value is , and the expected result is 
+Step 206, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A13 Passed. The NBI value is , and the expected result is 
+Step 207, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A12 Passed. The NBI value is , and the expected result is 
+Step 208, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B34 Passed. The NBI value is , and the expected result is 
+Step 209, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B35 Passed. The NBI value is , and the expected result is 
+Step 210, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A19 Passed. The NBI value is , and the expected result is 
+Step 211, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B31 Passed. The NBI value is , and the expected result is 
+Step 212, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B32 Passed. The NBI value is , and the expected result is 
+Step 213, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A1 Passed. The NBI value is 675, and the expected result is 675
+Step 214, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A3 Passed. The NBI value is 15, and the expected result is 15
+Step 215, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A2 Passed. The NBI value is 150, and the expected result is 150
+Step 216, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A5 Passed. The NBI value is 45, and the expected result is 45
+Step 217, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A4 Passed. The NBI value is 30, and the expected result is 30
+Step 218, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A7 Passed. The NBI value is 90, and the expected result is 90
+Step 219, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A6 Passed. The NBI value is 60, and the expected result is 60
+Step 220, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A9 Passed. The NBI value is 75, and the expected result is 75
+Step 221, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A8 Passed. The NBI value is 105, and the expected result is 105
+Step 222, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B40 Passed. The NBI value is 240, and the expected result is 240
+Step 223, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/E1 Passed. The NBI value is 255, and the expected result is 255
+Step 224, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/E3 Passed. The NBI value is 285, and the expected result is 285
+Step 225, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/E2 Passed. The NBI value is 270, and the expected result is 270
+Step 226, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A20 Passed. The NBI value is , and the expected result is 
+Step 227, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A21 Passed. The NBI value is 165, and the expected result is 165
+Step 228, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B3 Passed. The NBI value is , and the expected result is 
+Step 229, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B41 Passed. The NBI value is 225, and the expected result is 225
+Step 230, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A10 Passed. The NBI value is 120, and the expected result is 120
+Step 231, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A22 Passed. The NBI value is 180, and the expected result is 180
+Step 232, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B29 Passed. The NBI value is , and the expected result is 
+Step 233, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B4 Passed. The NBI value is , and the expected result is 
+Step 234, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B6 Passed. The NBI value is , and the expected result is 
+Step 235, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B7 Passed. The NBI value is , and the expected result is 
+Step 236, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B1 Passed. The NBI value is , and the expected result is 
+Step 237, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B2 Passed. The NBI value is , and the expected result is 
+Step 238, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/A11 Passed. The NBI value is 135, and the expected result is 135
+Step 239, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B8 Passed. The NBI value is , and the expected result is 
+Step 240, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=8613743640|SGSN76,L=LTE123456789-modify/B9 Passed. The NBI value is , and the expected result is 
+Step 241, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is SGSN-PM-V1.0.0, and the expected result is SGSN-PM-V1.0.0
+Step 242, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 243, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 244, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Test case: check_nbi_pm_SGSN_rop=15_cases Passed. Total steps: 244, Passed steps: 244, Error steps: 0, Failed steps: 0, Warning steps: 0

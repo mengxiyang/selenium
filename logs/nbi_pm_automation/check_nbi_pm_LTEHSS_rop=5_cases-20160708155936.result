@@ -1,0 +1,310 @@
+Test case: check_nbi_pm_LTEHSS_rop=5_cases started.
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1600.xml
+Step 1, Failed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsageMean value is 0.10, and the expected result is:0.1
+Step 2, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsageMean Passed. The NBI value is 0.12, and the expected result is 0.12
+Step 3, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsagePeak Passed. The NBI value is 0.43, and the expected result is 0.43
+Step 4, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsagePeak Passed. The NBI value is 0.41, and the expected result is 0.41
+Step 5, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/Memtotal Passed. The NBI value is 3821, and the expected result is 3821
+Step 6, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J4 Passed. The NBI value is 113, and the expected result is 113
+Step 7, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J1 Passed. The NBI value is 110, and the expected result is 110
+Step 8, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J2 Passed. The NBI value is 111, and the expected result is 111
+Step 9, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J3 Passed. The NBI value is 112, and the expected result is 112
+Step 10, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K3 Passed. The NBI value is 116, and the expected result is 116
+Step 11, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K2 Passed. The NBI value is 115, and the expected result is 115
+Step 12, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K1 Passed. The NBI value is 114, and the expected result is 114
+Step 13, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K4 Passed. The NBI value is 117, and the expected result is 117
+Step 14, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J4 Passed. The NBI value is 123, and the expected result is 123
+Step 15, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J1 Passed. The NBI value is 120, and the expected result is 120
+Step 16, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J2 Passed. The NBI value is 121, and the expected result is 121
+Step 17, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J3 Passed. The NBI value is 122, and the expected result is 122
+Step 18, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K3 Passed. The NBI value is 126, and the expected result is 126
+Step 19, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K2 Passed. The NBI value is 125, and the expected result is 125
+Step 20, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K1 Passed. The NBI value is 124, and the expected result is 124
+Step 21, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K4 Passed. The NBI value is 127, and the expected result is 127
+Step 22, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is HSS-PM-V1.0.0, and the expected result is HSS-PM-V1.0.0
+Step 23, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 24, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 25, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1635.xml
+Step 26, Failed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsageMean value is 0.20, and the expected result is:0.2
+Step 27, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsageMean Passed. The NBI value is 0.22, and the expected result is 0.22
+Step 28, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsagePeak Passed. The NBI value is 0.53, and the expected result is 0.53
+Step 29, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsagePeak Passed. The NBI value is 0.51, and the expected result is 0.51
+Step 30, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/Memtotal Passed. The NBI value is 3828, and the expected result is 3828
+Step 31, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J4 Passed. The NBI value is 813, and the expected result is 813
+Step 32, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J1 Passed. The NBI value is 810, and the expected result is 810
+Step 33, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J2 Passed. The NBI value is 811, and the expected result is 811
+Step 34, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J3 Passed. The NBI value is 812, and the expected result is 812
+Step 35, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K3 Passed. The NBI value is 816, and the expected result is 816
+Step 36, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K2 Passed. The NBI value is 815, and the expected result is 815
+Step 37, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K1 Passed. The NBI value is 814, and the expected result is 814
+Step 38, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K4 Passed. The NBI value is 817, and the expected result is 817
+Step 39, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J4 Passed. The NBI value is 823, and the expected result is 823
+Step 40, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J1 Passed. The NBI value is 820, and the expected result is 820
+Step 41, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J2 Passed. The NBI value is 821, and the expected result is 821
+Step 42, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J3 Passed. The NBI value is 822, and the expected result is 822
+Step 43, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K3 Passed. The NBI value is 826, and the expected result is 826
+Step 44, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K2 Passed. The NBI value is 825, and the expected result is 825
+Step 45, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K1 Passed. The NBI value is 824, and the expected result is 824
+Step 46, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K4 Passed. The NBI value is 827, and the expected result is 827
+Step 47, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is HSS-PM-V1.0.0, and the expected result is HSS-PM-V1.0.0
+Step 48, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 49, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 50, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1605.xml
+Step 51, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsageMean Passed. The NBI value is 0.2, and the expected result is 0.2
+Step 52, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsageMean Passed. The NBI value is 0.22, and the expected result is 0.22
+Step 53, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsagePeak Passed. The NBI value is 0.53, and the expected result is 0.53
+Step 54, Failed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsagePeak value is 0.55, and the expected result is:0.51
+Step 55, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/Memtotal Passed. The NBI value is 3822, and the expected result is 3822
+Step 56, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J4 Passed. The NBI value is 213, and the expected result is 213
+Step 57, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J1 Passed. The NBI value is 210, and the expected result is 210
+Step 58, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J2 Passed. The NBI value is 211, and the expected result is 211
+Step 59, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J3 Passed. The NBI value is 212, and the expected result is 212
+Step 60, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K3 Passed. The NBI value is 216, and the expected result is 216
+Step 61, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K2 Passed. The NBI value is 215, and the expected result is 215
+Step 62, Failed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K1 value is 999999, and the expected result is:214
+Step 63, Failed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K4 is missing.
+Step 64, Failed: PM DN:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2 missing.
+Step 65, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is HSS-PM-V1.0.0, and the expected result is HSS-PM-V1.0.0
+Step 66, Failed: PM counter:FileHeader/SenderName is missing.
+Step 67, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 68, Failed: PM counter:FileHeader/DnPrefix value is DC=Ericsson1, and the expected result is:DC=Ericsson
+Step 69, Failed: Extra PM DN:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_4
+Step 70, Failed: Extra PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K5
+Step 71, Failed: Extra PM counter:FileHeader/SenderName1
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1640.xml
+Step 72, Failed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsageMean value is 0.30, and the expected result is:0.3
+Step 73, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsageMean Passed. The NBI value is 0.32, and the expected result is 0.32
+Step 74, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsagePeak Passed. The NBI value is 0.63, and the expected result is 0.63
+Step 75, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsagePeak Passed. The NBI value is 0.61, and the expected result is 0.61
+Step 76, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/Memtotal Passed. The NBI value is 3829, and the expected result is 3829
+Step 77, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J4 Passed. The NBI value is 913, and the expected result is 913
+Step 78, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J1 Passed. The NBI value is 910, and the expected result is 910
+Step 79, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J2 Passed. The NBI value is 911, and the expected result is 911
+Step 80, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J3 Passed. The NBI value is 912, and the expected result is 912
+Step 81, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K3 Passed. The NBI value is 916, and the expected result is 916
+Step 82, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K2 Passed. The NBI value is 915, and the expected result is 915
+Step 83, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K1 Passed. The NBI value is 914, and the expected result is 914
+Step 84, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K4 Passed. The NBI value is 917, and the expected result is 917
+Step 85, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J4 Passed. The NBI value is 923, and the expected result is 923
+Step 86, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J1 Passed. The NBI value is 920, and the expected result is 920
+Step 87, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J2 Passed. The NBI value is 921, and the expected result is 921
+Step 88, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J3 Passed. The NBI value is 922, and the expected result is 922
+Step 89, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K3 Passed. The NBI value is 926, and the expected result is 926
+Step 90, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K2 Passed. The NBI value is 925, and the expected result is 925
+Step 91, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K1 Passed. The NBI value is 924, and the expected result is 924
+Step 92, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K4 Passed. The NBI value is 927, and the expected result is 927
+Step 93, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is HSS-PM-V1.0.0, and the expected result is HSS-PM-V1.0.0
+Step 94, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 95, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 96, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1610.xml
+Step 97, Failed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsageMean value is 0.30, and the expected result is:0.3
+Step 98, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsageMean Passed. The NBI value is 0.32, and the expected result is 0.32
+Step 99, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsagePeak Passed. The NBI value is 0.63, and the expected result is 0.63
+Step 100, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsagePeak Passed. The NBI value is 0.61, and the expected result is 0.61
+Step 101, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/Memtotal Passed. The NBI value is 3823, and the expected result is 3823
+Step 102, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J4 Passed. The NBI value is 313, and the expected result is 313
+Step 103, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J1 Passed. The NBI value is 310, and the expected result is 310
+Step 104, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J2 Passed. The NBI value is 311, and the expected result is 311
+Step 105, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J3 Passed. The NBI value is 312, and the expected result is 312
+Step 106, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K3 Passed. The NBI value is 316, and the expected result is 316
+Step 107, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K2 Passed. The NBI value is 315, and the expected result is 315
+Step 108, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K1 Passed. The NBI value is 314, and the expected result is 314
+Step 109, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K4 Passed. The NBI value is 317, and the expected result is 317
+Step 110, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J4 Passed. The NBI value is 323, and the expected result is 323
+Step 111, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J1 Passed. The NBI value is 320, and the expected result is 320
+Step 112, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J2 Passed. The NBI value is 321, and the expected result is 321
+Step 113, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J3 Passed. The NBI value is 322, and the expected result is 322
+Step 114, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K3 Passed. The NBI value is 326, and the expected result is 326
+Step 115, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K2 Passed. The NBI value is 325, and the expected result is 325
+Step 116, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K1 Passed. The NBI value is 324, and the expected result is 324
+Step 117, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K4 Passed. The NBI value is 327, and the expected result is 327
+Step 118, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is HSS-PM-V1.0.0, and the expected result is HSS-PM-V1.0.0
+Step 119, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 120, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 121, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1645.xml
+Step 122, Failed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsageMean value is 0.40, and the expected result is:0.4
+Step 123, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsageMean Passed. The NBI value is 0.42, and the expected result is 0.42
+Step 124, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsagePeak Passed. The NBI value is 0.73, and the expected result is 0.73
+Step 125, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsagePeak Passed. The NBI value is 0.71, and the expected result is 0.71
+Step 126, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/Memtotal Passed. The NBI value is 3830, and the expected result is 3830
+Step 127, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J4 Passed. The NBI value is 1013, and the expected result is 1013
+Step 128, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J1 Passed. The NBI value is 1010, and the expected result is 1010
+Step 129, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J2 Passed. The NBI value is 1011, and the expected result is 1011
+Step 130, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J3 Passed. The NBI value is 1012, and the expected result is 1012
+Step 131, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K3 Passed. The NBI value is 1016, and the expected result is 1016
+Step 132, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K2 Passed. The NBI value is 1015, and the expected result is 1015
+Step 133, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K1 Passed. The NBI value is 1014, and the expected result is 1014
+Step 134, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K4 Passed. The NBI value is 1017, and the expected result is 1017
+Step 135, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J4 Passed. The NBI value is 1023, and the expected result is 1023
+Step 136, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J1 Passed. The NBI value is 1020, and the expected result is 1020
+Step 137, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J2 Passed. The NBI value is 1021, and the expected result is 1021
+Step 138, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J3 Passed. The NBI value is 1022, and the expected result is 1022
+Step 139, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K3 Passed. The NBI value is 1026, and the expected result is 1026
+Step 140, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K2 Passed. The NBI value is 1025, and the expected result is 1025
+Step 141, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K1 Passed. The NBI value is 1024, and the expected result is 1024
+Step 142, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K4 Passed. The NBI value is 1027, and the expected result is 1027
+Step 143, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is HSS-PM-V1.0.0, and the expected result is HSS-PM-V1.0.0
+Step 144, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 145, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 146, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1615.xml
+Step 147, Failed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsageMean value is 0.40, and the expected result is:0.4
+Step 148, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsageMean Passed. The NBI value is 0.42, and the expected result is 0.42
+Step 149, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsagePeak Passed. The NBI value is 0.73, and the expected result is 0.73
+Step 150, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsagePeak Passed. The NBI value is 0.71, and the expected result is 0.71
+Step 151, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/Memtotal Passed. The NBI value is 3824, and the expected result is 3824
+Step 152, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J4 Passed. The NBI value is 413, and the expected result is 413
+Step 153, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J1 Passed. The NBI value is 410, and the expected result is 410
+Step 154, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J2 Passed. The NBI value is 411, and the expected result is 411
+Step 155, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J3 Passed. The NBI value is 412, and the expected result is 412
+Step 156, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K3 Passed. The NBI value is 416, and the expected result is 416
+Step 157, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K2 Passed. The NBI value is 415, and the expected result is 415
+Step 158, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K1 Passed. The NBI value is 414, and the expected result is 414
+Step 159, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K4 Passed. The NBI value is 417, and the expected result is 417
+Step 160, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J4 Passed. The NBI value is 423, and the expected result is 423
+Step 161, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J1 Passed. The NBI value is 420, and the expected result is 420
+Step 162, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J2 Passed. The NBI value is 421, and the expected result is 421
+Step 163, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J3 Passed. The NBI value is 422, and the expected result is 422
+Step 164, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K3 Passed. The NBI value is 426, and the expected result is 426
+Step 165, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K2 Passed. The NBI value is 425, and the expected result is 425
+Step 166, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K1 Passed. The NBI value is 424, and the expected result is 424
+Step 167, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K4 Passed. The NBI value is 427, and the expected result is 427
+Step 168, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is HSS-PM-V1.0.0, and the expected result is HSS-PM-V1.0.0
+Step 169, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 170, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 171, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1650.xml
+Step 172, Failed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsageMean value is 0.50, and the expected result is:0.5
+Step 173, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsageMean Passed. The NBI value is 0.52, and the expected result is 0.52
+Step 174, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsagePeak Passed. The NBI value is 0.83, and the expected result is 0.83
+Step 175, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsagePeak Passed. The NBI value is 0.81, and the expected result is 0.81
+Step 176, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/Memtotal Passed. The NBI value is 3831, and the expected result is 3831
+Step 177, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J4 Passed. The NBI value is 1113, and the expected result is 1113
+Step 178, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J1 Passed. The NBI value is 1110, and the expected result is 1110
+Step 179, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J2 Passed. The NBI value is 1111, and the expected result is 1111
+Step 180, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J3 Passed. The NBI value is 1112, and the expected result is 1112
+Step 181, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K3 Passed. The NBI value is 1116, and the expected result is 1116
+Step 182, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K2 Passed. The NBI value is 1115, and the expected result is 1115
+Step 183, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K1 Passed. The NBI value is 1114, and the expected result is 1114
+Step 184, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K4 Passed. The NBI value is 1117, and the expected result is 1117
+Step 185, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J4 Passed. The NBI value is 1123, and the expected result is 1123
+Step 186, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J1 Passed. The NBI value is 1120, and the expected result is 1120
+Step 187, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J2 Passed. The NBI value is 1121, and the expected result is 1121
+Step 188, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J3 Passed. The NBI value is 1122, and the expected result is 1122
+Step 189, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K3 Passed. The NBI value is 1126, and the expected result is 1126
+Step 190, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K2 Passed. The NBI value is 1125, and the expected result is 1125
+Step 191, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K1 Passed. The NBI value is 1124, and the expected result is 1124
+Step 192, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K4 Passed. The NBI value is 1127, and the expected result is 1127
+Step 193, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is HSS-PM-V1.0.0, and the expected result is HSS-PM-V1.0.0
+Step 194, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 195, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 196, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1620.xml
+Step 197, Failed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsageMean value is 0.50, and the expected result is:0.5
+Step 198, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsageMean Passed. The NBI value is 0.52, and the expected result is 0.52
+Step 199, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsagePeak Passed. The NBI value is 0.83, and the expected result is 0.83
+Step 200, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsagePeak Passed. The NBI value is 0.81, and the expected result is 0.81
+Step 201, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/Memtotal Passed. The NBI value is 3825, and the expected result is 3825
+Step 202, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J4 Passed. The NBI value is 513, and the expected result is 513
+Step 203, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J1 Passed. The NBI value is 510, and the expected result is 510
+Step 204, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J2 Passed. The NBI value is 511, and the expected result is 511
+Step 205, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J3 Passed. The NBI value is 512, and the expected result is 512
+Step 206, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K3 Passed. The NBI value is 516, and the expected result is 516
+Step 207, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K2 Passed. The NBI value is 515, and the expected result is 515
+Step 208, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K1 Passed. The NBI value is 514, and the expected result is 514
+Step 209, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K4 Passed. The NBI value is 517, and the expected result is 517
+Step 210, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J4 Passed. The NBI value is 523, and the expected result is 523
+Step 211, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J1 Passed. The NBI value is 520, and the expected result is 520
+Step 212, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J2 Passed. The NBI value is 521, and the expected result is 521
+Step 213, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J3 Passed. The NBI value is 522, and the expected result is 522
+Step 214, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K3 Passed. The NBI value is 526, and the expected result is 526
+Step 215, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K2 Passed. The NBI value is 525, and the expected result is 525
+Step 216, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K1 Passed. The NBI value is 524, and the expected result is 524
+Step 217, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K4 Passed. The NBI value is 527, and the expected result is 527
+Step 218, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is HSS-PM-V1.0.0, and the expected result is HSS-PM-V1.0.0
+Step 219, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 220, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 221, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1655.xml
+Step 222, Failed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsageMean value is 0.60, and the expected result is:0.6
+Step 223, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsageMean Passed. The NBI value is 0.62, and the expected result is 0.62
+Step 224, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsagePeak Passed. The NBI value is 0.93, and the expected result is 0.93
+Step 225, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsagePeak Passed. The NBI value is 0.91, and the expected result is 0.91
+Step 226, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/Memtotal Passed. The NBI value is 3832, and the expected result is 3832
+Step 227, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J4 Passed. The NBI value is 1213, and the expected result is 1213
+Step 228, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J1 Passed. The NBI value is 1210, and the expected result is 1210
+Step 229, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J2 Passed. The NBI value is 1211, and the expected result is 1211
+Step 230, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J3 Passed. The NBI value is 1212, and the expected result is 1212
+Step 231, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K3 Passed. The NBI value is 1216, and the expected result is 1216
+Step 232, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K2 Passed. The NBI value is 1215, and the expected result is 1215
+Step 233, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K1 Passed. The NBI value is 1214, and the expected result is 1214
+Step 234, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K4 Passed. The NBI value is 1217, and the expected result is 1217
+Step 235, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J4 Passed. The NBI value is 1223, and the expected result is 1223
+Step 236, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J1 Passed. The NBI value is 1220, and the expected result is 1220
+Step 237, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J2 Passed. The NBI value is 1221, and the expected result is 1221
+Step 238, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J3 Passed. The NBI value is 1222, and the expected result is 1222
+Step 239, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K3 Passed. The NBI value is 1226, and the expected result is 1226
+Step 240, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K2 Passed. The NBI value is 1225, and the expected result is 1225
+Step 241, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K1 Passed. The NBI value is 1224, and the expected result is 1224
+Step 242, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K4 Passed. The NBI value is 1227, and the expected result is 1227
+Step 243, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is HSS-PM-V1.0.0, and the expected result is HSS-PM-V1.0.0
+Step 244, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 245, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 246, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1625.xml
+Step 247, Failed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsageMean value is 0.60, and the expected result is:0.6
+Step 248, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsageMean Passed. The NBI value is 0.62, and the expected result is 0.62
+Step 249, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsagePeak Passed. The NBI value is 0.93, and the expected result is 0.93
+Step 250, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsagePeak Passed. The NBI value is 0.91, and the expected result is 0.91
+Step 251, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/Memtotal Passed. The NBI value is 3826, and the expected result is 3826
+Step 252, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J4 Passed. The NBI value is 613, and the expected result is 613
+Step 253, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J1 Passed. The NBI value is 610, and the expected result is 610
+Step 254, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J2 Passed. The NBI value is 611, and the expected result is 611
+Step 255, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J3 Passed. The NBI value is 612, and the expected result is 612
+Step 256, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K3 Passed. The NBI value is 616, and the expected result is 616
+Step 257, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K2 Passed. The NBI value is 615, and the expected result is 615
+Step 258, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K1 Passed. The NBI value is 614, and the expected result is 614
+Step 259, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K4 Passed. The NBI value is 617, and the expected result is 617
+Step 260, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J4 Passed. The NBI value is 623, and the expected result is 623
+Step 261, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J1 Passed. The NBI value is 620, and the expected result is 620
+Step 262, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J2 Passed. The NBI value is 621, and the expected result is 621
+Step 263, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J3 Passed. The NBI value is 622, and the expected result is 622
+Step 264, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K3 Passed. The NBI value is 626, and the expected result is 626
+Step 265, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K2 Passed. The NBI value is 625, and the expected result is 625
+Step 266, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K1 Passed. The NBI value is 624, and the expected result is 624
+Step 267, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K4 Passed. The NBI value is 627, and the expected result is 627
+Step 268, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is HSS-PM-V1.0.0, and the expected result is HSS-PM-V1.0.0
+Step 269, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 270, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 271, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Info: check pm file H:\Data\selenium\\x\pm_file\ready\HSS_LTE/HSS_LTE-HSS-TTPM-V1.0.0-20160218-1630.xml
+Step 272, Failed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsageMean value is 0.10, and the expected result is:0.1
+Step 273, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsageMean Passed. The NBI value is 0.12, and the expected result is 0.12
+Step 274, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/MemUsagePeak Passed. The NBI value is 0.43, and the expected result is 0.43
+Step 275, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/CpuUsagePeak Passed. The NBI value is 0.41, and the expected result is 0.41
+Step 276, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77/Memtotal Passed. The NBI value is 3827, and the expected result is 3827
+Step 277, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J4 Passed. The NBI value is 713, and the expected result is 713
+Step 278, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J1 Passed. The NBI value is 710, and the expected result is 710
+Step 279, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J2 Passed. The NBI value is 711, and the expected result is 711
+Step 280, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/J3 Passed. The NBI value is 712, and the expected result is 712
+Step 281, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K3 Passed. The NBI value is 716, and the expected result is 716
+Step 282, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K2 Passed. The NBI value is 715, and the expected result is 715
+Step 283, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K1 Passed. The NBI value is 714, and the expected result is 714
+Step 284, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_1/K4 Passed. The NBI value is 717, and the expected result is 717
+Step 285, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J4 Passed. The NBI value is 723, and the expected result is 723
+Step 286, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J1 Passed. The NBI value is 720, and the expected result is 720
+Step 287, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J2 Passed. The NBI value is 721, and the expected result is 721
+Step 288, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/J3 Passed. The NBI value is 722, and the expected result is 722
+Step 289, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K3 Passed. The NBI value is 726, and the expected result is 726
+Step 290, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K2 Passed. The NBI value is 725, and the expected result is 725
+Step 291, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K1 Passed. The NBI value is 724, and the expected result is 724
+Step 292, Passed: PM counter:PMData/DC=Ericsson,SubNetwork=1,ManagedElement=HSS_LTE|HSSLTE77,L=LIC_LTE_2/K4 Passed. The NBI value is 727, and the expected result is 727
+Step 293, Passed: PM counter:FileHeader/InfoModelReferenced Passed. The NBI value is HSS-PM-V1.0.0, and the expected result is HSS-PM-V1.0.0
+Step 294, Passed: PM counter:FileHeader/SenderName Passed. The NBI value is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1, and the expected result is DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1
+Step 295, Passed: PM counter:FileHeader/VendorName Passed. The NBI value is Ericsson, and the expected result is Ericsson
+Step 296, Passed: PM counter:FileHeader/DnPrefix Passed. The NBI value is DC=Ericsson, and the expected result is DC=Ericsson
+Test case: check_nbi_pm_LTEHSS_rop=5_cases Failed. Total steps: 296, Passed steps: 276, Error steps: 0, Failed steps: 20, Warning steps: 0

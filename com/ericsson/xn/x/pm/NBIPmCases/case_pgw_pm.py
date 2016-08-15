@@ -2,7 +2,7 @@ from com.ericsson.xn.x.pm.PmCommons import NBIPmFunc
 from com.ericsson.xn.commons import test_logger
 from com.ericsson.xn.commons import caseutils
 
-nes_info =  {"PGW":{"ne_type":"PGW","nename":"PGW72","nodeid":"default","licid":"LLLLtest","interval":15,"time":"201602181300"}}
+nes_info =  {"PGW":{"ne_type":"PGW","nename":"PGW58","nodeid":"NodeIdpgw58","licid":"LicIdpgw58","interval":15,"time":"201608031915"}}
 
 def check_pm_pgw():
     global nes_info

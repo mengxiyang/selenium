@@ -1,0 +1,147 @@
+Test case: check_ocgas_gui_accuracy_case started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\eyyylll\installed\chromedriver.exe
+Info: Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+Info: Web page: http://10.184.73.76:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: http://10.184.73.76:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: NE not exist, add a new one
+Info: There is no duplicated NEs.
+Info: Successfully added an NE: OCGAS-BEC2CEB621AF6864
+Info: NE:OCGAS-BEC2CEB621AF6864 added successfully
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: http://10.184.73.76:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: OCGAS-BEC2CEB621AF6864...
+Info: Alarm queried successfully
+Info: send alarm trap: OCGAS:monitorTargetsExceedThreshold_NEW...
+Info: alarm sent successfully{'alarmReason': 'Monitor targets exceed threshold', 'alarmOID': '.1.3.6.1.4.1.193.176.50.2.1', 'timeStamp': '2016-06-15 13:30:08.200', 'alarmDescription': 'OCG_monitorTargetExceedThreshold', 'seqNo': '20160615000000460', 'alarmSource': 'OCG-1', 'alarmLevel': '1', 'alarmCategory': '2'}
+Info: alarm received on GUI:monitorTargetsExceedThreshold_NEW
+Info: start to check alarm type: OCGAS:monitorTargetsExceedThreshold_NEW
+Step 1, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 超出门限, and the expected value is 超出门限
+Step 2, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 3, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 4, Failed: alarm counter 变更时间 accuracy test failed. GUI value is  ,and the expected value is None
+Step 5, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 6, Passed: alarm counter 告警名称 accuracy test passed. GUI value is 被控目标数过多, and the expected value is 被控目标数过多
+Step 7, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Critical, and the expected value is Critical
+Step 8, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 9, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 10, and the expected value is 10
+Step 10, Passed: alarm counter 问题描述 accuracy test passed. GUI value is monitorTargetsExceedThreshold, and the expected value is monitorTargetsExceedThreshold
+Step 11, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 设备告警, and the expected value is 设备告警
+Step 12, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 13, Passed: alarm counter 定位信息 accuracy test passed. GUI value is OCG-1, and the expected value is OCG-1
+Step 14, Passed: alarm counter 网元名称 accuracy test passed. GUI value is OCGAS-BEC2CEB621AF6864, and the expected value is OCGAS-BEC2CEB621AF6864
+Step 15, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2016-06-15 13:30:08.200, and the expected value is 2016-06-15 13:30:08.200
+Step 16, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 17, Passed: alarm counter 补充信息 accuracy test passed. GUI value is OCG_monitorTargetExceedThreshold, and the expected value is OCG_monitorTargetExceedThreshold
+Info: send alarm trap: OCGAS:liFeatureEnableNotification_NEW...
+Step 18, Failed: OCGAS:liFeatureEnableNotification_NEW accuracy test failed, reason:sending alarm trap failed, the error msg is:Alarm template file not found: /srv/latest/zacademy/config/snmp_trap/templates/V2_OCGAS_liFeatureEnableNotification_NEW.txt
+Info: send alarm trap: OCGAS:liFeatureDisableNotification_NEW...
+Info: alarm sent successfully{'alarmReason': 'LI feature close', 'alarmOID': '.1.3.6.1.4.1.193.176.50.2.3', 'timeStamp': '2016-06-15 13:30:13.100', 'alarmDescription': 'LI feature is off', 'seqNo': '20160615000000461', 'alarmSource': 'x1', 'alarmLevel': '1', 'alarmCategory': '2'}
+Info: alarm received on GUI:liFeatureDisableNotification_NEW
+Info: start to check alarm type: OCGAS:liFeatureDisableNotification_NEW
+Step 19, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 功能关闭, and the expected value is 功能关闭
+Step 20, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 21, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 22, Failed: alarm counter 变更时间 accuracy test failed. GUI value is  ,and the expected value is None
+Step 23, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 24, Passed: alarm counter 告警名称 accuracy test passed. GUI value is 特通功能停止, and the expected value is 特通功能停止
+Step 25, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Critical, and the expected value is Critical
+Step 26, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 27, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 12, and the expected value is 12
+Step 28, Passed: alarm counter 问题描述 accuracy test passed. GUI value is liFeatureDisableNotification, and the expected value is liFeatureDisableNotification
+Step 29, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 设备告警, and the expected value is 设备告警
+Step 30, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 31, Passed: alarm counter 定位信息 accuracy test passed. GUI value is x1, and the expected value is x1
+Step 32, Passed: alarm counter 网元名称 accuracy test passed. GUI value is OCGAS-BEC2CEB621AF6864, and the expected value is OCGAS-BEC2CEB621AF6864
+Step 33, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2016-06-15 13:30:13.100, and the expected value is 2016-06-15 13:30:13.100
+Step 34, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 35, Passed: alarm counter 补充信息 accuracy test passed. GUI value is LI feature is off, and the expected value is LI feature is off
+Info: send alarm trap: OCGAS:invalidLicTryToConnectScpAs_NEW...
+Info: alarm sent successfully{'alarmReason': 'Invalid Lic try to connect Scp As', 'alarmOID': '.1.3.6.1.4.1.193.176.50.2.4', 'timeStamp': '2016-06-15 13:30:17.500', 'alarmDescription': 'Invalid LIC client try to scan or connect OMM. Invalid CreateConnectionReq received. IP: 192.168.30.20', 'seqNo': '20160615000000462', 'alarmSource': 'x1', 'alarmLevel': '4', 'alarmCategory': '1'}
+Info: alarm received on GUI:invalidLicTryToConnectScpAs_NEW
+Info: start to check alarm type: OCGAS:invalidLicTryToConnectScpAs_NEW
+Step 36, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 认证失败, and the expected value is 认证失败
+Step 37, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 38, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 39, Failed: alarm counter 变更时间 accuracy test failed. GUI value is  ,and the expected value is None
+Step 40, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 41, Passed: alarm counter 告警名称 accuracy test passed. GUI value is 异常客户端, and the expected value is 异常客户端
+Step 42, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Warning, and the expected value is Warning
+Step 43, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 44, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 3, and the expected value is 3
+Step 45, Passed: alarm counter 问题描述 accuracy test passed. GUI value is invalidLicTryToConnectScpAs, and the expected value is invalidLicTryToConnectScpAs
+Step 46, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 通信告警, and the expected value is 通信告警
+Step 47, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 48, Passed: alarm counter 定位信息 accuracy test passed. GUI value is x1, and the expected value is x1
+Step 49, Passed: alarm counter 网元名称 accuracy test passed. GUI value is OCGAS-BEC2CEB621AF6864, and the expected value is OCGAS-BEC2CEB621AF6864
+Step 50, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2016-06-15 13:30:17.500, and the expected value is 2016-06-15 13:30:17.500
+Step 51, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 52, Passed: alarm counter 补充信息 accuracy test passed. GUI value is Invalid LIC client try to scan or connect OMM. Invalid CreateConnectionReq received. IP: 192.168.30.20, and the expected value is Invalid LIC client try to scan or connect OMM. Invalid CreateConnectionReq received. IP: 192.168.30.20
+Info: send alarm trap: OCGAS:failedToEstablishX2Connection_NEW...
+Info: alarm sent successfully{'alarmReason': 'Failed to establish X2 connection', 'alarmOID': '.1.3.6.1.4.1.193.176.50.2.5', 'timeStamp': '2016-06-15 13:30:22.000', 'alarmDescription': 'Cannot connect to X2 remote address. remote ip [192.168.30.20] port [7790]. errno [79] error description [Connection refused]', 'seqNo': '20160615000000463', 'alarmSource': 'licId01', 'alarmLevel': '1', 'alarmCategory': '1'}
+Info: alarm received on GUI:failedToEstablishX2Connection_NEW
+Info: start to check alarm type: OCGAS:failedToEstablishX2Connection_NEW
+Step 53, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 连接建立错误, and the expected value is 连接建立错误
+Step 54, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 55, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 56, Failed: alarm counter 变更时间 accuracy test failed. GUI value is  ,and the expected value is None
+Step 57, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 58, Passed: alarm counter 告警名称 accuracy test passed. GUI value is X2连接故障, and the expected value is X2连接故障
+Step 59, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Critical, and the expected value is Critical
+Step 60, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 61, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 5, and the expected value is 5
+Step 62, Passed: alarm counter 问题描述 accuracy test passed. GUI value is failedToEstablishX2Connection, and the expected value is failedToEstablishX2Connection
+Step 63, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 通信告警, and the expected value is 通信告警
+Step 64, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 65, Passed: alarm counter 定位信息 accuracy test passed. GUI value is licId01, and the expected value is licId01
+Step 66, Passed: alarm counter 网元名称 accuracy test passed. GUI value is OCGAS-BEC2CEB621AF6864, and the expected value is OCGAS-BEC2CEB621AF6864
+Step 67, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2016-06-15 13:30:22.000, and the expected value is 2016-06-15 13:30:22.000
+Step 68, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 69, Passed: alarm counter 补充信息 accuracy test passed. GUI value is Cannot connect to X2 remote address. remote ip [192.168.30.20] port [7790]. errno [79] error description [Connection refused], and the expected value is Cannot connect to X2 remote address. remote ip [192.168.30.20] port [7790]. errno [79] error description [Connection refused]
+Info: send alarm trap: OCGAS:liProcesssAbort_NEW...
+Info: alarm sent successfully{'alarmReason': 'LI processs abort', 'alarmOID': '.1.3.6.1.4.1.193.176.50.2.6', 'timeStamp': '2016-06-15 13:30:26.500', 'alarmDescription': 'The program [x1] instance [] is not running at the moment', 'seqNo': '20160615000000464', 'alarmSource': 'x_proc_checker', 'alarmLevel': '1', 'alarmCategory': '3'}
+Info: alarm received on GUI:liProcesssAbort_NEW
+Info: start to check alarm type: OCGAS:liProcesssAbort_NEW
+Step 70, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 软件错误, and the expected value is 软件错误
+Step 71, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 72, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 73, Failed: alarm counter 变更时间 accuracy test failed. GUI value is  ,and the expected value is None
+Step 74, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 75, Passed: alarm counter 告警名称 accuracy test passed. GUI value is 进程重启, and the expected value is 进程重启
+Step 76, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Critical, and the expected value is Critical
+Step 77, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 78, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 18, and the expected value is 18
+Step 79, Passed: alarm counter 问题描述 accuracy test passed. GUI value is liProcessAbort, and the expected value is liProcessAbort
+Step 80, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 处理错误告警, and the expected value is 处理错误告警
+Step 81, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 82, Passed: alarm counter 定位信息 accuracy test passed. GUI value is x_proc_checker, and the expected value is x_proc_checker
+Step 83, Passed: alarm counter 网元名称 accuracy test passed. GUI value is OCGAS-BEC2CEB621AF6864, and the expected value is OCGAS-BEC2CEB621AF6864
+Step 84, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2016-06-15 13:30:26.500, and the expected value is 2016-06-15 13:30:26.500
+Step 85, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 86, Passed: alarm counter 补充信息 accuracy test passed. GUI value is The program [x1] instance [] is not running at the moment, and the expected value is The program [x1] instance [] is not running at the moment
+Info: send alarm trap: OCGAS:cpuOverload_NEW...
+Info: alarm sent successfully{'alarmReason': 'CPU is busy', 'alarmOID': '.1.3.6.1.4.1.193.176.50.2.7', 'timeStamp': '2016-06-15 13:30:30.800', 'alarmDescription': 'OCG_CPU is busy', 'seqNo': '20160615000000465', 'alarmSource': 'OCG-1', 'alarmLevel': '2', 'alarmCategory': '2'}
+Info: alarm received on GUI:cpuOverload_NEW
+Info: start to check alarm type: OCGAS:cpuOverload_NEW
+Step 87, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 超出门限, and the expected value is 超出门限
+Step 88, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 89, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 90, Failed: alarm counter 变更时间 accuracy test failed. GUI value is  ,and the expected value is None
+Step 91, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 92, Passed: alarm counter 告警名称 accuracy test passed. GUI value is CPU过载, and the expected value is CPU过载
+Step 93, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Major, and the expected value is Major
+Step 94, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 95, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 7, and the expected value is 7
+Step 96, Passed: alarm counter 问题描述 accuracy test passed. GUI value is CPU Overload, and the expected value is CPU Overload
+Step 97, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 设备告警, and the expected value is 设备告警
+Step 98, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 99, Passed: alarm counter 定位信息 accuracy test passed. GUI value is OCG-1, and the expected value is OCG-1
+Step 100, Passed: alarm counter 网元名称 accuracy test passed. GUI value is OCGAS-BEC2CEB621AF6864, and the expected value is OCGAS-BEC2CEB621AF6864
+Step 101, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2016-06-15 13:30:30.800, and the expected value is 2016-06-15 13:30:30.800
+Step 102, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 103, Passed: alarm counter 补充信息 accuracy test passed. GUI value is OCG_CPU is busy, and the expected value is OCG_CPU is busy
+Test case: check_ocgas_gui_accuracy_case Failed. Total steps: 103, Passed steps: 96, Error steps: 0, Failed steps: 7, Warning steps: 0
