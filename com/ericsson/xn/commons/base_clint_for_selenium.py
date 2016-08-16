@@ -66,9 +66,9 @@ def start_session(ip, port, passwd):
     return mgr
 
 
-def get_notification_trap(ip, b_port, passwd, ne_type, alarm, host, auth_info, ne_name, node_id, port=None):
+def get_notification_trap(ip, b_port, passwd, ne_type, alarm, host, auth_info, ne_name, node_id, engine_id,port=None):
     mgr = start_session(ip, b_port, passwd)
-    return mgr.get_notification_trap(ne_type, alarm, host, auth_info, ne_name, node_id, port)._getvalue()
+    return mgr.get_notification_trap(ne_type, alarm, host, auth_info, ne_name, node_id, engine_id, port)._getvalue()
 
 BaseManager.register('get_notification_trap')
 
@@ -96,4 +96,4 @@ print datetime.now().strftime('%H:%M:%S:%f')
 '''
 #print get_nodeid_by_nename('10.184.73.76', 7070, 'xoambaseserver','OCGAS-6E8DD56B5C655707')
 #print get_alarm_list_trap('10.184.73.76', 7070, 'xoambaseserver', 'GMLC', 'A21ExceedThresholdAlarm_NEW', '10.184.73.76', None, "GMLC-13EFDD7B6A24DB45")
-#print get_notification_trap('10.184.73.76', 7070, 'xoambaseserver', 'GMLC', 'A21ExceedThresholdAlarm_NEW', '10.184.73.76', None, "GMLC-13EFDD7B6A24DB45")
+#print get_notification_trap('10.184.73.77', 7070, 'xoambaseserver', 'IMSHSS', 'COMMUNICATIONFAULT_NEW', '10.184.73.77', ['privUser1', 'authUser1', 'privUser1'], "IMSHSS-7848F49C4C0BE7ED","NodeIdIMSHSS-7848F49C4C0BE7ED","8000000001020301")

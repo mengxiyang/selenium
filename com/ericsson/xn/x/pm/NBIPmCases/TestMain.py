@@ -12,6 +12,7 @@ from com.ericsson.xn.x.pm.NBIPmCases import  case_msc_pm
 from com.ericsson.xn.x.pm.NBIPmCases import  case_3gsgsn_pm
 from  com.ericsson.xn.x.pm.NBIPmCases import  case_ggsn_pm
 
+
 if __name__ == '__main__':  
     case_imshss_pm.check_pm_imshss()
     case_ltehss_pm.check_pm_ltehss()
