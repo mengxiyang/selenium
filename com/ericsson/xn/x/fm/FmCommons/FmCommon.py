@@ -152,8 +152,8 @@ def get_1st_row_on_gui(driver):
 
     alarm_gui=dict(zip(name_list,value_list))
     del alarm_gui["告警代码"]
-    del alarm_gui["类型代码"]
-    del alarm_gui["类型编号"]
+    #del alarm_gui["类型代码"]
+    #del alarm_gui["类型编号"]
     return alarm_gui
 
 
