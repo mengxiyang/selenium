@@ -1,0 +1,18 @@
+Test case: check_msc_gui_accuracy_case started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+Info: Web page: https://10.184.73.77:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: NE already exist, reuse the old NE named: MSC-B5E61256CB16EBEE
+Info: NE:MSC-B5E61256CB16EBEE added successfully
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: MSC-B5E61256CB16EBEE...
+Info: Alarm queried successfully
+Info: send alarm trap: MSC:ConnectionEstErrorX3_NEW...
+Info: alarm sent successfully{'changeTime': '2016-09-19 15:03:16.897', 'probableCause': 'Connection Establishment Error', 'timeStamp': '2016-09-19 15:03:16.897', 'alarmDescription': 'Connection-down for the LIC: LIC_3G&8613254900', 'clearTime': '2016-09-19 15:03:16.897', 'seqNo': '1.3.6.1.4.1.193.114.1.1.2', 'specificProblem': 'Unable to connect on X3', 'alarmSource': 'LIC_3G&8613254900', 'alarmLevel': 'Critical', 'alarmCategory': 'Communications Alarm'}

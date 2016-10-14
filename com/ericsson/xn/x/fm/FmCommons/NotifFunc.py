@@ -365,7 +365,7 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
             #nodeid = get_nodeid_by_nename(ne_name,mysqlInst)
 
             nodeid = base_clint_for_selenium.get_nodeid_by_nename(dict_server_info["host"],7070,'xoambaseserver',ne_name)
-            time.sleep(30)
+            time.sleep(20)
             if nodeid == False:
                 test.error("update nodeid Failure")
                 

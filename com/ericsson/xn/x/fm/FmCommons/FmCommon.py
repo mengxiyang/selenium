@@ -96,7 +96,7 @@ def send_an_alarm(host,ne_type,alarm_type):
 def fetch_alarm_on_gui(driver,ne_type,alarm_trap,mappingInstance,alarm_type):
     nowtime=pydate.datetime.now()
     endtime=nowtime + pydate.timedelta(seconds=30)
-    id_button=(By.XPATH,"//button[@id='idBtn-search']")
+    id_button= (By.ID,"idBtn-search")
     search_button=find_single_widget(driver,10,id_button)
     while(pydate.datetime.now()< endtime):
         search_button.click()

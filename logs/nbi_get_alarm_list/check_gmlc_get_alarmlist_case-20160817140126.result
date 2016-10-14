@@ -1,0 +1,640 @@
+Test case: check_gmlc_get_alarmlist_case started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+Info: Web page: https://10.184.73.77:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: NE already exist, reuse the old NE named: GMLC-BD7480F17F66C326
+Info: NE:GMLC-BD7480F17F66C326 added successfully
+Info: send and get alarmlist result for GMLC:CpuUnilizationRatioExceedThresholdAlarm_NEW...
+Info: get TrapInfo is:{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.1', 'probableCause': 'CPU is busy', 'seqNo': '20160817000000763', 'alarmDescription': 'Cpu Usage Exception', 'timeStamp': '2016-08-17 14:00:12.700', 'alarmSource': 'licId', 'alarmLevel': '2', 'alarmCategory': '5'} and AlarmList is:{'a': {'value': {u'CORBA::LongLong': u'1471413612947100000'}}, 'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}, 'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064127000000'}}}}, 'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}, 'event_type': {'none': {u'type_name': u'"x1"', u'domain_name': u'"Alarm IRP V3.0.0"'}}, 'g': {'value': {u'CORBA::Short': u'351'}}, 'f': {'value': {u'CORBA::String': u'"146"'}}, 'event_name': u'"x5"', 'h': {'value': {u'CORBA::Short': u'3'}}, 'j': {'value': {u'CORBA::String': u'"Cpu Usage Exception"'}}, 'ai_ps': {'value': {u'CORBA::String': u'"3"'}}, 'p': {'value': {u'CORBA::Boolean': u'false'}}, 's': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}, 'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064127000000'}}}}, 'jj': {'value': {u'CORBA::String': u'"7||cpuUtilizationRatioExceedThresholdAlarm"'}}, 'ai_at': {'value': {u'CORBA::String': u'"x5"'}}, 'i': {'value': {u'CORBA::String': u'"cpuUtilizationRatioExceedThresholdAlarm"'}}, 'n': {'value': {u'CORBA::Short': u'2'}}, 'd': {'value': {u'CORBA::String': u'"ManagedElement"'}}}
+Info: start to check CpuUnilizationRatioExceedThresholdAlarm_NEW
+Info: check 'event_type',the nbi data result is {'event_type': {'none': {u'type_name': u'"x1"', u'domain_name': u'"Alarm IRP V3.0.0"'}}},and the expected result is {'event_type': {'none': {'type_name': '"x1"', 'domain_name': '"Alarm IRP V3.0.0"'}}}
+Step 1, Passed: type_name accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Step 2, Passed: domain_name accuracy test Passed. The NBI value is "Alarm IRP V3.0.0", and the expected result is "Alarm IRP V3.0.0"
+Info: check 'event_name',the nbi data result is {'event_name': u'"x5"'},and the expected result is {'event_name': '"x5"'}
+Step 3, Passed: event_name accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Info: check 'objectClass',the nbi data result is {'d': {'value': {u'CORBA::String': u'"ManagedElement"'}}},and the expected result is {'d': {'value': {'CORBA::String': '"ManagedElement"'}}}
+Step 4, Passed: CORBA::String accuracy test Passed. The NBI value is "ManagedElement", and the expected result is "ManagedElement"
+Info: check 'objectInstance',the nbi result is {'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}},and the expected result is {'e': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}}
+Step 5, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326", and the expected result is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"
+Info: check 'c',the nbi data result is {'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}},and the expected result is {'c': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}}
+Step 6, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1", and the expected result is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"
+Info: check 'eventTime',the nbi result is {'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064127000000'}}}}},and the expected result is {'b': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064127000000'}}}}}
+Step 7, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 8, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 9, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 10, Passed: time accuracy test Passed. The NBI value is 136907064127000000, and the expected result is 136907064127000000
+Info: check 'vendorSpecificAlarmType',the nbi data result is {'jj': {'value': {u'CORBA::String': u'"7||cpuUtilizationRatioExceedThresholdAlarm"'}}},and the expected result is {'jj': {'value': {'CORBA::String': '"7||cpuUtilizationRatioExceedThresholdAlarm"'}}}
+Step 11, Passed: CORBA::String accuracy test Passed. The NBI value is "7||cpuUtilizationRatioExceedThresholdAlarm", and the expected result is "7||cpuUtilizationRatioExceedThresholdAlarm"
+Info: check 'probableCause',the nbi data result is {'g': {'value': {u'CORBA::Short': u'351'}}},and the expected result is {'g': {'value': {'CORBA::Short': '351'}}}
+Step 12, Passed: CORBA::Short accuracy test Passed. The NBI value is 351, and the expected result is 351
+Info: check 'perceivedSeverity',the nbi data result is {'h': {'value': {u'CORBA::Short': u'3'}}},and the expected result is {'h': {'value': {'CORBA::Short': '3'}}}
+Step 13, Passed: CORBA::Short accuracy test Passed. The NBI value is 3, and the expected result is 3
+Info: check 'notificationId',the nbi data result is {'a': {'value': {u'CORBA::LongLong': u'1471413612947100000'}}}
+Step 14, Passed: the notificationId of 1471413612947100000 is unique in database
+Info: check 'p',the nbi data result is {'p': {'value': {u'CORBA::Boolean': u'false'}}},and the expected result is {'p': {'value': {'CORBA::Boolean': 'FALSE'}}}
+Step 15, Failed: CORBA::Boolean accuracy test Failed. The NBI value is false, and the expected result is FALSE
+Info: check 's',the nbi data result is {'s': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}},and the expected result is {'s': {'value': {'AlarmIRPConstDefs::TrendIndication': 'NO_CHANGE'}}}
+Step 16, Passed: AlarmIRPConstDefs::TrendIndication accuracy test Passed. The NBI value is NO_CHANGE, and the expected result is NO_CHANGE
+Info: check 'additionalText',the nbi data result is {'j': {'value': {u'CORBA::String': u'"Cpu Usage Exception"'}}},and the expected result is {'j': {'value': {'CORBA::String': '"Cpu Usage Exception"'}}}
+Step 17, Passed: CORBA::String accuracy test Passed. The NBI value is "Cpu Usage Exception", and the expected result is "Cpu Usage Exception"
+Step 18, Passed: the alarmId of 146 is unique in database
+Info: check 'AI_VS_ALARM_TYPE',the nbi data result is {'ai_at': {'value': {u'CORBA::String': u'"x5"'}}},and the expected result is {'ai_at': {'value': {'CORBA::String': '"x5"'}}}
+Step 19, Passed: CORBA::String accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Info: check 'AI_VS_PERCEIVED_SEVERITY',the nbi data result is {'ai_ps': {'value': {u'CORBA::String': u'"3"'}}},and the expected result is {'ai_ps': {'value': {'CORBA::String': '"3"'}}}
+Step 20, Passed: CORBA::String accuracy test Passed. The NBI value is "3", and the expected result is "3"
+Info: check 'alarm raised time',the nbi data result is {'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064127000000'}}}}},and the expected result is {'kk': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064127000000'}}}}}
+Step 21, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 22, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 23, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 24, Passed: time accuracy test Passed. The NBI value is 136907064127000000, and the expected result is 136907064127000000
+Info: check 'i',the nbi data result is {'i': {'value': {u'CORBA::String': u'"cpuUtilizationRatioExceedThresholdAlarm"'}}},and the expected result is {'i': {'value': {'CORBA::String': '"cpuUtilizationRatioExceedThresholdAlarm"'}}}
+Step 25, Passed: CORBA::String accuracy test Passed. The NBI value is "cpuUtilizationRatioExceedThresholdAlarm", and the expected result is "cpuUtilizationRatioExceedThresholdAlarm"
+Info: check 'n',the nbi data result is {'n': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'n': {'value': {'CORBA::Short': 2}}}
+Step 26, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: send and get alarmlist result for GMLC:MemoryUnilizationRatioExceedThresholdAlarm_NEW...
+Info: get TrapInfo is:{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.2', 'probableCause': 'Memory Utilization Ratio Exceed Threshold Alarm', 'seqNo': '20160817000000764', 'alarmDescription': 'Memory Usage Exception', 'timeStamp': '2016-08-17 14:00:18.000', 'alarmSource': 'licId', 'alarmLevel': '3', 'alarmCategory': '2'} and AlarmList is:{'a': {'value': {u'CORBA::LongLong': u'1471413618290100000'}}, 'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}, 'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064180000000'}}}}, 'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}, 'event_type': {'none': {u'type_name': u'"x1"', u'domain_name': u'"Alarm IRP V3.0.0"'}}, 'g': {'value': {u'CORBA::Short': u'351'}}, 'f': {'value': {u'CORBA::String': u'"147"'}}, 'event_name': u'"x5"', 'h': {'value': {u'CORBA::Short': u'4'}}, 'j': {'value': {u'CORBA::String': u'"Memory Usage Exception"'}}, 'ai_ps': {'value': {u'CORBA::String': u'"4"'}}, 'p': {'value': {u'CORBA::Boolean': u'false'}}, 's': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}, 'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064180000000'}}}}, 'jj': {'value': {u'CORBA::String': u'"14||memoryUtilizationRatioExceedThresholdAlarm"'}}, 'ai_at': {'value': {u'CORBA::String': u'"x5"'}}, 'i': {'value': {u'CORBA::String': u'"memoryUtilizationRatioExceedThresholdAlarm"'}}, 'n': {'value': {u'CORBA::Short': u'2'}}, 'd': {'value': {u'CORBA::String': u'"ManagedElement"'}}}
+Info: start to check MemoryUnilizationRatioExceedThresholdAlarm_NEW
+Info: check 'event_type',the nbi data result is {'event_type': {'none': {u'type_name': u'"x1"', u'domain_name': u'"Alarm IRP V3.0.0"'}}},and the expected result is {'event_type': {'none': {'type_name': '"x1"', 'domain_name': '"Alarm IRP V3.0.0"'}}}
+Step 27, Passed: type_name accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Step 28, Passed: domain_name accuracy test Passed. The NBI value is "Alarm IRP V3.0.0", and the expected result is "Alarm IRP V3.0.0"
+Info: check 'event_name',the nbi data result is {'event_name': u'"x5"'},and the expected result is {'event_name': '"x5"'}
+Step 29, Passed: event_name accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Info: check 'objectClass',the nbi data result is {'d': {'value': {u'CORBA::String': u'"ManagedElement"'}}},and the expected result is {'d': {'value': {'CORBA::String': '"ManagedElement"'}}}
+Step 30, Passed: CORBA::String accuracy test Passed. The NBI value is "ManagedElement", and the expected result is "ManagedElement"
+Info: check 'objectInstance',the nbi result is {'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}},and the expected result is {'e': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}}
+Step 31, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326", and the expected result is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"
+Info: check 'c',the nbi data result is {'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}},and the expected result is {'c': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}}
+Step 32, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1", and the expected result is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"
+Info: check 'eventTime',the nbi result is {'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064180000000'}}}}},and the expected result is {'b': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064180000000'}}}}}
+Step 33, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 34, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 35, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 36, Passed: time accuracy test Passed. The NBI value is 136907064180000000, and the expected result is 136907064180000000
+Info: check 'vendorSpecificAlarmType',the nbi data result is {'jj': {'value': {u'CORBA::String': u'"14||memoryUtilizationRatioExceedThresholdAlarm"'}}},and the expected result is {'jj': {'value': {'CORBA::String': '"14||memoryUtilizationRatioExceedThresholdAlarm"'}}}
+Step 37, Passed: CORBA::String accuracy test Passed. The NBI value is "14||memoryUtilizationRatioExceedThresholdAlarm", and the expected result is "14||memoryUtilizationRatioExceedThresholdAlarm"
+Info: check 'probableCause',the nbi data result is {'g': {'value': {u'CORBA::Short': u'351'}}},and the expected result is {'g': {'value': {'CORBA::Short': '351'}}}
+Step 38, Passed: CORBA::Short accuracy test Passed. The NBI value is 351, and the expected result is 351
+Info: check 'perceivedSeverity',the nbi data result is {'h': {'value': {u'CORBA::Short': u'4'}}},and the expected result is {'h': {'value': {'CORBA::Short': '4'}}}
+Step 39, Passed: CORBA::Short accuracy test Passed. The NBI value is 4, and the expected result is 4
+Info: check 'notificationId',the nbi data result is {'a': {'value': {u'CORBA::LongLong': u'1471413618290100000'}}}
+Step 40, Passed: the notificationId of 1471413618290100000 is unique in database
+Info: check 'p',the nbi data result is {'p': {'value': {u'CORBA::Boolean': u'false'}}},and the expected result is {'p': {'value': {'CORBA::Boolean': 'FALSE'}}}
+Step 41, Failed: CORBA::Boolean accuracy test Failed. The NBI value is false, and the expected result is FALSE
+Info: check 's',the nbi data result is {'s': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}},and the expected result is {'s': {'value': {'AlarmIRPConstDefs::TrendIndication': 'NO_CHANGE'}}}
+Step 42, Passed: AlarmIRPConstDefs::TrendIndication accuracy test Passed. The NBI value is NO_CHANGE, and the expected result is NO_CHANGE
+Info: check 'additionalText',the nbi data result is {'j': {'value': {u'CORBA::String': u'"Memory Usage Exception"'}}},and the expected result is {'j': {'value': {'CORBA::String': '"Memory Usage Exception"'}}}
+Step 43, Passed: CORBA::String accuracy test Passed. The NBI value is "Memory Usage Exception", and the expected result is "Memory Usage Exception"
+Step 44, Passed: the alarmId of 147 is unique in database
+Info: check 'AI_VS_ALARM_TYPE',the nbi data result is {'ai_at': {'value': {u'CORBA::String': u'"x5"'}}},and the expected result is {'ai_at': {'value': {'CORBA::String': '"x5"'}}}
+Step 45, Passed: CORBA::String accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Info: check 'AI_VS_PERCEIVED_SEVERITY',the nbi data result is {'ai_ps': {'value': {u'CORBA::String': u'"4"'}}},and the expected result is {'ai_ps': {'value': {'CORBA::String': '"4"'}}}
+Step 46, Passed: CORBA::String accuracy test Passed. The NBI value is "4", and the expected result is "4"
+Info: check 'alarm raised time',the nbi data result is {'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064180000000'}}}}},and the expected result is {'kk': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064180000000'}}}}}
+Step 47, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 48, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 49, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 50, Passed: time accuracy test Passed. The NBI value is 136907064180000000, and the expected result is 136907064180000000
+Info: check 'i',the nbi data result is {'i': {'value': {u'CORBA::String': u'"memoryUtilizationRatioExceedThresholdAlarm"'}}},and the expected result is {'i': {'value': {'CORBA::String': '"memoryUtilizationRatioExceedThresholdAlarm"'}}}
+Step 51, Passed: CORBA::String accuracy test Passed. The NBI value is "memoryUtilizationRatioExceedThresholdAlarm", and the expected result is "memoryUtilizationRatioExceedThresholdAlarm"
+Info: check 'n',the nbi data result is {'n': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'n': {'value': {'CORBA::Short': 2}}}
+Step 52, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: send and get alarmlist result for GMLC:DiskUnilizationRatioExceedThresholdAlarm_NEW...
+Info: get TrapInfo is:{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.3', 'probableCause': 'Disk Utilization Ratio Exceed Threshold Alarm', 'seqNo': '20160817000000765', 'alarmDescription': 'Disk Usage Exception', 'timeStamp': '2016-08-17 14:00:23.300', 'alarmSource': 'licId', 'alarmLevel': '1', 'alarmCategory': '2'} and AlarmList is:{'a': {'value': {u'CORBA::LongLong': u'1471413623616100000'}}, 'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}, 'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064233000000'}}}}, 'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}, 'event_type': {'none': {u'type_name': u'"x1"', u'domain_name': u'"Alarm IRP V3.0.0"'}}, 'g': {'value': {u'CORBA::Short': u'351'}}, 'f': {'value': {u'CORBA::String': u'"148"'}}, 'event_name': u'"x5"', 'h': {'value': {u'CORBA::Short': u'2'}}, 'j': {'value': {u'CORBA::String': u'"Disk Usage Exception"'}}, 'ai_ps': {'value': {u'CORBA::String': u'"2"'}}, 'p': {'value': {u'CORBA::Boolean': u'false'}}, 's': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}, 'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064233000000'}}}}, 'jj': {'value': {u'CORBA::String': u'"13||diskUtilizationRatioExceedThresholdAlarm"'}}, 'ai_at': {'value': {u'CORBA::String': u'"x5"'}}, 'i': {'value': {u'CORBA::String': u'"diskUtilizationRatioExceedThresholdAlarm"'}}, 'n': {'value': {u'CORBA::Short': u'2'}}, 'd': {'value': {u'CORBA::String': u'"ManagedElement"'}}}
+Info: start to check DiskUnilizationRatioExceedThresholdAlarm_NEW
+Info: check 'event_type',the nbi data result is {'event_type': {'none': {u'type_name': u'"x1"', u'domain_name': u'"Alarm IRP V3.0.0"'}}},and the expected result is {'event_type': {'none': {'type_name': '"x1"', 'domain_name': '"Alarm IRP V3.0.0"'}}}
+Step 53, Passed: type_name accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Step 54, Passed: domain_name accuracy test Passed. The NBI value is "Alarm IRP V3.0.0", and the expected result is "Alarm IRP V3.0.0"
+Info: check 'event_name',the nbi data result is {'event_name': u'"x5"'},and the expected result is {'event_name': '"x5"'}
+Step 55, Passed: event_name accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Info: check 'objectClass',the nbi data result is {'d': {'value': {u'CORBA::String': u'"ManagedElement"'}}},and the expected result is {'d': {'value': {'CORBA::String': '"ManagedElement"'}}}
+Step 56, Passed: CORBA::String accuracy test Passed. The NBI value is "ManagedElement", and the expected result is "ManagedElement"
+Info: check 'objectInstance',the nbi result is {'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}},and the expected result is {'e': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}}
+Step 57, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326", and the expected result is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"
+Info: check 'c',the nbi data result is {'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}},and the expected result is {'c': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}}
+Step 58, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1", and the expected result is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"
+Info: check 'eventTime',the nbi result is {'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064233000000'}}}}},and the expected result is {'b': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064233000000'}}}}}
+Step 59, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 60, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 61, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 62, Passed: time accuracy test Passed. The NBI value is 136907064233000000, and the expected result is 136907064233000000
+Info: check 'vendorSpecificAlarmType',the nbi data result is {'jj': {'value': {u'CORBA::String': u'"13||diskUtilizationRatioExceedThresholdAlarm"'}}},and the expected result is {'jj': {'value': {'CORBA::String': '"13||diskUtilizationRatioExceedThresholdAlarm"'}}}
+Step 63, Passed: CORBA::String accuracy test Passed. The NBI value is "13||diskUtilizationRatioExceedThresholdAlarm", and the expected result is "13||diskUtilizationRatioExceedThresholdAlarm"
+Info: check 'probableCause',the nbi data result is {'g': {'value': {u'CORBA::Short': u'351'}}},and the expected result is {'g': {'value': {'CORBA::Short': '351'}}}
+Step 64, Passed: CORBA::Short accuracy test Passed. The NBI value is 351, and the expected result is 351
+Info: check 'perceivedSeverity',the nbi data result is {'h': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'h': {'value': {'CORBA::Short': '2'}}}
+Step 65, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: check 'notificationId',the nbi data result is {'a': {'value': {u'CORBA::LongLong': u'1471413623616100000'}}}
+Step 66, Passed: the notificationId of 1471413623616100000 is unique in database
+Info: check 'p',the nbi data result is {'p': {'value': {u'CORBA::Boolean': u'false'}}},and the expected result is {'p': {'value': {'CORBA::Boolean': 'FALSE'}}}
+Step 67, Failed: CORBA::Boolean accuracy test Failed. The NBI value is false, and the expected result is FALSE
+Info: check 's',the nbi data result is {'s': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}},and the expected result is {'s': {'value': {'AlarmIRPConstDefs::TrendIndication': 'NO_CHANGE'}}}
+Step 68, Passed: AlarmIRPConstDefs::TrendIndication accuracy test Passed. The NBI value is NO_CHANGE, and the expected result is NO_CHANGE
+Info: check 'additionalText',the nbi data result is {'j': {'value': {u'CORBA::String': u'"Disk Usage Exception"'}}},and the expected result is {'j': {'value': {'CORBA::String': '"Disk Usage Exception"'}}}
+Step 69, Passed: CORBA::String accuracy test Passed. The NBI value is "Disk Usage Exception", and the expected result is "Disk Usage Exception"
+Step 70, Passed: the alarmId of 148 is unique in database
+Info: check 'AI_VS_ALARM_TYPE',the nbi data result is {'ai_at': {'value': {u'CORBA::String': u'"x5"'}}},and the expected result is {'ai_at': {'value': {'CORBA::String': '"x5"'}}}
+Step 71, Passed: CORBA::String accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Info: check 'AI_VS_PERCEIVED_SEVERITY',the nbi data result is {'ai_ps': {'value': {u'CORBA::String': u'"2"'}}},and the expected result is {'ai_ps': {'value': {'CORBA::String': '"2"'}}}
+Step 72, Passed: CORBA::String accuracy test Passed. The NBI value is "2", and the expected result is "2"
+Info: check 'alarm raised time',the nbi data result is {'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064233000000'}}}}},and the expected result is {'kk': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064233000000'}}}}}
+Step 73, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 74, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 75, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 76, Passed: time accuracy test Passed. The NBI value is 136907064233000000, and the expected result is 136907064233000000
+Info: check 'i',the nbi data result is {'i': {'value': {u'CORBA::String': u'"diskUtilizationRatioExceedThresholdAlarm"'}}},and the expected result is {'i': {'value': {'CORBA::String': '"diskUtilizationRatioExceedThresholdAlarm"'}}}
+Step 77, Passed: CORBA::String accuracy test Passed. The NBI value is "diskUtilizationRatioExceedThresholdAlarm", and the expected result is "diskUtilizationRatioExceedThresholdAlarm"
+Info: check 'n',the nbi data result is {'n': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'n': {'value': {'CORBA::Short': 2}}}
+Step 78, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: send and get alarmlist result for GMLC:TpsPeekExceedThresholdAlarm_NEW...
+Info: get TrapInfo is:{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.4', 'probableCause': 'Tps Peek Exceed Threshold Alarm', 'seqNo': '20160817000000766', 'alarmDescription': 'Tps Exception', 'timeStamp': '2016-08-17 14:00:28.400', 'alarmSource': 'licId', 'alarmLevel': '1', 'alarmCategory': '1'} and AlarmList is:{'a': {'value': {u'CORBA::LongLong': u'1471413628699100000'}}, 'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}, 'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064284000000'}}}}, 'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}, 'event_type': {'none': {u'type_name': u'"x1"', u'domain_name': u'"Alarm IRP V3.0.0"'}}, 'g': {'value': {u'CORBA::Short': u'351'}}, 'f': {'value': {u'CORBA::String': u'"149"'}}, 'event_name': u'"x1"', 'h': {'value': {u'CORBA::Short': u'2'}}, 'j': {'value': {u'CORBA::String': u'"Tps Exception"'}}, 'ai_ps': {'value': {u'CORBA::String': u'"2"'}}, 'p': {'value': {u'CORBA::Boolean': u'false'}}, 's': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}, 'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064284000000'}}}}, 'jj': {'value': {u'CORBA::String': u'"1||TpsPeekExceedThresholdAlarm"'}}, 'ai_at': {'value': {u'CORBA::String': u'"x1"'}}, 'i': {'value': {u'CORBA::String': u'"TpsPeekExceedThresholdAlarm"'}}, 'n': {'value': {u'CORBA::Short': u'2'}}, 'd': {'value': {u'CORBA::String': u'"ManagedElement"'}}}
+Info: start to check TpsPeekExceedThresholdAlarm_NEW
+Info: check 'event_type',the nbi data result is {'event_type': {'none': {u'type_name': u'"x1"', u'domain_name': u'"Alarm IRP V3.0.0"'}}},and the expected result is {'event_type': {'none': {'type_name': '"x1"', 'domain_name': '"Alarm IRP V3.0.0"'}}}
+Step 79, Passed: type_name accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Step 80, Passed: domain_name accuracy test Passed. The NBI value is "Alarm IRP V3.0.0", and the expected result is "Alarm IRP V3.0.0"
+Info: check 'event_name',the nbi data result is {'event_name': u'"x1"'},and the expected result is {'event_name': '"x1"'}
+Step 81, Passed: event_name accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Info: check 'objectClass',the nbi data result is {'d': {'value': {u'CORBA::String': u'"ManagedElement"'}}},and the expected result is {'d': {'value': {'CORBA::String': '"ManagedElement"'}}}
+Step 82, Passed: CORBA::String accuracy test Passed. The NBI value is "ManagedElement", and the expected result is "ManagedElement"
+Info: check 'objectInstance',the nbi result is {'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}},and the expected result is {'e': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}}
+Step 83, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326", and the expected result is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"
+Info: check 'c',the nbi data result is {'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}},and the expected result is {'c': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}}
+Step 84, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1", and the expected result is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"
+Info: check 'eventTime',the nbi result is {'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064284000000'}}}}},and the expected result is {'b': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064284000000'}}}}}
+Step 85, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 86, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 87, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 88, Passed: time accuracy test Passed. The NBI value is 136907064284000000, and the expected result is 136907064284000000
+Info: check 'vendorSpecificAlarmType',the nbi data result is {'jj': {'value': {u'CORBA::String': u'"1||TpsPeekExceedThresholdAlarm"'}}},and the expected result is {'jj': {'value': {'CORBA::String': '"1||TpsPeekExceedThresholdAlarm"'}}}
+Step 89, Passed: CORBA::String accuracy test Passed. The NBI value is "1||TpsPeekExceedThresholdAlarm", and the expected result is "1||TpsPeekExceedThresholdAlarm"
+Info: check 'probableCause',the nbi data result is {'g': {'value': {u'CORBA::Short': u'351'}}},and the expected result is {'g': {'value': {'CORBA::Short': '351'}}}
+Step 90, Passed: CORBA::Short accuracy test Passed. The NBI value is 351, and the expected result is 351
+Info: check 'perceivedSeverity',the nbi data result is {'h': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'h': {'value': {'CORBA::Short': '2'}}}
+Step 91, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: check 'notificationId',the nbi data result is {'a': {'value': {u'CORBA::LongLong': u'1471413628699100000'}}}
+Step 92, Passed: the notificationId of 1471413628699100000 is unique in database
+Info: check 'p',the nbi data result is {'p': {'value': {u'CORBA::Boolean': u'false'}}},and the expected result is {'p': {'value': {'CORBA::Boolean': 'FALSE'}}}
+Step 93, Failed: CORBA::Boolean accuracy test Failed. The NBI value is false, and the expected result is FALSE
+Info: check 's',the nbi data result is {'s': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}},and the expected result is {'s': {'value': {'AlarmIRPConstDefs::TrendIndication': 'NO_CHANGE'}}}
+Step 94, Passed: AlarmIRPConstDefs::TrendIndication accuracy test Passed. The NBI value is NO_CHANGE, and the expected result is NO_CHANGE
+Info: check 'additionalText',the nbi data result is {'j': {'value': {u'CORBA::String': u'"Tps Exception"'}}},and the expected result is {'j': {'value': {'CORBA::String': '"Tps Exception"'}}}
+Step 95, Passed: CORBA::String accuracy test Passed. The NBI value is "Tps Exception", and the expected result is "Tps Exception"
+Step 96, Passed: the alarmId of 149 is unique in database
+Info: check 'AI_VS_ALARM_TYPE',the nbi data result is {'ai_at': {'value': {u'CORBA::String': u'"x1"'}}},and the expected result is {'ai_at': {'value': {'CORBA::String': '"x1"'}}}
+Step 97, Passed: CORBA::String accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Info: check 'AI_VS_PERCEIVED_SEVERITY',the nbi data result is {'ai_ps': {'value': {u'CORBA::String': u'"2"'}}},and the expected result is {'ai_ps': {'value': {'CORBA::String': '"2"'}}}
+Step 98, Passed: CORBA::String accuracy test Passed. The NBI value is "2", and the expected result is "2"
+Info: check 'alarm raised time',the nbi data result is {'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064284000000'}}}}},and the expected result is {'kk': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064284000000'}}}}}
+Step 99, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 100, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 101, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 102, Passed: time accuracy test Passed. The NBI value is 136907064284000000, and the expected result is 136907064284000000
+Info: check 'i',the nbi data result is {'i': {'value': {u'CORBA::String': u'"TpsPeekExceedThresholdAlarm"'}}},and the expected result is {'i': {'value': {'CORBA::String': '"TpsPeekExceedThresholdAlarm"'}}}
+Step 103, Passed: CORBA::String accuracy test Passed. The NBI value is "TpsPeekExceedThresholdAlarm", and the expected result is "TpsPeekExceedThresholdAlarm"
+Info: check 'n',the nbi data result is {'n': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'n': {'value': {'CORBA::Short': 2}}}
+Step 104, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: send and get alarmlist result for GMLC:A21ExceedThresholdAlarm_NEW...
+Info: get TrapInfo is:{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.5', 'probableCause': 'X1 Exceed Threshold Alarm', 'seqNo': '20160817000000767', 'alarmDescription': 'Large amount X1 messages', 'timeStamp': '2016-08-17 14:00:33.400', 'alarmSource': 'licId', 'alarmLevel': '1', 'alarmCategory': '1'} and AlarmList is:{'a': {'value': {u'CORBA::LongLong': u'1471413633660100000'}}, 'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}, 'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064334000000'}}}}, 'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}, 'event_type': {'none': {u'type_name': u'"x1"', u'domain_name': u'"Alarm IRP V3.0.0"'}}, 'g': {'value': {u'CORBA::Short': u'351'}}, 'f': {'value': {u'CORBA::String': u'"150"'}}, 'event_name': u'"x1"', 'h': {'value': {u'CORBA::Short': u'2'}}, 'j': {'value': {u'CORBA::String': u'"Large amount X1 messages"'}}, 'ai_ps': {'value': {u'CORBA::String': u'"2"'}}, 'p': {'value': {u'CORBA::Boolean': u'false'}}, 's': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}, 'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064334000000'}}}}, 'jj': {'value': {u'CORBA::String': u'"1||A21ExceedThresholdAlarm"'}}, 'ai_at': {'value': {u'CORBA::String': u'"x1"'}}, 'i': {'value': {u'CORBA::String': u'"A21ExceedThresholdAlarm"'}}, 'n': {'value': {u'CORBA::Short': u'2'}}, 'd': {'value': {u'CORBA::String': u'"ManagedElement"'}}}
+Info: start to check A21ExceedThresholdAlarm_NEW
+Info: check 'event_type',the nbi data result is {'event_type': {'none': {u'type_name': u'"x1"', u'domain_name': u'"Alarm IRP V3.0.0"'}}},and the expected result is {'event_type': {'none': {'type_name': '"x1"', 'domain_name': '"Alarm IRP V3.0.0"'}}}
+Step 105, Passed: type_name accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Step 106, Passed: domain_name accuracy test Passed. The NBI value is "Alarm IRP V3.0.0", and the expected result is "Alarm IRP V3.0.0"
+Info: check 'event_name',the nbi data result is {'event_name': u'"x1"'},and the expected result is {'event_name': '"x1"'}
+Step 107, Passed: event_name accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Info: check 'objectClass',the nbi data result is {'d': {'value': {u'CORBA::String': u'"ManagedElement"'}}},and the expected result is {'d': {'value': {'CORBA::String': '"ManagedElement"'}}}
+Step 108, Passed: CORBA::String accuracy test Passed. The NBI value is "ManagedElement", and the expected result is "ManagedElement"
+Info: check 'objectInstance',the nbi result is {'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}},and the expected result is {'e': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}}
+Step 109, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326", and the expected result is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"
+Info: check 'c',the nbi data result is {'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}},and the expected result is {'c': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}}
+Step 110, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1", and the expected result is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"
+Info: check 'eventTime',the nbi result is {'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064334000000'}}}}},and the expected result is {'b': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064334000000'}}}}}
+Step 111, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 112, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 113, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 114, Passed: time accuracy test Passed. The NBI value is 136907064334000000, and the expected result is 136907064334000000
+Info: check 'vendorSpecificAlarmType',the nbi data result is {'jj': {'value': {u'CORBA::String': u'"1||A21ExceedThresholdAlarm"'}}},and the expected result is {'jj': {'value': {'CORBA::String': '"1||A21ExceedThresholdAlarm"'}}}
+Step 115, Passed: CORBA::String accuracy test Passed. The NBI value is "1||A21ExceedThresholdAlarm", and the expected result is "1||A21ExceedThresholdAlarm"
+Info: check 'probableCause',the nbi data result is {'g': {'value': {u'CORBA::Short': u'351'}}},and the expected result is {'g': {'value': {'CORBA::Short': '351'}}}
+Step 116, Passed: CORBA::Short accuracy test Passed. The NBI value is 351, and the expected result is 351
+Info: check 'perceivedSeverity',the nbi data result is {'h': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'h': {'value': {'CORBA::Short': '2'}}}
+Step 117, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: check 'notificationId',the nbi data result is {'a': {'value': {u'CORBA::LongLong': u'1471413633660100000'}}}
+Step 118, Passed: the notificationId of 1471413633660100000 is unique in database
+Info: check 'p',the nbi data result is {'p': {'value': {u'CORBA::Boolean': u'false'}}},and the expected result is {'p': {'value': {'CORBA::Boolean': 'FALSE'}}}
+Step 119, Failed: CORBA::Boolean accuracy test Failed. The NBI value is false, and the expected result is FALSE
+Info: check 's',the nbi data result is {'s': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}},and the expected result is {'s': {'value': {'AlarmIRPConstDefs::TrendIndication': 'NO_CHANGE'}}}
+Step 120, Passed: AlarmIRPConstDefs::TrendIndication accuracy test Passed. The NBI value is NO_CHANGE, and the expected result is NO_CHANGE
+Info: check 'additionalText',the nbi data result is {'j': {'value': {u'CORBA::String': u'"Large amount X1 messages"'}}},and the expected result is {'j': {'value': {'CORBA::String': '"Large amount X1 messages"'}}}
+Step 121, Passed: CORBA::String accuracy test Passed. The NBI value is "Large amount X1 messages", and the expected result is "Large amount X1 messages"
+Step 122, Passed: the alarmId of 150 is unique in database
+Info: check 'AI_VS_ALARM_TYPE',the nbi data result is {'ai_at': {'value': {u'CORBA::String': u'"x1"'}}},and the expected result is {'ai_at': {'value': {'CORBA::String': '"x1"'}}}
+Step 123, Passed: CORBA::String accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Info: check 'AI_VS_PERCEIVED_SEVERITY',the nbi data result is {'ai_ps': {'value': {u'CORBA::String': u'"2"'}}},and the expected result is {'ai_ps': {'value': {'CORBA::String': '"2"'}}}
+Step 124, Passed: CORBA::String accuracy test Passed. The NBI value is "2", and the expected result is "2"
+Info: check 'alarm raised time',the nbi data result is {'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064334000000'}}}}},and the expected result is {'kk': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064334000000'}}}}}
+Step 125, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 126, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 127, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 128, Passed: time accuracy test Passed. The NBI value is 136907064334000000, and the expected result is 136907064334000000
+Info: check 'i',the nbi data result is {'i': {'value': {u'CORBA::String': u'"A21ExceedThresholdAlarm"'}}},and the expected result is {'i': {'value': {'CORBA::String': '"A21ExceedThresholdAlarm"'}}}
+Step 129, Passed: CORBA::String accuracy test Passed. The NBI value is "A21ExceedThresholdAlarm", and the expected result is "A21ExceedThresholdAlarm"
+Info: check 'n',the nbi data result is {'n': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'n': {'value': {'CORBA::Short': 2}}}
+Step 130, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: send and get alarmlist result for GMLC:LIFeatureDisableNotification_NEW...
+Info: get TrapInfo is:{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.6', 'probableCause': 'LI Feature Turn off Alarm', 'seqNo': '20160817000000768', 'alarmDescription': 'LI Interface turn off', 'timeStamp': '2016-08-17 14:00:38.400', 'alarmSource': 'null', 'alarmLevel': '1', 'alarmCategory': '3'} and AlarmList is:{'a': {'value': {u'CORBA::LongLong': u'1471413638664100000'}}, 'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}, 'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064384000000'}}}}, 'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}, 'event_type': {'none': {u'type_name': u'"x1"', u'domain_name': u'"Alarm IRP V3.0.0"'}}, 'g': {'value': {u'CORBA::Short': u'14'}}, 'f': {'value': {u'CORBA::String': u'"151"'}}, 'event_name': u'"x2"', 'h': {'value': {u'CORBA::Short': u'2'}}, 'j': {'value': {u'CORBA::String': u'"LI Interface turn off"'}}, 'ai_ps': {'value': {u'CORBA::String': u'"2"'}}, 'p': {'value': {u'CORBA::Boolean': u'false'}}, 's': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}, 'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064384000000'}}}}, 'jj': {'value': {u'CORBA::String': u'"12||LIFeatureDisableNotification"'}}, 'ai_at': {'value': {u'CORBA::String': u'"x2"'}}, 'i': {'value': {u'CORBA::String': u'"LIFeatureDisableNotification"'}}, 'n': {'value': {u'CORBA::Short': u'2'}}, 'd': {'value': {u'CORBA::String': u'"ManagedElement"'}}}
+Info: start to check LIFeatureDisableNotification_NEW
+Info: check 'event_type',the nbi data result is {'event_type': {'none': {u'type_name': u'"x1"', u'domain_name': u'"Alarm IRP V3.0.0"'}}},and the expected result is {'event_type': {'none': {'type_name': '"x1"', 'domain_name': '"Alarm IRP V3.0.0"'}}}
+Step 131, Passed: type_name accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Step 132, Passed: domain_name accuracy test Passed. The NBI value is "Alarm IRP V3.0.0", and the expected result is "Alarm IRP V3.0.0"
+Info: check 'event_name',the nbi data result is {'event_name': u'"x2"'},and the expected result is {'event_name': '"x2"'}
+Step 133, Passed: event_name accuracy test Passed. The NBI value is "x2", and the expected result is "x2"
+Info: check 'objectClass',the nbi data result is {'d': {'value': {u'CORBA::String': u'"ManagedElement"'}}},and the expected result is {'d': {'value': {'CORBA::String': '"ManagedElement"'}}}
+Step 134, Passed: CORBA::String accuracy test Passed. The NBI value is "ManagedElement", and the expected result is "ManagedElement"
+Info: check 'objectInstance',the nbi result is {'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}},and the expected result is {'e': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}}
+Step 135, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326", and the expected result is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"
+Info: check 'c',the nbi data result is {'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}},and the expected result is {'c': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}}
+Step 136, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1", and the expected result is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"
+Info: check 'eventTime',the nbi result is {'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064384000000'}}}}},and the expected result is {'b': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064384000000'}}}}}
+Step 137, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 138, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 139, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 140, Passed: time accuracy test Passed. The NBI value is 136907064384000000, and the expected result is 136907064384000000
+Info: check 'vendorSpecificAlarmType',the nbi data result is {'jj': {'value': {u'CORBA::String': u'"12||LIFeatureDisableNotification"'}}},and the expected result is {'jj': {'value': {'CORBA::String': '"12||LIFeatureDisableNotification"'}}}
+Step 141, Passed: CORBA::String accuracy test Passed. The NBI value is "12||LIFeatureDisableNotification", and the expected result is "12||LIFeatureDisableNotification"
+Info: check 'probableCause',the nbi data result is {'g': {'value': {u'CORBA::Short': u'14'}}},and the expected result is {'g': {'value': {'CORBA::Short': '14'}}}
+Step 142, Passed: CORBA::Short accuracy test Passed. The NBI value is 14, and the expected result is 14
+Info: check 'perceivedSeverity',the nbi data result is {'h': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'h': {'value': {'CORBA::Short': '2'}}}
+Step 143, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: check 'notificationId',the nbi data result is {'a': {'value': {u'CORBA::LongLong': u'1471413638664100000'}}}
+Step 144, Passed: the notificationId of 1471413638664100000 is unique in database
+Info: check 'p',the nbi data result is {'p': {'value': {u'CORBA::Boolean': u'false'}}},and the expected result is {'p': {'value': {'CORBA::Boolean': 'FALSE'}}}
+Step 145, Failed: CORBA::Boolean accuracy test Failed. The NBI value is false, and the expected result is FALSE
+Info: check 's',the nbi data result is {'s': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}},and the expected result is {'s': {'value': {'AlarmIRPConstDefs::TrendIndication': 'NO_CHANGE'}}}
+Step 146, Passed: AlarmIRPConstDefs::TrendIndication accuracy test Passed. The NBI value is NO_CHANGE, and the expected result is NO_CHANGE
+Info: check 'additionalText',the nbi data result is {'j': {'value': {u'CORBA::String': u'"LI Interface turn off"'}}},and the expected result is {'j': {'value': {'CORBA::String': '"LI Interface turn off"'}}}
+Step 147, Passed: CORBA::String accuracy test Passed. The NBI value is "LI Interface turn off", and the expected result is "LI Interface turn off"
+Step 148, Passed: the alarmId of 151 is unique in database
+Info: check 'AI_VS_ALARM_TYPE',the nbi data result is {'ai_at': {'value': {u'CORBA::String': u'"x2"'}}},and the expected result is {'ai_at': {'value': {'CORBA::String': '"x2"'}}}
+Step 149, Passed: CORBA::String accuracy test Passed. The NBI value is "x2", and the expected result is "x2"
+Info: check 'AI_VS_PERCEIVED_SEVERITY',the nbi data result is {'ai_ps': {'value': {u'CORBA::String': u'"2"'}}},and the expected result is {'ai_ps': {'value': {'CORBA::String': '"2"'}}}
+Step 150, Passed: CORBA::String accuracy test Passed. The NBI value is "2", and the expected result is "2"
+Info: check 'alarm raised time',the nbi data result is {'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064384000000'}}}}},and the expected result is {'kk': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064384000000'}}}}}
+Step 151, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 152, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 153, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 154, Passed: time accuracy test Passed. The NBI value is 136907064384000000, and the expected result is 136907064384000000
+Info: check 'i',the nbi data result is {'i': {'value': {u'CORBA::String': u'"LIFeatureDisableNotification"'}}},and the expected result is {'i': {'value': {'CORBA::String': '"LIFeatureDisableNotification"'}}}
+Step 155, Passed: CORBA::String accuracy test Passed. The NBI value is "LIFeatureDisableNotification", and the expected result is "LIFeatureDisableNotification"
+Info: check 'n',the nbi data result is {'n': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'n': {'value': {'CORBA::Short': 2}}}
+Step 156, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+Info: Web page: https://10.184.73.77:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: NE already exist, reuse the old NE named: GMLC-BD7480F17F66C326
+Info: NE:GMLC-BD7480F17F66C326 added successfully
+Info: send and get alarmlist result for GMLC:CpuUnilizationRatioExceedThresholdAlarm_CLEAR...
+Info: get TrapInfo is:{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.1', 'probableCause': 'CPU is busy', 'seqNo': '20160817000000769', 'alarmDescription': 'Cpu Usage Exception', 'timeStamp': '2016-08-17 14:01:27.500', 'alarmSource': 'licId', 'alarmLevel': '5', 'alarmCategory': '5'} and AlarmList is:{'event_type': {'none': {u'type_name': u'"x5"', u'domain_name': u'"Alarm IRP V3.0.0"'}}, 'ai_ps': {'value': {u'CORBA::String': u'"6"'}}, 'll': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064875000000'}}}}, 'event_name': u'"x5"', 'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064875000000'}}}}, 'jj': {'value': {u'CORBA::String': u'"7||cpuUtilizationRatioExceedThresholdAlarm"'}}, 'ai_at': {'value': {u'CORBA::String': u'"x5"'}}, 'a': {'value': {u'CORBA::LongLong': u'1471413687816100000'}}, 'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}, 'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064875000000'}}}}, 'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}, 'd': {'value': {u'CORBA::String': u'"ManagedElement"'}}, 'g': {'value': {u'CORBA::Short': u'351'}}, 'f': {'value': {u'CORBA::String': u'"152"'}}, 'i': {'value': {u'CORBA::String': u'"cpuUtilizationRatioExceedThresholdAlarm"'}}, 'h': {'value': {u'CORBA::Short': u'6'}}, 'j': {'value': {u'CORBA::String': u'"Cpu Usage Exception"'}}, 'n': {'value': {u'CORBA::Short': u'2'}}, 'p': {'value': {u'CORBA::Boolean': u'false'}}, 's': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}, 'y': {'value': {u'CORBA::String': u'"AUTO"'}}, 'z': {'value': {u'CORBA::String': u'"GMLC-BD7480F17F66C326"'}}}
+Info: start to check CpuUnilizationRatioExceedThresholdAlarm_CLEAR
+Info: check 'event_type',the nbi data result is {'event_type': {'none': {u'type_name': u'"x5"', u'domain_name': u'"Alarm IRP V3.0.0"'}}},and the expected result is {'event_type': {'none': {'type_name': '"x5"', 'domain_name': '"Alarm IRP V3.0.0"'}}}
+Step 157, Passed: type_name accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Step 158, Passed: domain_name accuracy test Passed. The NBI value is "Alarm IRP V3.0.0", and the expected result is "Alarm IRP V3.0.0"
+Info: check 'event_name',the nbi data result is {'event_name': u'"x5"'},and the expected result is {'event_name': '"x5"'}
+Step 159, Passed: event_name accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Info: check 'objectClass',the nbi data result is {'d': {'value': {u'CORBA::String': u'"ManagedElement"'}}},and the expected result is {'d': {'value': {'CORBA::String': '"ManagedElement"'}}}
+Step 160, Passed: CORBA::String accuracy test Passed. The NBI value is "ManagedElement", and the expected result is "ManagedElement"
+Info: check 'objectInstance',the nbi result is {'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}},and the expected result is {'e': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}}
+Step 161, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326", and the expected result is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"
+Info: check 'c',the nbi data result is {'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}},and the expected result is {'c': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}}
+Step 162, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1", and the expected result is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"
+Info: check 'eventTime',the nbi result is {'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064875000000'}}}}},and the expected result is {'b': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064875000000'}}}}}
+Step 163, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 164, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 165, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 166, Passed: time accuracy test Passed. The NBI value is 136907064875000000, and the expected result is 136907064875000000
+Info: check 'vendorSpecificAlarmType',the nbi data result is {'jj': {'value': {u'CORBA::String': u'"7||cpuUtilizationRatioExceedThresholdAlarm"'}}},and the expected result is {'jj': {'value': {'CORBA::String': '"7||cpuUtilizationRatioExceedThresholdAlarm"'}}}
+Step 167, Passed: CORBA::String accuracy test Passed. The NBI value is "7||cpuUtilizationRatioExceedThresholdAlarm", and the expected result is "7||cpuUtilizationRatioExceedThresholdAlarm"
+Info: check 'probableCause',the nbi data result is {'g': {'value': {u'CORBA::Short': u'351'}}},and the expected result is {'g': {'value': {'CORBA::Short': '351'}}}
+Step 168, Passed: CORBA::Short accuracy test Passed. The NBI value is 351, and the expected result is 351
+Info: check 'perceivedSeverity',the nbi data result is {'h': {'value': {u'CORBA::Short': u'6'}}},and the expected result is {'h': {'value': {'CORBA::Short': '6'}}}
+Step 169, Passed: CORBA::Short accuracy test Passed. The NBI value is 6, and the expected result is 6
+Info: check 'notificationId',the nbi data result is {'a': {'value': {u'CORBA::LongLong': u'1471413687816100000'}}}
+Step 170, Passed: the notificationId of 1471413687816100000 is unique in database
+Info: check 'p',the nbi data result is {'p': {'value': {u'CORBA::Boolean': u'false'}}},and the expected result is {'p': {'value': {'CORBA::Boolean': 'FALSE'}}}
+Step 171, Failed: CORBA::Boolean accuracy test Failed. The NBI value is false, and the expected result is FALSE
+Info: check 's',the nbi data result is {'s': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}},and the expected result is {'s': {'value': {'AlarmIRPConstDefs::TrendIndication': 'NO_CHANGE'}}}
+Step 172, Passed: AlarmIRPConstDefs::TrendIndication accuracy test Passed. The NBI value is NO_CHANGE, and the expected result is NO_CHANGE
+Info: check 'additionalText',the nbi data result is {'j': {'value': {u'CORBA::String': u'"Cpu Usage Exception"'}}},and the expected result is {'j': {'value': {'CORBA::String': '"Cpu Usage Exception"'}}}
+Step 173, Passed: CORBA::String accuracy test Passed. The NBI value is "Cpu Usage Exception", and the expected result is "Cpu Usage Exception"
+Step 174, Passed: the alarmId of 152 is unique in database
+Info: check 'AI_VS_ALARM_TYPE',the nbi data result is {'ai_at': {'value': {u'CORBA::String': u'"x5"'}}},and the expected result is {'ai_at': {'value': {'CORBA::String': '"x5"'}}}
+Step 175, Passed: CORBA::String accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Info: check 'AI_VS_PERCEIVED_SEVERITY',the nbi data result is {'ai_ps': {'value': {u'CORBA::String': u'"6"'}}},and the expected result is {'ai_ps': {'value': {'CORBA::String': '"6"'}}}
+Step 176, Passed: CORBA::String accuracy test Passed. The NBI value is "6", and the expected result is "6"
+Info: check 'alarm raised time',the nbi data result is {'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064875000000'}}}}},and the expected result is {'kk': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064875000000'}}}}}
+Step 177, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 178, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 179, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 180, Passed: time accuracy test Passed. The NBI value is 136907064875000000, and the expected result is 136907064875000000
+Info: check 'i',the nbi data result is {'i': {'value': {u'CORBA::String': u'"cpuUtilizationRatioExceedThresholdAlarm"'}}},and the expected result is {'i': {'value': {'CORBA::String': '"cpuUtilizationRatioExceedThresholdAlarm"'}}}
+Step 181, Passed: CORBA::String accuracy test Passed. The NBI value is "cpuUtilizationRatioExceedThresholdAlarm", and the expected result is "cpuUtilizationRatioExceedThresholdAlarm"
+Info: check 'n',the nbi data result is {'n': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'n': {'value': {'CORBA::Short': 2}}}
+Step 182, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: check 'clearTime',the nbi result is {'ll': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064875000000'}}}}},and the expected result is {'ll': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064875000000'}}}}}
+Step 183, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 184, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 185, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 186, Passed: time accuracy test Passed. The NBI value is 136907064875000000, and the expected result is 136907064875000000
+Info: check 'y',the nbi data result is {'y': {'value': {u'CORBA::String': u'"AUTO"'}}},and the expected result is {'y': {'value': {'CORBA::String': '"AUTO"'}}}
+Step 187, Passed: CORBA::String accuracy test Passed. The NBI value is "AUTO", and the expected result is "AUTO"
+Info: check 'z',the nbi data result is {'z': {'value': {u'CORBA::String': u'"GMLC-BD7480F17F66C326"'}}},and the expected result is {'z': {'value': {'CORBA::String': '"GMLC-BD7480F17F66C326"'}}}
+Step 188, Passed: CORBA::String accuracy test Passed. The NBI value is "GMLC-BD7480F17F66C326", and the expected result is "GMLC-BD7480F17F66C326"
+Info: send and get alarmlist result for GMLC:MemoryUnilizationRatioExceedThresholdAlarm_CLEAR...
+Info: get TrapInfo is:{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.2', 'probableCause': 'Memory Utilization Ratio Exceed Threshold Alarm', 'seqNo': '20160817000000770', 'alarmDescription': 'Memory Usage Exception', 'timeStamp': '2016-08-17 14:01:32.600', 'alarmSource': 'licId', 'alarmLevel': '5', 'alarmCategory': '2'} and AlarmList is:{'event_type': {'none': {u'type_name': u'"x5"', u'domain_name': u'"Alarm IRP V3.0.0"'}}, 'ai_ps': {'value': {u'CORBA::String': u'"6"'}}, 'll': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064926000000'}}}}, 'event_name': u'"x5"', 'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064926000000'}}}}, 'jj': {'value': {u'CORBA::String': u'"14||memoryUtilizationRatioExceedThresholdAlarm"'}}, 'ai_at': {'value': {u'CORBA::String': u'"x5"'}}, 'a': {'value': {u'CORBA::LongLong': u'1471413692900100000'}}, 'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}, 'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064926000000'}}}}, 'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}, 'd': {'value': {u'CORBA::String': u'"ManagedElement"'}}, 'g': {'value': {u'CORBA::Short': u'351'}}, 'f': {'value': {u'CORBA::String': u'"153"'}}, 'i': {'value': {u'CORBA::String': u'"memoryUtilizationRatioExceedThresholdAlarm"'}}, 'h': {'value': {u'CORBA::Short': u'6'}}, 'j': {'value': {u'CORBA::String': u'"Memory Usage Exception"'}}, 'n': {'value': {u'CORBA::Short': u'2'}}, 'p': {'value': {u'CORBA::Boolean': u'false'}}, 's': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}, 'y': {'value': {u'CORBA::String': u'"AUTO"'}}, 'z': {'value': {u'CORBA::String': u'"GMLC-BD7480F17F66C326"'}}}
+Info: start to check MemoryUnilizationRatioExceedThresholdAlarm_CLEAR
+Info: check 'event_type',the nbi data result is {'event_type': {'none': {u'type_name': u'"x5"', u'domain_name': u'"Alarm IRP V3.0.0"'}}},and the expected result is {'event_type': {'none': {'type_name': '"x5"', 'domain_name': '"Alarm IRP V3.0.0"'}}}
+Step 189, Passed: type_name accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Step 190, Passed: domain_name accuracy test Passed. The NBI value is "Alarm IRP V3.0.0", and the expected result is "Alarm IRP V3.0.0"
+Info: check 'event_name',the nbi data result is {'event_name': u'"x5"'},and the expected result is {'event_name': '"x5"'}
+Step 191, Passed: event_name accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Info: check 'objectClass',the nbi data result is {'d': {'value': {u'CORBA::String': u'"ManagedElement"'}}},and the expected result is {'d': {'value': {'CORBA::String': '"ManagedElement"'}}}
+Step 192, Passed: CORBA::String accuracy test Passed. The NBI value is "ManagedElement", and the expected result is "ManagedElement"
+Info: check 'objectInstance',the nbi result is {'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}},and the expected result is {'e': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}}
+Step 193, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326", and the expected result is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"
+Info: check 'c',the nbi data result is {'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}},and the expected result is {'c': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}}
+Step 194, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1", and the expected result is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"
+Info: check 'eventTime',the nbi result is {'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064926000000'}}}}},and the expected result is {'b': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064926000000'}}}}}
+Step 195, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 196, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 197, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 198, Passed: time accuracy test Passed. The NBI value is 136907064926000000, and the expected result is 136907064926000000
+Info: check 'vendorSpecificAlarmType',the nbi data result is {'jj': {'value': {u'CORBA::String': u'"14||memoryUtilizationRatioExceedThresholdAlarm"'}}},and the expected result is {'jj': {'value': {'CORBA::String': '"14||memoryUtilizationRatioExceedThresholdAlarm"'}}}
+Step 199, Passed: CORBA::String accuracy test Passed. The NBI value is "14||memoryUtilizationRatioExceedThresholdAlarm", and the expected result is "14||memoryUtilizationRatioExceedThresholdAlarm"
+Info: check 'probableCause',the nbi data result is {'g': {'value': {u'CORBA::Short': u'351'}}},and the expected result is {'g': {'value': {'CORBA::Short': '351'}}}
+Step 200, Passed: CORBA::Short accuracy test Passed. The NBI value is 351, and the expected result is 351
+Info: check 'perceivedSeverity',the nbi data result is {'h': {'value': {u'CORBA::Short': u'6'}}},and the expected result is {'h': {'value': {'CORBA::Short': '6'}}}
+Step 201, Passed: CORBA::Short accuracy test Passed. The NBI value is 6, and the expected result is 6
+Info: check 'notificationId',the nbi data result is {'a': {'value': {u'CORBA::LongLong': u'1471413692900100000'}}}
+Step 202, Passed: the notificationId of 1471413692900100000 is unique in database
+Info: check 'p',the nbi data result is {'p': {'value': {u'CORBA::Boolean': u'false'}}},and the expected result is {'p': {'value': {'CORBA::Boolean': 'FALSE'}}}
+Step 203, Failed: CORBA::Boolean accuracy test Failed. The NBI value is false, and the expected result is FALSE
+Info: check 's',the nbi data result is {'s': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}},and the expected result is {'s': {'value': {'AlarmIRPConstDefs::TrendIndication': 'NO_CHANGE'}}}
+Step 204, Passed: AlarmIRPConstDefs::TrendIndication accuracy test Passed. The NBI value is NO_CHANGE, and the expected result is NO_CHANGE
+Info: check 'additionalText',the nbi data result is {'j': {'value': {u'CORBA::String': u'"Memory Usage Exception"'}}},and the expected result is {'j': {'value': {'CORBA::String': '"Memory Usage Exception"'}}}
+Step 205, Passed: CORBA::String accuracy test Passed. The NBI value is "Memory Usage Exception", and the expected result is "Memory Usage Exception"
+Step 206, Passed: the alarmId of 153 is unique in database
+Info: check 'AI_VS_ALARM_TYPE',the nbi data result is {'ai_at': {'value': {u'CORBA::String': u'"x5"'}}},and the expected result is {'ai_at': {'value': {'CORBA::String': '"x5"'}}}
+Step 207, Passed: CORBA::String accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Info: check 'AI_VS_PERCEIVED_SEVERITY',the nbi data result is {'ai_ps': {'value': {u'CORBA::String': u'"6"'}}},and the expected result is {'ai_ps': {'value': {'CORBA::String': '"6"'}}}
+Step 208, Passed: CORBA::String accuracy test Passed. The NBI value is "6", and the expected result is "6"
+Info: check 'alarm raised time',the nbi data result is {'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064926000000'}}}}},and the expected result is {'kk': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064926000000'}}}}}
+Step 209, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 210, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 211, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 212, Passed: time accuracy test Passed. The NBI value is 136907064926000000, and the expected result is 136907064926000000
+Info: check 'i',the nbi data result is {'i': {'value': {u'CORBA::String': u'"memoryUtilizationRatioExceedThresholdAlarm"'}}},and the expected result is {'i': {'value': {'CORBA::String': '"memoryUtilizationRatioExceedThresholdAlarm"'}}}
+Step 213, Passed: CORBA::String accuracy test Passed. The NBI value is "memoryUtilizationRatioExceedThresholdAlarm", and the expected result is "memoryUtilizationRatioExceedThresholdAlarm"
+Info: check 'n',the nbi data result is {'n': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'n': {'value': {'CORBA::Short': 2}}}
+Step 214, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: check 'clearTime',the nbi result is {'ll': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064926000000'}}}}},and the expected result is {'ll': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064926000000'}}}}}
+Step 215, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 216, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 217, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 218, Passed: time accuracy test Passed. The NBI value is 136907064926000000, and the expected result is 136907064926000000
+Info: check 'y',the nbi data result is {'y': {'value': {u'CORBA::String': u'"AUTO"'}}},and the expected result is {'y': {'value': {'CORBA::String': '"AUTO"'}}}
+Step 219, Passed: CORBA::String accuracy test Passed. The NBI value is "AUTO", and the expected result is "AUTO"
+Info: check 'z',the nbi data result is {'z': {'value': {u'CORBA::String': u'"GMLC-BD7480F17F66C326"'}}},and the expected result is {'z': {'value': {'CORBA::String': '"GMLC-BD7480F17F66C326"'}}}
+Step 220, Passed: CORBA::String accuracy test Passed. The NBI value is "GMLC-BD7480F17F66C326", and the expected result is "GMLC-BD7480F17F66C326"
+Info: send and get alarmlist result for GMLC:DiskUnilizationRatioExceedThresholdAlarm_CLEAR...
+Info: get TrapInfo is:{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.3', 'probableCause': 'Disk Utilization Ratio Exceed Threshold Alarm', 'seqNo': '20160817000000771', 'alarmDescription': 'Disk Usage Exception', 'timeStamp': '2016-08-17 14:01:37.600', 'alarmSource': 'licId', 'alarmLevel': '5', 'alarmCategory': '2'} and AlarmList is:{'event_type': {'none': {u'type_name': u'"x5"', u'domain_name': u'"Alarm IRP V3.0.0"'}}, 'ai_ps': {'value': {u'CORBA::String': u'"6"'}}, 'll': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064976000000'}}}}, 'event_name': u'"x5"', 'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064976000000'}}}}, 'jj': {'value': {u'CORBA::String': u'"13||diskUtilizationRatioExceedThresholdAlarm"'}}, 'ai_at': {'value': {u'CORBA::String': u'"x5"'}}, 'a': {'value': {u'CORBA::LongLong': u'1471413697914100000'}}, 'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}, 'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064976000000'}}}}, 'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}, 'd': {'value': {u'CORBA::String': u'"ManagedElement"'}}, 'g': {'value': {u'CORBA::Short': u'351'}}, 'f': {'value': {u'CORBA::String': u'"154"'}}, 'i': {'value': {u'CORBA::String': u'"diskUtilizationRatioExceedThresholdAlarm"'}}, 'h': {'value': {u'CORBA::Short': u'6'}}, 'j': {'value': {u'CORBA::String': u'"Disk Usage Exception"'}}, 'n': {'value': {u'CORBA::Short': u'2'}}, 'p': {'value': {u'CORBA::Boolean': u'false'}}, 's': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}, 'y': {'value': {u'CORBA::String': u'"AUTO"'}}, 'z': {'value': {u'CORBA::String': u'"GMLC-BD7480F17F66C326"'}}}
+Info: start to check DiskUnilizationRatioExceedThresholdAlarm_CLEAR
+Info: check 'event_type',the nbi data result is {'event_type': {'none': {u'type_name': u'"x5"', u'domain_name': u'"Alarm IRP V3.0.0"'}}},and the expected result is {'event_type': {'none': {'type_name': '"x5"', 'domain_name': '"Alarm IRP V3.0.0"'}}}
+Step 221, Passed: type_name accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Step 222, Passed: domain_name accuracy test Passed. The NBI value is "Alarm IRP V3.0.0", and the expected result is "Alarm IRP V3.0.0"
+Info: check 'event_name',the nbi data result is {'event_name': u'"x5"'},and the expected result is {'event_name': '"x5"'}
+Step 223, Passed: event_name accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Info: check 'objectClass',the nbi data result is {'d': {'value': {u'CORBA::String': u'"ManagedElement"'}}},and the expected result is {'d': {'value': {'CORBA::String': '"ManagedElement"'}}}
+Step 224, Passed: CORBA::String accuracy test Passed. The NBI value is "ManagedElement", and the expected result is "ManagedElement"
+Info: check 'objectInstance',the nbi result is {'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}},and the expected result is {'e': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}}
+Step 225, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326", and the expected result is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"
+Info: check 'c',the nbi data result is {'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}},and the expected result is {'c': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}}
+Step 226, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1", and the expected result is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"
+Info: check 'eventTime',the nbi result is {'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064976000000'}}}}},and the expected result is {'b': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064976000000'}}}}}
+Step 227, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 228, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 229, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 230, Passed: time accuracy test Passed. The NBI value is 136907064976000000, and the expected result is 136907064976000000
+Info: check 'vendorSpecificAlarmType',the nbi data result is {'jj': {'value': {u'CORBA::String': u'"13||diskUtilizationRatioExceedThresholdAlarm"'}}},and the expected result is {'jj': {'value': {'CORBA::String': '"13||diskUtilizationRatioExceedThresholdAlarm"'}}}
+Step 231, Passed: CORBA::String accuracy test Passed. The NBI value is "13||diskUtilizationRatioExceedThresholdAlarm", and the expected result is "13||diskUtilizationRatioExceedThresholdAlarm"
+Info: check 'probableCause',the nbi data result is {'g': {'value': {u'CORBA::Short': u'351'}}},and the expected result is {'g': {'value': {'CORBA::Short': '351'}}}
+Step 232, Passed: CORBA::Short accuracy test Passed. The NBI value is 351, and the expected result is 351
+Info: check 'perceivedSeverity',the nbi data result is {'h': {'value': {u'CORBA::Short': u'6'}}},and the expected result is {'h': {'value': {'CORBA::Short': '6'}}}
+Step 233, Passed: CORBA::Short accuracy test Passed. The NBI value is 6, and the expected result is 6
+Info: check 'notificationId',the nbi data result is {'a': {'value': {u'CORBA::LongLong': u'1471413697914100000'}}}
+Step 234, Passed: the notificationId of 1471413697914100000 is unique in database
+Info: check 'p',the nbi data result is {'p': {'value': {u'CORBA::Boolean': u'false'}}},and the expected result is {'p': {'value': {'CORBA::Boolean': 'FALSE'}}}
+Step 235, Failed: CORBA::Boolean accuracy test Failed. The NBI value is false, and the expected result is FALSE
+Info: check 's',the nbi data result is {'s': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}},and the expected result is {'s': {'value': {'AlarmIRPConstDefs::TrendIndication': 'NO_CHANGE'}}}
+Step 236, Passed: AlarmIRPConstDefs::TrendIndication accuracy test Passed. The NBI value is NO_CHANGE, and the expected result is NO_CHANGE
+Info: check 'additionalText',the nbi data result is {'j': {'value': {u'CORBA::String': u'"Disk Usage Exception"'}}},and the expected result is {'j': {'value': {'CORBA::String': '"Disk Usage Exception"'}}}
+Step 237, Passed: CORBA::String accuracy test Passed. The NBI value is "Disk Usage Exception", and the expected result is "Disk Usage Exception"
+Step 238, Passed: the alarmId of 154 is unique in database
+Info: check 'AI_VS_ALARM_TYPE',the nbi data result is {'ai_at': {'value': {u'CORBA::String': u'"x5"'}}},and the expected result is {'ai_at': {'value': {'CORBA::String': '"x5"'}}}
+Step 239, Passed: CORBA::String accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Info: check 'AI_VS_PERCEIVED_SEVERITY',the nbi data result is {'ai_ps': {'value': {u'CORBA::String': u'"6"'}}},and the expected result is {'ai_ps': {'value': {'CORBA::String': '"6"'}}}
+Step 240, Passed: CORBA::String accuracy test Passed. The NBI value is "6", and the expected result is "6"
+Info: check 'alarm raised time',the nbi data result is {'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064976000000'}}}}},and the expected result is {'kk': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064976000000'}}}}}
+Step 241, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 242, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 243, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 244, Passed: time accuracy test Passed. The NBI value is 136907064976000000, and the expected result is 136907064976000000
+Info: check 'i',the nbi data result is {'i': {'value': {u'CORBA::String': u'"diskUtilizationRatioExceedThresholdAlarm"'}}},and the expected result is {'i': {'value': {'CORBA::String': '"diskUtilizationRatioExceedThresholdAlarm"'}}}
+Step 245, Passed: CORBA::String accuracy test Passed. The NBI value is "diskUtilizationRatioExceedThresholdAlarm", and the expected result is "diskUtilizationRatioExceedThresholdAlarm"
+Info: check 'n',the nbi data result is {'n': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'n': {'value': {'CORBA::Short': 2}}}
+Step 246, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: check 'clearTime',the nbi result is {'ll': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907064976000000'}}}}},and the expected result is {'ll': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907064976000000'}}}}}
+Step 247, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 248, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 249, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 250, Passed: time accuracy test Passed. The NBI value is 136907064976000000, and the expected result is 136907064976000000
+Info: check 'y',the nbi data result is {'y': {'value': {u'CORBA::String': u'"AUTO"'}}},and the expected result is {'y': {'value': {'CORBA::String': '"AUTO"'}}}
+Step 251, Passed: CORBA::String accuracy test Passed. The NBI value is "AUTO", and the expected result is "AUTO"
+Info: check 'z',the nbi data result is {'z': {'value': {u'CORBA::String': u'"GMLC-BD7480F17F66C326"'}}},and the expected result is {'z': {'value': {'CORBA::String': '"GMLC-BD7480F17F66C326"'}}}
+Step 252, Passed: CORBA::String accuracy test Passed. The NBI value is "GMLC-BD7480F17F66C326", and the expected result is "GMLC-BD7480F17F66C326"
+Info: send and get alarmlist result for GMLC:TpsPeekExceedThresholdAlarm_CLEAR...
+Info: get TrapInfo is:{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.4', 'probableCause': 'Tps Peek Exceed Threshold Alarm', 'seqNo': '20160817000000772', 'alarmDescription': 'Tps Exception', 'timeStamp': '2016-08-17 14:01:42.500', 'alarmSource': 'licId', 'alarmLevel': '5', 'alarmCategory': '1'} and AlarmList is:{'event_type': {'none': {u'type_name': u'"x5"', u'domain_name': u'"Alarm IRP V3.0.0"'}}, 'ai_ps': {'value': {u'CORBA::String': u'"6"'}}, 'll': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065025000000'}}}}, 'event_name': u'"x1"', 'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065025000000'}}}}, 'jj': {'value': {u'CORBA::String': u'"1||TpsPeekExceedThresholdAlarm"'}}, 'ai_at': {'value': {u'CORBA::String': u'"x1"'}}, 'a': {'value': {u'CORBA::LongLong': u'1471413702810100000'}}, 'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}, 'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065025000000'}}}}, 'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}, 'd': {'value': {u'CORBA::String': u'"ManagedElement"'}}, 'g': {'value': {u'CORBA::Short': u'351'}}, 'f': {'value': {u'CORBA::String': u'"155"'}}, 'i': {'value': {u'CORBA::String': u'"TpsPeekExceedThresholdAlarm"'}}, 'h': {'value': {u'CORBA::Short': u'6'}}, 'j': {'value': {u'CORBA::String': u'"Tps Exception"'}}, 'n': {'value': {u'CORBA::Short': u'2'}}, 'p': {'value': {u'CORBA::Boolean': u'false'}}, 's': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}, 'y': {'value': {u'CORBA::String': u'"AUTO"'}}, 'z': {'value': {u'CORBA::String': u'"GMLC-BD7480F17F66C326"'}}}
+Info: start to check TpsPeekExceedThresholdAlarm_CLEAR
+Info: check 'event_type',the nbi data result is {'event_type': {'none': {u'type_name': u'"x5"', u'domain_name': u'"Alarm IRP V3.0.0"'}}},and the expected result is {'event_type': {'none': {'type_name': '"x5"', 'domain_name': '"Alarm IRP V3.0.0"'}}}
+Step 253, Passed: type_name accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Step 254, Passed: domain_name accuracy test Passed. The NBI value is "Alarm IRP V3.0.0", and the expected result is "Alarm IRP V3.0.0"
+Info: check 'event_name',the nbi data result is {'event_name': u'"x1"'},and the expected result is {'event_name': '"x1"'}
+Step 255, Passed: event_name accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Info: check 'objectClass',the nbi data result is {'d': {'value': {u'CORBA::String': u'"ManagedElement"'}}},and the expected result is {'d': {'value': {'CORBA::String': '"ManagedElement"'}}}
+Step 256, Passed: CORBA::String accuracy test Passed. The NBI value is "ManagedElement", and the expected result is "ManagedElement"
+Info: check 'objectInstance',the nbi result is {'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}},and the expected result is {'e': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}}
+Step 257, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326", and the expected result is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"
+Info: check 'c',the nbi data result is {'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}},and the expected result is {'c': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}}
+Step 258, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1", and the expected result is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"
+Info: check 'eventTime',the nbi result is {'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065025000000'}}}}},and the expected result is {'b': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907065025000000'}}}}}
+Step 259, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 260, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 261, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 262, Passed: time accuracy test Passed. The NBI value is 136907065025000000, and the expected result is 136907065025000000
+Info: check 'vendorSpecificAlarmType',the nbi data result is {'jj': {'value': {u'CORBA::String': u'"1||TpsPeekExceedThresholdAlarm"'}}},and the expected result is {'jj': {'value': {'CORBA::String': '"1||TpsPeekExceedThresholdAlarm"'}}}
+Step 263, Passed: CORBA::String accuracy test Passed. The NBI value is "1||TpsPeekExceedThresholdAlarm", and the expected result is "1||TpsPeekExceedThresholdAlarm"
+Info: check 'probableCause',the nbi data result is {'g': {'value': {u'CORBA::Short': u'351'}}},and the expected result is {'g': {'value': {'CORBA::Short': '351'}}}
+Step 264, Passed: CORBA::Short accuracy test Passed. The NBI value is 351, and the expected result is 351
+Info: check 'perceivedSeverity',the nbi data result is {'h': {'value': {u'CORBA::Short': u'6'}}},and the expected result is {'h': {'value': {'CORBA::Short': '6'}}}
+Step 265, Passed: CORBA::Short accuracy test Passed. The NBI value is 6, and the expected result is 6
+Info: check 'notificationId',the nbi data result is {'a': {'value': {u'CORBA::LongLong': u'1471413702810100000'}}}
+Step 266, Passed: the notificationId of 1471413702810100000 is unique in database
+Info: check 'p',the nbi data result is {'p': {'value': {u'CORBA::Boolean': u'false'}}},and the expected result is {'p': {'value': {'CORBA::Boolean': 'FALSE'}}}
+Step 267, Failed: CORBA::Boolean accuracy test Failed. The NBI value is false, and the expected result is FALSE
+Info: check 's',the nbi data result is {'s': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}},and the expected result is {'s': {'value': {'AlarmIRPConstDefs::TrendIndication': 'NO_CHANGE'}}}
+Step 268, Passed: AlarmIRPConstDefs::TrendIndication accuracy test Passed. The NBI value is NO_CHANGE, and the expected result is NO_CHANGE
+Info: check 'additionalText',the nbi data result is {'j': {'value': {u'CORBA::String': u'"Tps Exception"'}}},and the expected result is {'j': {'value': {'CORBA::String': '"Tps Exception"'}}}
+Step 269, Passed: CORBA::String accuracy test Passed. The NBI value is "Tps Exception", and the expected result is "Tps Exception"
+Step 270, Passed: the alarmId of 155 is unique in database
+Info: check 'AI_VS_ALARM_TYPE',the nbi data result is {'ai_at': {'value': {u'CORBA::String': u'"x1"'}}},and the expected result is {'ai_at': {'value': {'CORBA::String': '"x1"'}}}
+Step 271, Passed: CORBA::String accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Info: check 'AI_VS_PERCEIVED_SEVERITY',the nbi data result is {'ai_ps': {'value': {u'CORBA::String': u'"6"'}}},and the expected result is {'ai_ps': {'value': {'CORBA::String': '"6"'}}}
+Step 272, Passed: CORBA::String accuracy test Passed. The NBI value is "6", and the expected result is "6"
+Info: check 'alarm raised time',the nbi data result is {'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065025000000'}}}}},and the expected result is {'kk': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907065025000000'}}}}}
+Step 273, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 274, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 275, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 276, Passed: time accuracy test Passed. The NBI value is 136907065025000000, and the expected result is 136907065025000000
+Info: check 'i',the nbi data result is {'i': {'value': {u'CORBA::String': u'"TpsPeekExceedThresholdAlarm"'}}},and the expected result is {'i': {'value': {'CORBA::String': '"TpsPeekExceedThresholdAlarm"'}}}
+Step 277, Passed: CORBA::String accuracy test Passed. The NBI value is "TpsPeekExceedThresholdAlarm", and the expected result is "TpsPeekExceedThresholdAlarm"
+Info: check 'n',the nbi data result is {'n': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'n': {'value': {'CORBA::Short': 2}}}
+Step 278, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: check 'clearTime',the nbi result is {'ll': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065025000000'}}}}},and the expected result is {'ll': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907065025000000'}}}}}
+Step 279, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 280, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 281, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 282, Passed: time accuracy test Passed. The NBI value is 136907065025000000, and the expected result is 136907065025000000
+Info: check 'y',the nbi data result is {'y': {'value': {u'CORBA::String': u'"AUTO"'}}},and the expected result is {'y': {'value': {'CORBA::String': '"AUTO"'}}}
+Step 283, Passed: CORBA::String accuracy test Passed. The NBI value is "AUTO", and the expected result is "AUTO"
+Info: check 'z',the nbi data result is {'z': {'value': {u'CORBA::String': u'"GMLC-BD7480F17F66C326"'}}},and the expected result is {'z': {'value': {'CORBA::String': '"GMLC-BD7480F17F66C326"'}}}
+Step 284, Passed: CORBA::String accuracy test Passed. The NBI value is "GMLC-BD7480F17F66C326", and the expected result is "GMLC-BD7480F17F66C326"
+Info: send and get alarmlist result for GMLC:A21ExceedThresholdAlarm_CLEAR...
+Info: get TrapInfo is:{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.5', 'probableCause': 'X1 Exceed Threshold Alarm', 'seqNo': '20160817000000773', 'alarmDescription': 'Large amount X1 messages', 'timeStamp': '2016-08-17 14:01:47.600', 'alarmSource': 'licId', 'alarmLevel': '5', 'alarmCategory': '1'} and AlarmList is:{'event_type': {'none': {u'type_name': u'"x5"', u'domain_name': u'"Alarm IRP V3.0.0"'}}, 'ai_ps': {'value': {u'CORBA::String': u'"6"'}}, 'll': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065076000000'}}}}, 'event_name': u'"x1"', 'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065076000000'}}}}, 'jj': {'value': {u'CORBA::String': u'"1||A21ExceedThresholdAlarm"'}}, 'ai_at': {'value': {u'CORBA::String': u'"x1"'}}, 'a': {'value': {u'CORBA::LongLong': u'1471413707921100000'}}, 'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}, 'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065076000000'}}}}, 'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}, 'd': {'value': {u'CORBA::String': u'"ManagedElement"'}}, 'g': {'value': {u'CORBA::Short': u'351'}}, 'f': {'value': {u'CORBA::String': u'"156"'}}, 'i': {'value': {u'CORBA::String': u'"A21ExceedThresholdAlarm"'}}, 'h': {'value': {u'CORBA::Short': u'6'}}, 'j': {'value': {u'CORBA::String': u'"Large amount X1 messages"'}}, 'n': {'value': {u'CORBA::Short': u'2'}}, 'p': {'value': {u'CORBA::Boolean': u'false'}}, 's': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}, 'y': {'value': {u'CORBA::String': u'"AUTO"'}}, 'z': {'value': {u'CORBA::String': u'"GMLC-BD7480F17F66C326"'}}}
+Info: start to check A21ExceedThresholdAlarm_CLEAR
+Info: check 'event_type',the nbi data result is {'event_type': {'none': {u'type_name': u'"x5"', u'domain_name': u'"Alarm IRP V3.0.0"'}}},and the expected result is {'event_type': {'none': {'type_name': '"x5"', 'domain_name': '"Alarm IRP V3.0.0"'}}}
+Step 285, Passed: type_name accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Step 286, Passed: domain_name accuracy test Passed. The NBI value is "Alarm IRP V3.0.0", and the expected result is "Alarm IRP V3.0.0"
+Info: check 'event_name',the nbi data result is {'event_name': u'"x1"'},and the expected result is {'event_name': '"x1"'}
+Step 287, Passed: event_name accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Info: check 'objectClass',the nbi data result is {'d': {'value': {u'CORBA::String': u'"ManagedElement"'}}},and the expected result is {'d': {'value': {'CORBA::String': '"ManagedElement"'}}}
+Step 288, Passed: CORBA::String accuracy test Passed. The NBI value is "ManagedElement", and the expected result is "ManagedElement"
+Info: check 'objectInstance',the nbi result is {'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}},and the expected result is {'e': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}}
+Step 289, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326", and the expected result is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"
+Info: check 'c',the nbi data result is {'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}},and the expected result is {'c': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}}
+Step 290, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1", and the expected result is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"
+Info: check 'eventTime',the nbi result is {'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065076000000'}}}}},and the expected result is {'b': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907065076000000'}}}}}
+Step 291, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 292, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 293, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 294, Passed: time accuracy test Passed. The NBI value is 136907065076000000, and the expected result is 136907065076000000
+Info: check 'vendorSpecificAlarmType',the nbi data result is {'jj': {'value': {u'CORBA::String': u'"1||A21ExceedThresholdAlarm"'}}},and the expected result is {'jj': {'value': {'CORBA::String': '"1||A21ExceedThresholdAlarm"'}}}
+Step 295, Passed: CORBA::String accuracy test Passed. The NBI value is "1||A21ExceedThresholdAlarm", and the expected result is "1||A21ExceedThresholdAlarm"
+Info: check 'probableCause',the nbi data result is {'g': {'value': {u'CORBA::Short': u'351'}}},and the expected result is {'g': {'value': {'CORBA::Short': '351'}}}
+Step 296, Passed: CORBA::Short accuracy test Passed. The NBI value is 351, and the expected result is 351
+Info: check 'perceivedSeverity',the nbi data result is {'h': {'value': {u'CORBA::Short': u'6'}}},and the expected result is {'h': {'value': {'CORBA::Short': '6'}}}
+Step 297, Passed: CORBA::Short accuracy test Passed. The NBI value is 6, and the expected result is 6
+Info: check 'notificationId',the nbi data result is {'a': {'value': {u'CORBA::LongLong': u'1471413707921100000'}}}
+Step 298, Passed: the notificationId of 1471413707921100000 is unique in database
+Info: check 'p',the nbi data result is {'p': {'value': {u'CORBA::Boolean': u'false'}}},and the expected result is {'p': {'value': {'CORBA::Boolean': 'FALSE'}}}
+Step 299, Failed: CORBA::Boolean accuracy test Failed. The NBI value is false, and the expected result is FALSE
+Info: check 's',the nbi data result is {'s': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}},and the expected result is {'s': {'value': {'AlarmIRPConstDefs::TrendIndication': 'NO_CHANGE'}}}
+Step 300, Passed: AlarmIRPConstDefs::TrendIndication accuracy test Passed. The NBI value is NO_CHANGE, and the expected result is NO_CHANGE
+Info: check 'additionalText',the nbi data result is {'j': {'value': {u'CORBA::String': u'"Large amount X1 messages"'}}},and the expected result is {'j': {'value': {'CORBA::String': '"Large amount X1 messages"'}}}
+Step 301, Passed: CORBA::String accuracy test Passed. The NBI value is "Large amount X1 messages", and the expected result is "Large amount X1 messages"
+Step 302, Passed: the alarmId of 156 is unique in database
+Info: check 'AI_VS_ALARM_TYPE',the nbi data result is {'ai_at': {'value': {u'CORBA::String': u'"x1"'}}},and the expected result is {'ai_at': {'value': {'CORBA::String': '"x1"'}}}
+Step 303, Passed: CORBA::String accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Info: check 'AI_VS_PERCEIVED_SEVERITY',the nbi data result is {'ai_ps': {'value': {u'CORBA::String': u'"6"'}}},and the expected result is {'ai_ps': {'value': {'CORBA::String': '"6"'}}}
+Step 304, Passed: CORBA::String accuracy test Passed. The NBI value is "6", and the expected result is "6"
+Info: check 'alarm raised time',the nbi data result is {'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065076000000'}}}}},and the expected result is {'kk': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907065076000000'}}}}}
+Step 305, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 306, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 307, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 308, Passed: time accuracy test Passed. The NBI value is 136907065076000000, and the expected result is 136907065076000000
+Info: check 'i',the nbi data result is {'i': {'value': {u'CORBA::String': u'"A21ExceedThresholdAlarm"'}}},and the expected result is {'i': {'value': {'CORBA::String': '"A21ExceedThresholdAlarm"'}}}
+Step 309, Passed: CORBA::String accuracy test Passed. The NBI value is "A21ExceedThresholdAlarm", and the expected result is "A21ExceedThresholdAlarm"
+Info: check 'n',the nbi data result is {'n': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'n': {'value': {'CORBA::Short': 2}}}
+Step 310, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: check 'clearTime',the nbi result is {'ll': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065076000000'}}}}},and the expected result is {'ll': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907065076000000'}}}}}
+Step 311, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 312, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 313, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 314, Passed: time accuracy test Passed. The NBI value is 136907065076000000, and the expected result is 136907065076000000
+Info: check 'y',the nbi data result is {'y': {'value': {u'CORBA::String': u'"AUTO"'}}},and the expected result is {'y': {'value': {'CORBA::String': '"AUTO"'}}}
+Step 315, Passed: CORBA::String accuracy test Passed. The NBI value is "AUTO", and the expected result is "AUTO"
+Info: check 'z',the nbi data result is {'z': {'value': {u'CORBA::String': u'"GMLC-BD7480F17F66C326"'}}},and the expected result is {'z': {'value': {'CORBA::String': '"GMLC-BD7480F17F66C326"'}}}
+Step 316, Passed: CORBA::String accuracy test Passed. The NBI value is "GMLC-BD7480F17F66C326", and the expected result is "GMLC-BD7480F17F66C326"
+Info: send and get alarmlist result for GMLC:LIFeatureDisableNotification_CLEAR...
+Info: get TrapInfo is:{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.6', 'probableCause': 'LI Feature Turn off Alarm', 'seqNo': '20160817000000774', 'alarmDescription': 'LI Interface turn off', 'timeStamp': '2016-08-17 14:01:52.700', 'alarmSource': 'null', 'alarmLevel': '5', 'alarmCategory': '3'} and AlarmList is:{'event_type': {'none': {u'type_name': u'"x5"', u'domain_name': u'"Alarm IRP V3.0.0"'}}, 'ai_ps': {'value': {u'CORBA::String': u'"6"'}}, 'll': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065127000000'}}}}, 'event_name': u'"x2"', 'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065127000000'}}}}, 'jj': {'value': {u'CORBA::String': u'"12||LIFeatureDisableNotification"'}}, 'ai_at': {'value': {u'CORBA::String': u'"x2"'}}, 'a': {'value': {u'CORBA::LongLong': u'1471413713078100000'}}, 'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}, 'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065127000000'}}}}, 'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}, 'd': {'value': {u'CORBA::String': u'"ManagedElement"'}}, 'g': {'value': {u'CORBA::Short': u'14'}}, 'f': {'value': {u'CORBA::String': u'"157"'}}, 'i': {'value': {u'CORBA::String': u'"LIFeatureDisableNotification"'}}, 'h': {'value': {u'CORBA::Short': u'6'}}, 'j': {'value': {u'CORBA::String': u'"LI Interface turn off"'}}, 'n': {'value': {u'CORBA::Short': u'2'}}, 'p': {'value': {u'CORBA::Boolean': u'false'}}, 's': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}, 'y': {'value': {u'CORBA::String': u'"AUTO"'}}, 'z': {'value': {u'CORBA::String': u'"GMLC-BD7480F17F66C326"'}}}
+Info: start to check LIFeatureDisableNotification_CLEAR
+Info: check 'event_type',the nbi data result is {'event_type': {'none': {u'type_name': u'"x5"', u'domain_name': u'"Alarm IRP V3.0.0"'}}},and the expected result is {'event_type': {'none': {'type_name': '"x5"', 'domain_name': '"Alarm IRP V3.0.0"'}}}
+Step 317, Passed: type_name accuracy test Passed. The NBI value is "x5", and the expected result is "x5"
+Step 318, Passed: domain_name accuracy test Passed. The NBI value is "Alarm IRP V3.0.0", and the expected result is "Alarm IRP V3.0.0"
+Info: check 'event_name',the nbi data result is {'event_name': u'"x2"'},and the expected result is {'event_name': '"x2"'}
+Step 319, Passed: event_name accuracy test Passed. The NBI value is "x2", and the expected result is "x2"
+Info: check 'objectClass',the nbi data result is {'d': {'value': {u'CORBA::String': u'"ManagedElement"'}}},and the expected result is {'d': {'value': {'CORBA::String': '"ManagedElement"'}}}
+Step 320, Passed: CORBA::String accuracy test Passed. The NBI value is "ManagedElement", and the expected result is "ManagedElement"
+Info: check 'objectInstance',the nbi result is {'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}},and the expected result is {'e': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"'}}}
+Step 321, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326", and the expected result is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdGMLC-BD7480F17F66C326|GMLC-BD7480F17F66C326"
+Info: check 'c',the nbi data result is {'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}},and the expected result is {'c': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}}
+Step 322, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1", and the expected result is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"
+Info: check 'eventTime',the nbi result is {'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065127000000'}}}}},and the expected result is {'b': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907065127000000'}}}}}
+Step 323, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 324, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 325, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 326, Passed: time accuracy test Passed. The NBI value is 136907065127000000, and the expected result is 136907065127000000
+Info: check 'vendorSpecificAlarmType',the nbi data result is {'jj': {'value': {u'CORBA::String': u'"12||LIFeatureDisableNotification"'}}},and the expected result is {'jj': {'value': {'CORBA::String': '"12||LIFeatureDisableNotification"'}}}
+Step 327, Passed: CORBA::String accuracy test Passed. The NBI value is "12||LIFeatureDisableNotification", and the expected result is "12||LIFeatureDisableNotification"
+Info: check 'probableCause',the nbi data result is {'g': {'value': {u'CORBA::Short': u'14'}}},and the expected result is {'g': {'value': {'CORBA::Short': '14'}}}
+Step 328, Passed: CORBA::Short accuracy test Passed. The NBI value is 14, and the expected result is 14
+Info: check 'perceivedSeverity',the nbi data result is {'h': {'value': {u'CORBA::Short': u'6'}}},and the expected result is {'h': {'value': {'CORBA::Short': '6'}}}
+Step 329, Passed: CORBA::Short accuracy test Passed. The NBI value is 6, and the expected result is 6
+Info: check 'notificationId',the nbi data result is {'a': {'value': {u'CORBA::LongLong': u'1471413713078100000'}}}
+Step 330, Passed: the notificationId of 1471413713078100000 is unique in database
+Info: check 'p',the nbi data result is {'p': {'value': {u'CORBA::Boolean': u'false'}}},and the expected result is {'p': {'value': {'CORBA::Boolean': 'FALSE'}}}
+Step 331, Failed: CORBA::Boolean accuracy test Failed. The NBI value is false, and the expected result is FALSE
+Info: check 's',the nbi data result is {'s': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}},and the expected result is {'s': {'value': {'AlarmIRPConstDefs::TrendIndication': 'NO_CHANGE'}}}
+Step 332, Passed: AlarmIRPConstDefs::TrendIndication accuracy test Passed. The NBI value is NO_CHANGE, and the expected result is NO_CHANGE
+Info: check 'additionalText',the nbi data result is {'j': {'value': {u'CORBA::String': u'"LI Interface turn off"'}}},and the expected result is {'j': {'value': {'CORBA::String': '"LI Interface turn off"'}}}
+Step 333, Passed: CORBA::String accuracy test Passed. The NBI value is "LI Interface turn off", and the expected result is "LI Interface turn off"
+Step 334, Passed: the alarmId of 157 is unique in database
+Info: check 'AI_VS_ALARM_TYPE',the nbi data result is {'ai_at': {'value': {u'CORBA::String': u'"x2"'}}},and the expected result is {'ai_at': {'value': {'CORBA::String': '"x2"'}}}
+Step 335, Passed: CORBA::String accuracy test Passed. The NBI value is "x2", and the expected result is "x2"
+Info: check 'AI_VS_PERCEIVED_SEVERITY',the nbi data result is {'ai_ps': {'value': {u'CORBA::String': u'"6"'}}},and the expected result is {'ai_ps': {'value': {'CORBA::String': '"6"'}}}
+Step 336, Passed: CORBA::String accuracy test Passed. The NBI value is "6", and the expected result is "6"
+Info: check 'alarm raised time',the nbi data result is {'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065127000000'}}}}},and the expected result is {'kk': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907065127000000'}}}}}
+Step 337, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 338, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 339, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 340, Passed: time accuracy test Passed. The NBI value is 136907065127000000, and the expected result is 136907065127000000
+Info: check 'i',the nbi data result is {'i': {'value': {u'CORBA::String': u'"LIFeatureDisableNotification"'}}},and the expected result is {'i': {'value': {'CORBA::String': '"LIFeatureDisableNotification"'}}}
+Step 341, Passed: CORBA::String accuracy test Passed. The NBI value is "LIFeatureDisableNotification", and the expected result is "LIFeatureDisableNotification"
+Info: check 'n',the nbi data result is {'n': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'n': {'value': {'CORBA::Short': 2}}}
+Step 342, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: check 'clearTime',the nbi result is {'ll': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'136907065127000000'}}}}},and the expected result is {'ll': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '136907065127000000'}}}}}
+Step 343, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 344, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 345, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 346, Passed: time accuracy test Passed. The NBI value is 136907065127000000, and the expected result is 136907065127000000
+Info: check 'y',the nbi data result is {'y': {'value': {u'CORBA::String': u'"AUTO"'}}},and the expected result is {'y': {'value': {'CORBA::String': '"AUTO"'}}}
+Step 347, Passed: CORBA::String accuracy test Passed. The NBI value is "AUTO", and the expected result is "AUTO"
+Info: check 'z',the nbi data result is {'z': {'value': {u'CORBA::String': u'"GMLC-BD7480F17F66C326"'}}},and the expected result is {'z': {'value': {'CORBA::String': '"GMLC-BD7480F17F66C326"'}}}
+Step 348, Passed: CORBA::String accuracy test Passed. The NBI value is "GMLC-BD7480F17F66C326", and the expected result is "GMLC-BD7480F17F66C326"
+Test case: check_gmlc_get_alarmlist_case Failed. Total steps: 348, Passed steps: 336, Error steps: 0, Failed steps: 12, Warning steps: 0

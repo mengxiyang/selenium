@@ -94,6 +94,6 @@ print datetime.now().strftime('%H:%M:%S:%f')
 print send_trap_nbi('10.184.74.68', 7070, 'xoambaseserver', 'LTEHSS', 'COMMUNICATIONFAULT_NEW', '10.184.74.68', ['privUser1', 'authUser1', 'privUser1'], LTEHSS)
 print datetime.now().strftime('%H:%M:%S:%f')
 '''
-#print get_nodeid_by_nename('10.184.73.76', 7070, 'xoambaseserver','OCGAS-6E8DD56B5C655707')
+#print get_nodeid_by_nename('10.184.73.77', 7070, 'xoambaseserver','MSC-1238BE4F3473717C')
 #print get_alarm_list_trap('10.184.73.76', 7070, 'xoambaseserver', 'GMLC', 'A21ExceedThresholdAlarm_NEW', '10.184.73.76', None, "GMLC-13EFDD7B6A24DB45")
-#print get_notification_trap('10.184.73.77', 7070, 'xoambaseserver', 'IMSHSS', 'COMMUNICATIONFAULT_NEW', '10.184.73.77', ['privUser1', 'authUser1', 'privUser1'], "IMSHSS-7848F49C4C0BE7ED","NodeIdIMSHSS-7848F49C4C0BE7ED","8000000001020301")
+#print get_notification_trap('10.184.73.77', 7070, 'xoambaseserver', 'MSC', 'COMMUNICATIONFAULT_NEW', '10.184.73.77', ['privUser1', 'authUser1', 'privUser1'], "MSC-1238BE4F3473717C","NodeIdIMSHSS-7848F49C4C0BE7ED","8000000001020302")
