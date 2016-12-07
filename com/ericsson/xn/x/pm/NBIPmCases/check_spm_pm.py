@@ -15,8 +15,8 @@ def check_options():
     parser.add_option("--nodeid",action="store",type="string",dest="nodeid",help="Specify the nodeid")
     parser.add_option("--licid",action="store",type="string",dest="licid",help="Specify the licid")
     parser.add_option("--interval",action="store",type="int",dest="interval",default=5,help="Specify the pm interval")
-    parser.add_option("--starttime",action="store",type="string",dest="starttime",help="Specify the starttime of checking pm files.The format must be like 201612010000")
-    parser.add_option("--endtime",action="store",type="string",dest="endtime",help="Specify the endtime of checking pm files. The format must be like 201612012359")
+    parser.add_option("--starttime",action="store",type="string",dest="starttime",help="Specify the time start to check.The time format must be like 201612010000")
+    parser.add_option("--endtime",action="store",type="string",dest="endtime",help="Specify the time end to check. The time format must be like 201612012359")
     parser.add_option("--path",action="store",type="string",dest="path",help="Specify the pm files storage path")
     
     (options,args) = parser.parse_args()
