@@ -1,0 +1,15 @@
+Test case: check_ocgas_gui_accuracy_case started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+Info: Web page: https://10.184.74.200:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: https://10.184.74.200:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: NE already exist, reuse the old NE named: OCGAS-6ED1757250F2A553
+Info: NE:OCGAS-6ED1757250F2A553 added successfully
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.74.200:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: OCGAS-6ED1757250F2A553...

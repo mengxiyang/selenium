@@ -13,14 +13,14 @@ def check_options():
     parser.add_option("--type",action="store",type="string",dest="netype",help="Specify the netype")
     parser.add_option("--name",action="store",type="string",dest="nename",help="Specify the nename")
     parser.add_option("--nodeid",action="store",type="string",dest="nodeid",help="Specify the nodeid")
-    parser.add_option("--licid",action="store",type="string",dest="licid",help="Specify the licid")
+    parser.add_option("--licid",action="store",type="string",dest="licid",default="",help="Specify the licid")
     parser.add_option("--interval",action="store",type="int",dest="interval",default=5,help="Specify the pm interval")
     parser.add_option("--starttime",action="store",type="string",dest="starttime",help="Specify the time start to check.The time format must be like 201612010000")
     parser.add_option("--endtime",action="store",type="string",dest="endtime",help="Specify the time end to check. The time format must be like 201612012359")
     parser.add_option("--path",action="store",type="string",dest="path",help="Specify the pm files storage path")
     
     (options,args) = parser.parse_args()
-    if options.netype == None or options.nename == None or options.nodeid == None or options.licid == None or \
+    if options.netype == None or options.nename == None or options.nodeid == None or options.licid == "" or \
         options.starttime == None or options.endtime == None or options.path == None:
         parser.print_help()
         print options,-1
@@ -38,7 +38,7 @@ if __name__ == '__main__':
         totalseconds=(endtime_utc-datetime(1970,1,1)).total_seconds() - (starttime_utc-datetime(1970,1,1)).total_seconds()
         hours_to_check=int(totalseconds/3600)
         starttime = endtime + timedelta(hours=-hours_to_check) + timedelta(minutes=options.interval)
-        print "start to check pm files for " + starttime.strftime("%Y%m%d%H%M") + " to " + endtime.strftime("%Y%m%d%H%M")
+        print "start to check pm files from " + starttime.strftime("%Y%m%d%H%M") + " to " + endtime.strftime("%Y%m%d%H%M")
         caseutils.pre_test_case("check_spm_"+options.netype+"_cases", "nbi_spm_pm_check")
         circletime=endtime
         while circletime > starttime:    

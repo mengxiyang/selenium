@@ -3,6 +3,7 @@
 import os
 from datetime import datetime, timedelta
 from com.ericsson.xn.x.pm.PmCommons import PmCaseBase
+from com.ericsson.xn.commons import caseutils
 
 
 def pm_ocgas_func():
@@ -15,4 +16,8 @@ def pm_ocgas_func():
     t_now = datetime.now()
     end_time = t_now + timedelta(minutes=-(t_now.minute % 5 + 14))
     str_end_time = end_time.strftime('%Y-%m-%d %H:%M') + ":00"
+    caseutils.pre_test_case("pm_ocgas_case", "pm_accuarcy_check")
     PmCaseBase.check_pm_accurate_lic(ne_info_cfg, counter_info_cfg, server_info_path, str_end_time)
+    caseutils.post_test_case()
+
+pm_ocgas_func()

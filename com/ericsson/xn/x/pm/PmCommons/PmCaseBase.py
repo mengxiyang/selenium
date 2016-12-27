@@ -36,7 +36,6 @@ if 'YES' == log_cfg.getProperty('log_console').strip().upper():
     console_log.setFormatter(log_formatter)
     logger_pm.addHandler(console_log)
 
-logger_pm.info('Logger of PM part init successfully.')
 
 
 def check_pm_accurate_lic(ne_info_cfg, counter_info_cfg, server_info_path, str_end_time):
@@ -56,18 +55,19 @@ def check_pm_accurate_lic(ne_info_cfg, counter_info_cfg, server_info_path, str_e
         "driver_path": ''
     }
 
-    driver = CommonStatic.login_rsnms(dict_browser_chrome, server_info.getProperty('host'), logger_pm,
+    driver = CommonStatic.login_rsnms(dict_browser_chrome, server_info.getProperty('host'),
                                       server_info.getProperty('username'), server_info.getProperty('password'),
                                       server_info.getProperty('port'), server_info.getProperty('url'))
     if driver:
         try:
-            NeCommon.to_ne_management_page_by_url(driver, logger_pm, server_info)
-            dict_ne_info = NeCommon.check_and_add_ne(driver, logger_pm, ne_info)
+            NeCommon.to_ne_management_page_by_url(driver,server_info)
+            dict_ne_info = NeCommon.check_and_add_ne(driver, ne_info)
 
-            PmCommon.to_pm_management_page_by_url(driver, logger_pm, ne_info['ne_type'], server_info)
-            PmCommon.make_in_correct_tab(driver, logger_pm, ne_info['tab_pre'], '')
 
-            if PmCommon.wait_until_pm_date_show_up(driver, logger_pm, 600, dict_ne_info['ne_name']):
+            PmCommon.to_pm_management_page_by_url(driver,ne_info['ne_type'], server_info)
+            PmCommon.make_in_correct_tab(driver,ne_info['tab_pre'], '')
+
+            if PmCommon.wait_until_pm_date_show_up(driver,dict_ne_info['ne_name'],600):
                 t_now = datetime.now()
                 # minute_delta = t_now.minute % 5
                 # end_time = t_now + timedelta(minutes=-(delay_time + minute_delta))
@@ -78,10 +78,10 @@ def check_pm_accurate_lic(ne_info_cfg, counter_info_cfg, server_info_path, str_e
                 elif 'IMSHSS' == ne_info['ne_type']:
                     pm_rounds = len(counters_pm) / 4
                 start_time = end_time + timedelta(minutes=-5 * pm_rounds)
-                PmCommon.init_and_search(driver, logger_pm, dict_ne_info['ne_name'], end_time, start_time)
-                ok = PmCommon.wait_until_rounds_ok(driver, logger_pm, pm_rounds, 10, 5)
+                PmCommon.init_and_search(driver, dict_ne_info['ne_name'], end_time, start_time)
+                ok = PmCommon.wait_until_rounds_ok(driver, pm_rounds, 10, 5)
                 if ok:
-                    PmCommon.check_pm_rows(driver, logger_pm, dict_ne_info['ne_type'], counters_pm, 10, None)
+                    PmCommon.check_pm_rows(driver, dict_ne_info['ne_type'], counters_pm, 10, None)
                 else:
                     logger_pm.error('Timeout ERROR.')
             CommonStatic.logout_rsnms(driver)
@@ -107,24 +107,24 @@ def check_pm_accurate_sbc(ne_info_cfg, counter_info_cfg, server_info_path, round
         "driver_path": ''
     }
 
-    driver = CommonStatic.login_rsnms(dict_browser_chrome, server_info.getProperty('host'), logger_pm,
+    driver = CommonStatic.login_rsnms(dict_browser_chrome, server_info.getProperty('host'),
                                       server_info.getProperty('username'), server_info.getProperty('password'),
                                       server_info.getProperty('port'), server_info.getProperty('url'))
     if driver:
         try:
-            NeCommon.to_ne_management_page_by_url(driver, logger_pm, server_info)
-            dict_ne_info = NeCommon.check_and_add_ne(driver, logger_pm, ne_info)
+            NeCommon.to_ne_management_page_by_url(driver, server_info)
+            dict_ne_info = NeCommon.check_and_add_ne(driver, ne_info)
 
-            PmCommon.to_pm_management_page_by_url(driver, logger_pm, ne_info['ne_type'], server_info)
-            PmCommon.make_in_correct_tab(driver, logger_pm, ne_info['tab_pre'], '')
-            if PmCommon.wait_until_pm_date_show_up(driver, logger_pm, 600, dict_ne_info['ne_name']):
-                PmCommon.init_and_search(driver, logger_pm, dict_ne_info['ne_name'])
+            PmCommon.to_pm_management_page_by_url(driver, ne_info['ne_type'], server_info)
+            PmCommon.make_in_correct_tab(driver, ne_info['tab_pre'], '')
+            if PmCommon.wait_until_pm_date_show_up(driver, 600, dict_ne_info['ne_name']):
+                PmCommon.init_and_search(driver, dict_ne_info['ne_name'])
 
                 dict_additional = {"rounds": rounds}
 
-                ok = PmCommon.wait_until_rounds_ok(driver, logger_pm, dict_additional['rounds'], 10, None)
+                ok = PmCommon.wait_until_rounds_ok(driver, dict_additional['rounds'], 10, None)
                 if ok:
-                    PmCommon.check_pm_rows(driver, logger_pm, dict_ne_info['ne_type'], counters_pm, 10, dict_additional)
+                    PmCommon.check_pm_rows(driver, dict_ne_info['ne_type'], counters_pm, 10, dict_additional)
                 else:
                     logger_pm.error('FAILED: Wait for SBC PM timeout.')
             else:
@@ -150,7 +150,7 @@ def check_pm_accurate_all_ne(dict_all_nes, server_info_path):
         "driver_path": ''
     }
 
-    driver = CommonStatic.login_rsnms(dict_browser_chrome, server_info.getProperty('host'), logger_pm,
+    driver = CommonStatic.login_rsnms(dict_browser_chrome, server_info.getProperty('host'),
                                       server_info.getProperty('username'), server_info.getProperty('password'),
                                       server_info.getProperty('port'), server_info.getProperty('url'))
     if driver:
@@ -161,20 +161,20 @@ def check_pm_accurate_all_ne(dict_all_nes, server_info_path):
             ne_info = get_ne_info_from_cfg(sbc_ne_dict['ne_cfg'])
             counters_pm = get_pm_counters_map(sbc_ne_dict['ct_cfg'])
 
-            NeCommon.to_ne_management_page(driver, logger_pm)
-            dict_ne_info = NeCommon.check_and_add_ne(driver, logger_pm, ne_info)
+            NeCommon.to_ne_management_page(driver)
+            dict_ne_info = NeCommon.check_and_add_ne(driver, ne_info)
 
-            PmCommon.to_pm_management_page(driver, logger_pm)
+            PmCommon.to_pm_management_page(driver)
             # PmCommon.to_second_page(driver, logger_pm)
-            PmCommon.to_tab_by_ne_type(driver, dict_ne_info['ne_type'], logger_pm)
+            PmCommon.to_tab_by_ne_type(driver, dict_ne_info['ne_type'])
             if PmCommon.wait_until_pm_date_show_up(driver, logger_pm, 600, dict_ne_info['ne_name']):
-                PmCommon.init_and_search(driver, logger_pm, dict_ne_info['ne_name'])
+                PmCommon.init_and_search(driver, dict_ne_info['ne_name'])
 
                 dict_additional = {"rounds": sbc_ne_dict['rounds']}
 
-                ok = PmCommon.wait_until_rounds_ok(driver, logger_pm, dict_additional['rounds'], 10, None)
+                ok = PmCommon.wait_until_rounds_ok(driver, dict_additional['rounds'], 10, None)
                 if ok:
-                    PmCommon.check_pm_rows(driver, logger_pm, dict_ne_info['ne_type'], counters_pm, 10, dict_additional)
+                    PmCommon.check_pm_rows(driver, dict_ne_info['ne_type'], counters_pm, 10, dict_additional)
                 else:
                     logger_pm.error('FAILED: Wait for SBC PM timeout.')
 
@@ -185,12 +185,12 @@ def check_pm_accurate_all_ne(dict_all_nes, server_info_path):
                     ne_info = get_ne_info_from_cfg(v['ne_cfg'])
                     counters_pm = get_pm_counters_map(v['ct_cfg'])
 
-                    NeCommon.to_ne_management_page(driver, logger_pm)
-                    dict_ne_info = NeCommon.check_and_add_ne(driver, logger_pm, ne_info)
-                    PmCommon.to_pm_management_page(driver, logger_pm)
+                    NeCommon.to_ne_management_page(driver)
+                    dict_ne_info = NeCommon.check_and_add_ne(driver, ne_info)
+                    PmCommon.to_pm_management_page(driver)
                     # PmCommon.to_second_page(driver, logger_pm)
-                    PmCommon.to_tab_by_ne_type(driver, dict_ne_info['ne_type'], logger_pm)
-                    if PmCommon.wait_until_pm_date_show_up(driver, logger_pm, 600, dict_ne_info['ne_name']):
+                    PmCommon.to_tab_by_ne_type(driver, dict_ne_info['ne_type'])
+                    if PmCommon.wait_until_pm_date_show_up(driver, 600, dict_ne_info['ne_name']):
                         # t_now = datetime.now()
                         # minute_delta = t_now.minute % 5
                         # end_time = t_now + timedelta(minutes=-(delay_time + minute_delta))
@@ -204,10 +204,10 @@ def check_pm_accurate_all_ne(dict_all_nes, server_info_path):
                             check_rounds
 
                         start_time = end_time + timedelta(minutes=-5 * pm_rounds)
-                        PmCommon.init_and_search(driver, logger_pm, dict_ne_info['ne_name'], end_time, start_time)
-                        ok = PmCommon.wait_until_rounds_ok(driver, logger_pm, check_rounds, 10, 5)
+                        PmCommon.init_and_search(driver, dict_ne_info['ne_name'], end_time, start_time)
+                        ok = PmCommon.wait_until_rounds_ok(driver, check_rounds, 10, 5)
                         if ok:
-                            PmCommon.check_pm_rows(driver, logger_pm, dict_ne_info['ne_type'], counters_pm, 10, None)
+                            PmCommon.check_pm_rows(driver, dict_ne_info['ne_type'], counters_pm, 10, None)
                         else:
                             logger_pm.error('Timeout ERROR.')
 

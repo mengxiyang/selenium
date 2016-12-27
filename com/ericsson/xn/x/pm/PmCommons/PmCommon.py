@@ -11,6 +11,8 @@ from com.ericsson.xn.commons.funcutils import find_single_widget, find_all_widge
     ne_category_by_ne_type, get_widget_ignore_refrence_error
 from com.ericsson.xn.commons import test_logger as test
 from com.ericsson.xn.commons.selfutils import compare_lists
+from com.ericsson.xn.commons import PyProperties
+import os
 
 
 def to_pm_management_page(driver):
@@ -50,7 +52,7 @@ def check_in_correct_pm_page(driver):
         children_divs = find_all_widgets(driver, 20, id_divs)
         str_last_navi = find_single_widget(children_divs[-1], 10, (By.XPATH, ".//a")).get_attribute('innerHTML').\
             encode('utf-8').strip()
-        # logger.info(children_divs[-2].get_attribute('innerHTML').encode('utf-8'))
+        # test.info(children_divs[-2].get_attribute('innerHTML').encode('utf-8'))
         lis = find_all_widgets(children_divs[-2], 10, (By.XPATH, ".//div/ul/li"))
         for li in lis:
             str_a_li = find_single_widget(li, 10, (By.XPATH, ".//a")).get_attribute('innerHTML').encode('utf-8').strip()
@@ -161,7 +163,7 @@ def init_and_search(driver, ne_name, end_time=None, start_time=None):
 
 
 def wait_until_pm_date_show_up(driver, ne_name, wait_time=720):
-    select_given_ne_name(driver, ne_name)
+    #select_given_ne_name(driver, ne_name)
     end_time = datetime.now() + timedelta(seconds=wait_time)
     while datetime.now() < end_time:
         id_query_btn = (By.ID, "idBtn-search")
@@ -170,7 +172,7 @@ def wait_until_pm_date_show_up(driver, ne_name, wait_time=720):
         try:
             find_single_widget(driver, 10, id_body_date)
             test.passed('Successfully found the counters data.')
-            return
+            return 1
         except TimeoutException:
             pass
     test.error('Wait for ' + str(wait_time) + ' seconds but cannot find any PM datas.')
@@ -246,7 +248,7 @@ def wait_until_rounds_ok(driver, rows, rows_of_page, rows_each_period):
                 trs = find_all_widgets(driver, 20, id_tbdoy_trs)
                 if rows % rows_of_page <= len(trs):
                     test.passed('All the data that we need are ready now.')
-                    return
+                    return 1
         except TimeoutException:
             pass
         time.sleep(.5)
@@ -372,7 +374,7 @@ def check_me_counters(driver, ne_type, counters_expected, rows_of_page, dict_me_
                     test.failed('Report delta time is not 5 minutes.')
 
 
-def check_pm_rows(driver, logger, ne_type, dict_counters, rows_of_page, dict_additional):
+def check_pm_rows(driver, ne_type, dict_counters, rows_of_page, dict_additional):
     bool_overall = True
     list_time = []
     id_table = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table")
@@ -389,73 +391,76 @@ def check_pm_rows(driver, logger, ne_type, dict_counters, rows_of_page, dict_add
         if dict_additional.has_key('rounds'):
             rounds = dict_additional['rounds']
 
+    root_dir = os.path.normpath(os.path.dirname(os.path.abspath(__file__))).split('com'+os.sep+'ericsson'+os.sep+'xn'+os.sep+'x'+os.sep+'pm'+os.sep+'PmCommons')[0]
+    counter_types_conf = root_dir + os.sep + 'x' + os.sep + 'pm' + os.sep + 'counter_types' + os.sep + 'ocgas.cfg'
+    counter_types_info = PyProperties.Properties(counter_types_conf).dict_info()
     for i in range(1, rounds + 1):
-        bool_row, gui_time = check_pm_by_row(driver, id_table, logger, i, ne_type, dict_counters, rows_of_page, list_headers)
+        bool_row, gui_time = check_pm_by_row(driver, id_table, i, ne_type, dict_counters, rows_of_page, list_headers,1,counter_types_info)
         list_time.append(gui_time)
         if not bool_row:
             bool_overall = False
-            logger.error('Row ' + str(i) + " check FAILED. Check the log for detailed information.")
+            test.error('Row ' + str(i) + " check FAILED. Check the log for detailed information.")
         else:
-            logger.info('Row ' + str(i) + " check PASSED.")
+            test.info('Row ' + str(i) + " check PASSED.")
 
     if bool_overall:
         if len(list_time) < 1:
             bool_overall = False
-            logger.error('Failed: 0 rounds of PM checked, this does not make any sense.')
+            test.error('Failed: 0 rounds of PM checked, this does not make any sense.')
         elif len(list_time) < 2:
             if 'OCGAS' == ne_type:
                 bool_overall = False
-                logger.error('Failed: Node OCGAS is supposed to have two LICs, there is only one record of PM Data.')
+                test.error('Failed: Node OCGAS is supposed to have two LICs, there is only one record of PM Data.')
             elif list_time[0] is None:
                 bool_overall = False
-                logger.error('Failed: Fail to get the PM data time.')
+                test.error('Failed: Fail to get the PM data time.')
             else:
                 if 0 != list_time[0].minute % 5:
                     bool_overall = False
-                    logger.error('Failed: PM Data time is not multiples of 5.')
+                    test.error('Failed: PM Data time is not multiples of 5.')
         else:
             if ne_type in ['SGW', 'PGW', 'SGSN', 'MME', 'SBC']:
                 for i in range(0, len(list_time) - 1):
                     if list_time[i] is None or list_time[i + 1] is None:
                         bool_overall = False
-                        logger.error('Failed: Fail to get the PM data time.')
+                        test.error('Failed: Fail to get the PM data time.')
                         break
                     else:
                         if 0 != list_time[i].minute % 5 or 0 != list_time[i + 1].minute % 5:
                             bool_overall = False
-                            logger.error('Failed: PM Data time is not multiples of 5.')
+                            test.error('Failed: PM Data time is not multiples of 5.')
                             break
                         if 300 != abs((list_time[i] - list_time[i + 1]).seconds):
                             bool_overall = False
-                            logger.error('Failed: PM period is not 5 minutes.')
+                            test.error('Failed: PM period is not 5 minutes.')
                             break
             elif 'OCGAS' == ne_type:
                 for i in range(0, len(list_time), 2):
                     if i != len(list_time) - 2:
                         if list_time[i] is None or list_time[i + 1] is None or list_time[i + 2] is None:
                             bool_overall = False
-                            logger.error('Failed: Fail to get the PM data time.')
+                            test.error('Failed: Fail to get the PM data time.')
                             break
                         else:
                             if list_time[i] != list_time[i + 1]:
-                                bool_overall = False
-                                logger.error('Failed: Two LICs of Node OCGAS should be the same.')
-                                break
+                                '''bool_overall = False
+                                test.error('Failed: Two LICs of Node OCGAS should be the same.')
+                                break'''
                             else:
                                 if 0 != list_time[i].minute % 5 or 0 != list_time[i + 2].minute % 5:
                                     bool_overall = False
-                                    logger.error('Failed: PM Data time is not multiples of 5.')
+                                    test.error('Failed: PM Data time is not multiples of 5.')
                                     break
                                 elif 300 != abs((list_time[i] - list_time[i + 2]).seconds):
                                     bool_overall = False
-                                    logger.error('Failed: PM period is not 5 minutes. ' + str(list_time[i]) + ' '
+                                    test.error('Failed: PM period is not 5 minutes. ' + str(list_time[i]) + ' '
                                                  + str(list_time[i + 2]))
                                     break
-    logger.info('GUI times: ' + ', '.join([str(t) for t in list_time]))
+    test.info('GUI times: ' + ', '.join([str(t) for t in list_time]))
     if bool_overall:
-        logger.info("Overall PASSED.")
+        test.info("Overall PASSED.")
     else:
-        logger.error("Overall FAILED.")
+        test.error("Overall FAILED.")
 
 
 def check_pm_by_row(driver, id_table, index_row, ne_type, dict_counters, rows_of_page, list_headers, is_m_lics,

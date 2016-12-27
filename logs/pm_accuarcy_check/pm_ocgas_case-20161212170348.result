@@ -1,0 +1,18 @@
+Test case: pm_ocgas_case started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+Info: Web page: https://10.184.74.86:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: https://10.184.74.86:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: NE not exist, add a new one
+Info: Successfully added an NE: OCGAS-21CC15BE5020FB7C
+Info: NE:OCGAS-21CC15BE5020FB7C added successfully
+Info: Will Navigate to the PMManagement page...
+Info: Base URL is: https://10.184.74.86:8686/XOAM/src/index.html
+Info: To URL: https://10.184.74.86:8686/XOAM/src/index.html#network-overview/pm-management/pm-ims/pm-ocgas
+Step 1, Failed: Page redirect to the interface management page, critical error!
+Error occurred, test case will exit soon.
+Test case: pm_ocgas_case Failed. Total steps: 1, Passed steps: 0, Error steps: 1, Failed steps: 0, Warning steps: 0
