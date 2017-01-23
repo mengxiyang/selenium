@@ -79,10 +79,11 @@ def login_first_page(driver, host, username, password, port, url):
     index = 'https://' + str(host) + ':' + str(port) + url
     test.info('Web page: ' + str(index))
     driver.get(index)
-    driver.find_element_by_id('loginUsername').clear()
-    driver.find_element_by_id('loginUsername').send_keys(username)
-    driver.find_element_by_id('loginPassword').clear()
-    driver.find_element_by_id('loginPassword').send_keys(password)
+    driver.find_element_by_id('uname').clear()
+    driver.find_element_by_id('uname').send_keys(username)
+    driver.find_element_by_id('upassword').click()
+    driver.find_element_by_id('upassword').clear()
+    driver.find_element_by_id('upassword').send_keys(password)
     driver.find_element_by_id('submit').click()
     try:
         WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.ID, "ebBtnSearch")))

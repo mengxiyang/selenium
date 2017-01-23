@@ -54,7 +54,7 @@ def check_alarm_list_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
             for alarm_type in alarm_type_list:
                 test.info("send and get alarmlist result for " + dict_ne_info["ne_type"] + ":" + alarm_type + "...")
                 #alarm_raw = NotifFunc.getNBINotification(dict_ne_info["ne_ip"], 7070, 'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],snmp_auth_info)
-                alarm_raw = base_clint_for_selenium.get_alarm_list_trap(dict_ne_info["ne_ip"],7070,'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],snmp_auth_info,ne_name)
+                alarm_raw = base_clint_for_selenium.get_alarm_list_trap(dict_ne_info["ne_ip"],7070,'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],auth_info=snmp_auth_info,ne_name=ne_name,engine_id=new_ne_info.get("engine_id"),client_ip=dict_ne_info["ne_ip"])
                 error_code = int(alarm_raw["code"])
                 if error_code==1:
                     alarm_trap = alarm_raw["trap"]

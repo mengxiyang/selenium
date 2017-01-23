@@ -17,6 +17,3 @@ def check_ocgas_alarm_accuracy():
     pre_test_case("check_ocgas_gui_accuracy_case","gui_fm_accuracy")
     check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg)
     post_test_case()
-
-
-check_ocgas_alarm_accuracy()

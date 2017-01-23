@@ -18,6 +18,6 @@ ne_info_cfg = root_dir + os.sep + 'x' + os.sep + 'pm' + os.sep + 'nes' + os.sep 
 def check_get_alarmlist_accuracy():
     pre_test_case("check_hlr_get_alarmlist_case","nbi_get_alarm_list")
     check_alarm_list_accuracy(ne_info_cfg,server_info_cfg,getalarmlist_mapping_cfg_new)
-    check_alarm_list_accuracy(ne_info_cfg,server_info_cfg,getalarmlist_mapping_cfg_clear)
+    #check_alarm_list_accuracy(ne_info_cfg,server_info_cfg,getalarmlist_mapping_cfg_clear)
     check_alarm_list_accuracy(ne_info_cfg,server_info_cfg,getalarmlist_mapping_cfg_change)
     post_test_case()

@@ -34,7 +34,7 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
             new_ne_info=NeCommon.check_and_add_ne(driver, dict_ne_info)
             ne_name = new_ne_info["ne_name"]
             nodeid = base_clint_for_selenium.get_nodeid_by_nename(dict_server_info["host"],7070,'xoambaseserver',ne_name)
-            time.sleep(2)
+            time.sleep(10)
             FmCommon.toAlarmManagement_by_url(driver,server_info)
             FmCommon.init_and_search(driver,ne_name)
 
@@ -54,14 +54,15 @@ def check_alarm_data_accuracy(ne_info_cfg,server_info_cfg,alarm_mapping_cfg):
 
             for alarm_type in alarm_type_list:
                 test_logger.info("send alarm trap: " + dict_ne_info["ne_type"] + ":" + alarm_type + "...")
-                alarm_from_ne = base_clint_for_selenium.send_trap(dict_ne_info["ne_ip"], 7070, 'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],snmp_auth_info,new_ne_info.get("engine_id"))
+                alarm_from_ne = base_clint_for_selenium.send_trap(dict_ne_info["ne_ip"], 7070, 'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],auth_info=snmp_auth_info,engine_id=new_ne_info.get("engine_id"),client_ip=dict_ne_info["ne_ip"])
                 error_code = int(alarm_from_ne["code"])
                 if error_code==1:
                     alarm_trap=alarm_from_ne["trap"]
                     test_logger.info("alarm sent successfully" + str(alarm_trap))
                     alarm_expected=alarm_converter(dict_ne_info["ne_type"],ne_name,alarm_type,alarm_trap,mappingInstance)
                     FmCommon.toAlarmManagement_by_url(driver,server_info)
-                    time.sleep(1)
+                    FmCommon.init_and_search(driver,ne_name)
+                    time.sleep(2)
                     alarm_on_gui=FmCommon.fetch_alarm_on_gui(driver,dict_ne_info["ne_type"],alarm_trap,mappingInstance,alarm_type)
                     if alarm_on_gui != None:
                         test_logger.info("start to check alarm type: " + dict_ne_info["ne_type"] + ":" + alarm_type)

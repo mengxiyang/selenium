@@ -387,7 +387,7 @@ def check_notify_accuracy(ne_info_cfg,server_info_cfg,mapping_info_cfg):
             for alarm_type in alarm_type_list:
                 test.info("send and get NBI data for " + dict_ne_info["ne_type"] + ":" + alarm_type + "...")
                 #alarm_raw = getNBINotification(dict_ne_info["ne_ip"], 7070, 'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],snmp_auth_info)
-                alarm_raw = base_clint_for_selenium.get_notification_trap(dict_ne_info["ne_ip"],7070,'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],snmp_auth_info,ne_name,nodeid,new_ne_info.get("engine_id"))
+                alarm_raw = base_clint_for_selenium.get_notification_trap(dict_ne_info["ne_ip"],7070,'xoambaseserver',dict_ne_info["ne_type"],alarm_type,dict_server_info["host"],auth_info=snmp_auth_info,ne_name=ne_name,node_id=nodeid,engine_id=new_ne_info.get("engine_id"),client_ip=dict_ne_info["ne_ip"])
                 error_code = int(alarm_raw["code"])
                 if error_code==1:
                     alarm_trap = alarm_raw["trap"]

@@ -22,9 +22,9 @@ def server_time(ip, port, passwd):
 BaseManager.register('send_trap')
 
 
-def send_trap(ip, port, passwd, ne_type, alarm, target_ip,auth_info=None,engine_id=None,trap_port=None):
+def send_trap(ip, port, passwd, ne_type, alarm, target_ip,auth_info=None,engine_id=None,trap_port=None,client_ip=None):
     mgr = start_session(ip, port, passwd)
-    return mgr.send_trap(ne_type, alarm, target_ip,auth_info,engine_id,trap_port)._getvalue()
+    return mgr.send_trap(ne_type, alarm, target_ip,auth_info,engine_id,trap_port,client_ip)._getvalue()
 
 
 BaseManager.register('send_trap_nbi')
@@ -66,9 +66,9 @@ def start_session(ip, port, passwd):
     return mgr
 
 
-def get_notification_trap(ip, b_port, passwd, ne_type, alarm, host, auth_info, ne_name, node_id, engine_id=None,port=None):
+def get_notification_trap(ip, b_port, passwd, ne_type, alarm, host, auth_info=None, ne_name=None, node_id=None, engine_id=None,port=11162,client_ip=None):
     mgr = start_session(ip, b_port, passwd)
-    return mgr.get_notification_trap(ne_type, alarm, host, auth_info, ne_name, node_id, engine_id, port)._getvalue()
+    return mgr.get_notification_trap(ne_type, alarm, host, auth_info, ne_name, node_id, engine_id, port,client_ip)._getvalue()
 
 BaseManager.register('get_notification_trap')
 
@@ -80,20 +80,24 @@ def close_session(mgr):
 BaseManager.register('get_alarm_list_trap')
 
 
-def get_alarm_list_trap(ip, port, passwd, ne_type, alarm, host, auth_info, ne_name, engine_id=None,n_port = None):
+def get_alarm_list_trap(ip, port, passwd, ne_type, alarm, host, auth_info=None, ne_name=None, engine_id=None,n_port = 11162,client_ip=None):
     mgr = start_session(ip, port, passwd)
-    return mgr.get_alarm_list_trap(ne_type, alarm, host, auth_info, ne_name, engine_id, n_port)._getvalue()
+    return mgr.get_alarm_list_trap(ne_type, alarm, host, auth_info, ne_name, engine_id, n_port,client_ip)._getvalue()
 
 
 # print datetime.now().strftime('%H:%M:%S:%f')
 #print send_trap('10.184.74.67', 7070,'xoambaseserver', 'OCGAS', 'monitorTargetsExceedThreshold', '10.184.74.68', [])
 # print datetime.now().strftime('%H:%M:%S:%f')
+#print send_trap('10.184.73.102', 7070, 'xoambaseserver', 'IMSHSS', 'COMMUNICATIONFAULT_NEW', '10.184.73.77', auth_info=['privUser1', 'authUser1', 'privUser1'], engine_id='8000000001020302',client_ip='10.184.73.102')
+#print send_trap('10.184.73.108', 7070, 'xoambaseserver', 'OCGAS', 'monitorTargetsExceedThreshold_NEW', '10.184.73.77',auth_info=None,engine_id=None,client_ip='10.184.73.108')
 '''
 from datetime import datetime
 print datetime.now().strftime('%H:%M:%S:%f')
 print send_trap_nbi('10.184.74.68', 7070, 'xoambaseserver', 'LTEHSS', 'COMMUNICATIONFAULT_NEW', '10.184.74.68', ['privUser1', 'authUser1', 'privUser1'], LTEHSS)
 print datetime.now().strftime('%H:%M:%S:%f')
 '''
+
 #print get_nodeid_by_nename('10.184.73.77', 7070, 'xoambaseserver','MSC-1238BE4F3473717C')
-#print get_alarm_list_trap('10.184.73.76', 7070, 'xoambaseserver', 'GMLC', 'A21ExceedThresholdAlarm_NEW', '10.184.73.76', None, "GMLC-13EFDD7B6A24DB45")
-#print get_notification_trap('10.184.73.77', 7070, 'xoambaseserver', 'MSC', 'COMMUNICATIONFAULT_NEW', '10.184.73.77', ['privUser1', 'authUser1', 'privUser1'], "MSC-1238BE4F3473717C","NodeIdIMSHSS-7848F49C4C0BE7ED","8000000001020302")
+#print get_alarm_list_trap('10.184.73.102', 7070, 'xoambaseserver', 'IMSHSS', 'COMMUNICATIONFAULT_NEW', '10.184.73.77', ['privUser1', 'authUser1', 'privUser1'], "IMSHSS-D5A3FFB4203B3C83",'8000000001020302','10.184.73.102')
+#print get_notification_trap('10.184.73.102', 7070, 'xoambaseserver', 'IMSHSS', 'COMMUNICATIONFAULT_NEW', '10.184.73.77', ['privUser1', 'authUser1', 'privUser1'], "IMSHSS-D5A3FFB4203B3C83",'NodeIdIMSHSS-D5A3FFB4203B3C83','8000000001020302','10.184.73.102')
+#print get_notification_trap('10.184.73.107', 7070, 'xoambaseserver', 'GMLC', 'CpuUnilizationRatioExceedThresholdAlarm_NEW', '10.184.73.77', auth_info=None,ne_name="GMLC-C6F681629B9A2427",node_id='NodeIdGMLC-C6F681629B9A2427',engine_id=None,client_ip='10.184.73.107')
