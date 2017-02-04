@@ -1,0 +1,121 @@
+Test case: check_imshss_get_alarmlist_case started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+Info: Web page: https://10.184.73.77:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: NE already exist, reuse the old NE named: IMSHSS-D5A3FFB4203B3C83
+Info: NE:IMSHSS-D5A3FFB4203B3C83 added successfully
+Info: send and get alarmlist result for IMSHSS:COMMUNICATIONFAULT_NEW...
+Info: get TrapInfo is:{'changeTime': '2017-01-13 15:22:19.666', 'probableCause': 'Communications Transmit Failure', 'seqNo': '1.3.6.1.4.1.193.114.3.1.1', 'alarmDescription': '##ALL##Node Down', 'clearTime': '2017-01-13 15:22:19.666', 'timeStamp': '2017-01-13 15:22:19.666', 'specificProblem': 'Administration handling with NE failure', 'alarmSource': 'HSS', 'alarmLevel': 'Major', 'alarmCategory': 'Communications Alarm'} and AlarmList is:{'a': {'value': {u'CORBA::LongLong': u'1484292139821100000'}}, 'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}, 'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'137035849396660000'}}}}, 'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdIMSHSS-D5A3FFB4203B3C83|IMSHSS-D5A3FFB4203B3C83"'}}, 'event_type': {'none': {u'type_name': u'"x1"', u'domain_name': u'"Alarm IRP V3.0.0"'}}, 'g': {'value': {u'CORBA::Short': u'18'}}, 'f': {'value': {u'CORBA::String': u'"167"'}}, 'event_name': u'"x1"', 'h': {'value': {u'CORBA::Short': u'3'}}, 'j': {'value': {u'CORBA::String': u'"##ALL##Node Down"'}}, 'ai_ps': {'value': {u'CORBA::String': u'"3"'}}, 'p': {'value': {u'CORBA::Boolean': u'false'}}, 's': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}, 'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'137035849396660000'}}}}, 'jj': {'value': {u'CORBA::String': u'"1||Administration handling with NE failure"'}}, 'ai_at': {'value': {u'CORBA::String': u'"x1"'}}, 'i': {'value': {u'CORBA::String': u'"Administration handling with NE failure"'}}, 'n': {'value': {u'CORBA::Short': u'2'}}, 'd': {'value': {u'CORBA::String': u'"ManagedElement"'}}}
+Info: start to check COMMUNICATIONFAULT_NEW
+Info: check 'event_type',the nbi data result is {'event_type': {'none': {u'type_name': u'"x1"', u'domain_name': u'"Alarm IRP V3.0.0"'}}},and the expected result is {'event_type': {'none': {'type_name': '"x1"', 'domain_name': '"Alarm IRP V3.0.0"'}}}
+Step 1, Passed: type_name accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Step 2, Passed: domain_name accuracy test Passed. The NBI value is "Alarm IRP V3.0.0", and the expected result is "Alarm IRP V3.0.0"
+Info: check 'event_name',the nbi data result is {'event_name': u'"x1"'},and the expected result is {'event_name': '"x1"'}
+Step 3, Passed: event_name accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Info: check 'objectClass',the nbi data result is {'d': {'value': {u'CORBA::String': u'"ManagedElement"'}}},and the expected result is {'d': {'value': {'CORBA::String': '"ManagedElement"'}}}
+Step 4, Passed: CORBA::String accuracy test Passed. The NBI value is "ManagedElement", and the expected result is "ManagedElement"
+Info: check 'objectInstance',the nbi result is {'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdIMSHSS-D5A3FFB4203B3C83|IMSHSS-D5A3FFB4203B3C83"'}}},and the expected result is {'e': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdIMSHSS-D5A3FFB4203B3C83|IMSHSS-D5A3FFB4203B3C83"'}}}
+Step 5, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdIMSHSS-D5A3FFB4203B3C83|IMSHSS-D5A3FFB4203B3C83", and the expected result is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdIMSHSS-D5A3FFB4203B3C83|IMSHSS-D5A3FFB4203B3C83"
+Info: check 'c',the nbi data result is {'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}},and the expected result is {'c': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}}
+Step 6, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1", and the expected result is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"
+Info: check 'eventTime',the nbi result is {'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'137035849396660000'}}}}},and the expected result is {'b': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '137035849396660000'}}}}}
+Step 7, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 8, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 9, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 10, Passed: time accuracy test Passed. The NBI value is 137035849396660000, and the expected result is 137035849396660000
+Info: check 'vendorSpecificAlarmType',the nbi data result is {'jj': {'value': {u'CORBA::String': u'"1||Administration handling with NE failure"'}}},and the expected result is {'jj': {'value': {'CORBA::String': '"1||Administration handling with NE failure"'}}}
+Step 11, Passed: CORBA::String accuracy test Passed. The NBI value is "1||Administration handling with NE failure", and the expected result is "1||Administration handling with NE failure"
+Info: check 'probableCause',the nbi data result is {'g': {'value': {u'CORBA::Short': u'18'}}},and the expected result is {'g': {'value': {'CORBA::Short': '18'}}}
+Step 12, Passed: CORBA::Short accuracy test Passed. The NBI value is 18, and the expected result is 18
+Info: check 'perceivedSeverity',the nbi data result is {'h': {'value': {u'CORBA::Short': u'3'}}},and the expected result is {'h': {'value': {'CORBA::Short': '3'}}}
+Step 13, Passed: CORBA::Short accuracy test Passed. The NBI value is 3, and the expected result is 3
+Info: check 'notificationId',the nbi data result is {'a': {'value': {u'CORBA::LongLong': u'1484292139821100000'}}}
+Step 14, Passed: the notificationId of 1484292139821100000 is unique in database
+Info: check 'p',the nbi data result is {'p': {'value': {u'CORBA::Boolean': u'false'}}},and the expected result is {'p': {'value': {'CORBA::Boolean': 'FALSE'}}}
+Step 15, Failed: CORBA::Boolean accuracy test Failed. The NBI value is false, and the expected result is FALSE
+Info: check 's',the nbi data result is {'s': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}},and the expected result is {'s': {'value': {'AlarmIRPConstDefs::TrendIndication': 'NO_CHANGE'}}}
+Step 16, Passed: AlarmIRPConstDefs::TrendIndication accuracy test Passed. The NBI value is NO_CHANGE, and the expected result is NO_CHANGE
+Info: check 'additionalText',the nbi data result is {'j': {'value': {u'CORBA::String': u'"##ALL##Node Down"'}}},and the expected result is {'j': {'value': {'CORBA::String': '"##ALL##Node Down"'}}}
+Step 17, Passed: CORBA::String accuracy test Passed. The NBI value is "##ALL##Node Down", and the expected result is "##ALL##Node Down"
+Step 18, Passed: the alarmId of 167 is unique in database
+Info: check 'AI_VS_ALARM_TYPE',the nbi data result is {'ai_at': {'value': {u'CORBA::String': u'"x1"'}}},and the expected result is {'ai_at': {'value': {'CORBA::String': '"x1"'}}}
+Step 19, Passed: CORBA::String accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Info: check 'AI_VS_PERCEIVED_SEVERITY',the nbi data result is {'ai_ps': {'value': {u'CORBA::String': u'"3"'}}},and the expected result is {'ai_ps': {'value': {'CORBA::String': '"3"'}}}
+Step 20, Passed: CORBA::String accuracy test Passed. The NBI value is "3", and the expected result is "3"
+Info: check 'alarm raised time',the nbi data result is {'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'137035849396660000'}}}}},and the expected result is {'kk': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '137035849396660000'}}}}}
+Step 21, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 22, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 23, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 24, Passed: time accuracy test Passed. The NBI value is 137035849396660000, and the expected result is 137035849396660000
+Info: check 'i',the nbi data result is {'i': {'value': {u'CORBA::String': u'"Administration handling with NE failure"'}}},and the expected result is {'i': {'value': {'CORBA::String': '"Administration handling with NE failure"'}}}
+Step 25, Passed: CORBA::String accuracy test Passed. The NBI value is "Administration handling with NE failure", and the expected result is "Administration handling with NE failure"
+Info: check 'n',the nbi data result is {'n': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'n': {'value': {'CORBA::Short': 2}}}
+Step 26, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+Info: Web page: https://10.184.73.77:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: NE already exist, reuse the old NE named: IMSHSS-D5A3FFB4203B3C83
+Info: NE:IMSHSS-D5A3FFB4203B3C83 added successfully
+Info: send and get alarmlist result for IMSHSS:COMMUNICATIONFAULT_CHANGE...
+Info: get TrapInfo is:{'changeTime': '2017-01-13 15:23:13.875', 'probableCause': 'Communications Transmit Failure', 'seqNo': '1.3.6.1.4.1.193.114.3.1.1', 'alarmDescription': '##ALL##Node Down', 'clearTime': '2017-01-13 15:23:13.875', 'timeStamp': '2017-01-13 15:23:13.875', 'specificProblem': 'Administration handling with NE failure', 'alarmSource': 'HSS', 'alarmLevel': 'Major', 'alarmCategory': 'Communications Alarm'} and AlarmList is:{'a': {'value': {u'CORBA::LongLong': u'1484292193390100000'}}, 'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}, 'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'137035849938750000'}}}}, 'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdIMSHSS-D5A3FFB4203B3C83|IMSHSS-D5A3FFB4203B3C83"'}}, 'event_type': {'none': {u'type_name': u'"x2"', u'domain_name': u'"Alarm IRP V3.0.0"'}}, 'g': {'value': {u'CORBA::Short': u'18'}}, 'f': {'value': {u'CORBA::String': u'"169"'}}, 'mm': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'137035849938750000'}}}}, 'h': {'value': {u'CORBA::Short': u'3'}}, 'j': {'value': {u'CORBA::String': u'"##ALL##Node Down"'}}, 'p': {'value': {u'CORBA::Boolean': u'false'}}, 'ai_ps': {'value': {u'CORBA::String': u'"3"'}}, 'event_name': u'"x1"', 's': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}, 'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'137035849938750000'}}}}, 'jj': {'value': {u'CORBA::String': u'"1||Administration handling with NE failure"'}}, 'ai_at': {'value': {u'CORBA::String': u'"x1"'}}, 'i': {'value': {u'CORBA::String': u'"Administration handling with NE failure"'}}, 'n': {'value': {u'CORBA::Short': u'2'}}, 'd': {'value': {u'CORBA::String': u'"ManagedElement"'}}}
+Info: start to check COMMUNICATIONFAULT_CHANGE
+Info: check 'event_type',the nbi data result is {'event_type': {'none': {u'type_name': u'"x2"', u'domain_name': u'"Alarm IRP V3.0.0"'}}},and the expected result is {'event_type': {'none': {'type_name': '"x2"', 'domain_name': '"Alarm IRP V3.0.0"'}}}
+Step 27, Passed: type_name accuracy test Passed. The NBI value is "x2", and the expected result is "x2"
+Step 28, Passed: domain_name accuracy test Passed. The NBI value is "Alarm IRP V3.0.0", and the expected result is "Alarm IRP V3.0.0"
+Info: check 'event_name',the nbi data result is {'event_name': u'"x1"'},and the expected result is {'event_name': '"x1"'}
+Step 29, Passed: event_name accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Info: check 'objectClass',the nbi data result is {'d': {'value': {u'CORBA::String': u'"ManagedElement"'}}},and the expected result is {'d': {'value': {'CORBA::String': '"ManagedElement"'}}}
+Step 30, Passed: CORBA::String accuracy test Passed. The NBI value is "ManagedElement", and the expected result is "ManagedElement"
+Info: check 'objectInstance',the nbi result is {'e': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdIMSHSS-D5A3FFB4203B3C83|IMSHSS-D5A3FFB4203B3C83"'}}},and the expected result is {'e': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdIMSHSS-D5A3FFB4203B3C83|IMSHSS-D5A3FFB4203B3C83"'}}}
+Step 31, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdIMSHSS-D5A3FFB4203B3C83|IMSHSS-D5A3FFB4203B3C83", and the expected result is "DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdIMSHSS-D5A3FFB4203B3C83|IMSHSS-D5A3FFB4203B3C83"
+Info: check 'c',the nbi data result is {'c': {'value': {u'CORBA::String': u'"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}},and the expected result is {'c': {'value': {'CORBA::String': '"DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"'}}}
+Step 32, Passed: CORBA::String accuracy test Passed. The NBI value is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1", and the expected result is "DC=Ericsson,SubNetwork=1,ManagementNode=1,IRPAgent=1"
+Info: check 'eventTime',the nbi result is {'b': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'137035849938750000'}}}}},and the expected result is {'b': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '137035849938750000'}}}}}
+Step 33, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 34, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 35, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 36, Passed: time accuracy test Passed. The NBI value is 137035849938750000, and the expected result is 137035849938750000
+Info: check 'vendorSpecificAlarmType',the nbi data result is {'jj': {'value': {u'CORBA::String': u'"1||Administration handling with NE failure"'}}},and the expected result is {'jj': {'value': {'CORBA::String': '"1||Administration handling with NE failure"'}}}
+Step 37, Passed: CORBA::String accuracy test Passed. The NBI value is "1||Administration handling with NE failure", and the expected result is "1||Administration handling with NE failure"
+Info: check 'probableCause',the nbi data result is {'g': {'value': {u'CORBA::Short': u'18'}}},and the expected result is {'g': {'value': {'CORBA::Short': '18'}}}
+Step 38, Passed: CORBA::Short accuracy test Passed. The NBI value is 18, and the expected result is 18
+Info: check 'perceivedSeverity',the nbi data result is {'h': {'value': {u'CORBA::Short': u'3'}}},and the expected result is {'h': {'value': {'CORBA::Short': '3'}}}
+Step 39, Passed: CORBA::Short accuracy test Passed. The NBI value is 3, and the expected result is 3
+Info: check 'notificationId',the nbi data result is {'a': {'value': {u'CORBA::LongLong': u'1484292193390100000'}}}
+Step 40, Passed: the notificationId of 1484292193390100000 is unique in database
+Info: check 'p',the nbi data result is {'p': {'value': {u'CORBA::Boolean': u'false'}}},and the expected result is {'p': {'value': {'CORBA::Boolean': 'FALSE'}}}
+Step 41, Failed: CORBA::Boolean accuracy test Failed. The NBI value is false, and the expected result is FALSE
+Info: check 's',the nbi data result is {'s': {'value': {u'AlarmIRPConstDefs::TrendIndication': u'NO_CHANGE'}}},and the expected result is {'s': {'value': {'AlarmIRPConstDefs::TrendIndication': 'NO_CHANGE'}}}
+Step 42, Passed: AlarmIRPConstDefs::TrendIndication accuracy test Passed. The NBI value is NO_CHANGE, and the expected result is NO_CHANGE
+Info: check 'additionalText',the nbi data result is {'j': {'value': {u'CORBA::String': u'"##ALL##Node Down"'}}},and the expected result is {'j': {'value': {'CORBA::String': '"##ALL##Node Down"'}}}
+Step 43, Passed: CORBA::String accuracy test Passed. The NBI value is "##ALL##Node Down", and the expected result is "##ALL##Node Down"
+Step 44, Passed: the alarmId of 169 is unique in database
+Info: check 'AI_VS_ALARM_TYPE',the nbi data result is {'ai_at': {'value': {u'CORBA::String': u'"x1"'}}},and the expected result is {'ai_at': {'value': {'CORBA::String': '"x1"'}}}
+Step 45, Passed: CORBA::String accuracy test Passed. The NBI value is "x1", and the expected result is "x1"
+Info: check 'AI_VS_PERCEIVED_SEVERITY',the nbi data result is {'ai_ps': {'value': {u'CORBA::String': u'"3"'}}},and the expected result is {'ai_ps': {'value': {'CORBA::String': '"3"'}}}
+Step 46, Passed: CORBA::String accuracy test Passed. The NBI value is "3", and the expected result is "3"
+Info: check 'alarm raised time',the nbi data result is {'kk': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'137035849938750000'}}}}},and the expected result is {'kk': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '137035849938750000'}}}}}
+Step 47, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 48, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 49, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 50, Passed: time accuracy test Passed. The NBI value is 137035849938750000, and the expected result is 137035849938750000
+Info: check 'i',the nbi data result is {'i': {'value': {u'CORBA::String': u'"Administration handling with NE failure"'}}},and the expected result is {'i': {'value': {'CORBA::String': '"Administration handling with NE failure"'}}}
+Step 51, Passed: CORBA::String accuracy test Passed. The NBI value is "Administration handling with NE failure", and the expected result is "Administration handling with NE failure"
+Info: check 'n',the nbi data result is {'n': {'value': {u'CORBA::Short': u'2'}}},and the expected result is {'n': {'value': {'CORBA::Short': 2}}}
+Step 52, Passed: CORBA::Short accuracy test Passed. The NBI value is 2, and the expected result is 2
+Info: check 'changeTime',the nbi result is {'mm': {'value': {'TimeBase::UtcT': {'none': {u'inacclo': u'0', u'tdf': u'480', u'inacchi': u'0', u'time': u'137035849938750000'}}}}},and the expected result is {'mm': {'value': {'TimeBase::UtcT': {'none': {'inacclo': '0', 'tdf': '480', 'inacchi': '0', 'time': '137035849938750000'}}}}}
+Step 53, Passed: inacclo accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 54, Passed: tdf accuracy test Passed. The NBI value is 480, and the expected result is 480
+Step 55, Passed: inacchi accuracy test Passed. The NBI value is 0, and the expected result is 0
+Step 56, Passed: time accuracy test Passed. The NBI value is 137035849938750000, and the expected result is 137035849938750000
+Test case: check_imshss_get_alarmlist_case Failed. Total steps: 56, Passed steps: 54, Error steps: 0, Failed steps: 2, Warning steps: 0

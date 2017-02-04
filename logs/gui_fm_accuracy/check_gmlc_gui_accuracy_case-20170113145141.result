@@ -1,0 +1,173 @@
+Test case: check_gmlc_gui_accuracy_case started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+Info: Web page: https://10.184.73.77:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: NE already exist, reuse the old NE named: GMLC-C6F681629B9A2427
+Info: NE:GMLC-C6F681629B9A2427 added successfully
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: GMLC-C6F681629B9A2427...
+Info: Alarm queried successfully
+Info: send alarm trap: GMLC:CpuUnilizationRatioExceedThresholdAlarm_NEW...
+Info: alarm sent successfully{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.1', 'probableCause': 'CPU is busy', 'seqNo': '201701130000001308364', 'alarmDescription': 'Cpu Usage Exception', 'timeStamp': '2017-01-13 14:47:45.800', 'alarmSource': 'licId', 'alarmLevel': '2', 'alarmCategory': '5'}
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: GMLC-C6F681629B9A2427...
+Info: Alarm queried successfully
+Info: alarm received on GUI:CpuUnilizationRatioExceedThresholdAlarm_NEW
+Info: start to check alarm type: GMLC:CpuUnilizationRatioExceedThresholdAlarm_NEW
+Step 1, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 超出门限, and the expected value is 超出门限
+Step 2, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 3, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 4, Passed: alarm counter 变更时间 accuracy test passed. GUI value is , and the expected value is 
+Step 5, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 6, Passed: alarm counter 告警名称 accuracy test passed. GUI value is CPU过载, and the expected value is CPU过载
+Step 7, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Major, and the expected value is Major
+Step 8, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 9, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 7, and the expected value is 7
+Step 10, Passed: alarm counter 问题描述 accuracy test passed. GUI value is cpuUtilizationRatioExceedThresholdAlarm, and the expected value is cpuUtilizationRatioExceedThresholdAlarm
+Step 11, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 设备告警, and the expected value is 设备告警
+Step 12, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 13, Passed: alarm counter 定位信息 accuracy test passed. GUI value is licId, and the expected value is licId
+Step 14, Passed: alarm counter 网元名称 accuracy test passed. GUI value is GMLC-C6F681629B9A2427, and the expected value is GMLC-C6F681629B9A2427
+Step 15, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2017-01-13 14:47:45.800, and the expected value is 2017-01-13 14:47:45.800
+Step 16, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 17, Passed: alarm counter 补充信息 accuracy test passed. GUI value is Cpu Usage Exception, and the expected value is Cpu Usage Exception
+Info: send alarm trap: GMLC:MemoryUnilizationRatioExceedThresholdAlarm_NEW...
+Info: alarm sent successfully{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.2', 'probableCause': 'Memory Utilization Ratio Exceed Threshold Alarm', 'seqNo': '201701130000001308365', 'alarmDescription': 'Memory Usage Exception', 'timeStamp': '2017-01-13 14:47:55.900', 'alarmSource': 'licId', 'alarmLevel': '3', 'alarmCategory': '2'}
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: GMLC-C6F681629B9A2427...
+Info: Alarm queried successfully
+Info: alarm received on GUI:MemoryUnilizationRatioExceedThresholdAlarm_NEW
+Info: start to check alarm type: GMLC:MemoryUnilizationRatioExceedThresholdAlarm_NEW
+Step 18, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 超出门限, and the expected value is 超出门限
+Step 19, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 20, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 21, Passed: alarm counter 变更时间 accuracy test passed. GUI value is , and the expected value is 
+Step 22, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 23, Passed: alarm counter 告警名称 accuracy test passed. GUI value is 内存不足, and the expected value is 内存不足
+Step 24, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Minor, and the expected value is Minor
+Step 25, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 26, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 14, and the expected value is 14
+Step 27, Passed: alarm counter 问题描述 accuracy test passed. GUI value is memoryUtilizationRatioExceedThresholdAlarm, and the expected value is memoryUtilizationRatioExceedThresholdAlarm
+Step 28, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 设备告警, and the expected value is 设备告警
+Step 29, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 30, Passed: alarm counter 定位信息 accuracy test passed. GUI value is licId, and the expected value is licId
+Step 31, Passed: alarm counter 网元名称 accuracy test passed. GUI value is GMLC-C6F681629B9A2427, and the expected value is GMLC-C6F681629B9A2427
+Step 32, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2017-01-13 14:47:55.900, and the expected value is 2017-01-13 14:47:55.900
+Step 33, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 34, Passed: alarm counter 补充信息 accuracy test passed. GUI value is Memory Usage Exception, and the expected value is Memory Usage Exception
+Info: send alarm trap: GMLC:DiskUnilizationRatioExceedThresholdAlarm_NEW...
+Info: alarm sent successfully{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.3', 'probableCause': 'Disk Utilization Ratio Exceed Threshold Alarm', 'seqNo': '201701130000001308366', 'alarmDescription': 'Disk Usage Exception', 'timeStamp': '2017-01-13 14:48:05.700', 'alarmSource': 'licId', 'alarmLevel': '1', 'alarmCategory': '2'}
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: GMLC-C6F681629B9A2427...
+Info: Alarm queried successfully
+Info: alarm received on GUI:DiskUnilizationRatioExceedThresholdAlarm_NEW
+Info: start to check alarm type: GMLC:DiskUnilizationRatioExceedThresholdAlarm_NEW
+Step 35, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 超出门限, and the expected value is 超出门限
+Step 36, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 37, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 38, Passed: alarm counter 变更时间 accuracy test passed. GUI value is , and the expected value is 
+Step 39, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 40, Passed: alarm counter 告警名称 accuracy test passed. GUI value is 磁盘不足, and the expected value is 磁盘不足
+Step 41, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Critical, and the expected value is Critical
+Step 42, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 43, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 13, and the expected value is 13
+Step 44, Passed: alarm counter 问题描述 accuracy test passed. GUI value is diskUtilizationRatioExceedThresholdAlarm, and the expected value is diskUtilizationRatioExceedThresholdAlarm
+Step 45, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 设备告警, and the expected value is 设备告警
+Step 46, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 47, Passed: alarm counter 定位信息 accuracy test passed. GUI value is licId, and the expected value is licId
+Step 48, Passed: alarm counter 网元名称 accuracy test passed. GUI value is GMLC-C6F681629B9A2427, and the expected value is GMLC-C6F681629B9A2427
+Step 49, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2017-01-13 14:48:05.700, and the expected value is 2017-01-13 14:48:05.700
+Step 50, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 51, Passed: alarm counter 补充信息 accuracy test passed. GUI value is Disk Usage Exception, and the expected value is Disk Usage Exception
+Info: send alarm trap: GMLC:TpsPeekExceedThresholdAlarm_NEW...
+Info: alarm sent successfully{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.4', 'probableCause': 'Tps Peek Exceed Threshold Alarm', 'seqNo': '201701130000001308367', 'alarmDescription': 'Tps Exception', 'timeStamp': '2017-01-13 14:48:16.300', 'alarmSource': 'licId', 'alarmLevel': '1', 'alarmCategory': '1'}
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: GMLC-C6F681629B9A2427...
+Info: Alarm queried successfully
+Info: alarm received on GUI:TpsPeekExceedThresholdAlarm_NEW
+Info: start to check alarm type: GMLC:TpsPeekExceedThresholdAlarm_NEW
+Step 52, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 超出门限, and the expected value is 超出门限
+Step 53, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 54, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 55, Passed: alarm counter 变更时间 accuracy test passed. GUI value is , and the expected value is 
+Step 56, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 57, Passed: alarm counter 告警名称 accuracy test passed. GUI value is 特通业务异常, and the expected value is 特通业务异常
+Step 58, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Critical, and the expected value is Critical
+Step 59, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 60, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 1, and the expected value is 1
+Step 61, Passed: alarm counter 问题描述 accuracy test passed. GUI value is TpsPeekExceedThresholdAlarm, and the expected value is TpsPeekExceedThresholdAlarm
+Step 62, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 通信告警, and the expected value is 通信告警
+Step 63, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 64, Passed: alarm counter 定位信息 accuracy test passed. GUI value is licId, and the expected value is licId
+Step 65, Passed: alarm counter 网元名称 accuracy test passed. GUI value is GMLC-C6F681629B9A2427, and the expected value is GMLC-C6F681629B9A2427
+Step 66, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2017-01-13 14:48:16.300, and the expected value is 2017-01-13 14:48:16.300
+Step 67, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 68, Passed: alarm counter 补充信息 accuracy test passed. GUI value is Tps Exception, and the expected value is Tps Exception
+Info: send alarm trap: GMLC:A21ExceedThresholdAlarm_NEW...
+Info: alarm sent successfully{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.5', 'probableCause': 'X1 Exceed Threshold Alarm', 'seqNo': '201701130000001308368', 'alarmDescription': 'Large amount X1 messages', 'timeStamp': '2017-01-13 14:48:26.200', 'alarmSource': 'licId', 'alarmLevel': '1', 'alarmCategory': '1'}
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: GMLC-C6F681629B9A2427...
+Info: Alarm queried successfully
+Info: alarm received on GUI:A21ExceedThresholdAlarm_NEW
+Info: start to check alarm type: GMLC:A21ExceedThresholdAlarm_NEW
+Step 69, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 超出门限, and the expected value is 超出门限
+Step 70, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 71, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 72, Passed: alarm counter 变更时间 accuracy test passed. GUI value is , and the expected value is 
+Step 73, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 74, Passed: alarm counter 告警名称 accuracy test passed. GUI value is 特通业务异常, and the expected value is 特通业务异常
+Step 75, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Critical, and the expected value is Critical
+Step 76, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 77, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 1, and the expected value is 1
+Step 78, Passed: alarm counter 问题描述 accuracy test passed. GUI value is A21ExceedThresholdAlarm, and the expected value is A21ExceedThresholdAlarm
+Step 79, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 通信告警, and the expected value is 通信告警
+Step 80, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 81, Passed: alarm counter 定位信息 accuracy test passed. GUI value is licId, and the expected value is licId
+Step 82, Passed: alarm counter 网元名称 accuracy test passed. GUI value is GMLC-C6F681629B9A2427, and the expected value is GMLC-C6F681629B9A2427
+Step 83, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2017-01-13 14:48:26.200, and the expected value is 2017-01-13 14:48:26.200
+Step 84, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 85, Passed: alarm counter 补充信息 accuracy test passed. GUI value is Large amount X1 messages, and the expected value is Large amount X1 messages
+Info: send alarm trap: GMLC:LIFeatureDisableNotification_NEW...
+Info: alarm sent successfully{'alarmOID': '.1.3.6.1.4.1.193.30.2.1.6', 'probableCause': 'LI Feature Turn off Alarm', 'seqNo': '201701130000001308369', 'alarmDescription': 'LI Interface turn off', 'timeStamp': '2017-01-13 14:48:35.900', 'alarmSource': 'null', 'alarmLevel': '1', 'alarmCategory': '3'}
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: GMLC-C6F681629B9A2427...
+Info: Alarm queried successfully
+Info: alarm received on GUI:LIFeatureDisableNotification_NEW
+Info: start to check alarm type: GMLC:LIFeatureDisableNotification_NEW
+Step 86, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 功能关闭, and the expected value is 功能关闭
+Step 87, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 88, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 89, Passed: alarm counter 变更时间 accuracy test passed. GUI value is , and the expected value is 
+Step 90, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 91, Passed: alarm counter 告警名称 accuracy test passed. GUI value is 特通功能停止, and the expected value is 特通功能停止
+Step 92, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Critical, and the expected value is Critical
+Step 93, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 94, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 12, and the expected value is 12
+Step 95, Passed: alarm counter 问题描述 accuracy test passed. GUI value is LIFeatureDisableNotification, and the expected value is LIFeatureDisableNotification
+Step 96, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 处理错误告警, and the expected value is 处理错误告警
+Step 97, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 98, Passed: alarm counter 定位信息 accuracy test passed. GUI value is null, and the expected value is null
+Step 99, Passed: alarm counter 网元名称 accuracy test passed. GUI value is GMLC-C6F681629B9A2427, and the expected value is GMLC-C6F681629B9A2427
+Step 100, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2017-01-13 14:48:35.900, and the expected value is 2017-01-13 14:48:35.900
+Step 101, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 102, Passed: alarm counter 补充信息 accuracy test passed. GUI value is LI Interface turn off, and the expected value is LI Interface turn off
+Test case: check_gmlc_gui_accuracy_case Passed. Total steps: 102, Passed steps: 102, Error steps: 0, Failed steps: 0, Warning steps: 0
