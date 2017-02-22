@@ -65,7 +65,7 @@ def check_pm_accurate(ne_info_cfg, counter_info_cfg, server_info_path, str_end_t
                 PmCommon.make_in_correct_tab(driver, ne_info['tab_me'], '')
                 PmCommon.wait_until_pm_date_show_up(driver, dict_ne_info['ne_name'])
                 PmCommon.init_and_search(driver, dict_ne_info['ne_name'], end_time, start_time)
-                # PmCommon.wait_until_rounds_ok(driver, len(me_counters), 10, dict_me_add)
+                PmCommon.wait_until_rounds_ok(driver, len(me_counters), 10,  dict_me_add['rows_each_period'])
                 PmCommon.check_me_counters(driver, dict_ne_info['ne_name'], me_counters, 10, dict_me_add, counter_types)
 
             CommonStatic.logout_rsnms(driver)
@@ -109,7 +109,7 @@ def check_sbc_pm(ne_info_cfg, counter_info_cfg, server_info_path, number_of_lic,
             if 12 * dict_additinal['number_of_lic'] != len(counters_pm):
                 test.error('Expected counters file error.')
             PmCommon.init_and_search(driver, dict_ne_info['ne_name'])
-            # PmCommon.wait_until_rounds_ok(driver, len(counters_pm), 10, dict_additinal)
+            PmCommon.wait_until_rounds_ok(driver, len(counters_pm), 10, dict_additinal['number_of_lic'])
             PmCommon.check_pm_rows_updated(driver, dict_ne_info['ne_type'], counters_pm, 10, dict_additinal)
             CommonStatic.logout_rsnms(driver)
         finally:

@@ -1,0 +1,149 @@
+Test case: check_msc_gui_accuracy_case started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+Info: Web page: https://10.184.73.77:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: NE not exist, add a new one
+Info: There is no duplicated NEs.
+Info: Successfully added an NE: MSC-0CD79707FFB12273
+Info: NE:MSC-0CD79707FFB12273 added successfully
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: MSC-0CD79707FFB12273...
+Info: Alarm queried successfully
+Info: send alarm trap: MSC:ConnectionEstErrorX3_NEW...
+Info: alarm sent successfully{'changeTime': '2017-02-07 16:59:25.825', 'probableCause': 'Connection Establishment Error', 'timeStamp': '2017-02-07 16:59:25.825', 'alarmDescription': 'Connection-down for the LIC: LIC_3G&8613254900', 'clearTime': '2017-02-07 16:59:25.825', 'seqNo': '1.3.6.1.4.1.193.114.1.1.2', 'specificProblem': 'Unable to connect on X3', 'alarmSource': 'LIC_3G&8613254900', 'alarmLevel': 'Critical', 'alarmCategory': 'Communications Alarm'}
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: MSC-0CD79707FFB12273...
+Info: Alarm queried successfully
+Info: alarm received on GUI:ConnectionEstErrorX3_NEW
+Info: start to check alarm type: MSC:ConnectionEstErrorX3_NEW
+Step 1, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 连接建立错误, and the expected value is 连接建立错误
+Step 2, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 3, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 4, Passed: alarm counter 变更时间 accuracy test passed. GUI value is , and the expected value is 
+Step 5, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 6, Passed: alarm counter 告警名称 accuracy test passed. GUI value is X3链路故障, and the expected value is X3链路故障
+Step 7, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Critical, and the expected value is Critical
+Step 8, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 9, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 10, Passed: alarm counter 问题描述 accuracy test passed. GUI value is Unable to connect on X3, and the expected value is Unable to connect on X3
+Step 11, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 通信告警, and the expected value is 通信告警
+Step 12, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 13, Passed: alarm counter 定位信息 accuracy test passed. GUI value is LIC_3G&8613254900, and the expected value is LIC_3G&8613254900
+Step 14, Passed: alarm counter 网元名称 accuracy test passed. GUI value is MSC-0CD79707FFB12273, and the expected value is MSC-0CD79707FFB12273
+Step 15, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2017-02-07 16:59:25.825, and the expected value is 2017-02-07 16:59:25.825
+Step 16, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 6, and the expected value is 6
+Step 17, Passed: alarm counter 补充信息 accuracy test passed. GUI value is Connection-down for the LIC: LIC_3G&8613254900, and the expected value is Connection-down for the LIC: LIC_3G&8613254900
+Info: send alarm trap: MSC:CommunTransmitFailure_NEW...
+Info: alarm sent successfully{'changeTime': '2017-02-07 16:59:34.701', 'probableCause': 'Communications Transmit Failure', 'timeStamp': '2017-02-07 16:59:34.701', 'alarmDescription': 'Connection-down for the LIC: LIC_3G&8613254900', 'clearTime': '2017-02-07 16:59:34.701', 'seqNo': '1.3.6.1.4.1.193.114.1.1.2', 'specificProblem': 'X3 communication fault (Node)', 'alarmSource': 'LIC_3G&8613254900', 'alarmLevel': 'Critical', 'alarmCategory': 'Communications Alarm'}
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: MSC-0CD79707FFB12273...
+Info: Alarm queried successfully
+Info: alarm received on GUI:CommunTransmitFailure_NEW
+Info: start to check alarm type: MSC:CommunTransmitFailure_NEW
+Step 18, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 通信传输失败, and the expected value is 通信传输失败
+Step 19, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 20, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 21, Passed: alarm counter 变更时间 accuracy test passed. GUI value is , and the expected value is 
+Step 22, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 23, Passed: alarm counter 告警名称 accuracy test passed. GUI value is X3链路故障, and the expected value is X3链路故障
+Step 24, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Critical, and the expected value is Critical
+Step 25, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 26, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 27, Passed: alarm counter 问题描述 accuracy test passed. GUI value is X3 communication fault (Node), and the expected value is X3 communication fault (Node)
+Step 28, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 通信告警, and the expected value is 通信告警
+Step 29, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 30, Passed: alarm counter 定位信息 accuracy test passed. GUI value is LIC_3G&8613254900, and the expected value is LIC_3G&8613254900
+Step 31, Passed: alarm counter 网元名称 accuracy test passed. GUI value is MSC-0CD79707FFB12273, and the expected value is MSC-0CD79707FFB12273
+Step 32, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2017-02-07 16:59:34.701, and the expected value is 2017-02-07 16:59:34.701
+Step 33, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 6, and the expected value is 6
+Step 34, Passed: alarm counter 补充信息 accuracy test passed. GUI value is Connection-down for the LIC: LIC_3G&8613254900, and the expected value is Connection-down for the LIC: LIC_3G&8613254900
+Info: send alarm trap: MSC:NodeRestart_NEW...
+Info: alarm sent successfully{'changeTime': '2017-02-07 16:59:43.896', 'probableCause': 'Reinitialized', 'timeStamp': '2017-02-07 16:59:43.896', 'alarmDescription': 'Connection-down for the LIC: LIC_3G&8613254900', 'clearTime': '2017-02-07 16:59:43.896', 'seqNo': '1.3.6.1.4.1.193.114.1.1.2', 'specificProblem': 'Node Restart', 'alarmSource': 'LIC_3G&8613254900', 'alarmLevel': 'Minor', 'alarmCategory': 'Processing Error Alarm'}
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: MSC-0CD79707FFB12273...
+Info: Alarm queried successfully
+Info: alarm received on GUI:NodeRestart_NEW
+Info: start to check alarm type: MSC:NodeRestart_NEW
+Step 35, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 重新初始化, and the expected value is 重新初始化
+Step 36, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 37, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 38, Passed: alarm counter 变更时间 accuracy test passed. GUI value is , and the expected value is 
+Step 39, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 40, Passed: alarm counter 告警名称 accuracy test passed. GUI value is 网元重启, and the expected value is 网元重启
+Step 41, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Minor, and the expected value is Minor
+Step 42, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 43, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 44, Passed: alarm counter 问题描述 accuracy test passed. GUI value is Node Restart, and the expected value is Node Restart
+Step 45, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 处理错误告警, and the expected value is 处理错误告警
+Step 46, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 47, Passed: alarm counter 定位信息 accuracy test passed. GUI value is LIC_3G&8613254900, and the expected value is LIC_3G&8613254900
+Step 48, Passed: alarm counter 网元名称 accuracy test passed. GUI value is MSC-0CD79707FFB12273, and the expected value is MSC-0CD79707FFB12273
+Step 49, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2017-02-07 16:59:43.896, and the expected value is 2017-02-07 16:59:43.896
+Step 50, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 2, and the expected value is 2
+Step 51, Passed: alarm counter 补充信息 accuracy test passed. GUI value is Connection-down for the LIC: LIC_3G&8613254900, and the expected value is Connection-down for the LIC: LIC_3G&8613254900
+Info: send alarm trap: MSC:ConnectionEstErrorX2_NEW...
+Info: alarm sent successfully{'changeTime': '2017-02-07 16:59:52.804', 'probableCause': 'Connection Establishment Error', 'timeStamp': '2017-02-07 16:59:52.804', 'alarmDescription': 'Connection-down for the LIC: LIC_3G&8613254900', 'clearTime': '2017-02-07 16:59:52.804', 'seqNo': '1.3.6.1.4.1.193.114.1.1.2', 'specificProblem': 'Unable to connect on X2 (Node)', 'alarmSource': 'LIC_3G&8613254900', 'alarmLevel': 'Critical', 'alarmCategory': 'Communications Alarm'}
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: MSC-0CD79707FFB12273...
+Info: Alarm queried successfully
+Info: alarm received on GUI:ConnectionEstErrorX2_NEW
+Info: start to check alarm type: MSC:ConnectionEstErrorX2_NEW
+Step 52, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 连接建立错误, and the expected value is 连接建立错误
+Step 53, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 54, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 55, Passed: alarm counter 变更时间 accuracy test passed. GUI value is , and the expected value is 
+Step 56, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 57, Passed: alarm counter 告警名称 accuracy test passed. GUI value is X2连接故障, and the expected value is X2连接故障
+Step 58, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Critical, and the expected value is Critical
+Step 59, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 60, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 61, Passed: alarm counter 问题描述 accuracy test passed. GUI value is Unable to connect on X2 (Node), and the expected value is Unable to connect on X2 (Node)
+Step 62, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 通信告警, and the expected value is 通信告警
+Step 63, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 64, Passed: alarm counter 定位信息 accuracy test passed. GUI value is LIC_3G&8613254900, and the expected value is LIC_3G&8613254900
+Step 65, Passed: alarm counter 网元名称 accuracy test passed. GUI value is MSC-0CD79707FFB12273, and the expected value is MSC-0CD79707FFB12273
+Step 66, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2017-02-07 16:59:52.804, and the expected value is 2017-02-07 16:59:52.804
+Step 67, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 5, and the expected value is 5
+Step 68, Passed: alarm counter 补充信息 accuracy test passed. GUI value is Connection-down for the LIC: LIC_3G&8613254900, and the expected value is Connection-down for the LIC: LIC_3G&8613254900
+Info: send alarm trap: MSC:IntegrityViolation_NEW...
+Info: alarm sent successfully{'changeTime': '2017-02-07 17:00:01.695', 'probableCause': 'Information Missing', 'timeStamp': '2017-02-07 17:00:01.695', 'alarmDescription': 'Connection-down for the LIC: LIC_3G&8613254900', 'clearTime': '2017-02-07 17:00:01.695', 'seqNo': '1.3.6.1.4.1.193.114.1.1.2', 'specificProblem': 'Invalid Target (Node)', 'alarmSource': 'LIC_3G&8613254900', 'alarmLevel': 'Minor', 'alarmCategory': 'Integrity Violation'}
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: MSC-0CD79707FFB12273...
+Info: Alarm queried successfully
+Info: alarm received on GUI:IntegrityViolation_NEW
+Info: start to check alarm type: MSC:IntegrityViolation_NEW
+Step 69, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 信息丢失, and the expected value is 信息丢失
+Step 70, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 71, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 72, Passed: alarm counter 变更时间 accuracy test passed. GUI value is , and the expected value is 
+Step 73, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 74, Passed: alarm counter 告警名称 accuracy test passed. GUI value is 特通业务异常, and the expected value is 特通业务异常
+Step 75, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Minor, and the expected value is Minor
+Step 76, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 77, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 78, Passed: alarm counter 问题描述 accuracy test passed. GUI value is Invalid Target (Node), and the expected value is Invalid Target (Node)
+Step 79, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 违反一致性告警, and the expected value is 违反一致性告警
+Step 80, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 81, Passed: alarm counter 定位信息 accuracy test passed. GUI value is LIC_3G&8613254900, and the expected value is LIC_3G&8613254900
+Step 82, Passed: alarm counter 网元名称 accuracy test passed. GUI value is MSC-0CD79707FFB12273, and the expected value is MSC-0CD79707FFB12273
+Step 83, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2017-02-07 17:00:01.695, and the expected value is 2017-02-07 17:00:01.695
+Step 84, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 1, and the expected value is 1
+Step 85, Passed: alarm counter 补充信息 accuracy test passed. GUI value is Connection-down for the LIC: LIC_3G&8613254900, and the expected value is Connection-down for the LIC: LIC_3G&8613254900
+Test case: check_msc_gui_accuracy_case Passed. Total steps: 85, Passed steps: 85, Error steps: 0, Failed steps: 0, Warning steps: 0

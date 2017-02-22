@@ -1,0 +1,328 @@
+Test case: case_main_gmlc_lic_and_me. started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Info: Web page: https://10.184.73.77:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: NE not exist, add a new one
+Info: There is no duplicated NEs.
+Info: Successfully added an NE: GMLC-CDA08DAE408F7A25
+Info: NE:GMLC-CDA08DAE408F7A25 added successfully
+Info: Will Navigate to the PMManagement page...
+Info: Base URL is: https://10.184.73.77:8686/XOAM/src/index.html
+Info: To URL: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/pm-management/pm-3g/pm-gmlc
+Step 1, Passed: Found the query button of PM Management page, check passed.
+Step 2, Passed: Successfully found the counters data.
+Info: Query end time point set to: 113600
+Info: Query start time point set to: 103600
+Step 3, Passed: All the data that we need are ready now.
+Info: Start to check row: 1
+Info: Now in page 1.
+Step 4, Passed: 上报周期: 2017-02-20 11:35,	LIC标识: id003; X1接收消息数, GUI is 0,	Expected is 0.
+Step 5, Passed: 上报周期: 2017-02-20 11:35,	LIC标识: id003; X1发送消息数, GUI is 0,	Expected is 0.
+Step 6, Passed: 上报周期: 2017-02-20 11:35,	LIC标识: id003; X1接口接收连接请求命令数, GUI is 0,	Expected is 0.
+Step 7, Passed: 上报周期: 2017-02-20 11:35,	LIC标识: id003; X1接口接收释放命令数, GUI is 0,	Expected is 0.
+Step 8, Passed: 上报周期: 2017-02-20 11:35,	LIC标识: id003; X1用户号码列示命令数, GUI is 0,	Expected is 0.
+Step 9, Passed: 上报周期: 2017-02-20 11:35,	LIC标识: id003; X1网元时间查询命令数, GUI is 0,	Expected is 0.
+Step 10, Passed: 上报周期: 2017-02-20 11:35,	LIC标识: id003; X1连接请求应答数, GUI is 0,	Expected is 0.
+Step 11, Passed: 上报周期: 2017-02-20 11:35,	LIC标识: id003; X1连接网元发起释放数, GUI is 8,	Expected is 8.
+Step 12, Passed: 上报周期: 2017-02-20 11:35,	LIC标识: id003; X1用户号码列示响应数, GUI is 0,	Expected is 0.
+Step 13, Passed: 上报周期: 2017-02-20 11:35,	LIC标识: id003; X1网元时间查询响应数, GUI is 0,	Expected is 0.
+Step 14, Passed: 上报周期: 2017-02-20 11:35,	LIC标识: id003; X1接收消息流量(KB), GUI is 0,	Expected is 0.
+Step 15, Passed: 上报周期: 2017-02-20 11:35,	LIC标识: id003; X1发送消息流量(KB), GUI is 0,	Expected is 0.
+Info: Start to check row: 2
+Info: Now in page 1.
+Step 16, Passed: 上报周期: 2017-02-20 11:30,	LIC标识: id003; X1接收消息数, GUI is 0,	Expected is 0.
+Step 17, Passed: 上报周期: 2017-02-20 11:30,	LIC标识: id003; X1发送消息数, GUI is 0,	Expected is 0.
+Step 18, Passed: 上报周期: 2017-02-20 11:30,	LIC标识: id003; X1接口接收连接请求命令数, GUI is 0,	Expected is 0.
+Step 19, Passed: 上报周期: 2017-02-20 11:30,	LIC标识: id003; X1接口接收释放命令数, GUI is 0,	Expected is 0.
+Step 20, Passed: 上报周期: 2017-02-20 11:30,	LIC标识: id003; X1用户号码列示命令数, GUI is 0,	Expected is 0.
+Step 21, Passed: 上报周期: 2017-02-20 11:30,	LIC标识: id003; X1网元时间查询命令数, GUI is 0,	Expected is 0.
+Step 22, Passed: 上报周期: 2017-02-20 11:30,	LIC标识: id003; X1连接请求应答数, GUI is 7,	Expected is 7.
+Step 23, Passed: 上报周期: 2017-02-20 11:30,	LIC标识: id003; X1连接网元发起释放数, GUI is 0,	Expected is 0.
+Step 24, Passed: 上报周期: 2017-02-20 11:30,	LIC标识: id003; X1用户号码列示响应数, GUI is 0,	Expected is 0.
+Step 25, Passed: 上报周期: 2017-02-20 11:30,	LIC标识: id003; X1网元时间查询响应数, GUI is 0,	Expected is 0.
+Step 26, Passed: 上报周期: 2017-02-20 11:30,	LIC标识: id003; X1接收消息流量(KB), GUI is 0,	Expected is 0.
+Step 27, Passed: 上报周期: 2017-02-20 11:30,	LIC标识: id003; X1发送消息流量(KB), GUI is 0,	Expected is 0.
+Info: Start to check row: 3
+Info: Now in page 1.
+Step 28, Passed: 上报周期: 2017-02-20 11:25,	LIC标识: id003; X1接收消息数, GUI is 0,	Expected is 0.
+Step 29, Passed: 上报周期: 2017-02-20 11:25,	LIC标识: id003; X1发送消息数, GUI is 0,	Expected is 0.
+Step 30, Passed: 上报周期: 2017-02-20 11:25,	LIC标识: id003; X1接口接收连接请求命令数, GUI is 0,	Expected is 0.
+Step 31, Passed: 上报周期: 2017-02-20 11:25,	LIC标识: id003; X1接口接收释放命令数, GUI is 0,	Expected is 0.
+Step 32, Passed: 上报周期: 2017-02-20 11:25,	LIC标识: id003; X1用户号码列示命令数, GUI is 0,	Expected is 0.
+Step 33, Passed: 上报周期: 2017-02-20 11:25,	LIC标识: id003; X1网元时间查询命令数, GUI is 6,	Expected is 6.
+Step 34, Passed: 上报周期: 2017-02-20 11:25,	LIC标识: id003; X1连接请求应答数, GUI is 0,	Expected is 0.
+Step 35, Passed: 上报周期: 2017-02-20 11:25,	LIC标识: id003; X1连接网元发起释放数, GUI is 0,	Expected is 0.
+Step 36, Passed: 上报周期: 2017-02-20 11:25,	LIC标识: id003; X1用户号码列示响应数, GUI is 0,	Expected is 0.
+Step 37, Passed: 上报周期: 2017-02-20 11:25,	LIC标识: id003; X1网元时间查询响应数, GUI is 0,	Expected is 0.
+Step 38, Passed: 上报周期: 2017-02-20 11:25,	LIC标识: id003; X1接收消息流量(KB), GUI is 0,	Expected is 0.
+Step 39, Passed: 上报周期: 2017-02-20 11:25,	LIC标识: id003; X1发送消息流量(KB), GUI is 0,	Expected is 0.
+Info: Start to check row: 4
+Info: Now in page 1.
+Step 40, Passed: 上报周期: 2017-02-20 11:20,	LIC标识: id003; X1接收消息数, GUI is 0,	Expected is 0.
+Step 41, Passed: 上报周期: 2017-02-20 11:20,	LIC标识: id003; X1发送消息数, GUI is 0,	Expected is 0.
+Step 42, Passed: 上报周期: 2017-02-20 11:20,	LIC标识: id003; X1接口接收连接请求命令数, GUI is 0,	Expected is 0.
+Step 43, Passed: 上报周期: 2017-02-20 11:20,	LIC标识: id003; X1接口接收释放命令数, GUI is 0,	Expected is 0.
+Step 44, Passed: 上报周期: 2017-02-20 11:20,	LIC标识: id003; X1用户号码列示命令数, GUI is 5,	Expected is 5.
+Step 45, Passed: 上报周期: 2017-02-20 11:20,	LIC标识: id003; X1网元时间查询命令数, GUI is 0,	Expected is 0.
+Step 46, Passed: 上报周期: 2017-02-20 11:20,	LIC标识: id003; X1连接请求应答数, GUI is 0,	Expected is 0.
+Step 47, Passed: 上报周期: 2017-02-20 11:20,	LIC标识: id003; X1连接网元发起释放数, GUI is 0,	Expected is 0.
+Step 48, Passed: 上报周期: 2017-02-20 11:20,	LIC标识: id003; X1用户号码列示响应数, GUI is 0,	Expected is 0.
+Step 49, Passed: 上报周期: 2017-02-20 11:20,	LIC标识: id003; X1网元时间查询响应数, GUI is 0,	Expected is 0.
+Step 50, Passed: 上报周期: 2017-02-20 11:20,	LIC标识: id003; X1接收消息流量(KB), GUI is 0,	Expected is 0.
+Step 51, Passed: 上报周期: 2017-02-20 11:20,	LIC标识: id003; X1发送消息流量(KB), GUI is 0,	Expected is 0.
+Info: Start to check row: 5
+Info: Now in page 1.
+Step 52, Passed: 上报周期: 2017-02-20 11:15,	LIC标识: id003; X1接收消息数, GUI is 0,	Expected is 0.
+Step 53, Passed: 上报周期: 2017-02-20 11:15,	LIC标识: id003; X1发送消息数, GUI is 0,	Expected is 0.
+Step 54, Passed: 上报周期: 2017-02-20 11:15,	LIC标识: id003; X1接口接收连接请求命令数, GUI is 0,	Expected is 0.
+Step 55, Passed: 上报周期: 2017-02-20 11:15,	LIC标识: id003; X1接口接收释放命令数, GUI is 4,	Expected is 4.
+Step 56, Passed: 上报周期: 2017-02-20 11:15,	LIC标识: id003; X1用户号码列示命令数, GUI is 0,	Expected is 0.
+Step 57, Passed: 上报周期: 2017-02-20 11:15,	LIC标识: id003; X1网元时间查询命令数, GUI is 0,	Expected is 0.
+Step 58, Passed: 上报周期: 2017-02-20 11:15,	LIC标识: id003; X1连接请求应答数, GUI is 0,	Expected is 0.
+Step 59, Passed: 上报周期: 2017-02-20 11:15,	LIC标识: id003; X1连接网元发起释放数, GUI is 0,	Expected is 0.
+Step 60, Passed: 上报周期: 2017-02-20 11:15,	LIC标识: id003; X1用户号码列示响应数, GUI is 0,	Expected is 0.
+Step 61, Passed: 上报周期: 2017-02-20 11:15,	LIC标识: id003; X1网元时间查询响应数, GUI is 0,	Expected is 0.
+Step 62, Passed: 上报周期: 2017-02-20 11:15,	LIC标识: id003; X1接收消息流量(KB), GUI is 0,	Expected is 0.
+Step 63, Passed: 上报周期: 2017-02-20 11:15,	LIC标识: id003; X1发送消息流量(KB), GUI is 0,	Expected is 0.
+Info: Start to check row: 6
+Info: Now in page 1.
+Step 64, Passed: 上报周期: 2017-02-20 11:10,	LIC标识: id003; X1接收消息数, GUI is 0,	Expected is 0.
+Step 65, Passed: 上报周期: 2017-02-20 11:10,	LIC标识: id003; X1发送消息数, GUI is 0,	Expected is 0.
+Step 66, Passed: 上报周期: 2017-02-20 11:10,	LIC标识: id003; X1接口接收连接请求命令数, GUI is 3,	Expected is 3.
+Step 67, Passed: 上报周期: 2017-02-20 11:10,	LIC标识: id003; X1接口接收释放命令数, GUI is 0,	Expected is 0.
+Step 68, Passed: 上报周期: 2017-02-20 11:10,	LIC标识: id003; X1用户号码列示命令数, GUI is 0,	Expected is 0.
+Step 69, Passed: 上报周期: 2017-02-20 11:10,	LIC标识: id003; X1网元时间查询命令数, GUI is 0,	Expected is 0.
+Step 70, Passed: 上报周期: 2017-02-20 11:10,	LIC标识: id003; X1连接请求应答数, GUI is 0,	Expected is 0.
+Step 71, Passed: 上报周期: 2017-02-20 11:10,	LIC标识: id003; X1连接网元发起释放数, GUI is 0,	Expected is 0.
+Step 72, Passed: 上报周期: 2017-02-20 11:10,	LIC标识: id003; X1用户号码列示响应数, GUI is 0,	Expected is 0.
+Step 73, Passed: 上报周期: 2017-02-20 11:10,	LIC标识: id003; X1网元时间查询响应数, GUI is 0,	Expected is 0.
+Step 74, Passed: 上报周期: 2017-02-20 11:10,	LIC标识: id003; X1接收消息流量(KB), GUI is 0,	Expected is 0.
+Step 75, Passed: 上报周期: 2017-02-20 11:10,	LIC标识: id003; X1发送消息流量(KB), GUI is 0,	Expected is 0.
+Info: Start to check row: 7
+Info: Now in page 1.
+Step 76, Passed: 上报周期: 2017-02-20 11:05,	LIC标识: id003; X1接收消息数, GUI is 0,	Expected is 0.
+Step 77, Passed: 上报周期: 2017-02-20 11:05,	LIC标识: id003; X1发送消息数, GUI is 2,	Expected is 2.
+Step 78, Passed: 上报周期: 2017-02-20 11:05,	LIC标识: id003; X1接口接收连接请求命令数, GUI is 0,	Expected is 0.
+Step 79, Passed: 上报周期: 2017-02-20 11:05,	LIC标识: id003; X1接口接收释放命令数, GUI is 0,	Expected is 0.
+Step 80, Passed: 上报周期: 2017-02-20 11:05,	LIC标识: id003; X1用户号码列示命令数, GUI is 0,	Expected is 0.
+Step 81, Passed: 上报周期: 2017-02-20 11:05,	LIC标识: id003; X1网元时间查询命令数, GUI is 0,	Expected is 0.
+Step 82, Passed: 上报周期: 2017-02-20 11:05,	LIC标识: id003; X1连接请求应答数, GUI is 0,	Expected is 0.
+Step 83, Passed: 上报周期: 2017-02-20 11:05,	LIC标识: id003; X1连接网元发起释放数, GUI is 0,	Expected is 0.
+Step 84, Passed: 上报周期: 2017-02-20 11:05,	LIC标识: id003; X1用户号码列示响应数, GUI is 0,	Expected is 0.
+Step 85, Passed: 上报周期: 2017-02-20 11:05,	LIC标识: id003; X1网元时间查询响应数, GUI is 0,	Expected is 0.
+Step 86, Passed: 上报周期: 2017-02-20 11:05,	LIC标识: id003; X1接收消息流量(KB), GUI is 0,	Expected is 0.
+Step 87, Passed: 上报周期: 2017-02-20 11:05,	LIC标识: id003; X1发送消息流量(KB), GUI is 0,	Expected is 0.
+Info: Start to check row: 8
+Info: Now in page 1.
+Step 88, Passed: 上报周期: 2017-02-20 11:00,	LIC标识: id003; X1接收消息数, GUI is 1,	Expected is 1.
+Step 89, Passed: 上报周期: 2017-02-20 11:00,	LIC标识: id003; X1发送消息数, GUI is 0,	Expected is 0.
+Step 90, Passed: 上报周期: 2017-02-20 11:00,	LIC标识: id003; X1接口接收连接请求命令数, GUI is 0,	Expected is 0.
+Step 91, Passed: 上报周期: 2017-02-20 11:00,	LIC标识: id003; X1接口接收释放命令数, GUI is 0,	Expected is 0.
+Step 92, Passed: 上报周期: 2017-02-20 11:00,	LIC标识: id003; X1用户号码列示命令数, GUI is 0,	Expected is 0.
+Step 93, Passed: 上报周期: 2017-02-20 11:00,	LIC标识: id003; X1网元时间查询命令数, GUI is 0,	Expected is 0.
+Step 94, Passed: 上报周期: 2017-02-20 11:00,	LIC标识: id003; X1连接请求应答数, GUI is 0,	Expected is 0.
+Step 95, Passed: 上报周期: 2017-02-20 11:00,	LIC标识: id003; X1连接网元发起释放数, GUI is 0,	Expected is 0.
+Step 96, Passed: 上报周期: 2017-02-20 11:00,	LIC标识: id003; X1用户号码列示响应数, GUI is 0,	Expected is 0.
+Step 97, Passed: 上报周期: 2017-02-20 11:00,	LIC标识: id003; X1网元时间查询响应数, GUI is 0,	Expected is 0.
+Step 98, Passed: 上报周期: 2017-02-20 11:00,	LIC标识: id003; X1接收消息流量(KB), GUI is 0,	Expected is 0.
+Step 99, Passed: 上报周期: 2017-02-20 11:00,	LIC标识: id003; X1发送消息流量(KB), GUI is 0,	Expected is 0.
+Info: Start to check row: 9
+Info: Now in page 1.
+Step 100, Passed: 上报周期: 2017-02-20 10:55,	LIC标识: id003; X1接收消息数, GUI is 0,	Expected is 0.
+Step 101, Passed: 上报周期: 2017-02-20 10:55,	LIC标识: id003; X1发送消息数, GUI is 0,	Expected is 0.
+Step 102, Passed: 上报周期: 2017-02-20 10:55,	LIC标识: id003; X1接口接收连接请求命令数, GUI is 0,	Expected is 0.
+Step 103, Passed: 上报周期: 2017-02-20 10:55,	LIC标识: id003; X1接口接收释放命令数, GUI is 0,	Expected is 0.
+Step 104, Passed: 上报周期: 2017-02-20 10:55,	LIC标识: id003; X1用户号码列示命令数, GUI is 0,	Expected is 0.
+Step 105, Passed: 上报周期: 2017-02-20 10:55,	LIC标识: id003; X1网元时间查询命令数, GUI is 0,	Expected is 0.
+Step 106, Passed: 上报周期: 2017-02-20 10:55,	LIC标识: id003; X1连接请求应答数, GUI is 0,	Expected is 0.
+Step 107, Passed: 上报周期: 2017-02-20 10:55,	LIC标识: id003; X1连接网元发起释放数, GUI is 0,	Expected is 0.
+Step 108, Passed: 上报周期: 2017-02-20 10:55,	LIC标识: id003; X1用户号码列示响应数, GUI is 0,	Expected is 0.
+Step 109, Passed: 上报周期: 2017-02-20 10:55,	LIC标识: id003; X1网元时间查询响应数, GUI is 0,	Expected is 0.
+Step 110, Passed: 上报周期: 2017-02-20 10:55,	LIC标识: id003; X1接收消息流量(KB), GUI is 0,	Expected is 0.
+Step 111, Passed: 上报周期: 2017-02-20 10:55,	LIC标识: id003; X1发送消息流量(KB), GUI is 12,	Expected is 12.
+Info: Start to check row: 10
+Info: Now in page 1.
+Step 112, Passed: 上报周期: 2017-02-20 10:50,	LIC标识: id003; X1接收消息数, GUI is 0,	Expected is 0.
+Step 113, Passed: 上报周期: 2017-02-20 10:50,	LIC标识: id003; X1发送消息数, GUI is 0,	Expected is 0.
+Step 114, Passed: 上报周期: 2017-02-20 10:50,	LIC标识: id003; X1接口接收连接请求命令数, GUI is 0,	Expected is 0.
+Step 115, Passed: 上报周期: 2017-02-20 10:50,	LIC标识: id003; X1接口接收释放命令数, GUI is 0,	Expected is 0.
+Step 116, Passed: 上报周期: 2017-02-20 10:50,	LIC标识: id003; X1用户号码列示命令数, GUI is 0,	Expected is 0.
+Step 117, Passed: 上报周期: 2017-02-20 10:50,	LIC标识: id003; X1网元时间查询命令数, GUI is 0,	Expected is 0.
+Step 118, Passed: 上报周期: 2017-02-20 10:50,	LIC标识: id003; X1连接请求应答数, GUI is 0,	Expected is 0.
+Step 119, Passed: 上报周期: 2017-02-20 10:50,	LIC标识: id003; X1连接网元发起释放数, GUI is 0,	Expected is 0.
+Step 120, Passed: 上报周期: 2017-02-20 10:50,	LIC标识: id003; X1用户号码列示响应数, GUI is 0,	Expected is 0.
+Step 121, Passed: 上报周期: 2017-02-20 10:50,	LIC标识: id003; X1网元时间查询响应数, GUI is 0,	Expected is 0.
+Step 122, Passed: 上报周期: 2017-02-20 10:50,	LIC标识: id003; X1接收消息流量(KB), GUI is 11,	Expected is 11.
+Step 123, Passed: 上报周期: 2017-02-20 10:50,	LIC标识: id003; X1发送消息流量(KB), GUI is 0,	Expected is 0.
+Info: Start to check row: 11
+Info: Now in page 2.
+Step 124, Passed: 上报周期: 2017-02-20 10:45,	LIC标识: id003; X1接收消息数, GUI is 0,	Expected is 0.
+Step 125, Passed: 上报周期: 2017-02-20 10:45,	LIC标识: id003; X1发送消息数, GUI is 0,	Expected is 0.
+Step 126, Passed: 上报周期: 2017-02-20 10:45,	LIC标识: id003; X1接口接收连接请求命令数, GUI is 0,	Expected is 0.
+Step 127, Passed: 上报周期: 2017-02-20 10:45,	LIC标识: id003; X1接口接收释放命令数, GUI is 0,	Expected is 0.
+Step 128, Passed: 上报周期: 2017-02-20 10:45,	LIC标识: id003; X1用户号码列示命令数, GUI is 0,	Expected is 0.
+Step 129, Passed: 上报周期: 2017-02-20 10:45,	LIC标识: id003; X1网元时间查询命令数, GUI is 0,	Expected is 0.
+Step 130, Passed: 上报周期: 2017-02-20 10:45,	LIC标识: id003; X1连接请求应答数, GUI is 0,	Expected is 0.
+Step 131, Passed: 上报周期: 2017-02-20 10:45,	LIC标识: id003; X1连接网元发起释放数, GUI is 0,	Expected is 0.
+Step 132, Passed: 上报周期: 2017-02-20 10:45,	LIC标识: id003; X1用户号码列示响应数, GUI is 0,	Expected is 0.
+Step 133, Passed: 上报周期: 2017-02-20 10:45,	LIC标识: id003; X1网元时间查询响应数, GUI is 10,	Expected is 10.
+Step 134, Passed: 上报周期: 2017-02-20 10:45,	LIC标识: id003; X1接收消息流量(KB), GUI is 0,	Expected is 0.
+Step 135, Passed: 上报周期: 2017-02-20 10:45,	LIC标识: id003; X1发送消息流量(KB), GUI is 0,	Expected is 0.
+Info: Start to check row: 12
+Info: Now in page 2.
+Step 136, Passed: 上报周期: 2017-02-20 10:40,	LIC标识: id003; X1接收消息数, GUI is 0,	Expected is 0.
+Step 137, Passed: 上报周期: 2017-02-20 10:40,	LIC标识: id003; X1发送消息数, GUI is 0,	Expected is 0.
+Step 138, Passed: 上报周期: 2017-02-20 10:40,	LIC标识: id003; X1接口接收连接请求命令数, GUI is 0,	Expected is 0.
+Step 139, Passed: 上报周期: 2017-02-20 10:40,	LIC标识: id003; X1接口接收释放命令数, GUI is 0,	Expected is 0.
+Step 140, Passed: 上报周期: 2017-02-20 10:40,	LIC标识: id003; X1用户号码列示命令数, GUI is 0,	Expected is 0.
+Step 141, Passed: 上报周期: 2017-02-20 10:40,	LIC标识: id003; X1网元时间查询命令数, GUI is 0,	Expected is 0.
+Step 142, Passed: 上报周期: 2017-02-20 10:40,	LIC标识: id003; X1连接请求应答数, GUI is 0,	Expected is 0.
+Step 143, Passed: 上报周期: 2017-02-20 10:40,	LIC标识: id003; X1连接网元发起释放数, GUI is 0,	Expected is 0.
+Step 144, Passed: 上报周期: 2017-02-20 10:40,	LIC标识: id003; X1用户号码列示响应数, GUI is 9,	Expected is 9.
+Step 145, Passed: 上报周期: 2017-02-20 10:40,	LIC标识: id003; X1网元时间查询响应数, GUI is 0,	Expected is 0.
+Step 146, Passed: 上报周期: 2017-02-20 10:40,	LIC标识: id003; X1接收消息流量(KB), GUI is 0,	Expected is 0.
+Step 147, Passed: 上报周期: 2017-02-20 10:40,	LIC标识: id003; X1发送消息流量(KB), GUI is 0,	Expected is 0.
+Step 148, Passed: Row 0 GUI time is correct, is: 2017-02-20 11:35
+Step 149, Passed: Report delta time is 5 minutes.
+Step 150, Passed: Row 1 GUI time is correct, is: 2017-02-20 11:30
+Step 151, Passed: Report delta time is 5 minutes.
+Step 152, Passed: Row 2 GUI time is correct, is: 2017-02-20 11:25
+Step 153, Passed: Report delta time is 5 minutes.
+Step 154, Passed: Row 3 GUI time is correct, is: 2017-02-20 11:20
+Step 155, Passed: Report delta time is 5 minutes.
+Step 156, Passed: Row 4 GUI time is correct, is: 2017-02-20 11:15
+Step 157, Passed: Report delta time is 5 minutes.
+Step 158, Passed: Row 5 GUI time is correct, is: 2017-02-20 11:10
+Step 159, Passed: Report delta time is 5 minutes.
+Step 160, Passed: Row 6 GUI time is correct, is: 2017-02-20 11:05
+Step 161, Passed: Report delta time is 5 minutes.
+Step 162, Passed: Row 7 GUI time is correct, is: 2017-02-20 11:00
+Step 163, Passed: Report delta time is 5 minutes.
+Step 164, Passed: Row 8 GUI time is correct, is: 2017-02-20 10:55
+Step 165, Passed: Report delta time is 5 minutes.
+Step 166, Passed: Row 9 GUI time is correct, is: 2017-02-20 10:50
+Step 167, Passed: Report delta time is 5 minutes.
+Step 168, Passed: Row 10 GUI time is correct, is: 2017-02-20 10:45
+Step 169, Passed: Report delta time is 5 minutes.
+Step 170, Passed: Row 11 GUI time is correct, is: 2017-02-20 10:40
+Info: Found ME Tab information, will check ME counters.
+Info: Query result notification shown up.
+Info: Now in TAB: 网元运行指标
+Step 171, Passed: Successfully found the counters data.
+Info: Query end time point set to: 113600
+Info: Query start time point set to: 103600
+Step 172, Passed: All the data that we need are ready now.
+Step 173, Passed: All the data that we need are ready now.
+Info: Start to check ME row: 1
+Info: Now in page 1.
+Step 174, Passed: 上报周期: 2017-02-20 11:35,	; 总物理内存, GUI is 0,	Expected is 0.
+Step 175, Passed: 上报周期: 2017-02-20 11:35,	; 处理器平均负荷, GUI is 0.0,	Expected is 0.0.
+Step 176, Passed: 上报周期: 2017-02-20 11:35,	; 处理器峰值负荷, GUI is 0.0,	Expected is 0.0.
+Step 177, Passed: 上报周期: 2017-02-20 11:35,	; 内存占用率, GUI is 0.0,	Expected is 0.0.
+Step 178, Passed: 上报周期: 2017-02-20 11:35,	; 峰值内存占用率, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 2
+Info: Now in page 1.
+Step 179, Passed: 上报周期: 2017-02-20 11:30,	; 总物理内存, GUI is 0,	Expected is 0.
+Step 180, Passed: 上报周期: 2017-02-20 11:30,	; 处理器平均负荷, GUI is 0.0,	Expected is 0.0.
+Step 181, Passed: 上报周期: 2017-02-20 11:30,	; 处理器峰值负荷, GUI is 0.0,	Expected is 0.0.
+Step 182, Passed: 上报周期: 2017-02-20 11:30,	; 内存占用率, GUI is 0.0,	Expected is 0.0.
+Step 183, Passed: 上报周期: 2017-02-20 11:30,	; 峰值内存占用率, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 3
+Info: Now in page 1.
+Step 184, Passed: 上报周期: 2017-02-20 11:25,	; 总物理内存, GUI is 0,	Expected is 0.
+Step 185, Passed: 上报周期: 2017-02-20 11:25,	; 处理器平均负荷, GUI is 0.0,	Expected is 0.0.
+Step 186, Passed: 上报周期: 2017-02-20 11:25,	; 处理器峰值负荷, GUI is 0.0,	Expected is 0.0.
+Step 187, Passed: 上报周期: 2017-02-20 11:25,	; 内存占用率, GUI is 0.0,	Expected is 0.0.
+Step 188, Passed: 上报周期: 2017-02-20 11:25,	; 峰值内存占用率, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 4
+Info: Now in page 1.
+Step 189, Passed: 上报周期: 2017-02-20 11:20,	; 总物理内存, GUI is 0,	Expected is 0.
+Step 190, Passed: 上报周期: 2017-02-20 11:20,	; 处理器平均负荷, GUI is 0.0,	Expected is 0.0.
+Step 191, Passed: 上报周期: 2017-02-20 11:20,	; 处理器峰值负荷, GUI is 0.0,	Expected is 0.0.
+Step 192, Passed: 上报周期: 2017-02-20 11:20,	; 内存占用率, GUI is 0.0,	Expected is 0.0.
+Step 193, Passed: 上报周期: 2017-02-20 11:20,	; 峰值内存占用率, GUI is 76.82,	Expected is 76.82.
+Info: Start to check ME row: 5
+Info: Now in page 1.
+Step 194, Passed: 上报周期: 2017-02-20 11:15,	; 总物理内存, GUI is 0,	Expected is 0.
+Step 195, Passed: 上报周期: 2017-02-20 11:15,	; 处理器平均负荷, GUI is 0.0,	Expected is 0.0.
+Step 196, Passed: 上报周期: 2017-02-20 11:15,	; 处理器峰值负荷, GUI is 0.0,	Expected is 0.0.
+Step 197, Passed: 上报周期: 2017-02-20 11:15,	; 内存占用率, GUI is 76.82,	Expected is 76.82.
+Step 198, Passed: 上报周期: 2017-02-20 11:15,	; 峰值内存占用率, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 6
+Info: Now in page 1.
+Step 199, Passed: 上报周期: 2017-02-20 11:10,	; 总物理内存, GUI is 0,	Expected is 0.
+Step 200, Passed: 上报周期: 2017-02-20 11:10,	; 处理器平均负荷, GUI is 0.0,	Expected is 0.0.
+Step 201, Passed: 上报周期: 2017-02-20 11:10,	; 处理器峰值负荷, GUI is 0.07,	Expected is 0.07.
+Step 202, Passed: 上报周期: 2017-02-20 11:10,	; 内存占用率, GUI is 0.0,	Expected is 0.0.
+Step 203, Passed: 上报周期: 2017-02-20 11:10,	; 峰值内存占用率, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 7
+Info: Now in page 1.
+Step 204, Passed: 上报周期: 2017-02-20 11:05,	; 总物理内存, GUI is 0,	Expected is 0.
+Step 205, Passed: 上报周期: 2017-02-20 11:05,	; 处理器平均负荷, GUI is 0.06,	Expected is 0.06.
+Step 206, Passed: 上报周期: 2017-02-20 11:05,	; 处理器峰值负荷, GUI is 0.0,	Expected is 0.0.
+Step 207, Passed: 上报周期: 2017-02-20 11:05,	; 内存占用率, GUI is 0.0,	Expected is 0.0.
+Step 208, Passed: 上报周期: 2017-02-20 11:05,	; 峰值内存占用率, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 8
+Info: Now in page 1.
+Step 209, Passed: 上报周期: 2017-02-20 11:00,	; 总物理内存, GUI is 32095,	Expected is 32095.
+Step 210, Passed: 上报周期: 2017-02-20 11:00,	; 处理器平均负荷, GUI is 0.0,	Expected is 0.0.
+Step 211, Passed: 上报周期: 2017-02-20 11:00,	; 处理器峰值负荷, GUI is 0.0,	Expected is 0.0.
+Step 212, Passed: 上报周期: 2017-02-20 11:00,	; 内存占用率, GUI is 0.0,	Expected is 0.0.
+Step 213, Passed: 上报周期: 2017-02-20 11:00,	; 峰值内存占用率, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 9
+Info: Now in page 1.
+Step 214, Passed: 上报周期: 2017-02-20 10:55,	; 总物理内存, GUI is 32095,	Expected is 32095.
+Step 215, Passed: 上报周期: 2017-02-20 10:55,	; 处理器平均负荷, GUI is 0.06,	Expected is 0.06.
+Step 216, Passed: 上报周期: 2017-02-20 10:55,	; 处理器峰值负荷, GUI is 0.07,	Expected is 0.07.
+Step 217, Passed: 上报周期: 2017-02-20 10:55,	; 内存占用率, GUI is 76.82,	Expected is 76.82.
+Step 218, Passed: 上报周期: 2017-02-20 10:55,	; 峰值内存占用率, GUI is 76.82,	Expected is 76.82.
+Info: Start to check ME row: 10
+Info: Now in page 1.
+Step 219, Passed: 上报周期: 2017-02-20 10:50,	; 总物理内存, GUI is 32095,	Expected is 32095.
+Step 220, Passed: 上报周期: 2017-02-20 10:50,	; 处理器平均负荷, GUI is 0.06,	Expected is 0.06.
+Step 221, Passed: 上报周期: 2017-02-20 10:50,	; 处理器峰值负荷, GUI is 0.07,	Expected is 0.07.
+Step 222, Passed: 上报周期: 2017-02-20 10:50,	; 内存占用率, GUI is 76.82,	Expected is 76.82.
+Step 223, Passed: 上报周期: 2017-02-20 10:50,	; 峰值内存占用率, GUI is 76.82,	Expected is 76.82.
+Info: Start to check ME row: 11
+Info: Now in page 2.
+Step 224, Passed: 上报周期: 2017-02-20 10:45,	; 总物理内存, GUI is 32095,	Expected is 32095.
+Step 225, Passed: 上报周期: 2017-02-20 10:45,	; 处理器平均负荷, GUI is 0.06,	Expected is 0.06.
+Step 226, Passed: 上报周期: 2017-02-20 10:45,	; 处理器峰值负荷, GUI is 0.07,	Expected is 0.07.
+Step 227, Passed: 上报周期: 2017-02-20 10:45,	; 内存占用率, GUI is 76.82,	Expected is 76.82.
+Step 228, Passed: 上报周期: 2017-02-20 10:45,	; 峰值内存占用率, GUI is 76.82,	Expected is 76.82.
+Info: Start to check ME row: 12
+Info: Now in page 2.
+Step 229, Passed: 上报周期: 2017-02-20 10:40,	; 总物理内存, GUI is 32095,	Expected is 32095.
+Step 230, Passed: 上报周期: 2017-02-20 10:40,	; 处理器平均负荷, GUI is 0.06,	Expected is 0.06.
+Step 231, Passed: 上报周期: 2017-02-20 10:40,	; 处理器峰值负荷, GUI is 0.07,	Expected is 0.07.
+Step 232, Passed: 上报周期: 2017-02-20 10:40,	; 内存占用率, GUI is 76.82,	Expected is 76.82.
+Step 233, Passed: 上报周期: 2017-02-20 10:40,	; 峰值内存占用率, GUI is 76.82,	Expected is 76.82.
+Step 234, Passed: Row 0 GUI time is correct, is: 2017-02-20 11:35
+Step 235, Passed: Report delta time is 5 minutes.
+Step 236, Passed: Row 1 GUI time is correct, is: 2017-02-20 11:30
+Step 237, Passed: Report delta time is 5 minutes.
+Step 238, Passed: Row 2 GUI time is correct, is: 2017-02-20 11:25
+Step 239, Passed: Report delta time is 5 minutes.
+Step 240, Passed: Row 3 GUI time is correct, is: 2017-02-20 11:20
+Step 241, Passed: Report delta time is 5 minutes.
+Step 242, Passed: Row 4 GUI time is correct, is: 2017-02-20 11:15
+Step 243, Passed: Report delta time is 5 minutes.
+Step 244, Passed: Row 5 GUI time is correct, is: 2017-02-20 11:10
+Step 245, Passed: Report delta time is 5 minutes.
+Step 246, Passed: Row 6 GUI time is correct, is: 2017-02-20 11:05
+Step 247, Passed: Report delta time is 5 minutes.
+Step 248, Passed: Row 7 GUI time is correct, is: 2017-02-20 11:00
+Step 249, Passed: Report delta time is 5 minutes.
+Step 250, Passed: Row 8 GUI time is correct, is: 2017-02-20 10:55
+Step 251, Passed: Report delta time is 5 minutes.
+Step 252, Passed: Row 9 GUI time is correct, is: 2017-02-20 10:50
+Step 253, Passed: Report delta time is 5 minutes.
+Step 254, Passed: Row 10 GUI time is correct, is: 2017-02-20 10:45
+Step 255, Passed: Report delta time is 5 minutes.
+Step 256, Passed: Row 11 GUI time is correct, is: 2017-02-20 10:40
+Test case: case_main_gmlc_lic_and_me. Passed. Total steps: 256, Passed steps: 256, Error steps: 0, Failed steps: 0, Warning steps: 0

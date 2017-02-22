@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PmFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PmFileFormat.xsd">
+    <FileHeader>
+        <InfoModelReferenced>SGW-PM-V1.0.0</InfoModelReferenced>
+        <DnPrefix>DC=Ericsson</DnPrefix>
+        <SenderName>DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1</SenderName>
+        <VendorName>Ericsson</VendorName>
+        <BeginTime>2017-02-07T15:45:00+08:00</BeginTime>
+        <EndTime>2017-02-07T16:00:00+08:00</EndTime>
+    </FileHeader>
+    <Measurements>
+        <ObjectType>ME</ObjectType>
+        <PmName>
+            <N i="1">Memtotal</N>
+            <N i="2">Nettotal3</N>
+            <N i="3">CpuUsageMean</N>
+            <N i="4">CpuUsagePeak</N>
+            <N i="5">MemUsageMean</N>
+            <N i="6">MemUsagePeak</N>
+            <N i="7">NetUsageMean3</N>
+            <N i="8">NetUsagePeak3</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdsgw58|SGW-9470F051C7184FB1">
+                <V i="1">0</V>
+                <V i="2">0</V>
+                <V i="3">0.00</V>
+                <V i="4">0.00</V>
+                <V i="5">0.00</V>
+                <V i="6">0.00</V>
+                <V i="7">0.00</V>
+                <V i="8">0.00</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+    <Measurements>
+        <ObjectType>L</ObjectType>
+        <PmName>
+            <N i="1">J1</N>
+            <N i="2">J2</N>
+            <N i="3">J3</N>
+            <N i="4">J4</N>
+            <N i="5">K1</N>
+            <N i="6">K2</N>
+            <N i="7">K3</N>
+            <N i="8">K4</N>
+            <N i="9">L1</N>
+            <N i="10">L2</N>
+            <N i="11">L3</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=NodeIdsgw58|SGW-9470F051C7184FB1,L=LicIdsgw58">
+                <V i="1">4294967260</V>
+                <V i="2">4294967224</V>
+                <V i="3">4294967188</V>
+                <V i="4">4294967152</V>
+                <V i="5">4294967116</V>
+                <V i="6">4294967080</V>
+                <V i="7">4294967044</V>
+                <V i="8">4294967008</V>
+                <V i="9">4294966972</V>
+                <V i="10">4294966936</V>
+                <V i="11">4294966900</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+</PmFile>

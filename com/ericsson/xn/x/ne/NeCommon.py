@@ -12,7 +12,7 @@ from com.ericsson.xn.commons.funcutils import find_single_widget, find_all_widge
     is_pair_nes
 from com.ericsson.xn.commons import test_logger as test
 from com.ericsson.xn.x.fm.FmCommons import FmCommon
-
+from selenium.common.exceptions import TimeoutException
 
 def to_ne_management_page(driver, logger):
     logger.info('To the NeManagement page...')
@@ -61,7 +61,11 @@ def check_and_add_ne(driver, dict_ne_info):
 def refresh_ne_management_page(driver):
     driver.refresh()
     # check page loaded
-    find_single_widget(driver, 10, (By.ID, "idBtn-create"))
+    try:
+        find_single_widget(driver, 10, (By.ID, "idBtn-create"))
+    except TimeoutException:
+        time.sleep(5)
+        refresh_ne_management_page(driver)
 
 
 def add_new_ne(driver, dict_ne_info):
@@ -191,6 +195,15 @@ def add_new_ne(driver, dict_ne_info):
             w_alarm_path = find_single_widget(driver, 10, id_alarm_path)
             w_alarm_path.clear()
             w_alarm_path.send_keys(dict_ne_info["alarm_path"])
+
+        elif dict_ne_info["ne_type"] in ("SGW","PGW"):
+            w_sftp_user = find_single_widget(driver,10,id_sftp_user)
+            w_sftp_user.clear()
+            w_sftp_user.send_keys(dict_ne_info["sftp_user"])
+
+            w_sftp_password = find_single_widget(driver,10,id_sftp_password)
+            w_sftp_password.clear()
+            w_sftp_password.send_keys(dict_ne_info["sftp_password"])
 
     id_submit_btn = (By.ID, "idBtn-save")
     find_single_widget(driver, 10, id_submit_btn).click()

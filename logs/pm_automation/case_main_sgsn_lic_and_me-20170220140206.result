@@ -1,0 +1,20 @@
+Test case: case_main_sgsn_lic_and_me started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Info: Web page: https://10.184.73.77:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: NE not exist, add a new one
+Info: There is no duplicated NEs.
+Info: Successfully added an NE: SGSN-D831BC462A12F3E4
+Info: NE:SGSN-D831BC462A12F3E4 added successfully
+Info: Will Navigate to the PMManagement page...
+Info: Base URL is: https://10.184.73.77:8686/XOAM/src/index.html
+Info: To URL: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/pm-management/pm-3g/pm-sgsn
+Step 1, Passed: Found the query button of PM Management page, check passed.
+Step 2, Passed: Successfully found the counters data.
+Info: Query end time point set to: 134600
+Info: Query start time point set to: 124600

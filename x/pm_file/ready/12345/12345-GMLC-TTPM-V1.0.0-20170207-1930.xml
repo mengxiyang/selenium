@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PmFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PmFileFormat.xsd">
+    <FileHeader>
+        <InfoModelReferenced>GMLC-PM-V1.0.0</InfoModelReferenced>
+        <DnPrefix>DC=Ericsson</DnPrefix>
+        <SenderName>DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1</SenderName>
+        <VendorName>Ericsson</VendorName>
+        <BeginTime>2017-02-07T19:30:00+08:00</BeginTime>
+        <EndTime>2017-02-07T19:45:00+08:00</EndTime>
+    </FileHeader>
+    <Measurements>
+        <ObjectType>ME</ObjectType>
+        <PmName>
+            <N i="1">Memtotal</N>
+            <N i="2">CpuUsageMean</N>
+            <N i="3">CpuUsagePeak</N>
+            <N i="4">MemUsageMean</N>
+            <N i="5">MemUsagePeak</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC-D98BF42C300413C6">
+                <V i="1">32095</V>
+                <V i="2">0.02</V>
+                <V i="3">0.07</V>
+                <V i="4">25.61</V>
+                <V i="5">76.82</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+    <Measurements>
+        <ObjectType>L</ObjectType>
+        <PmName>
+            <N i="1">A1</N>
+            <N i="2">A2</N>
+            <N i="3">A3</N>
+            <N i="4">A4</N>
+            <N i="5">A9</N>
+            <N i="6">A11</N>
+            <N i="7">A12</N>
+            <N i="8">A13</N>
+            <N i="9">A18</N>
+            <N i="10">A20</N>
+            <N i="11">A21</N>
+            <N i="12">A22</N>
+            <N i="13">A5</N>
+            <N i="14">A6</N>
+            <N i="15">A7</N>
+            <N i="16">A8</N>
+            <N i="17">A10</N>
+            <N i="18">A14</N>
+            <N i="19">A15</N>
+            <N i="20">A16</N>
+            <N i="21">A17</N>
+            <N i="22">A19</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=12345|GMLC-D98BF42C300413C6,L=id003">
+                <V i="1">0</V>
+                <V i="2">0</V>
+                <V i="3">0</V>
+                <V i="4">0</V>
+                <V i="5">0</V>
+                <V i="6">0</V>
+                <V i="7">7</V>
+                <V i="8">8</V>
+                <V i="9">9</V>
+                <V i="10">0</V>
+                <V i="11">0</V>
+                <V i="12">0</V>
+                <V i="13"></V>
+                <V i="14"></V>
+                <V i="15"></V>
+                <V i="16"></V>
+                <V i="17"></V>
+                <V i="18"></V>
+                <V i="19"></V>
+                <V i="20"></V>
+                <V i="21"></V>
+                <V i="22"></V>
+            </Pm>
+        </PmData>
+    </Measurements>
+</PmFile>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PmFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PmFileFormat.xsd">
+    <FileHeader>
+        <InfoModelReferenced>HSS-PM-V1.0.0</InfoModelReferenced>
+        <DnPrefix>DC=Ericsson</DnPrefix>
+        <SenderName>DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1</SenderName>
+        <VendorName>Ericsson</VendorName>
+        <BeginTime>2017-02-07T16:45:00+08:00</BeginTime>
+        <EndTime>2017-02-07T17:00:00+08:00</EndTime>
+    </FileHeader>
+    <Measurements>
+        <ObjectType>ME</ObjectType>
+        <PmName>
+            <N i="1">Memtotal</N>
+            <N i="2">CpuUsageMean</N>
+            <N i="3">CpuUsagePeak</N>
+            <N i="4">MemUsageMean</N>
+            <N i="5">MemUsagePeak</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702">
+                <V i="1">3832</V>
+                <V i="2">0.50</V>
+                <V i="3">0.91</V>
+                <V i="4">0.52</V>
+                <V i="5">0.93</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+    <Measurements>
+        <ObjectType>L</ObjectType>
+        <PmName>
+            <N i="1">F1</N>
+            <N i="2">F2</N>
+            <N i="3">F3</N>
+            <N i="4">F4</N>
+            <N i="5">G1</N>
+            <N i="6">G2</N>
+            <N i="7">G3</N>
+            <N i="8">G4</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_1">
+                <V i="1">3330</V>
+                <V i="2">3333</V>
+                <V i="3">3336</V>
+                <V i="4">3339</V>
+                <V i="5">3342</V>
+                <V i="6">3345</V>
+                <V i="7">3348</V>
+                <V i="8">3351</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_10">
+                <V i="1">600</V>
+                <V i="2">603</V>
+                <V i="3">606</V>
+                <V i="4">609</V>
+                <V i="5">612</V>
+                <V i="6">615</V>
+                <V i="7">618</V>
+                <V i="8">621</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_11">
+                <V i="1">630</V>
+                <V i="2">633</V>
+                <V i="3">636</V>
+                <V i="4">639</V>
+                <V i="5">642</V>
+                <V i="6">645</V>
+                <V i="7">648</V>
+                <V i="8">651</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_12">
+                <V i="1">660</V>
+                <V i="2">663</V>
+                <V i="3">666</V>
+                <V i="4">669</V>
+                <V i="5">672</V>
+                <V i="6">675</V>
+                <V i="7">678</V>
+                <V i="8">681</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_13">
+                <V i="1">690</V>
+                <V i="2">693</V>
+                <V i="3">696</V>
+                <V i="4">699</V>
+                <V i="5">702</V>
+                <V i="6">705</V>
+                <V i="7">708</V>
+                <V i="8">711</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_14">
+                <V i="1">720</V>
+                <V i="2">723</V>
+                <V i="3">726</V>
+                <V i="4">729</V>
+                <V i="5">732</V>
+                <V i="6">735</V>
+                <V i="7">738</V>
+                <V i="8">741</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_15">
+                <V i="1">750</V>
+                <V i="2">753</V>
+                <V i="3">756</V>
+                <V i="4">759</V>
+                <V i="5">762</V>
+                <V i="6">765</V>
+                <V i="7">768</V>
+                <V i="8">771</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_16">
+                <V i="1">780</V>
+                <V i="2">783</V>
+                <V i="3">786</V>
+                <V i="4">789</V>
+                <V i="5">792</V>
+                <V i="6">795</V>
+                <V i="7">798</V>
+                <V i="8">801</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_17">
+                <V i="1">810</V>
+                <V i="2">813</V>
+                <V i="3">816</V>
+                <V i="4">819</V>
+                <V i="5">822</V>
+                <V i="6">825</V>
+                <V i="7">828</V>
+                <V i="8">831</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_18">
+                <V i="1">840</V>
+                <V i="2">843</V>
+                <V i="3">846</V>
+                <V i="4">849</V>
+                <V i="5">852</V>
+                <V i="6">855</V>
+                <V i="7">858</V>
+                <V i="8">861</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_19">
+                <V i="1">870</V>
+                <V i="2">873</V>
+                <V i="3">876</V>
+                <V i="4">879</V>
+                <V i="5">882</V>
+                <V i="6">885</V>
+                <V i="7">888</V>
+                <V i="8">891</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_2">
+                <V i="1">3360</V>
+                <V i="2">3363</V>
+                <V i="3">3366</V>
+                <V i="4">3369</V>
+                <V i="5">3372</V>
+                <V i="6">3375</V>
+                <V i="7">3378</V>
+                <V i="8">3381</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_20">
+                <V i="1">900</V>
+                <V i="2">903</V>
+                <V i="3">906</V>
+                <V i="4">909</V>
+                <V i="5">912</V>
+                <V i="6">915</V>
+                <V i="7">918</V>
+                <V i="8">921</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_21">
+                <V i="1">930</V>
+                <V i="2">933</V>
+                <V i="3">936</V>
+                <V i="4">939</V>
+                <V i="5">942</V>
+                <V i="6">945</V>
+                <V i="7">948</V>
+                <V i="8">951</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_22">
+                <V i="1">960</V>
+                <V i="2">963</V>
+                <V i="3">966</V>
+                <V i="4">969</V>
+                <V i="5">972</V>
+                <V i="6">975</V>
+                <V i="7">978</V>
+                <V i="8">981</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_23">
+                <V i="1">990</V>
+                <V i="2">993</V>
+                <V i="3">996</V>
+                <V i="4">999</V>
+                <V i="5">1002</V>
+                <V i="6">1005</V>
+                <V i="7">1008</V>
+                <V i="8">1011</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_24">
+                <V i="1">1020</V>
+                <V i="2">1023</V>
+                <V i="3">1026</V>
+                <V i="4">1029</V>
+                <V i="5">1032</V>
+                <V i="6">1035</V>
+                <V i="7">1038</V>
+                <V i="8">1041</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_25">
+                <V i="1">1050</V>
+                <V i="2">1053</V>
+                <V i="3">1056</V>
+                <V i="4">1059</V>
+                <V i="5">1062</V>
+                <V i="6">1065</V>
+                <V i="7">1068</V>
+                <V i="8">1071</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_26">
+                <V i="1">1080</V>
+                <V i="2">1083</V>
+                <V i="3">1086</V>
+                <V i="4">1089</V>
+                <V i="5">1092</V>
+                <V i="6">1095</V>
+                <V i="7">1098</V>
+                <V i="8">1101</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_27">
+                <V i="1">1110</V>
+                <V i="2">1113</V>
+                <V i="3">1116</V>
+                <V i="4">1119</V>
+                <V i="5">1122</V>
+                <V i="6">1125</V>
+                <V i="7">1128</V>
+                <V i="8">1131</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_28">
+                <V i="1">1140</V>
+                <V i="2">1143</V>
+                <V i="3">1146</V>
+                <V i="4">1149</V>
+                <V i="5">1152</V>
+                <V i="6">1155</V>
+                <V i="7">1158</V>
+                <V i="8">1161</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_29">
+                <V i="1">1170</V>
+                <V i="2">1173</V>
+                <V i="3">1176</V>
+                <V i="4">1179</V>
+                <V i="5">1182</V>
+                <V i="6">1185</V>
+                <V i="7">1188</V>
+                <V i="8">1191</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_3">
+                <V i="1">3390</V>
+                <V i="2">3393</V>
+                <V i="3">3396</V>
+                <V i="4">3399</V>
+                <V i="5">3402</V>
+                <V i="6">3405</V>
+                <V i="7">3408</V>
+                <V i="8">3411</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_30">
+                <V i="1">1200</V>
+                <V i="2">1203</V>
+                <V i="3">1206</V>
+                <V i="4">1209</V>
+                <V i="5">1212</V>
+                <V i="6">1215</V>
+                <V i="7">1218</V>
+                <V i="8">1221</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_31">
+                <V i="1">1230</V>
+                <V i="2">1233</V>
+                <V i="3">1236</V>
+                <V i="4">1239</V>
+                <V i="5">1242</V>
+                <V i="6">1245</V>
+                <V i="7">1248</V>
+                <V i="8">1251</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_32">
+                <V i="1">1260</V>
+                <V i="2">1263</V>
+                <V i="3">1266</V>
+                <V i="4">1269</V>
+                <V i="5">1272</V>
+                <V i="6">1275</V>
+                <V i="7">1278</V>
+                <V i="8">1281</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_4">
+                <V i="1">3420</V>
+                <V i="2">3423</V>
+                <V i="3">3426</V>
+                <V i="4">3429</V>
+                <V i="5">3432</V>
+                <V i="6">3435</V>
+                <V i="7">3438</V>
+                <V i="8">3441</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_5">
+                <V i="1">450</V>
+                <V i="2">453</V>
+                <V i="3">456</V>
+                <V i="4">459</V>
+                <V i="5">462</V>
+                <V i="6">465</V>
+                <V i="7">468</V>
+                <V i="8">471</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_6">
+                <V i="1">480</V>
+                <V i="2">483</V>
+                <V i="3">486</V>
+                <V i="4">489</V>
+                <V i="5">492</V>
+                <V i="6">495</V>
+                <V i="7">498</V>
+                <V i="8">501</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_7">
+                <V i="1">510</V>
+                <V i="2">513</V>
+                <V i="3">516</V>
+                <V i="4">519</V>
+                <V i="5">522</V>
+                <V i="6">525</V>
+                <V i="7">528</V>
+                <V i="8">531</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_8">
+                <V i="1">540</V>
+                <V i="2">543</V>
+                <V i="3">546</V>
+                <V i="4">549</V>
+                <V i="5">552</V>
+                <V i="6">555</V>
+                <V i="7">558</V>
+                <V i="8">561</V>
+            </Pm>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=HSS_IMS|IMSHSS-6971F8071E559702,L=LIC_LTE_9">
+                <V i="1">570</V>
+                <V i="2">573</V>
+                <V i="3">576</V>
+                <V i="4">579</V>
+                <V i="5">582</V>
+                <V i="6">585</V>
+                <V i="7">588</V>
+                <V i="8">591</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+</PmFile>

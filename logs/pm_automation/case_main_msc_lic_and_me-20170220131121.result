@@ -1,0 +1,940 @@
+Test case: case_main_msc_lic_and_me started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Info: Web page: https://10.184.73.77:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: NE not exist, add a new one
+Info: There is no duplicated NEs.
+Info: Successfully added an NE: MSC-F55D166799C09D1A
+Info: NE:MSC-F55D166799C09D1A added successfully
+Info: Will Navigate to the PMManagement page...
+Info: Base URL is: https://10.184.73.77:8686/XOAM/src/index.html
+Info: To URL: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/pm-management/pm-3g/pm-msc
+Step 1, Passed: Found the query button of PM Management page, check passed.
+Step 2, Passed: Successfully found the counters data.
+Info: Query end time point set to: 125600
+Info: Query start time point set to: 115600
+Step 3, Passed: All the data that we need are ready now.
+Info: Start to check row: 1
+Info: Now in page 1.
+Step 4, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1接收消息数, GUI is 1201,	Expected is 1201.
+Step 5, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1发送消息数, GUI is 1202,	Expected is 1202.
+Step 6, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1接口接收连接请求命令数, GUI is 1203,	Expected is 1203.
+Step 7, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1接口接收释放命令数, GUI is 1204,	Expected is 1204.
+Step 8, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1设定用户号码命令数, GUI is 1205,	Expected is 1205.
+Step 9, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1修改用户号码命令数, GUI is 1206,	Expected is 1206.
+Step 10, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1删除用户号码命令数, GUI is 1207,	Expected is 1207.
+Step 11, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1号码用户状态查询命令数, GUI is 1208,	Expected is 1208.
+Step 12, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1用户号码列示命令数, GUI is 1209,	Expected is 1209.
+Step 13, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1号码属性查询命令数, GUI is 1210,	Expected is 1210.
+Step 14, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1网元时间查询命令数, GUI is 1211,	Expected is 1211.
+Step 15, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1连接请求应答数, GUI is 1212,	Expected is 1212.
+Step 16, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1连接网元发起释放数, GUI is 1213,	Expected is 1213.
+Step 17, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1用户号码激活响应数, GUI is 1214,	Expected is 1214.
+Step 18, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1用户号码修改响应数, GUI is 1215,	Expected is 1215.
+Step 19, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1号码撤销响应数, GUI is 1216,	Expected is 1216.
+Step 20, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1号码用户状态查询响应数, GUI is 1217,	Expected is 1217.
+Step 21, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1用户号码列示响应数, GUI is 1218,	Expected is 1218.
+Step 22, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1号码属性查询响应数, GUI is 1219,	Expected is 1219.
+Step 23, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1网元时间查询响应数, GUI is 1220,	Expected is 1220.
+Step 24, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1接收消息流量(KB), GUI is 1221,	Expected is 1221.
+Step 25, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X1发送消息流量(KB), GUI is 1222,	Expected is 1222.
+Step 26, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2发送连接请求次数, GUI is 1223,	Expected is 1223.
+Step 27, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2发送连接请求成功次数, GUI is 1224,	Expected is 1224.
+Step 28, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2接收连接响应次数, GUI is 1225,	Expected is 1225.
+Step 29, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2接收连接响应成功次数, GUI is 1226,	Expected is 1226.
+Step 30, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2发送连接释放次数, GUI is 1227,	Expected is 1227.
+Step 31, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2发送连接释放成功次数, GUI is 1228,	Expected is 1228.
+Step 32, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2接收连接释放次数, GUI is 1229,	Expected is 1229.
+Step 33, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2发送给LIC告警次数, GUI is 1230,	Expected is 1230.
+Step 34, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2发送活动事件次数, GUI is 1231,	Expected is 1231.
+Step 35, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2发送活动事件成功次数, GUI is 1232,	Expected is 1232.
+Step 36, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2心跳事件计数, GUI is 1233,	Expected is 1233.
+Step 37, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2开机事件计数, GUI is 1234,	Expected is 1234.
+Step 38, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2关机事件计数, GUI is 1235,	Expected is 1235.
+Step 39, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2位置更新事件计数, GUI is 1236,	Expected is 1236.
+Step 40, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2发送短消息事件计数, GUI is 1237,	Expected is 1237.
+Step 41, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2接收短消息事件计数, GUI is 1238,	Expected is 1238.
+Step 42, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2补充业务报告事件计数, GUI is 1239,	Expected is 1239.
+Step 43, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2补充业务操作事件计数, GUI is 1240,	Expected is 1240.
+Step 44, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2呼叫开始事件计数, GUI is 1241,	Expected is 1241.
+Step 45, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2通道建立事件计数, GUI is 1242,	Expected is 1242.
+Step 46, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2呼叫振铃事件计数, GUI is 1243,	Expected is 1243.
+Step 47, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2呼叫应答事件计数, GUI is 1244,	Expected is 1244.
+Step 48, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2通道关闭事件计数, GUI is 1245,	Expected is 1245.
+Step 49, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2通话结束事件计数, GUI is 1246,	Expected is 1246.
+Step 50, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2 DTMF事件计数, GUI is 1247,	Expected is 1247.
+Step 51, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2切换事件计数, GUI is 1248,	Expected is 1248.
+Step 52, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2发送流量数(KB), GUI is 1249,	Expected is 1249.
+Step 53, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; X2接收流量数(KB), GUI is 1250,	Expected is 1250.
+Step 54, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; 呼叫次数, GUI is 1251,	Expected is 1251.
+Step 55, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; 用户忙次数, GUI is 1252,	Expected is 1252.
+Step 56, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; 无效地址次数, GUI is 1253,	Expected is 1253.
+Step 57, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; 被叫方无响应次数, GUI is 1254,	Expected is 1254.
+Step 58, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; 网元内部故障次数, GUI is 1255,	Expected is 1255.
+Step 59, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; 应答次数, GUI is 1256,	Expected is 1256.
+Step 60, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; 应答话务量, GUI is 1257,	Expected is 1257.
+Step 61, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; 平均占用时长, GUI is 1258,	Expected is 1258.
+Step 62, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; 应答率, GUI is 0.93,	Expected is 0.93.
+Step 63, Passed: 上报周期: 2017-02-20 12:55,	LIC标识: LIC11; 流量统计, GUI is 0,	Expected is 0.
+Info: Start to check row: 2
+Info: Now in page 1.
+Step 64, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1接收消息数, GUI is 0,	Expected is 0.
+Step 65, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1发送消息数, GUI is 1102,	Expected is 1102.
+Step 66, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1接口接收连接请求命令数, GUI is 1103,	Expected is 1103.
+Step 67, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1接口接收释放命令数, GUI is 1104,	Expected is 1104.
+Step 68, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1设定用户号码命令数, GUI is 1105,	Expected is 1105.
+Step 69, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1修改用户号码命令数, GUI is 1106,	Expected is 1106.
+Step 70, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1删除用户号码命令数, GUI is 1107,	Expected is 1107.
+Step 71, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1号码用户状态查询命令数, GUI is 1108,	Expected is 1108.
+Step 72, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1用户号码列示命令数, GUI is 1109,	Expected is 1109.
+Step 73, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1号码属性查询命令数, GUI is 1110,	Expected is 1110.
+Step 74, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1网元时间查询命令数, GUI is 1111,	Expected is 1111.
+Step 75, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1连接请求应答数, GUI is 1112,	Expected is 1112.
+Step 76, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1连接网元发起释放数, GUI is 1113,	Expected is 1113.
+Step 77, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1用户号码激活响应数, GUI is 1114,	Expected is 1114.
+Step 78, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1用户号码修改响应数, GUI is 1115,	Expected is 1115.
+Step 79, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1号码撤销响应数, GUI is 1116,	Expected is 1116.
+Step 80, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1号码用户状态查询响应数, GUI is 1117,	Expected is 1117.
+Step 81, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1用户号码列示响应数, GUI is 1118,	Expected is 1118.
+Step 82, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1号码属性查询响应数, GUI is 1119,	Expected is 1119.
+Step 83, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1网元时间查询响应数, GUI is 1120,	Expected is 1120.
+Step 84, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1接收消息流量(KB), GUI is 1121,	Expected is 1121.
+Step 85, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X1发送消息流量(KB), GUI is 1122,	Expected is 1122.
+Step 86, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2发送连接请求次数, GUI is 1123,	Expected is 1123.
+Step 87, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2发送连接请求成功次数, GUI is 1124,	Expected is 1124.
+Step 88, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2接收连接响应次数, GUI is 1125,	Expected is 1125.
+Step 89, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2接收连接响应成功次数, GUI is 1126,	Expected is 1126.
+Step 90, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2发送连接释放次数, GUI is 1127,	Expected is 1127.
+Step 91, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2发送连接释放成功次数, GUI is 1128,	Expected is 1128.
+Step 92, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2接收连接释放次数, GUI is 1129,	Expected is 1129.
+Step 93, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2发送给LIC告警次数, GUI is 1130,	Expected is 1130.
+Step 94, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2发送活动事件次数, GUI is 1131,	Expected is 1131.
+Step 95, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2发送活动事件成功次数, GUI is 1132,	Expected is 1132.
+Step 96, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2心跳事件计数, GUI is 1133,	Expected is 1133.
+Step 97, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2开机事件计数, GUI is 1134,	Expected is 1134.
+Step 98, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2关机事件计数, GUI is 1135,	Expected is 1135.
+Step 99, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2位置更新事件计数, GUI is 1136,	Expected is 1136.
+Step 100, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2发送短消息事件计数, GUI is 1137,	Expected is 1137.
+Step 101, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2接收短消息事件计数, GUI is 1138,	Expected is 1138.
+Step 102, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2补充业务报告事件计数, GUI is 1139,	Expected is 1139.
+Step 103, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2补充业务操作事件计数, GUI is 1140,	Expected is 1140.
+Step 104, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2呼叫开始事件计数, GUI is 1141,	Expected is 1141.
+Step 105, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2通道建立事件计数, GUI is 1142,	Expected is 1142.
+Step 106, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2呼叫振铃事件计数, GUI is 1143,	Expected is 1143.
+Step 107, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2呼叫应答事件计数, GUI is 1144,	Expected is 1144.
+Step 108, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2通道关闭事件计数, GUI is 1145,	Expected is 1145.
+Step 109, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2通话结束事件计数, GUI is 1146,	Expected is 1146.
+Step 110, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2 DTMF事件计数, GUI is 1147,	Expected is 1147.
+Step 111, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2切换事件计数, GUI is 1148,	Expected is 1148.
+Step 112, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2发送流量数(KB), GUI is 1149,	Expected is 1149.
+Step 113, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; X2接收流量数(KB), GUI is 1150,	Expected is 1150.
+Step 114, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; 呼叫次数, GUI is 1151,	Expected is 1151.
+Step 115, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; 用户忙次数, GUI is 1152,	Expected is 1152.
+Step 116, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; 无效地址次数, GUI is 1153,	Expected is 1153.
+Step 117, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; 被叫方无响应次数, GUI is 1154,	Expected is 1154.
+Step 118, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; 网元内部故障次数, GUI is 1155,	Expected is 1155.
+Step 119, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; 应答次数, GUI is 1156,	Expected is 1156.
+Step 120, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; 应答话务量, GUI is 1157,	Expected is 1157.
+Step 121, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; 平均占用时长, GUI is 1158,	Expected is 1158.
+Step 122, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; 应答率, GUI is 0.92,	Expected is 0.92.
+Step 123, Passed: 上报周期: 2017-02-20 12:50,	LIC标识: LIC11; 流量统计, GUI is 0,	Expected is 0.
+Info: Start to check row: 3
+Info: Now in page 1.
+Step 124, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1接收消息数, GUI is 0,	Expected is 0.
+Step 125, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1发送消息数, GUI is 1002,	Expected is 1002.
+Step 126, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1接口接收连接请求命令数, GUI is 1003,	Expected is 1003.
+Step 127, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1接口接收释放命令数, GUI is 1004,	Expected is 1004.
+Step 128, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1设定用户号码命令数, GUI is 1005,	Expected is 1005.
+Step 129, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1修改用户号码命令数, GUI is 1006,	Expected is 1006.
+Step 130, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1删除用户号码命令数, GUI is 1007,	Expected is 1007.
+Step 131, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1号码用户状态查询命令数, GUI is 1008,	Expected is 1008.
+Step 132, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1用户号码列示命令数, GUI is 1009,	Expected is 1009.
+Step 133, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1号码属性查询命令数, GUI is 1010,	Expected is 1010.
+Step 134, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1网元时间查询命令数, GUI is 1011,	Expected is 1011.
+Step 135, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1连接请求应答数, GUI is 1012,	Expected is 1012.
+Step 136, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1连接网元发起释放数, GUI is 1013,	Expected is 1013.
+Step 137, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1用户号码激活响应数, GUI is 1014,	Expected is 1014.
+Step 138, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1用户号码修改响应数, GUI is 1015,	Expected is 1015.
+Step 139, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1号码撤销响应数, GUI is 1016,	Expected is 1016.
+Step 140, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1号码用户状态查询响应数, GUI is 1017,	Expected is 1017.
+Step 141, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1用户号码列示响应数, GUI is 1018,	Expected is 1018.
+Step 142, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1号码属性查询响应数, GUI is 1019,	Expected is 1019.
+Step 143, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1网元时间查询响应数, GUI is 1020,	Expected is 1020.
+Step 144, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1接收消息流量(KB), GUI is 1021,	Expected is 1021.
+Step 145, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X1发送消息流量(KB), GUI is 1022,	Expected is 1022.
+Step 146, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2发送连接请求次数, GUI is 1023,	Expected is 1023.
+Step 147, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2发送连接请求成功次数, GUI is 1024,	Expected is 1024.
+Step 148, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2接收连接响应次数, GUI is 1025,	Expected is 1025.
+Step 149, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2接收连接响应成功次数, GUI is 1026,	Expected is 1026.
+Step 150, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2发送连接释放次数, GUI is 1027,	Expected is 1027.
+Step 151, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2发送连接释放成功次数, GUI is 1028,	Expected is 1028.
+Step 152, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2接收连接释放次数, GUI is 1029,	Expected is 1029.
+Step 153, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2发送给LIC告警次数, GUI is 1030,	Expected is 1030.
+Step 154, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2发送活动事件次数, GUI is 1031,	Expected is 1031.
+Step 155, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2发送活动事件成功次数, GUI is 1032,	Expected is 1032.
+Step 156, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2心跳事件计数, GUI is 1033,	Expected is 1033.
+Step 157, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2开机事件计数, GUI is 1034,	Expected is 1034.
+Step 158, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2关机事件计数, GUI is 1035,	Expected is 1035.
+Step 159, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2位置更新事件计数, GUI is 1036,	Expected is 1036.
+Step 160, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2发送短消息事件计数, GUI is 1037,	Expected is 1037.
+Step 161, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2接收短消息事件计数, GUI is 1038,	Expected is 1038.
+Step 162, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2补充业务报告事件计数, GUI is 1039,	Expected is 1039.
+Step 163, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2补充业务操作事件计数, GUI is 1040,	Expected is 1040.
+Step 164, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2呼叫开始事件计数, GUI is 1041,	Expected is 1041.
+Step 165, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2通道建立事件计数, GUI is 1042,	Expected is 1042.
+Step 166, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2呼叫振铃事件计数, GUI is 1043,	Expected is 1043.
+Step 167, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2呼叫应答事件计数, GUI is 1044,	Expected is 1044.
+Step 168, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2通道关闭事件计数, GUI is 1045,	Expected is 1045.
+Step 169, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2通话结束事件计数, GUI is 1046,	Expected is 1046.
+Step 170, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2 DTMF事件计数, GUI is 1047,	Expected is 1047.
+Step 171, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2切换事件计数, GUI is 1048,	Expected is 1048.
+Step 172, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2发送流量数(KB), GUI is 1049,	Expected is 1049.
+Step 173, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; X2接收流量数(KB), GUI is 1050,	Expected is 1050.
+Step 174, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; 呼叫次数, GUI is 1051,	Expected is 1051.
+Step 175, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; 用户忙次数, GUI is 1052,	Expected is 1052.
+Step 176, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; 无效地址次数, GUI is 1053,	Expected is 1053.
+Step 177, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; 被叫方无响应次数, GUI is 1054,	Expected is 1054.
+Step 178, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; 网元内部故障次数, GUI is 1055,	Expected is 1055.
+Step 179, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; 应答次数, GUI is 1056,	Expected is 1056.
+Step 180, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; 应答话务量, GUI is 1057,	Expected is 1057.
+Step 181, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; 平均占用时长, GUI is 1058,	Expected is 1058.
+Step 182, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; 应答率, GUI is 0.91,	Expected is 0.91.
+Step 183, Passed: 上报周期: 2017-02-20 12:45,	LIC标识: LIC11; 流量统计, GUI is 0,	Expected is 0.
+Info: Start to check row: 4
+Info: Now in page 1.
+Step 184, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1接收消息数, GUI is 901,	Expected is 901.
+Step 185, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1发送消息数, GUI is 902,	Expected is 902.
+Step 186, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1接口接收连接请求命令数, GUI is 903,	Expected is 903.
+Step 187, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1接口接收释放命令数, GUI is 904,	Expected is 904.
+Step 188, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1设定用户号码命令数, GUI is 905,	Expected is 905.
+Step 189, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1修改用户号码命令数, GUI is 906,	Expected is 906.
+Step 190, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1删除用户号码命令数, GUI is 907,	Expected is 907.
+Step 191, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1号码用户状态查询命令数, GUI is 908,	Expected is 908.
+Step 192, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1用户号码列示命令数, GUI is 909,	Expected is 909.
+Step 193, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1号码属性查询命令数, GUI is 910,	Expected is 910.
+Step 194, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1网元时间查询命令数, GUI is 911,	Expected is 911.
+Step 195, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1连接请求应答数, GUI is 912,	Expected is 912.
+Step 196, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1连接网元发起释放数, GUI is 913,	Expected is 913.
+Step 197, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1用户号码激活响应数, GUI is 914,	Expected is 914.
+Step 198, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1用户号码修改响应数, GUI is 915,	Expected is 915.
+Step 199, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1号码撤销响应数, GUI is 916,	Expected is 916.
+Step 200, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1号码用户状态查询响应数, GUI is 917,	Expected is 917.
+Step 201, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1用户号码列示响应数, GUI is 918,	Expected is 918.
+Step 202, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1号码属性查询响应数, GUI is 919,	Expected is 919.
+Step 203, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1网元时间查询响应数, GUI is 920,	Expected is 920.
+Step 204, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1接收消息流量(KB), GUI is 921,	Expected is 921.
+Step 205, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X1发送消息流量(KB), GUI is 922,	Expected is 922.
+Step 206, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2发送连接请求次数, GUI is 923,	Expected is 923.
+Step 207, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2发送连接请求成功次数, GUI is 924,	Expected is 924.
+Step 208, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2接收连接响应次数, GUI is 925,	Expected is 925.
+Step 209, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2接收连接响应成功次数, GUI is 926,	Expected is 926.
+Step 210, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2发送连接释放次数, GUI is 927,	Expected is 927.
+Step 211, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2发送连接释放成功次数, GUI is 928,	Expected is 928.
+Step 212, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2接收连接释放次数, GUI is 929,	Expected is 929.
+Step 213, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2发送给LIC告警次数, GUI is 930,	Expected is 930.
+Step 214, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2发送活动事件次数, GUI is 931,	Expected is 931.
+Step 215, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2发送活动事件成功次数, GUI is 932,	Expected is 932.
+Step 216, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2心跳事件计数, GUI is 933,	Expected is 933.
+Step 217, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2开机事件计数, GUI is 934,	Expected is 934.
+Step 218, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2关机事件计数, GUI is 935,	Expected is 935.
+Step 219, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2位置更新事件计数, GUI is 936,	Expected is 936.
+Step 220, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2发送短消息事件计数, GUI is 937,	Expected is 937.
+Step 221, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2接收短消息事件计数, GUI is 938,	Expected is 938.
+Step 222, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2补充业务报告事件计数, GUI is 939,	Expected is 939.
+Step 223, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2补充业务操作事件计数, GUI is 940,	Expected is 940.
+Step 224, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2呼叫开始事件计数, GUI is 941,	Expected is 941.
+Step 225, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2通道建立事件计数, GUI is 942,	Expected is 942.
+Step 226, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2呼叫振铃事件计数, GUI is 943,	Expected is 943.
+Step 227, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2呼叫应答事件计数, GUI is 944,	Expected is 944.
+Step 228, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2通道关闭事件计数, GUI is 945,	Expected is 945.
+Step 229, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2通话结束事件计数, GUI is 946,	Expected is 946.
+Step 230, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2 DTMF事件计数, GUI is 947,	Expected is 947.
+Step 231, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2切换事件计数, GUI is 948,	Expected is 948.
+Step 232, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2发送流量数(KB), GUI is 949,	Expected is 949.
+Step 233, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; X2接收流量数(KB), GUI is 950,	Expected is 950.
+Step 234, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; 呼叫次数, GUI is 951,	Expected is 951.
+Step 235, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; 用户忙次数, GUI is 952,	Expected is 952.
+Step 236, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; 无效地址次数, GUI is 953,	Expected is 953.
+Step 237, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; 被叫方无响应次数, GUI is 954,	Expected is 954.
+Step 238, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; 网元内部故障次数, GUI is 955,	Expected is 955.
+Step 239, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; 应答次数, GUI is 956,	Expected is 956.
+Step 240, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; 应答话务量, GUI is 957,	Expected is 957.
+Step 241, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; 平均占用时长, GUI is 958,	Expected is 958.
+Step 242, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; 应答率, GUI is 0.9,	Expected is 0.9.
+Step 243, Passed: 上报周期: 2017-02-20 12:40,	LIC标识: LIC11; 流量统计, GUI is 0,	Expected is 0.
+Info: Start to check row: 5
+Info: Now in page 1.
+Step 244, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1接收消息数, GUI is 801,	Expected is 801.
+Step 245, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1发送消息数, GUI is 802,	Expected is 802.
+Step 246, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1接口接收连接请求命令数, GUI is 803,	Expected is 803.
+Step 247, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1接口接收释放命令数, GUI is 804,	Expected is 804.
+Step 248, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1设定用户号码命令数, GUI is 805,	Expected is 805.
+Step 249, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1修改用户号码命令数, GUI is 806,	Expected is 806.
+Step 250, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1删除用户号码命令数, GUI is 807,	Expected is 807.
+Step 251, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1号码用户状态查询命令数, GUI is 808,	Expected is 808.
+Step 252, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1用户号码列示命令数, GUI is 809,	Expected is 809.
+Step 253, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1号码属性查询命令数, GUI is 810,	Expected is 810.
+Step 254, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1网元时间查询命令数, GUI is 811,	Expected is 811.
+Step 255, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1连接请求应答数, GUI is 812,	Expected is 812.
+Step 256, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1连接网元发起释放数, GUI is 813,	Expected is 813.
+Step 257, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1用户号码激活响应数, GUI is 814,	Expected is 814.
+Step 258, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1用户号码修改响应数, GUI is 815,	Expected is 815.
+Step 259, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1号码撤销响应数, GUI is 816,	Expected is 816.
+Step 260, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1号码用户状态查询响应数, GUI is 817,	Expected is 817.
+Step 261, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1用户号码列示响应数, GUI is 818,	Expected is 818.
+Step 262, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1号码属性查询响应数, GUI is 819,	Expected is 819.
+Step 263, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1网元时间查询响应数, GUI is 820,	Expected is 820.
+Step 264, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1接收消息流量(KB), GUI is 821,	Expected is 821.
+Step 265, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X1发送消息流量(KB), GUI is 822,	Expected is 822.
+Step 266, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2发送连接请求次数, GUI is 823,	Expected is 823.
+Step 267, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2发送连接请求成功次数, GUI is 824,	Expected is 824.
+Step 268, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2接收连接响应次数, GUI is 825,	Expected is 825.
+Step 269, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2接收连接响应成功次数, GUI is 826,	Expected is 826.
+Step 270, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2发送连接释放次数, GUI is 827,	Expected is 827.
+Step 271, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2发送连接释放成功次数, GUI is 828,	Expected is 828.
+Step 272, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2接收连接释放次数, GUI is 829,	Expected is 829.
+Step 273, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2发送给LIC告警次数, GUI is 830,	Expected is 830.
+Step 274, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2发送活动事件次数, GUI is 831,	Expected is 831.
+Step 275, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2发送活动事件成功次数, GUI is 832,	Expected is 832.
+Step 276, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2心跳事件计数, GUI is 833,	Expected is 833.
+Step 277, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2开机事件计数, GUI is 834,	Expected is 834.
+Step 278, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2关机事件计数, GUI is 835,	Expected is 835.
+Step 279, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2位置更新事件计数, GUI is 836,	Expected is 836.
+Step 280, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2发送短消息事件计数, GUI is 837,	Expected is 837.
+Step 281, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2接收短消息事件计数, GUI is 838,	Expected is 838.
+Step 282, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2补充业务报告事件计数, GUI is 839,	Expected is 839.
+Step 283, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2补充业务操作事件计数, GUI is 840,	Expected is 840.
+Step 284, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2呼叫开始事件计数, GUI is 841,	Expected is 841.
+Step 285, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2通道建立事件计数, GUI is 842,	Expected is 842.
+Step 286, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2呼叫振铃事件计数, GUI is 843,	Expected is 843.
+Step 287, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2呼叫应答事件计数, GUI is 844,	Expected is 844.
+Step 288, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2通道关闭事件计数, GUI is 845,	Expected is 845.
+Step 289, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2通话结束事件计数, GUI is 846,	Expected is 846.
+Step 290, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2 DTMF事件计数, GUI is 847,	Expected is 847.
+Step 291, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2切换事件计数, GUI is 848,	Expected is 848.
+Step 292, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2发送流量数(KB), GUI is 849,	Expected is 849.
+Step 293, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; X2接收流量数(KB), GUI is 850,	Expected is 850.
+Step 294, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; 呼叫次数, GUI is 851,	Expected is 851.
+Step 295, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; 用户忙次数, GUI is 852,	Expected is 852.
+Step 296, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; 无效地址次数, GUI is 853,	Expected is 853.
+Step 297, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; 被叫方无响应次数, GUI is 854,	Expected is 854.
+Step 298, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; 网元内部故障次数, GUI is 855,	Expected is 855.
+Step 299, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; 应答次数, GUI is 856,	Expected is 856.
+Step 300, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; 应答话务量, GUI is 857,	Expected is 857.
+Step 301, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; 平均占用时长, GUI is 858,	Expected is 858.
+Step 302, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; 应答率, GUI is 0.8,	Expected is 0.8.
+Step 303, Passed: 上报周期: 2017-02-20 12:35,	LIC标识: LIC11; 流量统计, GUI is 0,	Expected is 0.
+Info: Start to check row: 6
+Info: Now in page 1.
+Step 304, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1接收消息数, GUI is 4294967295L,	Expected is 4294967295L.
+Step 305, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1发送消息数, GUI is 0,	Expected is 0.
+Step 306, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1接口接收连接请求命令数, GUI is 703,	Expected is 703.
+Step 307, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1接口接收释放命令数, GUI is 704,	Expected is 704.
+Step 308, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1设定用户号码命令数, GUI is 705,	Expected is 705.
+Step 309, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1修改用户号码命令数, GUI is 706,	Expected is 706.
+Step 310, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1删除用户号码命令数, GUI is 707,	Expected is 707.
+Step 311, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1号码用户状态查询命令数, GUI is 708,	Expected is 708.
+Step 312, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1用户号码列示命令数, GUI is 709,	Expected is 709.
+Step 313, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1号码属性查询命令数, GUI is 710,	Expected is 710.
+Step 314, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1网元时间查询命令数, GUI is 711,	Expected is 711.
+Step 315, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1连接请求应答数, GUI is 712,	Expected is 712.
+Step 316, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1连接网元发起释放数, GUI is 713,	Expected is 713.
+Step 317, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1用户号码激活响应数, GUI is 714,	Expected is 714.
+Step 318, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1用户号码修改响应数, GUI is 715,	Expected is 715.
+Step 319, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1号码撤销响应数, GUI is 716,	Expected is 716.
+Step 320, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1号码用户状态查询响应数, GUI is 717,	Expected is 717.
+Step 321, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1用户号码列示响应数, GUI is 718,	Expected is 718.
+Step 322, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1号码属性查询响应数, GUI is 719,	Expected is 719.
+Step 323, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1网元时间查询响应数, GUI is 720,	Expected is 720.
+Step 324, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1接收消息流量(KB), GUI is 721,	Expected is 721.
+Step 325, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X1发送消息流量(KB), GUI is 722,	Expected is 722.
+Step 326, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2发送连接请求次数, GUI is 723,	Expected is 723.
+Step 327, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2发送连接请求成功次数, GUI is 724,	Expected is 724.
+Step 328, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2接收连接响应次数, GUI is 725,	Expected is 725.
+Step 329, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2接收连接响应成功次数, GUI is 726,	Expected is 726.
+Step 330, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2发送连接释放次数, GUI is 727,	Expected is 727.
+Step 331, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2发送连接释放成功次数, GUI is 728,	Expected is 728.
+Step 332, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2接收连接释放次数, GUI is 729,	Expected is 729.
+Step 333, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2发送给LIC告警次数, GUI is 730,	Expected is 730.
+Step 334, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2发送活动事件次数, GUI is 731,	Expected is 731.
+Step 335, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2发送活动事件成功次数, GUI is 732,	Expected is 732.
+Step 336, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2心跳事件计数, GUI is 733,	Expected is 733.
+Step 337, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2开机事件计数, GUI is 734,	Expected is 734.
+Step 338, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2关机事件计数, GUI is 735,	Expected is 735.
+Step 339, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2位置更新事件计数, GUI is 736,	Expected is 736.
+Step 340, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2发送短消息事件计数, GUI is 737,	Expected is 737.
+Step 341, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2接收短消息事件计数, GUI is 738,	Expected is 738.
+Step 342, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2补充业务报告事件计数, GUI is 739,	Expected is 739.
+Step 343, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2补充业务操作事件计数, GUI is 740,	Expected is 740.
+Step 344, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2呼叫开始事件计数, GUI is 741,	Expected is 741.
+Step 345, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2通道建立事件计数, GUI is 742,	Expected is 742.
+Step 346, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2呼叫振铃事件计数, GUI is 743,	Expected is 743.
+Step 347, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2呼叫应答事件计数, GUI is 744,	Expected is 744.
+Step 348, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2通道关闭事件计数, GUI is 745,	Expected is 745.
+Step 349, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2通话结束事件计数, GUI is 746,	Expected is 746.
+Step 350, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2 DTMF事件计数, GUI is 747,	Expected is 747.
+Step 351, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2切换事件计数, GUI is 748,	Expected is 748.
+Step 352, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2发送流量数(KB), GUI is 749,	Expected is 749.
+Step 353, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; X2接收流量数(KB), GUI is 750,	Expected is 750.
+Step 354, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; 呼叫次数, GUI is 751,	Expected is 751.
+Step 355, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; 用户忙次数, GUI is 752,	Expected is 752.
+Step 356, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; 无效地址次数, GUI is 753,	Expected is 753.
+Step 357, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; 被叫方无响应次数, GUI is 754,	Expected is 754.
+Step 358, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; 网元内部故障次数, GUI is 755,	Expected is 755.
+Step 359, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; 应答次数, GUI is 756,	Expected is 756.
+Step 360, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; 应答话务量, GUI is 757,	Expected is 757.
+Step 361, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; 平均占用时长, GUI is 758,	Expected is 758.
+Step 362, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; 应答率, GUI is 0.7,	Expected is 0.7.
+Step 363, Passed: 上报周期: 2017-02-20 12:30,	LIC标识: LIC11; 流量统计, GUI is 0,	Expected is 0.
+Info: Start to check row: 7
+Info: Now in page 1.
+Step 364, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1接收消息数, GUI is 601,	Expected is 601.
+Step 365, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1发送消息数, GUI is 602,	Expected is 602.
+Step 366, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1接口接收连接请求命令数, GUI is 603,	Expected is 603.
+Step 367, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1接口接收释放命令数, GUI is 604,	Expected is 604.
+Step 368, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1设定用户号码命令数, GUI is 605,	Expected is 605.
+Step 369, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1修改用户号码命令数, GUI is 606,	Expected is 606.
+Step 370, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1删除用户号码命令数, GUI is 607,	Expected is 607.
+Step 371, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1号码用户状态查询命令数, GUI is 608,	Expected is 608.
+Step 372, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1用户号码列示命令数, GUI is 609,	Expected is 609.
+Step 373, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1号码属性查询命令数, GUI is 610,	Expected is 610.
+Step 374, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1网元时间查询命令数, GUI is 611,	Expected is 611.
+Step 375, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1连接请求应答数, GUI is 612,	Expected is 612.
+Step 376, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1连接网元发起释放数, GUI is 613,	Expected is 613.
+Step 377, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1用户号码激活响应数, GUI is 614,	Expected is 614.
+Step 378, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1用户号码修改响应数, GUI is 615,	Expected is 615.
+Step 379, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1号码撤销响应数, GUI is 616,	Expected is 616.
+Step 380, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1号码用户状态查询响应数, GUI is 617,	Expected is 617.
+Step 381, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1用户号码列示响应数, GUI is 618,	Expected is 618.
+Step 382, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1号码属性查询响应数, GUI is 619,	Expected is 619.
+Step 383, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1网元时间查询响应数, GUI is 620,	Expected is 620.
+Step 384, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1接收消息流量(KB), GUI is 621,	Expected is 621.
+Step 385, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X1发送消息流量(KB), GUI is 622,	Expected is 622.
+Step 386, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2发送连接请求次数, GUI is 623,	Expected is 623.
+Step 387, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2发送连接请求成功次数, GUI is 624,	Expected is 624.
+Step 388, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2接收连接响应次数, GUI is 625,	Expected is 625.
+Step 389, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2接收连接响应成功次数, GUI is 626,	Expected is 626.
+Step 390, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2发送连接释放次数, GUI is 627,	Expected is 627.
+Step 391, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2发送连接释放成功次数, GUI is 628,	Expected is 628.
+Step 392, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2接收连接释放次数, GUI is 629,	Expected is 629.
+Step 393, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2发送给LIC告警次数, GUI is 630,	Expected is 630.
+Step 394, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2发送活动事件次数, GUI is 631,	Expected is 631.
+Step 395, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2发送活动事件成功次数, GUI is 632,	Expected is 632.
+Step 396, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2心跳事件计数, GUI is 633,	Expected is 633.
+Step 397, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2开机事件计数, GUI is 634,	Expected is 634.
+Step 398, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2关机事件计数, GUI is 635,	Expected is 635.
+Step 399, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2位置更新事件计数, GUI is 636,	Expected is 636.
+Step 400, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2发送短消息事件计数, GUI is 637,	Expected is 637.
+Step 401, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2接收短消息事件计数, GUI is 638,	Expected is 638.
+Step 402, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2补充业务报告事件计数, GUI is 639,	Expected is 639.
+Step 403, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2补充业务操作事件计数, GUI is 640,	Expected is 640.
+Step 404, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2呼叫开始事件计数, GUI is 641,	Expected is 641.
+Step 405, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2通道建立事件计数, GUI is 642,	Expected is 642.
+Step 406, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2呼叫振铃事件计数, GUI is 643,	Expected is 643.
+Step 407, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2呼叫应答事件计数, GUI is 644,	Expected is 644.
+Step 408, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2通道关闭事件计数, GUI is 645,	Expected is 645.
+Step 409, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2通话结束事件计数, GUI is 646,	Expected is 646.
+Step 410, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2 DTMF事件计数, GUI is 647,	Expected is 647.
+Step 411, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2切换事件计数, GUI is 648,	Expected is 648.
+Step 412, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2发送流量数(KB), GUI is 649,	Expected is 649.
+Step 413, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; X2接收流量数(KB), GUI is 650,	Expected is 650.
+Step 414, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; 呼叫次数, GUI is 651,	Expected is 651.
+Step 415, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; 用户忙次数, GUI is 652,	Expected is 652.
+Step 416, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; 无效地址次数, GUI is 653,	Expected is 653.
+Step 417, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; 被叫方无响应次数, GUI is 654,	Expected is 654.
+Step 418, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; 网元内部故障次数, GUI is 655,	Expected is 655.
+Step 419, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; 应答次数, GUI is 656,	Expected is 656.
+Step 420, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; 应答话务量, GUI is 657,	Expected is 657.
+Step 421, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; 平均占用时长, GUI is 658,	Expected is 658.
+Step 422, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; 应答率, GUI is 0.6,	Expected is 0.6.
+Step 423, Passed: 上报周期: 2017-02-20 12:25,	LIC标识: LIC11; 流量统计, GUI is 0,	Expected is 0.
+Info: Start to check row: 8
+Info: Now in page 1.
+Step 424, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1接收消息数, GUI is 501,	Expected is 501.
+Step 425, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1发送消息数, GUI is 502,	Expected is 502.
+Step 426, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1接口接收连接请求命令数, GUI is 503,	Expected is 503.
+Step 427, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1接口接收释放命令数, GUI is 504,	Expected is 504.
+Step 428, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1设定用户号码命令数, GUI is 505,	Expected is 505.
+Step 429, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1修改用户号码命令数, GUI is 506,	Expected is 506.
+Step 430, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1删除用户号码命令数, GUI is 507,	Expected is 507.
+Step 431, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1号码用户状态查询命令数, GUI is 508,	Expected is 508.
+Step 432, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1用户号码列示命令数, GUI is 509,	Expected is 509.
+Step 433, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1号码属性查询命令数, GUI is 510,	Expected is 510.
+Step 434, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1网元时间查询命令数, GUI is 511,	Expected is 511.
+Step 435, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1连接请求应答数, GUI is 512,	Expected is 512.
+Step 436, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1连接网元发起释放数, GUI is 513,	Expected is 513.
+Step 437, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1用户号码激活响应数, GUI is 514,	Expected is 514.
+Step 438, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1用户号码修改响应数, GUI is 515,	Expected is 515.
+Step 439, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1号码撤销响应数, GUI is 516,	Expected is 516.
+Step 440, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1号码用户状态查询响应数, GUI is 517,	Expected is 517.
+Step 441, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1用户号码列示响应数, GUI is 518,	Expected is 518.
+Step 442, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1号码属性查询响应数, GUI is 519,	Expected is 519.
+Step 443, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1网元时间查询响应数, GUI is 520,	Expected is 520.
+Step 444, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1接收消息流量(KB), GUI is 521,	Expected is 521.
+Step 445, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X1发送消息流量(KB), GUI is 522,	Expected is 522.
+Step 446, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2发送连接请求次数, GUI is 523,	Expected is 523.
+Step 447, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2发送连接请求成功次数, GUI is 524,	Expected is 524.
+Step 448, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2接收连接响应次数, GUI is 525,	Expected is 525.
+Step 449, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2接收连接响应成功次数, GUI is 526,	Expected is 526.
+Step 450, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2发送连接释放次数, GUI is 527,	Expected is 527.
+Step 451, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2发送连接释放成功次数, GUI is 528,	Expected is 528.
+Step 452, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2接收连接释放次数, GUI is 529,	Expected is 529.
+Step 453, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2发送给LIC告警次数, GUI is 530,	Expected is 530.
+Step 454, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2发送活动事件次数, GUI is 531,	Expected is 531.
+Step 455, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2发送活动事件成功次数, GUI is 532,	Expected is 532.
+Step 456, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2心跳事件计数, GUI is 533,	Expected is 533.
+Step 457, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2开机事件计数, GUI is 534,	Expected is 534.
+Step 458, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2关机事件计数, GUI is 535,	Expected is 535.
+Step 459, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2位置更新事件计数, GUI is 536,	Expected is 536.
+Step 460, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2发送短消息事件计数, GUI is 537,	Expected is 537.
+Step 461, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2接收短消息事件计数, GUI is 538,	Expected is 538.
+Step 462, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2补充业务报告事件计数, GUI is 539,	Expected is 539.
+Step 463, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2补充业务操作事件计数, GUI is 540,	Expected is 540.
+Step 464, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2呼叫开始事件计数, GUI is 541,	Expected is 541.
+Step 465, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2通道建立事件计数, GUI is 542,	Expected is 542.
+Step 466, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2呼叫振铃事件计数, GUI is 543,	Expected is 543.
+Step 467, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2呼叫应答事件计数, GUI is 544,	Expected is 544.
+Step 468, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2通道关闭事件计数, GUI is 545,	Expected is 545.
+Step 469, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2通话结束事件计数, GUI is 546,	Expected is 546.
+Step 470, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2 DTMF事件计数, GUI is 547,	Expected is 547.
+Step 471, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2切换事件计数, GUI is 548,	Expected is 548.
+Step 472, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2发送流量数(KB), GUI is 549,	Expected is 549.
+Step 473, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; X2接收流量数(KB), GUI is 550,	Expected is 550.
+Step 474, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; 呼叫次数, GUI is 551,	Expected is 551.
+Step 475, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; 用户忙次数, GUI is 552,	Expected is 552.
+Step 476, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; 无效地址次数, GUI is 553,	Expected is 553.
+Step 477, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; 被叫方无响应次数, GUI is 554,	Expected is 554.
+Step 478, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; 网元内部故障次数, GUI is 555,	Expected is 555.
+Step 479, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; 应答次数, GUI is 556,	Expected is 556.
+Step 480, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; 应答话务量, GUI is 557,	Expected is 557.
+Step 481, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; 平均占用时长, GUI is 558,	Expected is 558.
+Step 482, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; 应答率, GUI is 0.5,	Expected is 0.5.
+Step 483, Passed: 上报周期: 2017-02-20 12:20,	LIC标识: LIC11; 流量统计, GUI is 0,	Expected is 0.
+Info: Start to check row: 9
+Info: Now in page 1.
+Step 484, Failed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1接收消息数, GUI is '-1',	Expected is '\xe2\x80\x8b'.
+Step 485, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1发送消息数, GUI is 402,	Expected is 402.
+Step 486, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1接口接收连接请求命令数, GUI is 403,	Expected is 403.
+Step 487, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1接口接收释放命令数, GUI is 404,	Expected is 404.
+Step 488, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1设定用户号码命令数, GUI is 405,	Expected is 405.
+Step 489, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1修改用户号码命令数, GUI is 406,	Expected is 406.
+Step 490, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1删除用户号码命令数, GUI is 407,	Expected is 407.
+Step 491, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1号码用户状态查询命令数, GUI is 408,	Expected is 408.
+Step 492, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1用户号码列示命令数, GUI is 409,	Expected is 409.
+Step 493, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1号码属性查询命令数, GUI is 410,	Expected is 410.
+Step 494, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1网元时间查询命令数, GUI is 411,	Expected is 411.
+Step 495, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1连接请求应答数, GUI is 412,	Expected is 412.
+Step 496, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1连接网元发起释放数, GUI is 413,	Expected is 413.
+Step 497, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1用户号码激活响应数, GUI is 414,	Expected is 414.
+Step 498, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1用户号码修改响应数, GUI is 415,	Expected is 415.
+Step 499, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1号码撤销响应数, GUI is 416,	Expected is 416.
+Step 500, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1号码用户状态查询响应数, GUI is 417,	Expected is 417.
+Step 501, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1用户号码列示响应数, GUI is 418,	Expected is 418.
+Step 502, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1号码属性查询响应数, GUI is 419,	Expected is 419.
+Step 503, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1网元时间查询响应数, GUI is 420,	Expected is 420.
+Step 504, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1接收消息流量(KB), GUI is 421,	Expected is 421.
+Step 505, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X1发送消息流量(KB), GUI is 422,	Expected is 422.
+Step 506, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2发送连接请求次数, GUI is 423,	Expected is 423.
+Step 507, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2发送连接请求成功次数, GUI is 424,	Expected is 424.
+Step 508, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2接收连接响应次数, GUI is 425,	Expected is 425.
+Step 509, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2接收连接响应成功次数, GUI is 426,	Expected is 426.
+Step 510, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2发送连接释放次数, GUI is 427,	Expected is 427.
+Step 511, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2发送连接释放成功次数, GUI is 428,	Expected is 428.
+Step 512, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2接收连接释放次数, GUI is 429,	Expected is 429.
+Step 513, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2发送给LIC告警次数, GUI is 430,	Expected is 430.
+Step 514, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2发送活动事件次数, GUI is 431,	Expected is 431.
+Step 515, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2发送活动事件成功次数, GUI is 432,	Expected is 432.
+Step 516, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2心跳事件计数, GUI is 433,	Expected is 433.
+Step 517, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2开机事件计数, GUI is 434,	Expected is 434.
+Step 518, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2关机事件计数, GUI is 435,	Expected is 435.
+Step 519, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2位置更新事件计数, GUI is 436,	Expected is 436.
+Step 520, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2发送短消息事件计数, GUI is 437,	Expected is 437.
+Step 521, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2接收短消息事件计数, GUI is 438,	Expected is 438.
+Step 522, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2补充业务报告事件计数, GUI is 439,	Expected is 439.
+Step 523, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2补充业务操作事件计数, GUI is 440,	Expected is 440.
+Step 524, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2呼叫开始事件计数, GUI is 441,	Expected is 441.
+Step 525, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2通道建立事件计数, GUI is 442,	Expected is 442.
+Step 526, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2呼叫振铃事件计数, GUI is 443,	Expected is 443.
+Step 527, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2呼叫应答事件计数, GUI is 444,	Expected is 444.
+Step 528, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2通道关闭事件计数, GUI is 445,	Expected is 445.
+Step 529, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2通话结束事件计数, GUI is 446,	Expected is 446.
+Step 530, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2 DTMF事件计数, GUI is 447,	Expected is 447.
+Step 531, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2切换事件计数, GUI is 448,	Expected is 448.
+Step 532, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2发送流量数(KB), GUI is 449,	Expected is 449.
+Step 533, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; X2接收流量数(KB), GUI is 450,	Expected is 450.
+Step 534, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; 呼叫次数, GUI is 451,	Expected is 451.
+Step 535, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; 用户忙次数, GUI is 452,	Expected is 452.
+Step 536, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; 无效地址次数, GUI is 453,	Expected is 453.
+Step 537, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; 被叫方无响应次数, GUI is 454,	Expected is 454.
+Step 538, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; 网元内部故障次数, GUI is 455,	Expected is 455.
+Step 539, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; 应答次数, GUI is 456,	Expected is 456.
+Step 540, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; 应答话务量, GUI is 457,	Expected is 457.
+Step 541, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; 平均占用时长, GUI is 458,	Expected is 458.
+Step 542, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; 应答率, GUI is 0.4,	Expected is 0.4.
+Step 543, Passed: 上报周期: 2017-02-20 12:15,	LIC标识: LIC11; 流量统计, GUI is 0,	Expected is 0.
+Info: Start to check row: 10
+Info: Now in page 1.
+Step 544, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1接收消息数, GUI is 0,	Expected is 0.
+Step 545, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1发送消息数, GUI is 302,	Expected is 302.
+Step 546, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1接口接收连接请求命令数, GUI is 303,	Expected is 303.
+Step 547, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1接口接收释放命令数, GUI is 304,	Expected is 304.
+Step 548, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1设定用户号码命令数, GUI is 305,	Expected is 305.
+Step 549, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1修改用户号码命令数, GUI is 306,	Expected is 306.
+Step 550, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1删除用户号码命令数, GUI is 307,	Expected is 307.
+Step 551, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1号码用户状态查询命令数, GUI is 308,	Expected is 308.
+Step 552, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1用户号码列示命令数, GUI is 309,	Expected is 309.
+Step 553, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1号码属性查询命令数, GUI is 310,	Expected is 310.
+Step 554, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1网元时间查询命令数, GUI is 311,	Expected is 311.
+Step 555, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1连接请求应答数, GUI is 312,	Expected is 312.
+Step 556, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1连接网元发起释放数, GUI is 313,	Expected is 313.
+Step 557, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1用户号码激活响应数, GUI is 314,	Expected is 314.
+Step 558, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1用户号码修改响应数, GUI is 315,	Expected is 315.
+Step 559, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1号码撤销响应数, GUI is 316,	Expected is 316.
+Step 560, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1号码用户状态查询响应数, GUI is 317,	Expected is 317.
+Step 561, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1用户号码列示响应数, GUI is 318,	Expected is 318.
+Step 562, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1号码属性查询响应数, GUI is 319,	Expected is 319.
+Step 563, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1网元时间查询响应数, GUI is 320,	Expected is 320.
+Step 564, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1接收消息流量(KB), GUI is 321,	Expected is 321.
+Step 565, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X1发送消息流量(KB), GUI is 322,	Expected is 322.
+Step 566, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2发送连接请求次数, GUI is 323,	Expected is 323.
+Step 567, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2发送连接请求成功次数, GUI is 324,	Expected is 324.
+Step 568, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2接收连接响应次数, GUI is 325,	Expected is 325.
+Step 569, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2接收连接响应成功次数, GUI is 326,	Expected is 326.
+Step 570, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2发送连接释放次数, GUI is 327,	Expected is 327.
+Step 571, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2发送连接释放成功次数, GUI is 328,	Expected is 328.
+Step 572, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2接收连接释放次数, GUI is 329,	Expected is 329.
+Step 573, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2发送给LIC告警次数, GUI is 330,	Expected is 330.
+Step 574, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2发送活动事件次数, GUI is 331,	Expected is 331.
+Step 575, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2发送活动事件成功次数, GUI is 332,	Expected is 332.
+Step 576, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2心跳事件计数, GUI is 333,	Expected is 333.
+Step 577, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2开机事件计数, GUI is 334,	Expected is 334.
+Step 578, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2关机事件计数, GUI is 335,	Expected is 335.
+Step 579, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2位置更新事件计数, GUI is 336,	Expected is 336.
+Step 580, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2发送短消息事件计数, GUI is 337,	Expected is 337.
+Step 581, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2接收短消息事件计数, GUI is 338,	Expected is 338.
+Step 582, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2补充业务报告事件计数, GUI is 339,	Expected is 339.
+Step 583, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2补充业务操作事件计数, GUI is 340,	Expected is 340.
+Step 584, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2呼叫开始事件计数, GUI is 341,	Expected is 341.
+Step 585, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2通道建立事件计数, GUI is 342,	Expected is 342.
+Step 586, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2呼叫振铃事件计数, GUI is 343,	Expected is 343.
+Step 587, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2呼叫应答事件计数, GUI is 344,	Expected is 344.
+Step 588, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2通道关闭事件计数, GUI is 345,	Expected is 345.
+Step 589, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2通话结束事件计数, GUI is 346,	Expected is 346.
+Step 590, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2 DTMF事件计数, GUI is 347,	Expected is 347.
+Step 591, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2切换事件计数, GUI is 348,	Expected is 348.
+Step 592, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2发送流量数(KB), GUI is 349,	Expected is 349.
+Step 593, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; X2接收流量数(KB), GUI is 350,	Expected is 350.
+Step 594, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; 呼叫次数, GUI is 351,	Expected is 351.
+Step 595, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; 用户忙次数, GUI is 352,	Expected is 352.
+Step 596, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; 无效地址次数, GUI is 353,	Expected is 353.
+Step 597, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; 被叫方无响应次数, GUI is 354,	Expected is 354.
+Step 598, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; 网元内部故障次数, GUI is 355,	Expected is 355.
+Step 599, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; 应答次数, GUI is 356,	Expected is 356.
+Step 600, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; 应答话务量, GUI is 357,	Expected is 357.
+Step 601, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; 平均占用时长, GUI is 358,	Expected is 358.
+Step 602, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; 应答率, GUI is 0.3,	Expected is 0.3.
+Step 603, Passed: 上报周期: 2017-02-20 12:10,	LIC标识: LIC11; 流量统计, GUI is 0,	Expected is 0.
+Info: Start to check row: 11
+Info: Now in page 2.
+Step 604, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1接收消息数, GUI is 201,	Expected is 201.
+Step 605, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1发送消息数, GUI is 202,	Expected is 202.
+Step 606, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1接口接收连接请求命令数, GUI is 203,	Expected is 203.
+Step 607, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1接口接收释放命令数, GUI is 204,	Expected is 204.
+Step 608, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1设定用户号码命令数, GUI is 205,	Expected is 205.
+Step 609, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1修改用户号码命令数, GUI is 206,	Expected is 206.
+Step 610, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1删除用户号码命令数, GUI is 207,	Expected is 207.
+Step 611, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1号码用户状态查询命令数, GUI is 208,	Expected is 208.
+Step 612, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1用户号码列示命令数, GUI is 209,	Expected is 209.
+Step 613, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1号码属性查询命令数, GUI is 210,	Expected is 210.
+Step 614, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1网元时间查询命令数, GUI is 211,	Expected is 211.
+Step 615, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1连接请求应答数, GUI is 212,	Expected is 212.
+Step 616, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1连接网元发起释放数, GUI is 213,	Expected is 213.
+Step 617, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1用户号码激活响应数, GUI is 214,	Expected is 214.
+Step 618, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1用户号码修改响应数, GUI is 215,	Expected is 215.
+Step 619, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1号码撤销响应数, GUI is 216,	Expected is 216.
+Step 620, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1号码用户状态查询响应数, GUI is 217,	Expected is 217.
+Step 621, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1用户号码列示响应数, GUI is 218,	Expected is 218.
+Step 622, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1号码属性查询响应数, GUI is 219,	Expected is 219.
+Step 623, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1网元时间查询响应数, GUI is 220,	Expected is 220.
+Step 624, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1接收消息流量(KB), GUI is 221,	Expected is 221.
+Step 625, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X1发送消息流量(KB), GUI is 222,	Expected is 222.
+Step 626, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2发送连接请求次数, GUI is 223,	Expected is 223.
+Step 627, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2发送连接请求成功次数, GUI is 224,	Expected is 224.
+Step 628, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2接收连接响应次数, GUI is 225,	Expected is 225.
+Step 629, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2接收连接响应成功次数, GUI is 226,	Expected is 226.
+Step 630, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2发送连接释放次数, GUI is 227,	Expected is 227.
+Step 631, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2发送连接释放成功次数, GUI is 228,	Expected is 228.
+Step 632, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2接收连接释放次数, GUI is 229,	Expected is 229.
+Step 633, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2发送给LIC告警次数, GUI is 230,	Expected is 230.
+Step 634, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2发送活动事件次数, GUI is 231,	Expected is 231.
+Step 635, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2发送活动事件成功次数, GUI is 232,	Expected is 232.
+Step 636, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2心跳事件计数, GUI is 233,	Expected is 233.
+Step 637, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2开机事件计数, GUI is 234,	Expected is 234.
+Step 638, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2关机事件计数, GUI is 235,	Expected is 235.
+Step 639, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2位置更新事件计数, GUI is 236,	Expected is 236.
+Step 640, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2发送短消息事件计数, GUI is 237,	Expected is 237.
+Step 641, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2接收短消息事件计数, GUI is 238,	Expected is 238.
+Step 642, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2补充业务报告事件计数, GUI is 239,	Expected is 239.
+Step 643, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2补充业务操作事件计数, GUI is 240,	Expected is 240.
+Step 644, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2呼叫开始事件计数, GUI is 241,	Expected is 241.
+Step 645, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2通道建立事件计数, GUI is 242,	Expected is 242.
+Step 646, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2呼叫振铃事件计数, GUI is 243,	Expected is 243.
+Step 647, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2呼叫应答事件计数, GUI is 244,	Expected is 244.
+Step 648, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2通道关闭事件计数, GUI is 245,	Expected is 245.
+Step 649, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2通话结束事件计数, GUI is 246,	Expected is 246.
+Step 650, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2 DTMF事件计数, GUI is 247,	Expected is 247.
+Step 651, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2切换事件计数, GUI is 248,	Expected is 248.
+Step 652, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2发送流量数(KB), GUI is 249,	Expected is 249.
+Step 653, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; X2接收流量数(KB), GUI is 250,	Expected is 250.
+Step 654, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; 呼叫次数, GUI is 251,	Expected is 251.
+Step 655, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; 用户忙次数, GUI is 252,	Expected is 252.
+Step 656, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; 无效地址次数, GUI is 253,	Expected is 253.
+Step 657, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; 被叫方无响应次数, GUI is 254,	Expected is 254.
+Step 658, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; 网元内部故障次数, GUI is 255,	Expected is 255.
+Step 659, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; 应答次数, GUI is 256,	Expected is 256.
+Step 660, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; 应答话务量, GUI is 257,	Expected is 257.
+Step 661, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; 平均占用时长, GUI is 258,	Expected is 258.
+Step 662, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; 应答率, GUI is 0.2,	Expected is 0.2.
+Step 663, Passed: 上报周期: 2017-02-20 12:05,	LIC标识: LIC11; 流量统计, GUI is 0,	Expected is 0.
+Info: Start to check row: 12
+Info: Now in page 2.
+Step 664, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1接收消息数, GUI is 0,	Expected is 0.
+Step 665, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1发送消息数, GUI is 102,	Expected is 102.
+Step 666, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1接口接收连接请求命令数, GUI is 103,	Expected is 103.
+Step 667, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1接口接收释放命令数, GUI is 104,	Expected is 104.
+Step 668, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1设定用户号码命令数, GUI is 105,	Expected is 105.
+Step 669, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1修改用户号码命令数, GUI is 106,	Expected is 106.
+Step 670, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1删除用户号码命令数, GUI is 107,	Expected is 107.
+Step 671, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1号码用户状态查询命令数, GUI is 108,	Expected is 108.
+Step 672, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1用户号码列示命令数, GUI is 109,	Expected is 109.
+Step 673, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1号码属性查询命令数, GUI is 110,	Expected is 110.
+Step 674, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1网元时间查询命令数, GUI is 111,	Expected is 111.
+Step 675, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1连接请求应答数, GUI is 112,	Expected is 112.
+Step 676, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1连接网元发起释放数, GUI is 113,	Expected is 113.
+Step 677, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1用户号码激活响应数, GUI is 114,	Expected is 114.
+Step 678, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1用户号码修改响应数, GUI is 115,	Expected is 115.
+Step 679, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1号码撤销响应数, GUI is 116,	Expected is 116.
+Step 680, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1号码用户状态查询响应数, GUI is 117,	Expected is 117.
+Step 681, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1用户号码列示响应数, GUI is 118,	Expected is 118.
+Step 682, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1号码属性查询响应数, GUI is 119,	Expected is 119.
+Step 683, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1网元时间查询响应数, GUI is 120,	Expected is 120.
+Step 684, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1接收消息流量(KB), GUI is 121,	Expected is 121.
+Step 685, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X1发送消息流量(KB), GUI is 122,	Expected is 122.
+Step 686, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2发送连接请求次数, GUI is 123,	Expected is 123.
+Step 687, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2发送连接请求成功次数, GUI is 124,	Expected is 124.
+Step 688, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2接收连接响应次数, GUI is 125,	Expected is 125.
+Step 689, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2接收连接响应成功次数, GUI is 126,	Expected is 126.
+Step 690, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2发送连接释放次数, GUI is 127,	Expected is 127.
+Step 691, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2发送连接释放成功次数, GUI is 128,	Expected is 128.
+Step 692, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2接收连接释放次数, GUI is 129,	Expected is 129.
+Step 693, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2发送给LIC告警次数, GUI is 130,	Expected is 130.
+Step 694, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2发送活动事件次数, GUI is 131,	Expected is 131.
+Step 695, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2发送活动事件成功次数, GUI is 132,	Expected is 132.
+Step 696, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2心跳事件计数, GUI is 133,	Expected is 133.
+Step 697, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2开机事件计数, GUI is 134,	Expected is 134.
+Step 698, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2关机事件计数, GUI is 135,	Expected is 135.
+Step 699, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2位置更新事件计数, GUI is 136,	Expected is 136.
+Step 700, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2发送短消息事件计数, GUI is 137,	Expected is 137.
+Step 701, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2接收短消息事件计数, GUI is 138,	Expected is 138.
+Step 702, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2补充业务报告事件计数, GUI is 139,	Expected is 139.
+Step 703, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2补充业务操作事件计数, GUI is 140,	Expected is 140.
+Step 704, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2呼叫开始事件计数, GUI is 141,	Expected is 141.
+Step 705, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2通道建立事件计数, GUI is 142,	Expected is 142.
+Step 706, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2呼叫振铃事件计数, GUI is 143,	Expected is 143.
+Step 707, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2呼叫应答事件计数, GUI is 144,	Expected is 144.
+Step 708, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2通道关闭事件计数, GUI is 145,	Expected is 145.
+Step 709, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2通话结束事件计数, GUI is 146,	Expected is 146.
+Step 710, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2 DTMF事件计数, GUI is 147,	Expected is 147.
+Step 711, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2切换事件计数, GUI is 148,	Expected is 148.
+Step 712, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2发送流量数(KB), GUI is 149,	Expected is 149.
+Step 713, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; X2接收流量数(KB), GUI is 150,	Expected is 150.
+Step 714, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; 呼叫次数, GUI is 151,	Expected is 151.
+Step 715, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; 用户忙次数, GUI is 152,	Expected is 152.
+Step 716, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; 无效地址次数, GUI is 153,	Expected is 153.
+Step 717, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; 被叫方无响应次数, GUI is 154,	Expected is 154.
+Step 718, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; 网元内部故障次数, GUI is 155,	Expected is 155.
+Step 719, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; 应答次数, GUI is 156,	Expected is 156.
+Step 720, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; 应答话务量, GUI is 157,	Expected is 157.
+Step 721, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; 平均占用时长, GUI is 158,	Expected is 158.
+Step 722, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; 应答率, GUI is 0.1,	Expected is 0.1.
+Step 723, Passed: 上报周期: 2017-02-20 12:00,	LIC标识: LIC11; 流量统计, GUI is 0,	Expected is 0.
+Step 724, Passed: Row 0 GUI time is correct, is: 2017-02-20 12:55
+Step 725, Passed: Report delta time is 5 minutes.
+Step 726, Passed: Row 1 GUI time is correct, is: 2017-02-20 12:50
+Step 727, Passed: Report delta time is 5 minutes.
+Step 728, Passed: Row 2 GUI time is correct, is: 2017-02-20 12:45
+Step 729, Passed: Report delta time is 5 minutes.
+Step 730, Passed: Row 3 GUI time is correct, is: 2017-02-20 12:40
+Step 731, Passed: Report delta time is 5 minutes.
+Step 732, Passed: Row 4 GUI time is correct, is: 2017-02-20 12:35
+Step 733, Passed: Report delta time is 5 minutes.
+Step 734, Passed: Row 5 GUI time is correct, is: 2017-02-20 12:30
+Step 735, Passed: Report delta time is 5 minutes.
+Step 736, Passed: Row 6 GUI time is correct, is: 2017-02-20 12:25
+Step 737, Passed: Report delta time is 5 minutes.
+Step 738, Passed: Row 7 GUI time is correct, is: 2017-02-20 12:20
+Step 739, Passed: Report delta time is 5 minutes.
+Step 740, Passed: Row 8 GUI time is correct, is: 2017-02-20 12:15
+Step 741, Passed: Report delta time is 5 minutes.
+Step 742, Passed: Row 9 GUI time is correct, is: 2017-02-20 12:10
+Step 743, Passed: Report delta time is 5 minutes.
+Step 744, Passed: Row 10 GUI time is correct, is: 2017-02-20 12:05
+Step 745, Passed: Report delta time is 5 minutes.
+Step 746, Passed: Row 11 GUI time is correct, is: 2017-02-20 12:00
+Info: Found ME Tab information, will check ME counters.
+Info: Query result notification shown up.
+Info: Now in TAB: 网元运行指标
+Step 747, Passed: Successfully found the counters data.
+Info: Query end time point set to: 125600
+Info: Query start time point set to: 115600
+Step 748, Passed: All the data that we need are ready now.
+Step 749, Passed: All the data that we need are ready now.
+Info: Start to check ME row: 1
+Info: Now in page 1.
+Step 750, Passed: 上报周期: 2017-02-20 12:55,	; 总物理内存, GUI is 17112,	Expected is 17112.
+Step 751, Passed: 上报周期: 2017-02-20 12:55,	; X3接口网络物理带宽能力, GUI is 1000,	Expected is 1000.
+Step 752, Passed: 上报周期: 2017-02-20 12:55,	; 处理器平均负荷, GUI is 0.93,	Expected is 0.93.
+Step 753, Passed: 上报周期: 2017-02-20 12:55,	; 处理器峰值负荷, GUI is 0.93,	Expected is 0.93.
+Step 754, Passed: 上报周期: 2017-02-20 12:55,	; 内存占用率, GUI is 0.93,	Expected is 0.93.
+Step 755, Passed: 上报周期: 2017-02-20 12:55,	; 峰值内存占用率, GUI is 0.93,	Expected is 0.93.
+Step 756, Passed: 上报周期: 2017-02-20 12:55,	; X3接口平均速率, GUI is 0.0,	Expected is 0.0.
+Step 757, Passed: 上报周期: 2017-02-20 12:55,	; X3接口速率峰值, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 2
+Info: Now in page 1.
+Step 758, Passed: 上报周期: 2017-02-20 12:50,	; 总物理内存, GUI is 17111,	Expected is 17111.
+Step 759, Passed: 上报周期: 2017-02-20 12:50,	; X3接口网络物理带宽能力, GUI is 1000,	Expected is 1000.
+Step 760, Passed: 上报周期: 2017-02-20 12:50,	; 处理器平均负荷, GUI is 0.92,	Expected is 0.92.
+Step 761, Passed: 上报周期: 2017-02-20 12:50,	; 处理器峰值负荷, GUI is 0.92,	Expected is 0.92.
+Step 762, Passed: 上报周期: 2017-02-20 12:50,	; 内存占用率, GUI is 0.92,	Expected is 0.92.
+Step 763, Passed: 上报周期: 2017-02-20 12:50,	; 峰值内存占用率, GUI is 0.92,	Expected is 0.92.
+Step 764, Passed: 上报周期: 2017-02-20 12:50,	; X3接口平均速率, GUI is 0.0,	Expected is 0.0.
+Step 765, Passed: 上报周期: 2017-02-20 12:50,	; X3接口速率峰值, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 3
+Info: Now in page 1.
+Step 766, Passed: 上报周期: 2017-02-20 12:45,	; 总物理内存, GUI is 17110,	Expected is 17110.
+Step 767, Passed: 上报周期: 2017-02-20 12:45,	; X3接口网络物理带宽能力, GUI is 0,	Expected is 0.
+Step 768, Passed: 上报周期: 2017-02-20 12:45,	; 处理器平均负荷, GUI is 0.91,	Expected is 0.91.
+Step 769, Passed: 上报周期: 2017-02-20 12:45,	; 处理器峰值负荷, GUI is 0.91,	Expected is 0.91.
+Step 770, Passed: 上报周期: 2017-02-20 12:45,	; 内存占用率, GUI is 0.91,	Expected is 0.91.
+Step 771, Passed: 上报周期: 2017-02-20 12:45,	; 峰值内存占用率, GUI is 0.91,	Expected is 0.91.
+Step 772, Passed: 上报周期: 2017-02-20 12:45,	; X3接口平均速率, GUI is 0.0,	Expected is 0.0.
+Step 773, Passed: 上报周期: 2017-02-20 12:45,	; X3接口速率峰值, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 4
+Info: Now in page 1.
+Step 774, Passed: 上报周期: 2017-02-20 12:40,	; 总物理内存, GUI is 17109,	Expected is 17109.
+Step 775, Passed: 上报周期: 2017-02-20 12:40,	; X3接口网络物理带宽能力, GUI is 1000,	Expected is 1000.
+Step 776, Passed: 上报周期: 2017-02-20 12:40,	; 处理器平均负荷, GUI is 0.9,	Expected is 0.9.
+Step 777, Passed: 上报周期: 2017-02-20 12:40,	; 处理器峰值负荷, GUI is 0.9,	Expected is 0.9.
+Step 778, Passed: 上报周期: 2017-02-20 12:40,	; 内存占用率, GUI is 0.9,	Expected is 0.9.
+Step 779, Passed: 上报周期: 2017-02-20 12:40,	; 峰值内存占用率, GUI is 0.9,	Expected is 0.9.
+Step 780, Passed: 上报周期: 2017-02-20 12:40,	; X3接口平均速率, GUI is 0.0,	Expected is 0.0.
+Step 781, Passed: 上报周期: 2017-02-20 12:40,	; X3接口速率峰值, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 5
+Info: Now in page 1.
+Step 782, Passed: 上报周期: 2017-02-20 12:35,	; 总物理内存, GUI is 17108,	Expected is 17108.
+Step 783, Passed: 上报周期: 2017-02-20 12:35,	; X3接口网络物理带宽能力, GUI is 1000,	Expected is 1000.
+Step 784, Passed: 上报周期: 2017-02-20 12:35,	; 处理器平均负荷, GUI is 0.8,	Expected is 0.8.
+Step 785, Passed: 上报周期: 2017-02-20 12:35,	; 处理器峰值负荷, GUI is 0.8,	Expected is 0.8.
+Step 786, Passed: 上报周期: 2017-02-20 12:35,	; 内存占用率, GUI is 0.8,	Expected is 0.8.
+Step 787, Passed: 上报周期: 2017-02-20 12:35,	; 峰值内存占用率, GUI is 0.8,	Expected is 0.8.
+Step 788, Passed: 上报周期: 2017-02-20 12:35,	; X3接口平均速率, GUI is 0.0,	Expected is 0.0.
+Step 789, Passed: 上报周期: 2017-02-20 12:35,	; X3接口速率峰值, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 6
+Info: Now in page 1.
+Step 790, Passed: 上报周期: 2017-02-20 12:30,	; 总物理内存, GUI is 0,	Expected is 0.
+Step 791, Passed: 上报周期: 2017-02-20 12:30,	; X3接口网络物理带宽能力, GUI is 1000,	Expected is 1000.
+Step 792, Passed: 上报周期: 2017-02-20 12:30,	; 处理器平均负荷, GUI is 0.0,	Expected is 0.0.
+Step 793, Passed: 上报周期: 2017-02-20 12:30,	; 处理器峰值负荷, GUI is 0.0,	Expected is 0.0.
+Step 794, Passed: 上报周期: 2017-02-20 12:30,	; 内存占用率, GUI is 0.7,	Expected is 0.7.
+Step 795, Passed: 上报周期: 2017-02-20 12:30,	; 峰值内存占用率, GUI is 0.7,	Expected is 0.7.
+Step 796, Passed: 上报周期: 2017-02-20 12:30,	; X3接口平均速率, GUI is 0.0,	Expected is 0.0.
+Step 797, Passed: 上报周期: 2017-02-20 12:30,	; X3接口速率峰值, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 7
+Info: Now in page 1.
+Step 798, Passed: 上报周期: 2017-02-20 12:25,	; 总物理内存, GUI is 17106,	Expected is 17106.
+Step 799, Passed: 上报周期: 2017-02-20 12:25,	; X3接口网络物理带宽能力, GUI is 1000,	Expected is 1000.
+Step 800, Passed: 上报周期: 2017-02-20 12:25,	; 处理器平均负荷, GUI is 0.6,	Expected is 0.6.
+Step 801, Passed: 上报周期: 2017-02-20 12:25,	; 处理器峰值负荷, GUI is 0.6,	Expected is 0.6.
+Step 802, Passed: 上报周期: 2017-02-20 12:25,	; 内存占用率, GUI is 0.6,	Expected is 0.6.
+Step 803, Passed: 上报周期: 2017-02-20 12:25,	; 峰值内存占用率, GUI is 0.6,	Expected is 0.6.
+Step 804, Passed: 上报周期: 2017-02-20 12:25,	; X3接口平均速率, GUI is 0.0,	Expected is 0.0.
+Step 805, Passed: 上报周期: 2017-02-20 12:25,	; X3接口速率峰值, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 8
+Info: Now in page 1.
+Step 806, Passed: 上报周期: 2017-02-20 12:20,	; 总物理内存, GUI is 17105,	Expected is 17105.
+Step 807, Passed: 上报周期: 2017-02-20 12:20,	; X3接口网络物理带宽能力, GUI is 1000,	Expected is 1000.
+Step 808, Passed: 上报周期: 2017-02-20 12:20,	; 处理器平均负荷, GUI is 0.5,	Expected is 0.5.
+Step 809, Passed: 上报周期: 2017-02-20 12:20,	; 处理器峰值负荷, GUI is 0.5,	Expected is 0.5.
+Step 810, Passed: 上报周期: 2017-02-20 12:20,	; 内存占用率, GUI is 0.5,	Expected is 0.5.
+Step 811, Passed: 上报周期: 2017-02-20 12:20,	; 峰值内存占用率, GUI is 0.5,	Expected is 0.5.
+Step 812, Passed: 上报周期: 2017-02-20 12:20,	; X3接口平均速率, GUI is 0.0,	Expected is 0.0.
+Step 813, Passed: 上报周期: 2017-02-20 12:20,	; X3接口速率峰值, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 9
+Info: Now in page 1.
+Step 814, Passed: 上报周期: 2017-02-20 12:15,	; 总物理内存, GUI is 17104,	Expected is 17104.
+Step 815, Passed: 上报周期: 2017-02-20 12:15,	; X3接口网络物理带宽能力, GUI is 1000,	Expected is 1000.
+Step 816, Passed: 上报周期: 2017-02-20 12:15,	; 处理器平均负荷, GUI is 0.4,	Expected is 0.4.
+Step 817, Passed: 上报周期: 2017-02-20 12:15,	; 处理器峰值负荷, GUI is 0.4,	Expected is 0.4.
+Step 818, Passed: 上报周期: 2017-02-20 12:15,	; 内存占用率, GUI is 0.4,	Expected is 0.4.
+Step 819, Passed: 上报周期: 2017-02-20 12:15,	; 峰值内存占用率, GUI is 0.4,	Expected is 0.4.
+Step 820, Passed: 上报周期: 2017-02-20 12:15,	; X3接口平均速率, GUI is 0.0,	Expected is 0.0.
+Step 821, Passed: 上报周期: 2017-02-20 12:15,	; X3接口速率峰值, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 10
+Info: Now in page 1.
+Step 822, Passed: 上报周期: 2017-02-20 12:10,	; 总物理内存, GUI is 17103,	Expected is 17103.
+Step 823, Passed: 上报周期: 2017-02-20 12:10,	; X3接口网络物理带宽能力, GUI is 1000,	Expected is 1000.
+Step 824, Passed: 上报周期: 2017-02-20 12:10,	; 处理器平均负荷, GUI is 0.3,	Expected is 0.3.
+Step 825, Passed: 上报周期: 2017-02-20 12:10,	; 处理器峰值负荷, GUI is 0.3,	Expected is 0.3.
+Step 826, Passed: 上报周期: 2017-02-20 12:10,	; 内存占用率, GUI is 0.3,	Expected is 0.3.
+Step 827, Passed: 上报周期: 2017-02-20 12:10,	; 峰值内存占用率, GUI is 0.3,	Expected is 0.3.
+Step 828, Passed: 上报周期: 2017-02-20 12:10,	; X3接口平均速率, GUI is 0.0,	Expected is 0.0.
+Step 829, Passed: 上报周期: 2017-02-20 12:10,	; X3接口速率峰值, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 11
+Info: Now in page 2.
+Step 830, Passed: 上报周期: 2017-02-20 12:05,	; 总物理内存, GUI is 17102,	Expected is 17102.
+Step 831, Passed: 上报周期: 2017-02-20 12:05,	; X3接口网络物理带宽能力, GUI is 1000,	Expected is 1000.
+Step 832, Passed: 上报周期: 2017-02-20 12:05,	; 处理器平均负荷, GUI is 0.2,	Expected is 0.2.
+Step 833, Passed: 上报周期: 2017-02-20 12:05,	; 处理器峰值负荷, GUI is 0.2,	Expected is 0.2.
+Step 834, Passed: 上报周期: 2017-02-20 12:05,	; 内存占用率, GUI is 0.2,	Expected is 0.2.
+Step 835, Passed: 上报周期: 2017-02-20 12:05,	; 峰值内存占用率, GUI is 0.2,	Expected is 0.2.
+Step 836, Passed: 上报周期: 2017-02-20 12:05,	; X3接口平均速率, GUI is 0.0,	Expected is 0.0.
+Step 837, Passed: 上报周期: 2017-02-20 12:05,	; X3接口速率峰值, GUI is 0.0,	Expected is 0.0.
+Info: Start to check ME row: 12
+Info: Now in page 2.
+Step 838, Passed: 上报周期: 2017-02-20 12:00,	; 总物理内存, GUI is 17101,	Expected is 17101.
+Step 839, Passed: 上报周期: 2017-02-20 12:00,	; X3接口网络物理带宽能力, GUI is 1000,	Expected is 1000.
+Step 840, Passed: 上报周期: 2017-02-20 12:00,	; 处理器平均负荷, GUI is 0.1,	Expected is 0.1.
+Step 841, Passed: 上报周期: 2017-02-20 12:00,	; 处理器峰值负荷, GUI is 0.1,	Expected is 0.1.
+Step 842, Passed: 上报周期: 2017-02-20 12:00,	; 内存占用率, GUI is 0.1,	Expected is 0.1.
+Step 843, Passed: 上报周期: 2017-02-20 12:00,	; 峰值内存占用率, GUI is 0.1,	Expected is 0.1.
+Step 844, Passed: 上报周期: 2017-02-20 12:00,	; X3接口平均速率, GUI is 0.0,	Expected is 0.0.
+Step 845, Passed: 上报周期: 2017-02-20 12:00,	; X3接口速率峰值, GUI is 0.0,	Expected is 0.0.
+Step 846, Passed: Row 0 GUI time is correct, is: 2017-02-20 12:55
+Step 847, Passed: Report delta time is 5 minutes.
+Step 848, Passed: Row 1 GUI time is correct, is: 2017-02-20 12:50
+Step 849, Passed: Report delta time is 5 minutes.
+Step 850, Passed: Row 2 GUI time is correct, is: 2017-02-20 12:45
+Step 851, Passed: Report delta time is 5 minutes.
+Step 852, Passed: Row 3 GUI time is correct, is: 2017-02-20 12:40
+Step 853, Passed: Report delta time is 5 minutes.
+Step 854, Passed: Row 4 GUI time is correct, is: 2017-02-20 12:35
+Step 855, Passed: Report delta time is 5 minutes.
+Step 856, Passed: Row 5 GUI time is correct, is: 2017-02-20 12:30
+Step 857, Passed: Report delta time is 5 minutes.
+Step 858, Passed: Row 6 GUI time is correct, is: 2017-02-20 12:25
+Step 859, Passed: Report delta time is 5 minutes.
+Step 860, Passed: Row 7 GUI time is correct, is: 2017-02-20 12:20
+Step 861, Passed: Report delta time is 5 minutes.
+Step 862, Passed: Row 8 GUI time is correct, is: 2017-02-20 12:15
+Step 863, Passed: Report delta time is 5 minutes.
+Step 864, Passed: Row 9 GUI time is correct, is: 2017-02-20 12:10
+Step 865, Passed: Report delta time is 5 minutes.
+Step 866, Passed: Row 10 GUI time is correct, is: 2017-02-20 12:05
+Step 867, Passed: Report delta time is 5 minutes.
+Step 868, Passed: Row 11 GUI time is correct, is: 2017-02-20 12:00
+Test case: case_main_msc_lic_and_me Failed. Total steps: 868, Passed steps: 867, Error steps: 0, Failed steps: 1, Warning steps: 0

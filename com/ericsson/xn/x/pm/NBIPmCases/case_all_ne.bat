@@ -1,0 +1,13 @@
+python check_pm_cli.py --type "OCGAS" --name "OCGAS-6644DA44526AFFF4" --nodeid "01" --starttime 201702071445 --endtime 201702080015 --interval 15 --path "H:\Data\selenium\x\pm_file\ready\01"
+python check_pm_cli.py --type "GMLC" --name "GMLC-D98BF42C300413C6" --nodeid "12345"  --starttime 201702071445 --endtime 201702080015 --interval 15 --path "H:\Data\selenium\x\pm_file\ready\12345"
+python check_pm_cli.py --type "HLR" --name "HLR-1108A184AD8AD11A" --nodeid "111"  --starttime 201702071445 --endtime 201702080015 --interval 15 --path "H:\Data\selenium\x\pm_file\ready\111"
+python check_pm_cli.py --type "3GSGSN" --name "3GSGSN-A1FEF1E615A55F22" --nodeid "160"  --starttime 201702071445 --endtime 201702080015 --interval 15 --path "H:\Data\selenium\x\pm_file\ready\160"
+python check_pm_cli.py --type "GGSN" --name "GGSN-85C41E47AF6D81AA" --nodeid "260"  --starttime 201702071445 --endtime 201702080015 --interval 15 --path "H:\Data\selenium\x\pm_file\ready\260"
+python check_pm_cli.py --type "MSC" --name "MSC-0CD79707FFB12273" --nodeid "11"  --starttime 201702071445 --endtime 201702080015 --interval 15 --path "H:\Data\selenium\x\pm_file\ready\11"
+python check_pm_cli.py --type "IMSHSS" --name "IMSHSS-6971F8071E559702" --nodeid "HSS_IMS"  --starttime 201702071445 --endtime 201702080015 --interval 15 --path "H:\Data\selenium\x\pm_file\ready\HSS_IMS_15"
+python check_pm_cli.py --type "LTEHSS" --name "LTEHSS-F19A72676901CB3D" --nodeid "HSS_LTE"  --starttime 201702071445 --endtime 201702080015 --interval 15 --path "H:\Data\selenium\x\pm_file\ready\HSS_LTE_15"
+python check_pm_cli.py --type "SGW" --name "SGW-9470F051C7184FB1" --nodeid "NodeIdsgw58" --licid "LicIdsgw58" --starttime 201702071445 --endtime 201702080015 --interval 15 --path "H:\Data\selenium\x\pm_file\ready\NodeIdsgw58"
+python check_pm_cli.py --type "PGW" --name "PGW-35FF5F38C059C70A" --nodeid "NodeIdpgw58" --licid "LicIdpgw" --starttime 201702071445 --endtime 201702080015 --interval 15 --path "H:\Data\selenium\x\pm_file\ready\NodeIdpgw58"
+python check_pm_cli.py --type "SGSN" --name "SGSN-F073FF4F01808CBE" --nodeid "111111111" --licid "LTE123456789" --starttime 201702071445 --endtime 201702080015 --interval 15 --path "H:\Data\selenium\x\pm_file\ready\111111111"
+python check_pm_cli.py --type "MME" --name "MME-E4EE6A664602EBFF" --nodeid "8613743641" --licid "LTE987654321" --starttime 201702071445 --endtime 201702080015 --interval 15 --path "H:\Data\selenium\x\pm_file\ready\8613743641"
+

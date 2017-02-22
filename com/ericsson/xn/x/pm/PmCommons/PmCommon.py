@@ -162,7 +162,7 @@ def init_and_search(driver, ne_name, end_time=None, start_time=None):
     find_single_widget(driver, 20, id_body_date)
 
 
-def wait_until_pm_date_show_up(driver, ne_name, wait_time=720):
+def wait_until_pm_date_show_up(driver, ne_name, wait_time=3600):
     #select_given_ne_name(driver, ne_name)
     end_time = datetime.now() + timedelta(seconds=wait_time)
     while datetime.now() < end_time:
@@ -212,6 +212,19 @@ def select_given_ne_name(driver, ne_name):
     # WebDriverWait(driver, 10).until(EC.element_to_be_clickable(id_btn_choose_ne))
 
 
+def get_current_pager_number(driver):
+    id_all_pages = (By.XPATH,("//div[@class='page']/ul/li[2]/ul/li"))
+    all_pages = find_all_widgets(driver,10,id_all_pages)
+    current_page_number=1
+    time.sleep(.5)
+    for page in all_pages:
+        current_attr= find_single_widget(page,10,(By.XPATH,".//a")).get_attribute('class')
+        if current_attr.find('ebPagination-entryAnchor ebPagination-entryAnchor_current') > -1:
+            current_page_number = int(page.text.encode('utf-8'))
+            break
+    return current_page_number
+
+
 def wait_until_rounds_ok(driver, rows, rows_of_page, rows_each_period):
     '''
     This function will check the number of rows that we need to check the PM.
@@ -230,25 +243,34 @@ def wait_until_rounds_ok(driver, rows, rows_of_page, rows_each_period):
     #    test.error('Number of checked rows should be integer multiples of number of LICs.')
     t_start = datetime.now()
     # Note that most of the PM need T2-T1, for Node like SBC, we may wait 5 minutes more since SBC don't need T2-T1
-    # t_end = t_start + timedelta(minutes=5 * (rows // dict_additional['number_of_lic'] + 1) + 2)
-    t_end = t_start + timedelta(minutes=5 * (rows // rows_each_period + 1) + 2)
+    #t_end = t_start + timedelta(minutes=5 * (rows / dict_additional['number_of_lic'] + 1) + 2)
+    t_end = t_start + timedelta(minutes=5 * (rows / rows_each_period + 1) + 2)
     while datetime.now() < t_end:
         # click the query button
         id_query_btn = (By.ID, "idBtn-search")
         find_single_widget(driver, 10, id_query_btn).click()
-        time.sleep(.1)
+        time.sleep(.5)
         try:
             i_page = rows / rows_of_page
             tgt_page_number = i_page if 0 == rows % rows_of_page else i_page + 1
-            id_tgt_pager = (By.XPATH, ("//div[@class='page']/ul/li[2]/ul/li[" + str(tgt_page_number) + "]"))
-            time.sleep(.1)
-            tgt_pager = get_widget_ignore_refrence_error(driver, id_tgt_pager)
-            if not tgt_pager.get_attribute('class').find('ebPagination-entryAnchor_current') > -1:
-                tgt_pager.click()
-                trs = find_all_widgets(driver, 20, id_tbdoy_trs)
-                if rows % rows_of_page <= len(trs):
-                    test.passed('All the data that we need are ready now.')
-                    return 1
+            id_next_arrow = (By.XPATH,("//div[@class='page']/ul/li[3]"))
+
+
+            next_arrow = find_single_widget(driver,10,id_next_arrow)
+            while (get_current_pager_number(driver) != tgt_page_number):
+                next_arrow_att = find_single_widget(next_arrow,10,(By.XPATH,".//a")).get_attribute('class')
+                if next_arrow_att.find('ebPagination-nextAnchor_disabled') == -1:
+                    next_arrow.click()
+                    time.sleep(.1)
+                else:
+                    break
+
+            current_page_number = get_current_pager_number(driver)
+            if current_page_number == tgt_page_number:
+                    trs = find_all_widgets(driver, 20, id_tbdoy_trs)
+                    if rows % rows_of_page <= len(trs):
+                        test.passed('All the data that we need are ready now.')
+                        return 1
         except TimeoutException:
             pass
         time.sleep(.5)
@@ -265,7 +287,7 @@ def check_pm_rows_updated(driver, ne_type, dict_counters, rows_of_page, dict_add
     :param rows_of_page: how many rows each page has on the GUI, default is 10
     :param dict_additional: additional information that used for special nodes, (number_of_lic: how many lics of a no
     de), (check_rows: how many rows that will be checked, if this value exist, will only check this number of rows,
-    otherwise the number of rows will checked is equal the size of dict_counters)
+    otherwise the nuAdmin!@#123mber of rows will checked is equal the size of dict_counters)
     :return: None
     '''
     check_rounds = dict_additional['check_rounds']
@@ -347,12 +369,12 @@ def check_me_counters(driver, ne_type, counters_expected, rows_of_page, dict_me_
     list_headers = []
     for th in ths:
         list_headers.append(th.get_attribute('innerHTML').encode('utf-8').strip())
-    # number_of_rows_be_checked = len(counters_expected)
-    # if dict_me_add.has_key('check_rounds'):
-    # if not 0 == number_of_rows_be_checked % dict_me_add['number_of_lic']:
-    #    test.error('Number of checked rows should be integer multiples of number of LICs.')
+    number_of_rows_be_checked = len(counters_expected)
+    if dict_me_add.has_key('check_rounds'):
+        if not 0 == number_of_rows_be_checked % dict_me_add['rows_each_period']:
+            test.error('Number of checked rows should be integer multiples of number of LICs.')
     for row_index in range(1, number_of_rows_be_checked + 1):
-        # check_pm_by_row returns [gui_datettime, lic_name] in List
+        #check_pm_by_row returns [gui_datettime, lic_name] in List
         time_of_gui = check_me_single_row(driver, id_table, row_index, ne_type, counters_expected,
                                           rows_of_page, list_headers, me_types)
         list_returns.append(time_of_gui)
@@ -593,6 +615,7 @@ def to_second_page(driver, logger):
     # time.sleep(2.0)
 
 
+
 def make_sure_is_correct_page(driver, row_index, rows_of_page):
     """
     This function handle the situation that we need to paginate to different to check the PM datas.
@@ -603,15 +626,18 @@ def make_sure_is_correct_page(driver, row_index, rows_of_page):
     """
     i_page = row_index / rows_of_page
     tgt_page_number = i_page if 0 == row_index % rows_of_page else i_page + 1
-    id_tgt_pager = (By.XPATH, ("//div[@class='page']/ul/li[2]/ul/li[" + str(tgt_page_number) + "]"))
-    tgt_pager = find_single_widget(driver, 10, id_tgt_pager)
-    if not tgt_pager.get_attribute('class').find('ebPagination-entryAnchor_current') > -1:
-        tgt_pager.click()
-        # wait for the notification, maximum 10 seconds
-        id_body_date = (By.XPATH, "//div[@class='ebTabs']/div[2]/div/div/div/div/table/tbody")
-        find_single_widget(driver, 10, id_body_date)
-        test.info('Now in page ' + str(tgt_page_number) + '.')
+    current_page_number = get_current_pager_number(driver)
+    id_next_arrow = (By.XPATH, "//div[@class='page']/ul/li[3]")
+    next_arrow = find_single_widget(driver,10,id_next_arrow)
+    next_arrow_att = find_single_widget(next_arrow,10,(By.XPATH,".//a")).get_attribute('class')
 
+    if tgt_page_number == 1:
+        id_tgt_pager = (By.XPATH, ("//div[@class='page']/ul/li[2]/ul/li[" + str(tgt_page_number) + "]"))
+        find_single_widget(driver,10,id_tgt_pager).click()
+    elif tgt_page_number != current_page_number:
+        if next_arrow_att.find('ebPagination-nextAnchor_disabled') == -1:
+            next_arrow.click()
+    test.info('Now in page ' + str(tgt_page_number) + '.')
 
 def set_time_for_query(driver, date_time):
     # first edition will only set the time part

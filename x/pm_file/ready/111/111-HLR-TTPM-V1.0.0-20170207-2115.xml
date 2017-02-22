@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PmFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PmFileFormat.xsd">
+    <FileHeader>
+        <InfoModelReferenced>HLR-PM-V1.0.0</InfoModelReferenced>
+        <DnPrefix>DC=Ericsson</DnPrefix>
+        <SenderName>DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1</SenderName>
+        <VendorName>Ericsson</VendorName>
+        <BeginTime>2017-02-07T21:15:00+08:00</BeginTime>
+        <EndTime>2017-02-07T21:30:00+08:00</EndTime>
+    </FileHeader>
+    <Measurements>
+        <ObjectType>ME</ObjectType>
+        <PmName>
+            <N i="1">Memtotal</N>
+            <N i="2">CpuUsageMean</N>
+            <N i="3">CpuUsagePeak</N>
+            <N i="4">MemUsageMean</N>
+            <N i="5">MemUsagePeak</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=111|HLR-1108A184AD8AD11A">
+                <V i="1">17106</V>
+                <V i="2">0.50</V>
+                <V i="3">0.61</V>
+                <V i="4">0.52</V>
+                <V i="5">0.63</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+    <Measurements>
+        <ObjectType>L</ObjectType>
+        <PmName>
+            <N i="1">A1</N>
+            <N i="2">A2</N>
+            <N i="3">A3</N>
+            <N i="4">A4</N>
+            <N i="5">A5</N>
+            <N i="6">A6</N>
+            <N i="7">A7</N>
+            <N i="8">A8</N>
+            <N i="9">A9</N>
+            <N i="10">A10</N>
+            <N i="11">A11</N>
+            <N i="12">A12</N>
+            <N i="13">A13</N>
+            <N i="14">A14</N>
+            <N i="15">A15</N>
+            <N i="16">A16</N>
+            <N i="17">A17</N>
+            <N i="18">A18</N>
+            <N i="19">A19</N>
+            <N i="20">A20</N>
+            <N i="21">A21</N>
+            <N i="22">A22</N>
+            <N i="23">B1</N>
+            <N i="24">B2</N>
+            <N i="25">B3</N>
+            <N i="26">B4</N>
+            <N i="27">B5</N>
+            <N i="28">B6</N>
+            <N i="29">B7</N>
+            <N i="30">B8</N>
+            <N i="31">B9</N>
+            <N i="32">B10</N>
+            <N i="33">B11</N>
+            <N i="34">B12</N>
+            <N i="35">B13</N>
+            <N i="36">B14</N>
+            <N i="37">B15</N>
+            <N i="38">B19</N>
+            <N i="39">B20</N>
+            <N i="40">B36</N>
+            <N i="41">B40</N>
+            <N i="42">B41</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=111|HLR-1108A184AD8AD11A,L=LIC_01">
+                <V i="1">1503</V>
+                <V i="2">1506</V>
+                <V i="3">1509</V>
+                <V i="4">1512</V>
+                <V i="5">1515</V>
+                <V i="6">1518</V>
+                <V i="7">1521</V>
+                <V i="8">1524</V>
+                <V i="9">1527</V>
+                <V i="10">1530</V>
+                <V i="11">1533</V>
+                <V i="12">1536</V>
+                <V i="13">1539</V>
+                <V i="14">1542</V>
+                <V i="15">1545</V>
+                <V i="16">1548</V>
+                <V i="17">1551</V>
+                <V i="18">1524</V>
+                <V i="19">1527</V>
+                <V i="20">1560</V>
+                <V i="21">1563</V>
+                <V i="22">1566</V>
+                <V i="23">1569</V>
+                <V i="24">1572</V>
+                <V i="25">1575</V>
+                <V i="26">1578</V>
+                <V i="27">1581</V>
+                <V i="28">1584</V>
+                <V i="29">1587</V>
+                <V i="30">1590</V>
+                <V i="31">1593</V>
+                <V i="32">1596</V>
+                <V i="33">1599</V>
+                <V i="34">1602</V>
+                <V i="35">1605</V>
+                <V i="36">1608</V>
+                <V i="37">1611</V>
+                <V i="38">1614</V>
+                <V i="39">1617</V>
+                <V i="40">1620</V>
+                <V i="41">1623</V>
+                <V i="42">1626</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+</PmFile>

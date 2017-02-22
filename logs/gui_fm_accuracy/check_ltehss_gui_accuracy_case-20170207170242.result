@@ -1,0 +1,44 @@
+Test case: check_ltehss_gui_accuracy_case started.
+Info: Will start the web browser and perform test case.
+Info: Browser driver path: C:\Users\EYYYLLL\installed\chromedriver.exe
+Info: Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+Info: Web page: https://10.184.73.77:8686/XOAM/login/index.html
+Info: Login to the InterfaceManagement page successfully.
+Info: To the NE Management page...
+Info: NeMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/ne-management
+Info: Login to the NeManagement page successfully
+Info: Paired NE, add a new one
+Info: Successfully added an NE: LTEHSS-F19A72676901CB3D
+Info: NE:LTEHSS-F19A72676901CB3D added successfully
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: LTEHSS-F19A72676901CB3D...
+Info: Alarm queried successfully
+Info: send alarm trap: LTEHSS:COMMUNICATIONFAULT_NEW...
+Info: alarm sent successfully{'changeTime': '2017-02-07 16:56:51.500', 'probableCause': 'Communications Transmit Failure', 'seqNo': '1.3.6.1.4.1.193.114.3.1.1', 'alarmDescription': '##ALL##Node Down', 'clearTime': '2017-02-07 16:56:51.500', 'timeStamp': '2017-02-07 16:56:51.500', 'specificProblem': 'Administration handling with NE failure', 'alarmSource': 'HSS', 'alarmLevel': 'Major', 'alarmCategory': 'Communications Alarm'}
+Info: To the AlarmManagement page...
+Info: The AlarmMgt URL is: https://10.184.73.77:8686/XOAM/src/index.html#network-overview/fault-mgt/fault-management
+Info: Login AlarmManagement page successfully
+Info: Query alarm for NE: LTEHSS-F19A72676901CB3D...
+Info: Alarm queried successfully
+Info: alarm received on GUI:COMMUNICATIONFAULT_NEW
+Info: start to check alarm type: LTEHSS:COMMUNICATIONFAULT_NEW
+Step 1, Passed: alarm counter 可能原因 accuracy test passed. GUI value is 通信传输失败, and the expected value is 通信传输失败
+Step 2, Passed: alarm counter 确认时间 accuracy test passed. GUI value is , and the expected value is 
+Step 3, Passed: alarm counter 清除时间 accuracy test passed. GUI value is , and the expected value is 
+Step 4, Passed: alarm counter 变更时间 accuracy test passed. GUI value is , and the expected value is 
+Step 5, Passed: alarm counter 确认状态 accuracy test passed. GUI value is 未确认, and the expected value is 未确认
+Step 6, Passed: alarm counter 告警名称 accuracy test passed. GUI value is 特通业务异常, and the expected value is 特通业务异常
+Step 7, Passed: alarm counter 告警级别 accuracy test passed. GUI value is Major, and the expected value is Major
+Step 8, Passed: alarm counter 清除类型 accuracy test passed. GUI value is , and the expected value is 
+Step 9, Passed: alarm counter 清除状态 accuracy test passed. GUI value is 未清除, and the expected value is 未清除
+Step 10, Passed: alarm counter 问题描述 accuracy test passed. GUI value is Administration handling with NE failure, and the expected value is Administration handling with NE failure
+Step 11, Passed: alarm counter 告警类型 accuracy test passed. GUI value is 通信告警, and the expected value is 通信告警
+Step 12, Passed: alarm counter 确认用户 accuracy test passed. GUI value is , and the expected value is 
+Step 13, Passed: alarm counter 定位信息 accuracy test passed. GUI value is HSS, and the expected value is HSS
+Step 14, Passed: alarm counter 网元名称 accuracy test passed. GUI value is LTEHSS-F19A72676901CB3D, and the expected value is LTEHSS-F19A72676901CB3D
+Step 15, Passed: alarm counter 告警时间 accuracy test passed. GUI value is 2017-02-07 16:56:51.500, and the expected value is 2017-02-07 16:56:51.500
+Step 16, Passed: alarm counter 告警编号 accuracy test passed. GUI value is 1, and the expected value is 1
+Step 17, Passed: alarm counter 补充信息 accuracy test passed. GUI value is ##ALL##Node Down, and the expected value is ##ALL##Node Down
+Test case: check_ltehss_gui_accuracy_case Passed. Total steps: 17, Passed steps: 17, Error steps: 0, Failed steps: 0, Warning steps: 0

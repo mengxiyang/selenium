@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PmFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PmFileFormat.xsd">
+    <FileHeader>
+        <InfoModelReferenced>MME-PM-V1.0.0</InfoModelReferenced>
+        <DnPrefix>DC=Ericsson</DnPrefix>
+        <SenderName>DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1</SenderName>
+        <VendorName>Ericsson</VendorName>
+        <BeginTime>2017-02-07T18:00:00+08:00</BeginTime>
+        <EndTime>2017-02-07T18:15:00+08:00</EndTime>
+    </FileHeader>
+    <Measurements>
+        <ObjectType>ME</ObjectType>
+        <PmName>
+            <N i="1">Memtotal</N>
+            <N i="2">CpuUsageMean</N>
+            <N i="3">CpuUsagePeak</N>
+            <N i="4">MemUsageMean</N>
+            <N i="5">MemUsagePeak</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME-E4EE6A664602EBFF">
+                <V i="1">192583</V>
+                <V i="2">0.20</V>
+                <V i="3">0.80</V>
+                <V i="4">2.00</V>
+                <V i="5">2.00</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+    <Measurements>
+        <ObjectType>L</ObjectType>
+        <PmName>
+            <N i="1">J1</N>
+            <N i="2">J2</N>
+            <N i="3">J3</N>
+            <N i="4">J4</N>
+            <N i="5">K1</N>
+            <N i="6">K2</N>
+            <N i="7">K3</N>
+            <N i="8">K4</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=8613743641|MME-E4EE6A664602EBFF,L=LTE987654321">
+                <V i="1">4294967233</V>
+                <V i="2">4294967170</V>
+                <V i="3">4294967107</V>
+                <V i="4">4294967044</V>
+                <V i="5">4294966981</V>
+                <V i="6">4294966918</V>
+                <V i="7">4294966855</V>
+                <V i="8">4294966792</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+</PmFile>

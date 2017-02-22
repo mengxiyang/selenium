@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PmFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PmFileFormat.xsd">
+    <FileHeader>
+        <InfoModelReferenced>MSC-PM-V1.0.0</InfoModelReferenced>
+        <DnPrefix>DC=Ericsson</DnPrefix>
+        <SenderName>DC=Ericsson\,SubNetwork=1\,ManagementNode=1\,IRPAgent=1</SenderName>
+        <VendorName>Ericsson</VendorName>
+        <BeginTime>2017-02-07T22:30:00+08:00</BeginTime>
+        <EndTime>2017-02-07T22:45:00+08:00</EndTime>
+    </FileHeader>
+    <Measurements>
+        <ObjectType>ME</ObjectType>
+        <PmName>
+            <N i="1">Memtotal</N>
+            <N i="2">Nettotal3</N>
+            <N i="3">CpuUsageMean</N>
+            <N i="4">CpuUsagePeak</N>
+            <N i="5">MemUsageMean</N>
+            <N i="6">MemUsagePeak</N>
+            <N i="7">NetUsageMean3</N>
+            <N i="8">NetUsagePeak3</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=11|MSC-0CD79707FFB12273">
+                <V i="1">17109</V>
+                <V i="2">1000</V>
+                <V i="3">0.57</V>
+                <V i="4">0.90</V>
+                <V i="5">0.80</V>
+                <V i="6">0.90</V>
+                <V i="7">0.00</V>
+                <V i="8">0.00</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+    <Measurements>
+        <ObjectType>L</ObjectType>
+        <PmName>
+            <N i="1">A1</N>
+            <N i="2">A2</N>
+            <N i="3">A3</N>
+            <N i="4">A4</N>
+            <N i="5">A5</N>
+            <N i="6">A6</N>
+            <N i="7">A7</N>
+            <N i="8">A8</N>
+            <N i="9">A9</N>
+            <N i="10">A10</N>
+            <N i="11">A11</N>
+            <N i="12">A12</N>
+            <N i="13">A13</N>
+            <N i="14">A14</N>
+            <N i="15">A15</N>
+            <N i="16">A16</N>
+            <N i="17">A17</N>
+            <N i="18">A18</N>
+            <N i="19">A19</N>
+            <N i="20">A20</N>
+            <N i="21">A21</N>
+            <N i="22">A22</N>
+            <N i="23">B1</N>
+            <N i="24">B2</N>
+            <N i="25">B3</N>
+            <N i="26">B4</N>
+            <N i="27">B5</N>
+            <N i="28">B6</N>
+            <N i="29">B7</N>
+            <N i="30">B8</N>
+            <N i="31">B9</N>
+            <N i="32">B10</N>
+            <N i="33">B11</N>
+            <N i="34">B12</N>
+            <N i="35">B13</N>
+            <N i="36">B15</N>
+            <N i="37">B16</N>
+            <N i="38">B17</N>
+            <N i="39">B18</N>
+            <N i="40">B19</N>
+            <N i="41">B21</N>
+            <N i="42">B22</N>
+            <N i="43">B23</N>
+            <N i="44">B24</N>
+            <N i="45">B25</N>
+            <N i="46">B26</N>
+            <N i="47">B27</N>
+            <N i="48">B28</N>
+            <N i="49">B40</N>
+            <N i="50">B41</N>
+            <N i="51">C1</N>
+            <N i="52">C2</N>
+            <N i="53">C3</N>
+            <N i="54">C4</N>
+            <N i="55">C5</N>
+            <N i="56">C6</N>
+            <N i="57">C7</N>
+            <N i="58">C8</N>
+            <N i="59">C9</N>
+            <N i="60">C10</N>
+            <N i="61">C11</N>
+            <N i="62">C12</N>
+            <N i="63">D1</N>
+            <N i="64">D2</N>
+            <N i="65">D3</N>
+            <N i="66">D4</N>
+            <N i="67">D5</N>
+            <N i="68">D6</N>
+            <N i="69">D7</N>
+            <N i="70">D8</N>
+            <N i="71">D9</N>
+            <N i="72">D10</N>
+        </PmName>
+        <PmData>
+            <Pm Dn="DC=Ericsson,SubNetwork=1,ManagedElement=11|MSC-0CD79707FFB12273,L=LIC11">
+                <V i="1">4294968997</V>
+                <V i="2">1704</V>
+                <V i="3">2409</V>
+                <V i="4">2412</V>
+                <V i="5">2415</V>
+                <V i="6">2418</V>
+                <V i="7">2421</V>
+                <V i="8">2424</V>
+                <V i="9">2427</V>
+                <V i="10">2430</V>
+                <V i="11">2433</V>
+                <V i="12">2436</V>
+                <V i="13">2439</V>
+                <V i="14">2442</V>
+                <V i="15">2445</V>
+                <V i="16">2448</V>
+                <V i="17">2451</V>
+                <V i="18">2454</V>
+                <V i="19">2457</V>
+                <V i="20">2460</V>
+                <V i="21">2463</V>
+                <V i="22">2466</V>
+                <V i="23">2469</V>
+                <V i="24">2472</V>
+                <V i="25">2475</V>
+                <V i="26">2478</V>
+                <V i="27">2481</V>
+                <V i="28">2484</V>
+                <V i="29">2487</V>
+                <V i="30">2490</V>
+                <V i="31">2493</V>
+                <V i="32">2496</V>
+                <V i="33">2499</V>
+                <V i="34">2502</V>
+                <V i="35">2505</V>
+                <V i="36">2508</V>
+                <V i="37">2511</V>
+                <V i="38">2514</V>
+                <V i="39">2517</V>
+                <V i="40">2520</V>
+                <V i="41">2523</V>
+                <V i="42">2526</V>
+                <V i="43">2529</V>
+                <V i="44">2532</V>
+                <V i="45">2535</V>
+                <V i="46">2538</V>
+                <V i="47">2541</V>
+                <V i="48">2544</V>
+                <V i="49">2547</V>
+                <V i="50">2550</V>
+                <V i="51"></V>
+                <V i="52"></V>
+                <V i="53"></V>
+                <V i="54"></V>
+                <V i="55"></V>
+                <V i="56"></V>
+                <V i="57"></V>
+                <V i="58"></V>
+                <V i="59"></V>
+                <V i="60"></V>
+                <V i="61"></V>
+                <V i="62"></V>
+                <V i="63">2553</V>
+                <V i="64">2556</V>
+                <V i="65">2559</V>
+                <V i="66">2562</V>
+                <V i="67">2565</V>
+                <V i="68">2568</V>
+                <V i="69">2571.00</V>
+                <V i="70">858</V>
+                <V i="71">0.80</V>
+                <V i="72">0</V>
+            </Pm>
+        </PmData>
+    </Measurements>
+</PmFile>
